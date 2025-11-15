@@ -1,5 +1,7 @@
 // Mock Data for Medipodo Podology Center
 
+import { enrichedBlogPosts } from './blog_content';
+
 export const siteInfo = {
   name: 'Medipodo',
   fullName: 'Medipodo Ayak Bakımı',
