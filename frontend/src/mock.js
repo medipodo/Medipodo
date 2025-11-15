@@ -19,7 +19,7 @@ export const services = [
     id: 'batik-tirnak',
     title: 'Batık Tırnak Tedavisi',
     shortDesc: 'Ağrısız ve etkili batık tırnak tedavisi ile rahatlayın',
-    fullDesc: 'Batık tırnak (unguis incarnatus), tırnağın kenarlarının cilde batması sonucu oluşan ağrılı bir durumdur. Profesyonel podoloji yaklaşımımızla, ağrısız ve kalıcı çözümler sunuyoruz.',
+    fullDesc: 'Batık tırnak, tırnağın kenarlarının cilde batması sonucu oluşan ağrılı bir durumdur. Profesyonel podoloji yaklaşımımızla, ağrısız ve kalıcı çözümler sunuyoruz. Modern teknikler ve steril koşullarda gerçekleştirdiğimiz tedavilerimiz ile enfeksiyon riskini minimize ederken, hızlı iyileşme sağlıyoruz.',
     icon: 'Scissors',
     image: '/images/services/Batik-Tirnak-tedavisi.jpg',
     benefits: [
@@ -39,7 +39,7 @@ export const services = [
     id: 'tirnak-mantari',
     title: 'Tırnak Mantarı Tedavisi',
     shortDesc: 'Etkili tırnak mantarı tedavisi ile sağlıklı tırnaklar',
-    fullDesc: 'Tırnak mantarı (onikomikoz), tırnak yapısını bozan ve estetik sorunlara yol açan fungal bir enfeksiyondur. Modern tedavi yöntemlerimizle kalıcı çözüm sağlıyoruz.',
+    fullDesc: 'Tırnak mantarı, tırnak yapısını bozan ve estetik sorunlara yol açan fungal bir enfeksiyondur. Modern tedavi yöntemlerimizle kalıcı çözüm sağlıyoruz. Uzman podologlarımız, kişiye özel tedavi planları hazırlayarak, tırnaklarınızın sağlığına kavuşmasını sağlar. Tedavi sürecinde düzenli takip ile başarı oranını maksimuma çıkarıyoruz.',
     icon: 'ShieldCheck',
     image: '/images/services/Tirnak-Mantari.jpg',
     benefits: [
@@ -59,7 +59,7 @@ export const services = [
     id: 'topuk-bakimi',
     title: 'Topuk Bakımı ve Çatlak Tedavisi',
     shortDesc: 'Çatlak topuklar için profesyonel bakım ve tedavi',
-    fullDesc: 'Topuk çatlakları ve kalınlaşmaları hem estetik hem de sağlık problemi oluşturabilir. Özel bakım protokollerimizle topuklarınızı yeniden sağlıklı hale getiriyoruz.',
+    fullDesc: 'Topuk çatlakları ve kalınlaşmaları hem estetik hem de sağlık problemi oluşturabilir. Özel bakım protokollerimizle topuklarınızı yeniden sağlıklı hale getiriyoruz. Profesyonel peeling ve nemlendirme uygulamalarımız, cildinizin derinlemesine beslenmesini sağlar. Uzun süreli sonuçlar için evde bakım önerilerimizle sürecin devamını destekliyoruz.',
     icon: 'Sparkles',
     image: '/images/services/Topuk-Bakimi.jpg',
     benefits: [
@@ -79,7 +79,7 @@ export const services = [
     id: 'nasir-tedavisi',
     title: 'Nasır ve Kalınlaşma Tedavisi',
     shortDesc: 'Ağrılı nasırların profesyonel tedavisi',
-    fullDesc: 'Ayak tabanında oluşan nasırlar ve kalınlaşmalar yürüme konforu ve yaşam kalitenizi olumsuz etkiler. Uzman podoloji hizmetimizle rahatlayın.',
+    fullDesc: 'Ayak tabanında oluşan nasırlar ve kalınlaşmalar yürüme konforu ve yaşam kalitenizi olumsuz etkiler. Uzman podoloji hizmetimizle rahatlayın. Özel cihazlarımız ve profesyonel tekniklerimizle, nasırlarınızı ağrısız bir şekilde temizliyor, basınç noktalarınızı analiz ederek tekrar oluşumunu önlemeye yönelik öneriler sunuyoruz.',
     icon: 'CircleDot',
     image: '/images/services/Nasir-Kalinlasma.jpg',
     benefits: [
@@ -99,7 +99,7 @@ export const services = [
     id: 'ayak-bakimi',
     title: 'Medikal Ayak Bakımı',
     shortDesc: 'Kapsamlı profesyonel ayak bakımı hizmeti',
-    fullDesc: 'Ayaklarınızın sağlığı için kapsamlı bakım programı. Temizlikten bakıma, tırnak kesiminden cilt bakımına kadar tüm ihtiyaçlarınız için buradayız.',
+    fullDesc: 'Ayaklarınızın sağlığı için kapsamlı bakım programı. Temizlikten bakıma, tırnak kesiminden cilt bakımına kadar tüm ihtiyaçlarınız için buradayız. Steril koşullarda, profesyonel ürünler kullanarak gerçekleştirdiğimiz medikal ayak bakımı, hem tedavi edici hem de rahatlat',
     icon: 'Heart',
     image: '/images/services/Medikal-Ayak-Bakimi.jpg',
     benefits: [
@@ -116,23 +116,27 @@ export const services = [
     ]
   },
   {
-    id: 'sporcu-ayagi',
-    title: 'Sporcu Ayağı Tedavisi',
-    shortDesc: 'Sporcu ayağı ve mantar tedavisinde uzman çözümler',
-    fullDesc: 'Sporcu ayağı (tinea pedis), ayaklar arasında kaşıntı, kızarıklık ve rahatsızlığa neden olan fungal bir enfeksiyondur. Etkili tedavi protokollerimizle hızlı çözüm.',
+    id: 'evde-bakim',
+    title: 'Evde Medikal Ayak Bakımı',
+    shortDesc: 'Evinizin konforunda profesyonel ayak bakımı hizmeti',
+    fullDesc: 'Sağlık sorunları nedeniyle merkezimize ulaşmakta zorluk mu yaşıyorsunuz? Evde medikal ayak bakımı hizmetimizle yanınızdayız. Özellikle yatalak hastalar, yaşlı bireyler, hareket zorluğu yaşayanlar ve dolaşım bozukluğu olan hastalarımız için ideal bir çözümdür. Ankara genelinde geniş hizmet bölgemizde, steril malzemeler ve profesyonel ekibimizle evinize geliyoruz.',
     icon: 'Zap',
-    image: '/images/services/Sporcu-Ayak-Bakimi.jpg',
+    image: '/images/services/evde-bakim.jpg',
     benefits: [
-      'Hızlı semptom hafifletme',
-      'Tam iyileşme protokolü',
-      'Tekrar önleme stratejileri',
-      'Hijyen eğitimi'
+      'Ev konforunda hizmet',
+      'Yatalak ve yaşlı hastalara özel',
+      'Steril malzeme ve cihazlar',
+      'Geniş hizmet bölgesi',
+      'Profesyonel podolog ekibi',
+      'Dolaşım bozukluğu olan hastalara uygun'
     ],
     process: [
-      'Fungal teşhis',
-      'Antifungal tedavi',
-      'Cilt bakımı',
-      'Koruyucu önlemler eğitimi'
+      'Randevu ve hazırlık (en az 1 gün önceden)',
+      'Adresinize geliyoruz (1 Podolog + 1 Yardımcı)',
+      'Kapsamlı ayak muayenesi ve bakımı',
+      'Tırnak kesimi, mantar tedavisi, nasır temizliği',
+      'Peeling, masaj ve serum uygulaması',
+      'Takip ve bakım önerileri'
     ]
   }
 ];
@@ -175,17 +179,6 @@ export const galleryImages = [
   }
 ];
 
-// ============================================
-// BLOG YAZILARINI BURADAN DEĞİŞTİREBİLİRSİNİZ
-// ============================================
-// Blog yazılarını değiştirmek için:
-// 1. 'title': Başlığı değiştirin
-// 2. 'excerpt': Kısa açıklamayı değiştirin
-// 3. 'content': Tam içeriği değiştirin (Markdown formatında)
-// 4. 'image': Görsel URL'sini değiştirin
-// 5. 'tags': Etiketleri değiştirin
-// 6. 'author', 'date', 'readTime': İlgili bilgileri güncelleyin
-
 export const blogPosts = [
   {
     id: 'ayak-sagligi-ipuclari',
@@ -198,16 +191,11 @@ Ayaklarımız günlük yaşamımızda en çok kullandığımız ancak en az öne
 
 ## 1. Doğru Ayakkabı Seçimi
 
-Ayakkabı seçimi ayak sağlığının temelidir. Dar, yüksek topuklu veya düz tabanlı ayakkabılar birçok ayak probleminin ana nedenidir. Ayakkabınız:
-
-- Ayağınıza tam oturmalı, ancak sıkmamalı
-- Nefes alabilen malzemelerden yapılmış olmalı
-- Uygun taban desteği sağlamalı
-- Parmak bölgesinde yeterli alan bulunmalı
+Ayakkabı seçimi ayak sağlığının temelidir. Dar, yüksek topuklu veya düz tabanlı ayakkabılar birçok ayak probleminin ana nedenidir. Ayakkabınız ayağınıza tam oturmalı, ancak sıkmamalı, nefes alabilen malzemelerden yapılmış olmalı ve uygun taban desteği sağlamalıdır.
 
 ## 2. Günlük Ayak Hijyeni
 
-Her gün ayaklarınızı ılık suyla yıkayın ve özellikle parmak aralarını iyice kuruların. Nemli ortam mantar ve bakterilerin üremesine zemin hazırlar.
+Her gün ayaklarınızı ılık suyla yıkayın ve özellikle parmak aralarını iyice kurulayın. Nemli ortam mantar ve bakterilerin üremesine zemin hazırlar.
 
 ## 3. Tırnak Bakımı
 
@@ -223,7 +211,7 @@ Pamuklu, ter emici çoraplar tercih edin. Sentetik malzemeler ter birikmesine ve
 
 ## 6. Ayakkabılarınızı Dinlendirin
 
-Aynı ayakkabıyı art arda günler giymekten kaçının. Ayakkabılarınızın havalanması ve kurumasi için zaman tanıyın.
+Aynı ayakkabıyı art arda günler giymekten kaçının. Ayakkabılarınızın havalanması ve kuruması için zaman tanıyın.
 
 ## 7. Düzenli Egzersiz
 
@@ -241,10 +229,6 @@ Herhangi bir ağrı, şişlik, renk değişikliği veya yara durumunda uzman bir
 
 Yılda en az bir kez profesyonel ayak bakımı yaptırmanız, olası problemlerin erken tespiti için önemlidir.
 
-## Sonuç
-
-Ayak sağlığı, genel sağlığımızın ayrılmaz bir parçasıdır. Bu basit ipuçlarını uygulayarak ayaklarınızı sağlıklı tutabilir ve yaşam kalitenizi artırabilirsiniz.
-
 **Profesyonel destek için Medipodo Ayak Bakımı merkezimizi ziyaret edebilirsiniz.**`,
     author: 'Dr. Ayşe Demir',
     date: '2024-01-15',
@@ -259,98 +243,7 @@ Ayak sağlığı, genel sağlığımızın ayrılmaz bir parçasıdır. Bu basit
     excerpt: 'Batık tırnak oluşumunun ana nedenleri ve bu rahatsızlıktan korunmak için alınabilecek önlemler hakkında detaylı bilgi.',
     content: `# Batık Tırnak Nedenleri ve Korunma Yolları
 
-Batık tırnak (unguis incarnatus), tırnağın kenarlarının yanındaki yumuşak dokuya batması sonucu oluşan ağrılı bir durumdur. Bu yaygın problemi anlamak ve önlemek için kapsamlı bir rehber hazırladık.
-
-## Batık Tırnak Nedir?
-
-Batık tırnak, genellikle ayak başparmağında görülen, tırnağın köşelerinin veya kenarlarının cilde girmesi ile karakterize bir durumdur. İltihaplanma, ağrı ve enfeksiyon riski taşır.
-
-## Ana Nedenler
-
-### 1. Yanlış Tırnak Kesimi
-
-En yaygın neden, tırnakların çok kısa veya köşelerden oval şekilde kesilmesidir. Tırnaklar düz bir şekilde, beyaz kısım görünür şekilde kesilmelidir.
-
-### 2. Dar Ayakkabı Kullanımı
-
-Dar, sıkan ayakkabılar parmakları sıkıştırır ve tırnağın cilde batmasına neden olur. Özellikle dar burunlu ve yüksek topuklu ayakkabılar risk oluşturur.
-
-### 3. Genetik Yatkınlık
-
-Aile geçmişi batık tırnak riskini artırır. Tırnak şekli ve büyüme yönü genetik faktörlerden etkilenebilir.
-
-### 4. Travma ve Yaralanma
-
-Parmağa vurmak, düşürmek veya tekrarlayan travmalar (örneğin futbol oynamak) tırnak yapısını bozabilir.
-
-### 5. Mantarlaşmış Tırnaklar
-
-Tırnak mantarı, tırnak kalınlığını ve şeklini değiştirerek batık tırnak oluşumunu kolaylaştırır.
-
-## Belirtiler
-
-- Tırnak kenarında ağrı ve hassasiyet
-- Kızarıklık ve şişlik
-- İltihap ve akıntı
-- Yürürken rahatsızlık
-
-## Korunma Yöntemleri
-
-### Doğru Tırnak Kesim Tekniği
-
-1. Tırnakları düz bir çizgide kesin
-2. Köşeleri aşırı kısaltmayın
-3. Kaliteli tırnak makası veya törpü kullanın
-4. Tırnakları çok kısa kesmekten kaçının
-
-### Uygun Ayakkabı Seçimi
-
-- Geniş burunlu ayakkabılar tercih edin
-- Ayak parmakları için yeterli alan bırakın
-- Nefes alabilen malzemeler seçin
-- Topuk yüksekliğine dikkat edin
-
-### Hijyen ve Bakım
-
-- Ayaklarınızı düzenli yıkayın ve kuruların
-- Temiz çoraplar giyin
-- Ayak hijyenine özen gösterin
-
-### Erken Müdahale
-
-İlk belirtilerde profesyonel yardım almak, ciddi komplikasyonları önler.
-
-## Tedavi Seçenekleri
-
-### Konservatif Tedavi
-
-- Sıcak su banyoları
-- Antibakteriyel pomadlar
-- Pamuklu tampon tekniği
-- Uygun ayakkabı kullanımı
-
-### Profesyonel Müdahale
-
-Medipodo'da sunduğumuz tedaviler:
-
-- Ağrısız tırnak kenarı düzeltmesi
-- Tel/braket sistemleri
-- Lazer tedavisi
-- Gerekirse cerrahi müdahale
-
-## Ne Zaman Doktora Gitmeli?
-
-- Şiddetli ağrı varsa
-- İltihap ve akıntı görülürse
-- Ateş yükselmişse
-- Diyabet hastaysanız
-- Evde tedavi işe yaramıyorsa
-
-## Sonuç
-
-Batık tırnak önlenebilir bir durumdur. Doğru ayak bakımı alışkanlıkları edinmek ve erken müdahale etmek, ciddi problemleri önler.
-
-**Medipodo Ayak Bakımı olarak, batık tırnak tedavisinde uzman ekibimizle hizmetinizdeyiz. Randevu için bizi arayın!**`,
+Batık tırnak, tırnağın kenarlarının yanındaki yumuşak dokuya batması sonucu oluşan ağrılı bir durumdur. Bu yaygın problemi anlamak ve önlemek için kapsamlı bilgiler sunuyoruz.`,
     author: 'Uzm. Mehmet Kaya',
     date: '2024-01-20',
     readTime: '7 dakika',
@@ -364,164 +257,7 @@ Batık tırnak önlenebilir bir durumdur. Doğru ayak bakımı alışkanlıklar�
     excerpt: 'Tırnak mantarı tedavisinde güncel yaklaşımlar, tedavi süreçleri ve kalıcı çözüm yöntemlerini öğrenin.',
     content: `# Tırnak Mantarı: Modern Tedavi Yöntemleri
 
-Tırnak mantarı (onikomikoz), dünya çapında milyonlarca insanı etkileyen yaygın bir sağlık problemidir. Modern tedavi yöntemleri ile bu rahatsızlıktan tamamen kurtulmak mümkün.
-
-## Tırnak Mantarı Nedir?
-
-Onikomikoz, tırnakların fungal mikroorganizmalarla enfekte olması sonucu gelişen bir hastalıktır. Genellikle ayak tırnaklarında görülür ancak el tırnaklarını da etkileyebilir.
-
-## Belirtiler ve Tanı
-
-### Erken Belirtiler
-
-- Tırnak renginde değişiklik (sarı, kahverengi, beyaz)
-- Tırnakta kalınlaşma
-- Tırnak yüzeyinde pürüzlülük
-- Tırnak kenarlarında ufalanma
-
-### İleri Belirtiler
-
-- Tırnağın tamamen renk değiştirmesi
-- Tırnağın kırılganlaşması
-- Tırnak altında döküntü birikimi
-- Kötü koku
-- Tırnağın yataktan ayrılması
-
-## Risk Faktörleri
-
-1. **Yaş**: İlerleyen yaşla birlikte risk artar
-2. **Nem**: Ayakların sürekli nemli kalması
-3. **Zayıf bağışıklık sistemi**
-4. **Diyabet**: Kan şekeri kontrolünün bozulması
-5. **Dolaşım problemleri**
-6. **Geçmiş tırnak yaralanmaları**
-7. **Halka açık havuzlar ve duşlar**
-8. **Aile öyküsü**
-
-## Modern Tedavi Yöntemleri
-
-### 1. Topikal Antifungal Tedaviler
-
-**Avantajları:**
-- Yan etki riski düşük
-- Evde uygulanabilir
-- Hafif vakalarda etkili
-
-**Dezavantajları:**
-- Uzun tedavi süresi
-- Tırnak içine penetre etmekte zorlanma
-- Ağır vakalarda yetersiz kalabilir
-
-### 2. Oral Antifungal İlaçlar
-
-**Avantajları:**
-- Sistemik etki
-- Daha hızlı sonuçlar
-- Ağır vakalarda etkili
-
-**Tedavi Süresi:**
-- Ayak tırnakları: 3-4 ay
-- El tırnakları: 2-3 ay
-
-### 3. Lazer Tedavisi
-
-En modern tedavi yöntemlerinden biri olan lazer tedavisi:
-
-- Ağrısız uygulama
-- Yan etki yok
-- Hızlı seans süreleri
-- Yüksek başarı oranı
-- Sağlıklı dokuya zarar vermez
-
-### 4. Cerrahi Müdahale
-
-Çok ileri vakalarda:
-- Tırnak çekimi
-- Kimyasal matriks ablasyonu
-- Yeni sağlıklı tırnağın büyümesi
-
-## Tedavi Süreci
-
-### İlk Değerlendirme
-
-1. Detaylı muayene
-2. Gerekirse laboratuvar testleri
-3. Fungal kültür
-4. Tedavi planı oluşturma
-
-### Takip Seansları
-
-- Düzenli kontroller
-- İlerleme değerlendirmesi
-- Tedavi ayarlamaları
-- Yan etki takibi
-
-### İyileşme Süresi
-
-Tam iyileşme, yeni sağlıklı tırnağın tamamen büyümesini gerektirir:
-- Ayak tırnakları: 12-18 ay
-- El tırnakları: 6-9 ay
-
-## Korunma Stratejileri
-
-### Günlük Alışkanlıklar
-
-1. **Ayak hijyeni**: Her gün yıkama ve kurutma
-2. **Kuru tutma**: Parmak aralarını özellikle kuruların
-
-3. **Çorap değişimi**: Günlük temiz çoraplar
-4. **Ayakkabı rotasyonu**: Ayakkabıları dinlendirin
-5. **Nefes alan malzemeler**: Pamuklu çoraplar tercih edin
-
-### Ortak Alanlarda
-
-- Havuz ve duşlarda terlik kullanın
-- Başkalarının ayakkabısını giymeyin
-- Kendi pedikür aletlerinizi kullanın
-- Hijyenik salonları tercih edin
-
-### Ev Ortamında
-
-- Banyoyu kuru tutun
-- Ortak havlu kullanmayın
-- Yüzeyleri düzenli temizleyin
-
-## Medipodo'da Tedavi Yaklaşımımız
-
-Medipodo Ayak Bakımı olarak:
-
-1. **Kişiselleştirilmiş tedavi planları**
-2. **En güncel tedavi yöntemleri**
-3. **Deneyimli uzman kadro**
-4. **Modern ekipman**
-5. **Takip ve destek hizmeti**
-6. **Hijyenik koşullar**
-
-## Başarı Oranları
-
-Doğru tedavi ve hasta uyumu ile:
-- Topikal tedavi: %50-60
-- Oral tedavi: %70-80
-- Kombine tedavi: %80-90
-- Lazer tedavisi: %75-85
-
-## Neden Erken Tedavi Önemli?
-
-- Tedavi süresi kısalır
-- Başarı oranı artar
-- Yayılma önlenir
-- Komplikasyon riski azalır
-- Estetik sorunlar minimize edilir
-
-## Sonuç
-
-Tırnak mantarı tedavi edilebilir bir durumdur. Modern tedavi yöntemleri ve profesyonel yaklaşımla kalıcı çözüm mümkündür. En önemli faktör erken teşhis ve doğru tedavi planıdır.
-
-**Tırnaklarınızda mantar belirtileri mi görüyorsunuz? Medipodo uzman ekibi ile iletişime geçin, profesyonel değerlendirme ve tedavi için randevunuzu alın!**
-
----
-
-*Not: Bu makale bilgilendirme amaçlıdır. Tedavi için mutlaka uzman bir sağlık profesyoneliyle görüşmelisiniz.*`,
+Tırnak mantarı, dünya çapında milyonlarca insanı etkileyen yaygın bir sağlık problemidir. Modern tedavi yöntemleri ile bu rahatsızlıktan tamamen kurtulmak mümkün.`,
     author: 'Dr. Zeynep Arslan',
     date: '2024-01-25',
     readTime: '8 dakika',
@@ -543,17 +279,17 @@ export const teamMembers = [
     id: 2,
     name: 'Uzm. Mehmet Kaya',
     title: 'Podoloji Uzmanı',
-    bio: '10 yıldır ayak sağlığı alanında çalışmaktadır. Medikal pedikür ve ayak bakımında uzman.',
+    bio: '10 yıldır ayak sağlığı alanında çalışmaktadır. Medikal pediküir ve ayak bakımında uzman.',
     image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop',
-    specialties: ['Medikal Pedikür', 'Nasır Tedavisi', 'Topuk Bakımı']
+    specialties: ['Medikal Pediküir', 'Nasır Tedavisi', 'Topuk Bakımı']
   },
   {
     id: 3,
     name: 'Dr. Zeynep Arslan',
     title: 'Podoloji Uzmanı',
-    bio: '8 yıllık tecrübe ile özellikle sporcu ayağı ve ayak mantarı tedavilerinde başarılı sonuçlar.',
+    bio: '8 yıllık tecrübe ile özellikle evde bakım ve ayak mantarı tedavilerinde başarılı sonuçlar.',
     image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop',
-    specialties: ['Sporcu Ayağı', 'Mantar Tedavisi', 'Önleyici Bakım']
+    specialties: ['Evde Bakım', 'Mantar Tedavisi', 'Önleyici Bakım']
   }
 ];
 
