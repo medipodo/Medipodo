@@ -488,7 +488,7 @@ Batık tırnak, basit gibi görünse de, doğru yönetim gerektiren kompleks bir
 - **Podolojik uzmanlık değerlidir:** Komplike veya tekrarlayan vakalarda profesyonel yönetim, uzun vadeli başarıyı garanti eder
 
 **Medipodo Ayak Bakımı olarak, batık tırnak yönetiminde kanıta dayalı, kişiye özel tedavi protokolleri uyguluyoruz. Ağrı ve komplikasyonlardan kaçınmak için ilk belirtide randevu alın.**`,
-    author: 'Uzm. Mehmet Kaya - Podoloji Uzmanı',
+    author: 'U.Ö. Şaziye Kunt - Podoloji Uzmanı',
     date: '2025-01-20',
     readTime: '15 dakika',
     image: '/images/blog/batik-tirnak.jpg',
