@@ -67,7 +67,7 @@ const Footer = () => {
               <li>• Topuk Bakımı</li>
               <li>• Nasır Tedavisi</li>
               <li>• Medikal Ayak Bakımı</li>
-              <li>• Sporcu Ayağı Tedavisi</li>
+              <li>• Evde Medikal Ayak Bakımı</li>
             </ul>
           </div>
 
