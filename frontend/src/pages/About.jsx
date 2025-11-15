@@ -45,7 +45,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
+              <div className="order-2 lg:order-1">
                 <h2 className="text-3xl font-bold text-blue-950 mb-6">Hikayemiz</h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
