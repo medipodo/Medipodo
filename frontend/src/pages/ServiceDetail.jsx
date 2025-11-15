@@ -10,10 +10,15 @@ const ServiceDetail = () => {
   const service = services.find(s => s.id === serviceId);
 
   useEffect(() => {
-    // Force scroll to top with slight delay
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
+    // Aggressive scroll to top
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    });
+    // Backup scroll
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
   }, [serviceId]);
 
   if (!service) {
