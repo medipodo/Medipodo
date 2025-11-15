@@ -35,10 +35,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">M</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Ads%C4%B1z%20tasar%C4%B1m%20%281%29.png" 
+              alt="Medipodo Logo" 
+              className="h-12 w-auto"
+            />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-blue-900">{siteInfo.name}</span>
               <span className="text-xs text-gray-600">Ayak Bakımı</span>

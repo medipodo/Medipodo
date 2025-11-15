@@ -20,6 +20,7 @@ export const services = [
     shortDesc: 'Ağrısız ve etkili batık tırnak tedavisi ile rahatlayın',
     fullDesc: 'Batık tırnak (unguis incarnatus), tırnağın kenarlarının cilde batması sonucu oluşan ağrılı bir durumdur. Profesyonel podoloji yaklaşımımızla, ağrısız ve kalıcı çözümler sunuyoruz.',
     icon: 'Scissors',
+    image: 'https://images.unsplash.com/photo-1758654859934-2a03792260a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxwb2RpYXRyeSUyMGZvb3QlMjBjYXJlfGVufDB8fHx8MTc2MzE5NTA4NXww&ixlib=rb-4.1.0&q=85',
     benefits: [
       'Ağrısız tedavi yöntemleri',
       'Kalıcı çözümler',
@@ -39,6 +40,7 @@ export const services = [
     shortDesc: 'Etkili tırnak mantarı tedavisi ile sağlıklı tırnaklar',
     fullDesc: 'Tırnak mantarı (onikomikoz), tırnak yapısını bozan ve estetik sorunlara yol açan fungal bir enfeksiyondur. Modern tedavi yöntemlerimizle kalıcı çözüm sağlıyoruz.',
     icon: 'ShieldCheck',
+    image: 'https://images.pexels.com/photos/8376285/pexels-photo-8376285.jpeg',
     benefits: [
       'Modern tedavi protokolleri',
       'Hızlı iyileşme süreci',
@@ -58,6 +60,7 @@ export const services = [
     shortDesc: 'Çatlak topuklar için profesyonel bakım ve tedavi',
     fullDesc: 'Topuk çatlakları ve kalınlaşmaları hem estetik hem de sağlık problemi oluşturabilir. Özel bakım protokollerimizle topuklarınızı yeniden sağlıklı hale getiriyoruz.',
     icon: 'Sparkles',
+    image: 'https://images.unsplash.com/photo-1638859460750-181fcc7936a6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHxmb290JTIwc3BhJTIwbWFzc2FnZXxlbnwwfHx8fDE3NjMxOTUwOTd8MA&ixlib=rb-4.1.0&q=85',
     benefits: [
       'Derinlemesine nemlendirme',
       'Kalınlaşmış deri temizliği',
@@ -77,6 +80,7 @@ export const services = [
     shortDesc: 'Ağrılı nasırların profesyonel tedavisi',
     fullDesc: 'Ayak tabanında oluşan nasırlar ve kalınlaşmalar yürüme konforu ve yaşam kalitenizi olumsuz etkiler. Uzman podoloji hizmetimizle rahatlayın.',
     icon: 'CircleDot',
+    image: 'https://images.pexels.com/photos/8376326/pexels-photo-8376326.jpeg',
     benefits: [
       'Ağrısız temizleme',
       'Anında rahatlama',
@@ -96,6 +100,7 @@ export const services = [
     shortDesc: 'Kapsamlı profesyonel ayak bakımı hizmeti',
     fullDesc: 'Ayaklarınızın sağlığı için kapsamlı bakım programı. Temizlikten bakıma, tırnak kesiminden cilt bakımına kadar tüm ihtiyaçlarınız için buradayız.',
     icon: 'Heart',
+    image: 'https://images.pexels.com/photos/5240642/pexels-photo-5240642.jpeg',
     benefits: [
       'Komple ayak bakımı',
       'Hijyenik koşullar',
@@ -115,6 +120,7 @@ export const services = [
     shortDesc: 'Sporcu ayağı ve mantar tedavisinde uzman çözümler',
     fullDesc: 'Sporcu ayağı (tinea pedis), ayaklar arasında kaşıntı, kızarıklık ve rahatsızlığa neden olan fungal bir enfeksiyondur. Etkili tedavi protokollerimizle hızlı çözüm.',
     icon: 'Zap',
+    image: 'https://images.unsplash.com/photo-1716996642138-e655f2a8dcd5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwZm9vdCUyMHRyZWF0bWVudHxlbnwwfHx8fDE3NjMxOTUwOTF8MA&ixlib=rb-4.1.0&q=85',
     benefits: [
       'Hızlı semptom hafifletme',
       'Tam iyileşme protokolü',
@@ -168,6 +174,17 @@ export const galleryImages = [
   }
 ];
 
+// ============================================
+// BLOG YAZILARINI BURADAN DEĞİŞTİREBİLİRSİNİZ
+// ============================================
+// Blog yazılarını değiştirmek için:
+// 1. 'title': Başlığı değiştirin
+// 2. 'excerpt': Kısa açıklamayı değiştirin
+// 3. 'content': Tam içeriği değiştirin (Markdown formatında)
+// 4. 'image': Görsel URL'sini değiştirin
+// 5. 'tags': Etiketleri değiştirin
+// 6. 'author', 'date', 'readTime': İlgili bilgileri güncelleyin
+
 export const blogPosts = [
   {
     id: 'ayak-sagligi-ipuclari',
@@ -189,7 +206,7 @@ Ayakkabı seçimi ayak sağlığının temelidir. Dar, yüksek topuklu veya düz
 
 ## 2. Günlük Ayak Hijyeni
 
-Her gün ayaklarınızı ılık suyla yıkayın ve özellikle parmak aralarını iyice kurulayın. Nemli ortam mantar ve bakterilerin üremesine zemin hazırlar.
+Her gün ayaklarınızı ılık suyla yıkayın ve özellikle parmak aralarını iyice kuruların. Nemli ortam mantar ve bakterilerin üremesine zemin hazırlar.
 
 ## 3. Tırnak Bakımı
 
@@ -294,7 +311,7 @@ Tırnak mantarı, tırnak kalınlığını ve şeklini değiştirerek batık tı
 
 ### Hijyen ve Bakım
 
-- Ayaklarınızı düzenli yıkayın ve kurulayın
+- Ayaklarınızı düzenli yıkayın ve kuruların
 - Temiz çoraplar giyin
 - Ayak hijyenine özen gösterin
 
@@ -350,7 +367,7 @@ Tırnak mantarı (onikomikoz), dünya çapında milyonlarca insanı etkileyen ya
 
 ## Tırnak Mantarı Nedir?
 
-Onikomikoz, tırnakların fungal mikroorganizmalarla enfekte olması sonucu gelişen bir hastalıktır. Genellikle ayak tırnaklarında görülür ancak el tırnaklarını da etkileyebilir.
+Onikomikoz, tırnakların fungal mikroorganizmalarla enfekte olması sonucu gelişen bir hastalıktır. Genellikle ayak tırnaklarınında görülür ancak el tırnaklarını da etkileyebilir.
 
 ## Belirtiler ve Tanı
 
@@ -449,7 +466,8 @@ Tam iyileşme, yeni sağlıklı tırnağın tamamen büyümesini gerektirir:
 ### Günlük Alışkanlıklar
 
 1. **Ayak hijyeni**: Her gün yıkama ve kurutma
-2. **Kuru tutma**: Parmak aralarını özellikle kurulayın
+2. **Kuru tutma**: Parmak aralarını özellikle kuruların
+
 3. **Çorap değişimi**: Günlük temiz çoraplar
 4. **Ayakkabı rotasyonu**: Ayakkabıları dinlendirin
 5. **Nefes alan malzemeler**: Pamuklu çoraplar tercih edin
@@ -458,7 +476,7 @@ Tam iyileşme, yeni sağlıklı tırnağın tamamen büyümesini gerektirir:
 
 - Havuz ve duşlarda terlik kullanın
 - Başkalarının ayakkabısını giymeyin
-- Kendi pedikür aletlerinizi kullanın
+- Kendi pedikürleri aletlerinizi kullanın
 - Hijyenik salonları tercih edin
 
 ### Ev Ortamında
