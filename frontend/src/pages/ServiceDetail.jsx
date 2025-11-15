@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Check } from 'lucide-react';
 import { services } from '../mock';
@@ -8,6 +8,10 @@ import { Card, CardContent } from '../components/ui/card';
 const ServiceDetail = () => {
   const { serviceId } = useParams();
   const service = services.find(s => s.id === serviceId);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [serviceId]);
 
   if (!service) {
     return (
