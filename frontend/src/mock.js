@@ -179,7 +179,15 @@ export const galleryImages = [
   }
 ];
 
-export const blogPosts = [
+// ============================================
+// BLOG YAZILARINI BURADAN DEĞİŞTİREBİLİRSİNİZ
+// ============================================
+// Zenginleştirilmiş, SEO dostu blog içerikleri
+// Podolojik yaklaşım ve bilimsel temeller içerir
+
+import { enrichedBlogPosts } from './blog_content';
+
+export const blogPosts = enrichedBlogPosts.length > 0 ? enrichedBlogPosts : [
   {
     id: 'ayak-sagligi-ipuclari',
     title: 'Ayak Sağlığı İçin 10 Önemli İpucu',
