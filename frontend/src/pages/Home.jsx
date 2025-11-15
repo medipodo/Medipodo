@@ -86,19 +86,31 @@ const Home = () => {
             {services.map((service) => {
               const Icon = iconMap[service.icon];
               return (
-                <Card key={service.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="text-blue-700" size={24} />
+                <Card key={service.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="relative aspect-video overflow-hidden">
+                      <img 
+                        src={service.image} 
+                        alt={service.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
                     </div>
-                    <h3 className="text-xl font-semibold text-blue-950 mb-3">{service.title}</h3>
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{service.shortDesc}</p>
-                    <Link to={`/hizmet/${service.id}`}>
-                      <Button variant="link" className="text-blue-700 p-0 h-auto font-semibold">
-                        Detaylı Bilgi
-                        <ArrowRight className="ml-1" size={16} />
-                      </Button>
-                    </Link>
+                    <div className="p-6">
+                      <div className="flex items-center space-x-3 mb-3">
+                        <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Icon className="text-blue-700" size={20} />
+                        </div>
+                        <h3 className="text-xl font-semibold text-blue-950">{service.title}</h3>
+                      </div>
+                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">{service.shortDesc}</p>
+                      <Link to={`/hizmet/${service.id}`}>
+                        <Button variant="link" className="text-blue-700 p-0 h-auto font-semibold">
+                          Detaylı Bilgi
+                          <ArrowRight className="ml-1" size={16} />
+                        </Button>
+                      </Link>
+                    </div>
                   </CardContent>
                 </Card>
               );
