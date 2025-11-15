@@ -43,6 +43,22 @@ const ServiceDetail = () => {
         </div>
       </section>
 
+      {/* Service Image */}
+      <section className="py-8 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl">
+              <img 
+                src={service.image} 
+                alt={service.title}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Details */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
