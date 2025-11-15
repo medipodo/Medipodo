@@ -277,26 +277,26 @@ Tırnak mantarı, dünya çapında milyonlarca insanı etkileyen yaygın bir sa�
 export const teamMembers = [
   {
     id: 1,
-    name: 'Dr. Ayşe Demir',
-    title: 'Başhekim - Podoloji Uzmanı',
-    bio: '15 yıllık deneyime sahip podoloji uzmanı. Batık tırnak ve tırnak mantarı tedavilerinde uzmanlaşmıştır.',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop',
-    specialties: ['Batık Tırnak', 'Tırnak Mantarı', 'Diyabetik Ayak']
+    name: 'Serdar Ceylan',
+    title: 'Podolog',
+    bio: 'Uzun yıllar podoloji alanında deneyimli; ortoniksi uygulamaları, batık tırnak, tırnak ve ayak mantarı alanında başarısını ispatlamış uzman.',
+    image: '/images/team/serdar-ceylan.jpg',
+    specialties: ['Ortoniksi Uygulamaları', 'Batık Tırnak', 'Tırnak Mantarı']
   },
   {
     id: 2,
-    name: 'Uzm. Mehmet Kaya',
+    name: 'U.Ö. Şaziye Kunt',
     title: 'Podoloji Uzmanı',
     bio: '10 yıldır ayak sağlığı alanında çalışmaktadır. Medikal pediküir ve ayak bakımında uzman.',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop',
+    image: '/images/team/saziye-kunt.jpg',
     specialties: ['Medikal Pediküir', 'Nasır Tedavisi', 'Topuk Bakımı']
   },
   {
     id: 3,
-    name: 'Dr. Zeynep Arslan',
+    name: 'U.Ö. Sevda Karataş',
     title: 'Podoloji Uzmanı',
-    bio: '8 yıllık tecrübe ile özellikle evde bakım ve ayak mantarı tedavilerinde başarılı sonuçlar.',
-    image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop',
+    bio: '15 yıllık tecrübe ile özellikle evde bakım ve ayak mantarı tedavilerinde başarılı sonuçlar.',
+    image: '/images/team/sevda-karatas.jpg',
     specialties: ['Evde Bakım', 'Mantar Tedavisi', 'Önleyici Bakım']
   }
 ];
