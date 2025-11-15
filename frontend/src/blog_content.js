@@ -962,7 +962,7 @@ Onikomikoz, basit bir kozmetik sorun değil, multifaktöriyel bir hastalıktır.
 6. **Proflaksi:** Topikal, hijyen, ayakkabı yönetimi
 
 **Medipodo Ayak Bakımı olarak, onikomikoz yönetiminde kanıta dayalı, bütünsel podolojik yaklaşım sunuyoruz. Doğru tanı, etkili tedavi ve uzun vadeli başarı için uzman değerlendirmesi hemen alın.**`,
-    author: 'U.Ö. Sevda Karataş - Podoloji Uzmanı',
+    author: 'Sevda Karataş - Usta Öğretici',
     date: '2025-01-25',
     readTime: '18 dakika',
     image: '/images/blog/Tirnak-mantari.jpg',
