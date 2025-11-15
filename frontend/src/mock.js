@@ -144,36 +144,36 @@ export const services = [
 export const galleryImages = [
   {
     id: 1,
-    before: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/qxjx7yd8_140435E1-D51B-4F4F-962E-CD8244E8CE4E%20%281%29.JPEG',
-    after: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/qxjx7yd8_140435E1-D51B-4F4F-962E-CD8244E8CE4E%20%281%29.JPEG',
+    before: '/images/gallery/g1.jpg',
+    after: '/images/gallery/g1.jpg',
     title: 'Tırnak Mantarı Tedavisi',
     description: 'Başarılı tırnak mantarı tedavisi öncesi ve sonrası'
   },
   {
     id: 2,
-    before: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/kmrbtbgf_C103FAE7-751F-4CBA-A8D7-290C22566498%20%284%29.JPEG',
-    after: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/kmrbtbgf_C103FAE7-751F-4CBA-A8D7-290C22566498%20%284%29.JPEG',
+    before: '/images/gallery/g2.jpg',
+    after: '/images/gallery/g2.jpg',
     title: 'Topuk Çatlağı Tedavisi',
     description: 'Profesyonel topuk bakımı ile harika sonuçlar'
   },
   {
     id: 3,
-    before: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/m6scxd2t_1EDE6E8A-FA1F-48B6-A7EC-F5607C357697.JPEG',
-    after: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/m6scxd2t_1EDE6E8A-FA1F-48B6-A7EC-F5607C357697.JPEG',
+    before: '/images/gallery/g3.jpg',
+    after: '/images/gallery/g3.jpg',
     title: 'Topuk Bakımı Sonuçları',
     description: 'Derin bakım ile yenilenen ayaklar'
   },
   {
     id: 4,
-    before: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/my3nlrj3_E81E7929-25ED-498E-B780-431B419A19FF.JPEG',
-    after: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/my3nlrj3_E81E7929-25ED-498E-B780-431B419A19FF.JPEG',
+    before: '/images/gallery/g4.jpg',
+    after: '/images/gallery/g4.jpg',
     title: 'Batık Tırnak Tedavisi',
     description: 'Ağrısız batık tırnak tedavisi başarısı'
   },
   {
     id: 5,
-    before: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/dzd5sztl_33FCE5DE-9B09-4717-BA66-3B450A0B5789.JPEG',
-    after: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/dzd5sztl_33FCE5DE-9B09-4717-BA66-3B450A0B5789.JPEG',
+    before: '/images/gallery/g5.jpg',
+    after: '/images/gallery/g5.jpg',
     title: 'Tırnak Restorasyonu',
     description: 'Hasarlı tırnak onarımı ve bakımı'
   }
