@@ -1,51 +1,37 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import React from 'react';
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import ServiceDetail from './pages/ServiceDetail';
+import Gallery from './pages/Gallery';
+import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
+import About from './pages/About';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Header />
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/hizmetler" element={<Services />} />
+          <Route path="/hizmet/:serviceId" element={<ServiceDetail />} />
+          <Route path="/galeri" element={<Gallery />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="/hakkimizda" element={<About />} />
+          <Route path="/ekip" element={<Team />} />
+          <Route path="/iletisim" element={<Contact />} />
         </Routes>
+        <Footer />
+        <WhatsAppButton />
       </BrowserRouter>
     </div>
   );
