@@ -187,8 +187,6 @@ export const galleryImages = [
 // Zenginleştirilmiş, SEO dostu blog içerikleri
 // Podolojik yaklaşım ve bilimsel temeller içerir
 
-import { enrichedBlogPosts } from './blog_content';
-
 export const blogPosts = enrichedBlogPosts.length > 0 ? enrichedBlogPosts : [
   {
     id: 'ayak-sagligi-ipuclari',
