@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
 import { blogPosts } from '../mock';
@@ -8,6 +8,10 @@ import { Badge } from '../components/ui/badge';
 const BlogDetail = () => {
   const { slug } = useParams();
   const post = blogPosts.find(p => p.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!post) {
     return (
