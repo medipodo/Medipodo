@@ -285,16 +285,16 @@ export const teamMembers = [
   },
   {
     id: 2,
-    name: 'U.Ö. Şaziye Kunt',
-    title: 'Podoloji Uzmanı',
+    name: 'Şaziye Kunt',
+    title: 'Usta Öğretici',
     bio: '10 yıldır ayak sağlığı alanında çalışmaktadır. Medikal pediküir ve ayak bakımında uzman.',
     image: '/images/team/saziye-kunt.jpg',
     specialties: ['Medikal Pediküir', 'Nasır Tedavisi', 'Topuk Bakımı']
   },
   {
     id: 3,
-    name: 'U.Ö. Sevda Karataş',
-    title: 'Podoloji Uzmanı',
+    name: 'Sevda Karataş',
+    title: 'Usta Öğretici',
     bio: '15 yıllık tecrübe ile özellikle evde bakım ve ayak mantarı tedavilerinde başarılı sonuçlar.',
     image: '/images/team/sevda-karatas.jpg',
     specialties: ['Evde Bakım', 'Mantar Tedavisi', 'Önleyici Bakım']
