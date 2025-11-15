@@ -59,13 +59,19 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=800&fit=crop"
-                  alt="Klinik"
-                  className="rounded-lg shadow-xl"
-                  loading="lazy"
-                />
+              <div className="order-1 lg:order-2">
+                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-xl">
+                  <img
+                    src="https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Ads%C4%B1z%20tasar%C4%B1m%20%281%29.png"
+                    alt="Medipodo Logo"
+                    className="w-full h-auto"
+                    loading="lazy"
+                  />
+                  <div className="mt-6 text-center">
+                    <h3 className="text-2xl font-bold text-blue-950 mb-2">Medipodo Ayak Bakımı</h3>
+                    <p className="text-gray-600">Ankara'nın Güvenilir Podoloji Merkezi</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
