@@ -10,7 +10,9 @@ const BlogDetail = () => {
   const post = blogPosts.find(p => p.slug === slug);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   }, [slug]);
 
   if (!post) {
