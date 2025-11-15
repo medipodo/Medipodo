@@ -10,7 +10,10 @@ const ServiceDetail = () => {
   const service = services.find(s => s.id === serviceId);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Force scroll to top with slight delay
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   }, [serviceId]);
 
   if (!service) {
