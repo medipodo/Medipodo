@@ -29,21 +29,19 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-white/95 py-4'
+        isScrolled ? 'bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg py-3' : 'bg-gradient-to-r from-blue-900 to-blue-700 py-4'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Ads%C4%B1z%20tasar%C4%B1m%20%281%29.png" 
-              alt="Medipodo Logo" 
-              className="h-12 w-auto"
-            />
+            <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
+              <span className="text-white font-bold text-xl">M</span>
+            </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-blue-900">{siteInfo.name}</span>
-              <span className="text-xs text-gray-600">Ayak Bakımı</span>
+              <span className="text-xl font-bold text-white">{siteInfo.name}</span>
+              <span className="text-xs text-blue-100">Ayak Bakımı</span>
             </div>
           </Link>
 
@@ -53,10 +51,10 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-700 ${
+                className={`text-sm font-medium transition-colors ${
                   location.pathname === link.path
-                    ? 'text-blue-700'
-                    : 'text-gray-700'
+                    ? 'text-white'
+                    : 'text-blue-100 hover:text-white'
                 }`}
               >
                 {link.name}
@@ -67,16 +65,16 @@ const Header = () => {
           {/* Contact Button */}
           <a
             href={`tel:${siteInfo.phoneLink}`}
-            className="hidden lg:flex items-center space-x-2 bg-blue-700 text-white px-6 py-2.5 rounded-lg hover:bg-blue-800 transition-colors"
+            className="hidden lg:flex items-center space-x-2 bg-white text-blue-900 px-6 py-2.5 rounded-lg hover:bg-blue-50 transition-colors font-semibold"
           >
             <Phone size={18} />
-            <span className="font-medium">{siteInfo.phone}</span>
+            <span>{siteInfo.phone}</span>
           </a>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-gray-700 p-2"
+            className="lg:hidden text-white p-2"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -84,7 +82,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t border-blue-700 pt-4">
             <nav className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <Link
@@ -93,8 +91,8 @@ const Header = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`text-sm font-medium py-2 px-4 rounded transition-colors ${
                     location.pathname === link.path
-                      ? 'bg-blue-50 text-blue-700'
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? 'bg-white/10 text-white'
+                      : 'text-blue-100 hover:bg-white/5'
                   }`}
                 >
                   {link.name}
@@ -102,10 +100,10 @@ const Header = () => {
               ))}
               <a
                 href={`tel:${siteInfo.phoneLink}`}
-                className="flex items-center justify-center space-x-2 bg-blue-700 text-white px-6 py-2.5 rounded-lg hover:bg-blue-800 transition-colors mt-4"
+                className="flex items-center justify-center space-x-2 bg-white text-blue-900 px-6 py-2.5 rounded-lg hover:bg-blue-50 transition-colors font-semibold mt-4"
               >
                 <Phone size={18} />
-                <span className="font-medium">{siteInfo.phone}</span>
+                <span>{siteInfo.phone}</span>
               </a>
             </nav>
           </div>
