@@ -89,6 +89,17 @@ const BlogDetail = () => {
             <div className="prose prose-lg max-w-none">
               <div className="text-gray-700 leading-relaxed space-y-6">
                 {post.content.split('\n\n').map((paragraph, index) => {
+                  // Helper function to render text with bold formatting
+                  const renderText = (text) => {
+                    const parts = text.split(/(\*\*.*?\*\*)/g);
+                    return parts.map((part, i) => {
+                      if (part.startsWith('**') && part.endsWith('**')) {
+                        return <strong key={i} className="font-semibold text-blue-950">{part.replace(/\*\*/g, '')}</strong>;
+                      }
+                      return part;
+                    });
+                  };
+
                   if (paragraph.startsWith('# ')) {
                     return <h1 key={index} className="text-3xl font-bold text-blue-950 mt-8 mb-4">{paragraph.replace('# ', '')}</h1>;
                   } else if (paragraph.startsWith('## ')) {
@@ -100,7 +111,7 @@ const BlogDetail = () => {
                     return (
                       <ul key={index} className="list-disc list-inside space-y-2 ml-4">
                         {items.map((item, i) => (
-                          <li key={i}>{item.replace(/^[-*]\s/, '')}</li>
+                          <li key={i}>{renderText(item.replace(/^[-*]\s/, ''))}</li>
                         ))}
                       </ul>
                     );
@@ -109,16 +120,16 @@ const BlogDetail = () => {
                     return (
                       <ol key={index} className="list-decimal list-inside space-y-2 ml-4">
                         {items.map((item, i) => (
-                          <li key={i}>{item.replace(/^\d+\.\s/, '')}</li>
+                          <li key={i}>{renderText(item.replace(/^\d+\.\s/, ''))}</li>
                         ))}
                       </ol>
                     );
                   } else if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                    return <p key={index} className="font-bold">{paragraph.replace(/\*\*/g, '')}</p>;
+                    return <p key={index} className="font-bold text-blue-950">{paragraph.replace(/\*\*/g, '')}</p>;
                   } else if (paragraph.startsWith('---')) {
                     return <hr key={index} className="my-8 border-gray-300" />;
                   } else {
-                    return <p key={index} className="mb-4">{paragraph}</p>;
+                    return <p key={index} className="mb-4">{renderText(paragraph)}</p>;
                   }
                 })}
               </div>
