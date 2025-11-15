@@ -31,14 +31,24 @@ const Services = () => {
             {services.map((service) => {
               const Icon = iconMap[service.icon];
               return (
-                <Card key={service.id} className="hover:shadow-xl transition-all hover:-translate-y-1">
-                  <CardContent className="p-8">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="text-blue-700" size={32} />
+                <Card key={service.id} className="hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
+                      <div className="md:col-span-2 relative aspect-square md:aspect-auto">
+                        <img 
+                          src={service.image} 
+                          alt={service.title}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-semibold text-blue-950 mb-3">{service.title}</h3>
+                      <div className="md:col-span-3 p-8">
+                        <div className="flex items-center space-x-3 mb-4">
+                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Icon className="text-blue-700" size={24} />
+                          </div>
+                          <h3 className="text-2xl font-semibold text-blue-950">{service.title}</h3>
+                        </div>
                         <p className="text-gray-600 mb-6 leading-relaxed">{service.fullDesc}</p>
                         <Link to={`/hizmet/${service.id}`}>
                           <Button className="bg-blue-700 hover:bg-blue-800 text-white">
