@@ -185,7 +185,7 @@ Ayak sağlığı, izole bir konu değil, genel sağlık ve yaşam kalitenizin ay
 **Unutmayın:** Ayak sağlığı profesyoneli olan podologlar, yalnızca problemleri tedavi etmekle kalmaz, aynı zamanda önleyici stratejiler geliştirir ve biyomekanik optimizasyon sağlar. Düzenli podoloji ziyaretleri, sağlıklı bir yaşamın temel taşlarından biridir.
 
 **Medipodo Ayak Bakımı olarak, kanıta dayalı podoloji hizmetlerimizle ayak sağlığınızda yanınızdayız. Profesyonel değerlendirme ve kişiye özel bakım planı için hemen randevu alın.**`,
-    author: 'Dr. Ayşe Demir - Podoloji Uzmanı',
+    author: 'Serdar Ceylan - Podolog',
     date: '2025-01-15',
     readTime: '12 dakika',
     image: '/images/blog/Ayak-sagligi-icin-ipucları.jpg',
