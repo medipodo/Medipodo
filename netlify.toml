@@ -3,7 +3,7 @@
   command = "yarn build"
   
   # Directory with the build output
-  publish = "build"
+  publish = "frontend/build"
   
   # Base directory
   base = "frontend"
