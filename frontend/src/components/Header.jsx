@@ -41,7 +41,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-white">{siteInfo.name}</span>
-              <span className="text-xs text-blue-100">Ayak Bakımı</span>
+              <span className="text-xs text-blue-100">Ayak Sağlığı</span>
             </div>
           </Link>
 
