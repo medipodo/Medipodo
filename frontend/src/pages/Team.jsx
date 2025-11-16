@@ -61,7 +61,7 @@ const Team = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-blue-950 mb-4">Neden Medipodo?</h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Ekibimiz, sürekli eğitim ve gelişime büyük önem verir. En son tedavi yöntemleri ve teknolojiler konusunda kendilerini sürekli günceller. Hasta memnuniyeti ve başarılı tedavi sonuçları bizim için en önemli hedeflerdir.
+              Ekibimiz, sürekli eğitim ve gelişime büyük önem verir. En son teknoloji yöntemleri ve uygulamalar konusunda kendilerini sürekli günceller. Memnuniyet ve başarılı sonuçlar bizim için en önemli hedeflerdir.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
