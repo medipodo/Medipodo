@@ -70,7 +70,7 @@ const Team = () => {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="text-3xl font-bold text-blue-700 mb-2">100%</div>
-                <p className="text-gray-600">Sertifikalı Uzmanlar</p>
+                <p className="text-gray-600">Profesyonel Hizmet</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="text-3xl font-bold text-blue-700 mb-2">7/24</div>
