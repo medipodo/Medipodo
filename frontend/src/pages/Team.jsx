@@ -73,7 +73,7 @@ const Team = () => {
                 <p className="text-gray-600">Sertifikalı Uzmanlar</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="text-3xl font-bold text-blue-700 mb-2">24/7</div>
+                <div className="text-3xl font-bold text-blue-700 mb-2">7/24</div>
                 <p className="text-gray-600">Danışma Desteği</p>
               </div>
             </div>
