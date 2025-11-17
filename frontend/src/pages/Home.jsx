@@ -141,11 +141,10 @@ const Home = () => {
               <Card key={item.id} className="overflow-hidden hover:shadow-xl transition-all">
                 <CardContent className="p-0">
                   <div className="relative aspect-square">
-                    <img
+                    <OptimizedImage
                       src={item.before}
                       alt={item.title}
                       className="w-full h-full object-cover"
-                      loading="lazy"
                     />
                   </div>
                   <div className="p-4">
