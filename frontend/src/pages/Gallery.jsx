@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import { galleryImages } from '../mock';
 import { Card, CardContent } from '../components/ui/card';
+import OptimizedImage from '../components/OptimizedImage';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
