@@ -178,6 +178,41 @@ export const galleryImages = [
     after: '/images/gallery/g5.jpg',
     title: 'Tırnak Restorasyonu',
     description: 'Hasarlı tırnak onarımı ve bakımı'
+  },
+  {
+    id: 6,
+    before: '/images/gallery/g6.jpg',
+    after: '/images/gallery/g6.jpg',
+    title: 'Topuk Çatlağı Tedavisi',
+    description: 'Ciddi topuk çatlaklarında profesyonel tedavi sonuçları'
+  },
+  {
+    id: 7,
+    before: '/images/gallery/g7.jpg',
+    after: '/images/gallery/g7.jpg',
+    title: 'Batık Tırnak ve Ortoniksi',
+    description: 'Ortoniksi uygulaması ile batık tırnak tedavisi'
+  },
+  {
+    id: 8,
+    before: '/images/gallery/g8.jpg',
+    after: '/images/gallery/g8.jpg',
+    title: 'Tırnak Mantarı Tedavisi',
+    description: 'Tırnak mantarı tedavisi öncesi ve sonrası'
+  },
+  {
+    id: 9,
+    before: '/images/gallery/g9.jpg',
+    after: '/images/gallery/g9.jpg',
+    title: 'Batık Tırnak Tedavisi',
+    description: 'Ağrısız batık tırnak tedavisi ve iyileşme süreci'
+  },
+  {
+    id: 10,
+    before: '/images/gallery/g10.jpg',
+    after: '/images/gallery/g10.jpg',
+    title: 'Tırnak Mantarı Tedavisi',
+    description: 'Kalıcı tırnak mantarı tedavisi sonuçları'
   }
 ];
 
