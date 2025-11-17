@@ -4,6 +4,7 @@ import { ArrowRight, Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Z
 import { services, whyChooseUs, galleryImages, blogPosts } from '../mock';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import OptimizedImage from '../components/OptimizedImage';
 
 const iconMap = {
   Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Zap
@@ -140,11 +141,10 @@ const Home = () => {
               <Card key={item.id} className="overflow-hidden hover:shadow-xl transition-all">
                 <CardContent className="p-0">
                   <div className="relative aspect-square">
-                    <img
+                    <OptimizedImage
                       src={item.before}
                       alt={item.title}
                       className="w-full h-full object-cover"
-                      loading="lazy"
                     />
                   </div>
                   <div className="p-4">

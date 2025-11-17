@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import { galleryImages } from '../mock';
 import { Card, CardContent } from '../components/ui/card';
+import OptimizedImage from '../components/OptimizedImage';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -32,11 +33,10 @@ const Gallery = () => {
               >
                 <CardContent className="p-0">
                   <div className="relative aspect-square group">
-                    <img
+                    <OptimizedImage
                       src={item.before}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                       <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
