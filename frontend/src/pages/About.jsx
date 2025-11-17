@@ -6,8 +6,8 @@ const About = () => {
   const values = [
     {
       icon: Heart,
-      title: 'Hasta Odaklılık',
-      description: 'Her hastasımıza kişiye özel, özenli ve kapsayıcı hizmet sunuyoruz.'
+      title: 'Kişi Odaklılık',
+      description: 'Her danışanımıza kişiye özel, özenli ve kapsayıcı hizmet sunuyoruz.'
     },
     {
       icon: Award,
@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: Users,
       title: 'Şeffaflık',
-      description: 'Hastalarımızla açık iletişim ve güven ilişkisi kuruyoruz.'
+      description: 'Danışanlarımıza açık iletişim ve güven ilişkisi kuruyoruz.'
     }
   ];
 
@@ -34,7 +34,7 @@ const About = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-950 mb-6">Hakkımızda</h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Medipodo Ayak Bakımı, Ankara'da ayak sağlığı ve podoloji alanında uzmanlaşmış öncü bir sağlık merkezidir.
+              Medipodo Medikal Sağlık Hizmeti San. ve Tic. Ltd. Şti., Ankara'da ayak sağlığı ve podoloji alanında uzmanlaşmış öncü bir uygulama merkezidir.
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-blue-950 mb-6">Hikayemiz</h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Medipodo Ayak Bakımı, ayak sağlığının genel sağlık ve yaşam kalitesi üzerindeki önemini kavrayan bir ekip tarafından kurulmuştur. Misyonumuz, Ankara ve çevresindeki topluma en yüksek standartlarda podoloji hizmeti sunmaktır.
+                    Medipodo Bağlıca Ayak Bakımı, ayak sağlığının genel sağlık ve yaşam kalitesi üzerindeki önemini kavrayan bir ekip tarafından kurulmuştur. Misyonumuz, Ankara ve çevresindeki topluma en yüksek standartlarda podoloji hizmeti sunmaktır.
                   </p>
                   <p>
                     Yılların deneyimi ve sürekli eğitimle, batık tırnak, tırnak mantarı, nasır tedavisi ve kapsamlı ayak bakımı konularında uzmanlaştık. Modern ekipmanlarımız ve kanıtlanmış tedavi protokollerimiz ile hastalarımıza en etkili sonuçları sunuyoruz.
