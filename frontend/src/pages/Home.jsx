@@ -4,6 +4,7 @@ import { ArrowRight, Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Z
 import { services, whyChooseUs, galleryImages, blogPosts } from '../mock';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import OptimizedImage from '../components/OptimizedImage';
 
 const iconMap = {
   Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Zap
