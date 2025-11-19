@@ -1,0 +1,18 @@
+# Medipodo - Ayak Sağlığı ve Podoloji Merkezi
+# robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://medipodo.com/sitemap.xml
+
+# Hızlı erişim için önemli sayfalar
+Allow: /hizmetler
+Allow: /blog
+Allow: /galeri
+Allow: /hakkimizda
+Allow: /ekip
+Allow: /iletisim
+
+# Engellenen alanlar (yok)
