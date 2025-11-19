@@ -4,7 +4,7 @@
   <!-- Ana Sayfa -->
   <url>
     <loc>https://medipodo.com/</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Hakkımızda -->
   <url>
     <loc>https://medipodo.com/hakkimizda</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Hizmetler Ana Sayfa -->
   <url>
     <loc>https://medipodo.com/hizmetler</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -28,42 +28,42 @@
   <!-- Hizmet Detay Sayfaları -->
   <url>
     <loc>https://medipodo.com/hizmet/batik-tirnak</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://medipodo.com/hizmet/tirnak-mantari</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://medipodo.com/hizmet/topuk-bakimi</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://medipodo.com/hizmet/nasir-tedavisi</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://medipodo.com/hizmet/ayak-bakimi</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://medipodo.com/hizmet/evde-bakim</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -71,7 +71,7 @@
   <!-- Galeri -->
   <url>
     <loc>https://medipodo.com/galeri</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -79,7 +79,7 @@
   <!-- Blog Ana Sayfa -->
   <url>
     <loc>https://medipodo.com/blog</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -87,21 +87,21 @@
   <!-- Blog Detay Sayfaları -->
   <url>
     <loc>https://medipodo.com/blog/ayak-sagligi-ipuclari</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://medipodo.com/blog/batik-tirnak-nedenleri</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://medipodo.com/blog/tirnak-mantari-tedavisi</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -109,7 +109,7 @@
   <!-- Ekip -->
   <url>
     <loc>https://medipodo.com/ekip</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -117,7 +117,7 @@
   <!-- İletişim -->
   <url>
     <loc>https://medipodo.com/iletisim</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
