@@ -1,6 +1,2 @@
-# Static files - don't redirect
-/robots.txt   /robots.txt   200
-/sitemap.xml  /sitemap.xml  200
-
-# SPA routing - redirect everything else to index.html
-/*    /index.html   200
+# SPA routing - but allow static files to be served first
+/*    /index.html   200!
