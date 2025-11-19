@@ -11,12 +11,7 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Redirects for SPA routing - force flag allows static files first
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+# Redirects handled by _redirects file in public folder
 
 # Headers for better caching
 [[headers]]
