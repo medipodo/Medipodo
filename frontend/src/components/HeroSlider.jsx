@@ -85,27 +85,27 @@ const HeroSlider = () => {
               />
               
               {/* Content Overlay - Bottom Center */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent py-12 md:py-16">
-                <div className="container mx-auto px-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent py-6 md:py-12 lg:py-16">
+                <div className="container mx-auto px-3 md:px-4">
                   <div className="max-w-3xl mx-auto text-center text-white">
-                    <p className="text-blue-300 font-semibold mb-2 text-xs md:text-sm uppercase tracking-wider">
+                    <p className="text-blue-300 font-semibold mb-1 md:mb-2 text-[10px] md:text-sm uppercase tracking-wider">
                       {slide.subtitle}
                     </p>
-                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+                    <h1 className="text-lg md:text-4xl lg:text-5xl font-bold mb-2 md:mb-3 leading-tight">
                       {slide.title}
                     </h1>
-                    <p className="text-sm md:text-lg mb-6 text-gray-200 max-w-2xl mx-auto">
+                    <p className="text-xs md:text-lg mb-4 md:mb-6 text-gray-200 max-w-2xl mx-auto">
                       {slide.description}
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                      <Link to={slide.ctaLink}>
-                        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 text-base w-full sm:w-auto">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-3">
+                      <Link to={slide.ctaLink} className="w-full sm:w-auto">
+                        <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 md:px-6 md:py-5 text-sm md:text-base w-full">
                           {slide.cta}
                         </Button>
                       </Link>
-                      <a href="tel:905456569747">
-                        <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 py-5 text-base w-full sm:w-auto">
-                          <Phone className="mr-2" size={18} />
+                      <a href="tel:905456569747" className="w-full sm:w-auto">
+                        <Button size="sm" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-4 py-3 md:px-6 md:py-5 text-sm md:text-base w-full">
+                          <Phone className="mr-1 md:mr-2" size={16} />
                           Hemen Ara
                         </Button>
                       </a>
