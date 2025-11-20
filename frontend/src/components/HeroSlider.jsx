@@ -9,6 +9,7 @@ const HeroSlider = () => {
   const slides = [
     {
       image: '/images/slider/medipodo.jpg',
+      mobileImage: '/images/slider/mobile/ankara-podolog.jpg',
       title: 'Medipodo Ayak Sağlığı',
       subtitle: 'Profesyonel Podoloji Hizmetleri',
       description: 'Batık tırnak, tırnak mantarı ve ayak bakımı konusunda uzman ekibimizle yanınızdayız',
@@ -17,6 +18,7 @@ const HeroSlider = () => {
     },
     {
       image: '/images/slider/ayakbakimi.jpg',
+      mobileImage: '/images/slider/mobile/6.jpg',
       title: 'Medikal Ayak Bakımı',
       subtitle: 'Sağlıklı Ayaklar İçin',
       description: 'Hijyenik koşullarda profesyonel ayak bakımı ve tedavi hizmetleri',
@@ -25,6 +27,7 @@ const HeroSlider = () => {
     },
     {
       image: '/images/slider/tirnak-teli.jpg',
+      mobileImage: '/images/slider/mobile/ortoniksi.jpg',
       title: 'Batık Tırnak Tedavisi',
       subtitle: 'Ağrısız ve Etkili Çözüm',
       description: 'Ortoniksi uygulaması ile batık tırnak sorunlarınıza kalıcı çözüm',
@@ -33,6 +36,7 @@ const HeroSlider = () => {
     },
     {
       image: '/images/slider/podolog.jpg',
+      mobileImage: '/images/slider/mobile/podolog-serdar-ceylan.jpg',
       title: 'Uzman Podolog Kadrosu',
       subtitle: 'Deneyim ve Güvenilirlik',
       description: 'Alanında uzman podologlarımız ile profesyonel hizmet garantisi',
