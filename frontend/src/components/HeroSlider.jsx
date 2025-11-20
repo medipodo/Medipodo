@@ -69,54 +69,54 @@ const HeroSlider = () => {
 
   return (
     <div className="relative w-full overflow-hidden bg-white">
-      {/* Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`relative transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0 absolute inset-0'
-          }`}
-        >
-          {/* Background Image - Full Width */}
-          <div className="relative w-full">
-            <img
-              src={slide.image}
-              alt={slide.title}
-              className="w-full h-auto object-contain"
-            />
-            
-            {/* Content Overlay - Bottom Center */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent py-12 md:py-16">
-              <div className="container mx-auto px-4">
-                <div className="max-w-3xl mx-auto text-center text-white">
-                  <p className="text-blue-300 font-semibold mb-2 text-xs md:text-sm uppercase tracking-wider">
-                    {slide.subtitle}
-                  </p>
-                  <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
-                    {slide.title}
-                  </h1>
-                  <p className="text-sm md:text-lg mb-6 text-gray-200 max-w-2xl mx-auto">
-                    {slide.description}
-                  </p>
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                    <Link to={slide.ctaLink}>
-                      <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 text-base w-full sm:w-auto">
-                        {slide.cta}
-                      </Button>
-                    </Link>
-                    <a href="tel:905456569747">
-                      <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 py-5 text-base w-full sm:w-auto">
-                        <Phone className="mr-2" size={18} />
-                        Hemen Ara
-                      </Button>
-                    </a>
+      <div className="relative w-full">
+        {/* Slides */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`${index === currentSlide ? 'block' : 'hidden'}`}
+          >
+            {/* Background Image - Full Width */}
+            <div className="relative w-full">
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="w-full h-auto"
+              />
+              
+              {/* Content Overlay - Bottom Center */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent py-12 md:py-16">
+                <div className="container mx-auto px-4">
+                  <div className="max-w-3xl mx-auto text-center text-white">
+                    <p className="text-blue-300 font-semibold mb-2 text-xs md:text-sm uppercase tracking-wider">
+                      {slide.subtitle}
+                    </p>
+                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+                      {slide.title}
+                    </h1>
+                    <p className="text-sm md:text-lg mb-6 text-gray-200 max-w-2xl mx-auto">
+                      {slide.description}
+                    </p>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                      <Link to={slide.ctaLink}>
+                        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 text-base w-full sm:w-auto">
+                          {slide.cta}
+                        </Button>
+                      </Link>
+                      <a href="tel:905456569747">
+                        <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-6 py-5 text-base w-full sm:w-auto">
+                          <Phone className="mr-2" size={18} />
+                          Hemen Ara
+                        </Button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
       {/* Dots Navigation */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
