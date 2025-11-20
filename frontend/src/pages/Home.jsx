@@ -5,6 +5,7 @@ import { services, whyChooseUs, galleryImages, blogPosts } from '../mock';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import OptimizedImage from '../components/OptimizedImage';
+import HeroSlider from '../components/HeroSlider';
 
 const iconMap = {
   Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Zap
@@ -13,38 +14,8 @@ const iconMap = {
 const Home = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFFM0E4QSIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-40"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block mb-6 px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-              Ankara'nın Güvenilir Podoloji Merkezi
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-950 mb-6 leading-tight">
-              Sağlıklı Ayaklar,
-              <span className="block text-blue-700">Mutlu Yaşam</span>
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Profesyonel podoloji hizmetleri ile ayak sağlığınızda uzman yaklaşım. Modern teknikler ve deneyimli kadromuzla yanınızdayız.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/iletisim">
-                <Button size="lg" className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-6 text-lg">
-                  Randevu Alın
-                  <ArrowRight className="ml-2" size={20} />
-                </Button>
-              </Link>
-              <Link to="/hizmetler">
-                <Button size="lg" variant="outline" className="border-2 border-blue-700 text-blue-700 hover:bg-blue-50 px-8 py-6 text-lg">
-                  Hizmetlerimiz
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Slider */}
+      <HeroSlider />
 
       {/* Why Choose Us */}
       <section className="py-16 bg-white">
