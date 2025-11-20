@@ -65,11 +65,11 @@ const HeroSlider = () => {
             key={index}
             className={`${index === currentSlide ? 'block' : 'hidden'}`}
           >
-            <div className="relative w-full min-h-[500px]">
+            <div className="relative w-full">
               <img
-                src={slide.image}
+                src={slide.mobileImage}
                 alt={slide.title}
-                className="w-full h-[500px] object-cover"
+                className="w-full h-auto"
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex items-end pb-12">
