@@ -82,10 +82,10 @@ const HeroSlider = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain bg-gray-900"
             />
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
           </div>
 
           {/* Content */}
