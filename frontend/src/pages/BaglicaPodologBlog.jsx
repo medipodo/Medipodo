@@ -507,6 +507,77 @@ const BaglicaPodologBlog = () => {
               </div>
             </section>
 
+            {/* Podolog Seçerken Dikkat Edilecekler */}
+            <section className="mb-16 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Podolog Ararken Nelere Dikkat Etmelisiniz?
+              </h2>
+
+              <div className="mb-8">
+                <img 
+                  src="/blog-images/20.jpg" 
+                  alt="Profesyonel Podolog Seçimi"
+                  className="w-full h-auto rounded-xl shadow-md"
+                  loading="lazy"
+                />
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                {[
+                  'Uzman podolog tarafından işlem yapılması',
+                  'Yüksek düzey sterilizasyon',
+                  'Tek kullanımlık sarf ürünler',
+                  'Yönetmeliklere uygun ortam',
+                  'Tecrübeli ekip',
+                  'Şeffaf fiyatlandırma',
+                  'Danışana özel bakım planı'
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                    <span className="text-green-600 mr-3 text-xl font-bold">✓</span>
+                    <span className="text-gray-700 font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-blue-600 text-white p-6 rounded-xl text-center">
+                <p className="text-lg font-semibold">
+                  Medipodo olarak tüm bu maddeleri eksiksiz karşılıyoruz.
+                </p>
+              </div>
+            </section>
+
+            {/* Neden Medipodo */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Neden Bağlıca'da Medipodo?
+              </h2>
+
+              <div className="mb-8">
+                <img 
+                  src="/blog-images/21.png" 
+                  alt="Medipodo Ayak Sağlığı Merkezi"
+                  className="w-full h-auto rounded-xl shadow-lg"
+                  loading="lazy"
+                />
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { icon: '👨‍⚕️', text: 'Eğitimli ve deneyimli podolog kadrosu' },
+                  { icon: '🏥', text: 'Modern cihazlar ve steril ortam' },
+                  { icon: '🏠', text: 'Evde hizmet seçeneği' },
+                  { icon: '📅', text: 'Aynı gün randevu' },
+                  { icon: '💎', text: 'Nazik, profesyonel ve çözüm odaklı yaklaşım' },
+                  { icon: '⭐', text: 'Yüksek memnuniyet' }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div className="text-4xl mb-3">{item.icon}</div>
+                    <p className="text-gray-700 font-medium">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
             {/* CTA Section */}
             <section className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-white text-center">
               <h2 className="text-3xl font-bold mb-4">
