@@ -137,7 +137,7 @@ const BaglicaPodologBlog = () => {
 
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-xl mb-6">
                   <p className="text-gray-800 font-medium">
-                    💡 Bağlıca'da tırnak batması tedavisi için en etkili yöntem <strong>ortoniksi</strong> olup cerrahi gerektirmez.
+                    💡 Tırnak batması tedavisi için en etkili yöntem <strong>ortoniksi</strong> olup cerrahi gerektirmez.
                   </p>
                 </div>
 
