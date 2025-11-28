@@ -14,6 +14,7 @@ import BlogDetail from './pages/BlogDetail';
 import About from './pages/About';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import BaglicaPodologBlog from './pages/BaglicaPodologBlog';
 
 function App() {
   return (
