@@ -390,9 +390,27 @@ const BaglicaPodologBlog = () => {
                   <strong>Bağlıca, Çayyolu, Yaşamkent, Ümitköy, Alacaatlı, Etimesgut, Sincan, İncek, Gölbaşı, Çankaya, Dikmen</strong> bölgelerinde evde ayak bakımı hizmeti sunuyoruz.
                 </p>
 
+                <div className="bg-white p-6 rounded-xl mb-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Evde Bakım Hizmeti:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <span className="text-blue-600 mr-3">✓</span>
+                      <span className="text-gray-700">1 Podolog</span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-blue-600 mr-3">✓</span>
+                      <span className="text-gray-700">1 Yardımcı personel</span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-blue-600 mr-3">✓</span>
+                      <span className="text-gray-700 font-medium">Tamamen steril şekilde uygulama</span>
+                    </li>
+                  </ul>
+                </div>
+
                 <img 
                   src="/blog-images/15.jpg" 
-                  alt="Evde Medikal Ayak Bakımı Hizmeti"
+                  alt="Evde Medikal Ayak Bakımı Hizmeti - Ankara"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
                 />
