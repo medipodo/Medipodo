@@ -157,12 +157,35 @@ const BaglicaPodologBlog = () => {
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Tırnak mantarı hem estetik hem de konfor açısından oldukça rahatsız edicidir.
+                  Tırnak mantarı hem estetik hem de konfor açısından oldukça rahatsız edicidir. İlerledikçe ağrı ve enfeksiyon riskini artırabilir. <strong>Medipodo'da tırnak mantarı bakımı:</strong>
+                </p>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Mantar türünün değerlendirilmesi</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Kalınlaşmış plakların ve ölü dokunun temizlenmesi</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Kişiye özel medikal ayak bakımı</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Düzenli kontrol planlaması</span>
+                  </li>
+                </ul>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Ankara'da tırnak mantarı bakımında modern yöntemler ve etkili sonuçlar ile öne çıkıyoruz.
                 </p>
 
                 <img 
                   src="/blog-images/6.jpg" 
-                  alt="Tırnak Mantarı Tedavisi"
+                  alt="Tırnak Mantarı Tedavisi - Profesyonel Bakım"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
                 />
