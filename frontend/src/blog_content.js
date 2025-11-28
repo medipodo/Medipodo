@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'baglica-podolog-hizmetleri',
+    title: 'Bağlıca Podolog Hizmetleri – Medipodo ile Profesyonel Ayak Sağlığı Bakımı',
+    slug: 'baglica-podolog-hizmetleri',
+    excerpt: 'Bağlıca ve çevresinde profesyonel podolog arıyorsanız Medipodo Ayak Sağlığı Merkezi; tırnak batması, tırnak mantarı, nasır temizliği, çatlak topuk, diyabetik ayak bakımı ve evde medikal ayak bakımı hizmetleriyle Ankara\'da güvenilir ve uzman bir merkezdir.',
+    image: '/blog-images/14.jpg',
+    date: '28 Kasım 2024',
+    readTime: '10 dk',
+    tags: ['Podoloji', 'Ayak Sağlığı', 'Bağlıca', 'Ankara'],
+    content: 'Özel blog sayfası: /blog/baglica-podolog-hizmetleri'
+  },
+  {
     id: 'ayak-sagligi-ipuclari',
     title: 'Ayak Sağlığını Korumak: Podolojik Yaklaşımla 12 Temel İlke',
     slug: 'ayak-sagligi-ipuclari',
