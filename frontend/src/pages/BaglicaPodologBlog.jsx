@@ -343,8 +343,27 @@ const BaglicaPodologBlog = () => {
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Diyabet hastalarının ayakları yara ve enfeksiyona karşı daha hassastır.
+                  Diyabet hastalarının ayakları yara ve enfeksiyona karşı daha hassastır. Hatalı tırnak kesimleri riskli ülserlere yol açabilir. <strong>Medipodo'da diyabetik ayak bakımında yapılanlar:</strong>
                 </p>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Duyu testleri</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Bası alanı analizleri</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Risk noktalarının belirlenmesi</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Düzenli kontrol planlaması</span>
+                  </li>
+                </ul>
 
                 <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
                   <p className="text-gray-800 font-medium">
@@ -354,7 +373,7 @@ const BaglicaPodologBlog = () => {
 
                 <img 
                   src="/blog-images/18.jpg" 
-                  alt="Diyabetik Ayak Bakımı"
+                  alt="Diyabetik Ayak Bakımı - Özel Tedavi"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
                 />
