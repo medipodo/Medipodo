@@ -202,6 +202,89 @@ const BaglicaPodologBlog = () => {
                   <strong>Nasır</strong>; uzun süreli basınç, sürtünme veya yürüyüş bozuklukları nedeniyle oluşan koruyucu sertleşmiş deri tabakasıdır.
                 </p>
 
+                <div className="bg-gray-50 p-6 rounded-xl mb-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Nasır Çeşitleri:</h4>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">▪</span>
+                      <span className="text-gray-700">Sert Nasır</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">▪</span>
+                      <span className="text-gray-700">Yumuşak Nasır</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">▪</span>
+                      <span className="text-gray-700">Tohum Nasır</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">▪</span>
+                      <span className="text-gray-700">Pipetleşmiş Nasır</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">▪</span>
+                      <span className="text-gray-700">Yaygın Kallus</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">▪</span>
+                      <span className="text-gray-700">İntraklav (Tırnak Altı Nasır)</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">▪</span>
+                      <span className="text-gray-700">Plantar Verruka (Siğil)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-50 p-6 rounded-xl mb-6">
+                  <h4 className="font-bold text-gray-900 mb-3">Başlıca Nedenleri:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 mt-1">•</span>
+                      <span className="text-gray-700">Yanlış ayakkabı kullanımı</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 mt-1">•</span>
+                      <span className="text-gray-700">Düz tabanlık</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 mt-1">•</span>
+                      <span className="text-gray-700">Uzun süre ayakta durma</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 mt-1">•</span>
+                      <span className="text-gray-700">Yürüme bozuklukları</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-blue-600 mr-3 mt-1">•</span>
+                      <span className="text-gray-700">Yapısal deformiteler</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  <strong>Medipodo'da nasır tedavisi:</strong>
+                </p>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Acıtmadan profesyonel cihazlarla temizlik</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Kök bölgesine mümkün olan müdahale</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Tekrar oluşumu azaltan bası azaltıcı öneriler</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Kişiye özel bakım ürünleri ve tabanlık tavsiyeleri</span>
+                  </li>
+                </ul>
+
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <img 
                     src="/blog-images/16.jpg" 
