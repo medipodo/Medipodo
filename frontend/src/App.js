@@ -28,9 +28,10 @@ function App() {
           <Route path="/hizmet/:serviceId" element={<ServiceDetail />} />
           <Route path="/galeri" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/baglica-podolog-hizmetleri" element={<BaglicaPodologBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
-          <Route path="/ekip" element={<Team />} />
+          <Route path="/kadromuz" element={<Team />} />
           <Route path="/iletisim" element={<Contact />} />
         </Routes>
         <Footer />
