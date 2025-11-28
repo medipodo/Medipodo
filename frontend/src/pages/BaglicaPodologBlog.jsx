@@ -420,16 +420,35 @@ const BaglicaPodologBlog = () => {
               <div className="mb-12 bg-white rounded-2xl shadow-lg p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                   <span className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center mr-4">7</span>
-                  Medikal Akrilik Tırnak
+                  Medikal Akrilik Tırnak (Medikal Rekonstrüksiyon)
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Travma, mantar, darbe veya tırnak kaybı nedeniyle bozulmuş tırnak yapıları medikal akrilik ile yeniden şekillendirilebilir.
+                  Travma, mantar, darbe veya tırnak kaybı nedeniyle bozulmuş tırnak yapıları medikal akrilik ile yeniden şekillendirilebilir. Bu işlem:
                 </p>
+
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div className="flex items-center bg-gray-50 p-4 rounded-lg">
+                    <span className="text-blue-600 mr-3">✓</span>
+                    <span className="text-gray-700 font-medium">Estetik amaçlı değil</span>
+                  </div>
+                  <div className="flex items-center bg-gray-50 p-4 rounded-lg">
+                    <span className="text-blue-600 mr-3">✓</span>
+                    <span className="text-gray-700 font-medium">Tamamen medikal</span>
+                  </div>
+                  <div className="flex items-center bg-gray-50 p-4 rounded-lg">
+                    <span className="text-blue-600 mr-3">✓</span>
+                    <span className="text-gray-700 font-medium">Doğal görünümlü</span>
+                  </div>
+                  <div className="flex items-center bg-gray-50 p-4 rounded-lg">
+                    <span className="text-blue-600 mr-3">✓</span>
+                    <span className="text-gray-700 font-medium">Dayanıklı rekonstrüksiyon</span>
+                  </div>
+                </div>
 
                 <img 
                   src="/blog-images/9.jpg" 
-                  alt="Medikal Akrilik Tırnak"
+                  alt="Medikal Akrilik Tırnak Rekonstrüksiyonu"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
                 />
