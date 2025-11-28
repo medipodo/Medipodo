@@ -461,7 +461,7 @@ const BaglicaPodologBlog = () => {
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Kişiye özel tabanlıklar, ayağın bası noktalarını ve yük dağılımını dengeler.
+                  Kişiye özel tabanlıklar, ayağın bası noktalarını ve yük dağılımını dengeler, adım düzenini optimize eder, böylece uzun vadede sadece ayak sağlığını değil, diz, kalça ve bel sağlığını da koruyarak günlük yaşam konforunu artırır ve olası ağrı veya deformitelerin önüne geçer.
                 </p>
 
                 <img 
@@ -471,9 +471,36 @@ const BaglicaPodologBlog = () => {
                   loading="lazy"
                 />
 
+                <h4 className="text-xl font-bold text-gray-900 mb-4">
+                  Medipodo'da Tabanlık Analizi Nasıl Yapılır?
+                </h4>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Dinamik yürüyüş analizi</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Statik basınç ölçümü</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Ayak arkı ve deformite kontrolü</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Yaşam tarzı ve meslek analizi</span>
+                  </li>
+                </ul>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Tüm veriler işlenerek kişiye tamamen özel tabanlık tasarlanır.
+                </p>
+
                 <img 
                   src="/blog-images/19.jpg" 
-                  alt="Ayak Analizi"
+                  alt="Ayak Analizi ve Tabanlık Ölçümü"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
                 />
