@@ -309,12 +309,27 @@ const BaglicaPodologBlog = () => {
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Ankara'nın kuru havası topuk çatlaklarının artmasına neden olabilir.
+                  Ankara'nın kuru havası topuk çatlaklarının artmasına neden olabilir. Bu çatlaklar zamanla enfeksiyon riski taşıdığı için profesyonel bakım gerektirir. <strong>Medipodo'da uygulanan bakım:</strong>
                 </p>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Kalınlaşmış derinin kontrollü şekilde alınması</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Cilt bariyerinin yeniden güçlendirilmesi</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Kişiye özel yoğun nemlendirici önerileri</span>
+                  </li>
+                </ul>
 
                 <img 
                   src="/blog-images/4.jpg" 
-                  alt="Çatlak Topuk Bakımı"
+                  alt="Çatlak Topuk Bakımı - Profesyonel Tedavi"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
                 />
