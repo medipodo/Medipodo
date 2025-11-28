@@ -980,3 +980,4 @@ Onikomikoz, basit bir kozmetik sorun değil, multifaktöriyel bir hastalıktır.
     tags: ['Onikomikoz', 'Tırnak Mantarı', 'Antifungal Tedavi', 'Mikrobiyoloji', 'Podolojik Yaklaşım']
   }
 ];
+ 
