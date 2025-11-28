@@ -73,26 +73,22 @@ const BaglicaPodologBlog = () => {
               </h2>
               
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-6">
-                <p className="text-gray-700 leading-relaxed">
-                  <strong>Podolog</strong>; bireylerin ayak sağlığının korunması ve ilgili tabibin teşhis–tedavi yönlendirmesine bağlı olarak ayak bakımı yapan sağlık personelidir.
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <strong>Podolog</strong>; bireylerin ayak sağlığının korunması ve ilgili tabibin teşhis–tedavi yönlendirmesine bağlı olarak ayak bakımı yapan sağlık personelidir. Bir podolog şu işlemleri gerçekleştirir:
                 </p>
+                <ul className="space-y-2 ml-4">
+                  <li className="text-gray-700">• Tırnak batması</li>
+                  <li className="text-gray-700">• Tırnak mantarı</li>
+                  <li className="text-gray-700">• Nasır ve siğil küretajı</li>
+                  <li className="text-gray-700">• Çatlak topuk bakımı</li>
+                  <li className="text-gray-700">• Diyabetik ayak eğitimi</li>
+                  <li className="text-gray-700">• Ayak analizi ve koruyucu sağlık önerileri</li>
+                </ul>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                {[
-                  'Tırnak batması tedavisi',
-                  'Tırnak mantarı bakımı',
-                  'Nasır ve siğil küretajı',
-                  'Çatlak topuk bakımı',
-                  'Diyabetik ayak eğitimi',
-                  'Ayak analizi ve koruyucu sağlık önerileri'
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                    <span className="text-blue-600 mr-3 text-xl">✓</span>
-                    <span className="text-gray-700">{item}</span>
-                  </div>
-                ))}
-              </div>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                <strong>Bağlıca podolog</strong> arayanlar için Medipodo; deneyimli kadrosu, steril çalışma sistemi ve çözüm odaklı yaklaşımıyla öne çıkar.
+              </p>
             </section>
 
             {/* Hizmetlerimiz */}
