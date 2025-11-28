@@ -105,13 +105,46 @@ const BaglicaPodologBlog = () => {
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Tırnak batması çoğunlukla yanlış kesim, dar ayakkabı kullanımı veya yapısal tırnak bozuklukları nedeniyle oluşur.
+                  Tırnak batması çoğunlukla yanlış kesim, dar ayakkabı kullanımı veya yapısal tırnak bozuklukları nedeniyle oluşur. <strong>Medipodo'da tırnak batması tedavisi:</strong>
                 </p>
+
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Profesyonel cihazlarla nazikçe temizlik</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Batmış tırnak kenarının rahatlatılması</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Gerektiğinde tırnak düzeltme sistemi</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">B/S Bant – 3TO Tel (Ortoniksi) uygulamaları</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Enfeksiyon risk değerlendirmesi</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                    <span className="text-gray-700">Tekrar batmayı önleyici özel bakım önerileri</span>
+                  </li>
+                </ul>
+
+                <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-xl mb-6">
+                  <p className="text-gray-800 font-medium">
+                    💡 Bağlıca'da tırnak batması tedavisi için en etkili yöntem <strong>ortoniksi</strong> olup cerrahi gerektirmez.
+                  </p>
+                </div>
 
                 <img 
                   src="/blog-images/5.jpg" 
-                  alt="Tırnak Batması Tedavisi"
-                  className="w-full h-auto rounded-xl shadow-md mb-6"
+                  alt="Tırnak Batması Tedavisi - Ortoniksi Uygulaması"
+                  className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
                 />
               </div>
