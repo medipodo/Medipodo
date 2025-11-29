@@ -221,9 +221,11 @@ const CatlakTopukBlog = () => {
 
                 {/* PediZone Ürün Tanıtımı */}
                 <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-xl p-8 mb-6">
-                  <h4 className="text-2xl font-bold mb-4">✨ PediZone® %15 Urea Intense Repair Cream</h4>
+                  <h4 className="text-2xl font-bold mb-4">
+                    ✨ <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 underline">PediZone®</a> %15 Urea Intense Repair Cream
+                  </h4>
                   <p className="text-blue-100 leading-relaxed mb-4">
-                    Profesyonel podologların önerdiği PediZone®, özellikle çatlak topuk problemi yaşayanlar için geliştirilmiş medikal bir formüldür.
+                    Profesyonel podologların önerdiği <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 underline font-semibold">PediZone®</a>, özellikle çatlak topuk problemi yaşayanlar için geliştirilmiş medikal bir formüldür.
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-4 mb-6">
