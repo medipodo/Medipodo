@@ -260,12 +260,20 @@ const CatlakTopukBlog = () => {
                   </div>
                 </div>
 
-                <img 
-                  src="/blog-images/catlak-topuk/6.jpg" 
-                  alt="PediZone %15 Urea Intense Repair Cream çatlak topuk tedavi kremi"
-                  className="w-full h-auto rounded-xl shadow-lg"
-                  loading="lazy"
-                />
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <img 
+                    src="/blog-images/catlak-topuk/pedizone-urun-1.jpg" 
+                    alt="PediZone %15 Urea Intense Repair Cream - Çatlak topuk tedavi kremi"
+                    className="w-full h-auto rounded-xl shadow-lg"
+                    loading="lazy"
+                  />
+                  <img 
+                    src="/blog-images/catlak-topuk/pedizone-urun-2.jpg" 
+                    alt="PediZone topuk kremi - %15 Üre ile güçlü keratolitik etki"
+                    className="w-full h-auto rounded-xl shadow-lg"
+                    loading="lazy"
+                  />
+                </div>
 
                 <div className="bg-gray-50 p-6 rounded-xl mt-6">
                   <h5 className="font-bold text-gray-900 mb-3">📋 Kullanım Önerisi:</h5>
