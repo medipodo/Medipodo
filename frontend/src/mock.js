@@ -20,7 +20,7 @@ export const services = [
   {
     id: 'batik-tirnak',
     title: 'Batık Tırnak',
-    shortDesc: 'Deforme olan tırnaklarınıza doğal tırnak görünümü veriyoruz',
+    shortDesc: 'Ağrısız, sancısız ortoniksi uygulamaları',
     fullDesc: 'Batık tırnak, tırnağın kenarlarının cilde batması sonucu oluşan ağrılı bir durumdur. Profesyonel podoloji yaklaşımımızla, ağrısız ve kalıcı çözümler sunuyoruz. Modern teknikler ve steril koşullarda gerçekleştirdiğimiz tedavilerimiz ile enfeksiyon riskini minimize ederken, hızlı iyileşme sağlıyoruz.',
     icon: 'Scissors',
     image: '/images/services/Batik-Tirnak-tedavisi.jpg',
