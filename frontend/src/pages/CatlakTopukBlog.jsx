@@ -404,7 +404,7 @@ const CatlakTopukBlog = () => {
 
               <div className="mt-8 bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl">
                 <h4 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                  🌟 Evde Bakımda Profesyonel Çözüm: PediZone®
+                  🌟 Evde Bakımda Profesyonel Çözüm: <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">PediZone®</a>
                 </h4>
                 <p className="text-gray-700 text-center mb-6">
                   %15 Üre konsantrasyonu ile güçlü keratolitik etki. Çatlak topuklar için klinik olarak test edilmiş formül.
