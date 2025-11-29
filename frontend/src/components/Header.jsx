@@ -28,9 +28,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-0 ${
         isScrolled ? 'bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg py-3' : 'bg-gradient-to-r from-blue-900 to-blue-700 py-4'
       }`}
+      style={{ marginTop: 0, borderTop: 'none', outline: 'none' }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
