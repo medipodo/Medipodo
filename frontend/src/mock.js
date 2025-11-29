@@ -148,15 +148,15 @@ export const galleryImages = [
     id: 1,
     before: '/images/gallery/g1.jpg',
     after: '/images/gallery/g1.jpg',
-    title: 'Tırnak Mantarı Tedavisi',
-    description: 'Başarılı tırnak mantarı tedavisi öncesi ve sonrası'
+    title: 'Medikal Akrilik Tırnak',
+    description: 'Deformite sonucu tırnak kalmayan bölgeye doğal tırnak uygulaması yaptık'
   },
   {
     id: 2,
     before: '/images/gallery/g2.jpg',
     after: '/images/gallery/g2.jpg',
-    title: 'Topuk Çatlağı Tedavisi',
-    description: 'Profesyonel topuk bakımı ile harika sonuçlar'
+    title: 'Ciltte Aşırı Kalınlaşma (Hiperkeratoz) ',
+    description: 'Profesyonel medikal ayak bakımı ile harika sonuçlar'
   },
   {
     id: 3,
@@ -169,8 +169,8 @@ export const galleryImages = [
     id: 4,
     before: '/images/gallery/g4.jpg',
     after: '/images/gallery/g4.jpg',
-    title: 'Batık Tırnak Tedavisi',
-    description: 'Ağrısız batık tırnak tedavisi başarısı'
+    title: 'Onikogrifoz Tırnak Temizliği',
+    description: '7 yıl hiç kesilmemiş-Ağrısız uygulama, temiz görüntü'
   },
   {
     id: 5,
@@ -183,8 +183,8 @@ export const galleryImages = [
     id: 6,
     before: '/images/gallery/g6.jpg',
     after: '/images/gallery/g6.jpg',
-    title: 'Topuk Çatlağı Tedavisi',
-    description: 'Ciddi topuk çatlaklarında profesyonel tedavi sonuçları'
+    title: 'Soyulabilir Ayak Maskelerini Önermiyoruz - İşte Sebebi',
+    description: 'Medikal ayak bakımı ve Pedizone %15 Üreli Intense Repair Cream Kullanım Sonucu'
   },
   {
     id: 7,
@@ -197,8 +197,8 @@ export const galleryImages = [
     id: 8,
     before: '/images/gallery/g8.jpg',
     after: '/images/gallery/g8.jpg',
-    title: 'Tırnak Mantarı Tedavisi',
-    description: 'Tırnak mantarı tedavisi öncesi ve sonrası'
+    title: 'Enfeksiyonlu Batık Tırnak Vakası',
+    description: 'B/S Bant ile yakaladığımız başarı'
   },
   {
     id: 9,
