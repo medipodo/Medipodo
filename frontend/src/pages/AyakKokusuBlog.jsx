@@ -609,13 +609,9 @@ const AyakKokusuBlog = () => {
                     href="https://www.hepsiburada.com/ara?q=pedizone" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-white rounded-xl p-4 hover:scale-110 transition-transform duration-300 shadow-lg"
+                    className="bg-white rounded-xl px-6 py-4 hover:scale-110 transition-transform duration-300 shadow-lg flex items-center justify-center"
                   >
-                    <img 
-                      src="https://images.hepsiburada.net/assets/svg/logo-green-hepsiburada.svg" 
-                      alt="Hepsiburada'da PediZone"
-                      className="h-10 md:h-12"
-                    />
+                    <span className="text-2xl md:text-3xl font-bold text-orange-500">hepsiburada</span>
                   </a>
                   
                   <a 
