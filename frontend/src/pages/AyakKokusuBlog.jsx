@@ -612,7 +612,7 @@ const AyakKokusuBlog = () => {
                     className="bg-white rounded-xl p-4 hover:scale-110 transition-transform duration-300 shadow-lg"
                   >
                     <img 
-                      src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/27/hepsiburada_202301270125.jpg" 
+                      src="https://images.hepsiburada.net/assets/svg/logo-green-hepsiburada.svg" 
                       alt="Hepsiburada'da PediZone"
                       className="h-10 md:h-12"
                     />
