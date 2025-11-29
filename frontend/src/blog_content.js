@@ -7,7 +7,7 @@ export const enrichedBlogPosts = [
     slug: 'ayak-kokusu-ve-mantar-iliskisi',
     excerpt: 'Ayak kokusu ve mantar arasındaki bilimsel ilişki, keratolitik etki ve antifungal koruma. PediZone Temizleme Köpüğü ile kalıcı çözüm.',
     image: '/blog-images/ayak-kokusu/2.jpg',
-    date: '29 Kasım 2024',
+    date: '29 Kasım 2025',
     readTime: '15 dk',
     tags: ['Ayak Kokusu', 'Mantar', 'PediZone', 'Keratolitik', 'Antifungal'],
     content: 'Özel blog sayfası: /blog/ayak-kokusu-ve-mantar-iliskisi'
@@ -18,7 +18,7 @@ export const enrichedBlogPosts = [
     slug: 'kis-aylarinda-catlak-topuk-tedavisi',
     excerpt: 'Kış mevsiminde çatlak topuk problemi neden artar? Profesyonel tedavi yöntemleri, PediZone %15 Üre kremi ile evde bakım ve podolog önerileri.',
     image: '/blog-images/catlak-topuk/4.jpg',
-    date: '29 Kasım 2024',
+    date: '29 Kasım 2025',
     readTime: '12 dk',
     tags: ['Çatlak Topuk', 'Kış Bakımı', 'PediZone', 'Üre Kremi', 'Ayak Sağlığı'],
     content: 'Özel blog sayfası: /blog/kis-aylarinda-catlak-topuk-tedavisi'
@@ -29,7 +29,7 @@ export const enrichedBlogPosts = [
     slug: 'baglica-podolog-hizmetleri',
     excerpt: 'Bağlıca ve çevresinde profesyonel podolog arıyorsanız Medipodo Ayak Sağlığı Merkezi; tırnak batması, tırnak mantarı, nasır temizliği, çatlak topuk, diyabetik ayak bakımı ve evde medikal ayak bakımı hizmetleriyle Ankara\'da güvenilir ve uzman bir merkezdir.',
     image: '/blog-images/14.jpg',
-    date: '28 Kasım 2024',
+    date: '28 Kasım 2025',
     readTime: '10 dk',
     tags: ['Podoloji', 'Ayak Sağlığı', 'Bağlıca', 'Ankara'],
     content: 'Özel blog sayfası: /blog/baglica-podolog-hizmetleri'
