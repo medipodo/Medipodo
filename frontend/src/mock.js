@@ -19,8 +19,8 @@ export const siteInfo = {
 export const services = [
   {
     id: 'batik-tirnak',
-    title: 'Batık Tırnak Tedavisi',
-    shortDesc: 'Ağrısız ve etkili batık tırnak tedavisi ile rahatlayın',
+    title: 'Medikal Akrilik Tırnak',
+    shortDesc: 'Deforme olan tırnaklarınıza doğal tırnak görünümü veriyoruz',
     fullDesc: 'Batık tırnak, tırnağın kenarlarının cilde batması sonucu oluşan ağrılı bir durumdur. Profesyonel podoloji yaklaşımımızla, ağrısız ve kalıcı çözümler sunuyoruz. Modern teknikler ve steril koşullarda gerçekleştirdiğimiz tedavilerimiz ile enfeksiyon riskini minimize ederken, hızlı iyileşme sağlıyoruz.',
     icon: 'Scissors',
     image: '/images/services/Batik-Tirnak-tedavisi.jpg',
