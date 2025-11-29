@@ -522,7 +522,7 @@ const AyakKokusuBlog = () => {
                   },
                   {
                     q: 'PediZone ürünleri bir arada kullanılabilir mi?',
-                    a: <>Evet! Kompleks ayak bakımı için önerilen sistem: 1) <a href="https://pedizone.com/product/temizleme-kopugu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Temizleme Köpüğü</a> ile temizlik, 2) Bakım Serumu ile nemlendirme, 3) Onarıcı Krem ile koruma. Bu 3'lü sistem maksimum sonuç verir.</>
+                    a: <>Evet! Kompleks ayak bakımı için önerilen sistem: 1) <a href="https://pedizone.com/product/temizleme-kopugu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Temizleme Köpüğü</a> ile temizlik, 2) <a href="https://pedizone.com/product/mantar-karsiti-serum" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Bakım Serumu</a> ile nemlendirme, 3) <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Onarıcı Krem</a> ile koruma. Bu 3'lü sistem maksimum sonuç verir.</>
                   }
                 ].map((item, index) => (
                   <div key={index} className="bg-white rounded-xl shadow-md p-6">
