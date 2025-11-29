@@ -70,7 +70,7 @@ const AyakKokusuBlog = () => {
               />
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Bu kapsamlı rehberde, ayak kokusunun bilimsel kökenlerini, mantar enfeksiyonlarıyla olan derin bağını ve bu sorunu kökten çözmek için podologların da onayladığı bilimsel yaklaşımları, özellikle de <strong>keratolitik etki</strong> ve <strong>antifungal koruma</strong> sağlayan ürünlerin önemini inceleyeceğiz.
+                Bu kapsamlı rehberde, ayak kokusunun bilimsel kökenlerini, mantar enfeksiyonlarıyla olan derin bağını ve bu sorunu kökten çözmek için podologların da onayladığı bilimsel yaklaşımları, özellikle de <strong>keratolitik etki</strong> ve <strong>antifungal koruma</strong> sağlayan <a href="https://pedizone.com/product/temizleme-kopugu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">özel yıkama köpüğü</a> gibi ürünlerin önemini inceleyeceğiz.
               </p>
             </section>
 
