@@ -584,6 +584,54 @@ const AyakKokusuBlog = () => {
                 className="w-full max-w-2xl mx-auto h-auto rounded-xl shadow-2xl mt-8"
                 loading="lazy"
               />
+
+              {/* E-ticaret Platformları */}
+              <div className="mt-12 pt-8 border-t border-white/20">
+                <p className="text-lg mb-6 text-blue-100">
+                  PediZone ürünlerine güvenilir alışveriş sitelerinden de ulaşabilirsiniz:
+                </p>
+                
+                <div className="flex flex-wrap justify-center items-center gap-8">
+                  <a 
+                    href="https://www.trendyol.com/sr?q=pedizone&qt=pedizone&st=pedizone&os=1" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-white rounded-xl p-4 hover:scale-110 transition-transform duration-300 shadow-lg"
+                  >
+                    <img 
+                      src="https://cdn.dsmcdn.com/web/logo/ty-logo.svg" 
+                      alt="Trendyol'da PediZone"
+                      className="h-10 md:h-12"
+                    />
+                  </a>
+                  
+                  <a 
+                    href="https://www.hepsiburada.com/ara?q=pedizone" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-white rounded-xl p-4 hover:scale-110 transition-transform duration-300 shadow-lg"
+                  >
+                    <img 
+                      src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/27/hepsiburada_202301270125.jpg" 
+                      alt="Hepsiburada'da PediZone"
+                      className="h-10 md:h-12"
+                    />
+                  </a>
+                  
+                  <a 
+                    href="https://www.amazon.com.tr/s?k=pedizone&__mk_tr_TR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=I93LHBGJYRT3&sprefix=pedizone%2Caps%2C106&ref=nb_sb_noss_1" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-white rounded-xl p-4 hover:scale-110 transition-transform duration-300 shadow-lg"
+                  >
+                    <img 
+                      src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" 
+                      alt="Amazon'da PediZone"
+                      className="h-10 md:h-12"
+                    />
+                  </a>
+                </div>
+              </div>
             </section>
 
           </div>
