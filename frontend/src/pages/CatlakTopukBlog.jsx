@@ -563,11 +563,11 @@ const CatlakTopukBlog = () => {
 
               <div className="flex flex-wrap justify-center gap-4">
                 <a
-                  href="tel:05387028544"
+                  href="tel:05456569747"
                   className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Phone className="mr-2" size={24} />
-                  0538 702 85 44
+                  0545 656 97 47
                 </a>
                 <Link
                   to="/iletisim"
