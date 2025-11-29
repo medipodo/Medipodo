@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'kis-aylarinda-catlak-topuk-tedavisi',
+    title: 'Kış Aylarında Çatlak Topuk Problemi: Nedenleri, Önleme ve Profesyonel Tedavi',
+    slug: 'kis-aylarinda-catlak-topuk-tedavisi',
+    excerpt: 'Kış mevsiminde çatlak topuk problemi neden artar? Profesyonel tedavi yöntemleri, PediZone %15 Üre kremi ile evde bakım ve podolog önerileri.',
+    image: '/blog-images/catlak-topuk/4.jpg',
+    date: '29 Kasım 2024',
+    readTime: '12 dk',
+    tags: ['Çatlak Topuk', 'Kış Bakımı', 'PediZone', 'Üre Kremi', 'Ayak Sağlığı'],
+    content: 'Özel blog sayfası: /blog/kis-aylarinda-catlak-topuk-tedavisi'
+  },
+  {
     id: 'baglica-podolog-hizmetleri',
     title: 'Bağlıca Podolog Hizmetleri – Medipodo ile Profesyonel Ayak Sağlığı Bakımı',
     slug: 'baglica-podolog-hizmetleri',
