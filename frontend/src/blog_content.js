@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayak-kokusu-ve-mantar-iliskisi',
+    title: 'Ayak Kokusu ve Mantar İlişkisi: Neden Olur, Nasıl Önlenir?',
+    slug: 'ayak-kokusu-ve-mantar-iliskisi',
+    excerpt: 'Ayak kokusu ve mantar arasındaki bilimsel ilişki, keratolitik etki ve antifungal koruma. PediZone Temizleme Köpüğü ile kalıcı çözüm.',
+    image: '/blog-images/ayak-kokusu/2.jpg',
+    date: '29 Kasım 2024',
+    readTime: '15 dk',
+    tags: ['Ayak Kokusu', 'Mantar', 'PediZone', 'Keratolitik', 'Antifungal'],
+    content: 'Özel blog sayfası: /blog/ayak-kokusu-ve-mantar-iliskisi'
+  },
+  {
     id: 'kis-aylarinda-catlak-topuk-tedavisi',
     title: 'Kış Aylarında Çatlak Topuk Problemi: Nedenleri, Önleme ve Profesyonel Tedavi',
     slug: 'kis-aylarinda-catlak-topuk-tedavisi',
