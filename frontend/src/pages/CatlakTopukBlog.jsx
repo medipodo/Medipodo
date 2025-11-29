@@ -399,6 +399,21 @@ const CatlakTopukBlog = () => {
                 ))}
               </div>
 
+              <div className="mt-8 bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl">
+                <h4 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+                  🌟 Evde Bakımda Profesyonel Çözüm: PediZone®
+                </h4>
+                <p className="text-gray-700 text-center mb-6">
+                  %15 Üre konsantrasyonu ile güçlü keratolitik etki. Çatlak topuklar için klinik olarak test edilmiş formül.
+                </p>
+                <img 
+                  src="/blog-images/catlak-topuk/pedizone-urun-1.jpg" 
+                  alt="PediZone %15 Urea Intense Repair Cream - Evde çatlak topuk bakımı"
+                  className="w-full max-w-md mx-auto h-auto rounded-xl shadow-2xl"
+                  loading="lazy"
+                />
+              </div>
+
               <img 
                 src="/blog-images/catlak-topuk/8.jpg" 
                 alt="Evde çatlak topuk bakımı adımları"
