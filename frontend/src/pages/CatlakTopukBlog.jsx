@@ -438,6 +438,7 @@ const CatlakTopukBlog = () => {
                   { icon: '😣', title: 'Şiddetli Ağrı', desc: 'Yürürken dayanılmaz ağrı hissediyorsanız' },
                   { icon: '🦠', title: 'Enfeksiyon Belirtileri', desc: 'Kızarıklık, şişlik, akıntı veya kötü koku' },
                   { icon: '💉', title: 'Diyabet/Dolaşım Bozukluğu', desc: 'Risk gruplarında düzenli kontrol şart' },
+                  { icon: '📏', title: 'Ciltte Aşırı Kalınlaşma (Hiperkeratoz)', desc: 'Evde yapılan törpüleme ve nemlendirme yeterli gelmiyorsa, topuk derisi aşırı kalınlaşmışsa profesyonel cihazlarla kontrollü inceltme gerekir' },
                   { icon: '⏱️', title: 'Evde Bakıma Yanıt Vermeme', desc: '2-3 haftalık bakıma rağmen iyileşme yoksa' }
                 ].map((item, index) => (
                   <div key={index} className="bg-white p-6 rounded-xl shadow-md">
