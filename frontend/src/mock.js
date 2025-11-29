@@ -7,7 +7,7 @@ export const siteInfo = {
   fullName: 'Medipodo Ayak Bakımı',
   tagline: 'Profesyonel Podoloji ve Ayak Bakım Merkezi',
   phone: '0545 656 97 47',
-  phoneLink: '905456569747',
+  phoneLink: '05456569747',
   whatsapp: '905456569747',
   address: 'Bağlıca Mah. Mert Cad. 4/2 Etimesgut, Ankara',
   email: 'info@medipodo.com',
