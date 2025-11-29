@@ -16,6 +16,7 @@ import Team from './pages/Team';
 import Contact from './pages/Contact';
 import BaglicaPodologBlog from './pages/BaglicaPodologBlog';
 import CatlakTopukBlog from './pages/CatlakTopukBlog';
+import AyakKokusuBlog from './pages/AyakKokusuBlog';
 
 function App() {
   return (
