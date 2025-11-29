@@ -385,14 +385,22 @@ const AyakKokusuBlog = () => {
                   </div>
                   <div className="bg-white p-6 rounded-xl shadow-md">
                     <div className="text-4xl mb-3 text-center">💧</div>
-                    <h4 className="font-bold text-gray-900 mb-3 text-center">Bakım Serumu</h4>
+                    <h4 className="font-bold text-gray-900 mb-3 text-center">
+                      <a href="https://pedizone.com/product/mantar-karsiti-serum" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
+                        Bakım Serumu
+                      </a>
+                    </h4>
                     <p className="text-gray-700 text-sm text-center">
                       Derin nemlendirme ve cilt bariyeri güçlendirme. Temizlik sonrası uygulama.
                     </p>
                   </div>
                   <div className="bg-white p-6 rounded-xl shadow-md">
                     <div className="text-4xl mb-3 text-center">🧴</div>
-                    <h4 className="font-bold text-gray-900 mb-3 text-center">Onarıcı Krem</h4>
+                    <h4 className="font-bold text-gray-900 mb-3 text-center">
+                      <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
+                        Onarıcı Krem
+                      </a>
+                    </h4>
                     <p className="text-gray-700 text-sm text-center">
                       Yoğun bakım ve onarım. Çatlak ve kuruluk için özel formül.
                     </p>
