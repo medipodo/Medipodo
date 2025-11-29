@@ -552,7 +552,7 @@ const CatlakTopukBlog = () => {
 
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl mb-8">
                 <p className="text-lg mb-4">
-                  <strong>PediZone® %15 Urea Intense Repair Cream</strong> gibi klinik olarak test edilmiş, podolog onaylı ürünler, hem profesyonel tedavi sürecinde hem de evde bakımda güvenle kullanabileceğiniz etkili çözümlerdir.
+                  <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 underline font-bold">PediZone® %15 Urea Intense Repair Cream</a> gibi klinik olarak test edilmiş, podolog onaylı ürünler, hem profesyonel tedavi sürecinde hem de evde bakımda güvenle kullanabileceğiniz etkili çözümlerdir.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                   <div className="bg-white/20 px-4 py-2 rounded-full">✓ %15 Üre</div>
