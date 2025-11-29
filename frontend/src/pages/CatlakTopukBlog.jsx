@@ -596,7 +596,7 @@ const CatlakTopukBlog = () => {
                   },
                   {
                     q: 'Kışın çatlayan topuklar için hangi krem kullanılmalı?',
-                    a: 'Kışın çatlayan topuklar için %10-15 üre içeren, keratolitik etkili kremler en etkili seçenektir. PediZone® %15 Urea Intense Repair Cream gibi profesyonel formüller, hem güçlü keratolitik etki sağlar hem de antifungal özellikleri sayesinde mantar enfeksiyonlarına karşı korur.'
+                    a: <>Kışın çatlayan topuklar için %10-15 üre içeren, keratolitik etkili kremler en etkili seçenektir. <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">PediZone® %15 Urea Intense Repair Cream</a> gibi profesyonel formüller, hem güçlü keratolitik etki sağlar hem de antifungal özellikleri sayesinde mantar enfeksiyonlarına karşı korur.</>
                   },
                   {
                     q: 'Çatlak topuk için hangi doktora gidilir?',
