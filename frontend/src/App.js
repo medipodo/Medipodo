@@ -32,6 +32,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/baglica-podolog-hizmetleri" element={<BaglicaPodologBlog />} />
           <Route path="/blog/kis-aylarinda-catlak-topuk-tedavisi" element={<CatlakTopukBlog />} />
+          <Route path="/blog/ayak-kokusu-ve-mantar-iliskisi" element={<AyakKokusuBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
