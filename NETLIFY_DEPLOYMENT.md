@@ -29,7 +29,7 @@ Publish directory: frontend/build
 Netlify Dashboard → Site settings → Environment variables:
 
 ```
-REACT_APP_BACKEND_URL = https://medipodo-website.preview.emergentagent.com
+REACT_APP_BACKEND_URL = https://podology-site.preview.emergentagent.com
 ```
 
 (Veya kendi backend URL'nizi kullanın)
