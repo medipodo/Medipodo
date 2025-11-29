@@ -379,7 +379,8 @@ const CatlakTopukBlog = () => {
                   {
                     step: '3',
                     title: 'Yoğun Nemlendirme',
-                    desc: 'Bakım sonrası, ayaklarınız henüz nemli iken, üre içerikli bir krem uygulayın. PediZone® %15 Urea Intense Repair Cream gibi profesyonel formüller, evde bakımda en etkili sonuçları verir. Kremin keratolitik etkisi sayesinde, kalınlaşmış deri yumuşar ve çatlaklar daha hızlı iyileşir.'
+                    desc: <>Bakım sonrası, ayaklarınız henüz nemli iken, üre içerikli bir krem uygulayın. <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-semibold underline">PediZone® %15 Urea Intense Repair Cream</a> gibi profesyonel formüller, evde bakımda en etkili sonuçları verir. Kremin keratolitik etkisi sayesinde, kalınlaşmış deri yumuşar ve çatlaklar daha hızlı iyileşir.</>
+                  
                   },
                   {
                     step: '4',
