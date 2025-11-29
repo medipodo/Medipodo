@@ -344,7 +344,258 @@ const CatlakTopukBlog = () => {
               />
             </section>
 
-            {/* Devam edecek... Part 2'de tamamlanacak */}
+            {/* Evde Profesyonel Bakım */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Evde Profesyonel Bakım: Çatlak Topuklar İçin Etkili Çözümler
+              </h2>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                Evde uygulayabileceğiniz basit ama etkili bakım rutini, çatlak topuk problemini büyük ölçüde hafifletebilir. İşte adım adım evde ayak bakımı rehberi:
+              </p>
+
+              <div className="space-y-6">
+                {[
+                  {
+                    step: '1',
+                    title: 'Ilık Su Banyosu',
+                    desc: 'Ayaklarınızı 15-20 dakika ılık suda bekletin. Suya birkaç damla zeytinyağı veya lavanta yağı ekleyebilirsiniz. Çok sıcak su kullanmaktan kaçının, çünkü cildin doğal yağlarını kaybetmesine neden olur.'
+                  },
+                  {
+                    step: '2',
+                    title: 'Nazik Peeling',
+                    desc: 'Yumuşamış cildi, ponza taşı veya ayak törpüsü ile nazikçe temizleyin. Dairesel hareketlerle, özellikle kalınlaşmış ve çatlak bölgelere odaklanın. Haftada 2-3 kez uygulama yeterlidir. Aşırı peeling, cildin daha da kalınlaşmasına neden olabilir.'
+                  },
+                  {
+                    step: '3',
+                    title: 'Yoğun Nemlendirme',
+                    desc: 'Bakım sonrası, ayaklarınız henüz nemli iken, üre içerikli bir krem uygulayın. PediZone® %15 Urea Intense Repair Cream gibi profesyonel formüller, evde bakımda en etkili sonuçları verir. Kremin keratolitik etkisi sayesinde, kalınlaşmış deri yumuşar ve çatlaklar daha hızlı iyileşir.'
+                  },
+                  {
+                    step: '4',
+                    title: 'Düzenlilik ve Sabır',
+                    desc: 'Evde bakımın en önemli kuralı düzenliliktir. Haftada en az 2-3 kez bu rutini uygulamak, kalıcı sonuçlar almanızı sağlar. İlk 1-2 hafta içinde belirgin iyileşme göreceksiniz.'
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-600">
+                    <div className="flex items-start">
+                      <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mr-4 flex-shrink-0">
+                        {item.step}
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h4>
+                        <p className="text-gray-700 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <img 
+                src="/blog-images/catlak-topuk/8.jpg" 
+                alt="Evde çatlak topuk bakımı adımları"
+                className="w-full h-auto rounded-xl shadow-lg mt-8"
+                loading="lazy"
+              />
+            </section>
+
+            {/* Ne Zaman Uzmana */}
+            <section className="mb-16 bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                ⚠️ Ne Zaman Bir Uzmana Başvurmalısınız?
+              </h2>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center">
+                Çoğu çatlak topuk vakası, evde bakımla iyileşebilir. Ancak bazı durumlarda profesyonel yardım almak zorunludur:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  { icon: '🩸', title: 'Derin ve Kanayan Çatlaklar', desc: 'Enfeksiyon riski yüksektir, profesyonel müdahale gerekir' },
+                  { icon: '😣', title: 'Şiddetli Ağrı', desc: 'Yürürken dayanılmaz ağrı hissediyorsanız' },
+                  { icon: '🦠', title: 'Enfeksiyon Belirtileri', desc: 'Kızarıklık, şişlik, akıntı veya kötü koku' },
+                  { icon: '💉', title: 'Diyabet/Dolaşım Bozukluğu', desc: 'Risk gruplarında düzenli kontrol şart' },
+                  { icon: '⏱️', title: 'Evde Bakıma Yanıt Vermeme', desc: '2-3 haftalık bakıma rağmen iyileşme yoksa' }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white p-6 rounded-xl shadow-md">
+                    <div className="text-4xl mb-3">{item.icon}</div>
+                    <h4 className="font-bold text-gray-900 mb-2">{item.title}</h4>
+                    <p className="text-gray-700 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Medipodo'da Profesyonel Tedavi */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Medipodo'da Profesyonel Çatlak Topuk Tedavisi
+              </h2>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+                Medipodo Ayak Sağlığı Merkezi'nde, çatlak topuk tedavisi için kapsamlı ve kişiye özel bir yaklaşım sunuyoruz.
+              </p>
+
+              <div className="space-y-6">
+                {[
+                  {
+                    title: 'Podolojik Değerlendirme',
+                    desc: 'Deneyimli podologlarımız ayaklarınızı detaylı bir şekilde inceler. Çatlakların derecesi, altta yatan nedenler ve cilt durumu değerlendirilir.'
+                  },
+                  {
+                    title: 'Profesyonel Debridman',
+                    desc: 'Kalınlaşmış ve ölü deri tabakası, özel medikal aletlerle ağrısız bir şekilde temizlenir. Bu işlem, cildin yenilenmesini hızlandırır.'
+                  },
+                  {
+                    title: 'Özel Bakım Ürünleri',
+                    desc: 'PediZone® %15 Urea Intense Repair Cream gibi profesyonel ürünler uygulanır. Yüksek üre konsantrasyonu ve antifungal özellikleri hem iyileşmeyi hızlandırır hem de mantar oluşumunu önler.'
+                  },
+                  {
+                    title: 'Kişiye Özel Bakım Planı',
+                    desc: 'Tedavi sonrası, problemin tekrarlamaması için size özel bir ev bakım planı oluştururuz. Hangi ürünleri kullanmanız gerektiği konusunda detaylı bilgi veririz.'
+                  },
+                  {
+                    title: 'Takip ve Kontrol',
+                    desc: 'Tedavi sonrası düzenli takip, başarının anahtarıdır. Gerektiğinde kontrol randevuları ile iyileşme sürecini izleriz.'
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white rounded-xl shadow-lg p-6">
+                    <h4 className="text-xl font-bold text-blue-900 mb-3">{item.title}</h4>
+                    <p className="text-gray-700 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <img 
+                src="/blog-images/catlak-topuk/9.jpg" 
+                alt="Medipodo'da profesyonel çatlak topuk tedavisi öncesi ve sonrası"
+                className="w-full h-auto rounded-xl shadow-lg mt-8"
+                loading="lazy"
+              />
+            </section>
+
+            {/* Diyabet Hastaları */}
+            <section className="mb-16 bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-8 border-2 border-red-500">
+              <h2 className="text-3xl font-bold text-red-900 mb-6 text-center">
+                🚨 Diyabet Hastaları İçin Hayati Uyarılar
+              </h2>
+
+              <div className="bg-white p-6 rounded-xl mb-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Neden Diyabetik Ayak Bu Kadar Önemli?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Diyabet hastalarında, küçük bir çatlak bile hızla enfeksiyona dönüşebilir. Sinir hasarı nedeniyle ağrı hissedilmeyebilir, bu da problemin geç fark edilmesine yol açar. Dolaşım bozuklukları, yaranın iyileşmesini geciktirir ve ciddi komplikasyonlara, hatta ampütasyona kadar gidebilecek durumlara neden olabilir.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Diyabet Hastalarının Dikkat Etmesi Gerekenler:
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'Her gün ayaklarınızı dikkatlice kontrol edin',
+                    'En küçük çatlak, yara fark ettiğinizde hemen podoloğa başvurun',
+                    'Ayaklarınızı her gün ılık suyla yıkayın ve iyice kurulayın',
+                    'Üre içerikli ve antifungal özellikli kremler kullanın',
+                    'Asla çıplak ayakla yürümeyin',
+                    'Ayakkabılarınızı giymeden önce içini kontrol edin',
+                    'Tırnaklarınızı düz kesin, köşeleri yuvarlak kesmeyin',
+                    '3-6 ayda bir profesyonel podolojik muayene olun'
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-red-600 mr-3 mt-1 font-bold">⚠</span>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+
+            {/* Sonuç & CTA */}
+            <section className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-white text-center">
+              <h2 className="text-3xl font-bold mb-6">
+                Sağlıklı Adımlarla Kışı Karşılayın
+              </h2>
+              
+              <p className="text-lg mb-8 text-blue-100 leading-relaxed">
+                Kış aylarında çatlak topuk problemi, doğru önlemler ve bakımla büyük ölçüde önlenebilir veya tedavi edilebilir. Düzenli nemlendirme, özellikle <strong>üre içerikli profesyonel kremler</strong> kullanmak, doğru ayakkabı seçimi ve sağlıklı beslenme alışkanlıkları, ayak sağlığınızı korumanın temel taşlarıdır.
+              </p>
+
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl mb-8">
+                <p className="text-lg mb-4">
+                  <strong>PediZone® %15 Urea Intense Repair Cream</strong> gibi klinik olarak test edilmiş, podolog onaylı ürünler, hem profesyonel tedavi sürecinde hem de evde bakımda güvenle kullanabileceğiniz etkili çözümlerdir.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4 text-sm">
+                  <div className="bg-white/20 px-4 py-2 rounded-full">✓ %15 Üre</div>
+                  <div className="bg-white/20 px-4 py-2 rounded-full">✓ Antifungal</div>
+                  <div className="bg-white/20 px-4 py-2 rounded-full">✓ 7-10 Günde Sonuç</div>
+                </div>
+              </div>
+
+              <p className="text-lg mb-8 text-blue-100">
+                Çatlak topuk problemi yaşıyorsanız veya risk grubundaysanız, bugün harekete geçin ve sağlıklı adımlarla kışı karşılayın.
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-4">
+                <a
+                  href="tel:05387028544"
+                  className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
+                >
+                  <Phone className="mr-2" size={24} />
+                  0538 702 85 44
+                </a>
+                <Link
+                  to="/iletisim"
+                  className="inline-flex items-center bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-400 transition-all transform hover:scale-105 shadow-lg"
+                >
+                  Randevu Al
+                </Link>
+              </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="mt-16 mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Sık Sorulan Sorular
+              </h2>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    q: 'Çatlak topuk nasıl geçer?',
+                    a: 'Çatlak topuk tedavisi için düzenli nemlendirme, özellikle %10-15 üre içeren kremler kullanmak, nazik peeling ve gerekirse profesyonel podolojik bakım önerilir. Derin çatlaklar için mutlaka bir podoloğa başvurulmalıdır.'
+                  },
+                  {
+                    q: 'Kışın çatlayan topuklar için hangi krem kullanılmalı?',
+                    a: 'Kışın çatlayan topuklar için %10-15 üre içeren, keratolitik etkili kremler en etkili seçenektir. PediZone® %15 Urea Intense Repair Cream gibi profesyonel formüller, hem güçlü keratolitik etki sağlar hem de antifungal özellikleri sayesinde mantar enfeksiyonlarına karşı korur.'
+                  },
+                  {
+                    q: 'Çatlak topuk için hangi doktora gidilir?',
+                    a: 'Çatlak topuk tedavisi için podolog veya dermatolog uzmanlarına başvurulmalıdır. Podologlar, ayak sağlığı konusunda uzmanlaşmış profesyonellerdir ve çatlak topuk gibi problemlerin tedavisinde en etkili sonuçları sağlarlar.'
+                  },
+                  {
+                    q: 'Diyabet hastalarında çatlak topuk neden tehlikelidir?',
+                    a: 'Diyabet hastaları, yüksek kan şekeri nedeniyle sinir hasarı ve dolaşım problemleri yaşarlar. Bu durum, küçük bir çatlağın bile hızla enfeksiyona dönüşmesine neden olur. Ağrı hissedilmeyebileceği için problem geç fark edilir ve ciddi komplikasyonlara yol açabilir.'
+                  },
+                  {
+                    q: 'Evde çatlak topuk tedavisi ne kadar sürer?',
+                    a: 'Hafif çatlaklar, düzenli evde bakımla 1-2 hafta içinde iyileşebilir. Orta dereceli çatlaklar için 3-4 haftalık düzenli bakım gerekebilir. Üre içerikli kremlerle düzenli bakımda, ilk iyileşme belirtileri 7-10 gün içinde gözlemlenir.'
+                  },
+                  {
+                    q: 'Üre içerikli kremler neden etkilidir?',
+                    a: 'Üre, güçlü bir keratolitik ajandır, yani cildin üst tabakasındaki sertleşmiş keratini yumuşatır ve ölü derinin kontrollü bir şekilde uzaklaştırılmasına yardımcı olur. %10-15 konsantrasyonundaki üre, çatlak topuk tedavisinde altın standart olarak kabul edilir.'
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white rounded-xl shadow-md p-6">
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">{item.q}</h3>
+                    <p className="text-gray-700 leading-relaxed">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
           </div>
         </div>
       </article>
