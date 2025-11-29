@@ -361,7 +361,7 @@ const AyakKokusuBlog = () => {
                 </h3>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center">
-                  Ayak sağlığı için kapsamlı bir yaklaşım: Temizlik + Bakım + Koruma
+                  Ayak sağlığı için kapsamlı bir yaklaşım: Temizlik + Bakım + Koruma. <a href="https://pedizone.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">PediZone</a> ile profesyonel bakım evinizde!
                 </p>
 
                 <img 
