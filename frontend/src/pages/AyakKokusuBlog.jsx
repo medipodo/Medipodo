@@ -240,7 +240,7 @@ const AyakKokusuBlog = () => {
               </h2>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center">
-                Ayak sağlığı uzmanları olan podologlar, ayak bakımında hijyenin ve bilimsel olarak kanıtlanmış aktif bileşenlerin kullanımının önemini vurgularlar.
+                Ayak sağlığı uzmanları olan podologlar, ayak bakımında hijyenin ve bilimsel olarak kanıtlanmış aktif bileşenlerin kullanımının önemini vurgularlar. <a href="https://pedizone.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">PediZone ürün ailesi</a>, tam da bu profesyonel gereksinimleri karşılamak üzere geliştirilmiştir.
               </p>
 
               {/* Temizleme Köpüğü */}
