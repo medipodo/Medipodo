@@ -9,48 +9,106 @@ const AyakAnalizi = () => {
 
   const totalQuestions = 6;
 
-  // Ürün önerileri veritabanı
-  const productDatabase = {
-    koku_cok_pul_kapali_sik_gunluk: {
-      title: "Koku Sorunu - Acil Müdahale Gerekli",
-      icon: "🚨",
-      description: "Ayaklarınızda yoğun terleme ve ölü deri birikimi nedeniyle güçlü bir koku sorunu tespit edilmiştir. Düzenli bakım yapmanız çok iyi!",
-      product: "Pedizone Temizleme Köpüğü + Antifungal Sprey",
-      reason: "Keratolitik etki ile ölü deriyi temizler ve antifungal koruma sağlar. Yoğun terleme ve kronik sorun için ideal kombinasyon.",
-      usage: "Günde 2 kez (sabah ve akşam) Pedizone Temizleme Köpüğü ile derinlemesine temizlik yapın. Antifungal spreyini ise ayakkabı içine ve parmak aralarına günde 1 kez uygulayın."
-    },
-    koku_cok_pul_kapali: {
-      title: "Koku Sorunu - Yüksek Risk",
-      icon: "⚠️",
-      description: "Ayaklarınızda terleme ve ölü deri birikimi nedeniyle koku sorunu yaşıyorsunuz. Düzenli bakım ile bu sorunu kontrol altına alabilirsiniz.",
-      product: "Pedizone Temizleme Köpüğü",
-      reason: "Keratolitik ve antifungal özellikleri ile kokuya neden olan bakteri ve mantarların besin kaynağını ortadan kaldırır.",
-      usage: "Günde 1-2 kez (tercihen akşamları) Pedizone Temizleme Köpüğü ile ayakları derinlemesine temizleyin. Parmak aralarını özellikle iyi kurulayın."
-    },
-    mantar_orta_kizarik_kapali_sik: {
-      title: "Mantar Enfeksiyonu - Aktif",
-      icon: "🔴",
-      description: "Ayaklarınızda mantar enfeksiyonu belirtileri (kızarıklık, kaşıntı) tespit edilmiştir. Hemen tedaviye başlamalısınız.",
-      product: "Antifungal Krem + Pedizone Temizleme Köpüğü",
-      reason: "Antifungal krem doğrudan mantar hücrelerine etki ederken, Pedizone mantarın besin kaynağını ortadan kaldırır.",
-      usage: "Günde 2 kez Pedizone ile temizlik yapın. Antifungal kremi kuru ayaklara günde 2-3 kez uygulayın. Ayakkabıları sık değiştirin ve havalandırın."
-    },
-    nasir_az_catlak: {
-      title: "Nasır ve Çatlak Sorunu",
-      icon: "🩹",
-      description: "Ayak derinizde kalınlaşma ve çatlamalar tespit edilmiştir. Keratolitik bakım ile bu sorunu çözebilirsiniz.",
-      product: "Keratolitik Jel + Nemlendirici Krem",
-      reason: "Keratolitik jel sertleşmiş deriyi yumuşatırken, nemlendirici krem cildin elastikiyetini geri kazandırır.",
-      usage: "Haftada 2-3 kez Keratolitik Jel ile masaj yapın. Ardından Nemlendirici Krem uygulayın. Gece uyumadan önce uygulamak en etkilidir."
-    },
-    bakim_orta_saglikli_degisken_hayir: {
+  // Ürün önerileri - Akıllı algoritma
+  const getSmartRecommendation = () => {
+    const mainProblem = answers.q0; // koku, mantar, tirnak, nasir, bakim
+    const sweating = answers.q1;    // cok, orta, az
+    const skinCondition = answers.q2; // pul, kizarik, catlak, saglikli
+    const history = answers.q4;     // sik, nadiren, hayir
+    
+    // KURAL 1: Kuruluk/Çatlak sorunu → Intense Repair %15 Üreli Krem
+    if (mainProblem === 'nasir' || skinCondition === 'catlak') {
+      return {
+        title: "Kuruluk ve Çatlak Sorunu",
+        icon: "🩹",
+        description: "Ayaklarınızda kuruluk ve çatlaklar tespit edildi. Yoğun nem ve onarım gerektiren bir durum.",
+        product: "Pedizone Intense Repair %15 Üreli Krem",
+        reason: "%15 üre içeriği ile derinlemesine nemlendirme ve onarım sağlar. Çatlak topuklar için ideal formül.",
+        usage: "Günde 2 kez (sabah ve gece) temiz, kuru ayaklara uygulayın. Özellikle topuk ve çatlak bölgelere masaj yaparak sürün. Gece çorap giymek etkiyi artırır."
+      };
+    }
+
+    // KURAL 2: Koku + Mantar belirtileri (pullanma/kızarıklık) → 3'lü Set
+    if (mainProblem === 'koku' && (skinCondition === 'pul' || skinCondition === 'kizarik')) {
+      return {
+        title: "Koku ve Mantar - Kompleks Bakım Gerekli",
+        icon: "🚨",
+        description: "Hem koku hem de mantar belirtileri tespit edildi. Çoklu şikayet için kompleks bakım öneriyoruz.",
+        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
+        reason: "Kompleks bakım sistemi: Köpük ile temizlik, Serum ile antifungal koruma, Krem ile nemlendirme. 3 adımda tam çözüm.",
+        usage: "1) Sabah-akşam Temizleme Köpüğü ile yıkayın. 2) Bakım Serumu'nu parmak aralarına ve sorunlu bölgelere sürün. 3) Onarıcı Krem ile tüm ayağı nemlendirin."
+      };
+    }
+
+    // KURAL 3: Tırnak + Koku → 3'lü Set
+    if (mainProblem === 'tirnak' && sweating !== 'az') {
+      return {
+        title: "Tırnak Problemi ve Koku - Kompleks Bakım",
+        icon: "💅",
+        description: "Tırnak problemi ve koku kombinasyonu tespit edildi. Kapsamlı bakım öneriyoruz.",
+        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
+        reason: "Tırnak çevresi hijyeni ve genel ayak bakımı için ideal kombinasyon. Köpük temizler, Serum korur, Krem nemlendirir.",
+        usage: "Günde 2 kez Köpük ile temizlik, Serum'u tırnak çevresine özenle uygulayın, Krem ile genel nemlendirme yapın."
+      };
+    }
+
+    // KURAL 4: Sadece Mantar → 3'lü Set
+    if (mainProblem === 'mantar' || skinCondition === 'kizarik') {
+      return {
+        title: "Mantar Enfeksiyonu - Aktif Tedavi",
+        icon: "🔴",
+        description: "Mantar enfeksiyonu belirtileri tespit edildi. Antifungal bakım şart.",
+        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
+        reason: "Antifungal koruma + bakım + nemlendirme. Mantar tedavisinde 3 adımlı yaklaşım en etkilidir.",
+        usage: "Günde 2 kez Köpük ile derin temizlik, Serum ile antifungal koruma, Krem ile cilt bariyeri güçlendirme."
+      };
+    }
+
+    // KURAL 5: Sadece Koku (mantar yok, deri sağlıklı) → Sadece Köpük
+    if (mainProblem === 'koku' && skinCondition === 'saglikli') {
+      return {
+        title: "Koku Problemi - Hijyen Çözümü",
+        icon: "✨",
+        description: "Ayaklarınızda sadece koku sorunu var. Düzenli hijyen ile kontrol altına alınabilir.",
+        product: "Pedizone Temizleme Köpüğü",
+        reason: "Keratolitik ve antifungal özellikleri ile kokuya neden olan bakterilerin besin kaynağını ortadan kaldırır. Tek başına yeterli.",
+        usage: "Günde 1-2 kez (tercihen akşamları) Temizleme Köpüğü ile ayakları derinlemesine temizleyin. Parmak aralarını özellikle iyi kurulayın."
+      };
+    }
+
+    // KURAL 6: Koku + Yoğun Terleme (ama deri sağlıklı) → Sadece Köpük
+    if (mainProblem === 'koku' && sweating === 'cok' && skinCondition === 'saglikli') {
+      return {
+        title: "Yoğun Terleme ve Koku",
+        icon: "💦",
+        description: "Yoğun terleme nedeniyle koku oluşuyor. Düzenli bakım önemli.",
+        product: "Pedizone Temizleme Köpüğü",
+        reason: "Yoğun terlemeye karşı günlük hijyen çözümü. Bakterileri ve koku kaynağını temizler.",
+        usage: "Günde 2 kez (sabah ve akşam) kullanın. Yoğun terleme sonrası ayakları hemen yıkayın."
+      };
+    }
+
+    // KURAL 7: Pullanma var (mantar riski) → 3'lü Set
+    if (skinCondition === 'pul') {
+      return {
+        title: "Ölü Deri ve Pullanma - Kompleks Bakım",
+        icon: "⚠️",
+        description: "Ölü deri birikimi ve pullanma var. Mantar riski nedeniyle kompleks bakım öneriyoruz.",
+        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
+        reason: "Keratolitik temizlik + antifungal koruma + nemlendirme. Pullanmayı önler, cildi yeniler.",
+        usage: "Köpük ile ölü deriyi temizleyin, Serum ile mantar oluşumunu önleyin, Krem ile cildi nemlendirin."
+      };
+    }
+
+    // VARSAYILAN: Genel Bakım → Sadece Köpük
+    return {
       title: "Genel Bakım ve Koruma",
       icon: "✨",
-      description: "Ayaklarınız genel olarak sağlıklı görünüyor. Önleyici bakım ile bu durumu koruyabilirsiniz.",
+      description: "Ayaklarınız genel olarak sağlıklı. Önleyici bakım ile bu durumu koruyabilirsiniz.",
       product: "Pedizone Temizleme Köpüğü (Koruma Amaçlı)",
       reason: "Düzenli kullanımı, mantar ve koku oluşumunu önler. Ayak hijyenini üst seviyede tutar.",
-      usage: "Günde 1 kez (tercihen akşamları) Pedizone ile ayakları temizleyin. Özellikle spor veya kapalı ayakkabı giydiğiniz günlerde kullanın."
-    }
+      usage: "Günde 1 kez (tercihen akşamları) ayakları temizleyin. Özellikle spor veya kapalı ayakkabı giydiğiniz günlerde kullanın."
+    };
   };
 
   // Sorular
