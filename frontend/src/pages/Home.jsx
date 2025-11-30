@@ -17,6 +17,35 @@ const Home = () => {
       {/* Hero Slider */}
       <HeroSlider />
 
+      {/* Ayak Analizi CTA Banner */}
+      <section className="py-12 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <span className="text-6xl mb-4 inline-block animate-bounce">🦶</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Ayaklarınızı Analiz Edin
+            </h2>
+            <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+              6 basit soruyla ayak sağlığınızı analiz edin ve size özel PediZone ürün önerisi alın
+            </p>
+            <Link to="/ayak-analizi">
+              <Button 
+                size="lg" 
+                className="bg-white text-blue-600 hover:bg-blue-50 font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
+              >
+                🎯 Hemen Analiz Et
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+            </Link>
+            <p className="text-white/70 text-sm mt-4">
+              ✓ Ücretsiz  ✓ 2 dakika  ✓ Kişiselleştirilmiş sonuç
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
