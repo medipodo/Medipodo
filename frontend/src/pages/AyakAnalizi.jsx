@@ -172,25 +172,9 @@ const AyakAnalizi = () => {
     }
   ];
 
+  // Akıllı öneri algoritması
   const getRecommendation = () => {
-    // Cevapları birleştirerek ürün önerisi bul
-    const key = `${answers.q0}_${answers.q1}_${answers.q2}_${answers.q3}_${answers.q4}_${answers.q5}`;
-    
-    // Tam eşleşme ara
-    if (productDatabase[key]) {
-      return productDatabase[key];
-    }
-
-    // Kısmi eşleşme ara (ana sorun + terleme + deri durumu)
-    const partialKey = `${answers.q0}_${answers.q1}_${answers.q2}`;
-    for (let dbKey in productDatabase) {
-      if (dbKey.startsWith(partialKey)) {
-        return productDatabase[dbKey];
-      }
-    }
-
-    // Varsayılan önerisi
-    return productDatabase['bakim_orta_saglikli_degisken_hayir'];
+    return getSmartRecommendation();
   };
 
   const handleOptionChange = (questionIndex, value) => {
