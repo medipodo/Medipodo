@@ -37,6 +37,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
+          <Route path="/ayak-analizi" element={<AyakAnalizi />} />
           <Route path="/iletisim" element={<Contact />} />
         </Routes>
         <Footer />
