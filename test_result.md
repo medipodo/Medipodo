@@ -101,3 +101,86 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "pedizone.com sitesi için 'Üre Nedir' blog yazısı eklendi ve test edilmesi gerekiyor. Test edilecek site: https://pedizone.com (Netlify üzerinde deploy edilen production site)"
+
+frontend:
+  - task: "Anasayfa Blog Listesi - Üre Nedir blog kartının görünümü"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/Home.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Production sitesinde anasayfa blog bölümünde 'Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?' başlıklı blog kartının görünürlüğü test edilecek"
+
+  - task: "Blog Detay Sayfası - /blog/ure-nedir sayfası"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Blog detay sayfasının yüklenmesi, içerik görünümü, görsellerin yüklenmesi ve navigasyon testleri yapılacak"
+
+  - task: "Responsive Tasarım Testi"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Mobil (375px), tablet (768px) ve desktop (1920px) görünümlerinde responsive tasarım testi yapılacak"
+
+  - task: "Navigasyon Testleri"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Blog sayfasındaki butonların çalışması ve yönlendirmelerin doğruluğu test edilecek"
+
+  - task: "SEO ve Performans Kontrolü"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Console hataları, görsel yüklenme süreleri ve genel performans kontrolleri yapılacak"
+
+metadata:
+  created_by: "testing_agent"
+  version: "1.0"
+  test_sequence: 1
+
+test_plan:
+  current_focus:
+    - "Anasayfa Blog Listesi - Üre Nedir blog kartının görünümü"
+    - "Blog Detay Sayfası - /blog/ure-nedir sayfası"
+    - "Responsive Tasarım Testi"
+    - "Navigasyon Testleri"
+    - "SEO ve Performans Kontrolü"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+    - agent: "testing"
+      message: "Production site https://pedizone.com üzerinde 'Üre Nedir' blog yazısının test edilmesi başlatılıyor. Tüm test senaryoları sırasıyla çalıştırılacak."
