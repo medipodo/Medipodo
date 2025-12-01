@@ -169,7 +169,7 @@ frontend:
     implemented: true
     working: false
     file: "/app/frontend/src/pages/DiyabetAyakBlog.jsx"
-    stuck_count: 0
+    stuck_count: 1
     priority: "low"
     needs_retesting: false
     status_history:
@@ -178,7 +178,7 @@ frontend:
           comment: "Sayfa title ve meta description doğruluğu, console'da hata kontrolü yapılacak"
         - working: false
           agent: "testing"
-          comment: "❌ KISMEN BAŞARISIZ: Sayfa title doğru ('Diyabet Hastalarında Ayak Sağlığının Önemi: Görünmez Tehlikeler | Medipodo') ancak meta description elementi bulunamadı. Bu SEO için kritik."
+          comment: "❌ SORUN TESPİT EDİLDİ: Sayfa title doğru ancak React Helmet çalışmıyor. Meta description blog yazısına özel değil, site geneli meta description gösteriyor. React Helmet konfigürasyonu kontrol edilmeli."
 
 metadata:
   created_by: "testing_agent"
