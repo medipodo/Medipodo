@@ -172,11 +172,11 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Anasayfa Blog Listesi - Üre Nedir blog kartının görünümü"
-    - "Blog Detay Sayfası - /blog/ure-nedir sayfası"
+    - "Blog Listesi - Diyabet ve Ayak Sağlığı blog kartının görünümü"
+    - "Blog Detay Sayfası - /blog/diyabet-ve-ayak-sagligi"
     - "Responsive Tasarım Testi"
     - "Navigasyon Testleri"
-    - "SEO ve Performans Kontrolü"
+    - "SEO ve Console Kontrolü"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
