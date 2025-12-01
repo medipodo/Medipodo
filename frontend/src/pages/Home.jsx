@@ -175,7 +175,7 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
+            {blogPosts.slice(0, 3).map((post) => (
               <Card key={post.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
                 <CardContent className="p-0">
                   <div className="relative aspect-video">
