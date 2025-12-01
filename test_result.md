@@ -105,80 +105,65 @@
 user_problem_statement: "medipodo.com sitesi için 'Diyabet ve Ayak Sağlığı' blog yazısı eklendi ve test edilmesi gerekiyor. Test senaryoları: 1) Blog listesi testi (/blog sayfasında blog kartının görünümü), 2) Blog detay sayfası testi (/blog/diyabet-ve-ayak-sagligi), 3) Responsive tasarım, 4) Navigasyon testleri, 5) SEO kontrolleri"
 
 frontend:
-  - task: "Anasayfa Blog Listesi - Üre Nedir blog kartının görünümü"
+  - task: "Blog Listesi - Diyabet ve Ayak Sağlığı blog kartının görünümü"
     implemented: true
-    working: true
-    file: "/app/frontend/src/pages/Home.jsx"
+    working: "NA"
+    file: "/app/frontend/src/pages/Blog.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         - working: "NA"
           agent: "testing"
-          comment: "Production sitesinde anasayfa blog bölümünde 'Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?' başlıklı blog kartının görünürlüğü test edilecek"
-        - working: true
-          agent: "testing"
-          comment: "✅ TEST BAŞARILI: Anasayfada 'Üre Nedir' blog kartı başarıyla bulundu ve görüntüleniyor. Blog bölümüne scroll yapıldığında kart görünür durumda."
+          comment: "/blog sayfasında 'Diyabet Hastalarında Ayak Sağlığının Önemi: Görünmez Tehlikeler' başlıklı blog kartının görünürlüğü, görselin yüklenmesi (1.jpg), tarih (1 Aralık 2025) ve okuma süresi (18 dk) test edilecek"
 
-  - task: "Blog Detay Sayfası - /blog/ure-nedir sayfası"
+  - task: "Blog Detay Sayfası - /blog/diyabet-ve-ayak-sagligi"
     implemented: true
-    working: true
-    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    working: "NA"
+    file: "/app/frontend/src/pages/DiyabetAyakBlog.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         - working: "NA"
           agent: "testing"
-          comment: "Blog detay sayfasının yüklenmesi, içerik görünümü, görsellerin yüklenmesi ve navigasyon testleri yapılacak"
-        - working: true
-          agent: "testing"
-          comment: "✅ TEST BAŞARILI: Blog detay sayfası https://pedizone.com/blog/ure-nedir başarıyla yüklendi. Ana başlık 'Cildinizin Unutulmuş Kahramanı: Üre Nedir ve Kuru Ciltler İçin Neden Mucizevidir?' görünüyor. Hero görsel ve 11 adet görsel yüklendi. 5 adet H2 alt başlık bulundu. İçerik düzgün formatlanmış."
+          comment: "Blog detay sayfasının yüklenmesi, ana başlık (H1), alt başlıklar (H2), görsellerin yüklenmesi (1.jpg-8.jpg, 10.jpg, 11.jpg toplam 10 görsel), DO's & DON'Ts tablosu, SSS bölümü ve CTA butonları test edilecek"
 
   - task: "Responsive Tasarım Testi"
     implemented: true
-    working: true
-    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    working: "NA"
+    file: "/app/frontend/src/pages/DiyabetAyakBlog.jsx"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         - working: "NA"
           agent: "testing"
-          comment: "Mobil (375px), tablet (768px) ve desktop (1920px) görünümlerinde responsive tasarım testi yapılacak"
-        - working: true
-          agent: "testing"
-          comment: "✅ TEST BAŞARILI: Responsive tasarım tüm ekran boyutlarında çalışıyor. Mobil (375px): horizontal scroll yok, body genişliği 375px. Tablet (768px): düzgün görünüm. Desktop (1920px): optimal görünüm."
+          comment: "Mobil (375px), tablet (768px) ve desktop (1920px) görünümlerinde responsive tasarım testi, özellikle tablonun mobilde düzgün görüntülenmesi test edilecek"
 
   - task: "Navigasyon Testleri"
     implemented: true
-    working: true
-    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    working: "NA"
+    file: "/app/frontend/src/pages/DiyabetAyakBlog.jsx"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         - working: "NA"
           agent: "testing"
-          comment: "Blog sayfasındaki butonların çalışması ve yönlendirmelerin doğruluğu test edilecek"
-        - working: true
-          agent: "testing"
-          comment: "✅ TEST BAŞARILI: 'Ürünü İncele' butonu çalışıyor ve https://pedizone.com/product/intense-repair-cream sayfasına yönlendiriyor. 'Anasayfaya Dön' butonu çalışıyor ve anasayfaya yönlendiriyor. Minor: Header geri butonu bulunamadı ancak bu kritik değil."
+          comment: "'Blog'a Dön' butonu, 'Online Randevu' butonu (/iletisim sayfasına yönlendirme), 'Hemen Ara' telefon linki (tel: linki) çalışması test edilecek"
 
-  - task: "SEO ve Performans Kontrolü"
+  - task: "SEO ve Console Kontrolü"
     implemented: true
-    working: true
-    file: "/app/frontend/src/pages/BlogDetail.jsx"
+    working: "NA"
+    file: "/app/frontend/src/pages/DiyabetAyakBlog.jsx"
     stuck_count: 0
     priority: "low"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         - working: "NA"
           agent: "testing"
-          comment: "Console hataları, görsel yüklenme süreleri ve genel performans kontrolleri yapılacak"
-        - working: true
-          agent: "testing"
-          comment: "✅ TEST BAŞARILI: Console'da hata bulunamadı. Tüm görseller (11/11) başarıyla yüklendi. Sayfa performansı iyi durumda."
+          comment: "Sayfa title ve meta description doğruluğu, console'da hata kontrolü yapılacak"
 
 metadata:
   created_by: "testing_agent"
