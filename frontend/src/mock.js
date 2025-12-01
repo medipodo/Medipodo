@@ -306,6 +306,18 @@ Tırnak mantarı, dünya çapında milyonlarca insanı etkileyen yaygın bir sa�
     readTime: '8 dakika',
     image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=400&fit=crop',
     tags: ['Tırnak Mantarı', 'Onikomikoz', 'Modern Tedavi']
+  },
+  {
+    id: 'tirnakbatmasi',
+    title: 'Tırnak Batması Neden Olur? En Sık Yapılan Hatalar ve Doğru Çözümler',
+    slug: 'tirnakbatmasi',
+    excerpt: 'Tırnak batmasının nedenleri, evde yapılan hatalar, podolojik yöntemler ve kalıcı çözümler. Medipodo ile tırnak batması sorununu çözün.',
+    content: 'Tırnak Batması Neden Olur? En Sık Yapılan Hatalar ve Doğru Çözümler',
+    author: 'Medipodo Podolog Ekibi',
+    date: '2024-12-01',
+    readTime: '15 dakika',
+    image: '/blog-images/batik-tirnak/1.jpg',
+    tags: ['Tırnak Batması', 'Podoloji', 'Tedavi']
   }
 ];
 
