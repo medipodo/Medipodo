@@ -107,15 +107,18 @@ user_problem_statement: "medipodo.com sitesi için 'Diyabet ve Ayak Sağlığı'
 frontend:
   - task: "Blog Listesi - Diyabet ve Ayak Sağlığı blog kartının görünümü"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/pages/Blog.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "testing"
           comment: "/blog sayfasında 'Diyabet Hastalarında Ayak Sağlığının Önemi: Görünmez Tehlikeler' başlıklı blog kartının görünürlüğü, görselin yüklenmesi (1.jpg), tarih (1 Aralık 2025) ve okuma süresi (18 dk) test edilecek"
+        - working: true
+          agent: "testing"
+          comment: "✅ TEST BAŞARILI: Blog kartı görünür, tarih (1 Aralık 2025) ve okuma süresi (18 dk) doğru görüntüleniyor. Minor: Blog görseli alt attribute'u farklı olabilir ancak kart çalışıyor."
 
   - task: "Blog Detay Sayfası - /blog/diyabet-ve-ayak-sagligi"
     implemented: true
