@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'diyabet-ve-ayak-sagligi',
+    title: 'Diyabet Hastalarında Ayak Sağlığının Önemi: Görünmez Tehlikeler',
+    slug: 'diyabet-ve-ayak-sagligi',
+    excerpt: 'Diyabetik ayak sendromundan korunma yolları, günlük bakım rutini ve podolog tavsiyeleri. Medipodo ile ayak sağlığınızı koruyun.',
+    image: '/blog-images/diyabet/1.jpg',
+    date: '1 Aralık 2025',
+    readTime: '18 dk',
+    tags: ['Diyabet', 'Diyabetik Ayak', 'Nöropati', 'Anjiyopati', 'Podolog'],
+    content: 'Özel blog sayfası: /blog/diyabet-ve-ayak-sagligi'
+  },
+  {
     id: 'ayak-kokusu-ve-mantar-iliskisi',
     title: 'Ayak Kokusu ve Mantar İlişkisi: Neden Olur, Nasıl Önlenir?',
     slug: 'ayak-kokusu-ve-mantar-iliskisi',
