@@ -6,7 +6,7 @@ export const enrichedBlogPosts = [
     title: 'Tırnak Batması Neden Olur? En Sık Yapılan Hatalar ve Doğru Çözümler',
     slug: 'tirnakbatmasi',
     excerpt: 'Tırnak batmasının nedenleri, evde yapılan hatalar, podolojik yöntemler ve kalıcı çözümler. Medipodo ile tırnak batması sorununu çözün.',
-    image: '/blog-images/batik-tirnak/1.jpg',
+    image: '/blog-images/batik-tirnak/kapak.jpg',
     date: '1 Aralık 2025',
     readTime: '15 dk',
     tags: ['Tırnak Batması', 'Podoloji', 'Tedavi'],

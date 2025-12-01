@@ -70,7 +70,7 @@ const BatikTirnakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/batik-tirnak/1.jpg" 
+                  src="/blog-images/batik-tirnak/kapak.jpg" 
                   alt="Tırnak batması görünümü" 
                   className="w-full rounded-xl shadow-2xl"
                 />
