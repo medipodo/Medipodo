@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "pedizone.com sitesi için 'Üre Nedir' blog yazısı eklendi ve test edilmesi gerekiyor. Test edilecek site: https://pedizone.com (Netlify üzerinde deploy edilen production site)"
+user_problem_statement: "medipodo.com sitesi için 'Diyabet ve Ayak Sağlığı' blog yazısı eklendi ve test edilmesi gerekiyor. Test senaryoları: 1) Blog listesi testi (/blog sayfasında blog kartının görünümü), 2) Blog detay sayfası testi (/blog/diyabet-ve-ayak-sagligi), 3) Responsive tasarım, 4) Navigasyon testleri, 5) SEO kontrolleri"
 
 frontend:
   - task: "Anasayfa Blog Listesi - Üre Nedir blog kartının görünümü"
