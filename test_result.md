@@ -183,6 +183,4 @@ test_plan:
 
 agent_communication:
     - agent: "testing"
-      message: "Production site https://pedizone.com üzerinde 'Üre Nedir' blog yazısının test edilmesi başlatılıyor. Tüm test senaryoları sırasıyla çalıştırılacak."
-    - agent: "testing"
-      message: "✅ TÜM TESTLER BAŞARILI: 'Üre Nedir' blog yazısı production sitesinde tam olarak çalışıyor. Anasayfa blog listesi, detay sayfası, responsive tasarım, navigasyon ve performans testleri başarıyla geçti. Sadece header geri butonu eksik ancak bu kritik değil. Blog yazısı kullanıma hazır durumda."
+      message: "Medipodo sitesi için 'Diyabet ve Ayak Sağlığı' blog yazısının test edilmesi başlatılıyor. Test senaryoları: 1) Blog listesi (/blog), 2) Blog detay sayfası (/blog/diyabet-ve-ayak-sagligi), 3) Responsive tasarım, 4) Navigasyon, 5) SEO kontrolleri sırasıyla test edilecek."
