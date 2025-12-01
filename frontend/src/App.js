@@ -17,6 +17,7 @@ import Contact from './pages/Contact';
 import BaglicaPodologBlog from './pages/BaglicaPodologBlog';
 import CatlakTopukBlog from './pages/CatlakTopukBlog';
 import AyakKokusuBlog from './pages/AyakKokusuBlog';
+import DiyabetAyakBlog from './pages/DiyabetAyakBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 
 function App() {
