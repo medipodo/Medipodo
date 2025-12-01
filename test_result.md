@@ -192,7 +192,8 @@ test_plan:
     - "Responsive Tasarım Testi"
     - "Navigasyon Testleri"
     - "SEO ve Console Kontrolü"
-  stuck_tasks: []
+  stuck_tasks: 
+    - "SEO ve Console Kontrolü"
   test_all: true
   test_priority: "high_first"
 
