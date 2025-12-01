@@ -152,15 +152,18 @@ frontend:
 
   - task: "Navigasyon Testleri"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/pages/DiyabetAyakBlog.jsx"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "testing"
           comment: "'Blog'a Dön' butonu, 'Online Randevu' butonu (/iletisim sayfasına yönlendirme), 'Hemen Ara' telefon linki (tel: linki) çalışması test edilecek"
+        - working: true
+          agent: "testing"
+          comment: "✅ TEST BAŞARILI: 'Blog'a Dön' butonu çalışıyor ve /blog sayfasına yönlendiriyor, telefon linki (tel:05456569747) mevcut, 'Online Randevu' butonu /iletisim sayfasına doğru yönlendiriyor."
 
   - task: "SEO ve Console Kontrolü"
     implemented: true
