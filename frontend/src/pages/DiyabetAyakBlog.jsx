@@ -466,11 +466,11 @@ const DiyabetAyakBlog = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:+903124738585" 
+                  href="tel:+905456569747" 
                   className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"
                 >
                   <Phone size={20} className="mr-2" />
-                  Hemen Ara: 0312 473 85 85
+                  Hemen Ara: 0545 656 97 47
                 </a>
                 <Link 
                   to="/iletisim" 
