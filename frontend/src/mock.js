@@ -213,6 +213,13 @@ export const galleryImages = [
     after: '/images/gallery/g10.jpg',
     title: 'Tırnak Mantarı Tedavisi',
     description: 'Kalıcı tırnak mantarı tedavisi sonuçları'
+  },
+  {
+    id: 11,
+    before: '/images/gallery/g11.jpg',
+    after: '/images/gallery/g11.jpg',
+    title: 'Onychogryphosis',
+    description: 'Tırnağın aşırı kalınlaşması ve koç boynuzu gibi kıvrılarak şekil bozması durumudur. Küretajı yapılarak rahatlatılmıştır.'
   }
 ];
 
