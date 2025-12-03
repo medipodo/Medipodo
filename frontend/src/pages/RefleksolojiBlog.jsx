@@ -556,7 +556,7 @@ const RefleksolojiBlog = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Refleksoloji tedavi midir?</h3>
                   <p className="text-gray-700">
-                    <strong>Hayır.</strong> Refleksoloji, destekleyici bir uygulamadır. Sağlık probleminiz varsa mutlaka hekiminize danışın.
+                    <strong>Hayır.</strong> Refleksoloji, destekleyici bir uygulamadır. Alternatif bir yöntem olup bir çok faydası vardır ancak sağlık probleminiz varsa mutlaka hekiminize danışın.
                   </p>
                 </div>
 
@@ -584,7 +584,7 @@ const RefleksolojiBlog = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Yan etkisi var mı?</h3>
                   <p className="text-gray-700">
-                    Doğru uzman tarafından uygulandığında yan etkisi yoktur.
+                    Doğru uzman tarafından, doğru uygulandığında yan etkisi yoktur.
                   </p>
                 </div>
 
