@@ -3,9 +3,9 @@
 export const enrichedBlogPosts = [
   {
     id: 'ankara-baglica-refleksoloji',
-    title: 'Refleksoloji Nedir? Ankara Bağlıca'da Profesyonel Refleksoloji Uygulaması',
+    title: "Refleksoloji Nedir? Ankara Bağlıca'da Profesyonel Refleksoloji Uygulaması",
     slug: 'ankara-baglica-refleksoloji',
-    excerpt: 'Ankara Bağlıca'da podolog ve uzman refleksolog ekibiyle profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için tamamlayıcı destek.',
+    excerpt: "Ankara Bağlıca'da podolog ve uzman refleksolog ekibiyle profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için tamamlayıcı destek.",
     image: '/blog-images/refleksoloji/refleksoloji.jpg',
     date: '3 Aralık 2025',
     readTime: '20 dk',
