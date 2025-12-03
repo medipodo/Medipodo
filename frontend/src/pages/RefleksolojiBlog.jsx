@@ -66,7 +66,7 @@ const RefleksolojiBlog = () => {
                 <strong>Refleksoloji</strong>; genelde ayakta (bazen de elde) belirli noktalara basınç uygulanarak yapılan bir tamamlayıcı, alternatif tıp yöntemidir. Vücudun kendi kendini düzenleme mekanizmasını aktive etmeyi hedefler.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                <strong>Medipodo Ayak Sağlığı</strong> olarak Ankara Bağlıca'da 1 podolog ve 2 uzman refleksolog kadromuzla refleksolojiyi bilimsel, güvenli ve kişiye özel bir yaklaşımla uyguluyoruz.
+                <strong>Medipodo Ayak Sağlığı</strong> olarak Ankara Bağlıca'da 1 Podolog ve 2 Refleksolog kadromuzla refleksolojiyi bilimsel, güvenli ve kişiye özel bir yaklaşımla uyguluyoruz.
               </p>
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-6">
                 <p className="text-gray-700 font-semibold">
@@ -611,7 +611,7 @@ const RefleksolojiBlog = () => {
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 mr-3 text-2xl">✔</span>
-                  <p className="text-white">2 uzman refleksolog</p>
+                  <p className="text-white">2 Uzman Refleksolog</p>
                 </div>
                 <div className="flex items-start">
                   <span className="text-yellow-300 mr-3 text-2xl">✔</span>
