@@ -63,14 +63,14 @@ const RefleksolojiBlog = () => {
             {/* Giriş */}
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-lg text-gray-700 leading-relaxed">
-                <strong>Refleksoloji</strong>; ayak, el ve kulak bölgesindeki belirli sinir noktalarına uygulanan özel bası teknikleriyle vücudun kendi kendini düzenleme mekanizmasını aktive eden tamamlayıcı bir uygulamadır.
+                <strong>Refleksoloji</strong>; genelde ayakta (bazen de elde) belirli noktalara basınç uygulanarak yapılan bir tamamlayıcı, alternatif tıp yöntemidir. Vücudun kendi kendini düzenleme mekanizmasını aktive etmeyi hedefler.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 <strong>Medipodo Ayak Sağlığı</strong> olarak Ankara Bağlıca'da 1 podolog ve 2 uzman refleksolog kadromuzla refleksolojiyi bilimsel, güvenli ve kişiye özel bir yaklaşımla uyguluyoruz.
               </p>
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-6">
                 <p className="text-gray-700 font-semibold">
-                  ⚠️ Refleksoloji; tedavi etmez, ancak birçok yaygın sağlık durumunda destekleyici ve düzenleyici bir etki sunar.
+                  💡 Refleksoloji, destekleyici uygulamadır, sağlık probleminiz varsa hekimize danışmayı ihmal etmeyin.
                 </p>
               </div>
             </div>
@@ -421,7 +421,7 @@ const RefleksolojiBlog = () => {
                 
                 <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 rounded-r-lg">
                   <p className="text-gray-700 font-semibold">
-                    ⚠️ Tıbbi tedavinin yerine geçmez, tamamlayıcıdır.
+                    💡 Refleksoloji, destekleyici uygulamadır, sağlık probleminiz varsa hekimize danışmayı ihmal etmeyin.
                   </p>
                 </div>
               </div>
@@ -556,7 +556,7 @@ const RefleksolojiBlog = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Refleksoloji tedavi midir?</h3>
                   <p className="text-gray-700">
-                    <strong>Hayır.</strong> Tıbbi tedavinin yerine geçmez, tamamlayıcı bir uygulamadır.
+                    <strong>Hayır.</strong> Refleksoloji, destekleyici bir uygulamadır. Sağlık probleminiz varsa mutlaka hekiminize danışın.
                   </p>
                 </div>
 
