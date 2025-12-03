@@ -19,6 +19,7 @@ import CatlakTopukBlog from './pages/CatlakTopukBlog';
 import AyakKokusuBlog from './pages/AyakKokusuBlog';
 import DiyabetAyakBlog from './pages/DiyabetAyakBlog';
 import BatikTirnakBlog from './pages/BatikTirnakBlog';
+import RefleksolojiBlog from './pages/RefleksolojiBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/blog/ayak-kokusu-ve-mantar-iliskisi" element={<AyakKokusuBlog />} />
           <Route path="/blog/diyabet-ve-ayak-sagligi" element={<DiyabetAyakBlog />} />
           <Route path="/blog/tirnakbatmasi" element={<BatikTirnakBlog />} />
+          <Route path="/blog/ankara-baglica-refleksoloji" element={<RefleksolojiBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
