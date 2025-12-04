@@ -4,7 +4,7 @@ import { enrichedBlogPosts } from './blog_content';
 
 export const siteInfo = {
   name: 'Medipodo',
-  fullName: 'Medipodo Ayak Bakımı',
+  fullName: 'Medipodo Medikal Sağlık Hizmetleri',
   tagline: 'Profesyonel Podoloji ve Ayak Bakım Merkezi',
   phone: '0545 656 97 47',
   phoneLink: '05456569747',
