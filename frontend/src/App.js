@@ -20,6 +20,7 @@ import AyakKokusuBlog from './pages/AyakKokusuBlog';
 import DiyabetAyakBlog from './pages/DiyabetAyakBlog';
 import BatikTirnakBlog from './pages/BatikTirnakBlog';
 import RefleksolojiBlog from './pages/RefleksolojiBlog';
+import NasirSigilBlog from './pages/NasirSigilBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/blog/diyabet-ve-ayak-sagligi" element={<DiyabetAyakBlog />} />
           <Route path="/blog/tirnakbatmasi" element={<BatikTirnakBlog />} />
           <Route path="/blog/ankara-baglica-refleksoloji" element={<RefleksolojiBlog />} />
+          <Route path="/blog/nasir-sigil-farklari" element={<NasirSigilBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />

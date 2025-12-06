@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'nasir-sigil-farklari',
+    title: 'Nasır Nedir? Plantar Siğil Nedir? Nasıl Ayırt Edilir? Hangi Yöntemler Uygulanır?',
+    slug: 'nasir-sigil-farklari',
+    excerpt: 'Ayak tabanındaki ağrılı lezyonlar nasır mı siğil mi? Aralarındaki farkları öğrenin. Podolojik tedavi yöntemleri, kriyoterapi ve kalıcı çözümler için rehberiniz.',
+    image: '/blog-images/nasir-sigil/Nasır Nedir görseli.jpg',
+    date: '6 Aralık 2025',
+    readTime: '18 dk',
+    tags: ['Nasır', 'Siğil', 'Plantar Siğil', 'Kriyoterapi', 'Podoloji', 'Ayak Sağlığı'],
+    content: 'Özel blog sayfası: /blog/nasir-sigil-farklari'
+  },
+  {
     id: 'ankara-baglica-refleksoloji',
     title: "Refleksoloji Nedir? Ankara Bağlıca'da Profesyonel Refleksoloji Uygulaması",
     slug: 'ankara-baglica-refleksoloji',
