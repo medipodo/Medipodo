@@ -6,7 +6,7 @@ export const enrichedBlogPosts = [
     title: 'Nasır Nedir? Plantar Siğil Nedir? Nasıl Ayırt Edilir? Hangi Yöntemler Uygulanır?',
     slug: 'nasir-sigil-farklari',
     excerpt: 'Ayak tabanındaki ağrılı lezyonlar nasır mı siğil mi? Aralarındaki farkları öğrenin. Podolojik tedavi yöntemleri, kriyoterapi ve kalıcı çözümler için rehberiniz.',
-    image: '/blog-images/nasir-sigil/Nasır Nedir görseli.jpg',
+    image: '/blog-images/nasir-sigil/kapak.jpg',
     date: '6 Aralık 2025',
     readTime: '18 dk',
     tags: ['Nasır', 'Siğil', 'Plantar Siğil', 'Kriyoterapi', 'Podoloji', 'Ayak Sağlığı'],

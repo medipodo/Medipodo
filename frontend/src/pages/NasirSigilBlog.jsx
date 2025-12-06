@@ -56,9 +56,6 @@ const NasirSigilBlog = () => {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Ayağınızın tabanında, attığınız her adımda iğne gibi batan keskin bir acı mı hissediyorsunuz? Ayakkabınızı çıkardığınızda sizi rahatsız eden o sertliğin ne olduğundan emin değil misiniz? Yalnız değilsiniz. Ayak sağlığında en sık karşılaşılan ve birbiriyle en çok karıştırılan iki durum <strong>plantar siğil (verruca plantaris)</strong> ve <strong>nasır (kallus)</strong>dır. Görünümleri benzese de sebepleri ve tedavi yöntemleri gece ile gündüz kadar farklıdır. Yanlış bir müdahale, basit bir sorunu aylarca sürecek bir probleme dönüştürebilir.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Bu kapsamlı yazıda, bir podolog olarak bu iki yaygın ayak sorununu mercek altına alıyor, aralarındaki kritik farkları, korunma yollarını ve en etkili modern tedavi yöntemlerini adım adım açıklıyoruz. Amacımız, ayağınızdaki sorunu doğru tanımanıza ve ağrıya kalıcı olarak veda etmenize yardımcı olmaktır.
-              </p>
             </div>
 
             {/* Plantar Siğil Bölümü */}
