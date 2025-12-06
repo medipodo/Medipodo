@@ -572,7 +572,7 @@ const NasirSigilBlog = () => {
                     className="bg-white text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors flex items-center"
                   >
                     <Phone size={20} className="mr-2" />
-                    Randevu Al: 0545 656 97 47
+                    Randevu 0545 656 97 47
                   </a>
                   <a 
                     href="https://wa.me/905456569747" 
