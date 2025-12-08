@@ -18,7 +18,7 @@ const TopukDikeniBlog = () => {
         <meta property="og:description" content="Topuk dikeni nedir, belirtileri nelerdir ve nasıl tedavi edilir? Podolojik yaklaşımlar ve kalıcı çözümler." />
         <meta property="og:image" content="https://medipodo.com/blog-images/topuk-dikeni/kapak görseli topuk dikeni.jpg" />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://medipodo.com/blog/topuk-dikeni-plantar-fasiit" />
+        <link rel="canonical" href="https://medipodo.com/blog/topuk-dikeni" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -31,7 +31,7 @@ const TopukDikeniBlog = () => {
             </Link>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Topuk Dikeni Nedir ve Nasıl Geçer?
+              Topuk Dikeni (Calcanei Epin) Nedir ve Nasıl Geçer?
             </h1>
             
             <div className="flex flex-wrap gap-6 text-blue-100">
