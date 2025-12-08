@@ -11,11 +11,11 @@ const TopukDikeniBlog = () => {
   return (
     <>
       <Helmet>
-        <title>Topuk Dikeni (Plantar Fasiit) Nedir ve Nasıl Geçer? | Medipodo Bağlıca</title>
-        <meta name="description" content="Topuk dikeni (plantar fasiit) nedir, belirtileri nelerdir ve nasıl tedavi edilir? Podolojik yaklaşımlar, biyomekanik analiz, ortez tedavisi ve kalıcı çözümler." />
-        <meta name="keywords" content="topuk dikeni, plantar fasiit, topuk ağrısı, ayak tabanı ağrısı, topuk dikeni tedavisi, ortez, tabanlık, podoloji, Medipodo, Bağlıca, Ankara" />
-        <meta property="og:title" content="Topuk Dikeni (Plantar Fasiit) Nedir ve Nasıl Geçer? | Medipodo Bağlıca" />
-        <meta property="og:description" content="Topuk dikeni (plantar fasiit) nedir, belirtileri nelerdir ve nasıl tedavi edilir? Podolojik yaklaşımlar ve kalıcı çözümler." />
+        <title>Topuk Dikeni (Calcanei Epin) Nedir ve Nasıl Geçer? | Medipodo Bağlıca</title>
+        <meta name="description" content="Topuk dikeni (Epin Calcanei) nedir, belirtileri nelerdir ve nasıl tedavi edilir? Podolojik yaklaşımlar, biyomekanik analiz, ortez tedavisi ve kalıcı çözümler." />
+        <meta name="keywords" content="topuk dikeni, calcanei epin, plantar fasiit, topuk ağrısı, ayak tabanı ağrısı, topuk dikeni tedavisi, ortez, tabanlık, podoloji, Medipodo, Bağlıca, Ankara" />
+        <meta property="og:title" content="Topuk Dikeni Nedir ve Nasıl Geçer? | Medipodo Bağlıca" />
+        <meta property="og:description" content="Topuk dikeni nedir, belirtileri nelerdir ve nasıl tedavi edilir? Podolojik yaklaşımlar ve kalıcı çözümler." />
         <meta property="og:image" content="https://medipodo.com/blog-images/topuk-dikeni/kapak görseli topuk dikeni.jpg" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/topuk-dikeni-plantar-fasiit" />
@@ -31,7 +31,7 @@ const TopukDikeniBlog = () => {
             </Link>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Topuk Dikeni (Plantar Fasiit) Nedir ve Nasıl Geçer?
+              Topuk Dikeni Nedir ve Nasıl Geçer?
             </h1>
             
             <div className="flex flex-wrap gap-6 text-blue-100">
@@ -74,7 +74,7 @@ const TopukDikeniBlog = () => {
             {/* Topuk Dikeni Nedir Bölümü */}
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                Topuk Dikeni (Plantar Fasiit) Nedir?
+                Topuk Dikeni Nedir?
               </h2>
 
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-6">
