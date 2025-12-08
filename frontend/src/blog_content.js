@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'topuk-dikeni-plantar-fasiit',
+    title: 'Topuk Dikeni (Plantar Fasiit) Nedir ve Nasıl Geçer?',
+    slug: 'topuk-dikeni-plantar-fasiit',
+    excerpt: 'Sabah kalktığınızda topuğunuza batan keskin acı mı hissediyorsunuz? Topuk dikeni (plantar fasiit) nedir, neden olur ve nasıl tedavi edilir? Podolojik yaklaşımlar ve kalıcı çözümler.',
+    image: '/blog-images/topuk-dikeni/kapak görseli topuk dikeni.jpg',
+    date: '8 Aralık 2025',
+    readTime: '15 dk',
+    tags: ['Topuk Dikeni', 'Plantar Fasiit', 'Topuk Ağrısı', 'Ortez', 'Podoloji', 'Ayak Sağlığı'],
+    content: 'Özel blog sayfası: /blog/topuk-dikeni-plantar-fasiit'
+  },
+  {
     id: 'nasir-sigil-farklari',
     title: 'Nasır Nedir? Plantar Siğil Nedir? Nasıl Ayırt Edilir? Hangi Yöntemler Uygulanır?',
     slug: 'nasir-sigil-farklari',
