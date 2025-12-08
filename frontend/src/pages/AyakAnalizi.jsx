@@ -7,120 +7,127 @@ const AyakAnalizi = () => {
   const [showResult, setShowResult] = useState(false);
   const [recommendation, setRecommendation] = useState(null);
 
+  // Toplam soru sayısı
   const totalQuestions = 6;
 
-  // Ürün önerileri - Akıllı algoritma
-  const getSmartRecommendation = () => {
-    const mainProblem = answers.q0; // koku, mantar, tirnak, nasir, bakim
+  // Yeni Sonuç Algoritması
+  const getPodologicalRecommendation = () => {
+    const mainProblem = answers.q0; // koku, mantar, tirnak, nasir, sigil, bakim
     const sweating = answers.q1;    // cok, orta, az
-    const skinCondition = answers.q2; // pul, kizarik, catlak, saglikli
-    const history = answers.q4;     // sik, nadiren, hayir
-    
-    // KURAL 1: Kuruluk/Çatlak sorunu → Intense Repair %15 Üreli Krem
-    if (mainProblem === 'nasir' || skinCondition === 'catlak') {
-      return {
-        title: "Kuruluk ve Çatlak Sorunu",
-        icon: "🩹",
-        description: "Ayaklarınızda kuruluk ve çatlaklar tespit edildi. Yoğun nem ve onarım gerektiren bir durum.",
-        product: "Pedizone Intense Repair %15 Üreli Krem",
-        reason: "%15 üre içeriği ile derinlemesine nemlendirme ve onarım sağlar. Çatlak topuklar için ideal formül.",
-        usage: "Günde 2 kez (sabah ve gece) temiz, kuru ayaklara uygulayın. Özellikle topuk ve çatlak bölgelere masaj yaparak sürün. Gece çorap giymek etkiyi artırır."
-      };
-    }
+    const skinCondition = answers.q2; // pul, kizarik, catlak, iltihap, saglikli
+    const shoeChoice = answers.q3;  // kapali, acik, topuklu, degisken
+    const history = answers.q4;     // sik, nadiren, ilk_kez, hic_yasamadim
+    const careTime = answers.q5;    // gunluk, haftalik, gelebilirim
 
-    // KURAL 2: Koku + Mantar belirtileri (pullanma/kızarıklık) → 3'lü Set
-    if (mainProblem === 'koku' && (skinCondition === 'pul' || skinCondition === 'kizarik')) {
-      return {
-        title: "Koku ve Mantar - Kompleks Bakım Gerekli",
-        icon: "🚨",
-        description: "Hem koku hem de mantar belirtileri tespit edildi. Çoklu şikayet için kompleks bakım öneriyoruz.",
-        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
-        reason: "Kompleks bakım sistemi: Köpük ile temizlik, Serum ile antifungal koruma, Krem ile nemlendirme. 3 adımda tam çözüm.",
-        usage: "1) Sabah-akşam Temizleme Köpüğü ile yıkayın. 2) Bakım Serumu'nu parmak aralarına ve sorunlu bölgelere sürün. 3) Onarıcı Krem ile tüm ayağı nemlendirin."
-      };
-    }
-
-    // KURAL 3: Tırnak + Koku → 3'lü Set
-    if (mainProblem === 'tirnak' && sweating !== 'az') {
-      return {
-        title: "Tırnak Problemi ve Koku - Kompleks Bakım",
-        icon: "💅",
-        description: "Tırnak problemi ve koku kombinasyonu tespit edildi. Kapsamlı bakım öneriyoruz.",
-        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
-        reason: "Tırnak çevresi hijyeni ve genel ayak bakımı için ideal kombinasyon. Köpük temizler, Serum korur, Krem nemlendirir.",
-        usage: "Günde 2 kez Köpük ile temizlik, Serum'u tırnak çevresine özenle uygulayın, Krem ile genel nemlendirme yapın."
-      };
-    }
-
-    // KURAL 4: Sadece Mantar → 3'lü Set
-    if (mainProblem === 'mantar' || skinCondition === 'kizarik') {
-      return {
-        title: "Mantar Enfeksiyonu - Aktif Tedavi",
-        icon: "🔴",
-        description: "Mantar enfeksiyonu belirtileri tespit edildi. Antifungal bakım şart.",
-        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
-        reason: "Antifungal koruma + bakım + nemlendirme. Mantar tedavisinde 3 adımlı yaklaşım en etkilidir.",
-        usage: "Günde 2 kez Köpük ile derin temizlik, Serum ile antifungal koruma, Krem ile cilt bariyeri güçlendirme."
-      };
-    }
-
-    // KURAL 5: Sadece Koku (mantar yok, deri sağlıklı) → Sadece Köpük
-    if (mainProblem === 'koku' && skinCondition === 'saglikli') {
-      return {
-        title: "Koku Problemi - Hijyen Çözümü",
-        icon: "✨",
-        description: "Ayaklarınızda sadece koku sorunu var. Düzenli hijyen ile kontrol altına alınabilir.",
-        product: "Pedizone Temizleme Köpüğü",
-        reason: "Keratolitik ve antifungal özellikleri ile kokuya neden olan bakterilerin besin kaynağını ortadan kaldırır. Tek başına yeterli.",
-        usage: "Günde 1-2 kez (tercihen akşamları) Temizleme Köpüğü ile ayakları derinlemesine temizleyin. Parmak aralarını özellikle iyi kurulayın."
-      };
-    }
-
-    // KURAL 6: Koku + Yoğun Terleme (ama deri sağlıklı) → Sadece Köpük
-    if (mainProblem === 'koku' && sweating === 'cok' && skinCondition === 'saglikli') {
-      return {
-        title: "Yoğun Terleme ve Koku",
-        icon: "💦",
-        description: "Yoğun terleme nedeniyle koku oluşuyor. Düzenli bakım önemli.",
-        product: "Pedizone Temizleme Köpüğü",
-        reason: "Yoğun terlemeye karşı günlük hijyen çözümü. Bakterileri ve koku kaynağını temizler.",
-        usage: "Günde 2 kez (sabah ve akşam) kullanın. Yoğun terleme sonrası ayakları hemen yıkayın."
-      };
-    }
-
-    // KURAL 7: Pullanma var (mantar riski) → 3'lü Set
-    if (skinCondition === 'pul') {
-      return {
-        title: "Ölü Deri ve Pullanma - Kompleks Bakım",
-        icon: "⚠️",
-        description: "Ölü deri birikimi ve pullanma var. Mantar riski nedeniyle kompleks bakım öneriyoruz.",
-        product: "Pedizone 3'lü Set: Temizleme Köpüğü + Bakım Serumu + Onarıcı Krem",
-        reason: "Keratolitik temizlik + antifungal koruma + nemlendirme. Pullanmayı önler, cildi yeniler.",
-        usage: "Köpük ile ölü deriyi temizleyin, Serum ile mantar oluşumunu önleyin, Krem ile cildi nemlendirin."
-      };
-    }
-
-    // VARSAYILAN: Genel Bakım → Sadece Köpük
-    return {
-      title: "Genel Bakım ve Koruma",
+    let result = {
+      title: "Genel Ayak Sağlığı Değerlendirmesi",
       icon: "✨",
-      description: "Ayaklarınız genel olarak sağlıklı. Önleyici bakım ile bu durumu koruyabilirsiniz.",
-      product: "Pedizone Temizleme Köpüğü (Koruma Amaçlı)",
-      reason: "Düzenli kullanımı, mantar ve koku oluşumunu önler. Ayak hijyenini üst seviyede tutar.",
-      usage: "Günde 1 kez (tercihen akşamları) ayakları temizleyin. Özellikle spor veya kapalı ayakkabı giydiğiniz günlerde kullanın."
+      podologicalAssessment: "Ayaklarınız genel olarak sağlıklı görünüyor. Koruyucu ve önleyici bakıma odaklanmalısınız.",
+      attentionPoints: [
+        "Ayak hijyeninize özen göstermeye devam edin.",
+        "Ayakkabı seçiminize dikkat edin, ayaklarınızı sıkmayan modeller tercih edin.",
+        "Düzenli nemlendirme ile cilt bariyerinizi koruyun."
+      ],
+      blogLink: "https://medipodo.com/blog/baglica-podolog-hizmetleri",
+      blogTitle: "Başlıca Podolog Hizmetleri",
+      productMention: "Pedizone Ayak Sağlıgı Ürünleri bu yolda en büyük destekçiniz olacak."
     };
+
+    // --- Koku (Bromodoz) ve Mantar Enfeksiyonu (Tinea Pedis) Senaryosu ---
+    if (mainProblem === 'koku' || mainProblem === 'mantar' || skinCondition === 'kizarik' || skinCondition === 'pul' || history === 'sik' || history === 'nadiren') {
+      result.title = "Tırnak ve Ayak Mantarı Sorunu Yaşıyorsunuz!";
+      result.icon = "🚨";
+      result.podologicalAssessment = "Medikal Ayak Bakımına ihtiyacınız var. Podologumuz tarafından mantarlı bölgelerin temizlenmesi ve uygulamanız gereken serum vb. yöntemlerin size tarif edilmesi gerekir.";
+      result.attentionPoints = [
+        "Ayaklarınızı her gün yıkayın ve parmak aralarını mutlaka kurulayın.",
+        "Çoraplarınızı günlük değiştirin ve pamuklu/nefes alan malzemeleri tercih edin.",
+        "Ayakkabılarınızı havalandırın ve mümkünse dezenfektan spreyler kullanın.",
+        "Halka açık alanlarda (havuz, spor salonu) terlik kullanmaya özen gösterin."
+      ];
+      result.blogLink = "https://medipodo.com/blog/ayak-analizi"; // Genel blog linki
+      result.blogTitle = "Ayak Analizi";
+    }
+
+    // --- Tırnak Batması Senaryosu ---
+    if (mainProblem === 'tirnak' || skinCondition === 'iltihap') {
+      result.title = "Tırnak Batması Sorunu!";
+      result.icon = "💅";
+      result.podologicalAssessment = "Ortoniksi sistemlerinin (tel uygulaması) uygulanması gerekebilir. Bu yöntemle tırnak yatağı düzeltilerek batık sorunu kalıcı olarak çözülür. Ayrıca, tırnak çevresi temizliği ve doğru tırnak kesimi konusunda eğitim almanız önemlidir.";
+      result.attentionPoints = [
+        "Tırnaklarınızı düz kesin, köşeleri yuvarlamaktan kaçının.",
+        "Dar ve sivri burunlu ayakkabılar giymekten kaçının.",
+        "Batık bölgeyi zorlamayın ve iltihap varsa hemen bir uzmana başvurun."
+      ];
+      result.blogLink = "https://medipodo.com/blog/tirnakbatmasi";
+      result.blogTitle = "Tırnak Batması";
+    }
+
+    // --- Nasır ve Çatlaklar Senaryosu ---
+    if (mainProblem === 'nasir' || skinCondition === 'catlak') {
+      result.title = "Nasır ve Çatlak Sorunu!";
+      result.icon = "🩹";
+      result.podologicalAssessment = "Medikal ayak bakımı ve küretaj (nasır temizliği) ile sertleşmiş ve çatlamış bölgelerin profesyonelce temizlenmesi gerekir. Düzenli nemlendirme ve baskıyı azaltıcı uygulamalar (silikon destekler) önemlidir.";
+      result.attentionPoints = [
+        "Ayaklarınızı her gün nemlendirin, özellikle üre içeren kremler kullanın.",
+        "Sertleşmiş deriyi törpülemekten kaçının, bu daha fazla sertleşmeye neden olabilir.",
+        "Uzun süre ayakta kalmaktan kaçının ve rahat ayakkabılar tercih edin."
+      ];
+      result.blogLink = "https://medipodo.com/blog/kis-aylarinda-catlak-topuk-tedavisi";
+      result.blogTitle = "Kış Aylarında Çatlak Topuk Tedavisi";
+    }
+
+    // --- Plantar Siğil Senaryosu ---
+    if (mainProblem === 'sigil') {
+      result.title = "Plantar Siğil Riski!";
+      result.icon = "🦠";
+      result.podologicalAssessment = "Siğil tedavisi için özel podolojik yöntemler (kriyoterapi, kimyasal peeling veya küretaj) uygulanması gerekebilir. Siğilin yayılmasını önlemek için acil müdahale önemlidir.";
+      result.attentionPoints = [
+        "Siğile dokunmaktan ve kaşımaktan kaçının.",
+        "Siğil olan bölgeyi kapatın ve başkalarıyla temasını engelleyin.",
+        "Halka açık ıslak zeminlerde (havuz, duş) terlik kullanın."
+      ];
+      result.blogLink = "https://medipodo.com/blog/nasir-sigil-blog"; // Varsayılan siğil blogu
+      result.blogTitle = "Nasır ve Siğil";
+    }
+
+    // --- Genel Bakım ve Hijyen Senaryosu (Varsayılanı günceller) ---
+    if (mainProblem === 'bakim' && skinCondition === 'saglikli' && history === 'hic_yasamadim') {
+      result.title = "Ayak Sağlığınız Mükemmel!";
+      result.icon = "✅";
+      result.podologicalAssessment = "Ayaklarınızın sağlığını korumak için düzenli olarak koruyucu medikal ayak bakımı yaptırmanız önerilir. Bu, olası sorunları erken aşamada tespit etmemizi sağlar.";
+      result.attentionPoints = [
+        "Ayak hijyeninize devam edin.",
+        "Ayakkabılarınızı düzenli olarak havalandırın.",
+        "Yılda en az bir kez podolojik kontrolden geçin."
+      ];
+      result.blogLink = "https://medipodo.com/blog/baglica-podolog-hizmetleri";
+      result.blogTitle = "Başlıca Podolog Hizmetleri";
+    }
+
+    // Bakım Süresi "Kendim Yapamam" ise randevu vurgusu
+    if (careTime === 'gelebilirim') {
+      result.podologicalAssessment += " **Özellikle 'Kendim Yapamam' seçeneğini işaretlemeniz, profesyonel podolojik desteğin sizin için en uygun çözüm olduğunu göstermektedir.**";
+    }
+
+    // Terleme yoğunsa koku/mantar uyarısı ekle
+    if (sweating === 'cok' && mainProblem !== 'koku' && mainProblem !== 'mantar') {
+      result.attentionPoints.push("Yoğun terleme, mantar ve koku riskini artırır. Ayaklarınızı kuru tutmaya özen gösterin.");
+    }
+
+    return result;
   };
 
   // Sorular
   const questions = [
     {
       number: 1,
-      text: "Ayaklarınızda en belirgin sorun nedir?",
+      text: "Ayaklarınızda en belirgin sorun nedir? (Lütfen en çok sizi rahatsız edeni seçin)",
       options: [
         { value: "koku", label: "Koku (Bromodoz)" },
         { value: "mantar", label: "Mantar enfeksiyonu (Tinea Pedis)" },
         { value: "tirnak", label: "Tırnak batması" },
         { value: "nasir", label: "Nasır ve çatlamalar" },
+        { value: "sigil", label: "Plantar Siğil" },
         { value: "bakim", label: "Genel bakım ve hijyen" }
       ]
     },
@@ -129,7 +136,7 @@ const AyakAnalizi = () => {
       text: "Ayaklarınız ne kadar terleme eğilimi gösteriyor?",
       options: [
         { value: "cok", label: "Çok fazla (Ayakkabılar ıslak kalıyor)" },
-        { value: "orta", label: "Orta düzeyde (Normal terleme)" },
+        { value: "orta", label: "Orta düzeyde (Normal)" },
         { value: "az", label: "Az (Kuru ayaklar)" }
       ]
     },
@@ -140,6 +147,7 @@ const AyakAnalizi = () => {
         { value: "pul", label: "Pul pul dökülüyor (Ölü deri birikimi)" },
         { value: "kizarik", label: "Kızarık ve kaşıntılı" },
         { value: "catlak", label: "Çatlak ve sertleşmiş" },
+        { value: "iltihap", label: "Batık tırnak kaynaklı iltihap var" },
         { value: "saglikli", label: "Sağlıklı görünüyor" }
       ]
     },
@@ -149,6 +157,7 @@ const AyakAnalizi = () => {
       options: [
         { value: "kapali", label: "Kapalı ayakkabı giyiyorum (Spor ayakkabısı, bot vb.)" },
         { value: "acik", label: "Açık ayakkabı tercih ediyorum (Sandalet, terlik)" },
+        { value: "topuklu", label: "İşim gereği topuklu ayakkabı giyiyorum" },
         { value: "degisken", label: "Değişken (Duruma göre değişiyor)" }
       ]
     },
@@ -158,7 +167,8 @@ const AyakAnalizi = () => {
       options: [
         { value: "sik", label: "Evet, sık sık (Kronik sorun)" },
         { value: "nadiren", label: "Evet, ama nadiren" },
-        { value: "hayir", label: "Hayır, ilk kez" }
+        { value: "ilk_kez", label: "Hayır, ilk kez" },
+        { value: "hic_yasamadim", label: "Hiç Yaşamadım" }
       ]
     },
     {
@@ -167,14 +177,14 @@ const AyakAnalizi = () => {
       options: [
         { value: "gunluk", label: "Günlük düzenli bakım (Her gün 5-10 dakika)" },
         { value: "haftalik", label: "Haftalık bakım (Haftada 1-2 kez)" },
-        { value: "minimal", label: "Minimal (Sadece gerektiğinde)" }
+        { value: "gelebilirim", label: "Kendim Yapamam (Ayda 1 Gelebilirim)" }
       ]
     }
   ];
 
   // Akıllı öneri algoritması
   const getRecommendation = () => {
-    return getSmartRecommendation();
+    return getPodologicalRecommendation();
   };
 
   const handleOptionChange = (questionIndex, value) => {
@@ -206,11 +216,11 @@ const AyakAnalizi = () => {
       setRecommendation(result);
       setShowResult(true);
 
-      // Google Analytics tracking
+      // Google Analytics tracking (Mevcut koddan korundu)
       if (typeof window.gtag === 'function') {
-        window.gtag('event', 'quiz_completed', {
+        window.gtag('event', 'quiz_completed_revised', {
           'event_category': 'Ayak Analiz Aracı',
-          'event_label': result.product,
+          'event_label': result.title,
           'value': 1
         });
       }
@@ -233,11 +243,62 @@ const AyakAnalizi = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Blog Kartı Bileşeni
+  const BlogCard = ({ link, title }) => (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="blog-card-link">
+      <div className="blog-card">
+        <p className="blog-card-title">İlgili Blog Yazısı: {title}</p>
+        <span className="blog-card-read-more">Hemen Oku &rarr;</span>
+      </div>
+    </a>
+  );
+
+  // Sonuç Kartı Bileşeni
+  const ResultCard = ({ result }) => (
+    <div className="result-card">
+      <div className="result-header">
+        <span className="result-icon">{result.icon}</span>
+        <h2>{result.title}</h2>
+      </div>
+
+      <div className="result-section">
+        <h3>Podolojik Açıdan Değerlendirme</h3>
+        <p>{result.podologicalAssessment}</p>
+      </div>
+
+      <div className="result-section">
+        <h3>Dikkat Etmeniz Gereken Acil Hususlar</h3>
+        <ul>
+          {result.attentionPoints.map((point, index) => (
+            <li key={index}>{point}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="result-section product-mention">
+        <p><strong>{result.productMention}</strong></p>
+      </div>
+
+      <BlogCard link={result.blogLink} title={result.blogTitle} />
+
+      <div className="result-section appointment-info">
+        <h3>Randevu ve Bilgi</h3>
+        <p>Uzman podologlarımızdan randevu almak veya daha detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
+        <a href="/contact" className="contact-button">Randevu Alın</a>
+      </div>
+
+      <button onClick={handleRestart} className="restart-button">
+        Yeniden Analiz Yap
+      </button>
+    </div>
+  );
+
+  // Mevcut JSX yapısının geri kalanı (stil ve genel yapı)
   return (
     <>
       <Helmet>
         <title>Ayak Analizi - Medipodo</title>
-        <meta name="description" content="Ayaklarınızı analiz edin ve size özel PediZone ürün önerisi alın." />
+        <meta name="description" content="Ayaklarınızı analiz edin ve size özel podolojik değerlendirme alın." />
       </Helmet>
 
       <style>{`
@@ -270,245 +331,235 @@ const AyakAnalizi = () => {
           margin-bottom: 10px;
         }
 
-        .quiz-header p {
-          color: #666;
-          font-size: 14px;
-        }
-
-        .quiz-progress-bar {
-          width: 100%;
-          height: 6px;
-          background: #e0e0e0;
-          border-radius: 3px;
+        .progress-bar-container {
+          height: 8px;
+          background-color: #eee;
+          border-radius: 4px;
           margin-bottom: 30px;
           overflow: hidden;
         }
 
-        .quiz-progress-fill {
+        .progress-bar {
           height: 100%;
-          background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-          transition: width 0.3s ease;
+          background-color: #667eea;
+          transition: width 0.3s ease-in-out;
         }
 
-        .quiz-question-number {
-          color: #667eea;
-          font-size: 12px;
-          font-weight: bold;
-          margin-bottom: 10px;
-          text-transform: uppercase;
-        }
-
-        .quiz-question-text {
+        .question-text {
+          font-size: 20px;
           color: #333;
-          font-size: 18px;
+          margin-bottom: 25px;
           font-weight: 600;
-          margin-bottom: 20px;
         }
 
-        .quiz-options {
+        .options-container {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 15px;
         }
 
-        .quiz-option {
-          display: flex;
-          align-items: center;
+        .option-label {
+          display: block;
+          background-color: #f9f9f9;
           padding: 15px;
-          border: 2px solid #e0e0e0;
           border-radius: 8px;
           cursor: pointer;
-          transition: all 0.3s ease;
+          transition: all 0.2s;
+          border: 2px solid #f9f9f9;
         }
 
-        .quiz-option:hover {
+        .option-label:hover {
+          background-color: #f0f0f0;
+        }
+
+        .option-input:checked + .option-label {
+          background-color: #e6e9ff;
           border-color: #667eea;
-          background: #f5f7ff;
-        }
-
-        .quiz-option.selected {
-          border-color: #667eea;
-          background: #f5f7ff;
-        }
-
-        .quiz-option input[type="radio"] {
-          margin-right: 15px;
-          cursor: pointer;
-          width: 20px;
-          height: 20px;
-          accent-color: #667eea;
-        }
-
-        .quiz-option label {
-          cursor: pointer;
-          flex: 1;
+          font-weight: 600;
           color: #333;
-          font-size: 15px;
         }
 
-        .quiz-buttons {
+        .option-input {
+          display: none;
+        }
+
+        .navigation-buttons {
           display: flex;
-          gap: 15px;
-          margin-top: 30px;
           justify-content: space-between;
+          margin-top: 30px;
         }
 
-        .quiz-btn {
-          padding: 12px 30px;
+        .nav-button {
+          padding: 12px 25px;
           border: none;
           border-radius: 8px;
-          font-size: 15px;
-          font-weight: 600;
           cursor: pointer;
-          transition: all 0.3s ease;
+          font-size: 16px;
+          font-weight: 600;
+          transition: background-color 0.2s;
         }
 
-        .quiz-btn-prev {
-          background: #f0f0f0;
+        .prev-button {
+          background-color: #ccc;
           color: #333;
         }
 
-        .quiz-btn-prev:hover:not(:disabled) {
-          background: #e0e0e0;
+        .prev-button:hover {
+          background-color: #bbb;
         }
 
-        .quiz-btn-next, .quiz-btn-submit {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .next-button, .submit-button {
+          background-color: #667eea;
           color: white;
-          flex: 1;
         }
 
-        .quiz-btn-next:hover, .quiz-btn-submit:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        .next-button:hover, .submit-button:hover {
+          background-color: #556cd6;
         }
 
-        .quiz-btn:disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
+        .submit-button {
+          width: 100%;
         }
 
-        .quiz-result {
+        /* Result Card Styles */
+        .result-card {
+          padding: 30px;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          background-color: #fff;
+        }
+
+        .result-header {
           text-align: center;
-          animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .result-icon {
-          font-size: 60px;
-          margin-bottom: 20px;
-        }
-
-        .result-title {
-          color: #333;
-          font-size: 24px;
-          font-weight: 700;
-          margin-bottom: 15px;
-        }
-
-        .result-description {
-          color: #666;
-          font-size: 15px;
-          line-height: 1.6;
           margin-bottom: 30px;
         }
 
-        .product-recommendation {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 25px;
-          border-radius: 10px;
-          margin-bottom: 25px;
-        }
-
-        .product-name {
-          font-size: 20px;
-          font-weight: 700;
+        .result-icon {
+          font-size: 48px;
+          display: block;
           margin-bottom: 10px;
         }
 
-        .product-reason {
-          font-size: 14px;
-          line-height: 1.5;
+        .result-header h2 {
+          color: #667eea;
+          font-size: 24px;
         }
 
-        .usage-instructions {
-          background: #f5f7ff;
+        .result-section {
+          margin-bottom: 25px;
+          padding: 15px;
           border-left: 4px solid #667eea;
-          padding: 20px;
-          border-radius: 8px;
-          margin-bottom: 25px;
-          text-align: left;
+          background-color: #f9f9ff;
         }
 
-        .usage-title {
-          font-size: 16px;
-          font-weight: 700;
+        .result-section h3 {
           color: #333;
+          margin-top: 0;
+          font-size: 18px;
+          border-bottom: 1px solid #eee;
+          padding-bottom: 5px;
           margin-bottom: 10px;
         }
 
-        .usage-text {
-          font-size: 14px;
-          color: #666;
-          line-height: 1.6;
+        .result-section ul {
+          list-style-type: disc;
+          padding-left: 20px;
+          margin: 0;
         }
 
-        .cta-button {
-          display: inline-block;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 15px 40px;
-          border-radius: 8px;
+        .result-section li {
+          margin-bottom: 8px;
+          line-height: 1.4;
+        }
+
+        .product-mention {
+          text-align: center;
+          background-color: #e6ffe6;
+          border-left-color: #4CAF50;
           font-size: 16px;
-          font-weight: 600;
-          text-decoration: none;
-          margin-bottom: 15px;
-          transition: all 0.3s ease;
         }
 
-        .cta-button:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        .blog-card-link {
+          text-decoration: none;
+          display: block;
+          margin-bottom: 25px;
+        }
+
+        .blog-card {
+          background-color: #fff3cd;
+          border: 1px solid #ffeeba;
+          padding: 15px;
+          border-radius: 8px;
+          text-align: center;
+          transition: background-color 0.2s;
+        }
+
+        .blog-card:hover {
+          background-color: #ffeeba;
+        }
+
+        .blog-card-title {
+          color: #856404;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        .blog-card-read-more {
+          color: #856404;
+          font-size: 14px;
+          display: block;
+          margin-top: 5px;
+        }
+
+        .appointment-info {
+          text-align: center;
+          background-color: #f0f8ff;
+          border-left-color: #007bff;
+        }
+
+        .contact-button {
+          display: inline-block;
+          background-color: #007bff;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-decoration: none;
+          margin-top: 10px;
+          font-weight: 600;
+          transition: background-color 0.2s;
+        }
+
+        .contact-button:hover {
+          background-color: #0056b3;
         }
 
         .restart-button {
-          background: #f0f0f0;
-          color: #333;
-          padding: 12px 30px;
+          background-color: #dc3545;
+          color: white;
+          padding: 12px 25px;
           border: none;
           border-radius: 8px;
-          font-size: 15px;
-          font-weight: 600;
           cursor: pointer;
-          transition: all 0.3s ease;
+          font-size: 16px;
+          font-weight: 600;
+          transition: background-color 0.2s;
+          margin-top: 20px;
+          width: 100%;
         }
 
         .restart-button:hover {
-          background: #e0e0e0;
+          background-color: #c82333;
         }
 
         @media (max-width: 768px) {
           .quiz-card {
-            padding: 25px;
+            padding: 20px;
           }
-
           .quiz-header h1 {
             font-size: 24px;
           }
-
-          .quiz-question-text {
-            font-size: 16px;
+          .question-text {
+            font-size: 18px;
           }
         }
       `}</style>
@@ -518,97 +569,59 @@ const AyakAnalizi = () => {
           {!showResult ? (
             <>
               <div className="quiz-header">
-                <h1>🦶 Ayak Analiz Aracı</h1>
-                <p>6 basit soruyla ayaklarınızı analiz edin ve size özel ürün önerisi alın</p>
+                <h1>Ayak Analizi</h1>
+                <p>Ayak sağlığınız hakkında size özel podolojik değerlendirme alın.</p>
               </div>
 
-              <div className="quiz-progress-bar">
-                <div 
-                  className="quiz-progress-fill" 
-                  style={{ width: `${progress}%` }}
-                ></div>
+              <div className="progress-bar-container">
+                <div className="progress-bar" style={{ width: `${progress}%` }}></div>
               </div>
 
-              <div className="quiz-question-number">
-                Soru {questions[currentQuestion].number} / {totalQuestions}
-              </div>
-              <div className="quiz-question-text">
-                {questions[currentQuestion].text}
+              <div className="question-content">
+                <p className="question-text">
+                  {questions[currentQuestion].number} / {totalQuestions} - {questions[currentQuestion].text}
+                </p>
+                <div className="options-container">
+                  {questions[currentQuestion].options.map((option) => (
+                    <div key={option.value}>
+                      <input
+                        type="radio"
+                        id={`q${currentQuestion}-${option.value}`}
+                        name={`q${currentQuestion}`}
+                        value={option.value}
+                        checked={answers[`q${currentQuestion}`] === option.value}
+                        onChange={() => handleOptionChange(currentQuestion, option.value)}
+                        className="option-input"
+                      />
+                      <label htmlFor={`q${currentQuestion}-${option.value}`} className="option-label">
+                        {option.label}
+                      </label>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <div className="quiz-options">
-                {questions[currentQuestion].options.map((option, index) => (
-                  <label
-                    key={index}
-                    className={`quiz-option ${answers[`q${currentQuestion}`] === option.value ? 'selected' : ''}`}
-                  >
-                    <input
-                      type="radio"
-                      name={`q${currentQuestion}`}
-                      value={option.value}
-                      checked={answers[`q${currentQuestion}`] === option.value}
-                      onChange={() => handleOptionChange(currentQuestion, option.value)}
-                    />
-                    <label>{option.label}</label>
-                  </label>
-                ))}
-              </div>
-
-              <div className="quiz-buttons">
+              <div className="navigation-buttons">
                 <button
-                  className="quiz-btn quiz-btn-prev"
                   onClick={handlePrev}
                   disabled={currentQuestion === 0}
+                  className="nav-button prev-button"
                 >
-                  ← Geri
+                  &larr; Geri
                 </button>
-                
-                {currentQuestion === totalQuestions - 1 ? (
-                  <button
-                    className="quiz-btn quiz-btn-submit"
-                    onClick={handleSubmit}
-                  >
-                    Sonuçları Gör
+                {currentQuestion < totalQuestions - 1 ? (
+                  <button onClick={handleNext} className="nav-button next-button">
+                    İleri &rarr;
                   </button>
                 ) : (
-                  <button
-                    className="quiz-btn quiz-btn-next"
-                    onClick={handleNext}
-                  >
-                    İleri →
+                  <button onClick={handleSubmit} className="nav-button submit-button">
+                    Sonuçları Gör
                   </button>
                 )}
               </div>
             </>
           ) : (
-            <div className="quiz-result">
-              <div className="result-icon">{recommendation.icon}</div>
-              <div className="result-title">{recommendation.title}</div>
-              <div className="result-description">{recommendation.description}</div>
-              
-              <div className="product-recommendation">
-                <div className="product-name">{recommendation.product}</div>
-                <div className="product-reason">{recommendation.reason}</div>
-              </div>
-
-              <div className="usage-instructions">
-                <div className="usage-title">💡 Kullanım Talimatları:</div>
-                <div className="usage-text">{recommendation.usage}</div>
-              </div>
-
-              <a 
-                href="https://pedizone.com/bayiler" 
-                className="cta-button" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Satış Noktalarını Göster
-              </a>
-              <br />
-              <button className="restart-button" onClick={handleRestart}>
-                Yeniden Başla
-              </button>
-            </div>
+            <ResultCard result={recommendation} />
           )}
         </div>
       </div>
