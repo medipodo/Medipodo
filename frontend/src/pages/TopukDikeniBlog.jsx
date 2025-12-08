@@ -101,7 +101,7 @@ const TopukDikeniBlog = () => {
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
                   />
-                  <p className="text-sm text-gray-600 mt-2 text-center">Plantar fasya anatomik yapısı</p>
+                  <p className="text-sm text-gray-600 mt-2 text-center">Topuk Dikeni Muayenesi</p>
                 </div>
                 <div>
                   <img 
