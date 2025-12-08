@@ -30,7 +30,8 @@ const ServiceDetail = () => {
       'topuk-bakimi': ['Topuk', 'Çatlak'],
       'nasir-tedavisi': ['Nasır', 'Kalınlaşma', 'Siğil'],
       'refleksoloji': ['Refleksoloji', 'Ayak', 'Masaj'],
-      'diyabetik-ayak': ['Diyabet', 'Ayak']
+      'diyabetik-ayak': ['Diyabet', 'Ayak'],
+      'ayak-bakimi': ['Bağlıca', 'Podolog', 'Ayak Bakımı']
     };
 
     const keywords = serviceKeywords[serviceId] || [];
@@ -220,8 +221,8 @@ const ServiceDetail = () => {
                     to={`/blog/${blog.slug}`}
                     className="block"
                   >
-                    <Card className="overflow-hidden hover:shadow-xl transition-all h-full flex flex-col">
-                      <CardContent className="p-0 flex flex-col h-full">
+                    <Card className="overflow-hidden hover:shadow-xl transition-all h-full">
+                      <CardContent className="p-0">
                         <div className="relative aspect-video">
                           <img
                             src={blog.image}
@@ -230,17 +231,10 @@ const ServiceDetail = () => {
                             loading="lazy"
                           />
                         </div>
-                        <div className="p-5 flex-1 flex flex-direction-column">
-                          <h3 className="font-bold text-lg text-blue-950 mb-2 line-clamp-2">
+                        <div className="p-5">
+                          <h3 className="font-bold text-lg text-blue-950 leading-tight">
                             {blog.title}
                           </h3>
-                          <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-                            {blog.excerpt}
-                          </p>
-                          <div className="flex items-center gap-3 mt-auto text-xs text-gray-500">
-                            <span>📅 {blog.date}</span>
-                            <span>⏱️ {blog.readTime}</span>
-                          </div>
                         </div>
                       </CardContent>
                     </Card>
