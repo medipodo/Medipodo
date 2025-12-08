@@ -300,7 +300,7 @@ const TopukDikeniBlog = () => {
                   <p className="text-gray-700 mb-4">
                     Analiz sonuçlarına göre tasarlanan <strong>kişiye özel medikal tabanlıklar</strong>, tedavinin kilit noktasıdır. Bu tabanlıklar, ayak kavisini doğru şekilde destekleyerek plantar fasyanın üzerindeki aşırı yükü alır ve iyileşmesi için ona gerekli dinlenme ortamını sunar.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
                     <img 
                       src="/blog-images/topuk-dikeni/10.jpg" 
                       alt="Ortez Tabanlık"
@@ -311,6 +311,14 @@ const TopukDikeniBlog = () => {
                       src="/blog-images/topuk-dikeni/11.jpg" 
                       alt="Kişiye Özel Tabanlık"
                       className="rounded-lg shadow-lg w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="rounded-lg overflow-hidden shadow-lg">
+                    <img 
+                      src="/blog-images/topuk-dikeni/13.jpg" 
+                      alt="Kişiye Özel Tabanlık - Ankara Medipodo"
+                      className="w-full h-auto"
                       loading="lazy"
                     />
                   </div>
@@ -440,9 +448,15 @@ const TopukDikeniBlog = () => {
                   Ağrılı adımlar kaderiniz değil. Doğru teşhis ve bütüncül bir podolojik yaklaşımla, sabahları yataktan ağrısız kalkmak ve gün boyu konforla yürümek tamamen mümkündür.
                 </p>
 
-                <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                  <strong>Medipodo Bağlıca Ayak Sağlığı Merkezi</strong> olarak Ankara Bağlıca'da modern podolojik yöntemler ile hizmet veriyoruz. Uzman podologlarımız, kişiye özel biyomekanik analiz, ortez tedavisi ve manuel terapi uygulamaları ile topuk dikeni ağrınızı kalıcı olarak çözmek için burada.
+                <p className="text-lg text-blue-100 mb-6 leading-relaxed">
+                  <strong>Medipodo Bağlıca Ayak Sağlığı Merkezi</strong> olarak Ankara Bağlıca'da modern podolojik yöntemler ile hizmet veriyoruz. Uzman podologlarımız, kişiye özel biyomekanik analiz, egzersiz eğitimi ve refleksoloji uygulamaları ile sizler için Ankara Bağlıca'da.
                 </p>
+
+                <div className="bg-blue-800 bg-opacity-50 p-4 rounded-lg mb-8">
+                  <p className="text-sm text-blue-100 italic">
+                    <strong>Not:</strong> Blog yazımız bilgilendirme amacı gütmektedir; tanı ve tedavi önerisi yerine geçmez. Herhangi bir sağlık sorununuz için mutlaka hekiminize başvurunuz.
+                  </p>
+                </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a 
