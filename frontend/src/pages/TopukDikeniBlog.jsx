@@ -54,7 +54,7 @@ const TopukDikeniBlog = () => {
             {/* Giriş */}
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Her sabah yataktan kalktığınızda topuğunuza batan, cam kırıkları üzerinde yürüyormuş gibi hissettiren o keskin acı size tanıdık geliyor mu? Günün ilk birkaç adımı adeta bir işkenceye mi dönüşüyor? Yalnız değilsiniz. Milyonlarca insanı etkileyen bu durumun adı, halk arasında bilinen ismiyle <strong>topuk dikeni</strong>, tıbbi adıyla ise <strong>Plantar Fasiit</strong>'tir.
+                Her sabah yataktan kalktığınızda topuğunuza batan, cam kırıkları üzerinde yürüyormuş gibi hissettiren o keskin acı size tanıdık geliyor mu? Günün ilk birkaç adımı adeta bir işkenceye mi dönüşüyor? Yalnız değilsiniz. Milyonlarca insanı etkileyen bu durumun adı, halk arasında bilinen ismiyle <strong>topuk dikeni</strong>, tıbbi adıyla ise <strong>Calcanei Epin</strong>'tir.
               </p>
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
