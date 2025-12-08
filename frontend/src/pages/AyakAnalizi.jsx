@@ -86,7 +86,7 @@ const AyakAnalizi = () => {
         "Siğil olan bölgeyi kapatın ve başkalarıyla temasını engelleyin.",
         "Halka açık ıslak zeminlerde (havuz, duş) terlik kullanın."
       ];
-      result.blogLink = "https://medipodo.com/blog/nasir-sigil-blog"; // Varsayılan siğil blogu
+      result.blogLink = "https://medipodo.com/blog/nasir-sigil-farklari"; // Varsayılan siğil blogu
       result.blogTitle = "Nasır ve Siğil";
     }
 
