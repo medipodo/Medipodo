@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Check } from 'lucide-react';
-import { services } from '../mock';
+import { services, galleryImages } from '../mock';
+import { enrichedBlogPosts } from '../blog_content';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 
@@ -20,6 +21,47 @@ const ServiceDetail = () => {
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
   }, [serviceId]);
+
+  // İlgili blog yazılarını filtrele
+  const getRelatedBlogs = () => {
+    const serviceKeywords = {
+      'batik-tirnak': ['Tırnak', 'Batık', 'Ortoniksi'],
+      'tirnak-mantari': ['Mantar', 'Tırnak'],
+      'topuk-bakimi': ['Topuk', 'Çatlak'],
+      'nasir-tedavisi': ['Nasır', 'Kalınlaşma', 'Siğil'],
+      'refleksoloji': ['Refleksoloji', 'Ayak', 'Masaj'],
+      'diyabetik-ayak': ['Diyabet', 'Ayak']
+    };
+
+    const keywords = serviceKeywords[serviceId] || [];
+    
+    return enrichedBlogPosts
+      .filter(blog => 
+        keywords.some(keyword => 
+          blog.title.includes(keyword) || 
+          blog.tags.some(tag => tag.includes(keyword))
+        )
+      )
+      .slice(0, 3);
+  };
+
+  // İlgili galeri görsellerini filtrele
+  const getRelatedGallery = () => {
+    const serviceGalleryMap = {
+      'batik-tirnak': [7, 8, 1], // Batık tırnak görselleri
+      'tirnak-mantari': [5, 1], // Tırnak restorasyonu
+      'topuk-bakimi': [3, 6, 2], // Topuk bakımı
+      'nasir-tedavisi': [2], // Hiperkeratoz
+      'refleksoloji': [], // Refleksoloji görseli yok
+      'diyabetik-ayak': [2, 3] // Ayak bakımı
+    };
+
+    const relatedIds = serviceGalleryMap[serviceId] || [];
+    return galleryImages.filter(item => relatedIds.includes(item.id));
+  };
+
+  const relatedBlogs = getRelatedBlogs();
+  const relatedGallery = getRelatedGallery();
 
   if (!service) {
     return (
@@ -113,6 +155,109 @@ const ServiceDetail = () => {
           </div>
         </div>
       </section>
+
+      {/* İlgili Galeri Görselleri */}
+      {relatedGallery.length > 0 && (
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-blue-950 mb-8 text-center">
+                📸 Örnek İşlemler
+              </h2>
+              <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+                {service.title} hizmetimizden başarılı sonuçlar
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {relatedGallery.map((item) => (
+                  <Card 
+                    key={item.id}
+                    className="overflow-hidden hover:shadow-xl transition-all"
+                  >
+                    <CardContent className="p-0">
+                      <div className="relative aspect-square">
+                        <img
+                          src={item.before}
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold text-blue-950 mb-1">{item.title}</h3>
+                        <p className="text-sm text-gray-600">{item.description}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <div className="text-center mt-8">
+                <Link to="/galeri">
+                  <Button className="bg-blue-700 hover:bg-blue-800 text-white">
+                    Tüm Galeriyi Görüntüle
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* İlgili Blog Yazıları */}
+      {relatedBlogs.length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-blue-950 mb-8 text-center">
+                📚 İlgili Blog Yazıları
+              </h2>
+              <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+                {service.title} hakkında daha fazla bilgi edinin
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {relatedBlogs.map((blog) => (
+                  <Link 
+                    key={blog.id}
+                    to={`/blog/${blog.slug}`}
+                    className="block"
+                  >
+                    <Card className="overflow-hidden hover:shadow-xl transition-all h-full flex flex-col">
+                      <CardContent className="p-0 flex flex-col h-full">
+                        <div className="relative aspect-video">
+                          <img
+                            src={blog.image}
+                            alt={blog.title}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div className="p-5 flex-1 flex flex-direction-column">
+                          <h3 className="font-bold text-lg text-blue-950 mb-2 line-clamp-2">
+                            {blog.title}
+                          </h3>
+                          <p className="text-sm text-gray-600 mb-3 line-clamp-2">
+                            {blog.excerpt}
+                          </p>
+                          <div className="flex items-center gap-3 mt-auto text-xs text-gray-500">
+                            <span>📅 {blog.date}</span>
+                            <span>⏱️ {blog.readTime}</span>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+              <div className="text-center mt-8">
+                <Link to="/blog">
+                  <Button className="bg-blue-700 hover:bg-blue-800 text-white">
+                    Tüm Blog Yazılarını Görüntüle
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
