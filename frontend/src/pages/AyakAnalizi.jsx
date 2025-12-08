@@ -45,7 +45,7 @@ const AyakAnalizi = () => {
     let result = {
       title: "Genel Ayak Sağlığı Değerlendirmesi",
       icon: "✨",
-      podologicalAssessment: "Ayaklarınız genel olarak sağlıklı görünüyor. Koruyucu ve önleyici bakıma odaklanmalısınız.",
+      podologicalAssessment: "Ayak sağlığınız genel anlamda iyi durumda görünmektedir. Mevcut sağlık düzeyinizi korumak ve ileriye dönük olası problemleri önlemek adına, koruyucu bakım rutinine odaklanmanız önerilmektedir. Düzenli hijyen, uygun ayakkabı seçimi ve periyodik profesyonel kontroller ile ayak sağlığınızı en üst seviyede tutabilirsiniz.",
       attentionPoints: [
         "Ayak hijyeninize özen göstermeye devam edin.",
         "Ayakkabı seçiminize dikkat edin, ayaklarınızı sıkmayan modeller tercih edin.",
@@ -59,7 +59,7 @@ const AyakAnalizi = () => {
     if (mainProblem === 'koku' || mainProblem === 'mantar' || skinCondition === 'kizarik' || skinCondition === 'pul' || history === 'sik' || history === 'nadiren') {
       result.title = "Tırnak ve Ayak Mantarı Sorunu Yaşıyorsunuz!";
       result.icon = "🚨";
-      result.podologicalAssessment = "Medikal Ayak Bakımına ihtiyacınız var. Podologumuz tarafından mantarlı bölgelerin temizlenmesi ve uygulamanız gereken serum vb. yöntemlerin size tarif edilmesi gerekir.";
+      result.podologicalAssessment = "Medikal Ayak Bakımı'na ihtiyacınız bulunmaktadır. Podologlarımız, mantarlı bölgelerin hijyenik koşullarda temizlenmesi ve size özel olarak belirlenecek serum ve bakım protokollerinin detaylıca anlatılmasını sağlayacaktır. Tedavi süreci boyunca düzenli takip ile iyileşmenizin izlenmesi önerilmektedir.";
       result.attentionPoints = [
         "Ayaklarınızı her gün yıkayın ve parmak aralarını mutlaka kurulayın.",
         "Çoraplarınızı günlük değiştirin ve pamuklu/nefes alan malzemeleri tercih edin.",
@@ -73,7 +73,7 @@ const AyakAnalizi = () => {
     if (mainProblem === 'tirnak' || skinCondition === 'iltihap') {
       result.title = "Tırnak Batması Sorunu!";
       result.icon = "💅";
-      result.podologicalAssessment = "Ortoniksi sistemlerinin (tel uygulaması) uygulanması gerekebilir. Bu yöntemle tırnak yatağı düzeltilerek batık sorunu kalıcı olarak çözülür. Ayrıca, tırnak çevresi temizliği ve doğru tırnak kesimi konusunda eğitim almanız önemlidir.";
+      result.podologicalAssessment = "Podolojik müdahale kapsamında Ortoniksi sistemlerinin (tırnak teli uygulaması) değerlendirilmesi gerekmektedir. Bu minimal invaziv yöntem ile tırnak yatağı düzeltilerek batık tırnak sorununuz kalıcı olarak çözüme kavuşturulur. Uzman podologlarımız tarafından tırnak çevresi hijyenik temizliği gerçekleştirilecek ve doğru tırnak kesim teknikleri hakkında detaylı eğitim verilecektir.";
       result.attentionPoints = [
         "Tırnaklarınızı düz kesin, köşeleri yuvarlamaktan kaçının.",
         "Dar ve sivri burunlu ayakkabılar giymekten kaçının.",
@@ -86,7 +86,7 @@ const AyakAnalizi = () => {
     if (mainProblem === 'nasir' || skinCondition === 'catlak') {
       result.title = "Nasır ve Çatlak Sorunu!";
       result.icon = "🩹";
-      result.podologicalAssessment = "Medikal ayak bakımı ve küretaj (nasır temizliği) ile sertleşmiş ve çatlamış bölgelerin profesyonelce temizlenmesi gerekir. Düzenli nemlendirme ve baskıyı azaltıcı uygulamalar (silikon destekler) önemlidir.";
+      result.podologicalAssessment = "Medikal Ayak Bakımı ve profesyonel küretaj (nasır temizliği) uygulaması ile hiperkeratoz bölgelerin (sertleşmiş deri) ve çatlakların steril koşullarda temizlenmesi gerekmektedir. Tedavi protokolünüz, düzenli nemlendirme programı ve baskı noktalarını azaltıcı özel silikon destekler ile desteklenecektir. Podologlarımız, sizin için kişiselleştirilmiş bir ayak bakım rutini oluşturacaktır.";
       result.attentionPoints = [
         "Ayaklarınızı her gün nemlendirin, özellikle üre içeren kremler kullanın.",
         "Sertleşmiş deriyi törpülemekten kaçının, bu daha fazla sertleşmeye neden olabilir.",
@@ -99,7 +99,7 @@ const AyakAnalizi = () => {
     if (mainProblem === 'sigil') {
       result.title = "Plantar Siğil Riski!";
       result.icon = "🦠";
-      result.podologicalAssessment = "Siğil tedavisi için özel podolojik yöntemler (kriyoterapi, kimyasal peeling veya küretaj) uygulanması gerekebilir. Siğilin yayılmasını önlemek için acil müdahale önemlidir.";
+      result.podologicalAssessment = "Plantar siğil tedavisi için kliniğimizde uygulanan özel podolojik yöntemler (kriyoterapi ile dondurma tedavisi, kimyasal peeling veya profesyonel küretaj) değerlendirilecektir. Viral lezyonun yayılmasını önlemek ve kalıcı çözüm sağlamak adına erken müdahale kritik önem taşımaktadır. Uzman podologlarımız, lezyonun derinliği ve yaygınlığına göre size en uygun tedavi protokolünü belirleyecektir.";
       result.attentionPoints = [
         "Siğile dokunmaktan ve kaşımaktan kaçının.",
         "Siğil olan bölgeyi kapatın ve başkalarıyla temasını engelleyin.",
@@ -112,7 +112,7 @@ const AyakAnalizi = () => {
     if (mainProblem === 'bakim' && skinCondition === 'saglikli' && history === 'hic_yasamadim') {
       result.title = "Ayak Sağlığınız Mükemmel!";
       result.icon = "✅";
-      result.podologicalAssessment = "Ayaklarınızın sağlığını korumak için düzenli olarak koruyucu medikal ayak bakımı yaptırmanız önerilir. Bu, olası sorunları erken aşamada tespit etmemizi sağlar.";
+      result.podologicalAssessment = "Ayak sağlığınızın mevcut optimal durumunu korumak adına, düzenli aralıklarla koruyucu ve önleyici medikal ayak bakımı seansları önerilmektedir. Periyodik podolojik kontroller, potansiyel problemlerin erken teşhis edilmesini ve müdahale gerektirmeden önlenmesini sağlayacaktır. Uzman podologlarımız, ayak sağlığınızı uzun vadede korumanız için size özel bakım programı oluşturacaktır.";
       result.attentionPoints = [
         "Ayak hijyeninize devam edin.",
         "Ayakkabılarınızı düzenli olarak havalandırın.",
@@ -123,7 +123,7 @@ const AyakAnalizi = () => {
 
     // Bakım Süresi vurgusu
     if (careTime === 'gelebilirim') {
-      result.podologicalAssessment += " Özellikle 'Kendim Yapamam' seçeneğini işaretlemeniz, profesyonel podolojik desteğin sizin için en uygun çözüm olduğunu göstermektedir.";
+      result.podologicalAssessment += " 'Kendim Yapamam' tercihini belirtmeniz, profesyonel podolojik destek almanın sizin için en ideal çözüm yolu olacağını göstermektedir. Uzman ekibimiz, düzenli bakım seansları ile ayak sağlığınızı takip edecek ve gerekli tüm müdahaleleri gerçekleştirecektir.";
     }
 
     // Terleme uyarısı
