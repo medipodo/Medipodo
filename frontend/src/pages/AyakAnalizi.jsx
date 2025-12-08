@@ -89,7 +89,7 @@ const AyakAnalizi = () => {
       result.podologicalAssessment = "Medikal Ayak Bakımı ve profesyonel küretaj (nasır temizliği) uygulaması ile hiperkeratoz bölgelerin (sertleşmiş deri) ve çatlakların steril koşullarda temizlenmesi gerekmektedir. Tedavi protokolünüz, düzenli nemlendirme programı ve baskı noktalarını azaltıcı özel silikon destekler ile desteklenecektir. Podologlarımız, sizin için kişiselleştirilmiş bir ayak bakım rutini oluşturacaktır.";
       result.attentionPoints = [
         "Ayaklarınızı her gün nemlendirin, özellikle üre içeren kremler kullanın.",
-        "Sertleşmiş deriyi törpülemekten kaçının, bu daha fazla sertleşmeye neden olabilir.",
+        "Sertleşen deriyi banyoda ıslak törpü yapmaktan kaçının. En doğrusu kuru törpü yapmaktır. Podologunuzun önerdiği şekilde kuru törpüyü haftada 1 kez nazikçe uygulayın.",
         "Uzun süre ayakta kalmaktan kaçının ve rahat ayakkabılar tercih edin."
       ];
       result.relatedBlogs = getRelatedBlogs('nasir');
