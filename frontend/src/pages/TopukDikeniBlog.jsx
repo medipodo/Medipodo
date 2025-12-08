@@ -337,10 +337,10 @@ const TopukDikeniBlog = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     4️⃣ Hasta Eğitimi ve Egzersiz Programı
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 mb-4">
                     Tedavinin kalıcılığını sağlayan en önemli adımdır. Size evde uygulamanız için basit ama etkili bir program öğretiriz:
                   </p>
-                  <ul className="mt-3 space-y-2">
+                  <ul className="mt-3 mb-4 space-y-2">
                     <li className="text-gray-700 flex items-start">
                       <span className="text-orange-600 mr-2">•</span>
                       Doğru germe teknikleri
@@ -354,6 +354,14 @@ const TopukDikeniBlog = () => {
                       Yaşam tarzınıza en uygun ayakkabı seçimi konusunda danışmanlık
                     </li>
                   </ul>
+                  <div className="rounded-lg overflow-hidden shadow-lg">
+                    <img 
+                      src="/blog-images/topuk-dikeni/11.jpg" 
+                      alt="Egzersiz ve Germe Programı"
+                      className="w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </div>
             </section>
