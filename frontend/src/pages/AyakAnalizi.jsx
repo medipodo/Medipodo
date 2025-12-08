@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import { enrichedBlogPosts } from '../blog_content';
 
 const AyakAnalizi = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -7,17 +9,38 @@ const AyakAnalizi = () => {
   const [showResult, setShowResult] = useState(false);
   const [recommendation, setRecommendation] = useState(null);
 
-  // Toplam soru sayısı
   const totalQuestions = 6;
 
-  // Yeni Sonuç Algoritması
+  // İlgili blog yazılarını filtrele
+  const getRelatedBlogs = (mainProblem) => {
+    const blogKeywords = {
+      'koku': ['Ayak Kokusu', 'Mantar'],
+      'mantar': ['Tırnak Mantarı', 'Mantar', 'Ayak Kokusu'],
+      'tirnak': ['Tırnak Batması', 'Batık Tırnak'],
+      'nasir': ['Nasır', 'Topuk', 'Çatlak'],
+      'sigil': ['Siğil', 'Nasır'],
+      'bakim': ['Ayak Sağlığı', 'Podoloji']
+    };
+
+    const keywords = blogKeywords[mainProblem] || ['Ayak Sağlığı'];
+    
+    return enrichedBlogPosts
+      .filter(blog => 
+        keywords.some(keyword => 
+          blog.title.includes(keyword) || blog.tags.some(tag => tag.includes(keyword))
+        )
+      )
+      .slice(0, 3);
+  };
+
+  // Yeni Sonuç Algoritması (Manus.ai'den)
   const getPodologicalRecommendation = () => {
-    const mainProblem = answers.q0; // koku, mantar, tirnak, nasir, sigil, bakim
-    const sweating = answers.q1;    // cok, orta, az
-    const skinCondition = answers.q2; // pul, kizarik, catlak, iltihap, saglikli
-    const shoeChoice = answers.q3;  // kapali, acik, topuklu, degisken
-    const history = answers.q4;     // sik, nadiren, ilk_kez, hic_yasamadim
-    const careTime = answers.q5;    // gunluk, haftalik, gelebilirim
+    const mainProblem = answers.q0;
+    const sweating = answers.q1;
+    const skinCondition = answers.q2;
+    const shoeChoice = answers.q3;
+    const history = answers.q4;
+    const careTime = answers.q5;
 
     let result = {
       title: "Genel Ayak Sağlığı Değerlendirmesi",
@@ -28,12 +51,11 @@ const AyakAnalizi = () => {
         "Ayakkabı seçiminize dikkat edin, ayaklarınızı sıkmayan modeller tercih edin.",
         "Düzenli nemlendirme ile cilt bariyerinizi koruyun."
       ],
-      blogLink: "https://medipodo.com/blog/baglica-podolog-hizmetleri",
-      blogTitle: "Başlıca Podolog Hizmetleri",
-      productMention: "Pedizone Ayak Sağlıgı Ürünleri bu yolda en büyük destekçiniz olacak."
+      productMention: "Pedizone Ayak Sağlığı Ürünleri bu yolda en büyük destekçiniz olacak.",
+      relatedBlogs: getRelatedBlogs('bakim')
     };
 
-    // --- Koku (Bromodoz) ve Mantar Enfeksiyonu (Tinea Pedis) Senaryosu ---
+    // --- Koku ve Mantar Senaryosu ---
     if (mainProblem === 'koku' || mainProblem === 'mantar' || skinCondition === 'kizarik' || skinCondition === 'pul' || history === 'sik' || history === 'nadiren') {
       result.title = "Tırnak ve Ayak Mantarı Sorunu Yaşıyorsunuz!";
       result.icon = "🚨";
@@ -44,8 +66,7 @@ const AyakAnalizi = () => {
         "Ayakkabılarınızı havalandırın ve mümkünse dezenfektan spreyler kullanın.",
         "Halka açık alanlarda (havuz, spor salonu) terlik kullanmaya özen gösterin."
       ];
-      result.blogLink = "https://medipodo.com/blog/ayak-analizi"; // Genel blog linki
-      result.blogTitle = "Ayak Analizi";
+      result.relatedBlogs = getRelatedBlogs('mantar');
     }
 
     // --- Tırnak Batması Senaryosu ---
@@ -58,8 +79,7 @@ const AyakAnalizi = () => {
         "Dar ve sivri burunlu ayakkabılar giymekten kaçının.",
         "Batık bölgeyi zorlamayın ve iltihap varsa hemen bir uzmana başvurun."
       ];
-      result.blogLink = "https://medipodo.com/blog/tirnakbatmasi";
-      result.blogTitle = "Tırnak Batması";
+      result.relatedBlogs = getRelatedBlogs('tirnak');
     }
 
     // --- Nasır ve Çatlaklar Senaryosu ---
@@ -72,8 +92,7 @@ const AyakAnalizi = () => {
         "Sertleşmiş deriyi törpülemekten kaçının, bu daha fazla sertleşmeye neden olabilir.",
         "Uzun süre ayakta kalmaktan kaçının ve rahat ayakkabılar tercih edin."
       ];
-      result.blogLink = "https://medipodo.com/blog/kis-aylarinda-catlak-topuk-tedavisi";
-      result.blogTitle = "Kış Aylarında Çatlak Topuk Tedavisi";
+      result.relatedBlogs = getRelatedBlogs('nasir');
     }
 
     // --- Plantar Siğil Senaryosu ---
@@ -86,11 +105,10 @@ const AyakAnalizi = () => {
         "Siğil olan bölgeyi kapatın ve başkalarıyla temasını engelleyin.",
         "Halka açık ıslak zeminlerde (havuz, duş) terlik kullanın."
       ];
-      result.blogLink = "https://medipodo.com/blog/nasir-sigil-farklari"; // Varsayılan siğil blogu
-      result.blogTitle = "Nasır ve Siğil";
+      result.relatedBlogs = getRelatedBlogs('sigil');
     }
 
-    // --- Genel Bakım ve Hijyen Senaryosu (Varsayılanı günceller) ---
+    // --- Genel Bakım Senaryosu ---
     if (mainProblem === 'bakim' && skinCondition === 'saglikli' && history === 'hic_yasamadim') {
       result.title = "Ayak Sağlığınız Mükemmel!";
       result.icon = "✅";
@@ -100,16 +118,15 @@ const AyakAnalizi = () => {
         "Ayakkabılarınızı düzenli olarak havalandırın.",
         "Yılda en az bir kez podolojik kontrolden geçin."
       ];
-      result.blogLink = "https://medipodo.com/blog/baglica-podolog-hizmetleri";
-      result.blogTitle = "Başlıca Podolog Hizmetleri";
+      result.relatedBlogs = getRelatedBlogs('bakim');
     }
 
-    // Bakım Süresi "Kendim Yapamam" ise randevu vurgusu
+    // Bakım Süresi vurgusu
     if (careTime === 'gelebilirim') {
-      result.podologicalAssessment += " **Özellikle 'Kendim Yapamam' seçeneğini işaretlemeniz, profesyonel podolojik desteğin sizin için en uygun çözüm olduğunu göstermektedir.**";
+      result.podologicalAssessment += " Özellikle 'Kendim Yapamam' seçeneğini işaretlemeniz, profesyonel podolojik desteğin sizin için en uygun çözüm olduğunu göstermektedir.";
     }
 
-    // Terleme yoğunsa koku/mantar uyarısı ekle
+    // Terleme uyarısı
     if (sweating === 'cok' && mainProblem !== 'koku' && mainProblem !== 'mantar') {
       result.attentionPoints.push("Yoğun terleme, mantar ve koku riskini artırır. Ayaklarınızı kuru tutmaya özen gösterin.");
     }
@@ -117,11 +134,12 @@ const AyakAnalizi = () => {
     return result;
   };
 
-  // Sorular
+  // Sorular (Manus.ai'den)
   const questions = [
     {
       number: 1,
-      text: "Ayaklarınızda en belirgin sorun nedir? (Lütfen en çok sizi rahatsız edeni seçin)",
+      text: "Ayaklarınızda en belirgin sorun nedir?",
+      subtitle: "(Lütfen en çok sizi rahatsız edeni seçin)",
       options: [
         { value: "koku", label: "Koku (Bromodoz)" },
         { value: "mantar", label: "Mantar enfeksiyonu (Tinea Pedis)" },
@@ -168,7 +186,7 @@ const AyakAnalizi = () => {
         { value: "sik", label: "Evet, sık sık (Kronik sorun)" },
         { value: "nadiren", label: "Evet, ama nadiren" },
         { value: "ilk_kez", label: "Hayır, ilk kez" },
-        { value: "hic_yasamadim", label: "Hiç Yaşamadım" }
+        { value: "hic_yasamadim", label: "Hiç yaşamadım" }
       ]
     },
     {
@@ -177,15 +195,10 @@ const AyakAnalizi = () => {
       options: [
         { value: "gunluk", label: "Günlük düzenli bakım (Her gün 5-10 dakika)" },
         { value: "haftalik", label: "Haftalık bakım (Haftada 1-2 kez)" },
-        { value: "gelebilirim", label: "Kendim Yapamam (Ayda 1 Gelebilirim)" }
+        { value: "gelebilirim", label: "Kendim yapamam (Ayda 1 gelebilirim)" }
       ]
     }
   ];
-
-  // Akıllı öneri algoritması
-  const getRecommendation = () => {
-    return getPodologicalRecommendation();
-  };
 
   const handleOptionChange = (questionIndex, value) => {
     setAnswers(prev => ({
@@ -212,13 +225,12 @@ const AyakAnalizi = () => {
 
   const handleSubmit = () => {
     if (answers[`q${currentQuestion}`]) {
-      const result = getRecommendation();
+      const result = getPodologicalRecommendation();
       setRecommendation(result);
       setShowResult(true);
 
-      // Google Analytics tracking (Mevcut koddan korundu)
       if (typeof window.gtag === 'function') {
-        window.gtag('event', 'quiz_completed_revised', {
+        window.gtag('event', 'quiz_completed', {
           'event_category': 'Ayak Analiz Aracı',
           'event_label': result.title,
           'value': 1
@@ -243,57 +255,6 @@ const AyakAnalizi = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Blog Kartı Bileşeni
-  const BlogCard = ({ link, title }) => (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="blog-card-link">
-      <div className="blog-card">
-        <p className="blog-card-title">İlgili Blog Yazısı: {title}</p>
-        <span className="blog-card-read-more">Hemen Oku &rarr;</span>
-      </div>
-    </a>
-  );
-
-  // Sonuç Kartı Bileşeni
-  const ResultCard = ({ result }) => (
-    <div className="result-card">
-      <div className="result-header">
-        <span className="result-icon">{result.icon}</span>
-        <h2>{result.title}</h2>
-      </div>
-
-      <div className="result-section">
-        <h3>Podolojik Açıdan Değerlendirme</h3>
-        <p>{result.podologicalAssessment}</p>
-      </div>
-
-      <div className="result-section">
-        <h3>Dikkat Etmeniz Gereken Acil Hususlar</h3>
-        <ul>
-          {result.attentionPoints.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="result-section product-mention">
-        <p><strong>{result.productMention}</strong></p>
-      </div>
-
-      <BlogCard link={result.blogLink} title={result.blogTitle} />
-
-      <div className="result-section appointment-info">
-        <h3>Randevu ve Bilgi</h3>
-        <p>Uzman podologlarımızdan randevu almak veya daha detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
-        <a href="/contact" className="contact-button">Randevu Alın</a>
-      </div>
-
-      <button onClick={handleRestart} className="restart-button">
-        Yeniden Analiz Yap
-      </button>
-    </div>
-  );
-
-  // Mevcut JSX yapısının geri kalanı (stil ve genel yapı)
   return (
     <>
       <Helmet>
@@ -313,9 +274,9 @@ const AyakAnalizi = () => {
 
         .quiz-card {
           background: white;
-          border-radius: 12px;
-          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-          max-width: 700px;
+          border-radius: 16px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+          max-width: 800px;
           width: 100%;
           padding: 40px;
         }
@@ -329,11 +290,17 @@ const AyakAnalizi = () => {
           color: #333;
           font-size: 28px;
           margin-bottom: 10px;
+          font-weight: 700;
+        }
+
+        .quiz-header p {
+          color: #666;
+          font-size: 14px;
         }
 
         .progress-bar-container {
           height: 8px;
-          background-color: #eee;
+          background-color: #e0e0e0;
           border-radius: 4px;
           margin-bottom: 30px;
           overflow: hidden;
@@ -341,225 +308,379 @@ const AyakAnalizi = () => {
 
         .progress-bar {
           height: 100%;
-          background-color: #667eea;
+          background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
           transition: width 0.3s ease-in-out;
+        }
+
+        .question-number {
+          color: #667eea;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 15px;
         }
 
         .question-text {
           font-size: 20px;
           color: #333;
-          margin-bottom: 25px;
+          margin-bottom: 8px;
           font-weight: 600;
+          line-height: 1.4;
+        }
+
+        .question-subtitle {
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 25px;
         }
 
         .options-container {
           display: flex;
           flex-direction: column;
-          gap: 15px;
+          gap: 12px;
+          margin-bottom: 30px;
+        }
+
+        .option-wrapper {
+          position: relative;
+        }
+
+        .option-input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
         }
 
         .option-label {
           display: block;
           background-color: #f9f9f9;
-          padding: 15px;
-          border-radius: 8px;
+          padding: 16px 20px;
+          border-radius: 10px;
           cursor: pointer;
-          transition: all 0.2s;
+          transition: all 0.3s ease;
           border: 2px solid #f9f9f9;
-        }
-
-        .option-label:hover {
-          background-color: #f0f0f0;
-        }
-
-        .option-input:checked + .option-label {
-          background-color: #e6e9ff;
-          border-color: #667eea;
-          font-weight: 600;
+          font-size: 15px;
           color: #333;
         }
 
-        .option-input {
-          display: none;
+        .option-label:hover {
+          background-color: #f0f4ff;
+          border-color: #d0d8f0;
+          transform: translateX(4px);
+        }
+
+        .option-input:checked + .option-label {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          border-color: #667eea;
+          color: white;
+          font-weight: 600;
+          transform: translateX(8px);
+          box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
 
         .navigation-buttons {
           display: flex;
           justify-content: space-between;
-          margin-top: 30px;
+          gap: 15px;
         }
 
         .nav-button {
-          padding: 12px 25px;
+          padding: 14px 30px;
           border: none;
-          border-radius: 8px;
+          border-radius: 10px;
           cursor: pointer;
           font-size: 16px;
           font-weight: 600;
-          transition: background-color 0.2s;
+          transition: all 0.3s ease;
+          flex: 1;
         }
 
         .prev-button {
-          background-color: #ccc;
+          background-color: #e0e0e0;
           color: #333;
         }
 
-        .prev-button:hover {
-          background-color: #bbb;
+        .prev-button:hover:not(:disabled) {
+          background-color: #d0d0d0;
+          transform: translateY(-2px);
+        }
+
+        .prev-button:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
         }
 
         .next-button, .submit-button {
-          background-color: #667eea;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
           color: white;
+          box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
         }
 
         .next-button:hover, .submit-button:hover {
-          background-color: #556cd6;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
 
-        .submit-button {
-          width: 100%;
+        /* Result Styles */
+        .result-container {
+          animation: fadeIn 0.5s ease;
         }
 
-        /* Result Card Styles */
-        .result-card {
-          padding: 30px;
-          border: 1px solid #ddd;
-          border-radius: 10px;
-          background-color: #fff;
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
 
         .result-header {
           text-align: center;
-          margin-bottom: 30px;
+          margin-bottom: 35px;
         }
 
         .result-icon {
-          font-size: 48px;
+          font-size: 60px;
+          margin-bottom: 15px;
           display: block;
-          margin-bottom: 10px;
         }
 
-        .result-header h2 {
+        .result-title {
+          font-size: 26px;
           color: #667eea;
-          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          line-height: 1.3;
         }
 
         .result-section {
-          margin-bottom: 25px;
-          padding: 15px;
+          margin-bottom: 30px;
+          padding: 25px;
+          background: #f8f9ff;
+          border-radius: 12px;
           border-left: 4px solid #667eea;
-          background-color: #f9f9ff;
         }
 
         .result-section h3 {
-          color: #333;
-          margin-top: 0;
           font-size: 18px;
-          border-bottom: 1px solid #eee;
-          padding-bottom: 5px;
-          margin-bottom: 10px;
+          color: #333;
+          font-weight: 700;
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .result-section p {
+          font-size: 15px;
+          color: #555;
+          line-height: 1.7;
         }
 
         .result-section ul {
-          list-style-type: disc;
-          padding-left: 20px;
-          margin: 0;
+          list-style: none;
+          padding: 0;
+          margin: 15px 0 0 0;
         }
 
-        .result-section li {
-          margin-bottom: 8px;
-          line-height: 1.4;
+        .result-section ul li {
+          padding: 10px 0 10px 30px;
+          position: relative;
+          font-size: 15px;
+          color: #555;
+          line-height: 1.6;
+        }
+
+        .result-section ul li:before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          color: #667eea;
+          font-weight: bold;
+          font-size: 18px;
         }
 
         .product-mention {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
           text-align: center;
-          background-color: #e6ffe6;
-          border-left-color: #4CAF50;
+          padding: 20px;
+          border-left: none;
+        }
+
+        .product-mention p {
+          color: white;
           font-size: 16px;
-        }
-
-        .blog-card-link {
-          text-decoration: none;
-          display: block;
-          margin-bottom: 25px;
-        }
-
-        .blog-card {
-          background-color: #fff3cd;
-          border: 1px solid #ffeeba;
-          padding: 15px;
-          border-radius: 8px;
-          text-align: center;
-          transition: background-color 0.2s;
-        }
-
-        .blog-card:hover {
-          background-color: #ffeeba;
-        }
-
-        .blog-card-title {
-          color: #856404;
-          font-weight: 600;
           margin: 0;
         }
 
-        .blog-card-read-more {
-          color: #856404;
-          font-size: 14px;
-          display: block;
-          margin-top: 5px;
+        /* Blog Section - Professional Design */
+        .blog-section {
+          margin: 35px 0;
+          padding: 30px;
+          background: #f9fafb;
+          border-radius: 12px;
         }
 
-        .appointment-info {
+        .blog-section-title {
+          font-size: 20px;
+          font-weight: 700;
+          color: #333;
+          margin-bottom: 20px;
           text-align: center;
-          background-color: #f0f8ff;
-          border-left-color: #007bff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .blog-cards {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+        }
+
+        .blog-card {
+          background: white;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+          transition: all 0.3s ease;
+          text-decoration: none;
+          display: block;
+        }
+
+        .blog-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .blog-card-image {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+        }
+
+        .blog-card-content {
+          padding: 18px;
+        }
+
+        .blog-card-title {
+          font-size: 16px;
+          font-weight: 600;
+          color: #333;
+          margin-bottom: 10px;
+          line-height: 1.4;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .blog-card-excerpt {
+          font-size: 13px;
+          color: #666;
+          line-height: 1.6;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          margin-bottom: 12px;
+        }
+
+        .blog-card-meta {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-size: 12px;
+          color: #999;
+        }
+
+        .appointment-section {
+          background: #fff5f0;
+          border-left-color: #ff7a3d;
+          text-align: center;
         }
 
         .contact-button {
           display: inline-block;
-          background-color: #007bff;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
           color: white;
-          padding: 10px 20px;
-          border-radius: 5px;
+          padding: 14px 40px;
+          border-radius: 10px;
           text-decoration: none;
-          margin-top: 10px;
           font-weight: 600;
-          transition: background-color 0.2s;
+          font-size: 16px;
+          margin-top: 15px;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
         }
 
         .contact-button:hover {
-          background-color: #0056b3;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
 
         .restart-button {
-          background-color: #dc3545;
-          color: white;
-          padding: 12px 25px;
+          width: 100%;
+          background-color: #f0f0f0;
+          color: #333;
+          padding: 14px 30px;
           border: none;
-          border-radius: 8px;
-          cursor: pointer;
+          border-radius: 10px;
           font-size: 16px;
           font-weight: 600;
-          transition: background-color 0.2s;
+          cursor: pointer;
+          transition: all 0.3s ease;
           margin-top: 20px;
-          width: 100%;
         }
 
         .restart-button:hover {
-          background-color: #c82333;
+          background-color: #e0e0e0;
+          transform: translateY(-2px);
         }
 
+        /* Mobile Responsive */
         @media (max-width: 768px) {
+          .ayak-analizi-container {
+            padding: 60px 15px 30px;
+          }
+
           .quiz-card {
-            padding: 20px;
+            padding: 25px 20px;
           }
+
           .quiz-header h1 {
-            font-size: 24px;
+            font-size: 22px;
           }
+
           .question-text {
             font-size: 18px;
+          }
+
+          .result-title {
+            font-size: 22px;
+          }
+
+          .blog-cards {
+            grid-template-columns: 1fr;
+          }
+
+          .blog-card-image {
+            height: 200px;
+          }
+
+          .nav-button {
+            padding: 12px 20px;
+            font-size: 14px;
+          }
+
+          .result-section {
+            padding: 20px;
           }
         }
       `}</style>
@@ -569,59 +690,143 @@ const AyakAnalizi = () => {
           {!showResult ? (
             <>
               <div className="quiz-header">
-                <h1>Ayak Analizi</h1>
-                <p>Ayak sağlığınız hakkında size özel podolojik değerlendirme alın.</p>
+                <h1>🦶 Ayak Analiz Aracı</h1>
+                <p>6 basit soruyla ayaklarınızı analiz edin ve podolojik değerlendirme alın</p>
               </div>
 
               <div className="progress-bar-container">
                 <div className="progress-bar" style={{ width: `${progress}%` }}></div>
               </div>
 
-              <div className="question-content">
-                <p className="question-text">
-                  {questions[currentQuestion].number} / {totalQuestions} - {questions[currentQuestion].text}
-                </p>
-                <div className="options-container">
-                  {questions[currentQuestion].options.map((option) => (
-                    <div key={option.value}>
-                      <input
-                        type="radio"
-                        id={`q${currentQuestion}-${option.value}`}
-                        name={`q${currentQuestion}`}
-                        value={option.value}
-                        checked={answers[`q${currentQuestion}`] === option.value}
-                        onChange={() => handleOptionChange(currentQuestion, option.value)}
-                        className="option-input"
-                      />
-                      <label htmlFor={`q${currentQuestion}-${option.value}`} className="option-label">
-                        {option.label}
-                      </label>
-                    </div>
-                  ))}
+              <div className="question-number">
+                Soru {questions[currentQuestion].number} / {totalQuestions}
+              </div>
+              <div className="question-text">
+                {questions[currentQuestion].text}
+              </div>
+              {questions[currentQuestion].subtitle && (
+                <div className="question-subtitle">
+                  {questions[currentQuestion].subtitle}
                 </div>
+              )}
+
+              <div className="options-container">
+                {questions[currentQuestion].options.map((option, index) => (
+                  <div key={index} className="option-wrapper">
+                    <input
+                      type="radio"
+                      id={`q${currentQuestion}_${index}`}
+                      name={`q${currentQuestion}`}
+                      value={option.value}
+                      checked={answers[`q${currentQuestion}`] === option.value}
+                      onChange={() => handleOptionChange(currentQuestion, option.value)}
+                      className="option-input"
+                    />
+                    <label
+                      htmlFor={`q${currentQuestion}_${index}`}
+                      className="option-label"
+                    >
+                      {option.label}
+                    </label>
+                  </div>
+                ))}
               </div>
 
               <div className="navigation-buttons">
                 <button
+                  className="nav-button prev-button"
                   onClick={handlePrev}
                   disabled={currentQuestion === 0}
-                  className="nav-button prev-button"
                 >
-                  &larr; Geri
+                  ← Geri
                 </button>
-                {currentQuestion < totalQuestions - 1 ? (
-                  <button onClick={handleNext} className="nav-button next-button">
-                    İleri &rarr;
+                
+                {currentQuestion === totalQuestions - 1 ? (
+                  <button
+                    className="nav-button submit-button"
+                    onClick={handleSubmit}
+                  >
+                    Sonuçları Gör
                   </button>
                 ) : (
-                  <button onClick={handleSubmit} className="nav-button submit-button">
-                    Sonuçları Gör
+                  <button
+                    className="nav-button next-button"
+                    onClick={handleNext}
+                  >
+                    İleri →
                   </button>
                 )}
               </div>
             </>
           ) : (
-            <ResultCard result={recommendation} />
+            <div className="result-container">
+              <div className="result-header">
+                <span className="result-icon">{recommendation.icon}</span>
+                <h2 className="result-title">{recommendation.title}</h2>
+              </div>
+
+              <div className="result-section">
+                <h3>📋 Podolojik Değerlendirme</h3>
+                <p>{recommendation.podologicalAssessment}</p>
+              </div>
+
+              <div className="result-section">
+                <h3>⚠️ Dikkat Etmeniz Gereken Hususlar</h3>
+                <ul>
+                  {recommendation.attentionPoints.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="result-section product-mention">
+                <p><strong>{recommendation.productMention}</strong></p>
+              </div>
+
+              {/* İlgili Blog Yazıları - Profesyonel Tasarım */}
+              {recommendation.relatedBlogs && recommendation.relatedBlogs.length > 0 && (
+                <div className="blog-section">
+                  <h3 className="blog-section-title">
+                    📚 İlgili Blog Yazıları
+                  </h3>
+                  <div className="blog-cards">
+                    {recommendation.relatedBlogs.map((blog, index) => (
+                      <Link 
+                        key={index} 
+                        to={`/blog/${blog.slug}`}
+                        className="blog-card"
+                      >
+                        <img 
+                          src={blog.image} 
+                          alt={blog.title}
+                          className="blog-card-image"
+                        />
+                        <div className="blog-card-content">
+                          <div className="blog-card-title">{blog.title}</div>
+                          <div className="blog-card-excerpt">{blog.excerpt}</div>
+                          <div className="blog-card-meta">
+                            <span>📅 {blog.date}</span>
+                            <span>⏱️ {blog.readTime}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="result-section appointment-section">
+                <h3>📞 Randevu ve Bilgi</h3>
+                <p>Uzman podologlarımızdan randevu almak veya daha detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
+                <Link to="/iletisim" className="contact-button">
+                  Randevu Alın
+                </Link>
+              </div>
+
+              <button onClick={handleRestart} className="restart-button">
+                🔄 Yeniden Analiz Yap
+              </button>
+            </div>
           )}
         </div>
       </div>
