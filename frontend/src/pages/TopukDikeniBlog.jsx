@@ -76,7 +76,23 @@ const TopukDikeniBlog = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Topuk Dikeni (Plantar Fasiit) Nedir?
               </h2>
-              
+
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">💡 Önemli Bilgi</h3>
+                <p className="text-gray-700 mb-3">
+                  Topuk dikeni, plantar fasyanın yapışma noktasında oluşan kalsifik kemik çıkıntısıdır.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  Ağrının ana sebebi çoğu zaman diken değil, plantar fasyanın ve topuk yumuşak dokularının gerilmesi/iritasyonudur.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  Ağrısı olmayan kişilerin de röntgenlerinde topuk dikeni görülebilir.
+                </p>
+                <p className="text-gray-700">
+                  Bu nedenle tedavi, <strong>"dikeni eritmeye"</strong> değil, <strong>biyomekanik yükün düzeltilmesine</strong> odaklanmalıdır.
+                </p>
+              </div>
+
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
                   <img 
@@ -96,26 +112,6 @@ const TopukDikeniBlog = () => {
                   />
                   <p className="text-sm text-gray-600 mt-2 text-center">Topuk dikeni röntgen görüntüsü</p>
                 </div>
-              </div>
-
-              <p className="text-gray-700 leading-relaxed mb-4">
-                <strong>Plantar fasya</strong>, topuk kemiğini (kalkaneus) parmak köklerine bağlayan, ayak kavisini destekleyen ve yürüme sırasında şok emici görevi gören kalın, lifli bir banttır. Tıpkı bir gitar teli gibi gergin olan bu yapı, aşırı yüke maruz kaldığında veya esnekliğini kaybettiğinde, topuk kemiğine yapıştığı noktada <strong>mikro yırtıklar</strong> ve <strong>iltihaplanma (enflamasyon)</strong> meydana gelir. İşte <strong>Plantar Fasiit</strong> tam olarak bu durumdur.
-              </p>
-
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">💡 Önemli Bilgi</h3>
-                <p className="text-gray-700 mb-3">
-                  Topuk dikeni, plantar fasyanın yapışma noktasında oluşan kalsifik kemik çıkıntısıdır.
-                </p>
-                <p className="text-gray-700 mb-3">
-                  Ağrının ana sebebi çoğu zaman diken değil, plantar fasyanın ve topuk yumuşak dokularının gerilmesi/iritasyonudur.
-                </p>
-                <p className="text-gray-700 mb-3">
-                  Ağrısı olmayan kişilerin de röntgenlerinde topuk dikeni görülebilir.
-                </p>
-                <p className="text-gray-700">
-                  Bu nedenle tedavi, <strong>"dikeni eritmeye"</strong> değil, <strong>biyomekanik yükün düzeltilmesine</strong> odaklanmalıdır.
-                </p>
               </div>
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
