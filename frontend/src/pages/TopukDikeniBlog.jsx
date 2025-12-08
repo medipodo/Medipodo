@@ -105,10 +105,16 @@ const TopukDikeniBlog = () => {
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">💡 Önemli Bilgi</h3>
                 <p className="text-gray-700 mb-3">
-                  İsmi "diken" olsa da, ağrının asıl sebebi topuktaki sivri bir kemik çıkıntısı değildir. Vücut, plantar fasyanın topuk kemiğine yapıştığı yerdeki bu sürekli çekme ve gerilime karşı kendini korumak için o bölgede kalsiyum biriktirmeye başlar.
+                  Topuk dikeni, plantar fasyanın yapışma noktasında oluşan kalsifik kemik çıkıntısıdır.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  Ağrının ana sebebi çoğu zaman diken değil, plantar fasyanın ve topuk yumuşak dokularının gerilmesi/iritasyonudur.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  Ağrısı olmayan kişilerin de röntgenlerinde topuk dikeni görülebilir.
                 </p>
                 <p className="text-gray-700">
-                  Zamanla bu birikinti, röntgen filmlerinde görülebilen sivri bir kemik çıkıntısı, yani "topuk dikeni" (heel spur) oluşturur. Ancak unutulmamalıdır ki, <strong>ağrının asıl sebebi genellikle bu kemik çıkıntısı değil, plantar fasya bandındaki iltihaplanma ve gerginliktir.</strong> Ağrısı olmayan birçok insanın röntgeninde de topuk dikeni görülebilir.
+                  Bu nedenle tedavi, <strong>"dikeni eritmeye"</strong> değil, <strong>biyomekanik yükün düzeltilmesine</strong> odaklanmalıdır.
                 </p>
               </div>
 
