@@ -43,7 +43,7 @@ function App() {
           <Route path="/blog/tirnakbatmasi" element={<BatikTirnakBlog />} />
           <Route path="/blog/ankara-baglica-refleksoloji" element={<RefleksolojiBlog />} />
           <Route path="/blog/nasir-sigil-farklari" element={<NasirSigilBlog />} />
-          <Route path="/blog/topuk-dikeni-plantar-fasiit" element={<TopukDikeniBlog />} />
+          <Route path="/blog/topuk-dikeni" element={<TopukDikeniBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
@@ -58,5 +58,3 @@ function App() {
 }
 
 export default App;
- 
- 

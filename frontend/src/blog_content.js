@@ -3,13 +3,13 @@
 export const enrichedBlogPosts = [
   {
     id: 'topuk-dikeni',
-    title: 'Topuk Dikeni – Sabah Topuğunda Çivi Saplanması: Neden Olur, Nasıl Önlenir?',
+    title: 'Topuk Dikeni (Plantar Fasiit) Nedir ve Nasıl Geçer?',
     slug: 'topuk-dikeni',
     excerpt: 'Sabah kalktığınızda topuğunuza batan keskin acı mı hissediyorsunuz? Topuk dikeni nedir, neden oluşur ve nasıl önlenir? Podolojik değerlendirme ve modern tedavi yöntemleri.',
     image: '/blog-images/topuk-dikeni/kapak görseli topuk dikeni.jpg',
     date: '8 Aralık 2025',
-    readTime: '12 dk',
-    tags: ['Topuk Dikeni', 'Topuk Ağrısı', 'Calcaneal Spur', 'Ortez', 'Podoloji', 'Ayak Sağlığı'],
+    readTime: '15 dk',
+    tags: ['Topuk Dikeni', 'Plantar Fasiit', 'Topuk Ağrısı', 'Ortez', 'Podoloji', 'Ayak Sağlığı'],
     content: 'Özel blog sayfası: /blog/topuk-dikeni'
   },
   {
