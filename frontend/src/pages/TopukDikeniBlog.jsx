@@ -77,6 +77,10 @@ const TopukDikeniBlog = () => {
                 Topuk Dikeni Nedir?
               </h2>
 
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                Topuk dikeni, en kolay anlaşılır haliyle topuğun altında oluşan küçük bir kemik çıkıntısıdır. Genellikle topuk tabanındaki dokunun (ayak altı bandının) gerilmesi ve yorulmasıyla birlikte görülür. Bu nedenle özellikle sabah kalkınca atılan ilk adımda keskin bir batma ve ağrı oluşturur.
+              </p>
+
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg my-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">💡 Önemli Bilgi</h3>
                 <p className="text-gray-700 mb-3">
