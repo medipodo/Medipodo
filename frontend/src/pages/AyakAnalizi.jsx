@@ -540,18 +540,19 @@ const AyakAnalizi = () => {
 
         .blog-cards {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 20px;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 24px;
         }
 
         .blog-card {
           background: white;
-          border-radius: 12px;
+          border-radius: 16px;
           overflow: hidden;
           box-shadow: 0 4px 12px rgba(0,0,0,0.08);
           transition: all 0.3s ease;
           text-decoration: none;
-          display: block;
+          display: flex;
+          flex-direction: column;
         }
 
         .blog-card:hover {
@@ -561,43 +562,51 @@ const AyakAnalizi = () => {
 
         .blog-card-image {
           width: 100%;
-          height: 180px;
+          height: 220px;
           object-fit: cover;
+          object-position: center;
         }
 
         .blog-card-content {
-          padding: 18px;
+          padding: 20px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
         }
 
         .blog-card-title {
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 17px;
+          font-weight: 700;
           color: #333;
-          margin-bottom: 10px;
+          margin-bottom: 12px;
           line-height: 1.4;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
+          min-height: 48px;
         }
 
         .blog-card-excerpt {
-          font-size: 13px;
+          font-size: 14px;
           color: #666;
           line-height: 1.6;
           display: -webkit-box;
-          -webkit-line-clamp: 2;
+          -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           overflow: hidden;
-          margin-bottom: 12px;
+          margin-bottom: 16px;
+          flex: 1;
         }
 
         .blog-card-meta {
           display: flex;
           align-items: center;
-          gap: 12px;
-          font-size: 12px;
+          gap: 15px;
+          font-size: 13px;
           color: #999;
+          padding-top: 12px;
+          border-top: 1px solid #f0f0f0;
         }
 
         .appointment-section {
@@ -668,10 +677,23 @@ const AyakAnalizi = () => {
 
           .blog-cards {
             grid-template-columns: 1fr;
+            gap: 20px;
           }
 
           .blog-card-image {
-            height: 200px;
+            height: 240px;
+          }
+
+          .blog-card-content {
+            padding: 18px;
+          }
+
+          .blog-card-title {
+            font-size: 16px;
+          }
+
+          .blog-card-excerpt {
+            font-size: 14px;
           }
 
           .nav-button {
