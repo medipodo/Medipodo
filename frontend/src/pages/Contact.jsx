@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { siteInfo } from '../mock';
 import { Card, CardContent } from '../components/ui/card';
 
 const Contact = () => {
+  useEffect(() => {
+    // AdSense script'i yükle
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error('AdSense error:', e);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -132,6 +141,22 @@ const Contact = () => {
             </svg>
             WhatsApp ile Yaz
           </a>
+        </div>
+      </section>
+
+      {/* Google AdSense */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <ins 
+              className="adsbygoogle"
+              style={{ display: 'block' }}
+              data-ad-client="ca-pub-5400209193949629"
+              data-ad-slot="2964637990"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            />
+          </div>
         </div>
       </section>
     </div>
