@@ -300,20 +300,6 @@ const TopukDikeniBlog = () => {
                   <p className="text-gray-700 mb-4">
                     Analiz sonuçlarına göre tasarlanan <strong>kişiye özel medikal tabanlıklar</strong>, tedavinin kilit noktasıdır. Bu tabanlıklar, ayak kavisini doğru şekilde destekleyerek plantar fasyanın üzerindeki aşırı yükü alır ve iyileşmesi için ona gerekli dinlenme ortamını sunar.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-4 mb-4">
-                    <img 
-                      src="/blog-images/topuk-dikeni/10.jpg" 
-                      alt="Ortez Tabanlık"
-                      className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
-                    />
-                    <img 
-                      src="/blog-images/topuk-dikeni/11.jpg" 
-                      alt="Kişiye Özel Tabanlık"
-                      className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
-                    />
-                  </div>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
                       src="/blog-images/topuk-dikeni/13.jpg" 
