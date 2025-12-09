@@ -4,7 +4,7 @@ import { enrichedBlogPosts } from './blog_content';
 
 export const siteInfo = {
   name: 'Medipodo',
-  fullName: 'Medipodo Ayak Bakımı',
+  fullName: 'Medipodo Medikal Sağlık Hizmetleri',
   tagline: 'Profesyonel Podoloji ve Ayak Bakım Merkezi',
   phone: '0545 656 97 47',
   phoneLink: '05456569747',
@@ -12,7 +12,7 @@ export const siteInfo = {
   address: 'Bağlıca Mah. Mert Cad. 4/2 Etimesgut, Ankara',
   email: 'info@medipodo.com',
   mapCoordinates: { lat: 39.897085007400506, lng: 32.64813457116447 },
-  workingHours: 'Pazartesi - Cumartesi: 09:00 - 18:00',
+  workingHours: 'Pazartesi - Cumartesi: 09:00 - 19:00',
   logo: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Adsız%20tasarım%20%281%29.png'
 };
 
