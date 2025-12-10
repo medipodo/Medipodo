@@ -319,6 +319,9 @@ const ServiceDetail = () => {
                   <h2 className="text-3xl font-bold text-blue-950 mb-6 border-l-4 border-purple-600 pl-4">
                     {service.detailedContent.prevention.title}
                   </h2>
+                  {service.detailedContent.prevention.intro && (
+                    <p className="text-gray-700 mb-6">{service.detailedContent.prevention.intro}</p>
+                  )}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {service.detailedContent.prevention.tips.map((tip, index) => (
                       <div key={index} className="flex items-start space-x-3 bg-purple-50 rounded-lg p-4">
@@ -327,6 +330,30 @@ const ServiceDetail = () => {
                       </div>
                     ))}
                   </div>
+                </div>
+              )}
+
+              {/* Benefits of Regular Care */}
+              {service.detailedContent.benefits && (
+                <div className="bg-white rounded-xl shadow-lg p-8">
+                  <h2 className="text-3xl font-bold text-blue-950 mb-6 border-l-4 border-green-600 pl-4">
+                    {service.detailedContent.benefits.title}
+                  </h2>
+                  <div className="space-y-3 mb-6">
+                    {service.detailedContent.benefits.list.map((benefit, index) => (
+                      <div key={index} className="flex items-start space-x-3 bg-green-50 rounded-lg p-4">
+                        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <Check className="text-green-600" size={16} />
+                        </div>
+                        <span className="text-gray-700">{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
+                  {service.detailedContent.benefits.note && (
+                    <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded-r-lg">
+                      <p className="text-gray-700">{service.detailedContent.benefits.note}</p>
+                    </div>
+                  )}
                 </div>
               )}
 

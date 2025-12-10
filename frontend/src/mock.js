@@ -282,7 +282,112 @@ export const services = [
       'Profesyonel peeling işlemi',
       'Özel bakım uygulaması',
       'Evde bakım önerileri'
-    ]
+    ],
+    detailedContent: {
+      causes: {
+        title: 'Topuk Çatlakları Neden Oluşur?',
+        description: 'Topuk çatlaklarının ortaya çıkmasının birçok nedeni olabilir:',
+        riskFactors: [
+          'Cilt Kuruluğu: Ayak derisi ince ve yağ bezlerinden fakir olduğu için çabuk kurur. Nem kaybı arttıkça topuk tabanı sertleşir ve zamanla çatlar',
+          'Aşırı Basınç: Uzun süre ayakta kalma, fazla kilo veya yanlış ayakkabı seçimi topuk çevresinde kalın tabaka oluşumuna yol açar',
+          'Yanlış Ayak Bakımı: Sert törpüler, çok sık ponza taşı kullanımı veya yanlış pedikür uygulamaları topuğu daha da hassas hâle getirir',
+          'Egzama – Diyabet – Cilt Hastalıkları: Bazı dermatolojik durumlar ve diyabet gibi kronik hastalıklar, derinin daha hızlı kurumasına ve çatlamasına neden olabilir',
+          'Terleme ve Hijyen Eksikliği: Aşırı terleme ya da yeterince kurulamayarak bırakılan ayak derisi zamanla bozulur ve çatlaklar oluşur'
+        ],
+        note: ''
+      },
+      symptoms: {
+        title: 'Topuk Sorunlarının Belirtileri Nelerdir?',
+        description: 'Topuk bakımının gerekli olduğunu gösteren en yaygın işaretler:',
+        signs: [
+          'Topuk çevresinde sertleşme ve kalın tabaka',
+          'Derinleşen çatlaklar',
+          'Yürürken batma veya yanma hissi',
+          'Çorap takılması',
+          'Kanama, hafif sızı veya enfeksiyon başlangıcı',
+          'Koku ve hijyen problemleri'
+        ],
+        note: 'Bu belirtilerden biri bile varsa profesyonel bakım geciktirilmemelidir.'
+      },
+      treatment: {
+        title: 'Medipodo\'da Topuk Bakımı Nasıl Yapılır?',
+        intro: 'Topuk bakımı uygulamalarımız tamamen steril, ağrısız ve klinik düzeyde podolojik tekniklerle yapılır.',
+        steps: [
+          {
+            number: 1,
+            title: 'Podolojik Muayene',
+            description: 'Topuğun kalınlık derecesi, çatlak derinliği, enfeksiyon olup olmadığı ve yürüyüş şekli değerlendirilir.'
+          },
+          {
+            number: 2,
+            title: 'Medikal Cilt Temizliği',
+            description: 'Sertleşmiş tabaka podolojik cihazlarla hassas şekilde temizlenir. Bu işlem sırasında sağlıklı dokuya zarar verilmez.'
+          },
+          {
+            number: 3,
+            title: 'Çatlakların Kapalı Teknikle Onarılması',
+            description: 'Derin çatlaklar varsa özel prosedürlerle yüzey düzleştirilir, enfeksiyon riski azaltılır.'
+          },
+          {
+            number: 4,
+            title: 'Yoğun Nemlendirme ve Onarım',
+            description: 'Uygulama sonrası ayak derisini hızlı şekilde toparlayan Pedizone Intense Repair Cream %15 Üre ile yoğun nem terapisi yapılır.',
+            benefits: [
+              'Sert tabakanın yumuşamasına',
+              'Derinin su tutma kapasitesinin artmasına',
+              'Kuruluk ve çatlakların kısa sürede onarılmasına'
+            ],
+            note: 'Üre, çatlak topuklarda keratolitik etki göstererek bu faydaları sağlar. Bu kremi düzenli kullandığınızda bakımın kalıcılığı belirgin şekilde uzar.'
+          },
+          {
+            number: 5,
+            title: 'Evde Bakım Eğitimi',
+            description: 'Tedavinin tekrarlamaması için doğru nemlendirme, ayakkabı seçimi ve günlük bakım adımları detaylı olarak anlatılır.'
+          }
+        ]
+      },
+      benefits: {
+        title: 'Topuk Bakımı Düzenli Olarak Yapılırsa Ne Değişir?',
+        list: [
+          'Daha pürüzsüz ve estetik görünüm',
+          'Ağrı ve batma hissinde azalma',
+          'Çatlakların kapanması ve enfeksiyon riskinin ortadan kalkması',
+          'Çorap ve ayakkabı kullanımında konfor',
+          'Koku oluşumunda azalma'
+        ],
+        note: 'Düzenli bakım yaptıranlarda ilerleyen dönemde kalın tabaka oluşumu çok daha düşük olur.'
+      },
+      prevention: {
+        title: 'Evde Topuk Çatlağı Nasıl Önlenir?',
+        intro: 'Profesyonel bakımın ardından şu adımlar düzenli uygulanmalıdır:',
+        tips: [
+          'Günde en az 1 kez Pedizone Intense Repair Cream %15 Üre ile nemlendirme',
+          'Duştan sonra ayakların tamamen kurulunması',
+          'Sert zeminlerde terliksiz dolaşmamak',
+          'Çok kalınlaşmış deriye evde jilet / kesici işlem uygulamamak',
+          'Uygun tabanlık ve ayakkabı seçmek',
+          'Haftada 1 kez hafif peeling'
+        ]
+      },
+      whyMedipodo: {
+        title: 'Neden Medipodo?',
+        reasons: [
+          'Podoloji eğitimi almış profesyonel ekip',
+          'Tam steril klinik ortam',
+          'Ağrısız işlem garantisi',
+          'Soruna göre kişiye özel bakım planı',
+          'Kalıcı çözüme odaklanan klinik yaklaşım',
+          'Ankara / Bağlıca\'da kolay ulaşım'
+        ],
+        note: 'Topuk çatlakları, doğru bakım yapılmadıkça sürekli tekrar eden bir problemdir. Medipodo olarak amacımız geçici bir "güzellik" değil, uzun süre konfor sağlayan kalıcı bir iyileşme sağlamaktır.'
+      },
+      images: [
+        '/images/services/topuk-bakimi/topuk1.jpg',
+        '/images/services/topuk-bakimi/topuk2.jpg',
+        '/images/services/topuk-bakimi/topuk3.jpg',
+        '/images/services/topuk-bakimi/topuk4.jpg'
+      ]
+    }
   },
   {
     id: 'nasir-tedavisi',
