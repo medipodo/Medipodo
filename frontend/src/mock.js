@@ -55,7 +55,108 @@ export const services = [
       'Tedavi planlaması',
       'Düzenli uygulama seansları',
       'Kontrol ve koruyucu önlemler'
-    ]
+    ],
+    detailedContent: {
+      causes: {
+        title: 'Tırnak Mantarı Neden Olur?',
+        description: 'Tırnak mantarına en sık dermatofit adı verilen mantarlar neden olur. Ancak maya ve küf mantarları da enfeksiyona yol açabilir.',
+        riskFactors: [
+          'Nemli çorap ve ayakkabı kullanımı',
+          'Terleyen ayaklar',
+          'Ortak terlik, havlu, duş alanı kullanımı',
+          'Dar ayakkabılar',
+          'Travmaya uğramış tırnak',
+          'Bağışıklığın zayıf olması',
+          'Diyabet ve dolaşım problemleri',
+          'Mantar hastalığı olan biriyle temas'
+        ],
+        note: 'Bu faktörlerden biri bile varsa, tırnak mantarı gelişme ihtimali artar.'
+      },
+      symptoms: {
+        title: 'Tırnak Mantarı Belirtileri',
+        description: 'Tırnak mantarında görülen bulgular zamanla ilerleyerek tırnağı tamamen bozabilir. Bu nedenle erken müdahale çok önemlidir.',
+        signs: [
+          'Tırnakta sararma, kahverengileşme veya beyaz lekeler',
+          'Tırnak kalınlaşması',
+          'Tırnakta şekil bozukluğu',
+          'Tırnak yüzeyinde katmanlaşma ve parçalanma',
+          'Tırnak altından kötü koku gelmesi',
+          'Tırnağın yatağından ayrılması',
+          'Ayakkabı içinde batma ve ağrı'
+        ],
+        note: 'Bu şikayetlerin biri bile varsa, tırnak mantarı ihtimali yüksektir.'
+      },
+      treatment: {
+        title: 'Podolojik Tırnak Mantarı Tedavisi – Medipodo Yaklaşımı',
+        intro: 'Tırnak mantarı uzun süren ve doğru bakım gerektiren bir problemdir. Medipodo\'da uygulanan yöntem tamamen klinik, hijyenik ve profesyonel bir yaklaşıma dayanır.',
+        steps: [
+          {
+            number: 1,
+            title: 'Podolojik Değerlendirme',
+            description: 'Tırnak yapısı, etkilenen alan, mantarın yaygınlığı ve tırnağın kalınlığı analiz edilir. Gerekirse mikroskobik inceleme önerilir.'
+          },
+          {
+            number: 2,
+            title: 'Enfekte Tırnak Katmanlarının Temizlenmesi (Debridman)',
+            description: 'Özel podolojik frez uçlarıyla mantarın tuttuğu kalınlaşmış ve ölü tırnak dokusu kontrollü şekilde temizlenir.',
+            benefits: [
+              'Tedavinin etkinliğini artırır',
+              'Topikal ürünlerin tırnak altına daha iyi nüfuz etmesini sağlar',
+              'Ağrı ve basıncı azaltır'
+            ]
+          },
+          {
+            number: 3,
+            title: 'Mantar Karşıtı Profesyonel Bakım Ürünleri',
+            description: 'Hastalığın seviyesine göre evde kullanım için mantar karşıtı serum, solüsyon veya krem önerilir.'
+          },
+          {
+            number: 4,
+            title: 'Düzenli Kontrol Seansları',
+            description: 'Tırnak mantarı tedavisi genellikle 2–6 ay sürer. Düzenli kontrollere gelmek tedavinin başarısı için kritik önemdedir.'
+          }
+        ]
+      },
+      risks: {
+        title: 'Tırnak Mantarı Tedavi Edilmezse Ne Olur?',
+        consequences: [
+          'Enfeksiyon diğer tırnaklara yayılabilir',
+          'Tırnak yatağı tamamen tahrip olabilir',
+          'Ağrı ve koku artabilir',
+          'Ayakkabı giymek zorlaşabilir',
+          'Deri mantarı (athlete\'s foot) gelişebilir'
+        ],
+        note: 'Bu nedenle erken başvuru tedavinin temel anahtarıdır.'
+      },
+      prevention: {
+        title: 'Tırnak Mantarı Nasıl Önlenir?',
+        tips: [
+          'Ayakları her gün yıkayıp iyice kurulayın',
+          'Hava alan, pamuklu çoraplar kullanın',
+          'Ayakkabıları düzenli havalandırın',
+          'Ortak havuz/duş alanlarında terlik kullanın',
+          'Manikür/pedikür için steril olmayan yerleri tercih etmeyin',
+          'Mantar karşıtı koruyucu sprey/serumlar kullanın'
+        ]
+      },
+      whyMedipodo: {
+        title: 'Medipodo Ayak Sağlığı – Tırnak Mantarı Bakımında Neden Tercih Ediliyor?',
+        reasons: [
+          'Podolog eşliğinde profesyonel bakım',
+          'Steril ve tek kullanımlık ürünler',
+          'Mantarın evrelerine uygun kişiye özel tedavi planı',
+          'Kalınlaşmış mantarlı tırnaklarda ağrısız inceltme',
+          'Gelişmiş cihazlar ve hijyen protokolleri',
+          'Ankara – Bağlıca\'da güvenilir hizmet'
+        ],
+        note: 'Randevular en az 1 gün önceden alınmaktadır. Evde bakım isterseniz, mobil ekiplerimiz de belirli bölgelere hizmet vermektedir.'
+      },
+      images: [
+        '/images/services/tirnak-mantari/mantar1.jpg',
+        '/images/services/tirnak-mantari/mantar2.jpg',
+        '/images/services/tirnak-mantari/mantar3.jpg'
+      ]
+    }
   },
   {
     id: 'topuk-bakimi',
