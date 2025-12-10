@@ -22,6 +22,7 @@ import BatikTirnakBlog from './pages/BatikTirnakBlog';
 import RefleksolojiBlog from './pages/RefleksolojiBlog';
 import NasirSigilBlog from './pages/NasirSigilBlog';
 import TopukDikeniBlog from './pages/TopukDikeniBlog';
+import CocukAyakSagligiBlog from './pages/CocukAyakSagligiBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="/blog/ankara-baglica-refleksoloji" element={<RefleksolojiBlog />} />
           <Route path="/blog/nasir-sigil-farklari" element={<NasirSigilBlog />} />
           <Route path="/blog/topuk-dikeni" element={<TopukDikeniBlog />} />
+          <Route path="/blog/cocuk-ayak-sagligi" element={<CocukAyakSagligiBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />

@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'cocuk-ayak-sagligi',
+    title: 'Çocuğunuzun Ayak Sağlığı Rehberi: En Sık Görülen 5 Ayak Problemi',
+    slug: 'cocuk-ayak-sagligi',
+    excerpt: 'Çocuklarda ve ergenlerde en sık görülen ayak problemleri ve podolojik çözümler. Batık tırnak, ayak mantarı, düz tabanlık tedavisi ve ebeveynler için rehber.',
+    image: '/blog-images/cocuk-ayak-sagligi/blog kapak görseli.jpg',
+    date: '8 Aralık 2025',
+    readTime: '12 dk',
+    tags: ['Çocuk Ayak Sağlığı', 'Ergen', 'Batık Tırnak', 'Düz Tabanlık', 'Podoloji', 'Ebeveyn Rehberi'],
+    content: 'Özel blog sayfası: /blog/cocuk-ayak-sagligi'
+  },
+  {
     id: 'topuk-dikeni',
     title: 'Topuk Dikeni (Calcanei Epin) Nedir ve Nasıl Geçer?',
     slug: 'topuk-dikeni',
