@@ -35,7 +35,113 @@ export const services = [
       'Steril aletlerle işlem',
       'Ağrı kontrolü ve rahatlama',
       'Takip ve bakım önerileri'
-    ]
+    ],
+    detailedContent: {
+      causes: {
+        title: 'Batık Tırnak Neden Olur?',
+        description: 'Batık tırnağın en sık nedenleri şunlardır:',
+        riskFactors: [
+          'Yanlış tırnak kesimi: Tırnakların çok dipten veya kenarlardan yuvarlanarak kesilmesi',
+          'Dar ve sıkı ayakkabılar: Parmaklara sürekli baskı yaparak tırnağın deriye gömülmesine yol açar',
+          'Tırnak yapısının kıvrık olması: Doğuştan gelen kavisli tırnak yapısı batığa daha yatkındır',
+          'Travmalar: Parmak sıkışması, spor esnasında alınan darbeler veya sürekli basınç',
+          'Aşırı terleme: Nemli kalan ayak derisinin yumuşaması, tırnağın kolayca batmasına neden olabilir',
+          'Yanlış pedikür uygulamaları: Steril olmayan ortamlar veya hatalı tırnak kısaltma işlemleri'
+        ],
+        note: 'Bu faktörlerden biri bile varsa, batık tırnak gelişme riski artar.'
+      },
+      symptoms: {
+        title: 'Batık Tırnak Belirtileri',
+        description: 'Batık tırnağın ilk işaretleri küçük bir rahatsızlık gibi görünse de ihmal edildiğinde hızla ilerleyebilir.',
+        signs: [
+          'Tırnak kenarında ağrı ve hassasiyet',
+          'Parmak etrafında kızarıklık, şişlik, ısı artışı',
+          'Ayakkabı giyerken artan rahatsızlık',
+          'Cilt dokusunda sertleşme veya et büyümesi',
+          'İleri dönemde akıntı ve enfeksiyon bulguları',
+          'Yürüyüş sırasında sancı'
+        ],
+        note: 'Bu şikayetlerden biri bile varsa profesyonel müdahale gerekir.'
+      },
+      treatment: {
+        title: 'Medipodo\'da Batık Tırnak Tedavisi Nasıl Yapılır?',
+        intro: 'Başarılı bir batık tırnak tedavisinin temelinde doğru teknik, steril çalışma ve kişiye özel yaklaşım vardır. Medipodo\'da uyguladığımız yöntem:',
+        steps: [
+          {
+            number: 1,
+            title: 'Podolojik Muayene',
+            description: 'Tırnağın batık derecesi, enfeksiyon durumu, tırnak yapısı ve deri dokusu detaylı olarak değerlendirilir.'
+          },
+          {
+            number: 2,
+            title: 'Steril Temizleme ve Basınç Azaltma',
+            description: 'Batığın tırnağa yaptığı baskı podolojik ekipmanlarla azaltılır. Derideki ölü dokular temizlenir ve tırnak kenarı kontrollü şekilde rahatlatılır.'
+          },
+          {
+            number: 3,
+            title: 'Profesyonel Tırnak Şekillendirme',
+            description: 'Tırnağın doğal yapısına zarar vermeden, batık köşe yeniden şekillendirilir. Bu işlem sayesinde tırnağın deriye doğru büyümesi engellenir.'
+          },
+          {
+            number: 4,
+            title: 'Gerekirse Ortoniks / Tırnak Teli',
+            description: 'Tekrarlayan batıklarda, tırnağın yönünü düzeltmek için tırnak teli uygulaması yapılabilir. Bu yöntem acısızdır ve tırnağı doğru yönde büyümeye yönlendirir.'
+          },
+          {
+            number: 5,
+            title: 'Enfeksiyonlu Durumlarda Özel Bakım',
+            description: 'İltihap, şişlik veya akıntı varsa tırnak çevresi özel antiseptiklerle temizlenir; hastaya uygun bakım önerilir.'
+          },
+          {
+            number: 6,
+            title: 'Tedavi Sonrası Eğitim',
+            description: 'Hastaya doğru tırnak kesimi, ayakkabı seçimi ve evde yapılması gereken bakım adımları anlatılır. Bu sayede batığın tekrarlaması önlenir.'
+          }
+        ]
+      },
+      risks: {
+        title: 'Batık Tırnak Tedavi Edilmezse Ne Olur?',
+        intro: 'Tedavi edilmeyen batık tırnak zamanla:',
+        consequences: [
+          'Kronik ağrıya',
+          'İleri enfeksiyona',
+          'Tırnak şekil bozukluklarına',
+          'Yürüyüş bozukluklarına',
+          'Deride et büyümesine',
+          'Bazı hastalarda ciddi komplikasyonlara (özellikle diyabetliler)'
+        ],
+        note: 'Bu nedenle erken müdahale çok önemlidir.'
+      },
+      prevention: {
+        title: 'Batık Tırnak Nasıl Önlenir?',
+        tips: [
+          'Tırnakları düz ve çok kısa olmayacak şekilde kesin',
+          'Dar ve burun kısmı sıkıştıran ayakkabılardan kaçının',
+          'Ayakları her gün yıkayıp kurulayın',
+          'Terlemeye yatkın ayaklarda çorap değişimini sıklaştırın',
+          'Hijyenik olmayan pedikür işlemlerinden uzak durun',
+          'Tırnak yapısı kıvrık olan kişiler düzenli podolojik kontrol yaptırmalı'
+        ]
+      },
+      whyMedipodo: {
+        title: 'Neden Medipodo?',
+        reasons: [
+          'Profesyonel podolog ekibi',
+          'Tam steril ortam',
+          'Ağrısız batık tırnak tedavisi',
+          'Gerekirse tırnak teli uygulaması',
+          'Kişiye özel bakım planı',
+          'Tekrarı önlemeye yönelik danışmanlık',
+          'Ankara / Bağlıca\'da kolay ulaşım'
+        ],
+        note: 'Medipodo olarak amacımız geçici değil, kalıcı ve konforlu bir çözüm sunmaktır.'
+      },
+      images: [
+        '/images/services/batik-tirnak/batik1.jpg',
+        '/images/services/batik-tirnak/batik2.jpg',
+        '/images/services/batik-tirnak/batik3.jpg'
+      ]
+    }
   },
   {
     id: 'tirnak-mantari',
