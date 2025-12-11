@@ -145,7 +145,7 @@ export const services = [
   },
   {
     id: 'tirnak-mantari',
-    title: 'Tırnak Mantarı Tedavisi',
+    title: 'Tırnak ve Ayak Mantarları',
     shortDesc: 'Etkili tırnak mantarı tedavisi ile sağlıklı tırnaklar',
     fullDesc: 'Tırnak mantarı, tırnak yapısını bozan ve estetik sorunlara yol açan fungal bir enfeksiyondur. Modern tedavi yöntemlerimizle kalıcı çözüm sağlıyoruz. Uzman podologlarımız, kişiye özel tedavi planları hazırlayarak, tırnaklarınızın sağlığına kavuşmasını sağlar. Tedavi sürecinde düzenli takip ile başarı oranını maksimuma çıkarıyoruz.',
     icon: 'ShieldCheck',
@@ -266,7 +266,7 @@ export const services = [
   },
   {
     id: 'topuk-bakimi',
-    title: 'Topuk Bakımı ve Çatlak Tedavisi',
+    title: 'Topuk ve Çatlak Bakımı',
     shortDesc: 'Çatlak topuklar için profesyonel bakım ve tedavi',
     fullDesc: 'Topuk çatlakları ve kalınlaşmaları hem estetik hem de sağlık problemi oluşturabilir. Özel bakım protokollerimizle topuklarınızı yeniden sağlıklı hale getiriyoruz. Profesyonel peeling ve nemlendirme uygulamalarımız, cildinizin derinlemesine beslenmesini sağlar. Uzun süreli sonuçlar için evde bakım önerilerimizle sürecin devamını destekliyoruz.',
     icon: 'Sparkles',
@@ -391,7 +391,7 @@ export const services = [
   },
   {
     id: 'nasir-tedavisi',
-    title: 'Nasır ve Kalınlaşma Tedavisi',
+    title: 'Nasır ve Plantar Siğil',
     shortDesc: 'Ağrılı nasırların profesyonel tedavisi',
     fullDesc: 'Ayak tabanında oluşan nasırlar ve kalınlaşmalar yürüme konforu ve yaşam kalitenizi olumsuz etkiler. Uzman podoloji hizmetimizle rahatlayın. Özel cihazlarımız ve profesyonel tekniklerimizle, nasırlarınızı ağrısız bir şekilde temizliyor, basınç noktalarınızı analiz ederek tekrar oluşumunu önlemeye yönelik öneriler sunuyoruz.',
     icon: 'CircleDot',
