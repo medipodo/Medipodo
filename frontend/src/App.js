@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
+import CookieBanner from './components/CookieBanner';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
@@ -24,6 +25,8 @@ import NasirSigilBlog from './pages/NasirSigilBlog';
 import TopukDikeniBlog from './pages/TopukDikeniBlog';
 import CocukAyakSagligiBlog from './pages/CocukAyakSagligiBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
