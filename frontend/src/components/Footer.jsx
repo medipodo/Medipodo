@@ -105,10 +105,21 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-blue-800 mt-8 pt-6 text-center">
-          <p className="text-sm text-blue-200">
-            © {new Date().getFullYear()} {siteInfo.fullName}. Tüm hakları saklıdır.
-          </p>
+        <div className="border-t border-blue-800 mt-8 pt-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-blue-200 text-center md:text-left">
+              © {new Date().getFullYear()} {siteInfo.fullName}. Tüm hakları saklıdır.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+              <Link to="/gizlilik-politikasi" className="text-blue-200 hover:text-white transition-colors">
+                Gizlilik Politikası
+              </Link>
+              <span className="text-blue-400">•</span>
+              <Link to="/kullanim-sartlari" className="text-blue-200 hover:text-white transition-colors">
+                Kullanım Şartları
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
