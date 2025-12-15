@@ -826,8 +826,8 @@ export const products = [
     coverImage: '/images/products/Antifungal-Pedizone.jpg',
     detailImages: [
       '/images/products/Antifungal-Pedizone.jpg',
-      '/images/products/pedizone ürünler.jpg',
-      '/images/products/tüm pedizone sayfalarında.jpg'
+      '/images/products/pedizone-urunler.jpg',
+      '/images/products/tum-pedizone-sayfalari.jpg'
     ],
     description: 'Ayak ve tırnak sağlığı için özel formül. Tırnak mantarı eğilimine karşı koruma, mat tırnakları canlandırma ve kötü koku giderme özellikleri.',
     fullDescription: 'Ayak ve tırnak sağlığı, genel yaşam konforunuzun ayrılmaz bir parçasıdır. Gün boyu kapalı kalan, neme ve sürtünmeye maruz kalan ayaklar, zamanla mat tırnak görünümü, kötü koku ve cilt yıpranması gibi sorunlarla karşılaşabilir. PediZone® Foot and Nail Care Serum, bu zorluklara karşı özel olarak geliştirilmiş, podolog onaylı, etkili bir bakım formülüdür.',
