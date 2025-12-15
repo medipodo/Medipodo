@@ -754,9 +754,9 @@ export const products = [
     id: 'urea-intense-repair-cream',
     slug: 'pedizone-urea-intense-repair-cream',
     name: 'PediZone® %15 Urea Intense Repair Cream',
-    shortName: 'Intense Repair Cream',
+    shortName: '%15 Üreli Yoğun Onarıcı Kremi',
     tagline: 'Çatlak Topuk ve Yoğun Kuruluk İçin Yoğun Onarım',
-    volume: '100 ml',
+    volume: '150 ml',
     coverImage: '/images/products/Intense Repair Cream-Pedizone.jpg',
     detailImages: [
       '/images/products/pedizone-krem4.jpg',
