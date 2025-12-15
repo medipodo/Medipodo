@@ -228,11 +228,11 @@ const Home = () => {
             {products.map((product) => (
               <Card key={product.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white overflow-hidden">
                 <CardContent className="p-0">
-                  <div className="relative aspect-square overflow-hidden bg-gray-50">
+                  <div className="relative aspect-video overflow-hidden">
                     <img 
                       src={product.coverImage} 
                       alt={product.name}
-                      className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 p-4"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                   </div>
@@ -243,9 +243,8 @@ const Home = () => {
                     <h3 className="text-xl font-semibold text-blue-950 mb-2">{product.shortName}</h3>
                     <p className="text-gray-600 text-sm mb-2">{product.tagline}</p>
                     <p className="text-gray-700 text-sm mb-4 line-clamp-2">{product.description}</p>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-2xl font-bold text-blue-700">{product.price}</span>
-                      <span className="text-sm text-gray-500">{product.volume}</span>
+                    <div className="mb-4">
+                      <span className="text-sm text-gray-500">Hacim: {product.volume}</span>
                     </div>
                     <Link to={`/urun/${product.slug}`}>
                       <Button variant="link" className="text-blue-700 p-0 h-auto font-semibold w-full justify-start">
