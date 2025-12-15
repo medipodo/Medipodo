@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Zap } from 'lucide-react';
-import { services, whyChooseUs, galleryImages, blogPosts } from '../mock';
+import { services, whyChooseUs, galleryImages, blogPosts, products } from '../mock';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import OptimizedImage from '../components/OptimizedImage';
