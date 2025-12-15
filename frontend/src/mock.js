@@ -763,7 +763,7 @@ export const products = [
     detailImages: [
       '/images/products/pedizone-krem4.jpg',
       '/images/products/Intense Repair Cream-Pedizone.jpg',
-      '/images/products/tüm pedizone sayfalarında.jpg'
+      '/images/products/tum-pedizone-sayfalari.jpg'
     ],
     description: 'Çatlak topuklar ve aşırı kuruluk için profesyonel bakım kremi. %15 urea içeriği ile yoğun onarım ve nemlendirme sağlar.',
     fullDescription: 'Çatlak topuklar, aşırı kuruluk ve hiperkeratoz (cilt kalınlaşması) sadece estetik kaygı değil, ağrıya ve enfeksiyon riskine yol açabilen ciddi sağlık sorunlarıdır. PediZone® %15 Urea Intense Repair Cream, podolojik uygulamalar için özel olarak geliştirilmiş, çatlak topuklar ve şiddetli kuru ayak cildi için yoğun onarım sağlayan profesyonel bir bakım kremidir.',
