@@ -690,3 +690,194 @@ export const whyChooseUs = [
     icon: 'Heart'
   }
 ];
+
+// PediZone Products
+export const products = [
+  {
+    id: 'ayak-temizleme-kopugu',
+    slug: 'pedizone-ayak-temizleme-kopugu',
+    name: 'PediZone® Ayak Temizleme Köpüğü',
+    shortName: 'Ayak Temizleme Köpüğü',
+    tagline: 'Derinlemesine Hijyen ve Ferahlık',
+    price: '249 ₺',
+    volume: '200 ml',
+    coverImage: '/images/products/FootFoam-Pedizone.jpg',
+    detailImages: [
+      '/images/products/pedizone-foot-foam-p.jpg',
+      '/images/products/FootFoam-Pedizone.jpg',
+      '/images/products/tüm pedizone sayfalarında.jpg'
+    ],
+    description: 'Ayak hijyeni, sağlıklı ayak bakımının temelini oluşturur. PediZone® Ayak Temizleme Köpüğü, ayakların derinlemesine temizliği ve korunması için özel olarak geliştirilmiş, antibakteriyel özellikli bir formüldür.',
+    fullDescription: 'Günlük yaşamın getirdiği terleme, kirlenme ve kapalı ayakkabı kullanımı, ayaklarda bakteri ve kötü koku oluşumuna zemin hazırlar. PediZone® Ayak Temizleme Köpüğü, ayakların derinlemesine temizliği ve korunması için özel olarak geliştirilmiş, antibakteriyel özellikli bir formüldür. 200 ml'lik bu yumuşak köpük, cildi kurutmadan mikroorganizmaları temizlerken, ayaklarınıza anında ferahlık ve rahatlama sağlar.',
+    features: [
+      'Antibakteriyel özellikli formül',
+      'Yumuşak köpük yapısı',
+      'Cildi kurutmadan temizler',
+      'Anında ferahlık ve rahatlama',
+      'Koku giderici etki',
+      'Nemlendirici özellik',
+      'Podolog onaylı'
+    ],
+    benefits: [
+      'Derinlemesine hijyen sağlar',
+      'Kötü koku oluşumunu engeller',
+      'Cildi temizlerken nemlendirir',
+      'Yorgun ayaklar için rahatlama',
+      'Cilt bariyerini onarır'
+    ],
+    ingredients: [
+      {
+        name: 'Chlorhexidine',
+        effect: 'Güçlü antibakteriyel etki, ayak kokusuna neden olan mikroorganizmaları temizler'
+      },
+      {
+        name: 'Aloe Vera',
+        effect: 'Cildi yatıştırır, nemlendirir ve tahrişi azaltır'
+      },
+      {
+        name: 'Menthol',
+        effect: 'Anında serinletici ve ferahlatıcı his verir'
+      },
+      {
+        name: 'Panthenol (Provitamin B5)',
+        effect: 'Cilt bariyerini onarır ve yenilenmesini destekler'
+      }
+    ],
+    usage: [
+      'Islak ayaklara köpük olarak yeterli miktarda PediZone® Ayak Temizleme Köpüğü uygulayın',
+      'Parmak araları da dahil olmak üzere tüm bölgeyi 1-2 dakika nazikçe masaj yapın',
+      'Bol suyla durulayın'
+    ],
+    recommendation: 'Maksimum hijyen ve ferahlık için günlük rutininizde sabah ve/veya akşam olmak üzere günde 1-2 kez kullanılması önerilir.',
+    category: 'Temizlik ve Hijyen'
+  },
+  {
+    id: 'urea-intense-repair-cream',
+    slug: 'pedizone-urea-intense-repair-cream',
+    name: 'PediZone® %15 Urea Intense Repair Cream',
+    shortName: 'Intense Repair Cream',
+    tagline: 'Çatlak Topuk ve Yoğun Kuruluk İçin Yoğun Onarım',
+    price: '299 ₺',
+    volume: '100 ml',
+    coverImage: '/images/products/Intense Repair Cream-Pedizone.jpg',
+    detailImages: [
+      '/images/products/pedizone-krem4.jpg',
+      '/images/products/Intense Repair Cream-Pedizone.jpg',
+      '/images/products/tüm pedizone sayfalarında.jpg'
+    ],
+    description: 'Çatlak topuklar ve aşırı kuruluk için profesyonel bakım kremi. %15 urea içeriği ile yoğun onarım ve nemlendirme sağlar.',
+    fullDescription: 'Çatlak topuklar, aşırı kuruluk ve hiperkeratoz (cilt kalınlaşması) sadece estetik kaygı değil, ağrıya ve enfeksiyon riskine yol açabilen ciddi sağlık sorunlarıdır. PediZone® %15 Urea Intense Repair Cream, podolojik uygulamalar için özel olarak geliştirilmiş, çatlak topuklar ve şiddetli kuru ayak cildi için yoğun onarım sağlayan profesyonel bir bakım kremidir.',
+    features: [
+      '%15 Urea (Üre) içeriği',
+      'Keratolytik ve rejeneratif etki',
+      'Bitki kompleksleri',
+      'Derin nemlendirici ajanlar',
+      'Hızlı emilim, yapışkan his bırakmaz',
+      'Podolog onaylı',
+      'Klinik testli'
+    ],
+    benefits: [
+      'Çatlak topukları hızla onarır',
+      'Hiperkeratozu yumuşatır',
+      'Enfeksiyon riskini azaltır',
+      'Cildi yoğun nemlendirir',
+      'Yeniden çatlamayı önler'
+    ],
+    ingredients: [
+      {
+        name: '%15 Urea (Üre)',
+        effect: 'Keratolitik ve rejeneratif etki: Sertleşmiş keratini yumuşatır, ölü cildin kontrollü şekilde uzaklaşmasına yardımcı olur'
+      },
+      {
+        name: 'Tea Tree Oil',
+        effect: 'Antifungal ve antibakteriyel koruma: Ayak mantarı ve bakteriyel kokulara karşı koruyucu bariyer oluşturur'
+      },
+      {
+        name: 'Shea Butter & Avokado Yağı',
+        effect: 'Derin besleyici onarım: Yoğun nem deposu oluşturur, cilt bariyerini güçlendirir'
+      },
+      {
+        name: 'Gliserin',
+        effect: 'Nem tutma etkisi: Cildin nem kaybını önler, formülün derine nüfuz etmesini kolaylaştırır'
+      }
+    ],
+    usage: [
+      'Ev Kullanımı: En iyi sonuçlar için geceleri temiz ve kuru ayaklara uygulayın',
+      'Çatlak ve kuru bölgelere odaklanarak tamamen emilene kadar masaj yapın',
+      'Düzenli kullanımda 7-10 gün içinde ilk iyileşmeler gözlemlenebilir'
+    ],
+    professionalUse: 'Podoloji tedavilerinden sonra, temizlenmiş bölgeye ince bir tabaka halinde uygulayarak tedavi sonrası bakımı destekler.',
+    category: 'Bakım ve Onarım',
+    usageAreas: [
+      'Çatlak topuklar ve aşırı kuruluk',
+      'Hiperkeratoz (kalınlaşmış cilt)',
+      'Podoloji tedavisi sonrası bakım',
+      'Mantara eğilimli cilt'
+    ]
+  },
+  {
+    id: 'foot-nail-care-serum',
+    slug: 'pedizone-foot-nail-care-serum',
+    name: 'PediZone® Foot and Nail Care Serum',
+    shortName: 'Nail Care Serum',
+    tagline: 'Tırnak ve Ayak Sağlığınız İçin Podolog Onaylı Çözüm',
+    price: '279 ₺',
+    volume: '50 ml',
+    coverImage: '/images/products/Antifungal-Pedizone.jpg',
+    detailImages: [
+      '/images/products/Antifungal-Pedizone.jpg',
+      '/images/products/pedizone ürünler.jpg',
+      '/images/products/tüm pedizone sayfalarında.jpg'
+    ],
+    description: 'Ayak ve tırnak sağlığı için özel formül. Tırnak mantarı eğilimine karşı koruma, mat tırnakları canlandırma ve kötü koku giderme özellikleri.',
+    fullDescription: 'Ayak ve tırnak sağlığı, genel yaşam konforunuzun ayrılmaz bir parçasıdır. Gün boyu kapalı kalan, neme ve sürtünmeye maruz kalan ayaklar, zamanla mat tırnak görünümü, kötü koku ve cilt yıpranması gibi sorunlarla karşılaşabilir. PediZone® Foot and Nail Care Serum, bu zorluklara karşı özel olarak geliştirilmiş, podolog onaylı, etkili bir bakım formülüdür.',
+    features: [
+      'Konsantre serum formülü',
+      'Antifungal özellik',
+      'Antibakteriyel etki',
+      'Tırnak yüzeyi yenileme',
+      'Yoğun nemlendirme',
+      'Hızlı emilim',
+      'Podolog onaylı'
+    ],
+    benefits: [
+      'Tırnak mantarına karşı koruma',
+      'Mat tırnakları canlandırır',
+      'Kötü koku giderir',
+      'Tırnak ve cilt esnekliğini artırır',
+      'Sağlıklı tırnak uzamasını destekler'
+    ],
+    ingredients: [
+      {
+        name: 'Tea Tree Oil (Çay Ağacı Yağı)',
+        effect: 'Güçlü doğal antifungal ve antibakteriyel etki, tırnak mantarı eğilimli bölgelerde koruyucu bariyer oluşturur'
+      },
+      {
+        name: 'Salicylic Acid (Salisilik Asit)',
+        effect: 'Keratolitik özelliği sayesinde ölü deri hücrelerini nazikçe temizler, tırnak yüzeyinin yenilenmesini destekler'
+      },
+      {
+        name: 'Urea (Üre)',
+        effect: 'Yoğun nemlendirici ve yumuşatıcı etki, tırnak ve çevresindeki cildin esnekliğini artırır'
+      },
+      {
+        name: 'Vitamin E',
+        effect: 'Güçlü antioksidan koruma, tırnak yatağını serbest radikallere karşı koruyarak sağlıklı uzamayı destekler'
+      }
+    ],
+    usage: [
+      'Ayaklarınızı iyice temizleyip kurulayın',
+      'Birkaç damla serumu doğrudan tırnaklarınıza ve tırnak çevresindeki cilde uygulayın',
+      'Serumun tamamen emilmesi için hafifçe masaj yapın'
+    ],
+    recommendation: 'En etkili sonuçlar için sabah ve akşam olmak üzere günde 2 kez düzenli kullanılması tavsiye edilir. Düzenli kullanımda 2-4 hafta içinde gözle görülür sonuçlar alabilirsiniz.',
+    category: 'Tırnak Bakımı',
+    usageAreas: [
+      'Tırnak mantarı eğilimi',
+      'Mat ve yıpranmış tırnaklar',
+      'Kötü koku sorunu',
+      'Genel ayak ve tırnak bakımı'
+    ]
+  }
+];
+
