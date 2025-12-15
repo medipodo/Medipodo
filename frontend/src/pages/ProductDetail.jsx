@@ -234,6 +234,65 @@ const ProductDetail = () => {
             </Card>
           </div>
 
+          {/* PediZone.com Link */}
+          <div className="mt-12">
+            <Card className="border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white">
+              <CardContent className="p-6 text-center">
+                <p className="text-gray-700 mb-4">
+                  PediZone® ürünleri hakkında daha fazla bilgi almak ve satın alma seçenekleri için:
+                </p>
+                <a
+                  href="https://pedizone.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-900 font-semibold text-lg"
+                >
+                  🔗 pedizone.com adresini ziyaret edin
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Other Products */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-blue-950 mb-8 text-center">Diğer Ürünler</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {products
+                .filter(p => p.id !== product.id)
+                .map((otherProduct) => (
+                  <Card key={otherProduct.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white overflow-hidden">
+                    <CardContent className="p-0">
+                      <div className="relative aspect-video overflow-hidden">
+                        <img 
+                          src={otherProduct.coverImage} 
+                          alt={otherProduct.name}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <div className="mb-3">
+                          <span className="text-sm text-blue-700 font-semibold">{otherProduct.category}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold text-blue-950 mb-2">{otherProduct.shortName}</h3>
+                        <p className="text-gray-600 text-sm mb-2">{otherProduct.tagline}</p>
+                        <p className="text-gray-700 text-sm mb-4 line-clamp-2">{otherProduct.description}</p>
+                        <div className="mb-4">
+                          <span className="text-sm text-gray-500">Hacim: {otherProduct.volume}</span>
+                        </div>
+                        <Link to={`/urun/${otherProduct.slug}`}>
+                          <Button variant="link" className="text-blue-700 p-0 h-auto font-semibold">
+                            Ürün Detayı
+                            <ArrowRight className="ml-1" size={16} />
+                          </Button>
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+            </div>
+          </div>
+
           {/* Back Button */}
           <div className="mt-12 text-center">
             <Link to="/">
