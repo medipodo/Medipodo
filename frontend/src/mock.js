@@ -740,6 +740,14 @@ export const products = [
       {
         name: 'Panthenol (Provitamin B5)',
         effect: 'Cilt bariyerini onarır ve yenilenmesini destekler'
+      },
+      {
+        name: 'Niacinamide',
+        effect: 'Cilt tonunu eşitler, gözenekleri sıkılaştırır ve cilt bariyerini güçlendirir'
+      },
+      {
+        name: 'Hyaluronic Acid',
+        effect: 'Yoğun nem sağlar, cildin nem dengesini korur ve yumuşaklık verir'
       }
     ],
     usage: [
