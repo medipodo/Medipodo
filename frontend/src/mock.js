@@ -819,7 +819,6 @@ export const products = [
     name: 'PediZone® Foot and Nail Care Serum',
     shortName: 'Nail Care Serum',
     tagline: 'Tırnak ve Ayak Sağlığınız İçin Podolog Onaylı Çözüm',
-    price: '279 ₺',
     volume: '50 ml',
     coverImage: '/images/products/Antifungal-Pedizone.jpg',
     detailImages: [
