@@ -817,7 +817,7 @@ export const products = [
     id: 'foot-nail-care-serum',
     slug: 'pedizone-foot-nail-care-serum',
     name: 'PediZone® Foot and Nail Care Serum',
-    shortName: 'Nail Care Serum',
+    shortName: 'Tırnak ve Ayak Serumu',
     tagline: 'Tırnak ve Ayak Sağlığınız İçin Podolog Onaylı Çözüm',
     volume: '50 ml',
     coverImage: '/images/products/Antifungal-Pedizone.jpg',
