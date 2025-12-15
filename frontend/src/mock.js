@@ -756,7 +756,6 @@ export const products = [
     name: 'PediZone® %15 Urea Intense Repair Cream',
     shortName: 'Intense Repair Cream',
     tagline: 'Çatlak Topuk ve Yoğun Kuruluk İçin Yoğun Onarım',
-    price: '299 ₺',
     volume: '100 ml',
     coverImage: '/images/products/Intense Repair Cream-Pedizone.jpg',
     detailImages: [
