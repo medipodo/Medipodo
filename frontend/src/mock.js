@@ -699,7 +699,6 @@ export const products = [
     name: 'PediZone® Ayak Temizleme Köpüğü',
     shortName: 'Ayak Temizleme Köpüğü',
     tagline: 'Derinlemesine Hijyen ve Ferahlık',
-    price: '249 ₺',
     volume: '200 ml',
     coverImage: '/images/products/FootFoam-Pedizone.jpg',
     detailImages: [
