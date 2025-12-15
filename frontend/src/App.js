@@ -27,6 +27,7 @@ import CocukAyakSagligiBlog from './pages/CocukAyakSagligiBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
