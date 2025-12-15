@@ -878,6 +878,22 @@ export const products = [
       {
         name: 'Vitamin E',
         effect: 'Güçlü antioksidan koruma, tırnak yatağını serbest radikallere karşı koruyarak sağlıklı uzamayı destekler'
+      },
+      {
+        name: 'Benzoic Acid',
+        effect: 'Antifungal ve antimikrobiyal özellik: Tırnak mantarı ve mikroorganizmalara karşı etkili koruma sağlar'
+      },
+      {
+        name: 'Thymus Vulgaris (Kekik Yağı)',
+        effect: 'Doğal antiseptik ve antibakteriyel: Tırnak çevresindeki enfeksiyonları önler ve iyileşmeyi destekler'
+      },
+      {
+        name: 'Undecylenamide DEA',
+        effect: 'Güçlü antifungal ajan: Tırnak mantarının büyümesini engeller ve tırnak sağlığını korur'
+      },
+      {
+        name: 'Lavandula Angustifolia',
+        effect: 'Yatıştırıcı ve onarıcı: Tahriş olmuş cildi sakinleştirir, hoş koku sağlar ve tırnak çevresini yumuşatır'
       }
     ],
     usage: [
