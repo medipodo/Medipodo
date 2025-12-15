@@ -708,7 +708,7 @@ export const products = [
       '/images/products/tum-pedizone-sayfalari.jpg'
     ],
     description: 'Ayak hijyeni, sağlıklı ayak bakımının temelini oluşturur. PediZone® Ayak Temizleme Köpüğü, ayakların derinlemesine temizliği ve korunması için özel olarak geliştirilmiş, antibakteriyel özellikli bir formüldür.',
-    fullDescription: 'Günlük yaşamın getirdiği terleme, kirlenme ve kapalı ayakkabı kullanımı, ayaklarda bakteri ve kötü koku oluşumuna zemin hazırlar. PediZone® Ayak Temizleme Köpüğü, ayakların derinlemesine temizliği ve korunması için özel olarak geliştirilmiş, antibakteriyel özellikli bir formüldür. 200 ml'lik bu yumuşak köpük, cildi kurutmadan mikroorganizmaları temizlerken, ayaklarınıza anında ferahlık ve rahatlama sağlar.',
+    fullDescription: 'Günlük yaşamın getirdiği terleme, kirlenme ve kapalı ayakkabı kullanımı, ayaklarda bakteri ve kötü koku oluşumuna zemin hazırlar. PediZone® Ayak Temizleme Köpüğü, ayakların derinlemesine temizliği ve korunması için özel olarak geliştirilmiş, antibakteriyel özellikli bir formüldür. 200 ml\'lik bu yumuşak köpük, cildi kurutmadan mikroorganizmaları temizlerken, ayaklarınıza anında ferahlık ve rahatlama sağlar.',
     features: [
       'Antibakteriyel özellikli formül',
       'Yumuşak köpük yapısı',
