@@ -82,9 +82,8 @@ const ProductDetail = () => {
               <h1 className="text-4xl font-bold text-blue-950 mb-3">{product.name}</h1>
               <p className="text-xl text-gray-600 mb-6">{product.tagline}</p>
               
-              <div className="flex items-baseline gap-4 mb-6">
-                <span className="text-4xl font-bold text-blue-700">{product.price}</span>
-                <span className="text-lg text-gray-500">({product.volume})</span>
+              <div className="mb-6">
+                <span className="text-lg text-gray-600">Hacim: <span className="font-semibold text-blue-950">{product.volume}</span></span>
               </div>
 
               <div className="bg-blue-50 border-l-4 border-blue-700 p-6 rounded-r-lg mb-6">
