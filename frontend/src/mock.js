@@ -806,6 +806,14 @@ export const products = [
       {
         name: 'Gliserin',
         effect: 'Nem tutma etkisi: Cildin nem kaybını önler, formülün derine nüfuz etmesini kolaylaştırır'
+      },
+      {
+        name: 'Panthenol',
+        effect: 'Cilt onarımı ve yenilenmesi: Tahriş olmuş cildi sakinleştirir, nem kaybını önler ve cilt bariyerini güçlendirir'
+      },
+      {
+        name: 'E Vitamini',
+        effect: 'Antioksidan koruma: Serbest radikallere karşı korur, cildin esnekliğini artırır ve yaşlanma belirtilerini azaltır'
       }
     ],
     usage: [
