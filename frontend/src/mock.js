@@ -722,7 +722,8 @@ export const products = [
       'Kötü koku oluşumunu engeller',
       'Cildi temizlerken nemlendirir',
       'Yorgun ayaklar için rahatlama',
-      'Cilt bariyerini onarır'
+      'Cilt bariyerini onarır',
+      'Mantar Karşıtı'
     ],
     ingredients: [
       {
