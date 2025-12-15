@@ -860,7 +860,8 @@ export const products = [
       'Mat tırnakları canlandırır',
       'Kötü koku giderir',
       'Tırnak ve cilt esnekliğini artırır',
-      'Sağlıklı tırnak uzamasını destekler'
+      'Sağlıklı tırnak uzamasını destekler',
+      'Tırnaklarda Hızlı Emilim'
     ],
     ingredients: [
       {
