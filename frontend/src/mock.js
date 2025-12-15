@@ -788,7 +788,8 @@ export const products = [
       'Hiperkeratozu yumuşatır',
       'Enfeksiyon riskini azaltır',
       'Cildi yoğun nemlendirir',
-      'Yeniden çatlamayı önler'
+      'Yeniden çatlamayı önler',
+      'Kaşınma ve Mantar Karşıtı'
     ],
     ingredients: [
       {
