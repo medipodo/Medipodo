@@ -215,6 +215,52 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Products Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">PediZone® Ürünlerimiz</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Profesyonel ayak bakımı için podolog onaylı ürünler
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {products.map((product) => (
+              <Card key={product.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="relative aspect-square overflow-hidden bg-gray-50">
+                    <img 
+                      src={product.coverImage} 
+                      alt={product.name}
+                      className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 p-4"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="mb-3">
+                      <span className="text-sm text-blue-700 font-semibold">{product.category}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-blue-950 mb-2">{product.shortName}</h3>
+                    <p className="text-gray-600 text-sm mb-2">{product.tagline}</p>
+                    <p className="text-gray-700 text-sm mb-4 line-clamp-2">{product.description}</p>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-2xl font-bold text-blue-700">{product.price}</span>
+                      <span className="text-sm text-gray-500">{product.volume}</span>
+                    </div>
+                    <Link to={`/urun/${product.slug}`}>
+                      <Button variant="link" className="text-blue-700 p-0 h-auto font-semibold w-full justify-start">
+                        Ürün Detayı
+                        <ArrowRight className="ml-1" size={16} />
+                      </Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
