@@ -215,6 +215,45 @@ const Home = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                <HelpCircle className="text-blue-700" size={32} />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">
+                Aklınızdaki Sorulara Hızlı Cevaplar
+              </h2>
+              <p className="text-gray-600">
+                Ayak sağlığı ve podoloji hakkında en çok merak edilenler
+              </p>
+            </div>
+
+            {/* First 3 FAQs with Accordion */}
+            <div className="space-y-4 mb-8">
+              {faqData.slice(0, 3).map((faq) => (
+                <FAQItem key={faq.id} faq={faq} />
+              ))}
+            </div>
+
+            {/* View All Button */}
+            <div className="text-center">
+              <Link to="/sikca-sorulan-sorular">
+                <Button 
+                  size="lg" 
+                  className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-8"
+                >
+                  <HelpCircle className="mr-2" size={20} />
+                  Tüm Sıkça Sorulan Sorularımız İçin Tıklayın
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* E-Book Section */}
       <section className="py-20 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
