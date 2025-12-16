@@ -215,6 +215,91 @@ const Home = () => {
         </div>
       </section>
 
+      {/* E-Book Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[url('/images/ebook/hero-bg.jpg')] bg-cover bg-center"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left: Book Cover */}
+              <div className="flex justify-center lg:justify-start">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-2xl blur-2xl opacity-30 animate-pulse"></div>
+                  <img 
+                    src="/images/ebook/cover.png" 
+                    alt="Ayak Bakımı Kılavuzu E-Kitap" 
+                    className="relative w-full max-w-sm rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              {/* Right: Content */}
+              <div>
+                <div className="inline-flex items-center bg-green-500 bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                  <Star className="text-yellow-400 mr-2" size={20} fill="currentColor" />
+                  <span className="text-sm font-semibold">Yeni: Dijital Kılavuz</span>
+                </div>
+                
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Ayak Bakımı Kılavuzu
+                </h2>
+                
+                <p className="text-xl text-blue-100 mb-6">
+                  Batık Tırnak, Mantar ve Nasır Sorunlarına Uzman Podolog Çözümleri
+                </p>
+
+                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 mb-6 border border-white border-opacity-20">
+                  <div className="grid grid-cols-3 gap-4 text-center mb-4">
+                    <div>
+                      <p className="text-3xl font-bold text-white">33</p>
+                      <p className="text-sm text-blue-200">Sayfa</p>
+                    </div>
+                    <div>
+                      <p className="text-3xl font-bold text-white">6</p>
+                      <p className="text-sm text-blue-200">Bölüm</p>
+                    </div>
+                    <div>
+                      <p className="text-3xl font-bold text-white">$5</p>
+                      <p className="text-sm text-blue-200">Fiyat</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <div className="flex items-center text-sm">
+                      <Check className="mr-2 text-green-400 flex-shrink-0" size={18} />
+                      <span>Evde uygulayabileceğiniz adım adım talimatlar</span>
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <Check className="mr-2 text-green-400 flex-shrink-0" size={18} />
+                      <span>Uzman podologlar tarafından hazırlandı</span>
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <Check className="mr-2 text-green-400 flex-shrink-0" size={18} />
+                      <span>Anında indirme - PDF formatında</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link to="/ayak-bakim-kilavuzu">
+                    <Button 
+                      size="lg" 
+                      className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold shadow-xl w-full sm:w-auto"
+                    >
+                      <BookOpen className="mr-2" size={20} />
+                      Detaylı Bilgi Al
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
