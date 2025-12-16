@@ -3,7 +3,7 @@
 export const enrichedBlogPosts = [
   {
     id: 'bs-bant-uygulamasi',
-    title: 'B/S Bant Uygulaması Nedir? Batık Tırnak Tedavisinde Tırnak Telinden Daha mı Kullanışlı?',
+    title: 'B/S Bant Uygulaması Nedir? Batık Tırnak İçin Daha Mı Konforlu?',
     slug: 'bs-bant-uygulamasi',
     excerpt: 'B/S Bant uygulaması nedir, nasıl çalışır? Batık tırnak tedavisinde tırnak teline alternatif, acısız ve estetik çözüm. Ankara Medipodo\'da uygulanıyor.',
     image: '/images/blog/bs-bant/bs-bant.jpg',

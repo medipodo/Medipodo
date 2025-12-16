@@ -13,7 +13,7 @@ const BSBantBlog = () => {
   return (
     <>
       <Helmet>
-        <title>B/S Bant Uygulaması Nedir? Batık Tırnak Tedavisinde Tırnak Telinden Daha mı Kullanışlı? | Medipodo</title>
+        <title>B/S Bant Uygulaması Nedir? Batık Tırnak İçin Daha Mı Konforlu? | Medipodo</title>
         <meta name="description" content="B/S Bant uygulaması nedir, nasıl çalışır? Batık tırnak tedavisinde tırnak teline alternatif, acısız ve estetik çözüm. Ankara Medipodo'da uygulanıyor." />
         <meta name="keywords" content="bs bant, b/s bant, batık tırnak tedavisi, tırnak teli, tırnak bandi, ankara batık tırnak, medipodo, podoloji" />
         <meta property="og:title" content="B/S Bant Uygulaması - Batık Tırnak İçin Acısız Çözüm" />
@@ -33,7 +33,7 @@ const BSBantBlog = () => {
               </Link>
               
               <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                B/S Bant Uygulaması Nedir? Batık Tırnak Tedavisinde Tırnak Telinden Daha mı Kullanışlı?
+                B/S Bant Uygulaması Nedir? Batık Tırnak İçin Daha Mı Konforlu?
               </h1>
               
               <div className="flex flex-wrap gap-6 text-blue-100">
