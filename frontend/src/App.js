@@ -24,6 +24,7 @@ import RefleksolojiBlog from './pages/RefleksolojiBlog';
 import NasirSigilBlog from './pages/NasirSigilBlog';
 import TopukDikeniBlog from './pages/TopukDikeniBlog';
 import CocukAyakSagligiBlog from './pages/CocukAyakSagligiBlog';
+import BSBantBlog from './pages/BSBantBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
