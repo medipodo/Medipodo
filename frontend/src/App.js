@@ -63,7 +63,6 @@ function App() {
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
           <Route path="/kullanim-sartlari" element={<TermsOfService />} />
           <Route path="/urun/:slug" element={<ProductDetail />} />
-          <Route path="/ayak-bakim-kilavuzu" element={<EbookLanding />} />
         </Routes>
         <Footer />
         <WhatsAppButton />
