@@ -66,9 +66,18 @@ function AppContent() {
           <Route path="/kullanim-sartlari" element={<TermsOfService />} />
           <Route path="/urun/:slug" element={<ProductDetail />} />
         </Routes>
-        <Footer />
-        <WhatsAppButton />
+        {!isLandingPage && <Footer />}
+        {!isLandingPage && <WhatsAppButton />}
         <CookieBanner />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <div className="App" style={{ margin: 0, padding: 0, border: 'none' }}>
+      <BrowserRouter>
+        <AppContent />
       </BrowserRouter>
     </div>
   );
