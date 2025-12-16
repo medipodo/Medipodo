@@ -98,7 +98,7 @@ const Header = () => {
                       : 'text-blue-100 hover:bg-white/5'
                   }`}
                 >
-                  {link.name}
+                  {link.mobileName || link.name}
                 </Link>
               ))}
               <a
