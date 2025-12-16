@@ -37,6 +37,10 @@ function App() {
         <ScrollToTop />
         <Header />
         <Routes>
+          {/* Landing Page - No Header/Footer */}
+          <Route path="/ayak-bakim-kilavuzu" element={<EbookLanding />} />
+          
+          {/* Regular Pages with Header/Footer */}
           <Route path="/" element={<Home />} />
           <Route path="/hizmetler" element={<Services />} />
           <Route path="/hizmet/:serviceId" element={<ServiceDetail />} />
