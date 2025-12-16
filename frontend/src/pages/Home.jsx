@@ -7,6 +7,36 @@ import { Card, CardContent } from '../components/ui/card';
 import OptimizedImage from '../components/OptimizedImage';
 import HeroSlider from '../components/HeroSlider';
 
+// FAQ Item Component
+const FAQItem = ({ faq }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-blue-50 transition-colors"
+      >
+        <h3 className="text-lg font-semibold text-gray-900 pr-4">
+          {faq.question}
+        </h3>
+        {isOpen ? (
+          <ChevronUp className="text-blue-700 flex-shrink-0" size={24} />
+        ) : (
+          <ChevronDown className="text-gray-400 flex-shrink-0" size={24} />
+        )}
+      </button>
+      {isOpen && (
+        <div className="px-6 pb-4">
+          <p className="text-gray-700 leading-relaxed">
+            {faq.answer}
+          </p>
+        </div>
+      )}
+    </div>
+  );
+};
+
 const iconMap = {
   Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Zap
 };
