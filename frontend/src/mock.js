@@ -908,6 +908,10 @@ export const products = [
       'Tırnak mantarı eğilimi',
       'Mat ve yıpranmış tırnaklar',
       'Kötü koku sorunu',
+      'Genel ayak ve tırnak bakımı'
+    ]
+  }
+];
 
 // FAQ Data
 export const faqData = [
