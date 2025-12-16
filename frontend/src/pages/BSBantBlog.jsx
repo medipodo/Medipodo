@@ -388,7 +388,7 @@ const BSBantBlog = () => {
               <div className="bg-gray-100 rounded-xl p-8 mb-12">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">📚 İlgili Makaleler</h3>
                 <div className="space-y-3">
-                  <Link to="/blog/batik-tirnak" className="flex items-center text-blue-700 hover:underline">
+                  <Link to="/blog/batik-tirnak-nedenleri" className="flex items-center text-blue-700 hover:underline">
                     <ExternalLink size={16} className="mr-2" />
                     Batık Tırnak Nedir ve Nasıl Tedavi Edilir?
                   </Link>
