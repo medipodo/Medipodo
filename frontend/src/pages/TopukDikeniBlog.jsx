@@ -40,7 +40,7 @@ const TopukDikeniBlog = () => {
                 <span>Medipodo Podoloji Ekibi</span>
               </div>
               <div className="flex items-center">
-                <Clock size={18} className="mr-2" />
+                <Calendar size={18} className="mr-2" />
                 <span>10 Aralık 2025</span>
               </div>
               <div className="flex items-center">
