@@ -31,7 +31,7 @@ const TopukDikeniBlog = () => {
             </Link>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Topuk Dikeni (Calcanei Epin) Nedir ve Nasıl Geçer?
+              Topuk Dikeni (Calcanei Epin) Nedir ve Nasıl Önlenir?
             </h1>
             
             <div className="flex flex-wrap gap-6 text-blue-100">
