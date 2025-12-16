@@ -29,6 +29,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ProductDetail from './pages/ProductDetail';
 import EbookLanding from './pages/EbookLanding';
+import FAQ from './pages/FAQ';
 
 function AppContent() {
   const location = useLocation();
