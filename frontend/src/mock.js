@@ -908,6 +908,136 @@ export const products = [
       'Tırnak mantarı eğilimi',
       'Mat ve yıpranmış tırnaklar',
       'Kötü koku sorunu',
+
+// FAQ Data
+export const faqData = [
+  {
+    id: 1,
+    question: 'Podoloji Nedir?',
+    answer: 'Podoloji, ayak ve tırnak sağlığının korunması, bakımı ve sorunlarının önlenmesiyle ilgilenen sağlık bilimidir. Podologlar, cerrahi olmayan medikal yöntemlerle batık tırnak, tırnak mantarı, nasır, çatlak topuk, siğil ve diyabetik ayak bakımı gibi sorunlara kalıcı çözümler sunar.',
+    category: 'Genel'
+  },
+  {
+    id: 2,
+    question: 'Podolog Ne İş Yapar?',
+    answer: 'Podolog; Üniversitelerin Podoloji Programı\'ndan mezun olan, bireylerin ayak sağlığının korunması ve bakımına yönelik hizmet veren, ve ilgili uzman tabibin (hekim) teşhisine ve tedavi için yönlendirmesine bağlı olarak hastaların ayak tedavisini yapan sağlık teknikeri olarak tanımlanır.',
+    category: 'Genel'
+  },
+  {
+    id: 3,
+    question: 'Batık Tırnak Tedavisi Ne Kadar Sürer ve Ağrılı Bir İşlem midir?',
+    answer: 'Batık tırnak tedavisi (tel sistemi), sorunun şiddetine bağlı olarak 3 ila 9 ay sürebilir. İşlem sırasında lokal anestezi uygulanmadığı için hafif bir hassasiyet hissedilebilir, ancak ağrılı bir işlem değildir. Medipodo\'da uygulanan modern podolojik yöntemler, tırnağın doğal büyüme yönünü düzelterek kalıcı çözüm sağlar.',
+    category: 'Tedavi'
+  },
+  {
+    id: 4,
+    question: 'Tırnak Mantarı Evde Uygulanan Doğal Yöntemlerle Geçer mi?',
+    answer: 'Tırnak mantarı (Onikomikoz) inatçı bir enfeksiyondur ve sirke, karbonat gibi doğal yöntemler genellikle yetersiz kalır. Kalıcı çözüm için tırnağın küretajı, lazer veya özel antifungal ürünler (Pedizone) ile kombine edilen podolojik tedavi gereklidir.',
+    category: 'Tedavi',
+    link: { text: 'Pedizone ürünlerini inceleyin', url: 'https://www.pedizone.com' }
+  },
+  {
+    id: 5,
+    question: 'Nasır ve Siğil Arasındaki Fark Nedir? Yanlış Tedavi Neden Tehlikelidir?',
+    answer: 'Nasır, sürtünme ve baskı sonucu oluşan ölü deri kalınlaşmasıdır. Siğil ise HPV virüsünün neden olduğu bulaşıcı bir lezyondur. Yanlış teşhis ve bilinçsiz asitli ilaç kullanımı, siğilin yayılmasına veya nasırın derinleşmesine neden olabilir. Doğru teşhis ve tedavi için mutlaka bir podoloğa başvurulmalıdır.',
+    category: 'Tedavi',
+    link: { text: 'Detaylı bilgi için blog yazımızı okuyun', url: '/blog/nasir-sigil-farklari' }
+  },
+  {
+    id: 6,
+    question: 'Diyabetik Ayak Bakımı Neden Kritik Önem Taşır?',
+    answer: 'Diyabet hastalarında sinir hasarı (nöropati) ve dolaşım bozukluğu (anjiyopati) nedeniyle küçük yaralar dahi hızla enfeksiyona dönüşebilir. Diyabetik ayak bakımı, bu yaraların oluşumunu önlemek ve olası riskleri erken tespit etmek için hayati önem taşır. Medipodo\'da özel diyabetik ayak bakımı hizmeti sunulmaktadır.',
+    category: 'Özel Bakım',
+    link: { text: 'Diyabet ve ayak sağlığı hakkında daha fazla bilgi', url: '/blog/diyabet-ve-ayak-sagligi' }
+  },
+  {
+    id: 7,
+    question: 'Medikal Ayak Bakımı ile Pedikür Arasındaki Temel Fark Nedir?',
+    answer: 'Pedikür, estetik ve kozmetik bir işlemdir. Medikal ayak bakımı ise podologlar tarafından, steril aletler ve bilimsel yöntemlerle, tırnak ve cilt sorunlarını (nasır, mantar, kalınlaşmış tırnak) tedavi etmeye yönelik uygulanan bir sağlık hizmetidir. Medikal bakımda kesici aletler kullanılmaz ve enfeksiyon riski sıfırdır.',
+    category: 'Genel'
+  },
+  {
+    id: 8,
+    question: 'Ayak Analizi Nedir ve Kimler Yaptırmalıdır?',
+    answer: 'Ayak analizi, ayaklarınızın basış şeklini, vücut ağırlığı dağılımını ve varsa basış bozukluklarını tespit eden detaylı bir incelemedir. Sporcular, diyabet hastaları ve kronik ayak/diz/bel ağrısı çeken herkesin yaptırması önerilir. Ankara Bağlıca\'daki kliniğimizde detaylı ayak analizi hizmeti sunulmaktadır.',
+    category: 'Hizmetler',
+    link: { text: 'Ayak analizi hakkında detaylı bilgi', url: '/ayak-analizi' }
+  },
+  {
+    id: 9,
+    question: 'Ayak Yorgunluğunu Evde Hangi Yöntemlerle Azaltabilirim?',
+    answer: 'Ayak yorgunluğunu azaltmak için kontrast banyoları (sıcak-soğuk su), ayakları kalp seviyesinden yukarıda tutmak ve doğru ayakkabı seçimi önemlidir. Ayrıca, masaj sırasında Pedizone ürünleri gibi dolaşımı destekleyen ürünler kullanmak rahatlamaya yardımcı olur.',
+    category: 'Bakım'
+  },
+  {
+    id: 10,
+    question: 'Çatlak Topuklar İçin En Etkili Bakım Ürünü Nedir?',
+    answer: 'Çatlak topuklar genellikle nem eksikliği ve keratin birikimi sonucu oluşur. Podologlar, cildin nem tutma kapasitesini artıran ve ölü deriyi nazikçe çözen yüksek oranda Üre içeren kremleri tavsiye eder. Pedizone %15 Üreli Yoğun Onarıcı Krem, bu tür sorunlar için idealdir.',
+    category: 'Bakım',
+    link: { text: 'Ürünü inceleyin', url: '/urun/pedizone-urea-intense-repair-cream' }
+  },
+  {
+    id: 11,
+    question: 'Medipodo\'dan Randevu Almadan Önce Hazırlık Yapmalı mıyım?',
+    answer: 'Hayır, randevuya gelmeden önce herhangi bir özel hazırlık yapmanıza gerek yoktur. Özellikle tırnak mantarı veya batık gibi sorunlarda, durumu değiştirecek müdahalelerden kaçınmanız teşhis için daha iyi olacaktır. Kliniğimizde hijyenik ve profesyonel ortamda tüm işlemleriniz yapılacaktır.',
+    category: 'Randevu'
+  },
+  {
+    id: 12,
+    question: 'Kriyoterapi Nedir ve Podolojide Hangi Sorunların Tedavisinde Kullanılır?',
+    answer: 'Kriyoterapi, sıvı nitrojen veya karbondioksit gibi çok soğuk maddeler kullanılarak sorunlu dokunun dondurulup yok edilmesi işlemidir. Podolojide bu yöntem, özellikle inatçı ve yaygın ayak siğillerinin tedavisinde kullanılır. İşlem, kısa süreli ve etkilidir.',
+    category: 'Tedavi'
+  },
+  {
+    id: 13,
+    question: 'B/S Bant Uygulaması Nedir ve Batık Tırnakta Acı Hissedilir mi?',
+    answer: 'B/S Bant uygulaması, batık tırnağın yan kenarlarını nazikçe yukarı çekerek tırnak yatağındaki baskıyı azaltan, şeffaf ve esnek bir bantlama yöntemidir. Uygulama sırasında kesinlikle acı hissedilmez. Aksine, tırnak yatağındaki baskı hemen azaldığı için anında rahatlama sağlar. Bu yöntem, tel uygulamasına alternatif olarak kullanılabilir.',
+    category: 'Tedavi'
+  },
+  {
+    id: 14,
+    question: 'Podolojik Ortez (Parmak Arası Silikon Destek) Ne İşe Yarar?',
+    answer: 'Podolojik ortezler, parmaklarda oluşan şekil bozukluklarını (çekiç parmak, pençe parmak) düzeltmek, parmak aralarındaki sürtünmeyi (nasır oluşumu) engellemek veya ayak deformitelerine destek sağlamak amacıyla kişiye özel olarak hazırlanan silikon desteklerdir. Yanlış basıştan kaynaklanan ağrıları azaltmada etkilidir.',
+    category: 'Hizmetler'
+  },
+  {
+    id: 15,
+    question: 'Tırnak Mantarı Tedavisinde Lazer Kullanımı Ne Kadar Etkilidir?',
+    answer: 'Tırnak mantarı tedavisinde lazer, mantar sporlarını ısı enerjisiyle yok etmede oldukça etkili bir yöntemdir. Özellikle ilaç tedavisine yanıt vermeyen veya sistemik ilaç kullanmak istemeyen hastalar için idealdir. Lazer tedavisi, genellikle diğer podolojik bakımlarla kombine edilerek uygulanır.',
+    category: 'Tedavi'
+  },
+  {
+    id: 16,
+    question: 'Düz Tabanlık (Pes Planus) Yetişkinlerde Tedavi Edilebilir mi?',
+    answer: 'Yetişkinlerde düz tabanlık tamamen \'tedavi\' edilemez, ancak semptomları ve neden olduğu ağrılar yönetilebilir. Tedavideki temel amaç, kişiye özel hazırlanan tabanlıklar (ortezler) ile ayağın doğru pozisyonda desteklenmesi ve kasların güçlendirilmesidir. Bu sayede ağrı ve yorgunluk büyük ölçüde azalır.',
+    category: 'Tedavi'
+  },
+  {
+    id: 17,
+    question: 'Ayaklardaki Kötü Koku, Tırnak Mantarının Bir Belirtisi Olabilir mi?',
+    answer: 'Evet, ayak kokusu genellikle bakteriyel üremeden kaynaklansa da, tırnak veya ayak derisi mantarı da kötü kokuya neden olabilir. Mantar enfeksiyonu, ciltte nemli ve sıcak bir ortam yaratarak bakterilerin çoğalmasını hızlandırır. Koku devam ediyorsa, mantar kontrolü için podoloğa başvurulmalıdır.',
+    category: 'Bakım'
+  },
+  {
+    id: 18,
+    question: 'Çocuklarda Tırnak Batması Neden Olur ve Nasıl Tedavi Edilir?',
+    answer: 'Çocuklarda tırnak batması genellikle yanlış tırnak kesimi, dar ayakkabılar veya genetik yatkınlık nedeniyle oluşur. Tedavide ilk tercih, ağrısız ve cerrahi olmayan tel veya bant uygulamalarıdır. Çocuklarda cerrahi müdahale en son çare olarak düşünülmelidir.',
+    category: 'Özel Bakım'
+  },
+  {
+    id: 19,
+    question: 'Ayak Analizi Sonucu Hazırlanan Kişiye Özel Tabanlıkların Ömrü Ne Kadardır?',
+    answer: 'Kişiye özel tabanlıkların ömrü, kullanılan malzemeye, kişinin kilosuna ve kullanım sıklığına bağlı olarak değişir. Ortalama olarak 1 ila 2 yıl arasında kullanılması önerilir. Çocuklarda ise ayak gelişimi devam ettiği için bu süre daha kısa olabilir. Düzenli kontrol ve analiz ile tabanlıkların etkinliği takip edilmelidir.',
+    category: 'Hizmetler'
+  },
+  {
+    id: 20,
+    question: 'Sporcular İçin Ayak Bakımında En Önemli İki Kural Nedir?',
+    answer: 'Sporcular için en önemli iki kural: 1) Doğru Ayakkabı Seçimi: Yapılan spora uygun, ayağı destekleyen ve nefes alan ayakkabılar tercih edilmelidir. 2) Antrenman Sonrası Hijyen: Ayaklar hemen yıkanmalı, parmak araları dahil tamamen kurulanmalı ve mantar oluşumunu önleyici ürünler kullanılmalıdır.',
+    category: 'Bakım'
+  }
+];
+
       'Genel ayak ve tırnak bakımı'
     ]
   }
