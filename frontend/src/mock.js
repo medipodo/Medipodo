@@ -543,6 +543,18 @@ export const galleryImages = [
 
 export const blogPosts = enrichedBlogPosts.length > 0 ? enrichedBlogPosts : [
   {
+    id: 'bs-bant-uygulamasi',
+    title: 'B/S Bant Uygulaması Nedir? Batık Tırnak Tedavisinde Tırnak Telinden Daha mı Kullanışlı?',
+    slug: 'bs-bant-uygulamasi',
+    excerpt: 'B/S Bant uygulaması nedir, nasıl çalışır? Batık tırnak tedavisinde tırnak teline alternatif, acısız ve estetik çözüm. Ankara Medipodo\'da uygulanıyor.',
+    content: 'B/S Bant Uygulaması Nedir?',
+    author: 'Medipodo Podoloji Ekibi',
+    date: '2025-12-16',
+    readTime: '12 dakika',
+    image: '/images/blog/bs-bant/bs-bant.jpg',
+    tags: ['B/S Bant', 'Batık Tırnak', 'Podoloji', 'Tırnak Teli', 'Tedavi']
+  },
+  {
     id: 'tirnakbatmasi',
     title: 'Tırnak Batması Neden Olur? En Sık Yapılan Hatalar ve Doğru Çözümler',
     slug: 'tirnakbatmasi',
