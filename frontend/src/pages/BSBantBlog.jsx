@@ -145,6 +145,15 @@ const BSBantBlog = () => {
                 </p>
               </div>
 
+              {/* Batık Tırnak Görseli */}
+              <div className="mb-12">
+                <img 
+                  src="/images/blog/bs-bant/batik-tirnak.jpg" 
+                  alt="Batık Tırnak Tedavisi" 
+                  className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
+                />
+              </div>
+
               {/* Comparison Table */}
               <h2 className="text-3xl font-bold text-blue-950 mb-6 mt-12">Tırnak Teli (3TO) ve B/S Bant Karşılaştırması</h2>
 
