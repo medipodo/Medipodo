@@ -84,8 +84,8 @@ const BSBantBlog = () => {
               
               <div className="mb-8">
                 <img 
-                  src="/images/blog/bs-bant/tirnak-bandi.jpg" 
-                  alt="Tırnak Bandı" 
+                  src="/images/blog/bs-bant/batik-tirnak.jpg" 
+                  alt="Batık Tırnak" 
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
               </div>
@@ -145,11 +145,11 @@ const BSBantBlog = () => {
                 </p>
               </div>
 
-              {/* Batık Tırnak Görseli */}
+              {/* Tırnak Bandı Görseli */}
               <div className="mb-12">
                 <img 
-                  src="/images/blog/bs-bant/batik-tirnak.jpg" 
-                  alt="Batık Tırnak Tedavisi" 
+                  src="/images/blog/bs-bant/tirnak-bandi.jpg" 
+                  alt="Tırnak Bandı Uygulaması" 
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
               </div>
