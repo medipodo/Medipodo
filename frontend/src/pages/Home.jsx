@@ -218,7 +218,11 @@ const Home = () => {
       {/* E-Book Section */}
       <section className="py-20 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/images/ebook/hero-bg.jpg')] bg-cover bg-center"></div>
+          <img 
+            src="/images/ebook/hero-bg.jpg" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
