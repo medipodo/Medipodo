@@ -82,16 +82,11 @@ const BSBantBlog = () => {
               {/* Section: Cerrahi Olmayan Çözümler */}
               <h2 className="text-3xl font-bold text-blue-950 mb-6 mt-12">Batık Tırnağa Cerrahi Olmayan İki Etkili Çözüm</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <img 
-                  src="/images/blog/bs-bant/batik-tirnak.jpg" 
-                  alt="Batık Tırnak" 
-                  className="rounded-lg shadow-md"
-                />
+              <div className="mb-8">
                 <img 
                   src="/images/blog/bs-bant/tirnak-bandi.jpg" 
                   alt="Tırnak Bandı" 
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
               </div>
 
