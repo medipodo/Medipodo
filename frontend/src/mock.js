@@ -1042,8 +1042,3 @@ export const faqData = [
   }
 ];
 
-      'Genel ayak ve tırnak bakımı'
-    ]
-  }
-];
-
