@@ -276,7 +276,7 @@ const Home = () => {
                   className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-8"
                 >
                   <HelpCircle className="mr-2" size={20} />
-                  Tüm Sıkça Sorulan Sorularımız İçin Tıklayın
+                  Tüm Sık Sorulan Sorular İçin Tıklayın
                 </Button>
               </Link>
             </div>
