@@ -14,7 +14,7 @@ const TopukDikeniBlog = () => {
         <title>Topuk Dikeni (Calcanei Epin) Nedir ve Nasıl Önlenir? | Medipodo Bağlıca</title>
         <meta name="description" content="Topuk dikeni (Epin Calcanei) nedir, belirtileri nelerdir ve nasıl önlenir? Podolojik yaklaşımlar, biyomekanik analiz, ortez tedavisi ve kalıcı çözümler." />
         <meta name="keywords" content="topuk dikeni, calcanei epin, plantar fasiit, topuk ağrısı, ayak tabanı ağrısı, topuk dikeni tedavisi, ortez, tabanlık, podoloji, Medipodo, Bağlıca, Ankara" />
-        <meta property="og:title" content="Topuk Dikeni Nedir ve Nasıl Geçer? | Medipodo Bağlıca" />
+        <meta property="og:title" content="Topuk Dikeni Nedir ve Nasıl Önlenir? | Medipodo Bağlıca" />
         <meta property="og:description" content="Topuk dikeni nedir, belirtileri nelerdir ve nasıl tedavi edilir? Podolojik yaklaşımlar ve kalıcı çözümler." />
         <meta property="og:image" content="https://medipodo.com/blog-images/topuk-dikeni/kapak görseli topuk dikeni.jpg" />
         <meta property="og:type" content="article" />
