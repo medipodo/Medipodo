@@ -30,12 +30,14 @@ import TermsOfService from './pages/TermsOfService';
 import ProductDetail from './pages/ProductDetail';
 import EbookLanding from './pages/EbookLanding';
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const isLandingPage = location.pathname === '/ayak-bakim-kilavuzu';
+
   return (
-    <div className="App" style={{ margin: 0, padding: 0, border: 'none' }}>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Header />
+    <>
+      <ScrollToTop />
+      {!isLandingPage && <Header />}
         <Routes>
           {/* Landing Page - No Header/Footer */}
           <Route path="/ayak-bakim-kilavuzu" element={<EbookLanding />} />
