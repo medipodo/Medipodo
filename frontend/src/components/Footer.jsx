@@ -118,6 +118,10 @@ const Footer = () => {
               <Link to="/kullanim-sartlari" className="text-blue-200 hover:text-white transition-colors">
                 Kullanım Şartları
               </Link>
+              <span className="text-blue-400">•</span>
+              <Link to="/sikca-sorulan-sorular" className="text-blue-200 hover:text-white transition-colors">
+                S.S.S
+              </Link>
             </div>
           </div>
         </div>
