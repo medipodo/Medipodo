@@ -28,6 +28,7 @@ import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ProductDetail from './pages/ProductDetail';
+import EbookLanding from './pages/EbookLanding';
 
 function App() {
   return (
