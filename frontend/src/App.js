@@ -66,6 +66,7 @@ function AppContent() {
           <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
           <Route path="/kullanim-sartlari" element={<TermsOfService />} />
           <Route path="/urun/:slug" element={<ProductDetail />} />
+          <Route path="/sikca-sorulan-sorular" element={<FAQ />} />
         </Routes>
         {!isLandingPage && <Footer />}
         {!isLandingPage && <WhatsAppButton />}
