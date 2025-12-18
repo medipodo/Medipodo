@@ -28,8 +28,14 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
+    <>
+      <Helmet>
+        <title>Hakkımızda - Medipodo Podoloji Merkezi | Ankara</title>
+        <meta name="description" content="Medipodo Ayak Sağlığı Merkezi hakkında bilgi edinin. Uzman podolog kadromuz ve profesyonel hizmet anlayışımızla tanışın." />
+        <link rel="canonical" href="https://medipodo.com/hakkimizda" />
+      </Helmet>
+      <div className="min-h-screen">
+        {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
