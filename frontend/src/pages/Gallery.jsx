@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { X } from 'lucide-react';
 import { galleryImages } from '../mock';
 import { Card, CardContent } from '../components/ui/card';
@@ -8,7 +9,13 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>Galeri - Medipodo Podoloji Merkezi | Tedavi Öncesi Sonrası</title>
+        <meta name="description" content="Medipodo tedavi galerisi. Batık tırnak, tırnak mantarı ve ayak bakımı tedavilerinin öncesi ve sonrası fotoğrafları." />
+        <link rel="canonical" href="https://medipodo.com/galeri" />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
         <div className="container mx-auto px-4">
