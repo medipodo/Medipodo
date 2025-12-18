@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Scissors, ShieldCheck, Sparkles, CircleDot, Heart, Zap } from 'lucide-react';
 import { services } from '../mock';
@@ -11,7 +12,13 @@ const iconMap = {
 
 const Services = () => {
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>Hizmetlerimiz - Medipodo Podoloji Merkezi | Ankara</title>
+        <meta name="description" content="Medipodo'da sunulan profesyonel podoloji hizmetleri: Batık tırnak tedavisi, tırnak mantarı, nasır tedavisi, medikal ayak bakımı ve daha fazlası." />
+        <link rel="canonical" href="https://medipodo.com/hizmetler" />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
         <div className="container mx-auto px-4">
