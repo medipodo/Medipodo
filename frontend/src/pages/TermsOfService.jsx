@@ -1,10 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { FileText, Mail, Phone, MapPin } from 'lucide-react';
 
 const TermsOfService = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Helmet>
+        <title>Kullanım Şartları - Medipodo</title>
+        <meta name="description" content="Medipodo kullanım şartları ve yasal uyarı. Web sitesi kullanım koşulları hakkında bilgi." />
+        <link rel="canonical" href="https://medipodo.com/kullanim-sartlari" />
+      </Helmet>
+      <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white py-16">
         <div className="container mx-auto px-4">
