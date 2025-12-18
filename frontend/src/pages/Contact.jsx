@@ -15,12 +15,18 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-blue-950 mb-6">İletişim</h1>
+    <>
+      <Helmet>
+        <title>İletişim - Medipodo Podoloji Merkezi | Ankara Bağlıca</title>
+        <meta name="description" content="Medipodo Podoloji Merkezi iletişim bilgileri. Adres: Bağlıca, Ankara. Randevu ve sorularınız için bize ulaşın." />
+        <link rel="canonical" href="https://medipodo.com/iletisim" />
+      </Helmet>
+      <div className="min-h-screen">
+        {/* Hero Section */}
+        <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-blue-950 mb-6">İletişim</h1>
             <p className="text-lg text-gray-600 leading-relaxed">
               Ayak sağlığınızla ilgili sorularınız için bize ulaşın. Uzman ekibimiz size yardımcı olmaktan mutluluk duyacaktır.
             </p>
