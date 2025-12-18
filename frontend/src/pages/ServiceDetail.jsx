@@ -82,7 +82,13 @@ const ServiceDetail = () => {
   }
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>{service.title} - Medipodo Podoloji Merkezi | Ankara</title>
+        <meta name="description" content={service.shortDesc} />
+        <link rel="canonical" href={`https://medipodo.com/hizmet/${serviceId}`} />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
         <div className="container mx-auto px-4">
