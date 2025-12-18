@@ -156,7 +156,8 @@ const BlogDetail = () => {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
