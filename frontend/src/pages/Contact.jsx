@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { siteInfo } from '../mock';
 import { Card, CardContent } from '../components/ui/card';
