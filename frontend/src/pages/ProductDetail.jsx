@@ -311,7 +311,8 @@ const ProductDetail = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
