@@ -4,13 +4,6 @@ import { Award, Target, Heart, Users } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 
 const About = () => {
-  return (
-    <>
-      <Helmet>
-        <title>Hakkımızda - Medipodo Podoloji Merkezi | Ankara</title>
-        <meta name="description" content="Medipodo Ayak Sağlığı Merkezi hakkında bilgi edinin. Uzman podolog kadromuz ve profesyonel hizmet anlayışımızla tanışın." />
-        <link rel="canonical" href="https://medipodo.com/hakkimizda" />
-      </Helmet>
   const values = [
     {
       icon: Heart,
