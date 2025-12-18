@@ -1,10 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { Shield, Mail, Phone, MapPin } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Helmet>
+        <title>Gizlilik Politikası - Medipodo</title>
+        <meta name="description" content="Medipodo gizlilik politikası. Kişisel verilerinizin korunması ve KVKK uyumu hakkında bilgi." />
+        <link rel="canonical" href="https://medipodo.com/gizlilik-politikasi" />
+      </Helmet>
+      <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white py-16">
         <div className="container mx-auto px-4">
