@@ -33,16 +33,22 @@ const BlogDetail = () => {
   }
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
-        <div className="container mx-auto px-4">
-          <Link to="/blog">
-            <Button variant="ghost" className="mb-6 text-blue-700">
-              <ArrowLeft className="mr-2" size={18} />
-              Blog'a Dön
-            </Button>
-          </Link>
+    <>
+      <Helmet>
+        <title>{post.title} - Medipodo Blog</title>
+        <meta name="description" content={post.excerpt} />
+        <link rel="canonical" href={`https://medipodo.com/blog/${slug}`} />
+      </Helmet>
+      <div className="min-h-screen">
+        {/* Hero Section */}
+        <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+          <div className="container mx-auto px-4">
+            <Link to="/blog">
+              <Button variant="ghost" className="mb-6 text-blue-700">
+                <ArrowLeft className="mr-2" size={18} />
+                Blog'a Dön
+              </Button>
+            </Link>
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap gap-2 mb-4">
               {post.tags.map((tag) => (
