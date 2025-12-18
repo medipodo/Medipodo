@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CheckCircle, Package, Sparkles } from 'lucide-react';
 import { products } from '../mock';
@@ -24,7 +25,13 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <Helmet>
+        <title>{product.name} - PediZone® | Medipodo</title>
+        <meta name="description" content={product.description} />
+        <link rel="canonical" href={`https://medipodo.com/urun/${slug}`} />
+      </Helmet>
+      <div className="min-h-screen bg-gray-50">
       {/* Breadcrumb */}
       <section className="bg-white border-b">
         <div className="container mx-auto px-4 py-4">
