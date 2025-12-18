@@ -501,7 +501,8 @@ const ServiceDetail = () => {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
