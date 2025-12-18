@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { blogPosts } from '../mock';
@@ -8,7 +9,13 @@ import { Badge } from '../components/ui/badge';
 
 const Blog = () => {
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        <title>Blog - Medipodo Podoloji Merkezi | Ayak Sağlığı Makaleleri</title>
+        <meta name="description" content="Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler. Batık tırnak, tırnak mantarı, nasır ve daha fazlası." />
+        <link rel="canonical" href="https://medipodo.com/blog" />
+      </Helmet>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">
         <div className="container mx-auto px-4">
