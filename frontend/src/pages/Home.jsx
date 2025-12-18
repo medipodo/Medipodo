@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Sparkles, ShieldCheck, Heart, Scissors, CircleDot, Zap, BookOpen, Check, Star, HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import { services, whyChooseUs, galleryImages, blogPosts, products, faqData } from '../mock';
@@ -43,9 +44,15 @@ const iconMap = {
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
-      {/* Hero Slider */}
-      <HeroSlider />
+    <>
+      <Helmet>
+        <title>Medipodo - Profesyonel Podoloji ve Ayak Bakımı Merkezi | Ankara</title>
+        <meta name="description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır tedavisi ve medikal ayak bakımı. Uzman podolog kadromuzla hizmetinizdeyiz." />
+        <link rel="canonical" href="https://medipodo.com/" />
+      </Helmet>
+      <div className="min-h-screen">
+        {/* Hero Slider */}
+        <HeroSlider />
 
       {/* Why Choose Us */}
       <section className="py-16 bg-white">
