@@ -258,8 +258,9 @@ const AyakAnalizi = () => {
   return (
     <>
       <Helmet>
-        <title>Ayak Analizi - Medipodo</title>
-        <meta name="description" content="Ayaklarınızı analiz edin ve size özel podolojik değerlendirme alın." />
+        <title>Ayak Analizi - Medipodo | Kişiselleştirilmiş Değerlendirme</title>
+        <meta name="description" content="Ayaklarınızı analiz edin ve size özel podolojik değerlendirme alın. 6 soruda ayak sağlığınızı keşfedin." />
+        <link rel="canonical" href="https://medipodo.com/ayak-analizi" />
       </Helmet>
 
       <style>{`
