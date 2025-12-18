@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Check } from 'lucide-react';
 import { services, galleryImages } from '../mock';
