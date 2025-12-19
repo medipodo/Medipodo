@@ -80,7 +80,7 @@ const TirnakKalinlasmaBlog = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="pt-8 pb-12 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+        <section className="pt-8 pb-12 bg-white">
           <div className="container mx-auto px-4">
             <Link to="/blog">
               <Button variant="ghost" className="mb-6 text-blue-700">
