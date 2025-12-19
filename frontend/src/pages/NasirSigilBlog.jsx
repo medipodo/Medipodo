@@ -16,7 +16,7 @@ const NasirSigilBlog = () => {
         <meta name="keywords" content="nasır, siğil, plantar siğil, verruca plantaris, nasır tedavisi, siğil tedavisi, kriyoterapi, ayak sağlığı, podolog, Medipodo, Bağlıca" />
         <meta property="og:title" content="Nasır ve Siğil Farkları - Tedavi Yöntemleri | Medipodo Bağlıca" />
         <meta property="og:description" content="Nasır ve plantar siğil arasındaki farklar, tedavi yöntemleri ve kriyoterapi uygulamaları." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/nasir-sigil/Nasır Nedir görseli.jpg" />
+        <meta property="og:image" content="https://medipodo.com/blog-images/nasir-sigil/Nasır Nedir görseli.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/nasir-sigil-farklari" />
       </Helmet>
@@ -66,7 +66,7 @@ const NasirSigilBlog = () => {
               
               <div className="mb-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/nasir-sigil/Sigil nedir görseli.jpg" 
+                  src="/blog-images/nasir-sigil/Sigil nedir görseli.webp" 
                   alt="Plantar Siğil (Verruca Plantaris) Görseli"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -113,7 +113,7 @@ const NasirSigilBlog = () => {
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div>
                   <img 
-                    src="/blog-images/nasir-sigil/sigil görseli kapiller uçlar.jpg" 
+                    src="/blog-images/nasir-sigil/sigil görseli kapiller uçlar.webp" 
                     alt="Siğil - Kapiller Uçlar (Siyah Noktalar)"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -122,7 +122,7 @@ const NasirSigilBlog = () => {
                 </div>
                 <div>
                   <img 
-                    src="/blog-images/nasir-sigil/Sigil.jpg" 
+                    src="/blog-images/nasir-sigil/Sigil.webp" 
                     alt="Plantar Siğil Örneği"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -176,7 +176,7 @@ const NasirSigilBlog = () => {
               
               <div className="mb-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/nasir-sigil/Nasır Nedir görseli.jpg" 
+                  src="/blog-images/nasir-sigil/Nasır Nedir görseli.webp" 
                   alt="Nasır (Callus) Görseli"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -190,7 +190,7 @@ const NasirSigilBlog = () => {
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div>
                   <img 
-                    src="/blog-images/nasir-sigil/nasır örnegi.jpg" 
+                    src="/blog-images/nasir-sigil/nasır örnegi.webp" 
                     alt="Nasır Örneği"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -199,7 +199,7 @@ const NasirSigilBlog = () => {
                 </div>
                 <div>
                   <img 
-                    src="/blog-images/nasir-sigil/Nasır.jpg" 
+                    src="/blog-images/nasir-sigil/Nasır.webp" 
                     alt="Ayak Tabanında Nasır"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -281,7 +281,7 @@ const NasirSigilBlog = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
                   <img 
-                    src="/blog-images/nasir-sigil/5.jpg" 
+                    src="/blog-images/nasir-sigil/5.webp" 
                     alt="Nasır ve Siğil Karşılaştırması 1"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -289,7 +289,7 @@ const NasirSigilBlog = () => {
                 </div>
                 <div>
                   <img 
-                    src="/blog-images/nasir-sigil/6.jpg" 
+                    src="/blog-images/nasir-sigil/6.webp" 
                     alt="Nasır ve Siğil Karşılaştırması 2"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -375,7 +375,7 @@ const NasirSigilBlog = () => {
                     <div className="grid md:grid-cols-2 gap-6 my-4">
                       <div>
                         <img 
-                          src="/blog-images/nasir-sigil/nitrojen.jpg" 
+                          src="/blog-images/nasir-sigil/nitrojen.webp" 
                           alt="Kriyoterapi Cihazı"
                           className="rounded-lg shadow-lg w-full h-auto"
                           loading="lazy"
@@ -383,7 +383,7 @@ const NasirSigilBlog = () => {
                       </div>
                       <div>
                         <img 
-                          src="/blog-images/nasir-sigil/sıvı nitrojen.jpg" 
+                          src="/blog-images/nasir-sigil/sıvı nitrojen.webp" 
                           alt="Sıvı Nitrojen Uygulaması"
                           className="rounded-lg shadow-lg w-full h-auto"
                           loading="lazy"
@@ -427,7 +427,7 @@ const NasirSigilBlog = () => {
                     
                     <div className="mb-4 rounded-lg overflow-hidden shadow-lg">
                       <img 
-                        src="/blog-images/nasir-sigil/küretaj işlemi.jpg" 
+                        src="/blog-images/nasir-sigil/küretaj işlemi.webp" 
                         alt="Podolojik Nasır Temizliği (Küretaj)"
                         className="w-full h-auto object-cover"
                         loading="lazy"
@@ -446,7 +446,7 @@ const NasirSigilBlog = () => {
                     
                     <div className="mb-4 rounded-lg overflow-hidden shadow-lg">
                       <img 
-                        src="/blog-images/nasir-sigil/silikon-bası-önleyici.jpg" 
+                        src="/blog-images/nasir-sigil/silikon-bası-önleyici.webp" 
                         alt="Silikon Basınç Önleyici Ortez"
                         className="w-full h-auto object-cover"
                         loading="lazy"
@@ -527,7 +527,7 @@ const NasirSigilBlog = () => {
 
                 <div className="mb-8 rounded-lg overflow-hidden">
                   <img 
-                    src="/blog-images/nasir-sigil/podolog-serdar-ceylan.jpg" 
+                    src="/blog-images/nasir-sigil/podolog-serdar-ceylan.webp" 
                     alt="Podolog Serdar Ceylan - Medipodo Bağlıca"
                     className="w-full h-auto object-cover"
                     loading="lazy"
@@ -556,7 +556,7 @@ const NasirSigilBlog = () => {
 
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg mb-8">
                   <img 
-                    src="/blog-images/nasir-sigil/ayak analizi.jpg" 
+                    src="/blog-images/nasir-sigil/ayak analizi.webp" 
                     alt="Ayak Analizi - Medipodo Bağlıca"
                     className="w-full h-auto object-cover rounded-lg mb-4"
                     loading="lazy"

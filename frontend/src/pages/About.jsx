@@ -69,7 +69,7 @@ const About = () => {
               <div className="order-1 lg:order-2">
                 <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-xl">
                   <img
-                    src="https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Ads%C4%B1z%20tasar%C4%B1m%20%281%29.png"
+                    src="https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Ads%C4%B1z%20tasar%C4%B1m%20%281%29.webp"
                     alt="Medipodo Logo"
                     className="w-full h-auto"
                     loading="lazy"

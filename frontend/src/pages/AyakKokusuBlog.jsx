@@ -63,7 +63,7 @@ const AyakKokusuBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/ayak-kokusu/2.jpg" 
+                src="/blog-images/ayak-kokusu/2.webp" 
                 alt="Ayak kokusu ve mantar ilişkisi"
                 className="w-full h-auto rounded-xl shadow-lg mb-6"
                 loading="lazy"
@@ -102,7 +102,7 @@ const AyakKokusuBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/ayak-kokusu/3.jpg" 
+                  src="/blog-images/ayak-kokusu/3.webp" 
                   alt="Ayak ter bezleri ve bakteri üremesi"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -143,7 +143,7 @@ const AyakKokusuBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/ayak-kokusu/4.jpg" 
+                src="/blog-images/ayak-kokusu/4.webp" 
                 alt="Ayak mantarı ve koku döngüsü"
                 className="w-full h-auto rounded-xl shadow-lg"
                 loading="lazy"
@@ -196,7 +196,7 @@ const AyakKokusuBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/ayak-kokusu/5.jpg" 
+                  src="/blog-images/ayak-kokusu/5.webp" 
                   alt="Keratolitik etki ve cilt katmanları"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -287,7 +287,7 @@ const AyakKokusuBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/ayak-kokusu/6.jpg" 
+                  src="/blog-images/ayak-kokusu/6.webp" 
                   alt="PediZone Temizleme Köpüğü - Ayak kokusu için profesyonel çözüm"
                   className="w-full h-auto rounded-xl shadow-2xl"
                   loading="lazy"
@@ -365,7 +365,7 @@ const AyakKokusuBlog = () => {
                 </p>
 
                 <img 
-                  src="/blog-images/ayak-kokusu/pedizone-urunler.jpg" 
+                  src="/blog-images/ayak-kokusu/pedizone-urunler.webp" 
                   alt="PediZone ürün ailesi - Kompleks ayak bakımı"
                   className="w-full h-auto rounded-xl shadow-lg mb-8"
                   loading="lazy"
@@ -449,7 +449,7 @@ const AyakKokusuBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/ayak-kokusu/7.jpg" 
+                  src="/blog-images/ayak-kokusu/7.webp" 
                   alt="Ayakkabı yıkama ve temizlik"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -497,7 +497,7 @@ const AyakKokusuBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/ayak-kokusu/8.jpg" 
+                src="/blog-images/ayak-kokusu/8.webp" 
                 alt="Günlük ayak bakımı rutini"
                 className="w-full h-auto rounded-xl shadow-lg"
                 loading="lazy"
@@ -579,7 +579,7 @@ const AyakKokusuBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/ayak-kokusu/10.jpg" 
+                src="/blog-images/ayak-kokusu/10.webp" 
                 alt="Sağlıklı ayaklar - Medipodo profesyonel bakım"
                 className="w-full max-w-2xl mx-auto h-auto rounded-xl shadow-2xl mt-8"
                 loading="lazy"

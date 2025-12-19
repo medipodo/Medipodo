@@ -18,7 +18,7 @@ const BSBantBlog = () => {
         <meta name="keywords" content="bs bant, b/s bant, batık tırnak tedavisi, tırnak teli, tırnak bandi, ankara batık tırnak, medipodo, podoloji" />
         <meta property="og:title" content="B/S Bant Uygulaması - Batık Tırnak İçin Acısız Çözüm" />
         <meta property="og:description" content="Batık tırnak tedavisinde modern ve estetik çözüm: B/S Bant uygulaması. Tırnak telinden farkları ve avantajları." />
-        <meta property="og:image" content="https://medipodo.com/images/blog/bs-bant/bs-bant.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/blog/bs-bant/bs-bant.webp" />
         <link rel="canonical" href="https://medipodo.com/blog/bs-bant-uygulamasi" />
       </Helmet>
 
@@ -58,7 +58,7 @@ const BSBantBlog = () => {
               {/* Featured Image */}
               <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/images/blog/bs-bant/bs-bant.jpg" 
+                  src="/images/blog/bs-bant/bs-bant.webp" 
                   alt="B/S Bant Uygulaması" 
                   className="w-full h-auto"
                 />
@@ -84,7 +84,7 @@ const BSBantBlog = () => {
               
               <div className="mb-8">
                 <img 
-                  src="/images/blog/bs-bant/batik-tirnak.jpg" 
+                  src="/images/blog/bs-bant/batik-tirnak.webp" 
                   alt="Batık Tırnak" 
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
@@ -148,7 +148,7 @@ const BSBantBlog = () => {
               {/* Tırnak Bandı Görseli */}
               <div className="mb-12">
                 <img 
-                  src="/images/blog/bs-bant/tirnak-bandi.jpg" 
+                  src="/images/blog/bs-bant/tirnak-bandi.webp" 
                   alt="Tırnak Bandı Uygulaması" 
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
@@ -204,12 +204,12 @@ const BSBantBlog = () => {
               {/* Images */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <img 
-                  src="/images/blog/bs-bant/tirnak-apse-batik.jpg" 
+                  src="/images/blog/bs-bant/tirnak-apse-batik.webp" 
                   alt="Tırnak Apse Batık" 
                   className="rounded-lg shadow-md"
                 />
                 <img 
-                  src="/images/blog/bs-bant/tirnak-mantari-bs-bant.jpg" 
+                  src="/images/blog/bs-bant/tirnak-mantari-bs-bant.webp" 
                   alt="Tırnak Mantarı BS Bant" 
                   className="rounded-lg shadow-md"
                 />
@@ -345,7 +345,7 @@ const BSBantBlog = () => {
               {/* Ankara Section */}
               <div className="mb-12">
                 <img 
-                  src="/images/blog/bs-bant/batik-tirnak-ankara.jpg" 
+                  src="/images/blog/bs-bant/batik-tirnak-ankara.webp" 
                   alt="Ankara Batık Tırnak Tedavisi" 
                   className="rounded-lg shadow-md mb-6"
                 />

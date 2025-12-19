@@ -16,7 +16,7 @@ const CocukAyakSagligiBlog = () => {
         <meta name="keywords" content="çocuk ayak sağlığı, ergen ayak problemleri, batık tırnak çocuk, düz tabanlık, ayak mantarı tedavisi, podoloji, Medipodo, Ankara" />
         <meta property="og:title" content="Çocuğunuzun Ayak Sağlığı Rehberi | Medipodo" />
         <meta property="og:description" content="Çocuklarda ve ergenlerde en sık görülen ayak problemleri ve podolojik çözümler." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/cocuk-ayak-sagligi/blog kapak görseli.jpg" />
+        <meta property="og:image" content="https://medipodo.com/blog-images/cocuk-ayak-sagligi/blog kapak görseli.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/cocuk-ayak-sagligi" />
       </Helmet>
@@ -54,7 +54,7 @@ const CocukAyakSagligiBlog = () => {
             {/* Kapak Görseli */}
             <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/blog-images/cocuk-ayak-sagligi/blog kapak görseli.jpg" 
+                src="/blog-images/cocuk-ayak-sagligi/blog kapak görseli.webp" 
                 alt="Çocuk Ayak Sağlığı"
                 className="w-full h-auto object-cover"
                 loading="lazy"
@@ -73,7 +73,7 @@ const CocukAyakSagligiBlog = () => {
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/cocuk-ayak-sagligi/ergenn.png" 
+                  src="/blog-images/cocuk-ayak-sagligi/ergenn.webp" 
                   alt="Çocuk Ayak Gelişimi"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -103,7 +103,7 @@ const CocukAyakSagligiBlog = () => {
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/cocuk-ayak-sagligi/spor-aktiviteleri.jpg" 
+                  src="/blog-images/cocuk-ayak-sagligi/spor-aktiviteleri.webp" 
                   alt="Çocuk Spor Aktiviteleri"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -118,7 +118,7 @@ const CocukAyakSagligiBlog = () => {
                 
                 <div className="my-6 rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="/blog-images/cocuk-ayak-sagligi/tırnak-batmasi.jpg" 
+                    src="/blog-images/cocuk-ayak-sagligi/tırnak-batmasi.webp" 
                     alt="Batık Tırnak"
                     className="w-full h-auto object-cover"
                     loading="lazy"
@@ -149,7 +149,7 @@ const CocukAyakSagligiBlog = () => {
                 <div className="grid md:grid-cols-2 gap-6 my-6">
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/cocuk-ayak-sagligi/Ayak-mantari.jpg" 
+                      src="/blog-images/cocuk-ayak-sagligi/Ayak-mantari.webp" 
                       alt="Ayak Mantarı"
                       className="w-full h-auto object-cover"
                       loading="lazy"
@@ -157,7 +157,7 @@ const CocukAyakSagligiBlog = () => {
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/cocuk-ayak-sagligi/ayak-kokusu-görseli.jpg" 
+                      src="/blog-images/cocuk-ayak-sagligi/ayak-kokusu-görseli.webp" 
                       alt="Ayak Kokusu"
                       className="w-full h-auto object-cover"
                       loading="lazy"
@@ -177,7 +177,7 @@ const CocukAyakSagligiBlog = () => {
 
                 <div className="my-6 rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="/blog-images/cocuk-ayak-sagligi/tirnak-mantari-ankara.jpg" 
+                    src="/blog-images/cocuk-ayak-sagligi/tirnak-mantari-ankara.webp" 
                     alt="Tırnak Mantarı"
                     className="w-full h-auto object-cover"
                     loading="lazy"
@@ -194,7 +194,7 @@ const CocukAyakSagligiBlog = () => {
                 <div className="grid md:grid-cols-2 gap-6 my-6">
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/cocuk-ayak-sagligi/Sigil-görseli.jpg" 
+                      src="/blog-images/cocuk-ayak-sagligi/Sigil-görseli.webp" 
                       alt="Plantar Siğil"
                       className="w-full h-auto object-cover"
                       loading="lazy"
@@ -202,7 +202,7 @@ const CocukAyakSagligiBlog = () => {
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/cocuk-ayak-sagligi/Sigil-görseli2.jpg" 
+                      src="/blog-images/cocuk-ayak-sagligi/Sigil-görseli2.webp" 
                       alt="Siğil Tedavisi"
                       className="w-full h-auto object-cover"
                       loading="lazy"
@@ -233,7 +233,7 @@ const CocukAyakSagligiBlog = () => {
                 
                 <div className="my-6 rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="/blog-images/cocuk-ayak-sagligi/duztaban.jpg" 
+                    src="/blog-images/cocuk-ayak-sagligi/duztaban.webp" 
                     alt="Düz Tabanlık"
                     className="w-full h-auto object-cover"
                     loading="lazy"
@@ -263,7 +263,7 @@ const CocukAyakSagligiBlog = () => {
                 
                 <div className="my-6 rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="/blog-images/cocuk-ayak-sagligi/ayakkabı-bagcik-baglama.jpg" 
+                    src="/blog-images/cocuk-ayak-sagligi/ayakkabı-bagcik-baglama.webp" 
                     alt="Ayakkabı Bağcık Bağlama"
                     className="w-full h-auto object-cover"
                     loading="lazy"
@@ -378,7 +378,7 @@ const CocukAyakSagligiBlog = () => {
 
                 <div className="my-8 rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="/blog-images/cocuk-ayak-sagligi/blog-sonlarına-dogru.jpg" 
+                    src="/blog-images/cocuk-ayak-sagligi/blog-sonlarına-dogru.webp" 
                     alt="Medipodo Çocuk Tedavisi"
                     className="w-full h-auto object-cover"
                     loading="lazy"

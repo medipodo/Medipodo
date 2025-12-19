@@ -70,7 +70,7 @@ const BatikTirnakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/batik-tirnak/kapak.jpg" 
+                  src="/blog-images/batik-tirnak/kapak.webp" 
                   alt="Tırnak batması görünümü" 
                   className="w-full rounded-xl shadow-2xl"
                 />
@@ -124,7 +124,7 @@ const BatikTirnakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/batik-tirnak/2.jpg" 
+                  src="/blog-images/batik-tirnak/2.webp" 
                   alt="Tırnak batması detayı" 
                   className="w-full rounded-xl shadow-2xl"
                 />
@@ -183,12 +183,12 @@ const BatikTirnakBlog = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                 <img 
-                  src="/blog-images/batik-tirnak/3.jpg" 
+                  src="/blog-images/batik-tirnak/3.webp" 
                   alt="Tırnak kesimi hatası" 
                   className="w-full rounded-xl shadow-lg"
                 />
                 <img 
-                  src="/blog-images/batik-tirnak/4.jpg" 
+                  src="/blog-images/batik-tirnak/4.webp" 
                   alt="Dar ayakkabı etkisi" 
                   className="w-full rounded-xl shadow-lg"
                 />
@@ -240,7 +240,7 @@ const BatikTirnakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/batik-tirnak/5.jpg" 
+                  src="/blog-images/batik-tirnak/5.webp" 
                   alt="Yapılan hatalar" 
                   className="w-full rounded-xl shadow-2xl"
                 />
@@ -394,12 +394,12 @@ const BatikTirnakBlog = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                 <img 
-                  src="/blog-images/batik-tirnak/6.jpg" 
+                  src="/blog-images/batik-tirnak/6.webp" 
                   alt="B/S bant uygulaması" 
                   className="w-full rounded-xl shadow-lg"
                 />
                 <img 
-                  src="/blog-images/batik-tirnak/7.jpg" 
+                  src="/blog-images/batik-tirnak/7.webp" 
                   alt="3TO tel sistemi" 
                   className="w-full rounded-xl shadow-lg"
                 />
@@ -458,7 +458,7 @@ const BatikTirnakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/batik-tirnak/8.jpg" 
+                  src="/blog-images/batik-tirnak/8.webp" 
                   alt="Doğru ayakkabı seçimi" 
                   className="w-full rounded-xl shadow-2xl"
                 />

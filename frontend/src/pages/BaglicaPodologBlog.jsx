@@ -59,7 +59,7 @@ const BaglicaPodologBlog = () => {
             {/* Görsel 14 */}
             <div className="mb-12 rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/blog-images/14.jpg" 
+                src="/blog-images/14.webp" 
                 alt="Medipodo Bağlıca Podolog Kliniği"
                 className="w-full h-auto object-cover"
                 loading="lazy"
@@ -142,7 +142,7 @@ const BaglicaPodologBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/5.jpg" 
+                  src="/blog-images/5.webp" 
                   alt="Tırnak Batması Tedavisi - Ortoniksi Uygulaması"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -184,7 +184,7 @@ const BaglicaPodologBlog = () => {
                 </p>
 
                 <img 
-                  src="/blog-images/6.jpg" 
+                  src="/blog-images/6.webp" 
                   alt="Tırnak Mantarı Tedavisi - Profesyonel Bakım"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -287,13 +287,13 @@ const BaglicaPodologBlog = () => {
 
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <img 
-                    src="/blog-images/16.jpg" 
+                    src="/blog-images/16.webp" 
                     alt="Nasır Temizliği Öncesi"
                     className="w-full h-auto rounded-xl shadow-md"
                     loading="lazy"
                   />
                   <img 
-                    src="/blog-images/3.jpg" 
+                    src="/blog-images/3.webp" 
                     alt="Nasır Temizliği Sonrası"
                     className="w-full h-auto rounded-xl shadow-md"
                     loading="lazy"
@@ -328,7 +328,7 @@ const BaglicaPodologBlog = () => {
                 </ul>
 
                 <img 
-                  src="/blog-images/4.jpg" 
+                  src="/blog-images/4.webp" 
                   alt="Çatlak Topuk Bakımı - Profesyonel Tedavi"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -372,7 +372,7 @@ const BaglicaPodologBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/18.jpg" 
+                  src="/blog-images/18.webp" 
                   alt="Diyabetik Ayak Bakımı - Özel Tedavi"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -409,7 +409,7 @@ const BaglicaPodologBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/15.jpg" 
+                  src="/blog-images/15.webp" 
                   alt="Evde Medikal Ayak Bakımı Hizmeti - Ankara"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -447,7 +447,7 @@ const BaglicaPodologBlog = () => {
                 </div>
 
                 <img 
-                  src="/blog-images/9.jpg" 
+                  src="/blog-images/9.webp" 
                   alt="Medikal Akrilik Tırnak Rekonstrüksiyonu"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -465,7 +465,7 @@ const BaglicaPodologBlog = () => {
                 </p>
 
                 <img 
-                  src="/blog-images/13.jpg" 
+                  src="/blog-images/13.webp" 
                   alt="Kişiye Özel Ortopedik Tabanlık"
                   className="w-full h-auto rounded-xl shadow-md mb-8"
                   loading="lazy"
@@ -499,7 +499,7 @@ const BaglicaPodologBlog = () => {
                 </p>
 
                 <img 
-                  src="/blog-images/19.jpg" 
+                  src="/blog-images/19.webp" 
                   alt="Ayak Analizi ve Tabanlık Ölçümü"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -515,7 +515,7 @@ const BaglicaPodologBlog = () => {
 
               <div className="mb-8">
                 <img 
-                  src="/blog-images/20.jpg" 
+                  src="/blog-images/20.webp" 
                   alt="Profesyonel Podolog Seçimi"
                   className="w-full h-auto rounded-xl shadow-md"
                   loading="lazy"
@@ -554,7 +554,7 @@ const BaglicaPodologBlog = () => {
 
               <div className="mb-8">
                 <img 
-                  src="/blog-images/21.png" 
+                  src="/blog-images/21.webp" 
                   alt="Medipodo Ayak Sağlığı Merkezi"
                   className="w-full h-auto rounded-xl shadow-lg"
                   loading="lazy"

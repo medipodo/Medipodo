@@ -118,7 +118,7 @@ const TirnakKalinlasmaBlog = () => {
               {/* Hero Image */}
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/blog-kapak görseli-tirnak-kalinlasmasi.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/blog-kapak görseli-tirnak-kalinlasmasi.webp" 
                   alt="Tırnak kalınlaşması - ayak tırnağı kalınlaşmasının nedenleri ve tedavisi"
                   className="w-full h-auto"
                 />
@@ -157,7 +157,7 @@ const TirnakKalinlasmaBlog = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <div>
                   <img 
-                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması- öncesi.jpg" 
+                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması- öncesi.webp" 
                     alt="Tırnak kalınlaşması örneği - tedavi öncesi"
                     className="rounded-lg shadow-md w-full"
                   />
@@ -165,7 +165,7 @@ const TirnakKalinlasmaBlog = () => {
                 </div>
                 <div>
                   <img 
-                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması- sonrası.jpg" 
+                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması- sonrası.webp" 
                     alt="Tırnak kalınlaşması örneği - tedavi sonrası"
                     className="rounded-lg shadow-md w-full"
                   />
@@ -208,7 +208,7 @@ const TirnakKalinlasmaBlog = () => {
               {/* Sararmış Kalın Tırnak Görseli */}
               <div className="mb-12">
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/sararmis-kalin-tirnak.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/sararmis-kalin-tirnak.webp" 
                   alt="Sararmış ve kalınlaşmış ayak tırnağı örneği"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
@@ -240,7 +240,7 @@ const TirnakKalinlasmaBlog = () => {
                 </div>
 
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/dar ayakkabının ayak tırnağına yaptığı basınç.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/dar ayakkabının ayak tırnağına yaptığı basınç.webp" 
                   alt="Dar ayakkabının ayak tırnağına yaptığı basınç"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto mb-4"
                 />
@@ -290,7 +290,7 @@ const TirnakKalinlasmaBlog = () => {
                 </div>
 
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/mantara bağlı kalınlaşmış sarı ayak tırnağı görünümü.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/mantara bağlı kalınlaşmış sarı ayak tırnağı görünümü.webp" 
                   alt="Mantara bağlı kalınlaşmış sarı ayak tırnağı görünümü"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto mb-4"
                 />
@@ -307,7 +307,7 @@ const TirnakKalinlasmaBlog = () => {
                 </p>
 
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/dogru-yanlis-tirnak-kesimi.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/dogru-yanlis-tirnak-kesimi.webp" 
                   alt="Doğru ve yanlış ayak tırnağı kesimi örneği"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto mb-4"
                 />
@@ -342,7 +342,7 @@ const TirnakKalinlasmaBlog = () => {
                 </p>
 
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/yaşlanmaya bağlı kalınlaşmış ayak tırnakları.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/yaşlanmaya bağlı kalınlaşmış ayak tırnakları.webp" 
                   alt="Yaşlanmaya bağlı kalınlaşmış ayak tırnakları"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto mb-4"
                 />
@@ -406,7 +406,7 @@ const TirnakKalinlasmaBlog = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <div>
                   <img 
-                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması-onikogrifoz öncesi.jpg" 
+                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması-onikogrifoz öncesi.webp" 
                     alt="İleri derece tırnak kalınlaşması (onikogrifoz) - tedavi öncesi"
                     className="rounded-lg shadow-md w-full"
                   />
@@ -414,7 +414,7 @@ const TirnakKalinlasmaBlog = () => {
                 </div>
                 <div>
                   <img 
-                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması-onikogrifoz (sonrasına ekle).jpg" 
+                    src="/images/blog/tirnak-kalinlasmasi/örnek tırnak kalınlaşması-onikogrifoz (sonrasına ekle).webp" 
                     alt="İleri derece tırnak kalınlaşması (onikogrifoz) - tedavi sonrası"
                     className="rounded-lg shadow-md w-full"
                   />
@@ -490,7 +490,7 @@ const TirnakKalinlasmaBlog = () => {
               {/* Tırnak Kuretajı Görseli */}
               <div className="mb-12">
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/tirnak-kuretajı.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/tirnak-kuretajı.webp" 
                   alt="Podolog tarafından kalınlaşmış tırnak bakımı"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
@@ -564,7 +564,7 @@ const TirnakKalinlasmaBlog = () => {
               {/* Podolojik Muayene Görseli */}
               <div className="mb-12">
                 <img 
-                  src="/images/blog/tirnak-kalinlasmasi/podolojik-muayene.jpg" 
+                  src="/images/blog/tirnak-kalinlasmasi/podolojik-muayene.webp" 
                   alt="Podolog tarafından ayak muayenesi"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />

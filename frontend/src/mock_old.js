@@ -11,7 +11,7 @@ export const siteInfo = {
   email: 'info@medipodo.com',
   mapCoordinates: { lat: 39.897085007400506, lng: 32.64813457116447 },
   workingHours: 'Pazartesi - Cumartesi: 09:00 - 18:00',
-  logo: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Adsız%20tasarım%20%281%29.png'
+  logo: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Adsız%20tasarım%20%281%29.webp'
 };
 
 export const services = [
@@ -21,7 +21,7 @@ export const services = [
     shortDesc: 'Ağrısız ve etkili batık tırnak tedavisi ile rahatlayın',
     fullDesc: 'Batık tırnak (unguis incarnatus), tırnağın kenarlarının cilde batması sonucu oluşan ağrılı bir durumdur. Profesyonel podoloji yaklaşımımızla, ağrısız ve kalıcı çözümler sunuyoruz.',
     icon: 'Scissors',
-    image: '/images/services/Batik-Tirnak-tedavisi.jpg',
+    image: '/images/services/Batik-Tirnak-tedavisi.webp',
     benefits: [
       'Ağrısız tedavi yöntemleri',
       'Kalıcı çözümler',
@@ -41,7 +41,7 @@ export const services = [
     shortDesc: 'Etkili tırnak mantarı tedavisi ile sağlıklı tırnaklar',
     fullDesc: 'Tırnak mantarı (onikomikoz), tırnak yapısını bozan ve estetik sorunlara yol açan fungal bir enfeksiyondur. Modern tedavi yöntemlerimizle kalıcı çözüm sağlıyoruz.',
     icon: 'ShieldCheck',
-    image: '/images/services/Tirnak-Mantari.jpg',
+    image: '/images/services/Tirnak-Mantari.webp',
     benefits: [
       'Modern tedavi protokolleri',
       'Hızlı iyileşme süreci',
@@ -61,7 +61,7 @@ export const services = [
     shortDesc: 'Çatlak topuklar için profesyonel bakım ve tedavi',
     fullDesc: 'Topuk çatlakları ve kalınlaşmaları hem estetik hem de sağlık problemi oluşturabilir. Özel bakım protokollerimizle topuklarınızı yeniden sağlıklı hale getiriyoruz.',
     icon: 'Sparkles',
-    image: '/images/services/Topuk-Bakimi.jpg',
+    image: '/images/services/Topuk-Bakimi.webp',
     benefits: [
       'Derinlemesine nemlendirme',
       'Kalınlaşmış deri temizliği',
@@ -81,7 +81,7 @@ export const services = [
     shortDesc: 'Ağrılı nasırların profesyonel tedavisi',
     fullDesc: 'Ayak tabanında oluşan nasırlar ve kalınlaşmalar yürüme konforu ve yaşam kalitenizi olumsuz etkiler. Uzman podoloji hizmetimizle rahatlayın.',
     icon: 'CircleDot',
-    image: '/images/services/Nasir-Kalinlasma.jpg',
+    image: '/images/services/Nasir-Kalinlasma.webp',
     benefits: [
       'Ağrısız temizleme',
       'Anında rahatlama',
@@ -101,7 +101,7 @@ export const services = [
     shortDesc: 'Kapsamlı profesyonel ayak bakımı hizmeti',
     fullDesc: 'Ayaklarınızın sağlığı için kapsamlı bakım programı. Temizlikten bakıma, tırnak kesiminden cilt bakımına kadar tüm ihtiyaçlarınız için buradayız.',
     icon: 'Heart',
-    image: '/images/services/Medikal-Ayak-Bakimi.jpg',
+    image: '/images/services/Medikal-Ayak-Bakimi.webp',
     benefits: [
       'Komple ayak bakımı',
       'Hijyenik koşullar',
@@ -121,7 +121,7 @@ export const services = [
     shortDesc: 'Sporcu ayağı ve mantar tedavisinde uzman çözümler',
     fullDesc: 'Sporcu ayağı (tinea pedis), ayaklar arasında kaşıntı, kızarıklık ve rahatsızlığa neden olan fungal bir enfeksiyondur. Etkili tedavi protokollerimizle hızlı çözüm.',
     icon: 'Zap',
-    image: '/images/services/Sporcu-Ayak-Bakimi.jpg',
+    image: '/images/services/Sporcu-Ayak-Bakimi.webp',
     benefits: [
       'Hızlı semptom hafifletme',
       'Tam iyileşme protokolü',

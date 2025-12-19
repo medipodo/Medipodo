@@ -8,8 +8,8 @@ const HeroSlider = () => {
 
   const slides = [
     {
-      image: '/images/slider/medipodo.jpg',
-      mobileImage: '/images/slider/mobile/ankara-podolog.jpg',
+      image: '/images/slider/medipodo.webp',
+      mobileImage: '/images/slider/mobile/ankara-podolog.webp',
       title: 'Medipodo Ayak Sağlığı',
       subtitle: 'Profesyonel Podoloji Hizmetleri',
       description: 'Batık tırnak, tırnak mantarı ve ayak bakımı konusunda uzman ekibimizle yanınızdayız',
@@ -17,8 +17,8 @@ const HeroSlider = () => {
       ctaLink: '/iletisim'
     },
     {
-      image: '/images/slider/ayakbakimi.jpg',
-      mobileImage: '/images/slider/mobile/6.jpg',
+      image: '/images/slider/ayakbakimi.webp',
+      mobileImage: '/images/slider/mobile/6.webp',
       title: 'Medikal Ayak Bakımı',
       subtitle: 'Sağlıklı Ayaklar İçin',
       description: 'Hijyenik koşullarda profesyonel ayak bakımı ve tedavi hizmetleri',
@@ -26,8 +26,8 @@ const HeroSlider = () => {
       ctaLink: '/hizmetler'
     },
     {
-      image: '/images/slider/tirnak-teli.jpg',
-      mobileImage: '/images/slider/mobile/ortoniksi.jpg',
+      image: '/images/slider/tirnak-teli.webp',
+      mobileImage: '/images/slider/mobile/ortoniksi.webp',
       title: 'Batık Tırnak Tedavisi',
       subtitle: 'Ağrısız ve Etkili Çözüm',
       description: 'Ortoniksi uygulaması ile batık tırnak sorunlarınıza kalıcı çözüm',
@@ -35,8 +35,8 @@ const HeroSlider = () => {
       ctaLink: '/hizmet/batik-tirnak'
     },
     {
-      image: '/images/slider/podolog.jpg',
-      mobileImage: '/images/slider/mobile/podolog-serdar-ceylan.jpg',
+      image: '/images/slider/podolog.webp',
+      mobileImage: '/images/slider/mobile/podolog-serdar-ceylan.webp',
       title: 'Uzman Podolog Kadrosu',
       subtitle: 'Deneyim ve Güvenilirlik',
       description: 'Alanında uzman podologlarımız ile profesyonel hizmet garantisi',
@@ -70,6 +70,8 @@ const HeroSlider = () => {
                 src={slide.mobileImage}
                 alt={slide.title}
                 className="w-full h-auto"
+                width="721"
+                height="734"
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex items-end pb-12">
@@ -133,6 +135,8 @@ const HeroSlider = () => {
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-auto"
+                width="1340"
+                height="450"
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex items-end pb-16">

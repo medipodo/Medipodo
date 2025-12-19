@@ -98,12 +98,14 @@ const Home = () => {
                 <Card key={service.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white overflow-hidden">
                   <CardContent className="p-0">
                     <div className="relative aspect-video overflow-hidden">
-                      <img 
-                        src={service.image} 
-                        alt={service.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
+<img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      width="640"
+                      height="360"
+                    />
                     </div>
                     <div className="p-6">
                       <div className="flex items-center space-x-3 mb-3">
@@ -153,6 +155,8 @@ const Home = () => {
                       src={item.before}
                       alt={item.title}
                       className="w-full h-full object-cover"
+                      width="398"
+                      height="398"
                     />
                   </div>
                   <div className="p-4">
@@ -295,7 +299,7 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img 
-            src="/images/ebook/hero-bg.jpg" 
+            src="/images/ebook/hero-bg.webp" 
             alt="" 
             className="w-full h-full object-cover"
           />
@@ -309,7 +313,7 @@ const Home = () => {
                 <div className="relative">
                   <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-2xl blur-2xl opacity-30 animate-pulse"></div>
                   <img 
-                    src="/images/ebook/cover.png" 
+                    src="/images/ebook/cover.webp" 
                     alt="Ayak Bakımı Kılavuzu E-Kitap" 
                     className="relative w-full max-w-sm rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
                   />

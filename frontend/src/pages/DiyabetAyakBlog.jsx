@@ -70,7 +70,7 @@ const DiyabetAyakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/diyabet/1.jpg" 
+                  src="/blog-images/diyabet/1.webp" 
                   alt="Diyabetik ayak kontrolü" 
                   className="w-full rounded-xl shadow-2xl"
                 />
@@ -93,12 +93,12 @@ const DiyabetAyakBlog = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <img 
-                  src="/blog-images/diyabet/2.jpg" 
+                  src="/blog-images/diyabet/2.webp" 
                   alt="Diyabetik nöropati" 
                   className="w-full rounded-xl shadow-lg"
                 />
                 <img 
-                  src="/blog-images/diyabet/3.jpg" 
+                  src="/blog-images/diyabet/3.webp" 
                   alt="Ayak muayenesi" 
                   className="w-full rounded-xl shadow-lg"
                 />
@@ -142,7 +142,7 @@ const DiyabetAyakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/diyabet/4.jpg" 
+                  src="/blog-images/diyabet/4.webp" 
                   alt="Diyabetik ayak deformiteleri" 
                   className="w-full rounded-xl shadow-2xl"
                 />
@@ -176,12 +176,12 @@ const DiyabetAyakBlog = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <img 
-                  src="/blog-images/diyabet/5.jpg" 
+                  src="/blog-images/diyabet/5.webp" 
                   alt="Damar sağlığı" 
                   className="w-full rounded-xl shadow-lg"
                 />
                 <img 
-                  src="/blog-images/diyabet/6.jpg" 
+                  src="/blog-images/diyabet/6.webp" 
                   alt="Kan dolaşımı kontrolü" 
                   className="w-full rounded-xl shadow-lg"
                 />
@@ -202,7 +202,7 @@ const DiyabetAyakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/diyabet/7.jpg" 
+                  src="/blog-images/diyabet/7.webp" 
                   alt="Günlük ayak bakımı" 
                   className="w-full rounded-xl shadow-2xl"
                 />
@@ -249,7 +249,7 @@ const DiyabetAyakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/diyabet/8.jpg" 
+                  src="/blog-images/diyabet/8.webp" 
                   alt="Ayak muayene teknikleri" 
                   className="w-full rounded-xl shadow-2xl"
                 />
@@ -332,12 +332,12 @@ const DiyabetAyakBlog = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <img 
-                  src="/blog-images/diyabet/10.jpg" 
+                  src="/blog-images/diyabet/10.webp" 
                   alt="Doğru ayakkabı seçimi" 
                   className="w-full rounded-xl shadow-lg"
                 />
                 <img 
-                  src="/blog-images/diyabet/11.jpg" 
+                  src="/blog-images/diyabet/11.webp" 
                   alt="Profesyonel podoloji bakımı" 
                   className="w-full rounded-xl shadow-lg"
                 />

@@ -41,7 +41,7 @@ const EbookLanding = () => {
         <meta name="keywords" content="ayak bakımı, batık tırnak, tırnak mantarı, nasır, çatlak topuk, podoloji, e-kitap" />
         <meta property="og:title" content="Ayak Bakımı Kılavuzu - Uzman Podolog Rehberi" />
         <meta property="og:description" content="Ağrılı ayaklara son! Evde uygulayabileceğiniz profesyonel ayak bakımı rehberi." />
-        <meta property="og:image" content="https://medipodo.com/images/ebook/cover.png" />
+        <meta property="og:image" content="https://medipodo.com/images/ebook/cover.webp" />
         <link rel="canonical" href="https://medipodo.com/ayak-bakim-kilavuzu" />
       </Helmet>
 
@@ -50,7 +50,7 @@ const EbookLanding = () => {
         <section className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="/images/ebook/hero-bg.jpg" 
+              src="/images/ebook/hero-bg.webp" 
               alt="" 
               className="w-full h-full object-cover"
             />
@@ -106,7 +106,7 @@ const EbookLanding = () => {
                 <div className="relative">
                   <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-2xl blur-2xl opacity-30 animate-pulse"></div>
                   <img 
-                    src="/images/ebook/cover.png" 
+                    src="/images/ebook/cover.webp" 
                     alt="Ayak Bakımı Kılavuzu E-Kitap Kapağı" 
                     className="relative w-full max-w-md rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
                   />
@@ -276,7 +276,7 @@ const EbookLanding = () => {
 
                 <div className="flex justify-center">
                   <img 
-                    src="/images/ebook/mockup.jpg" 
+                    src="/images/ebook/mockup.webp" 
                     alt="Medipodo Klinik" 
                     className="rounded-2xl shadow-2xl w-full max-w-md"
                   />

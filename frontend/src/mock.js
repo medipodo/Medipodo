@@ -13,7 +13,7 @@ export const siteInfo = {
   email: 'info@medipodo.com',
   mapCoordinates: { lat: 39.897085007400506, lng: 32.64813457116447 },
   workingHours: 'Pazartesi - Cumartesi: 09:00 - 19:00',
-  logo: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Adsız%20tasarım%20%281%29.png'
+  logo: 'https://customer-assets.emergentagent.com/job_podotherapy/artifacts/b9h35axs_Adsız%20tasarım%20%281%29.webp'
 };
 
 export const services = [
@@ -23,7 +23,7 @@ export const services = [
     shortDesc: 'Ağrısız, sancısız ortoniksi uygulamaları',
     fullDesc: 'Batık tırnak, tırnağın kenarlarının cilde batması sonucu oluşan ağrılı bir durumdur. Profesyonel podoloji yaklaşımımızla, ağrısız ve kalıcı çözümler sunuyoruz. Modern teknikler ve steril koşullarda gerçekleştirdiğimiz tedavilerimiz ile enfeksiyon riskini minimize ederken, hızlı iyileşme sağlıyoruz.',
     icon: 'Scissors',
-    image: '/images/services/Batik-Tirnak-tedavisi.jpg',
+    image: '/images/services/Batik-Tirnak-tedavisi.webp',
     benefits: [
       'Ağrısız tedavi yöntemleri',
       'Kalıcı çözümler',
@@ -137,9 +137,9 @@ export const services = [
         note: 'Medipodo olarak amacımız geçici değil, kalıcı ve konforlu bir çözüm sunmaktır.'
       },
       images: [
-        '/images/services/batik-tirnak/batik1.jpg',
-        '/images/services/batik-tirnak/batik2.jpg',
-        '/images/services/batik-tirnak/batik3.jpg'
+        '/images/services/batik-tirnak/batik1.webp',
+        '/images/services/batik-tirnak/batik2.webp',
+        '/images/services/batik-tirnak/batik3.webp'
       ]
     }
   },
@@ -149,7 +149,7 @@ export const services = [
     shortDesc: 'Etkili tırnak mantarı tedavisi ile sağlıklı tırnaklar',
     fullDesc: 'Tırnak mantarı, tırnak yapısını bozan ve estetik sorunlara yol açan fungal bir enfeksiyondur. Modern tedavi yöntemlerimizle kalıcı çözüm sağlıyoruz. Uzman podologlarımız, kişiye özel tedavi planları hazırlayarak, tırnaklarınızın sağlığına kavuşmasını sağlar. Tedavi sürecinde düzenli takip ile başarı oranını maksimuma çıkarıyoruz.',
     icon: 'ShieldCheck',
-    image: '/images/services/Tirnak-Mantari.jpg',
+    image: '/images/services/Tirnak-Mantari.webp',
     benefits: [
       'Modern tedavi protokolleri',
       'Hızlı iyileşme süreci',
@@ -258,9 +258,9 @@ export const services = [
         note: 'Randevular en az 1 gün önceden alınmaktadır. Evde bakım isterseniz, mobil ekiplerimiz de belirli bölgelere hizmet vermektedir.'
       },
       images: [
-        '/images/services/tirnak-mantari/mantar1.jpg',
-        '/images/services/tirnak-mantari/mantar2.jpg',
-        '/images/services/tirnak-mantari/mantar3.jpg'
+        '/images/services/tirnak-mantari/mantar1.webp',
+        '/images/services/tirnak-mantari/mantar2.webp',
+        '/images/services/tirnak-mantari/mantar3.webp'
       ]
     }
   },
@@ -270,7 +270,7 @@ export const services = [
     shortDesc: 'Çatlak topuklar için profesyonel bakım ve tedavi',
     fullDesc: 'Topuk çatlakları ve kalınlaşmaları hem estetik hem de sağlık problemi oluşturabilir. Özel bakım protokollerimizle topuklarınızı yeniden sağlıklı hale getiriyoruz. Profesyonel peeling ve nemlendirme uygulamalarımız, cildinizin derinlemesine beslenmesini sağlar. Uzun süreli sonuçlar için evde bakım önerilerimizle sürecin devamını destekliyoruz.',
     icon: 'Sparkles',
-    image: '/images/services/Topuk-Bakimi.jpg',
+    image: '/images/services/Topuk-Bakimi.webp',
     benefits: [
       'Derinlemesine nemlendirme',
       'Kalınlaşmış deri temizliği',
@@ -382,10 +382,10 @@ export const services = [
         note: 'Topuk çatlakları, doğru bakım yapılmadıkça sürekli tekrar eden bir problemdir. Medipodo olarak amacımız geçici bir "güzellik" değil, uzun süre konfor sağlayan kalıcı bir iyileşme sağlamaktır.'
       },
       images: [
-        '/images/services/topuk-bakimi/topuk1.jpg',
-        '/images/services/topuk-bakimi/topuk2.jpg',
-        '/images/services/topuk-bakimi/topuk3.jpg',
-        '/images/services/topuk-bakimi/topuk4.jpg'
+        '/images/services/topuk-bakimi/topuk1.webp',
+        '/images/services/topuk-bakimi/topuk2.webp',
+        '/images/services/topuk-bakimi/topuk3.webp',
+        '/images/services/topuk-bakimi/topuk4.webp'
       ]
     }
   },
@@ -395,7 +395,7 @@ export const services = [
     shortDesc: 'Ağrılı nasırların profesyonel tedavisi',
     fullDesc: 'Ayak tabanında oluşan nasırlar ve kalınlaşmalar yürüme konforu ve yaşam kalitenizi olumsuz etkiler. Uzman podoloji hizmetimizle rahatlayın. Özel cihazlarımız ve profesyonel tekniklerimizle, nasırlarınızı ağrısız bir şekilde temizliyor, basınç noktalarınızı analiz ederek tekrar oluşumunu önlemeye yönelik öneriler sunuyoruz.',
     icon: 'CircleDot',
-    image: '/images/services/Nasir-Kalinlasma.jpg',
+    image: '/images/services/Nasir-Kalinlasma.webp',
     benefits: [
       'Ağrısız temizleme',
       'Anında rahatlama',
@@ -415,7 +415,7 @@ export const services = [
     shortDesc: 'Kapsamlı profesyonel ayak bakımı hizmeti',
     fullDesc: 'Ayaklarınızın sağlığı için kapsamlı bakım programı. Temizlikten bakıma, tırnak kesiminden cilt bakımına kadar tüm ihtiyaçlarınız için buradayız. Steril koşullarda, profesyonel ürünler kullanarak gerçekleştirdiğimiz medikal ayak bakımı, hem tedavi edici hem de rahatlat',
     icon: 'Heart',
-    image: '/images/services/Medikal-Ayak-Bakimi.jpg',
+    image: '/images/services/Medikal-Ayak-Bakimi.webp',
     benefits: [
       'Komple ayak bakımı',
       'Hijyenik koşullar',
@@ -435,7 +435,7 @@ export const services = [
     shortDesc: 'Evinizin konforunda profesyonel ayak bakımı hizmeti',
     fullDesc: 'Sağlık sorunları nedeniyle merkezimize ulaşmakta zorluk mu yaşıyorsunuz? Evde medikal ayak bakımı hizmetimizle yanınızdayız. Özellikle yatalak hastalar, yaşlı bireyler, hareket zorluğu yaşayanlar ve dolaşım bozukluğu olan hastalarımız için ideal bir çözümdür. Ankara genelinde geniş hizmet bölgemizde, steril malzemeler ve profesyonel ekibimizle evinize geliyoruz.',
     icon: 'Zap',
-    image: '/images/services/evde-bakim.jpg',
+    image: '/images/services/evde-bakim.webp',
     benefits: [
       'Ev konforunda hizmet',
       'Yatalak ve yaşlı hastalara özel',
@@ -458,78 +458,78 @@ export const services = [
 export const galleryImages = [
   {
     id: 1,
-    before: '/images/gallery/g1.jpg',
-    after: '/images/gallery/g1.jpg',
+    before: '/images/gallery/g1.webp',
+    after: '/images/gallery/g1.webp',
     title: 'Medikal Akrilik Tırnak',
     description: 'Deformite sonucu tırnak kalmayan bölgeye doğal tırnak uygulaması yaptık'
   },
   {
     id: 2,
-    before: '/images/gallery/g2.jpg',
-    after: '/images/gallery/g2.jpg',
+    before: '/images/gallery/g2.webp',
+    after: '/images/gallery/g2.webp',
     title: 'Ciltte Aşırı Kalınlaşma (Hiperkeratoz) ',
     description: 'Profesyonel medikal ayak bakımı ile harika sonuçlar'
   },
   {
     id: 3,
-    before: '/images/gallery/g3.jpg',
-    after: '/images/gallery/g3.jpg',
+    before: '/images/gallery/g3.webp',
+    after: '/images/gallery/g3.webp',
     title: 'Topuk Bakımı Sonuçları',
     description: 'Derin bakım ile yenilenen ayaklar'
   },
   {
     id: 4,
-    before: '/images/gallery/g4.jpg',
-    after: '/images/gallery/g4.jpg',
+    before: '/images/gallery/g4.webp',
+    after: '/images/gallery/g4.webp',
     title: 'Onikogrifoz Tırnak Temizliği',
     description: '7 yıl hiç kesilmemiş-Ağrısız uygulama, temiz görüntü'
   },
   {
     id: 5,
-    before: '/images/gallery/g5.jpg',
-    after: '/images/gallery/g5.jpg',
+    before: '/images/gallery/g5.webp',
+    after: '/images/gallery/g5.webp',
     title: 'Tırnak Restorasyonu',
     description: 'Hasarlı tırnak onarımı ve bakımı'
   },
   {
     id: 6,
-    before: '/images/gallery/g6.jpg',
-    after: '/images/gallery/g6.jpg',
+    before: '/images/gallery/g6.webp',
+    after: '/images/gallery/g6.webp',
     title: 'Soyulabilir Ayak Maskelerini Önermiyoruz - İşte Sebebi',
     description: 'Medikal ayak bakımı ve Pedizone %15 Üreli Intense Repair Cream Kullanım Sonucu'
   },
   {
     id: 7,
-    before: '/images/gallery/g7.jpg',
-    after: '/images/gallery/g7.jpg',
+    before: '/images/gallery/g7.webp',
+    after: '/images/gallery/g7.webp',
     title: 'Batık Tırnak ve Ortoniksi',
     description: 'Ortoniksi uygulaması ile batık tırnak tedavisi'
   },
   {
     id: 8,
-    before: '/images/gallery/g8.jpg',
-    after: '/images/gallery/g8.jpg',
+    before: '/images/gallery/g8.webp',
+    after: '/images/gallery/g8.webp',
     title: 'Enfeksiyonlu Batık Tırnak Vakası',
     description: 'B/S Bant ile yakaladığımız başarı'
   },
   {
     id: 9,
-    before: '/images/gallery/g9.jpg',
-    after: '/images/gallery/g9.jpg',
+    before: '/images/gallery/g9.webp',
+    after: '/images/gallery/g9.webp',
     title: 'Batık Tırnak Tedavisi',
     description: 'Ağrısız batık tırnak tedavisi ve iyileşme süreci'
   },
   {
     id: 10,
-    before: '/images/gallery/g10.jpg',
-    after: '/images/gallery/g10.jpg',
+    before: '/images/gallery/g10.webp',
+    after: '/images/gallery/g10.webp',
     title: 'Tırnak Mantarı Tedavisi',
     description: 'Kalıcı tırnak mantarı tedavisi sonuçları'
   },
   {
     id: 11,
-    before: '/images/gallery/g11.jpg',
-    after: '/images/gallery/g11.jpg',
+    before: '/images/gallery/g11.webp',
+    after: '/images/gallery/g11.webp',
     title: 'Onychogryphosis',
     description: 'Tırnağın aşırı kalınlaşması ve koç boynuzu gibi kıvrılarak şekil bozması durumudur. Küretajı yapılarak rahatlatılmıştır.'
   }
@@ -551,7 +551,7 @@ export const blogPosts = enrichedBlogPosts.length > 0 ? enrichedBlogPosts : [
     author: 'Medipodo Podoloji Ekibi',
     date: '2025-12-16',
     readTime: '12 dakika',
-    image: '/images/blog/bs-bant/bs-bant.jpg',
+    image: '/images/blog/bs-bant/bs-bant.webp',
     tags: ['B/S Bant', 'Batık Tırnak', 'Podoloji', 'Tırnak Teli', 'Tedavi']
   },
   {
@@ -563,7 +563,7 @@ export const blogPosts = enrichedBlogPosts.length > 0 ? enrichedBlogPosts : [
     author: 'Medipodo Podolog Ekibi',
     date: '2024-12-01',
     readTime: '15 dakika',
-    image: '/blog-images/batik-tirnak/1.jpg',
+    image: '/blog-images/batik-tirnak/1.webp',
     tags: ['Tırnak Batması', 'Podoloji', 'Tedavi']
   },
   {
@@ -659,7 +659,7 @@ export const teamMembers = [
     name: 'Serdar Ceylan',
     title: 'Podolog',
     bio: 'Uzun yıllar podoloji alanında deneyimli; ortoniksi uygulamaları, batık tırnak, tırnak ve ayak mantarı alanında başarısını ispatlamış uzman.',
-    image: '/images/team/serdar-ceylan.jpg',
+    image: '/images/team/serdar-ceylan.webp',
     specialties: ['Ortoniksi Uygulamaları', 'Batık Tırnak', 'Tırnak Mantarı']
   },
   {
@@ -667,7 +667,7 @@ export const teamMembers = [
     name: 'Şaziye Kunt',
     title: 'Uzm. Refleksolog',
     bio: 'Medikal el ve ayak bakımı konusunda deneyimli, refleksoloji uygulayıcısı.',
-    image: '/images/team/saziye-kunt.jpg',
+    image: '/images/team/saziye-kunt.webp',
     specialties: ['Medikal Pediküir', 'Nasır Tedavisi', 'Topuk Bakımı']
   },
   {
@@ -675,7 +675,7 @@ export const teamMembers = [
     name: 'Sevda Karataş',
     title: 'Usta Öğretici',
     bio: 'Yılların ustalık deneyimini öğrencilerine aktararak onların profesyonel bir başlangıç yapmasını sağlıyor.',
-    image: '/images/team/sevda-karatas.jpg',
+    image: '/images/team/sevda-karatas.webp',
     specialties: ['Evde Bakım', 'Mantar Tedavisi', 'Önleyici Bakım']
   }
 ];
@@ -712,11 +712,11 @@ export const products = [
     shortName: 'Ayak Temizleme Köpüğü',
     tagline: 'Derinlemesine Hijyen ve Ferahlık',
     volume: '200 ml',
-    coverImage: '/images/products/FootFoam-Pedizone.jpg',
+    coverImage: '/images/products/FootFoam-Pedizone.webp',
     detailImages: [
-      '/images/products/pedizone-foot-foam-p.jpg',
-      '/images/products/FootFoam-Pedizone.jpg',
-      '/images/products/tum-pedizone-sayfalari.jpg'
+      '/images/products/pedizone-foot-foam-p.webp',
+      '/images/products/FootFoam-Pedizone.webp',
+      '/images/products/tum-pedizone-sayfalari.webp'
     ],
     description: 'Ayak hijyeni, sağlıklı ayak bakımının temelini oluşturur. PediZone® Ayak Temizleme Köpüğü, ayakların derinlemesine temizliği ve korunması için özel olarak geliştirilmiş, antibakteriyel özellikli bir formüldür.',
     fullDescription: 'Günlük yaşamın getirdiği terleme, kirlenme ve kapalı ayakkabı kullanımı, ayaklarda bakteri ve kötü koku oluşumuna zemin hazırlar. PediZone® Ayak Temizleme Köpüğü, ayakların derinlemesine temizliği ve korunması için özel olarak geliştirilmiş, antibakteriyel özellikli bir formüldür. 200 ml\'lik bu yumuşak köpük, cildi kurutmadan mikroorganizmaları temizlerken, ayaklarınıza anında ferahlık ve rahatlama sağlar.',
@@ -778,11 +778,11 @@ export const products = [
     shortName: '%15 Üreli Yoğun Onarıcı Kremi',
     tagline: 'Çatlak Topuk ve Yoğun Kuruluk İçin Yoğun Onarım',
     volume: '150 ml',
-    coverImage: '/images/products/Intense Repair Cream-Pedizone.jpg',
+    coverImage: '/images/products/Intense Repair Cream-Pedizone.webp',
     detailImages: [
-      '/images/products/pedizone-krem4.jpg',
-      '/images/products/Intense Repair Cream-Pedizone.jpg',
-      '/images/products/tum-pedizone-sayfalari.jpg'
+      '/images/products/pedizone-krem4.webp',
+      '/images/products/Intense Repair Cream-Pedizone.webp',
+      '/images/products/tum-pedizone-sayfalari.webp'
     ],
     description: 'Çatlak topuklar ve aşırı kuruluk için profesyonel bakım kremi. %15 urea içeriği ile yoğun onarım ve nemlendirme sağlar.',
     fullDescription: 'Çatlak topuklar, aşırı kuruluk ve hiperkeratoz (cilt kalınlaşması) sadece estetik kaygı değil, ağrıya ve enfeksiyon riskine yol açabilen ciddi sağlık sorunlarıdır. PediZone® %15 Urea Intense Repair Cream, podolojik uygulamalar için özel olarak geliştirilmiş, çatlak topuklar ve şiddetli kuru ayak cildi için yoğun onarım sağlayan profesyonel bir bakım kremidir.',
@@ -850,11 +850,11 @@ export const products = [
     shortName: 'Tırnak ve Ayak Serumu',
     tagline: 'Tırnak ve Ayak Sağlığınız İçin Podolog Onaylı Çözüm',
     volume: '50 ml',
-    coverImage: '/images/products/Antifungal-Pedizone.jpg',
+    coverImage: '/images/products/Antifungal-Pedizone.webp',
     detailImages: [
-      '/images/products/Antifungal-Pedizone.jpg',
-      '/images/products/pedizone-urunler.jpg',
-      '/images/products/tum-pedizone-sayfalari.jpg'
+      '/images/products/Antifungal-Pedizone.webp',
+      '/images/products/pedizone-urunler.webp',
+      '/images/products/tum-pedizone-sayfalari.webp'
     ],
     description: 'Ayak ve tırnak sağlığı için özel formül. Tırnak mantarı eğilimine karşı koruma, mat tırnakları canlandırma ve kötü koku giderme özellikleri.',
     fullDescription: 'Ayak ve tırnak sağlığı, genel yaşam konforunuzun ayrılmaz bir parçasıdır. Gün boyu kapalı kalan, neme ve sürtünmeye maruz kalan ayaklar, zamanla mat tırnak görünümü, kötü koku ve cilt yıpranması gibi sorunlarla karşılaşabilir. PediZone® Foot and Nail Care Serum, bu zorluklara karşı özel olarak geliştirilmiş, podolog onaylı, etkili bir bakım formülüdür.',

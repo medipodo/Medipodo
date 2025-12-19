@@ -67,7 +67,7 @@ const CatlakTopukBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/catlak-topuk/4.jpg" 
+                src="/blog-images/catlak-topuk/4.webp" 
                 alt="Kış aylarında çatlak topuk problemi"
                 className="w-full h-auto rounded-xl shadow-lg mb-6"
                 loading="lazy"
@@ -165,7 +165,7 @@ const CatlakTopukBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/catlak-topuk/5.jpg" 
+                src="/blog-images/catlak-topuk/5.webp" 
                 alt="Çatlak topuk nedenleri ve risk faktörleri"
                 className="w-full h-auto rounded-xl shadow-lg"
                 loading="lazy"
@@ -264,13 +264,13 @@ const CatlakTopukBlog = () => {
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <img 
-                    src="/blog-images/catlak-topuk/pedizone-urun-1.jpg" 
+                    src="/blog-images/catlak-topuk/pedizone-urun-1.webp" 
                     alt="PediZone %15 Urea Intense Repair Cream - Çatlak topuk tedavi kremi"
                     className="w-full h-auto rounded-xl shadow-lg"
                     loading="lazy"
                   />
                   <img 
-                    src="/blog-images/catlak-topuk/pedizone-urun-2.jpg" 
+                    src="/blog-images/catlak-topuk/pedizone-urun-2.webp" 
                     alt="PediZone topuk kremi - %15 Üre ile güçlü keratolitik etki"
                     className="w-full h-auto rounded-xl shadow-lg"
                     loading="lazy"
@@ -347,7 +347,7 @@ const CatlakTopukBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/catlak-topuk/7.jpg" 
+                src="/blog-images/catlak-topuk/7.webp" 
                 alt="Kış aylarında ayak bakımı ve önleme yöntemleri"
                 className="w-full h-auto rounded-xl shadow-lg"
                 loading="lazy"
@@ -410,7 +410,7 @@ const CatlakTopukBlog = () => {
                   %15 Üre konsantrasyonu ile güçlü keratolitik etki. Çatlak topuklar için klinik olarak test edilmiş formül.
                 </p>
                 <img 
-                  src="/blog-images/catlak-topuk/pedizone-urun-1.jpg" 
+                  src="/blog-images/catlak-topuk/pedizone-urun-1.webp" 
                   alt="PediZone %15 Urea Intense Repair Cream - Evde çatlak topuk bakımı"
                   className="w-full max-w-md mx-auto h-auto rounded-xl shadow-2xl"
                   loading="lazy"
@@ -418,7 +418,7 @@ const CatlakTopukBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/catlak-topuk/8.jpg" 
+                src="/blog-images/catlak-topuk/8.webp" 
                 alt="Evde çatlak topuk bakımı adımları"
                 className="w-full h-auto rounded-xl shadow-lg mt-8"
                 loading="lazy"
@@ -494,7 +494,7 @@ const CatlakTopukBlog = () => {
               </div>
 
               <img 
-                src="/blog-images/catlak-topuk/9.jpg" 
+                src="/blog-images/catlak-topuk/9.webp" 
                 alt="Medipodo'da profesyonel çatlak topuk tedavisi öncesi ve sonrası"
                 className="w-full h-auto rounded-xl shadow-lg mt-8"
                 loading="lazy"

@@ -16,7 +16,7 @@ const TopukDikeniBlog = () => {
         <meta name="keywords" content="topuk dikeni, calcanei epin, plantar fasiit, topuk ağrısı, ayak tabanı ağrısı, topuk dikeni tedavisi, ortez, tabanlık, podoloji, Medipodo, Bağlıca, Ankara" />
         <meta property="og:title" content="Topuk Dikeni Nedir ve Nasıl Önlenir? | Medipodo Bağlıca" />
         <meta property="og:description" content="Topuk dikeni nedir, belirtileri nelerdir ve nasıl önlenir? Podolojik yaklaşımlar ve kalıcı çözümler." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/topuk-dikeni/kapak görseli topuk dikeni.jpg" />
+        <meta property="og:image" content="https://medipodo.com/blog-images/topuk-dikeni/kapak görseli topuk dikeni.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/topuk-dikeni" />
       </Helmet>
@@ -63,7 +63,7 @@ const TopukDikeniBlog = () => {
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/topuk-dikeni/1.jpg" 
+                  src="/blog-images/topuk-dikeni/1.webp" 
                   alt="Topuk Dikeni - Sabah Ağrısı"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -104,7 +104,7 @@ const TopukDikeniBlog = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
                   <img 
-                    src="/blog-images/topuk-dikeni/2.jpg" 
+                    src="/blog-images/topuk-dikeni/2.webp" 
                     alt="Plantar Fasya Anatomisi"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -113,7 +113,7 @@ const TopukDikeniBlog = () => {
                 </div>
                 <div>
                   <img 
-                    src="/blog-images/topuk-dikeni/3.jpg" 
+                    src="/blog-images/topuk-dikeni/3.webp" 
                     alt="Topuk Dikeni Röntgen Görüntüsü"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -124,7 +124,7 @@ const TopukDikeniBlog = () => {
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/topuk-dikeni/4.jpg" 
+                  src="/blog-images/topuk-dikeni/4.webp" 
                   alt="Topuk Dikeni Oluşum Mekanizması"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -202,7 +202,7 @@ const TopukDikeniBlog = () => {
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/topuk-dikeni/5.jpg" 
+                  src="/blog-images/topuk-dikeni/5.webp" 
                   alt="Topuk Dikeni Risk Faktörleri"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -219,7 +219,7 @@ const TopukDikeniBlog = () => {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
                   <img 
-                    src="/blog-images/topuk-dikeni/6.jpg" 
+                    src="/blog-images/topuk-dikeni/6.webp" 
                     alt="Sabah Ağrısı - Topuk Dikeni"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -227,7 +227,7 @@ const TopukDikeniBlog = () => {
                 </div>
                 <div>
                   <img 
-                    src="/blog-images/topuk-dikeni/7.jpg" 
+                    src="/blog-images/topuk-dikeni/7.webp" 
                     alt="Topuk Ağrısı Lokalizasyonu"
                     className="rounded-lg shadow-lg w-full h-auto"
                     loading="lazy"
@@ -278,7 +278,7 @@ const TopukDikeniBlog = () => {
 
               <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/blog-images/topuk-dikeni/8.jpg" 
+                  src="/blog-images/topuk-dikeni/8.webp" 
                   alt="Podolojik Tedavi Yaklaşımları"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -295,7 +295,7 @@ const TopukDikeniBlog = () => {
                   </p>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/topuk-dikeni/9.jpg" 
+                      src="/blog-images/topuk-dikeni/9.webp" 
                       alt="Biyomekanik Analiz"
                       className="w-full h-auto"
                       loading="lazy"
@@ -312,7 +312,7 @@ const TopukDikeniBlog = () => {
                   </p>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/topuk-dikeni/13.jpg" 
+                      src="/blog-images/topuk-dikeni/13.webp" 
                       alt="Kişiye Özel Tabanlık - Ankara Medipodo"
                       className="w-full h-auto"
                       loading="lazy"
@@ -329,7 +329,7 @@ const TopukDikeniBlog = () => {
                   </p>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/topuk-dikeni/12.jpg" 
+                      src="/blog-images/topuk-dikeni/12.webp" 
                       alt="Kinezyolojik Bantlama"
                       className="w-full h-auto"
                       loading="lazy"
@@ -360,7 +360,7 @@ const TopukDikeniBlog = () => {
                   </ul>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="/blog-images/topuk-dikeni/11.jpg" 
+                      src="/blog-images/topuk-dikeni/11.webp" 
                       alt="Egzersiz ve Germe Programı"
                       className="w-full h-auto"
                       loading="lazy"
