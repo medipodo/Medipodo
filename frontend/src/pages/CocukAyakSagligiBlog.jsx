@@ -37,7 +37,7 @@ const CocukAyakSagligiBlog = () => {
             <div className="flex flex-wrap gap-6 text-blue-100">
               <div className="flex items-center">
                 <User size={18} className="mr-2" />
-                <span>Medipodo Podoloji Ekibi</span>
+                <span>Podolog Serdar C.</span>
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-2" />
