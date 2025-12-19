@@ -80,7 +80,7 @@ const TirnakKalinlasmaBlog = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="pt-8 pb-12 bg-white">
+        <section className="pt-8 pb-4 bg-white">
           <div className="container mx-auto px-4">
             <Link to="/blog">
               <Button variant="ghost" className="mb-6 text-blue-700">
@@ -116,7 +116,7 @@ const TirnakKalinlasmaBlog = () => {
               </div>
 
               {/* Hero Image */}
-              <div className="rounded-2xl overflow-hidden shadow-xl mb-8">
+              <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src="/images/blog/tirnak-kalinlasmasi/blog-kapak görseli-tirnak-kalinlasmasi.jpg" 
                   alt="Tırnak kalınlaşması - ayak tırnağı kalınlaşmasının nedenleri ve tedavisi"
@@ -128,7 +128,7 @@ const TirnakKalinlasmaBlog = () => {
         </section>
 
         {/* Content Section */}
-        <article className="py-12 bg-white">
+        <article className="pt-6 pb-12 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               
