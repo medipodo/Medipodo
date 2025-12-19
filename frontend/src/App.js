@@ -25,6 +25,7 @@ import NasirSigilBlog from './pages/NasirSigilBlog';
 import TopukDikeniBlog from './pages/TopukDikeniBlog';
 import CocukAyakSagligiBlog from './pages/CocukAyakSagligiBlog';
 import BSBantBlog from './pages/BSBantBlog';
+import TirnakKalinlasmaBlog from './pages/TirnakKalinlasmaBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -60,6 +61,7 @@ function AppContent() {
           <Route path="/blog/topuk-dikeni" element={<TopukDikeniBlog />} />
           <Route path="/blog/cocuk-ayak-sagligi" element={<CocukAyakSagligiBlog />} />
           <Route path="/blog/bs-bant-uygulamasi" element={<BSBantBlog />} />
+          <Route path="/blog/tirnak-neden-kalinlasir" element={<TirnakKalinlasmaBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
