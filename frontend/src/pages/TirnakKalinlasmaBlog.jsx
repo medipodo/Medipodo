@@ -128,9 +128,9 @@ const TirnakKalinlasmaBlog = () => {
         </section>
 
         {/* Content Section */}
-        <article className="py-12">
+        <article className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto prose prose-lg prose-blue">
+            <div className="max-w-4xl mx-auto">
               
               {/* Giriş */}
               <p className="text-xl text-gray-700 leading-relaxed mb-8">
