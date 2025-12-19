@@ -146,7 +146,7 @@ const TirnakKalinlasmaBlog = () => {
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
                 <p className="text-gray-800 leading-relaxed mb-0">
                   Bu tür tırnak değişimleri, çoğu zaman profesyonel bir değerlendirme gerektirir.{' '}
-                  <Link to="/hizmet/medikal-ayak-bakimi" className="text-blue-700 font-semibold hover:underline">
+                  <Link to="/blog/baglica-podolog-hizmetleri" className="text-blue-700 font-semibold hover:underline">
                     Medikal ayak bakımı
                   </Link>{' '}
                   ile tırnak yapısı güvenli şekilde incelenebilir ve altta yatan nedenler belirlenebilir.
@@ -659,7 +659,7 @@ const TirnakKalinlasmaBlog = () => {
                   <ChevronRight size={20} className="text-blue-600 mr-3" />
                   <span className="text-gray-700 hover:text-blue-700">Diyabet ve Ayak Sağlığı</span>
                 </Link>
-                <Link to="/hizmet/medikal-ayak-bakimi" className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
+                <Link to="/blog/baglica-podolog-hizmetleri" className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
                   <ChevronRight size={20} className="text-blue-600 mr-3" />
                   <span className="text-gray-700 hover:text-blue-700">Medikal Ayak Bakımı Hizmeti</span>
                 </Link>
