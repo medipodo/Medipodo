@@ -34,15 +34,15 @@
         </script>
         
         <!-- Google AdSense -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5400209193949629"
+        <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5400209193949629"
              crossorigin="anonymous"></script>
         
-        <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+        <script defer src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
         These two scripts have been added for the testing, please do not edit or remove them
         -->
-        <script src="https://unpkg.com/rrweb@latest/dist/rrweb.min.js"></script>
-        <script src="https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js"></script>
+        <script defer src="https://unpkg.com/rrweb@latest/dist/rrweb.min.js"></script>
+        <script defer src="https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js"></script>
         <!--
         These two scripts have been added for the Visual Edits, please do not edit or remove them
         -->
@@ -104,7 +104,7 @@
                         ((p = t.createElement("script")).type =
                             "text/javascript"),
                             (p.crossOrigin = "anonymous"),
-                            (p.async = !0),
+                            (p.async = !0), (p.defer = !0),
                             (p.src =
                                 s.api_host.replace(
                                     ".i.posthog.com",
