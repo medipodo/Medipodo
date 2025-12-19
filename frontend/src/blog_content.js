@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'tirnak-neden-kalinlasir',
+    title: 'Tırnak Neden Kalınlaşır? Ayak Tırnağı Kalınlaşmasının 7 Nedeni',
+    slug: 'tirnak-neden-kalinlasir',
+    excerpt: 'Ayak tırnağı neden kalınlaşır? Mantar, dar ayakkabı, travma ve dolaşım sorunları kalın tırnağa yol açabilir. Belirtiler ve çözümler burada.',
+    image: '/images/blog/tirnak-kalinlasmasi/blog-kapak görseli-tirnak-kalinlasmasi.jpg',
+    date: '19 Aralık 2025',
+    readTime: '12 dk',
+    tags: ['Tırnak Kalınlaşması', 'Tırnak Mantarı', 'Podoloji', 'Medikal Ayak Bakımı'],
+    content: 'Özel blog sayfası: /blog/tirnak-neden-kalinlasir'
+  },
+  {
     id: 'bs-bant-uygulamasi',
     title: 'B/S Bant Uygulaması Nedir? Batık Tırnak İçin Daha Mı Konforlu?',
     slug: 'bs-bant-uygulamasi',
