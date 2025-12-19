@@ -630,7 +630,7 @@ const TirnakKalinlasmaBlog = () => {
                 </h3>
                 <p className="text-blue-100 leading-relaxed mb-6">
                   Medipodo Ayak Sağlığı Merkezi, Ankara Bağlıca bölgesinde podolog eşliğinde{' '}
-                  <Link to="/hizmet/medikal-ayak-bakimi" className="text-white font-semibold underline hover:text-blue-200">
+                  <Link to="/blog/baglica-podolog-hizmetleri" className="text-white font-semibold underline hover:text-blue-200">
                     medikal ayak bakımı
                   </Link>{' '}
                   hizmeti sunmaktadır.
