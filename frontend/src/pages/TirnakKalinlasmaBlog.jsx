@@ -103,7 +103,7 @@ const TirnakKalinlasmaBlog = () => {
               <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-8">
                 <div className="flex items-center">
                   <User size={18} className="mr-2" />
-                  <span>Medipodo Podoloji Ekibi</span>
+                  <span>Podolog Serdar Ceylan</span>
                 </div>
                 <div className="flex items-center">
                   <Calendar size={18} className="mr-2" />
@@ -111,7 +111,7 @@ const TirnakKalinlasmaBlog = () => {
                 </div>
                 <div className="flex items-center">
                   <Clock size={18} className="mr-2" />
-                  <span>12 dk okuma</span>
+                  <span>10 dk okuma süresi</span>
                 </div>
               </div>
 
@@ -232,8 +232,9 @@ const TirnakKalinlasmaBlog = () => {
                 <div className="bg-blue-50 rounded-lg p-4 mb-6">
                   <p className="font-semibold text-blue-900 mb-2">📌 Özellikle:</p>
                   <ul className="text-gray-700 space-y-1">
-                    <li>• Koşucular</li>
+                    <li>• Sporcular</li>
                     <li>• Sağlık çalışanları</li>
+                    <li>• Asker-Polis</li>
                     <li>• Gün boyu ayakta çalışanlar</li>
                   </ul>
                 </div>
