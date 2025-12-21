@@ -683,7 +683,7 @@ export const teamMembers = [
 export const whyChooseUs = [
   {
     title: 'Uzman Kadro',
-    description: 'Alanında deneyimli ve sertifikalı podoloji uzmanları',
+    description: 'Alanında deneyimli Podolog Hizmeti',
     icon: 'Award'
   },
   {
@@ -697,8 +697,8 @@ export const whyChooseUs = [
     icon: 'ShieldCheck'
   },
   {
-    title: 'Kişiye Özel Tedavi',
-    description: 'Her hasta için özel hazırlanan tedavi programları',
+    title: 'Kişiye Özel Takip',
+    description: 'Her danışan için özel hazırlanan takip süreci',
     icon: 'Heart'
   }
 ];
