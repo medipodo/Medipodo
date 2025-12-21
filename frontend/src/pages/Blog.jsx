@@ -14,6 +14,21 @@ const Blog = () => {
         <title>Blog - Medipodo Podoloji Merkezi | Ayak Sağlığı Makaleleri</title>
         <meta name="description" content="Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler. Batık tırnak, tırnak mantarı, nasır ve daha fazlası." />
         <link rel="canonical" href="https://medipodo.com/blog" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Blog - Medipodo Podoloji Merkezi | Ayak Sağlığı Makaleleri" />
+        <meta property="og:description" content="Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler. Batık tırnak, tırnak mantarı, nasır ve daha fazlası." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog - Medipodo Podoloji Merkezi" />
+        <meta name="twitter:description" content="Ayak sağlığı, podoloji ve ayak bakımı hakkında faydalı bilgiler." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}

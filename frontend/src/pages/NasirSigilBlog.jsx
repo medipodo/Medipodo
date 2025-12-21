@@ -14,11 +14,22 @@ const NasirSigilBlog = () => {
         <title>Nasır ve Siğil Farkları - Tedavi Yöntemleri | Medipodo Bağlıca</title>
         <meta name="description" content="Nasır ve plantar siğil arasındaki farklar, tedavi yöntemleri ve kriyoterapi uygulamaları. Medipodo Bağlıca'da uzman podolog ile kalıcı çözüm." />
         <meta name="keywords" content="nasır, siğil, plantar siğil, verruca plantaris, nasır tedavisi, siğil tedavisi, kriyoterapi, ayak sağlığı, podolog, Medipodo, Bağlıca" />
+        <link rel="canonical" href="https://medipodo.com/blog/nasir-sigil-farklari" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
         <meta property="og:title" content="Nasır ve Siğil Farkları - Tedavi Yöntemleri | Medipodo Bağlıca" />
         <meta property="og:description" content="Nasır ve plantar siğil arasındaki farklar, tedavi yöntemleri ve kriyoterapi uygulamaları." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/nasir-sigil/Nasır Nedir görseli.jpg" />
-        <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://medipodo.com/blog/nasir-sigil-farklari" />
+        <meta property="og:image" content="https://medipodo.com/blog-images/nasir-sigil/Nas%C4%B1r%20Nedir%20g%C3%B6rseli.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/nasir-sigil-farklari" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nasır ve Siğil Farkları - Tedavi Yöntemleri" />
+        <meta name="twitter:description" content="Nasır ve plantar siğil arasındaki farklar ve tedavi yöntemleri." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/nasir-sigil/Nas%C4%B1r%20Nedir%20g%C3%B6rseli.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

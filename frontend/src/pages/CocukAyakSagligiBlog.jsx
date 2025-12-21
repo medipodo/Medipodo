@@ -14,11 +14,22 @@ const CocukAyakSagligiBlog = () => {
         <title>Çocuğunuzun Ayak Sağlığı Rehberi: En Sık Görülen 5 Ayak Problemi | Medipodo</title>
         <meta name="description" content="Çocuklarda ve ergenlerde en sık görülen ayak problemleri ve podolojik çözümler. Batık tırnak, ayak mantarı, düz tabanlık tedavisi ve daha fazlası." />
         <meta name="keywords" content="çocuk ayak sağlığı, ergen ayak problemleri, batık tırnak çocuk, düz tabanlık, ayak mantarı tedavisi, podoloji, Medipodo, Ankara" />
-        <meta property="og:title" content="Çocuğunuzun Ayak Sağlığı Rehberi | Medipodo" />
-        <meta property="og:description" content="Çocuklarda ve ergenlerde en sık görülen ayak problemleri ve podolojik çözümler." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/cocuk-ayak-sagligi/blog kapak görseli.jpg" />
-        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/cocuk-ayak-sagligi" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Çocuğunuzun Ayak Sağlığı Rehberi: En Sık Görülen 5 Ayak Problemi" />
+        <meta property="og:description" content="Çocuklarda ve ergenlerde en sık görülen ayak problemleri ve podolojik çözümler." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/cocuk-ayak-sagligi/blog%20kapak%20g%C3%B6rseli.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/cocuk-ayak-sagligi" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Çocuğunuzun Ayak Sağlığı Rehberi | Medipodo" />
+        <meta name="twitter:description" content="Çocuklarda ve ergenlerde en sık görülen ayak problemleri ve podolojik çözümler." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/cocuk-ayak-sagligi/blog%20kapak%20g%C3%B6rseli.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

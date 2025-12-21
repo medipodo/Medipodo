@@ -14,10 +14,22 @@ const BaglicaPodologBlog = () => {
         <title>Bağlıca Podolog Hizmetleri - Medipodo Ayak Sağlığı Merkezi | Ankara</title>
         <meta name="description" content="Bağlıca ve çevresinde profesyonel podolog hizmeti. Tırnak batması, tırnak mantarı, nasır temizliği, çatlak topuk, diyabetik ayak bakımı ve evde medikal ayak bakımı. Uzman kadro ve modern cihazlarla hizmetinizdeyiz." />
         <meta name="keywords" content="bağlıca podolog, ankara podolog, tırnak batması tedavisi, tırnak mantarı bakımı, nasır temizliği, çatlak topuk bakımı, diyabetik ayak bakımı, evde ayak bakımı, medipodo" />
+        <link rel="canonical" href="https://medipodo.com/blog/baglica-podolog-hizmetleri" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
         <meta property="og:title" content="Bağlıca Podolog Hizmetleri - Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:description" content="Profesyonel podolog hizmetleri ile ayak sağlığınız güvende. Tırnak batması, mantar, nasır ve çatlak topuk tedavileri." />
-        <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://medipodo.com/blog/baglica-podolog-hizmetleri" />
+        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/baglica-podolog-hizmetleri" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bağlıca Podolog Hizmetleri - Medipodo" />
+        <meta name="twitter:description" content="Profesyonel podolog hizmetleri ile ayak sağlığınız güvende." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

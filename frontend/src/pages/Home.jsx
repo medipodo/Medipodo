@@ -49,6 +49,21 @@ const Home = () => {
         <title>Medipodo - Profesyonel Podoloji ve Ayak Bakımı Merkezi | Ankara</title>
         <meta name="description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır tedavisi ve medikal ayak bakımı. Uzman podolog kadromuzla hizmetinizdeyiz." />
         <link rel="canonical" href="https://medipodo.com/" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Medipodo - Profesyonel Podoloji ve Ayak Bakımı Merkezi | Ankara" />
+        <meta property="og:description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır tedavisi ve medikal ayak bakımı." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:url" content="https://medipodo.com/" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Medipodo - Profesyonel Podoloji ve Ayak Bakımı Merkezi" />
+        <meta name="twitter:description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır tedavisi." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
       </Helmet>
       <div className="min-h-screen">
         {/* Hero Slider */}

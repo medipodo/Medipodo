@@ -60,6 +60,22 @@ const TirnakKalinlasmaBlog = () => {
         <title>Tırnak Neden Kalınlaşır? Ayak Tırnağı Kalınlaşmasının 7 Nedeni</title>
         <meta name="description" content="Ayak tırnağı neden kalınlaşır? Mantar, dar ayakkabı, travma ve dolaşım sorunları kalın tırnağa yol açabilir. Belirtiler ve çözümler burada." />
         <link rel="canonical" href="https://medipodo.com/blog/tirnak-neden-kalinlasir" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Tırnak Neden Kalınlaşır? Ayak Tırnağı Kalınlaşmasının 7 Nedeni" />
+        <meta property="og:description" content="Ayak tırnağı neden kalınlaşır? Mantar, dar ayakkabı, travma ve dolaşım sorunları kalın tırnağa yol açabilir. Belirtiler ve çözümler." />
+        <meta property="og:image" content="https://medipodo.com/images/blog/tirnak-kalinlasmasi/blog-kapak görseli-tirnak-kalinlasmasi.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/tirnak-neden-kalinlasir" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tırnak Neden Kalınlaşır? Ayak Tırnağı Kalınlaşmasının 7 Nedeni" />
+        <meta name="twitter:description" content="Ayak tırnağı neden kalınlaşır? Mantar, dar ayakkabı, travma ve dolaşım sorunları kalın tırnağa yol açabilir." />
+        <meta name="twitter:image" content="https://medipodo.com/images/blog/tirnak-kalinlasmasi/blog-kapak görseli-tirnak-kalinlasmasi.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

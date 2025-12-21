@@ -14,10 +14,22 @@ const CatlakTopukBlog = () => {
         <title>Kış Aylarında Çatlak Topuk: Nedenleri, Önleme ve Tedavi | Medipodo</title>
         <meta name="description" content="Kış aylarında çatlak topuk problemi nedenleri, önleme yöntemleri ve profesyonel tedavi seçenekleri. PediZone %15 Üre kremi ile etkili çözüm." />
         <meta name="keywords" content="çatlak topuk, kış ayları, üre kremi, çatlak topuk tedavisi, PediZone, podolog, Ankara, Medipodo, keratolitik etki" />
-        <meta property="og:title" content="Kış Aylarında Çatlak Topuk: Profesyonel Tedavi Rehberi" />
-        <meta property="og:description" content="Çatlak topuk problemine kalıcı çözüm. Profesyonel podolog önerileri ve PediZone ile evde bakım." />
-        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/kis-aylarinda-catlak-topuk-tedavisi" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Kış Aylarında Çatlak Topuk: Nedenleri, Önleme ve Tedavi" />
+        <meta property="og:description" content="Çatlak topuk problemine kalıcı çözüm. Profesyonel podolog önerileri ve PediZone ile evde bakım." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/catlak-topuk/4.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/kis-aylarinda-catlak-topuk-tedavisi" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kış Aylarında Çatlak Topuk: Profesyonel Tedavi Rehberi" />
+        <meta name="twitter:description" content="Çatlak topuk problemine kalıcı çözüm. Profesyonel podolog önerileri." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/catlak-topuk/4.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

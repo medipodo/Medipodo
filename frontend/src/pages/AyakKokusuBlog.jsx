@@ -14,10 +14,22 @@ const AyakKokusuBlog = () => {
         <title>Ayak Kokusu ve Mantar İlişkisi: Neden Olur, Nasıl Önlenir? | Medipodo</title>
         <meta name="description" content="Ayak kokusu ve mantar arasındaki bilimsel ilişkiyi keşfedin. Keratolitik etki ve antifungal koruma ile PediZone Temizleme Köpüğü ile kalıcı çözüme ulaşın." />
         <meta name="keywords" content="ayak kokusu, ayak mantarı, tinea pedis, keratolitik etki, antifungal koruma, PediZone, temizleme köpüğü, bromodoz, ayak hijyeni" />
-        <meta property="og:title" content="Ayak Kokusu ve Mantar İlişkisi: Bilimsel Çözümler" />
-        <meta property="og:description" content="Ayak kokusunun bilimsel nedenleri, mantar ilişkisi ve podolog onaylı kalıcı çözüm yöntemleri." />
-        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/ayak-kokusu-ve-mantar-iliskisi" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Ayak Kokusu ve Mantar İlişkisi: Neden Olur, Nasıl Önlenir?" />
+        <meta property="og:description" content="Ayak kokusu ve mantar arasındaki bilimsel ilişki. Keratolitik etki ve antifungal koruma ile kalıcı çözüm." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/ayak-kokusu/2.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/ayak-kokusu-ve-mantar-iliskisi" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ayak Kokusu ve Mantar İlişkisi" />
+        <meta name="twitter:description" content="Ayak kokusunun bilimsel nedenleri ve podolog onaylı kalıcı çözüm yöntemleri." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/ayak-kokusu/2.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

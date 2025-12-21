@@ -87,6 +87,21 @@ const ServiceDetail = () => {
         <title>{service.title} - Medipodo Podoloji Merkezi | Ankara</title>
         <meta name="description" content={service.shortDesc} />
         <link rel="canonical" href={`https://medipodo.com/hizmet/${serviceId}`} />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${service.title} - Medipodo Podoloji Merkezi`} />
+        <meta property="og:description" content={service.shortDesc} />
+        <meta property="og:image" content={`https://medipodo.com${service.image}`} />
+        <meta property="og:url" content={`https://medipodo.com/hizmet/${serviceId}`} />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${service.title} - Medipodo`} />
+        <meta name="twitter:description" content={service.shortDesc} />
+        <meta name="twitter:image" content={`https://medipodo.com${service.image}`} />
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}

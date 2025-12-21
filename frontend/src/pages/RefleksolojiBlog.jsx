@@ -14,11 +14,22 @@ const RefleksolojiBlog = () => {
         <title>Ankara Bağlıca Refleksoloji | Medipodo Ayak Sağlığı Merkezi</title>
         <meta name="description" content="Ankara Bağlıca'da podolog ve uzman refleksolog ekibiyle profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için tamamlayıcı destek." />
         <meta name="keywords" content="refleksoloji, refleksoloji Ankara, Bağlıca refleksoloji, refleksoloji merkezi, medikal refleksoloji, refleksolog Ankara, otizm refleksoloji desteği, DEHB refleksoloji, bel fıtığı refleksoloji, refleksoloji faydaları, ayak refleksolojisi, migren refleksoloji, tamamlayıcı tıp uygulamaları, Medipodo Ayak Sağlığı" />
+        <link rel="canonical" href="https://medipodo.com/blog/ankara-baglica-refleksoloji" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
         <meta property="og:title" content="Ankara Bağlıca Refleksoloji | Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:description" content="Ankara Bağlıca'da podolog ve uzman refleksolog ekibiyle profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için tamamlayıcı destek." />
         <meta property="og:image" content="https://medipodo.com/blog-images/refleksoloji/refleksoloji.jpg" />
-        <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://medipodo.com/blog/ankara-baglica-refleksoloji" />
+        <meta property="og:url" content="https://medipodo.com/blog/ankara-baglica-refleksoloji" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ankara Bağlıca Refleksoloji | Medipodo" />
+        <meta name="twitter:description" content="Ankara Bağlıca'da profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için destek." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/refleksoloji/refleksoloji.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

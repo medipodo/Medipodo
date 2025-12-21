@@ -16,10 +16,22 @@ const BSBantBlog = () => {
         <title>B/S Bant Uygulaması Nedir? Batık Tırnak İçin Daha Mı Konforlu? | Medipodo</title>
         <meta name="description" content="B/S Bant uygulaması nedir, nasıl çalışır? Batık tırnak tedavisinde tırnak teline alternatif, acısız ve estetik çözüm. Ankara Medipodo'da uygulanıyor." />
         <meta name="keywords" content="bs bant, b/s bant, batık tırnak tedavisi, tırnak teli, tırnak bandi, ankara batık tırnak, medipodo, podoloji" />
+        <link rel="canonical" href="https://medipodo.com/blog/bs-bant-uygulamasi" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
         <meta property="og:title" content="B/S Bant Uygulaması - Batık Tırnak İçin Acısız Çözüm" />
         <meta property="og:description" content="Batık tırnak tedavisinde modern ve estetik çözüm: B/S Bant uygulaması. Tırnak telinden farkları ve avantajları." />
         <meta property="og:image" content="https://medipodo.com/images/blog/bs-bant/bs-bant.jpg" />
-        <link rel="canonical" href="https://medipodo.com/blog/bs-bant-uygulamasi" />
+        <meta property="og:url" content="https://medipodo.com/blog/bs-bant-uygulamasi" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="B/S Bant Uygulaması - Batık Tırnak İçin Acısız Çözüm" />
+        <meta name="twitter:description" content="Batık tırnak tedavisinde modern ve estetik çözüm: B/S Bant uygulaması." />
+        <meta name="twitter:image" content="https://medipodo.com/images/blog/bs-bant/bs-bant.jpg" />
       </Helmet>
 
       <div className="min-h-screen bg-white">

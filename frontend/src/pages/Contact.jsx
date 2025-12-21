@@ -20,6 +20,21 @@ const Contact = () => {
         <title>İletişim - Medipodo Podoloji Merkezi | Ankara Bağlıca</title>
         <meta name="description" content="Medipodo Podoloji Merkezi iletişim bilgileri. Adres: Bağlıca, Ankara. Randevu ve sorularınız için bize ulaşın." />
         <link rel="canonical" href="https://medipodo.com/iletisim" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="İletişim - Medipodo Podoloji Merkezi | Ankara Bağlıca" />
+        <meta property="og:description" content="Medipodo Podoloji Merkezi iletişim bilgileri. Adres: Bağlıca, Ankara. Randevu ve sorularınız için bize ulaşın." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:url" content="https://medipodo.com/iletisim" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="İletişim - Medipodo Podoloji Merkezi" />
+        <meta name="twitter:description" content="Medipodo Podoloji Merkezi iletişim bilgileri. Randevu için bize ulaşın." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
       </Helmet>
       <div className="min-h-screen">
         {/* Hero Section */}

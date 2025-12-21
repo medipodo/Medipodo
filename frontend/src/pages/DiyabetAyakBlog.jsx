@@ -14,10 +14,22 @@ const DiyabetAyakBlog = () => {
         <title>Diyabet Hastalarında Ayak Sağlığının Önemi: Görünmez Tehlikeler | Medipodo</title>
         <meta name="description" content="Diyabetik ayak sendromundan korunma yolları, günlük bakım rutini ve podolog tavsiyeleri. Medipodo ile ayak sağlığınızı koruyun." />
         <meta name="keywords" content="diyabet, diyabetik ayak, nöropati, anjiyopati, ayak sağlığı, podolog, Medipodo, diyabet bakımı" />
-        <meta property="og:title" content="Diyabet ve Ayak Sağlığı: Kritik Rehber" />
-        <meta property="og:description" content="Diyabetli bireylerin ayak sağlığını korumak için podolog onaylı günlük bakım rehberi." />
-        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/diyabet-ve-ayak-sagligi" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Diyabet Hastalarında Ayak Sağlığının Önemi: Görünmez Tehlikeler" />
+        <meta property="og:description" content="Diyabetik ayak sendromundan korunma yolları, günlük bakım rutini ve podolog tavsiyeleri." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/diyabet/1.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/diyabet-ve-ayak-sagligi" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Diyabet Hastalarında Ayak Sağlığının Önemi" />
+        <meta name="twitter:description" content="Diyabetik ayak sendromundan korunma yolları ve podolog tavsiyeleri." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/diyabet/1.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

@@ -14,10 +14,22 @@ const BatikTirnakBlog = () => {
         <title>Tırnak Batması Neden Olur? En Sık Yapılan Hatalar ve Doğru Çözümler | Medipodo</title>
         <meta name="description" content="Tırnak batmasının nedenleri, evde yapılan hatalar, podolojik yöntemler ve kalıcı çözümler. Medipodo ile tırnak batması sorununu çözün." />
         <meta name="keywords" content="tırnak batması, batık tırnak, podoloji, ayak sağlığı, B/S bant, 3TO tel, Medipodo, tırnak tedavisi" />
-        <meta property="og:title" content="Tırnak Batması: Nedenleri ve Profesyonel Çözümler" />
-        <meta property="og:description" content="Tırnak batmasında yapılan hatalar ve Medipodo'da uygulanan ağrısız podolojik tedavi yöntemleri." />
-        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://medipodo.com/blog/tirnakbatmasi" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Tırnak Batması Neden Olur? En Sık Yapılan Hatalar ve Doğru Çözümler" />
+        <meta property="og:description" content="Tırnak batmasının nedenleri, evde yapılan hatalar ve podolojik çözümler. Medipodo ile tırnak batması sorununu çözün." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/batik-tirnak/kapak.jpg" />
+        <meta property="og:url" content="https://medipodo.com/blog/tirnakbatmasi" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tırnak Batması: Nedenleri ve Profesyonel Çözümler" />
+        <meta name="twitter:description" content="Tırnak batmasında yapılan hatalar ve ağrısız podolojik tedavi yöntemleri." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/batik-tirnak/kapak.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
