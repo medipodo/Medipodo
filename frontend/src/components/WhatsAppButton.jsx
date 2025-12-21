@@ -5,7 +5,7 @@ import { siteInfo } from '../mock';
 const WhatsAppButton = () => {
   const handleClick = () => {
     window.open(
-      `https://wa.me/${siteInfo.whatsapp}?text=Merhaba, bilgi almak istiyorum.`,
+      `https://wa.me/${siteInfo.whatsapp}?text=Merhaba, Medipodo web sitenizden yazıyorum. Bilgi alabilir miyim?`,
       '_blank'
     );
   };
