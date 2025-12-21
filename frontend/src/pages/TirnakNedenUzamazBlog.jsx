@@ -211,7 +211,7 @@ const TirnakNedenUzamazBlog = () => {
                 Ayak tırnağının tamamen yenilenmesi <strong>12–18 ay</strong> sürebilir. Bu doğal hızın kalıcı şekilde düşmesi, 
                 tırnak üretim merkezinde (matriks) veya tırnak yatağında bir sorun olduğuna işaret eder. 
                 Bu nedenle tırnak uzamasında belirgin bir yavaşlama fark edildiğinde, 
-                <Link to="/hizmet/medikal-ayak-bakimi" className="text-blue-700 font-semibold hover:underline"> medikal ayak bakımı</Link> ile 
+                <Link to="/hizmet/ayak-bakimi" className="text-blue-700 font-semibold hover:underline"> medikal ayak bakımı</Link> ile 
                 profesyonel değerlendirme yapılması önerilir.
               </p>
 
@@ -858,7 +858,7 @@ const TirnakNedenUzamazBlog = () => {
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold text-blue-900 mb-3">🔹 1. Düzenli Medikal Ayak Bakımı</h3>
                     <p className="text-gray-700 leading-relaxed">
-                      3–4 haftada bir yapılan profesyonel <Link to="/hizmet/medikal-ayak-bakimi" className="text-blue-700 font-semibold hover:underline">medikal ayak bakımı</Link>, 
+                      3–4 haftada bir yapılan profesyonel <Link to="/hizmet/ayak-bakimi" className="text-blue-700 font-semibold hover:underline">medikal ayak bakımı</Link>, 
                       tırnağın önündeki fiziksel engelleri ortadan kaldırır. Kalınlaşmış tırnakların inceltilmesi, 
                       mantar tedavisi ve düzgün kesim için uzman desteği alınmalıdır.
                     </p>
