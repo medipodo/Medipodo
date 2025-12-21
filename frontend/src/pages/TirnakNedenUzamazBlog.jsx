@@ -175,7 +175,7 @@ const TirnakNedenUzamazBlog = () => {
                   alt="Kısa ve uzamayan ayak tırnakları örneği - podolojik değerlendirme gerektiren durum"
                   className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
                 />
-                <p className="text-center text-sm text-gray-500 mt-2">Uzamayan kısa ayak tırnakları - podolojik değerlendirme gerektirir</p>
+                <p className="text-center text-sm text-gray-500 mt-2">Uzamayan tırnaklar podolojik değerlendirme gerektirir</p>
               </div>
 
               {/* Ayak Tırnakları Ne Kadar Sürede Uzar */}
