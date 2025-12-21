@@ -59,7 +59,7 @@ const HeroSlider = () => {
   return (
     <>
       {/* MOBILE VERSION */}
-      <div className="block md:hidden relative w-full bg-white pt-20">
+      <div className="block md:hidden relative w-full bg-gradient-to-r from-blue-900 to-blue-700 pt-20">
         {slides.map((slide, index) => (
           <div
             key={index}
