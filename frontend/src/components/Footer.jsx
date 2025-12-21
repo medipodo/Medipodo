@@ -66,13 +66,37 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
-            <ul className="space-y-2 text-sm text-blue-100">
-              <li>• Batık Tırnak Tedavisi</li>
-              <li>• Tırnak Mantarı Tedavisi</li>
-              <li>• Topuk Bakımı</li>
-              <li>• Nasır Tedavisi</li>
-              <li>• Medikal Ayak Bakımı</li>
-              <li>• Evde Medikal Ayak Bakımı</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/hizmet/batik-tirnak" className="text-blue-100 hover:text-white transition-colors">
+                  • Batık Tırnak Tedavisi
+                </Link>
+              </li>
+              <li>
+                <Link to="/hizmet/tirnak-mantari" className="text-blue-100 hover:text-white transition-colors">
+                  • Tırnak Mantarı Tedavisi
+                </Link>
+              </li>
+              <li>
+                <Link to="/hizmet/topuk-bakimi" className="text-blue-100 hover:text-white transition-colors">
+                  • Topuk Bakımı
+                </Link>
+              </li>
+              <li>
+                <Link to="/hizmet/nasir-tedavisi" className="text-blue-100 hover:text-white transition-colors">
+                  • Nasır Tedavisi
+                </Link>
+              </li>
+              <li>
+                <Link to="/hizmet/ayak-bakimi" className="text-blue-100 hover:text-white transition-colors">
+                  • Medikal Ayak Bakımı
+                </Link>
+              </li>
+              <li>
+                <Link to="/hizmet/evde-bakim" className="text-blue-100 hover:text-white transition-colors">
+                  • Evde Medikal Ayak Bakımı
+                </Link>
+              </li>
             </ul>
           </div>
 
