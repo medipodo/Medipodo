@@ -11,6 +11,21 @@ const Team = () => {
         <title>Kadromuz - Medipodo Podoloji Merkezi | Uzman Ekibimiz</title>
         <meta name="description" content="Medipodo uzman podolog ekibi. Deneyimli ve sertifikalı podologlarımızla tanışın." />
         <link rel="canonical" href="https://medipodo.com/kadromuz" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kadromuz - Medipodo Podoloji Merkezi | Uzman Ekibimiz" />
+        <meta property="og:description" content="Medipodo uzman podolog ekibi. Deneyimli ve sertifikalı podologlarımızla tanışın." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:url" content="https://medipodo.com/kadromuz" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kadromuz - Medipodo Podoloji Merkezi" />
+        <meta name="twitter:description" content="Deneyimli ve sertifikalı podologlarımızla tanışın." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}

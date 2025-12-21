@@ -14,6 +14,21 @@ const Gallery = () => {
         <title>Galeri - Medipodo Podoloji Merkezi | Tedavi Öncesi Sonrası</title>
         <meta name="description" content="Medipodo tedavi galerisi. Batık tırnak, tırnak mantarı ve ayak bakımı tedavilerinin öncesi ve sonrası fotoğrafları." />
         <link rel="canonical" href="https://medipodo.com/galeri" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Galeri - Medipodo Podoloji Merkezi | Tedavi Öncesi Sonrası" />
+        <meta property="og:description" content="Medipodo tedavi galerisi. Batık tırnak, tırnak mantarı ve ayak bakımı tedavilerinin öncesi ve sonrası fotoğrafları." />
+        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:url" content="https://medipodo.com/galeri" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Galeri - Medipodo Podoloji Merkezi" />
+        <meta name="twitter:description" content="Tedavi öncesi ve sonrası fotoğraflarımız." />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}
