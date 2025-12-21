@@ -3,13 +3,13 @@
 export const enrichedBlogPosts = [
   {
     id: 'tirnak-neden-uzamaz',
-    title: 'Tırnak Neden Uzamaz? Podolog Gözüyle Detaylı İnceleme',
+    title: 'Tırnak Neden Uzamaz? Podolog Gözüyle Matriks Hasarından Mantara Kadar Detaylı İnceleme',
     slug: 'tirnak-neden-uzamaz',
-    excerpt: 'Ayak tırnağı neden uzamaz? Matriks hasarı, tırnak mantarı, dolaşım bozuklukları ve beslenme eksikliklerinin tırnak uzamasına etkisi. Podolojik çözümler ve tavsiyeler.',
-    image: '/images/blog/tirnak-neden-uzamaz/blog-kapak-tirnak-neden-uzamaz.jpg',
+    excerpt: 'Ayak tırnağı neden uzamaz? Matriks hasarı, ayakkabı baskısı, akut travmalar, tırnak mantarı, dolaşım bozuklukları ve beslenme eksikliklerinin tırnak uzamasına etkisi. Ankara Bağlıca\'da podolojik çözümler.',
+    image: '/images/blog/tirnak-neden-uzamaz/güncel-kapak-görseli-tirnak-uzamamasi.png',
     date: '21 Aralık 2025',
-    readTime: '12 dk',
-    tags: ['Tırnak Sağlığı', 'Podoloji', 'Matriks Hasarı', 'Ayak Bakımı'],
+    readTime: '15 dk',
+    tags: ['Tırnak Sağlığı', 'Podoloji', 'Matriks Hasarı', 'Tırnak Mantarı', 'Medikal Ayak Bakımı', 'Ankara Podolog'],
     content: 'Özel blog sayfası: /blog/tirnak-neden-uzamaz'
   },
   {
