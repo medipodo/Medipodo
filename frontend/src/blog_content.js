@@ -2,6 +2,17 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'tirnak-neden-uzamaz',
+    title: 'Tırnak Neden Uzamaz? Podolog Gözüyle Detaylı İnceleme',
+    slug: 'tirnak-neden-uzamaz',
+    excerpt: 'Ayak tırnağı neden uzamaz? Matriks hasarı, tırnak mantarı, dolaşım bozuklukları ve beslenme eksikliklerinin tırnak uzamasına etkisi. Podolojik çözümler ve tavsiyeler.',
+    image: '/images/blog/tirnak-neden-uzamaz/blog-kapak-tirnak-neden-uzamaz.jpg',
+    date: '21 Aralık 2025',
+    readTime: '12 dk',
+    tags: ['Tırnak Sağlığı', 'Podoloji', 'Matriks Hasarı', 'Ayak Bakımı'],
+    content: 'Özel blog sayfası: /blog/tirnak-neden-uzamaz'
+  },
+  {
     id: 'tirnak-neden-kalinlasir',
     title: 'Tırnak Neden Kalınlaşır? Ayak Tırnağı Kalınlaşmasının 7 Nedeni',
     slug: 'tirnak-neden-kalinlasir',
