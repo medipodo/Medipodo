@@ -468,23 +468,13 @@ const TirnakNedenUzamazBlog = () => {
                     düzenli takip, tedavinin başarısını önemli ölçüde artırır.
                   </p>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <img 
-                        src="/images/blog/tirnak-neden-uzamaz/tirnak-mantari-ankara.jpg" 
-                        alt="Tırnak mantarı tedavisi - Ankara Bağlıca podolog"
-                        className="rounded-lg shadow-md w-full"
-                      />
-                      <p className="text-center text-sm text-gray-500 mt-2">Tırnak mantarı - Podolojik tedavi öncesi</p>
-                    </div>
-                    <div>
-                      <img 
-                        src="/images/blog/tirnak-neden-uzamaz/tirnak-mantari2.jpg" 
-                        alt="İlerlemiş tırnak mantarı örneği"
-                        className="rounded-lg shadow-md w-full"
-                      />
-                      <p className="text-center text-sm text-gray-500 mt-2">İlerlemiş tırnak mantarı</p>
-                    </div>
+                  <div className="mb-6">
+                    <img 
+                      src="/images/blog/tirnak-neden-uzamaz/tirnak-mantari-ankara.jpg" 
+                      alt="Tırnak mantarı tedavisi - Ankara Bağlıca podolog"
+                      className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
+                    />
+                    <p className="text-center text-sm text-gray-500 mt-2">Tırnak mantarı - Podolojik tedavi öncesi</p>
                   </div>
                 </div>
 
@@ -515,6 +505,15 @@ const TirnakNedenUzamazBlog = () => {
                         <span>Düzenli podolojik inceltme ile bu engel ortadan kaldırılır</span>
                       </li>
                     </ul>
+                  </div>
+
+                  <div className="mb-6">
+                    <img 
+                      src="/images/blog/tirnak-neden-uzamaz/onikogrifoz.jpg" 
+                      alt="Onikogrifoz (Boynuz Tırnak) örneği - kalınlaşmış ve kıvrılmış tırnak"
+                      className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
+                    />
+                    <p className="text-center text-sm text-gray-500 mt-2">Onikogrifoz - Boynuz benzeri kalınlaşmış tırnak</p>
                   </div>
                 </div>
 
@@ -551,23 +550,13 @@ const TirnakNedenUzamazBlog = () => {
                     </ul>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-                    <div>
-                      <img 
-                        src="/images/blog/tirnak-neden-uzamaz/tirnak-sedefi.jpg" 
-                        alt="Tırnak sedefi örneği - pitting ve kalınlaşma"
-                        className="rounded-lg shadow-md w-full"
-                      />
-                      <p className="text-center text-sm text-gray-500 mt-2">Tırnak Sedefi - Çukurcuklanma</p>
-                    </div>
-                    <div>
-                      <img 
-                        src="/images/blog/tirnak-neden-uzamaz/tirnak-sedefi2.jpg" 
-                        alt="Sedef hastalığında tırnak tutulumu"
-                        className="rounded-lg shadow-md w-full"
-                      />
-                      <p className="text-center text-sm text-gray-500 mt-2">Sedef Hastalığında Tırnak Tutulumu</p>
-                    </div>
+                  <div className="mb-4">
+                    <img 
+                      src="/images/blog/tirnak-neden-uzamaz/tirnak-sedefi2.jpg" 
+                      alt="Sedef hastalığında tırnak tutulumu"
+                      className="rounded-lg shadow-md w-full max-w-2xl mx-auto"
+                    />
+                    <p className="text-center text-sm text-gray-500 mt-2">Sedef Hastalığında Tırnak Tutulumu</p>
                   </div>
                 </div>
               </div>
