@@ -70,6 +70,8 @@ const HeroSlider = () => {
                 src={slide.mobileImage}
                 alt={slide.title}
                 className="w-full h-auto"
+                fetchPriority={index === 0 ? "high" : "auto"}
+                loading={index === 0 ? "eager" : "lazy"}
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex items-end pb-12">
@@ -133,6 +135,8 @@ const HeroSlider = () => {
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-auto"
+                fetchPriority={index === 0 ? "high" : "auto"}
+                loading={index === 0 ? "eager" : "lazy"}
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex items-end pb-16">

@@ -11,6 +11,10 @@
         <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
         
+        <!-- LCP Optimizasyonu - Ana slider görseli için preload -->
+        <link rel="preload" as="image" href="/images/slider/mobile/ankara-podolog.jpg" media="(max-width: 767px)" fetchpriority="high" />
+        <link rel="preload" as="image" href="/images/slider/medipodo.jpg" media="(min-width: 768px)" fetchpriority="high" />
+        
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1e3a8a" />
         <meta name="description" content="Ankara Bağlıca'da profesyonel podoloji ve ayak sağlığı merkezi. Batık tırnak, tırnak mantarı, nasır tedavisi, diyabetik ayak bakımı ve refleksoloji hizmetleri." />
