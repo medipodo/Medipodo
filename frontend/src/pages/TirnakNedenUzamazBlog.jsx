@@ -61,6 +61,22 @@ const TirnakNedenUzamazBlog = () => {
         <meta name="description" content="Ayak tırnağı neden uzamaz? Matriks hasarı, tırnak mantarı, ayakkabı baskısı, dolaşım bozuklukları ve beslenme eksikliklerinin tırnak uzamasına etkisi. Ankara Bağlıca'da podolojik çözümler." />
         <meta name="keywords" content="tırnak neden uzamaz, ayak tırnağı uzaması, matriks hasarı, tırnak mantarı, podolog ankara, medikal ayak bakımı, tırnak sağlığı" />
         <link rel="canonical" href="https://medipodo.com/blog/tirnak-neden-uzamaz" />
+        
+        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Tırnak Neden Uzamaz? Podolog Gözüyle Detaylı İnceleme" />
+        <meta property="og:description" content="Ayak tırnağı neden uzamaz? Matriks hasarı, tırnak mantarı, ayakkabı baskısı ve dolaşım bozukluklarının tırnak uzamasına etkisi. Podolojik çözümler." />
+        <meta property="og:image" content="https://medipodo.com/images/blog/tirnak-neden-uzamaz/güncel-kapak-görseli-tirnak-uzamamasi.png" />
+        <meta property="og:url" content="https://medipodo.com/blog/tirnak-neden-uzamaz" />
+        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
+        <meta property="og:locale" content="tr_TR" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tırnak Neden Uzamaz? Podolog Gözüyle Detaylı İnceleme" />
+        <meta name="twitter:description" content="Ayak tırnağı neden uzamaz? Matriks hasarı, tırnak mantarı, ayakkabı baskısı ve dolaşım bozukluklarının etkisi." />
+        <meta name="twitter:image" content="https://medipodo.com/images/blog/tirnak-neden-uzamaz/güncel-kapak-görseli-tirnak-uzamamasi.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
