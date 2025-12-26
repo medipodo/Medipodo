@@ -22,7 +22,7 @@ const Services = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Hizmetlerimiz - Medipodo Podoloji Merkezi | Ankara" />
         <meta property="og:description" content="Medipodo'da sunulan profesyonel podoloji hizmetleri: Batık tırnak tedavisi, tırnak mantarı, nasır tedavisi, medikal ayak bakımı ve daha fazlası." />
-        <meta property="og:image" content="https://medipodo.com/images/services/Batik-Tirnak-tedavisi.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/hizmetler" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -31,7 +31,7 @@ const Services = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Hizmetlerimiz - Medipodo Podoloji Merkezi" />
         <meta name="twitter:description" content="Profesyonel podoloji hizmetleri: Batık tırnak, tırnak mantarı, nasır tedavisi ve daha fazlası." />
-        <meta name="twitter:image" content="https://medipodo.com/images/services/Batik-Tirnak-tedavisi.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}

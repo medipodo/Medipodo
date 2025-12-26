@@ -20,7 +20,7 @@ const TopukDikeniBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Topuk Dikeni (Calcanei Epin) Nedir ve Nasıl Önlenir?" />
         <meta property="og:description" content="Topuk dikeni nedir, belirtileri nelerdir ve nasıl önlenir? Podolojik yaklaşımlar ve kalıcı çözümler." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/topuk-dikeni/kapak%20g%C3%B6rseli%20topuk%20dikeni.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/topuk-dikeni" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -29,7 +29,7 @@ const TopukDikeniBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Topuk Dikeni Nedir ve Nasıl Önlenir?" />
         <meta name="twitter:description" content="Topuk dikeni nedir, belirtileri ve podolojik tedavi yöntemleri." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/topuk-dikeni/kapak%20g%C3%B6rseli%20topuk%20dikeni.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
