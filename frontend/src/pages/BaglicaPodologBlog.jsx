@@ -20,7 +20,7 @@ const BaglicaPodologBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Bağlıca Podolog Hizmetleri - Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:description" content="Profesyonel podolog hizmetleri ile ayak sağlığınız güvende. Tırnak batması, mantar, nasır ve çatlak topuk tedavileri." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/baglica-podolog-hizmetleri" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -29,7 +29,7 @@ const BaglicaPodologBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Bağlıca Podolog Hizmetleri - Medipodo" />
         <meta name="twitter:description" content="Profesyonel podolog hizmetleri ile ayak sağlığınız güvende." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

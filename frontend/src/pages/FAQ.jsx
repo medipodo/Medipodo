@@ -37,7 +37,7 @@ const FAQ = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Sık Sorulan Sorular - Medipodo Podoloji | Ayak Sağlığı" />
         <meta property="og:description" content="Podoloji, batık tırnak, tırnak mantarı, nasır hakkında sık sorulan sorular ve uzman cevapları." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/sikca-sorulan-sorular" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -46,7 +46,7 @@ const FAQ = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sık Sorulan Sorular - Medipodo Podoloji" />
         <meta name="twitter:description" content="Podoloji hakkında sık sorulan sorular ve uzman cevapları." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         
         {/* JSON-LD Schema */}
         <script type="application/ld+json">
