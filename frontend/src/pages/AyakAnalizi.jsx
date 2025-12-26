@@ -261,6 +261,17 @@ const AyakAnalizi = () => {
         <title>Ayak Analizi - Medipodo | Kişiselleştirilmiş Değerlendirme</title>
         <meta name="description" content="Ayaklarınızı analiz edin ve size özel podolojik değerlendirme alın. 6 soruda ayak sağlığınızı keşfedin." />
         <link rel="canonical" href="https://medipodo.com/ayak-analizi" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ayak Analizi - Medipodo" />
+        <meta property="og:description" content="Ayaklarınızı analiz edin ve size özel podolojik değerlendirme alın." />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:url" content="https://medipodo.com/ayak-analizi" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
 
       <style>{`
