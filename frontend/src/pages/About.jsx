@@ -38,7 +38,7 @@ const About = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Hakkımızda - Medipodo Podoloji Merkezi | Ankara" />
         <meta property="og:description" content="Medipodo Ayak Sağlığı Merkezi hakkında bilgi edinin. Uzman podolog kadromuz ve profesyonel hizmet anlayışımızla tanışın." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/hakkimizda" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -47,7 +47,7 @@ const About = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Hakkımızda - Medipodo Podoloji Merkezi" />
         <meta name="twitter:description" content="Uzman podolog kadromuz ve profesyonel hizmet anlayışımızla tanışın." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/14.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen">
         {/* Hero Section */}
