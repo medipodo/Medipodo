@@ -82,7 +82,7 @@ const HeroSlider = () => {
                     </p>
                     <h2 className="text-2xl font-bold mb-2 leading-tight">
                       {slide.title}
-                    </h1>
+                    </h2>
                     <p className="text-sm mb-5 text-gray-200 px-2">
                       {slide.description}
                     </p>
