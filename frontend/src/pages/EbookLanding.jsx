@@ -42,6 +42,8 @@ const EbookLanding = () => {
         <meta property="og:title" content="Ayak Bakımı Kılavuzu - Uzman Podolog Rehberi" />
         <meta property="og:description" content="Ağrılı ayaklara son! Evde uygulayabileceğiniz profesyonel ayak bakımı rehberi." />
         <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <link rel="canonical" href="https://medipodo.com/ayak-bakim-kilavuzu" />
       </Helmet>
 
