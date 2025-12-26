@@ -30,6 +30,17 @@ const ProductDetail = () => {
         <title>{product.name} - PediZone® | Medipodo</title>
         <meta name="description" content={product.description} />
         <link rel="canonical" href={`https://medipodo.com/urun/${slug}`} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.name} - PediZone® | Medipodo`} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:url" content={`https://medipodo.com/urun/${slug}`} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen bg-gray-50">
       {/* Breadcrumb */}
