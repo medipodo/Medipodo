@@ -20,7 +20,7 @@ const DiyabetAyakBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Diyabet Hastalarında Ayak Sağlığının Önemi: Görünmez Tehlikeler" />
         <meta property="og:description" content="Diyabetik ayak sendromundan korunma yolları, günlük bakım rutini ve podolog tavsiyeleri." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/diyabet/1.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/diyabet-ve-ayak-sagligi" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -29,7 +29,7 @@ const DiyabetAyakBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Diyabet Hastalarında Ayak Sağlığının Önemi" />
         <meta name="twitter:description" content="Diyabetik ayak sendromundan korunma yolları ve podolog tavsiyeleri." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/diyabet/1.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

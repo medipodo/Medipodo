@@ -20,7 +20,7 @@ const AyakKokusuBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Ayak Kokusu ve Mantar İlişkisi: Neden Olur, Nasıl Önlenir?" />
         <meta property="og:description" content="Ayak kokusu ve mantar arasındaki bilimsel ilişki. Keratolitik etki ve antifungal koruma ile kalıcı çözüm." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/ayak-kokusu/2.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/ayak-kokusu-ve-mantar-iliskisi" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -29,7 +29,7 @@ const AyakKokusuBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ayak Kokusu ve Mantar İlişkisi" />
         <meta name="twitter:description" content="Ayak kokusunun bilimsel nedenleri ve podolog onaylı kalıcı çözüm yöntemleri." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/ayak-kokusu/2.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
