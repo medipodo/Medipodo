@@ -10,6 +10,17 @@ const PrivacyPolicy = () => {
         <title>Gizlilik Politikası - Medipodo</title>
         <meta name="description" content="Medipodo gizlilik politikası. Kişisel verilerinizin korunması ve KVKK uyumu hakkında bilgi." />
         <link rel="canonical" href="https://medipodo.com/gizlilik-politikasi" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gizlilik Politikası - Medipodo" />
+        <meta property="og:description" content="Medipodo gizlilik politikası ve KVKK uyumu." />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:url" content="https://medipodo.com/gizlilik-politikasi" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen bg-white">
       {/* Hero Section */}

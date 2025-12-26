@@ -10,6 +10,17 @@ const TermsOfService = () => {
         <title>Kullanım Şartları - Medipodo</title>
         <meta name="description" content="Medipodo kullanım şartları ve yasal uyarı. Web sitesi kullanım koşulları hakkında bilgi." />
         <link rel="canonical" href="https://medipodo.com/kullanim-sartlari" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kullanım Şartları - Medipodo" />
+        <meta property="og:description" content="Medipodo kullanım şartları ve yasal uyarı." />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:url" content="https://medipodo.com/kullanim-sartlari" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen bg-white">
       {/* Hero Section */}
