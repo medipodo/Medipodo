@@ -66,6 +66,9 @@ const Home = () => {
         <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen">
+        {/* SEO H1 - Görsel olarak gizli ama erişilebilir */}
+        <h1 className="sr-only">Ankara Podolog | Medipodo Ayak Sağlığı Merkezi</h1>
+        
         {/* Hero Slider */}
         <HeroSlider />
 
