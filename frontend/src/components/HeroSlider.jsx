@@ -80,7 +80,7 @@ const HeroSlider = () => {
                     <p className="text-blue-300 font-semibold mb-1 text-[11px] uppercase tracking-wider">
                       {slide.subtitle}
                     </p>
-                    <h1 className="text-2xl font-bold mb-2 leading-tight">
+                    <h2 className="text-2xl font-bold mb-2 leading-tight">
                       {slide.title}
                     </h1>
                     <p className="text-sm mb-5 text-gray-200 px-2">
@@ -146,9 +146,9 @@ const HeroSlider = () => {
                       <p className="text-blue-300 font-semibold mb-2 text-sm uppercase tracking-wider">
                         {slide.subtitle}
                       </p>
-                      <h1 className="text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+                      <h2 className="text-4xl lg:text-5xl font-bold mb-3 leading-tight">
                         {slide.title}
-                      </h1>
+                      </h2>
                       <p className="text-lg mb-6 text-gray-200">
                         {slide.description}
                       </p>
