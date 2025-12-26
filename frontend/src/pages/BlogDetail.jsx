@@ -38,6 +38,17 @@ const BlogDetail = () => {
         <title>{post.title} - Medipodo Blog</title>
         <meta name="description" content={post.excerpt} />
         <link rel="canonical" href={`https://medipodo.com/blog/${slug}`} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={`${post.title} - Medipodo Blog`} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:url" content={`https://medipodo.com/blog/${slug}`} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen">
         {/* Hero Section */}
