@@ -20,7 +20,7 @@ const RefleksolojiBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Ankara Bağlıca Refleksoloji | Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:description" content="Ankara Bağlıca'da podolog ve uzman refleksolog ekibiyle profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için tamamlayıcı destek." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/refleksoloji/refleksoloji.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/ankara-baglica-refleksoloji" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -29,7 +29,7 @@ const RefleksolojiBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ankara Bağlıca Refleksoloji | Medipodo" />
         <meta name="twitter:description" content="Ankara Bağlıca'da profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için destek." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/refleksoloji/refleksoloji.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

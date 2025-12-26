@@ -41,7 +41,7 @@ const EbookLanding = () => {
         <meta name="keywords" content="ayak bakımı, batık tırnak, tırnak mantarı, nasır, çatlak topuk, podoloji, e-kitap" />
         <meta property="og:title" content="Ayak Bakımı Kılavuzu - Uzman Podolog Rehberi" />
         <meta property="og:description" content="Ağrılı ayaklara son! Evde uygulayabileceğiniz profesyonel ayak bakımı rehberi." />
-        <meta property="og:image" content="https://medipodo.com/images/ebook/cover.png" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <link rel="canonical" href="https://medipodo.com/ayak-bakim-kilavuzu" />
       </Helmet>
 

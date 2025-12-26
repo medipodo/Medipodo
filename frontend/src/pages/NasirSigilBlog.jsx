@@ -20,7 +20,7 @@ const NasirSigilBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Nasır ve Siğil Farkları - Tedavi Yöntemleri | Medipodo Bağlıca" />
         <meta property="og:description" content="Nasır ve plantar siğil arasındaki farklar, tedavi yöntemleri ve kriyoterapi uygulamaları." />
-        <meta property="og:image" content="https://medipodo.com/blog-images/nasir-sigil/Nas%C4%B1r%20Nedir%20g%C3%B6rseli.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/nasir-sigil-farklari" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -29,7 +29,7 @@ const NasirSigilBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nasır ve Siğil Farkları - Tedavi Yöntemleri" />
         <meta name="twitter:description" content="Nasır ve plantar siğil arasındaki farklar ve tedavi yöntemleri." />
-        <meta name="twitter:image" content="https://medipodo.com/blog-images/nasir-sigil/Nas%C4%B1r%20Nedir%20g%C3%B6rseli.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
