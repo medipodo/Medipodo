@@ -92,7 +92,7 @@ const ServiceDetail = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`${service.title} - Medipodo Podoloji Merkezi`} />
         <meta property="og:description" content={service.shortDesc} />
-        <meta property="og:image" content={`https://medipodo.com${service.image}`} />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
         <meta property="og:url" content={`https://medipodo.com/hizmet/${serviceId}`} />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -101,7 +101,7 @@ const ServiceDetail = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${service.title} - Medipodo`} />
         <meta name="twitter:description" content={service.shortDesc} />
-        <meta name="twitter:image" content={`https://medipodo.com${service.image}`} />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
       </Helmet>
       <div className="min-h-screen">
       {/* Hero Section */}
