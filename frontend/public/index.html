@@ -38,10 +38,27 @@
         
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
-        These two scripts have been added for the testing, please do not edit or remove them
+        rrweb scripts - ONLY for staging/preview environments (NOT production)
+        Production'da KVKK/GDPR uyumu için kullanıcı davranışı kaydı alınmaz
         -->
-        <script src="https://unpkg.com/rrweb@latest/dist/rrweb.min.js"></script>
-        <script src="https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js"></script>
+        <script>
+            // rrweb ONLY loads in non-production environments (staging, preview, localhost)
+            (function() {
+                var hostname = window.location.hostname;
+                var isProduction = hostname === 'medipodo.com' || hostname === 'www.medipodo.com';
+                
+                if (!isProduction) {
+                    // Load rrweb only in staging/preview/localhost
+                    var rrwebScript = document.createElement('script');
+                    rrwebScript.src = 'https://unpkg.com/rrweb@latest/dist/rrweb.min.js';
+                    document.head.appendChild(rrwebScript);
+                    
+                    var recorderScript = document.createElement('script');
+                    recorderScript.src = 'https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js';
+                    document.head.appendChild(recorderScript);
+                }
+            })();
+        </script>
         <!--
         These two scripts have been added for the Visual Edits, please do not edit or remove them
         -->
