@@ -32,9 +32,21 @@
           gtag('config', 'G-4BX9HLVYKV');
         </script>
         
-        <!-- Google AdSense -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5400209193949629"
-             crossorigin="anonymous"></script>
+        <!-- Google AdSense - GEÇİCİ OLARAK DEVRE DIŞI (Onay bekliyor)
+             Tekrar aktif etmek için: ADSENSE_ENABLED = true yapın
+        -->
+        <script>
+            // AdSense Feature Flag - Onay alındığında true yapılacak
+            var ADSENSE_ENABLED = false;
+            
+            if (ADSENSE_ENABLED) {
+                var adsenseScript = document.createElement('script');
+                adsenseScript.async = true;
+                adsenseScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5400209193949629';
+                adsenseScript.crossOrigin = 'anonymous';
+                document.head.appendChild(adsenseScript);
+            }
+        </script>
         
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
