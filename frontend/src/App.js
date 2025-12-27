@@ -34,6 +34,10 @@ import ProductDetail from './pages/ProductDetail';
 import EbookLanding from './pages/EbookLanding';
 import FAQ from './pages/FAQ';
 
+// Cookie Banner - Production'da devre dışı (KVKK/GDPR - davranışsal izleme yok)
+const isProduction = window.location.hostname === 'medipodo.com' || window.location.hostname === 'www.medipodo.com';
+const SHOW_COOKIE_BANNER = !isProduction; // Sadece staging/preview'da göster
+
 function AppContent() {
   const location = useLocation();
   const isLandingPage = location.pathname === '/ayak-bakim-kilavuzu';
