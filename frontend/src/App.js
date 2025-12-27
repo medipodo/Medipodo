@@ -80,7 +80,7 @@ function AppContent() {
         </Routes>
         {!isLandingPage && <Footer />}
         {!isLandingPage && <WhatsAppButton />}
-        <CookieBanner />
+        {SHOW_COOKIE_BANNER && <CookieBanner />}
     </>
   );
 }
