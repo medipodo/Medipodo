@@ -2,7 +2,7 @@ import React from 'react';
 
 /**
  * Optimize edilmiş görsel komponenti
- * - WebP formatını destekleyen tarayıcılarda WebP kullanır
+ * - WebP formatını primary olarak kullanır
  * - Eski tarayıcılarda JPG fallback
  * - Lazy loading desteği
  * - SEO friendly (alt text)
@@ -18,29 +18,51 @@ const OptimizedImage = ({
   onClick,
   ...props 
 }) => {
-  // Eğer src .jpg ile bitiyorsa, .webp versiyonunu da ekle
-  const getWebPSource = (jpgSrc) => {
-    if (typeof jpgSrc === 'string' && jpgSrc.endsWith('.jpg')) {
-      return jpgSrc.replace('.jpg', '.webp');
+  // WebP ve JPG kaynak URL'lerini belirle
+  const getImageSources = (srcUrl) => {
+    if (!srcUrl || typeof srcUrl !== 'string') {
+      return { webp: srcUrl, jpg: srcUrl };
     }
-    return null;
+
+    // Eğer .webp ile bitiyorsa
+    if (srcUrl.endsWith('.webp')) {
+      return {
+        webp: srcUrl,
+        jpg: srcUrl.replace('.webp', '.jpg')
+      };
+    }
+    
+    // Eğer .jpg ile bitiyorsa (legacy support)
+    if (srcUrl.endsWith('.jpg')) {
+      return {
+        webp: srcUrl.replace('.jpg', '.webp'),
+        jpg: srcUrl
+      };
+    }
+
+    // Diğer formatlar için orijinali kullan
+    return { webp: srcUrl, jpg: srcUrl };
   };
 
-  const webpSrc = getWebPSource(src);
+  const { webp, jpg } = getImageSources(src);
 
   return (
     <picture>
-      {/* Modern tarayıcılar için WebP */}
-      {webpSrc && (
-        <source 
-          srcSet={webpSrc} 
-          type="image/webp"
-        />
-      )}
+      {/* Modern tarayıcılar için WebP (Primary) */}
+      <source 
+        srcSet={webp} 
+        type="image/webp"
+      />
       
-      {/* Fallback: Tüm tarayıcılar için JPG */}
+      {/* Fallback: Eski tarayıcılar için JPG */}
+      <source 
+        srcSet={jpg} 
+        type="image/jpeg"
+      />
+      
+      {/* Default img element */}
       <img
-        src={src}
+        src={webp}
         alt={alt}
         className={className}
         width={width}
