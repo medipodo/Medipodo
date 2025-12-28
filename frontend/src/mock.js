@@ -458,22 +458,22 @@ export const services = [
 export const galleryImages = [
   {
     id: 1,
-    before: '/images/gallery/g1.jpg',
-    after: '/images/gallery/g1.jpg',
+    before: '/images/gallery/g1.webp',
+    after: '/images/gallery/g1.webp',
     title: 'Medikal Akrilik Tırnak',
     description: 'Deformite sonucu tırnak kalmayan bölgeye doğal tırnak uygulaması yaptık'
   },
   {
     id: 2,
-    before: '/images/gallery/g2.jpg',
-    after: '/images/gallery/g2.jpg',
+    before: '/images/gallery/g2.webp',
+    after: '/images/gallery/g2.webp',
     title: 'Ciltte Aşırı Kalınlaşma (Hiperkeratoz) ',
     description: 'Profesyonel medikal ayak bakımı ile harika sonuçlar'
   },
   {
     id: 3,
-    before: '/images/gallery/g3.jpg',
-    after: '/images/gallery/g3.jpg',
+    before: '/images/gallery/g3.webp',
+    after: '/images/gallery/g3.webp',
     title: 'Topuk Bakımı Sonuçları',
     description: 'Derin bakım ile yenilenen ayaklar'
   },
