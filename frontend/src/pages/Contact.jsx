@@ -130,8 +130,8 @@ const Contact = () => {
               <h2 className="text-3xl font-bold text-blue-950 mb-8">Konum</h2>
               <div className="rounded-lg overflow-hidden shadow-lg h-[600px]">
                 <iframe
-                  title="Medipodo Ayak Bakımı Konumu"
-                  src={`https://www.google.com/maps?q=${siteInfo.mapCoordinates.lat},${siteInfo.mapCoordinates.lng}&hl=tr&z=15&output=embed`}
+                  title="Medipodo Bağlıca Ayak Bakımı Konumu"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.9869496431947!2d32.64557037580018!3d39.89692447152798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d339993e4d9ba3%3A0xb51cb666d4e33eb6!2zTWVkaXBvZG8gQmHEn2zEsWNhIEF5YWsgQmFrxLFtxLE!5e0!3m2!1str!2str!4v1767044796689!5m2!1str!2str"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
