@@ -1,14 +1,33 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, ChevronDown, ChevronUp } from 'lucide-react';
 import { blogPosts } from '../mock';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
 
+// FAQ Accordion Component
+const FAQAccordion = ({ question, answer, isOpen, onClick }) => (
+  <div className="border border-gray-200 rounded-lg mb-3">
+    <button
+      className="w-full px-5 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors rounded-lg"
+      onClick={onClick}
+    >
+      <span className="font-medium text-blue-950">{question}</span>
+      {isOpen ? <ChevronUp size={20} className="text-blue-600" /> : <ChevronDown size={20} className="text-gray-400" />}
+    </button>
+    {isOpen && (
+      <div className="px-5 pb-4 text-gray-600 leading-relaxed">
+        {answer}
+      </div>
+    )}
+  </div>
+);
+
 const BlogDetail = () => {
   const { slug } = useParams();
   const post = blogPosts.find(p => p.slug === slug);
+  const [openFAQ, setOpenFAQ] = React.useState(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,6 +51,9 @@ const BlogDetail = () => {
     );
   }
 
+  // Extract FAQ items from faqSchema if exists
+  const faqItems = post.faqSchema?.mainEntity || [];
+
   return (
     <>
       <Helmet>
@@ -43,12 +65,19 @@ const BlogDetail = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={`${post.title} - Medipodo Blog`} />
         <meta property="og:description" content={post.excerpt} />
-        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:image" content={post.image?.startsWith('http') ? post.image : `https://medipodo.com${post.image}`} />
         <meta property="og:url" content={`https://medipodo.com/blog/${slug}`} />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta name="twitter:image" content={post.image?.startsWith('http') ? post.image : `https://medipodo.com${post.image}`} />
+        
+        {/* FAQ Schema JSON-LD */}
+        {post.faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(post.faqSchema)}
+          </script>
+        )}
       </Helmet>
       <div className="min-h-screen">
         {/* Hero Section */}
@@ -107,16 +136,73 @@ const BlogDetail = () => {
             <div className="prose prose-lg max-w-none">
               <div className="text-gray-700 leading-relaxed space-y-6">
                 {post.content.split('\n\n').map((paragraph, index) => {
-                  // Helper function to render text with bold formatting
+                  // Helper function to render text with bold formatting and links
                   const renderText = (text) => {
-                    const parts = text.split(/(\*\*.*?\*\*)/g);
-                    return parts.map((part, i) => {
-                      if (part.startsWith('**') && part.endsWith('**')) {
-                        return <strong key={i} className="font-semibold text-blue-950">{part.replace(/\*\*/g, '')}</strong>;
+                    // First handle markdown links [text](url)
+                    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+                    let parts = [];
+                    let lastIndex = 0;
+                    let match;
+                    
+                    while ((match = linkRegex.exec(text)) !== null) {
+                      // Add text before the link
+                      if (match.index > lastIndex) {
+                        parts.push(text.substring(lastIndex, match.index));
                       }
-                      return part;
+                      // Add the link
+                      parts.push(
+                        <Link 
+                          key={`link-${index}-${match.index}`} 
+                          to={match[2]} 
+                          className="text-blue-600 hover:text-blue-800 underline"
+                        >
+                          {match[1]}
+                        </Link>
+                      );
+                      lastIndex = match.index + match[0].length;
+                    }
+                    // Add remaining text
+                    if (lastIndex < text.length) {
+                      parts.push(text.substring(lastIndex));
+                    }
+                    
+                    // If no links found, just return the text with bold handling
+                    if (parts.length === 0) {
+                      parts = [text];
+                    }
+                    
+                    // Now handle bold formatting in each part
+                    return parts.map((part, i) => {
+                      if (typeof part !== 'string') return part;
+                      
+                      const boldParts = part.split(/(\*\*.*?\*\*)/g);
+                      return boldParts.map((boldPart, j) => {
+                        if (boldPart.startsWith('**') && boldPart.endsWith('**')) {
+                          return <strong key={`${i}-${j}`} className="font-semibold text-blue-950">{boldPart.replace(/\*\*/g, '')}</strong>;
+                        }
+                        return boldPart;
+                      });
                     });
                   };
+
+                  // Handle images ![alt](src)
+                  if (paragraph.startsWith('![')) {
+                    const imgMatch = paragraph.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+                    if (imgMatch) {
+                      return (
+                        <div key={index} className="my-6">
+                          <img 
+                            src={imgMatch[2]} 
+                            alt={imgMatch[1]} 
+                            className="w-full h-auto rounded-lg shadow-md"
+                          />
+                          {imgMatch[1] && (
+                            <p className="text-sm text-gray-500 text-center mt-2">{imgMatch[1]}</p>
+                          )}
+                        </div>
+                      );
+                    }
+                  }
 
                   if (paragraph.startsWith('# ')) {
                     return <h1 key={index} className="text-3xl font-bold text-blue-950 mt-8 mb-4">{paragraph.replace('# ', '')}</h1>;
@@ -152,6 +238,24 @@ const BlogDetail = () => {
                 })}
               </div>
             </div>
+            
+            {/* FAQ Accordion Section */}
+            {faqItems.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-gray-200">
+                <h2 className="text-2xl font-bold text-blue-950 mb-6">Sıkça Sorulan Sorular</h2>
+                <div className="space-y-2">
+                  {faqItems.map((faq, index) => (
+                    <FAQAccordion
+                      key={index}
+                      question={faq.name}
+                      answer={faq.acceptedAnswer.text}
+                      isOpen={openFAQ === index}
+                      onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
