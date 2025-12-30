@@ -532,6 +532,20 @@ export const galleryImages = [
     after: '/images/gallery/g11.jpg',
     title: 'Onychogryphosis',
     description: 'Tırnağın aşırı kalınlaşması ve koç boynuzu gibi kıvrılarak şekil bozması durumudur. Küretajı yapılarak rahatlatılmıştır.'
+  },
+  {
+    id: 12,
+    before: '/images/gallery/g12.webp',
+    after: '/images/gallery/g12.webp',
+    title: 'Alçıda Uzun Süre Kalan Ayaklarda Medikal Ayak Bakımı',
+    description: 'Profesyonel freze işlemiyle ölü derilerden arındırılan ayaklar %15 üreli kremle keratolotik etkiyle sağlıklı görünüme kavuştu'
+  },
+  {
+    id: 13,
+    before: '/images/gallery/g13.webp',
+    after: '/images/gallery/g13.webp',
+    title: 'Yoğun Nasır ve Kalınlaşma Tedavisi',
+    description: 'Yoğun ve düzensiz bası dağılımı sonucu oluşan nasır ve kalınlaşma görüntüsü - Profesyonel medikal ayak bakımı sayesinde tek seansa alınan sonuç mutluluk verici oldu'
   }
 ];
 
