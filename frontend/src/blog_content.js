@@ -340,13 +340,11 @@ Ayak sağlığı, izole bir konu değil, genel sağlık ve yaşam kalitenizin ay
     title: 'Batık Tırnak Nedenleri (Unguis Incarnatus)',
     slug: 'batik-tirnak-nedenleri',
     excerpt: 'Batık tırnak neden oluşur? Yanlış tırnak kesimi, dar ayakkabı, tırnak mantarı ve genetik faktörlerin batık tırnağa etkisi. Podolojik bakış açısıyla önleme ve tedavi.',
-    content: `# Batık Tırnak Nedenleri (Unguis Incarnatus)
-
-Batık tırnak, tırnağın yan kenarlarının çevresindeki yumuşak dokuya baskı yapması veya doku içine gömülmesiyle oluşan, ağrılı ve ilerleyici bir ayak sağlığı problemidir. Tıbbi adıyla unguis incarnatus, hem günlük yaşam kalitesini düşürür hem de tedavi edilmediğinde enfeksiyonlara yol açabilir.
+    content: `Batık tırnak, tırnağın yan kenarlarının çevresindeki yumuşak dokuya baskı yapması veya doku içine gömülmesiyle oluşan, ağrılı ve ilerleyici bir ayak sağlığı problemidir. Tıbbi adıyla unguis incarnatus, hem günlük yaşam kalitesini düşürür hem de tedavi edilmediğinde enfeksiyonlara yol açabilir.
 
 Bu yazıda batık tırnak neden olur, hangi faktörler riski artırır ve nasıl önlenebilir sorularını podolojik bakış açısıyla ele alıyoruz.
 
-![Batık Tırnak Tedavisi Ankara](/images/blog/batik-tirnak-ankara-podolog.webp)
+![Batık tırnak öncesi ve sonrası görüntüsü](/images/blog/batik-tirnak-ankara-podolog.webp)
 
 ## Batık Tırnak Nedir?
 
@@ -462,34 +460,7 @@ Profesyonel batık tırnak tedavisi için [batık tırnak hizmetlerimizi](/hizme
 
 ## Sonuç
 
-Batık tırnak, doğru önlemlerle büyük ölçüde önlenebilen ancak ihmal edildiğinde ciddi sorunlara yol açabilen bir problemdir. Erken fark edilen batık tırnaklarda profesyonel destek almak, hem ağrıyı azaltır hem de ileride oluşabilecek komplikasyonların önüne geçer.
-
-## Sıkça Sorulan Sorular
-
-### Batık tırnak neden oluşur?
-
-Batık tırnak, en sık yanlış tırnak kesimi, dar ayakkabı kullanımı ve tırnak yapısının genetik olarak içe kıvrık olması nedeniyle oluşur. Tırnağın yan kenarı, çevresindeki yumuşak dokuya baskı yaparak zamanla batmaya başlar.
-
-### Yanlış tırnak kesimi batık tırnağa nasıl yol açar?
-
-Tırnakların oval veya çok kısa kesilmesi, köşelerin deri içine doğru uzamasına neden olur. Bu durum tırnak büyüdükçe cilde baskı yapar ve batık tırnak gelişimini tetikler. Tırnaklar her zaman düz (transvers) kesilmelidir.
-
-### Batık tırnak mantar nedeniyle olur mu?
-
-Evet. Tırnak mantarı, tırnağın kalınlaşmasına ve şeklini kaybetmesine neden olur. Kalınlaşan tırnak, yan dokulara daha fazla baskı yaparak batık tırnak riskini artırır. Bu nedenle mantar tedavisi, batık tırnak oluşumunu önlemede önemlidir.
-
-### Batık tırnak kendiliğinden geçer mi?
-
-Erken evrede (hafif kızarıklık ve hassasiyet varken) doğru bakım ile ilerlemesi durdurulabilir. Ancak ileri evre batık tırnaklar kendiliğinden iyileşmez ve profesyonel podolojik müdahale gerektirir.
-
-### Batık tırnak oluşmaması için ne yapılmalı?
-
-Batık tırnağı önlemek için:
-
-- Tırnaklar düz kesilmeli
-- Dar ve sivri burunlu ayakkabılardan kaçınılmalı
-- Ayak hijyenine dikkat edilmeli
-- Kalınlaşan veya şekli bozulan tırnaklar ihmal edilmemelidir`,
+Batık tırnak, doğru önlemlerle büyük ölçüde önlenebilen ancak ihmal edildiğinde ciddi sorunlara yol açabilen bir problemdir. Erken fark edilen batık tırnaklarda profesyonel destek almak, hem ağrıyı azaltır hem de ileride oluşabilecek komplikasyonların önüne geçer.`,
     author: 'Podolog Serdar Ceylan',
     date: '1 Aralık 2025',
     readTime: '10 dakika',
