@@ -337,306 +337,210 @@ Ayak sağlığı, izole bir konu değil, genel sağlık ve yaşam kalitenizin ay
   },
   {
     id: 'batik-tirnak-nedenleri',
-    title: 'Batık Tırnak (Unguis Incarnatus): Podolojik Perspektiften Neden, Önleme ve Modern Tedavi',
+    title: 'Batık Tırnak Nedenleri (Unguis Incarnatus)',
     slug: 'batik-tirnak-nedenleri',
-    excerpt: 'Batık tırnak oluşumunun biomek anik ve anatomik nedenleri, kanıta dayalı önleme stratejileri ve modern pod olojik tedavi seçeneklerinin kapsamlı analizi.',
-    content: `# Batık Tırnak (Unguis Incarnatus): Podolojik Perspektiften Kapsamlı Rehber
+    excerpt: 'Batık tırnak neden oluşur? Yanlış tırnak kesimi, dar ayakkabı, tırnak mantarı ve genetik faktörlerin batık tırnağa etkisi. Podolojik bakış açısıyla önleme ve tedavi.',
+    content: `# Batık Tırnak Nedenleri (Unguis Incarnatus)
 
-Batık tırnak (medikal terminolojide unguis incarnatus), tırnağın yan kenarlarının periungual dokuya (tırnak etrafındaki yumuşak doku) penetrasyonu ile karakterize, ağrılı ve potansiyel olarak komplike bir durumdur. Her yıl milyonlarca insan bu durumdan etkilenmekte ve uygun yönetilmediğinde ciddi komplikasyonlara yol açabilmektedir.
+Batık tırnak, tırnağın yan kenarlarının çevresindeki yumuşak dokuya baskı yapması veya doku içine gömülmesiyle oluşan, ağrılı ve ilerleyici bir ayak sağlığı problemidir. Tıbbi adıyla unguis incarnatus, hem günlük yaşam kalitesini düşürür hem de tedavi edilmediğinde enfeksiyonlara yol açabilir.
 
-## Unguis Incarnatus: Anatomik ve Biyomekanik Analiz
+Bu yazıda batık tırnak neden olur, hangi faktörler riski artırır ve nasıl önlenebilir sorularını podolojik bakış açısıyla ele alıyoruz.
 
-Batık tırnak, basit bir tırnak kesim problemi değildir. Multifaktöriyel bir durumdur ve pod olojik yaklaşım, tüm katkıda bulunan faktörlerin anlaşılmasını gerektirir.
+![Batık Tırnak Tedavisi Ankara](/images/blog/batik-tirnak-ankara-podolog.webp)
 
-### Tırnak Anatomisi Temelleri
+## Batık Tırnak Nedir?
 
-Sağlıklı bir tırnak anlayışı, problemi kavramak için esastır:
+Batık tırnak, genellikle ayak başparmağında görülen ve tırnağın yan kenarının deri içine doğru büyümesiyle ortaya çıkan bir durumdur. Erken dönemde hafif hassasiyet ve kızarıklık görülürken, ilerleyen evrelerde şiddetli ağrı, akıntı ve enfeksiyon gelişebilir.
 
-**Tırnak Plakası:** Keratinize hücre tabakalarından oluşan, sert koruyucu yapı
-**Tırnak Matriksi:** Tırnak büyümesinin kaynağı, tırnak kökünde yer alır
-**Tırnak Yatağı:** Tırnak plakasının altındaki, zengin vasküler yapı
-**Lateral Nail Fold (Yan Tırnak Kıvrımı):** Batık tırnak oluştuğunda etkilenen bölge
-**Hyponychium:** Tırnak ucunun altında, tırnak yatağı ile cilt arasındaki bariyer
+Batık tırnak hakkında daha fazla bilgi için [tırnak batması rehberimizi](/blog/tirnakbatmasi) inceleyebilirsiniz.
 
-### Batık Tırnak Patogenezi
+## Batık Tırnak Neden Oluşur?
 
-Batık tırnak oluşumu, genellikle şu mekanizmalarla gerçekleşir:
+Batık tırnak tek bir nedene bağlı değildir. Çoğu vakada birden fazla faktör birlikte rol oynar.
 
-1. **Mekanik Travma:** Tırnak kenarının yumuşak dokuya fiziksel penetrasyonu
-2. **İnflamatuar Yanıt:** Vücudun yabancı cisim reaksiyonu
-3. **Granülasyon Dokusu:** Kronik irritasyona yanıt olarak aşırı doku oluşumu
-4. **Enfeksiyon:** Sekonder bakteriyel invazyon (sıklıkla Staphylococcus aureus)
+### Yanlış Tırnak Kesimi
 
-## Etyolojik Faktörler: Batık Tırnak Neden Oluşur?
+Batık tırnağın en yaygın nedeni yanlış tırnak kesimidir. Özellikle:
 
-### 1. İatroje nik (Yanlış Kesim) Nedenleri
+- Tırnakların oval kesilmesi
+- Köşelerin derin şekilde alınması
+- Tırnağın gereğinden çok kısa kesilmesi
 
-En yaygın neden, uygunsuz tırnak bakımıdır.
+tırnak köşelerinin büyüme sırasında deri içine yönelmesine neden olur. Tırnaklar her zaman düz (transvers) kesilmeli, köşeler derinleştirilmemelidir.
 
-**Kritik Kesim Hataları:**
-- **Oval Kesim:** Tırnak köşelerinin aşırı kısaltılması, yeni tırnak büyümesinin cilde girmesine neden olur
-- **Aşırı Kısa Kesim:** Tırnağın hipertrofik (büyümüş) lateral nail fold'un altına girmesi
-- **Keskin Köşeler:** Dikkatli törpüleme yapılmaması, kesilenmiş tırnak kenarlarını keskin bırakır
+Tırnak bakımı hakkında detaylı bilgi için [tırnak neden uzamaz](/blog/tirnak-neden-uzamaz) ve [tırnak neden kalınlaşır](/blog/tirnak-neden-kalinlasir) yazılarımızı okuyabilirsiniz.
 
-**Doğru Teknik:** Tırnak, transvers (düz) bir çizgi ile kesilmeli, köşeler hafifçe yuvarlatılmalı (oval değil, hafif yuvarlanmış köşe)
+### Dar ve Uygun Olmayan Ayakkabılar
 
-### 2. Ayakkabı ve Biyomekanik Faktörler
+Dar burunlu, sert veya ayağa küçük gelen ayakkabılar, parmakları sıkıştırarak tırnağın yan dokulara baskı yapmasına yol açar. Uzun süre bu baskıya maruz kalan tırnak zamanla batmaya başlar.
 
-Ayakkabı seçimi ve basınç dinamikleri, batık tırnak gelişiminde kritik rol oynar.
+Özellikle:
 
-**Problemli Ayakkabı Tipleri:**
-- **Dar Burunlu Ayakkabılar:** Parmakları lateral olarak sıkıştırır, tırnak plakasını yumuşak dokuya iter
-- **Küçük Numara:** Sürekli basınç, tırnak b iyomekaniğini bozar
-- **Y üksek Topuklu:** Ayak parmak larına aşırı yük bindirir
-- **Sert, Esnemeyen Malzemeler:** Ayağın doğal hareketine izin vermez
+- Sivri burunlu ayakkabılar
+- Yüksek topuklular
+- Spor ayakkabılarda yanlış numara seçimi
 
-**Biyomekanik Faktör:** Yürüme döngüsü sırasında (gait cycle), halluks (baş parmak) aşırı pronasyon (içe dönme) yapıyorsa, tırnak lateral basınca maruz kalır.
+batık tırnak riskini artırır.
 
-### 3. Genetik ve Anatomik Predispozisyon
+Ayak sağlığını korumak için [ayak sağlığı ipuçları](/blog/ayak-sagligi-ipuclari) ve [topuk dikeni hakkında](/blog/topuk-dikeni) yazılarımız faydalı olabilir.
 
-Bazı anatomik özellikler, batık tırnak riskini artırır:
+### Tırnak Mantarı ve Enfeksiyonlar
 
-- **Konjenital Tırnak Deformiteleri:** Pincer (kıskaç) tırnak, involuted (içe kıvrık) tırnak
-- **Hipertrofik Lateral Nail Fold:** Genetik olarak kalın yan tırnak kıvrımları
-- **Brachymetatarsia:** Anormal kısa metatars, basınç dağılımını bozar
-- **Hallux Valgus (Bunion):** Baş parmak deformasyonu, tırnak orientasyonunu değiştirir
+Tırnak mantarı, tırnağın kalınlaşmasına, sertleşmesine ve şeklini kaybetmesine neden olur. Yapısı bozulan tırnak, yan dokulara daha fazla baskı yaparak batık tırnak oluşumunu kolaylaştırır.
 
-### 4. Sistemik ve Patolojik Faktörler
+Bu nedenle mantarlı tırnaklarda batık tırnak riski belirgin şekilde artar.
 
-Belirli sağlık durumları, batık tırnak riskini artırır:
+Tırnak mantarı tedavisi hakkında detaylı bilgi için [tırnak mantarı tedavisi](/blog/tirnak-mantari-tedavisi) yazımızı ve [tırnak mantarı hizmetlerimizi](/hizmet/tirnak-mantari) inceleyebilirsiniz.
 
-**Onychomycosis (Tırnak Mantarı):** Fungal enfeksiyon, tırnak yapısını bozar, kalınlaşır ve kırılgan hale gelir.
+### Genetik ve Anatomik Faktörler
 
-**Hiperhidroz:** Aşırı terleme, cildi macere eder (yumuşatır), penetrasyona karşı daha hassas hale getirir.
+Bazı kişiler doğuştan batık tırnağa daha yatkındır. Risk oluşturan anatomik özellikler:
 
-**Diyabet:** Nöropati, erken ağrı algılamayı engeller; vasküler yetersizlik, iyileşmeyi bozar.
+- İçe kıvrık (kıskaç) tırnak yapısı
+- Kalın yan tırnak kıvrımları
+- Başparmak eğrilikleri (halluks valgus)
 
-**İmmünsupresyon:** Steroid kullanımı veya immün yetmezlik, enfeksiyon riskini artırır.
+Bu kişilerde doğru tırnak kesimi yapılsa bile batık tırnak daha kolay gelişebilir.
 
-### 5. Travma ve İskeletsel Faktörler
+Çocuklarda batık tırnak riski için [çocuk ayak sağlığı rehberimizi](/blog/cocuk-ayak-sagligi) okuyabilirsiniz.
 
-**Akut Travma:** Ayak parmağına direk etki, tırnak yatağı veya matris hasarı
-**Tekrarlayan Mikrotravma:** Koşu, futbol gibi spor aktiviteleri
-**Fraktür Sonrası:** İyileşme sırasında tırnak büyüme paterninde değişiklik
+### Diyabet ve Sistemik Hastalıklar
 
-## Klinik Seyir ve Heaton-Wilson Sınıflandırması
+Diyabet gibi sistemik hastalıklarda:
 
-Batık tırnak, aşamalı bir progresyon gösterir:
+- Duyu kaybı nedeniyle batık tırnak geç fark edilir
+- Dolaşım bozukluğu iyileşmeyi zorlaştırır
+- Enfeksiyon riski artar
 
-**Evre 1 (Eritem ve Ödem):**
-- Hafif ağrı ve hassasiyet
-- Kızarıklık, minimal şişlik
-- İnflamatuar faz, henüz enfeksiyon yok
+Bu nedenle diyabetli bireylerde batık tırnak çok daha dikkatli takip edilmelidir.
 
-**Evre 2 (Enfeksiyon):**
-- Orta şiddetli ağrı
-- Akıntı (pürülan veya sero san gin öz)
-- Bakteriyel invazyon belirginleşmiş
+Diyabet ve ayak sağlığı ilişkisi hakkında [diyabet ve ayak sağlığı](/blog/diyabet-ve-ayak-sagligi) ve [medikal ayak bakımı kimler için gereklidir](/blog/medikal-ayak-bakimi-kimler-icin-gereklidir) yazılarımızı inceleyebilirsiniz.
 
-**Evre 3 (Gran ülasyon ve Kronikleşme):**
-- Şiddetli ağrı, yürüme güçlüğü
-- Granülasyon dokusu (et boncuğu)
-- Lateral nail fold hipertrofisi
-- Kronik enfeksiyon
+## Batık Tırnak Kimlerde Daha Sık Görülür?
 
-## Podolojik Önleme Stratejileri: Kanıta Dayalı Yaklaşımlar
+- Sporcular
+- Uzun süre kapalı ayakkabı giyenler
+- Ergenlik çağındaki gençler
+- Diyabet hastaları
+- Yaşlı bireyler
 
-### Primer Önleme (Hastalık Oluşmadan)
+Risk grubundaki kişilerin düzenli ayak ve tırnak kontrolü yaptırması önemlidir.
 
-**A. Tırnak Bakım Eğitimi:**
+Profesyonel değerlendirme için [ayak analizi](/ayak-analizi) hizmetimizden yararlanabilirsiniz.
 
-**Optimal Kesim Protokolü:**
-1. **Timing:** Tırnakları banyodan sonra kesin (yumuşak olduğunda)
-2. **Araçlar:** Temiz, keskin tırnak makas ı veya kıskaç
-3. **Teknik:**
-   - Transvers kesim (düz çizgi)
-   - Beyaz kısım tamamen görünür olmalı (yaklaşık 1-2 mm)
-   - Köşeleri hafif törpüleyin (derin köşe kes imi yapMAYIN)
-4. **Sıklık:** Her 2-3 haftada bir (büyüme hızına göre ayarlayın)
+## Batık Tırnak Belirtileri Nelerdir?
 
-**B. Ayakkabı Seçim Kriteri:**
+Batık tırnak belirtileri evrelere göre değişir:
 
-- **Boy Test:** Ayakkabı içinde baş parmağınızın önünde 1 cm boşluk olmalı
-- **Genişlik:** Parmaklar serbest hareket etmeli
-- **Materyal:** Deri veya nefes alabilen sentetikler
-- **Topuk:** Optimal 2-4 cm topuk yüksekliği
+- Tırnak kenarında kızarıklık ve hassasiyet
+- Şişlik ve ağrı
+- Akıntı ve enfeksiyon
+- Et büyümesi (granülasyon dokusu)
 
-**C. Hijyen Protokolü:**
+Belirtiler ilerledikçe evde müdahale yeterli olmaz.
 
-- Ayakları günlük yıkayın, özellikle parmak aralarını kurulayın
-- Düzenli çorap değişimi
-- Ayakkabı rotasyonu (aynı çifti ardışık günlerde giymeyin)
-
-### Sekonder Önleme (Erken Tespit ve Müdahale)
-
-**Uyarı İşaretlerini Tanıyın:**
-- Tırnak kenarında kalıcı kızarıklık
-- Hafif ağrı veya hassasiyet
-- Şişlik (hatta minimal)
-
-**Erken Müdahale:**
-- Batık tırnak şeridi ("cotton wisping"): Tırnak kenarı altına steril pamuk yerleştirme
-- Ilık su banyosu (günde 3-4 kez, 15 dakika)
-- Geniş, rahat ayakkabı
-- Topikal antiseptik
-
-**Kritik:** Evre 1'de müdahale, Evre 3 komplikasyonlarını %90+ oranında önler.
-
-## Modern Podolojik Tedavi Seçenekleri
-
-### Konservatif (Non-Invazif) Tedaviler
-
-**A. Cotton Wick/Tape Method:**
-Hafif olgularda, steril pamuk veya dental floss, tırnak kenarı altına yerleştirilir, bu tırnak büyümesini yumuşak dokudan uzaklaştırır.
-
-**Başarı Oranı:** Evre 1'de %60-70
-
-**B. Gutter Splinting:**
-Plastik veya reçine bir oluk (gutter), tırnak kenarına yerleştirilir, lateral basıncı azaltır.
-
-**C. Topikal Tedaviler:**
-- Silver nitrate (granülasyon dokusuna kimyasal koterizasyon)
-- Antibakteriyel pomadlar (enfeksiyon kontrolü)
-
-### Minimal İnvazif Teknikler
-
-**A. Partial Nail Avulsion (Kısmi Tırnak Çekimi):**
-Tırnağın batık kısmı cerrahi olarak çıkarılır, sağlıklı kısım korunur.
-
-**Prosedür:**
-- Lokal anestezi (dijital sinir bloğu)
-- Batık tırnak kenarının eksizyonu
-- Yara bakımı ve takip
-
-**İyileşme:** 2-4 hafta
-**Nüks Oranı:** %50-70 (matris tedavisi yoksa)
-
-**B. Phenol Matricectomy (Fenolik Matrikektomi):**
-Tırnağın batık kısmı çıkarıldıktan sonra, o bölgedeki tırnak matriksi fenol ile kimyasal olarak yok edilir, böylece tırnak o bölgeden bir daha büyümez.
-
-**Avantajlar:**
-- Düşük nüks oranı (%5-10)
-- Minimal postoperatif ağrı
-- Kozmetik olarak kabul edilebilir sonuç
-
-**Dezavantajlar:**
-- Daha uzun iyileşme (4-6 hafta)
-- Drenaj (geçici)
-
-**C. Laser Matricectomy:**
-CO2 veya Nd:YAG lazer, tırnak matriksini ablade eder.
-
-**Avantajlar:**
-- Hassas, kontrollü
-- Minimal kanama
-- Hızlı iyileşme
-
-**Maliyet:** Fenol'den daha yüksek
-
-### Cerrahi Tedaviler
-
-**A. Total Nail Avulsion:**
-Tüm tırnak plakasının çıkarılması. Nadiren endike edilir (ağır onychomycosis veya tırnak distrofisi ile birlikte batık tırnak).
-
-**B. Surgical Wedge Resection (Winograd Procedure):**
-Tırnak kenarı ve komşu yumuşak doku (lateral nail fold) birlikte çıkarılır.
-
-**Endikasyon:** Hipertrofik lateral nail fold, kronik enfeksiyon
-
-**C. Vandenbos Procedure:**
-Agresif cerrahi - hipertrofik yan tırnak kıvrımının tamamı çıkarılır, tırnak korunur.
-
-**Avantaj:** Çok düşük nüks
-**Dezavantaj:** Büyük yara, uzun iyileşme
-
-## Komplikasyonlar ve Risk Yönetimi
-
-### Potansiyel Komplikasyonlar
-
-**A. Osteomyelit (Kemik Enfeksiyonu):**
-İhmal edilen batık tırnak, distal falanks'a (parmak kemiği) yayılabilir.
-
-**Risk Faktörleri:** Diyabet, vasküler hastalık, immünsupresyon
-
-**Tedavi:** Uzun süreli intravenöz antibiyotikler, bazen cerrahi debridman
-
-**B. Sellülit ve Lenfanjit:**
-Enfeksiyonun yumuşak doku ve lenf sistemine yayılması.
-
-**Belirtiler:** Kızarıklık ayak üzerinde yayılır, ateş, genel halsizlik
-
-**C. Paronychia (Tırnak Etrafı Enfeksiyonu):**
-Akut veya kronik enfeksiyon, tırnak kıvrımını etkiler.
-
-### Diyabetik Hasta Özel Dikkat
-
-Diyabetli bireyler için batık tırnak, ayak ülserlerine ve hatta amputasyona yol açabilecek ciddi bir durumdur.
-
-**Özel Protokol:**
-- Haftada en az bir kez ayak muayenesi
-- İlk belirti de podoloji konsültasyonu
-- Asla kendi ayak müdahalesi yapma
-- Kan şekeri optimizasyonu
-
-## Post-Tedavi Bakım ve Nüks Önleme
-
-### İyileşme Süreci Yönetimi
-
-**İlk 48 Saat:**
-- Ayağı yüksekte tutun (ödem kontrolü)
-- Soğuk kompres (ilk 24 saat)
-- Prescribed analjezikler
-
-**1-2 Hafta:**
-- Günlük yara bakımı (doktor talimatlarına göre)
-- Geniş, rahat ayakkabı
-- Ağırlık yüklemede kısıtlama (gerekirse)
-
-**2-6 Hafta:**
-- Kademeli normal aktiviteye dönüş
-- Yara iyileşmesi takibi
-- Enfeksiyon belirtilerine dikkat
-
-### Uzun Vadeli Nüks Önleme
-
-**Yaşam Boyu Protokol:**
-1. **Düzenli Tırnak Bakımı:** Doğru teknikle, düzenli kesim
-2. **Ayakkabı Bilinci:** Uygun ayakkabı seçiminde taviz vermeme
-3. **Düzenli Podoloji Kontrolü:** Yılda en az bir kez profesyonel muayene
-4. **Erken Müdahale Farkındalığı:** İlk belirtilerde profesyonel yardım
-
-## Özel Popülasyonlar
-
-### Pediatrik (Çocuk) Hasta
-
-**Ergenlik Dönemi Riski:** Hızlı büyüme, ayakkabı uyumuzluğu
-**Yönetim:** Ebeveyn eğitimi, düzenli takip, konservatif tedavi tercih
-
-### Geriatrik (Yaşlı) Hasta
-
-**Zorluklar:** Görme problemleri, esneklik kaybı, komorbid iteler
-**Yaklaşım:** Profesyonel düzenli bakım, daha agresif önleyici yaklaşım
-
-### Sporcu
-
-**Risk Faktörleri:** Tekrarlayan mikrotravma, sıkı ayakkabılar, hiperhidroz
-**Önleme:** Spor sonrası ayakkabı değişimi, uygun spor ayakkabısı, önleyici taping
-
-## Sonuç: Bütünsel Podolojik Yaklaşım
-
-Batık tırnak, basit gibi görünse de, doğru yönetim gerektiren kompleks bir podolojik durumdur. Etyolojinin anlaşılması, önleyici stratejilerin uygulanması ve erken müdahale, hem ağrıyı azaltır hem de ciddi komplikasyonları önler.
-
-**Temel İlkeler:**
-- **Önleme, tedaviden iyidir:** Doğru tırnak bakımı ve ayakkabı seçimi, vakaların %80'ini önler
-- **Erken müdahale kritiktir:** Evre 1'de konservatif tedavi, Evre 3'te cerrahi müdahaleyi önler
-- **Podolojik uzmanlık değerlidir:** Komplike veya tekrarlayan vakalarda profesyonel yönetim, uzun vadeli başarıyı garanti eder
-
-**Medipodo Ayak Bakımı olarak, batık tırnak yönetiminde kanıta dayalı, kişiye özel tedavi protokolleri uyguluyoruz. Ağrı ve komplikasyonlardan kaçınmak için ilk belirtide randevu alın.**`,
-    author: 'Şaziye Kunt - Usta Öğretici',
-    date: '2025-01-20',
-    readTime: '15 dakika',
-    image: '/images/blog/batik-tirnak.jpg',
-    tags: ['Batık Tırnak', 'Unguis Incarnatus', 'Podolojik Tedavi', 'Cerrahi Seçenekler']
+Detaylı belirti listesi için [tırnak batması](/blog/tirnakbatmasi) yazımızı inceleyebilirsiniz.
+
+## Batık Tırnak Oluşmadan Nasıl Önlenir?
+
+Batık tırnağı önlemek için:
+
+- Tırnaklar düz kesilmeli
+- Dar ve sivri ayakkabılardan kaçınılmalı
+- Ayak hijyenine dikkat edilmeli
+- Kalınlaşan ve şekli bozulan tırnaklar ihmal edilmemelidir
+
+Düzenli profesyonel ayak bakımı, batık tırnak riskini ciddi oranda azaltır.
+
+Ayak bakımı hakkında detaylı bilgi için [ayak bakım kılavuzumuzu](/ayak-bakim-kilavuzu) ve [sıkça sorulan sorular](/sikca-sorulan-sorular) sayfamızı ziyaret edebilirsiniz.
+
+## Batık Tırnak Oluştuysa Ne Yapılmalı?
+
+Batık tırnak ilerlemişse, tırnağı keserek veya evde müdahale ederek çözmeye çalışmak durumu daha da kötüleştirebilir. Bu aşamada podolojik değerlendirme ve uygun tedavi yöntemleri tercih edilmelidir.
+
+Profesyonel batık tırnak tedavisi için [batık tırnak hizmetlerimizi](/hizmet/batik-tirnak) inceleyebilir veya modern tedavi yöntemlerinden biri olan [B/S bant uygulaması](/blog/bs-bant-uygulamasi) hakkında bilgi alabilirsiniz.
+
+## Sonuç
+
+Batık tırnak, doğru önlemlerle büyük ölçüde önlenebilen ancak ihmal edildiğinde ciddi sorunlara yol açabilen bir problemdir. Erken fark edilen batık tırnaklarda profesyonel destek almak, hem ağrıyı azaltır hem de ileride oluşabilecek komplikasyonların önüne geçer.
+
+## Sıkça Sorulan Sorular
+
+### Batık tırnak neden oluşur?
+
+Batık tırnak, en sık yanlış tırnak kesimi, dar ayakkabı kullanımı ve tırnak yapısının genetik olarak içe kıvrık olması nedeniyle oluşur. Tırnağın yan kenarı, çevresindeki yumuşak dokuya baskı yaparak zamanla batmaya başlar.
+
+### Yanlış tırnak kesimi batık tırnağa nasıl yol açar?
+
+Tırnakların oval veya çok kısa kesilmesi, köşelerin deri içine doğru uzamasına neden olur. Bu durum tırnak büyüdükçe cilde baskı yapar ve batık tırnak gelişimini tetikler. Tırnaklar her zaman düz (transvers) kesilmelidir.
+
+### Batık tırnak mantar nedeniyle olur mu?
+
+Evet. Tırnak mantarı, tırnağın kalınlaşmasına ve şeklini kaybetmesine neden olur. Kalınlaşan tırnak, yan dokulara daha fazla baskı yaparak batık tırnak riskini artırır. Bu nedenle mantar tedavisi, batık tırnak oluşumunu önlemede önemlidir.
+
+### Batık tırnak kendiliğinden geçer mi?
+
+Erken evrede (hafif kızarıklık ve hassasiyet varken) doğru bakım ile ilerlemesi durdurulabilir. Ancak ileri evre batık tırnaklar kendiliğinden iyileşmez ve profesyonel podolojik müdahale gerektirir.
+
+### Batık tırnak oluşmaması için ne yapılmalı?
+
+Batık tırnağı önlemek için:
+
+- Tırnaklar düz kesilmeli
+- Dar ve sivri burunlu ayakkabılardan kaçınılmalı
+- Ayak hijyenine dikkat edilmeli
+- Kalınlaşan veya şekli bozulan tırnaklar ihmal edilmemelidir`,
+    author: 'Podolog Serdar Ceylan',
+    date: '1 Aralık 2025',
+    readTime: '10 dakika',
+    image: '/images/blog/batik-tirnak-ankara-podolog.webp',
+    tags: ['Batık Tırnak', 'Batık Tırnak Nedenleri', 'Unguis Incarnatus', 'Podoloji', 'Tırnak Bakımı'],
+    faqSchema: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Batık tırnak neden oluşur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Batık tırnak, en sık yanlış tırnak kesimi, dar ayakkabı kullanımı ve tırnak yapısının genetik olarak içe kıvrık olması nedeniyle oluşur. Tırnağın yan kenarı çevresindeki yumuşak dokuya baskı yaparak batmaya başlar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Yanlış tırnak kesimi batık tırnağa nasıl yol açar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tırnakların oval veya çok kısa kesilmesi, tırnak köşelerinin deri içine doğru uzamasına neden olur. Bu durum tırnak büyüdükçe cilde baskı yaparak batık tırnak gelişimine yol açar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Batık tırnak mantar nedeniyle olur mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Tırnak mantarı tırnağın kalınlaşmasına ve şeklini kaybetmesine neden olur. Kalınlaşan tırnak, yan dokulara baskı yaparak batık tırnak riskini artırır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Batık tırnak kendiliğinden geçer mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Erken evrede uygun bakım ile ilerlemesi durdurulabilir. Ancak ileri evre batık tırnaklar kendiliğinden iyileşmez ve profesyonel podolojik müdahale gerektirir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Batık tırnak oluşmaması için ne yapılmalı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Batık tırnağı önlemek için tırnaklar düz kesilmeli, dar ayakkabılardan kaçınılmalı, ayak hijyenine dikkat edilmeli ve kalınlaşan tırnaklar ihmal edilmemelidir."
+          }
+        }
+      ]
+    }
   },
   {
     id: 'tirnak-mantari-tedavisi',
