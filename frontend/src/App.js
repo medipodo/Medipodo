@@ -74,6 +74,7 @@ function AppContent() {
           <Route path="/blog/tirnak-mantari-tedavisi" element={<TirnakMantariBlog />} />
           <Route path="/blog/tirnak-neden-uzamaz" element={<TirnakNedenUzamazBlog />} />
           <Route path="/blog/medikal-ayak-bakimi-kimler-icin-gereklidir" element={<MedikalAyakBakimiKimlerBlog />} />
+          <Route path="/blog/batik-tirnak-nedenleri" element={<BatikTirnakNedenleri />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
