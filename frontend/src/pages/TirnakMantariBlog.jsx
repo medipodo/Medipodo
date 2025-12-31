@@ -116,7 +116,7 @@ const TirnakMantariBlog = () => {
             <div className="flex flex-wrap gap-6 text-blue-100">
               <div className="flex items-center">
                 <User size={18} className="mr-2" />
-                <span>Podolog Serdar Ceylan</span>
+                <span>Pdl. Serdar Ceylan</span>
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-2" />
@@ -124,7 +124,7 @@ const TirnakMantariBlog = () => {
               </div>
               <div className="flex items-center">
                 <Calendar size={18} className="mr-2" />
-                <span>30 Aralık 2025</span>
+                <span>16 Kasım 2025</span>
               </div>
             </div>
           </div>
