@@ -349,7 +349,7 @@ const DiyabetAyakBlog = () => {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <img 
-                  src="/blog-images/diyabet/11.jpg" 
+                  src="/blog-images/diyabet/diyabet-gunu-11.webp" 
                   alt="Profesyonel podoloji bakımı" 
                   className="w-full rounded-xl shadow-lg"
                 />
