@@ -31,6 +31,7 @@ import MedikalAyakBakimiKimlerBlog from './pages/MedikalAyakBakimiKimlerBlog';
 import BatikTirnakNedenleri from './pages/BatikTirnakNedenleri';
 import AyakSagligiIpuclariBlog from './pages/AyakSagligiIpuclariBlog';
 import AyakAgrisiNedenOlurBlog from './pages/AyakAgrisiNedenOlurBlog';
+import AyaktaYanmaHissiBlog from './pages/AyaktaYanmaHissiBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
