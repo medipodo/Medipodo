@@ -1,3 +1,15 @@
+# 301 Redirects - Diyabet Blog Görselleri (JPG → WebP)
+/blog-images/diyabet/1.jpg /blog-images/diyabet/diyabet-yarasi-ulser1.webp 301
+/blog-images/diyabet/2.jpg /blog-images/diyabet/diyabetik-ayak2.webp 301
+/blog-images/diyabet/3.jpg /blog-images/diyabet/yasli-eller3.webp 301
+/blog-images/diyabet/4.jpg /blog-images/diyabet/diyabetik-ayak-yarasi-4.webp 301
+/blog-images/diyabet/5.jpg /blog-images/diyabet/ayak-yanmasi5.webp 301
+/blog-images/diyabet/6.jpg /blog-images/diyabet/kan-dolasimi6.webp 301
+/blog-images/diyabet/7.jpg /blog-images/diyabet/kan-sekeri-olc7.webp 301
+/blog-images/diyabet/8.jpg /blog-images/diyabet/diyabetik-beslenme8.webp 301
+/blog-images/diyabet/10.jpg /blog-images/diyabet/ebu-evrelendirilemeyen-basinc-ulseri10.webp 301
+/blog-images/diyabet/11.jpg /blog-images/diyabet/diyabet-gunu-11.webp 301
+
 /sitemap.xml /sitemap.xml 200
 /robots.txt /robots.txt 200
 /* /index.html 200
