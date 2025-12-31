@@ -97,11 +97,11 @@ const BatikTirnakNedenleri = () => {
             <div className="flex flex-wrap gap-6 text-blue-100">
               <div className="flex items-center">
                 <User size={18} className="mr-2" />
-                <span>Podolog Serdar Ceylan</span>
+                <span>Pdl. Serdar Ceylan</span>
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-2" />
-                <span>10 dakika okuma</span>
+                <span>20 Kasım 2025 · 10 dakika okuma</span>
               </div>
             </div>
           </div>
