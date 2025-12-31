@@ -294,9 +294,9 @@ const Home = () => {
               </p>
             </div>
 
-            {/* First 3 FAQs with Accordion */}
+            {/* First 5 FAQs with Accordion */}
             <div className="space-y-4 mb-8">
-              {faqData.slice(0, 3).map((faq) => (
+              {faqData.slice(0, 5).map((faq) => (
                 <FAQItem key={faq.id} faq={faq} />
               ))}
             </div>
