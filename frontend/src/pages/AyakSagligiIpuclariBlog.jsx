@@ -34,19 +34,19 @@ const AyakSagligiIpuclariBlog = () => {
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-teal-800 to-teal-600 text-white pt-32 pb-16">
+        <div className="bg-gradient-to-r from-blue-900 to-blue-600 text-white pt-32 pb-16">
           <div className="container mx-auto px-4">
-            <Link to="/blog" className="inline-flex items-center text-teal-100 hover:text-white mb-6 transition-colors">
+            <Link to="/blog" className="inline-flex items-center text-blue-100 hover:text-white mb-6 transition-colors">
               <ArrowLeft size={20} className="mr-2" />
               Blog'a Dön
             </Link>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Ayak Sağlığını Korumak:<br />
-              <span className="text-teal-200">Podolojik Yaklaşımla 12 Temel İlke</span>
+              <span className="text-blue-200">Podolojik Yaklaşımla 12 Temel İlke</span>
             </h1>
             
-            <div className="flex flex-wrap gap-6 text-teal-100">
+            <div className="flex flex-wrap gap-6 text-blue-100">
               <div className="flex items-center">
                 <User size={18} className="mr-2" />
                 <span>Serdar Ceylan - Podolog</span>
@@ -76,13 +76,13 @@ const AyakSagligiIpuclariBlog = () => {
             {/* Giriş */}
             <section className="mb-12">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Vücudumuzun temeli olan ayaklarımız, yaşam boyu ortalama <strong className="text-teal-800">200.000 kilometre</strong> yol alır. Bu muazzam yük altında, ayak sağlığının korunması yalnızca konfor değil, genel sağlık ve yaşam kalitesi açısından da hayati önem taşır. Modern podoloji biliminin bulgularına dayanan bu kapsamlı rehberde, ayak sağlığınızı korumak için bilmeniz gereken her şeyi bulacaksınız.
+                Vücudumuzun temeli olan ayaklarımız, yaşam boyu ortalama <strong className="text-blue-900">200.000 kilometre</strong> yol alır. Bu muazzam yük altında, ayak sağlığının korunması yalnızca konfor değil, genel sağlık ve yaşam kalitesi açısından da hayati önem taşır. Modern podoloji biliminin bulgularına dayanan bu kapsamlı rehberde, ayak sağlığınızı korumak için bilmeniz gereken her şeyi bulacaksınız.
               </p>
             </section>
 
             {/* Podolojik Bakış Açısıyla */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Podolojik Bakış Açısıyla Ayak Sağlığı
               </h2>
               
@@ -93,7 +93,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 1. Ayakkabı Seçimi */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 1. Biyomekanik Uyumlu Ayakkabı Seçimi
               </h2>
               
@@ -101,23 +101,23 @@ const AyakSagligiIpuclariBlog = () => {
                 Ayakkabı seçimi, ayak sağlığının en kritik belirleyicilerinden biridir. Ancak "rahat" bir ayakkabı her zaman "doğru" ayakkabı değildir.
               </p>
 
-              <div className="bg-teal-50 rounded-xl p-6 mb-6">
-                <h3 className="text-xl font-bold text-teal-900 mb-4">Podolojik İlkeler:</h3>
+              <div className="bg-blue-50 rounded-xl p-6 mb-6">
+                <h3 className="text-xl font-bold text-blue-900 mb-4">Podolojik İlkeler:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Ayak İndeksi Uyumu:</strong> Ayağınızın tipi (yüksek, normal veya düşük kemer) ayakkabı seçiminizi belirlemeli</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Basınç Dağılımı:</strong> İdeal ayakkabı, ayak tabanındaki basıncı eşit dağıtmalı</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Topuk-Parmak Düşüşü:</strong> 2-4 cm topuk yüksekliği, Aşil tendonunda optimum gerginlik sağlar</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Ayak Parmağı Hareketi:</strong> Parmak kutusunda en az 1 cm boşluk, parmak deformasyonlarını önler</span>
                   </li>
                 </ul>
@@ -148,7 +148,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 2. Bilimsel Ayak Hijyeni */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 2. Bilimsel Ayak Hijyeni Protokolü
               </h2>
               
@@ -160,15 +160,15 @@ const AyakSagligiIpuclariBlog = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Günlük Rutin:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Yıkama:</strong> Günde bir kez, pH dengeli sabun (pH 5.5-6.5) ile ılık su</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Kurutma Tekniği:</strong> Parmak aralarını özenle kurulayın - nem, dermatofit mantarlarının ürediği ortamdır</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Antimikrobiyel Koruma:</strong> Haftada 2-3 kez antibakteriyel ayak banyosu (1 lt suya 1 çorba kaşığı tuz veya elma sirkesi)</span>
                   </li>
                 </ul>
@@ -179,38 +179,38 @@ const AyakSagligiIpuclariBlog = () => {
                   <strong>Bilimsel Temel:</strong> Araştırmalar, parmak aralarının yetersiz kurutulmasının tinea pedis riskini 3 kat artırdığını göstermektedir.
                 </p>
                 <p className="text-gray-700 mt-2">
-                  👉 <Link to="/blog/tirnak-mantari-tedavisi" className="text-teal-600 hover:text-teal-800 font-semibold underline">Ayak ve tırnak mantarı</Link> hakkında detaylı bilgi için ilgili yazımızı okuyun.
+                  👉 <Link to="/blog/tirnak-mantari-tedavisi" className="text-blue-600 hover:text-blue-900 font-semibold underline">Ayak ve tırnak mantarı</Link> hakkında detaylı bilgi için ilgili yazımızı okuyun.
                 </p>
               </div>
             </section>
 
             {/* 3. Tırnak Bakımı */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 3. Profesyonel Tırnak Bakımı ve Onikoloji
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Tırnak sağlığı, sıklıkla ihmal edilen ancak ayak sağlığının kritik bir bileşenidir. Yanlış kesim teknikleri, <Link to="/blog/batik-tirnak-nedenleri" className="text-teal-600 hover:text-teal-800 font-semibold underline">batık tırnak (unguis incarnatus)</Link> riskini önemli ölçüde artırır.
+                Tırnak sağlığı, sıklıkla ihmal edilen ancak ayak sağlığının kritik bir bileşenidir. Yanlış kesim teknikleri, <Link to="/blog/batik-tirnak-nedenleri" className="text-blue-600 hover:text-blue-900 font-semibold underline">batık tırnak (unguis incarnatus)</Link> riskini önemli ölçüde artırır.
               </p>
 
               <div className="bg-white rounded-xl shadow-md p-6 mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Podolojik Tırnak Kesim Protokolü:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Kesim Şekli:</strong> Düz çizgi (transvers kesim) - oval kesim kesinlikle yanlıştır</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Uzunluk:</strong> Tırnak ucu, parmak ucunu hafifçe aşmalı (1-2 mm)</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Araçlar:</strong> Temiz, keskin tırnak makası veya tırnak kıskaçları</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Sıklık:</strong> Ortalama 2-3 haftada bir (büyüme hızına göre değişir)</span>
                   </li>
                 </ul>
@@ -231,7 +231,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 4. Dermal Hidrasyon */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 4. Dermal Hidrasyon ve Lipid Bariyeri
               </h2>
               
@@ -243,11 +243,11 @@ const AyakSagligiIpuclariBlog = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Nemlendirme Stratejisi:</h3>
                 <ul className="space-y-3 mb-4">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Uygulama Zamanı:</strong> Akşam, yatmadan önce (hücre yenilenmesi gece pik yapar)</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Aktif İçerikler Arayın:</strong></span>
                   </li>
                 </ul>
@@ -258,7 +258,7 @@ const AyakSagligiIpuclariBlog = () => {
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Uygulama Yöntemi:</strong> Topuk ve ayak tabanına yoğun, parmak aralarına hafif</span>
                   </li>
                 </ul>
@@ -272,7 +272,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 5. Tekstil Seçimi */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 5. Tekstil Seçimi ve Termoregülasyon
               </h2>
               
@@ -280,23 +280,23 @@ const AyakSagligiIpuclariBlog = () => {
                 Ayak çorapları ve ayakkabı içi iklim, ayak sağlığını doğrudan etkiler.
               </p>
 
-              <div className="bg-teal-50 rounded-xl p-6 mb-6">
-                <h3 className="text-xl font-bold text-teal-900 mb-4">Optimal Çorap Özellikleri:</h3>
+              <div className="bg-blue-50 rounded-xl p-6 mb-6">
+                <h3 className="text-xl font-bold text-blue-900 mb-4">Optimal Çorap Özellikleri:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Malzeme:</strong> %60-80 pamuk, geri kalanı sentetik (nem yönetimi için)</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Kalınlık:</strong> Aktiviteye göre ayarlayın - koşu için daha kalın</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Dikiş Yeri:</strong> Tüm dikişler dışa dönük (mikrotravma önlemi)</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <CheckCircle className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span><strong>Değiştirme:</strong> Günde en az bir kez, terli aktiviteden sonra mutlaka</span>
                   </li>
                 </ul>
@@ -311,7 +311,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 6. Rotasyon Prensibi */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 6. Ayak Ekipmanı Rotasyonu Prensibi
               </h2>
               
@@ -323,19 +323,19 @@ const AyakSagligiIpuclariBlog = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Rotasyon Protokolü:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Minimum Kuralı:</strong> Aynı çifti ardışık günlerde giymeyin</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Kuruma Süresi:</strong> 24-48 saat (malzemeye bağlı)</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Havalandırma:</strong> Ayakkabıları açık, havadar yerde saklayın</span>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <span className="text-teal-600 font-bold mr-3">•</span>
+                    <span className="text-blue-600 font-bold mr-3">•</span>
                     <span><strong>Alternatifler:</strong> En az 2-3 çift ayakkabı rotasyonu ideal</span>
                   </li>
                 </ul>
@@ -344,7 +344,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 7. Ayak Egzersizi */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 7. Ayak Egzersiz Fizyolojisi
               </h2>
               
@@ -352,8 +352,8 @@ const AyakSagligiIpuclariBlog = () => {
                 Ayak ve ayak bileği eklemlerinin mobilitesi, biyomekanik zincirin sağlığı için esastır.
               </p>
 
-              <div className="bg-gradient-to-r from-teal-50 to-green-50 rounded-xl p-6 mb-6">
-                <h3 className="text-xl font-bold text-teal-900 mb-4 flex items-center">
+              <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-6 mb-6">
+                <h3 className="text-xl font-bold text-blue-900 mb-4 flex items-center">
                   <Activity className="mr-2" size={24} />
                   Günlük Egzersiz Programı (5-10 dakika):
                 </h3>
@@ -386,7 +386,7 @@ const AyakSagligiIpuclariBlog = () => {
                 </div>
               </div>
 
-              <div className="bg-teal-50 border-l-4 border-teal-600 p-4 rounded-r-lg">
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
                 <p className="text-gray-800">
                   <strong>Fizyolojik Fayda:</strong> Bu egzersizler, plantar fasya esnekliğini artırır, dolaşımı iyileştirir ve intrensek ayak kaslarını güçlendirir.
                 </p>
@@ -400,7 +400,7 @@ const AyakSagligiIpuclariBlog = () => {
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Diyabetli bireyler için <Link to="/blog/diyabet-ve-ayak-sagligi" className="text-teal-600 hover:text-teal-800 font-semibold underline">diyabetik ayak sağlığı</Link>, hayati önem taşıyan bir konudur.
+                Diyabetli bireyler için <Link to="/blog/diyabet-ve-ayak-sagligi" className="text-blue-600 hover:text-blue-900 font-semibold underline">diyabetik ayak sağlığı</Link>, hayati önem taşıyan bir konudur.
               </p>
 
               <div className="bg-red-50 rounded-xl p-6 mb-6 border border-red-200">
@@ -437,7 +437,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 9. Erken Uyarı */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 9. Erken Uyarı Sistemi ve Profesyonel Müdahale
               </h2>
               
@@ -469,7 +469,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 10. Yıllık Değerlendirme */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 10. Yıllık Profesyonel Ayak Değerlendirmesi
               </h2>
               
@@ -481,38 +481,38 @@ const AyakSagligiIpuclariBlog = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Kapsamlı Podolojik Muayene İçerir:</h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
-                    <Footprints className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <Footprints className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span>Biyomekanik analiz (yürüme ve duruş değerlendirmesi)</span>
                   </li>
                   <li className="flex items-start">
-                    <Footprints className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <Footprints className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span>Dermatolojik kontrol (cilt ve tırnak sağlığı)</span>
                   </li>
                   <li className="flex items-start">
-                    <Footprints className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <Footprints className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span>Vasküler değerlendirme (dolaşım kontrolü)</span>
                   </li>
                   <li className="flex items-start">
-                    <Footprints className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <Footprints className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span>Nörolojik test (sinir fonksiyonu)</span>
                   </li>
                   <li className="flex items-start">
-                    <Footprints className="text-teal-600 mr-3 mt-1 flex-shrink-0" size={18} />
+                    <Footprints className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={18} />
                     <span>Basınç analizi (plantar basınç dağılımı)</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-teal-50 border-l-4 border-teal-600 p-4 rounded-r-lg">
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
                 <p className="text-gray-800">
-                  👉 Profesyonel değerlendirme için <Link to="/ayak-analizi" className="text-teal-600 hover:text-teal-800 font-semibold underline">ayak analizi</Link> hizmetimizden yararlanabilirsiniz.
+                  👉 Profesyonel değerlendirme için <Link to="/ayak-analizi" className="text-blue-600 hover:text-blue-900 font-semibold underline">ayak analizi</Link> hizmetimizden yararlanabilirsiniz.
                 </p>
               </div>
             </section>
 
             {/* 11. Yaş ile Değişen Gereksinimler */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 11. Yaş İle Değişen Ayak Gereksinimleri
               </h2>
               
@@ -529,7 +529,7 @@ const AyakSagligiIpuclariBlog = () => {
                     <li>• Düzenli büyüme kontrolü</li>
                   </ul>
                   <p className="text-gray-700 mt-3 text-sm">
-                    👉 <Link to="/blog/cocuk-ayak-sagligi" className="text-teal-600 hover:text-teal-800 font-semibold underline">Çocuklarda ayak sağlığı</Link>
+                    👉 <Link to="/blog/cocuk-ayak-sagligi" className="text-blue-600 hover:text-blue-900 font-semibold underline">Çocuklarda ayak sağlığı</Link>
                   </p>
                 </div>
 
@@ -555,7 +555,7 @@ const AyakSagligiIpuclariBlog = () => {
 
             {/* 12. Sistemik Sağlık Bağlantısı */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 12. Sistemik Sağlık-Ayak Sağlığı Bağlantısı
               </h2>
               
@@ -585,20 +585,20 @@ const AyakSagligiIpuclariBlog = () => {
                 </div>
               </div>
 
-              <div className="bg-teal-50 border-l-4 border-teal-600 p-4 rounded-r-lg">
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
                 <p className="text-gray-800">
-                  👉 Bu konuda daha fazla bilgi için <Link to="/blog/medikal-ayak-bakimi-kimler-icin-gereklidir" className="text-teal-600 hover:text-teal-800 font-semibold underline">medikal ayak bakımı</Link> rehberimizi inceleyin.
+                  👉 Bu konuda daha fazla bilgi için <Link to="/blog/medikal-ayak-bakimi-kimler-icin-gereklidir" className="text-blue-600 hover:text-blue-900 font-semibold underline">medikal ayak bakımı</Link> rehberimizi inceleyin.
                 </p>
               </div>
             </section>
 
             {/* Sonuç */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-teal-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Sonuç: Bütünsel Ayak Sağlığı Felsefesi
               </h2>
               
-              <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-xl p-6 mb-6">
+              <div className="bg-gradient-to-r from-blue-50 to-blue-50 rounded-xl p-6 mb-6">
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
                   Ayak sağlığı, izole bir konu değil, genel sağlık ve yaşam kalitenizin ayrılmaz bir parçasıdır. Podolojik bilimin sunduğu bu kanıta dayalı yaklaşımları günlük rutininize entegre ederek, ayaklarınızı hayatınız boyunca sağlıklı tutabilirsiniz.
                 </p>
@@ -618,24 +618,24 @@ const AyakSagligiIpuclariBlog = () => {
             </section>
 
             {/* CTA */}
-            <section className="bg-gradient-to-r from-teal-700 to-teal-600 rounded-2xl p-8 md:p-12 text-white text-center">
+            <section className="bg-gradient-to-r from-blue-700 to-blue-600 rounded-2xl p-8 md:p-12 text-white text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Profesyonel Ayak Değerlendirmesi İçin
               </h2>
-              <p className="text-teal-100 mb-8 text-lg">
+              <p className="text-blue-100 mb-8 text-lg">
                 Ayak sağlığınız için uzman ekibimizle iletişime geçin.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a
                   href="tel:05456569747"
-                  className="inline-flex items-center bg-white text-teal-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-teal-50 transition-all transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Phone className="mr-2" size={24} />
                   0545 656 97 47
                 </a>
                 <Link
                   to="/iletisim"
-                  className="inline-flex items-center bg-teal-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-teal-400 transition-all transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-400 transition-all transform hover:scale-105 shadow-lg"
                 >
                   Randevu Al
                 </Link>
