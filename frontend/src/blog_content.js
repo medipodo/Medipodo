@@ -531,9 +531,9 @@ Batık tırnak, doğru önlemlerle büyük ölçüde önlenebilen ancak ihmal ed
     slug: 'tirnak-mantari-tedavisi',
     excerpt: 'Tırnak mantarı neden geçmez? Bilimsel ama anlaşılır açıklama. Dermatofit mantarlar, klinik tipler, tanı ve tedavi. Ankara\'da profesyonel podolojik yaklaşım.',
     image: '/images/blog/tirnak-mantari/onikomikoz.webp',
-    date: '30 Aralık 2025',
+    date: '16 Kasım 2025',
     readTime: '18 dk',
-    author: 'Podolog Serdar Ceylan',
+    author: 'Pdl. Serdar Ceylan',
     tags: ['Tırnak Mantarı', 'Onikomikoz', 'Podoloji', 'Dermatofit', 'Ayak Mantarı'],
     content: 'Özel blog sayfası: /blog/tirnak-mantari-tedavisi'
   }
