@@ -2,6 +2,18 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayakta-yanma-hissi-neden-olur',
+    title: 'Ayakta Yanma Hissi Neden Olur? Podolojik Bakış Açısıyla Değerlendirme',
+    slug: 'ayakta-yanma-hissi-neden-olur',
+    excerpt: 'Ayakta yanma hissi neden olur? Ayak tabanı, parmaklar ve ayak üstünde yanma hissinin nedenleri. Podolojik bakış açısıyla değerlendirme ve ne zaman uzmana başvurulmalı.',
+    image: '/images/blog/ayak-yanmasi.webp',
+    date: '31 Aralık 2025',
+    readTime: '10 dk',
+    author: 'Medipodo Podoloji Ekibi',
+    tags: ['Ayakta Yanma', 'Ayak Yanması', 'Podoloji', 'Ayak Sağlığı'],
+    content: 'Özel blog sayfası: /blog/ayakta-yanma-hissi-neden-olur'
+  },
+  {
     id: 'ayak-agrisi-neden-olur',
     title: 'Ayak Ağrısı Neden Olur? Podolojik Bakış Açısıyla Ağrı Nedenleri',
     slug: 'ayak-agrisi-neden-olur',
