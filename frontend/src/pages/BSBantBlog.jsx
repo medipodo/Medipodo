@@ -22,7 +22,7 @@ const BSBantBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="B/S Bant Uygulaması - Batık Tırnak İçin Acısız Çözüm" />
         <meta property="og:description" content="Batık tırnak tedavisinde modern ve estetik çözüm: B/S Bant uygulaması. Tırnak telinden farkları ve avantajları." />
-        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/blog/bs-bant/bs-bant.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/bs-bant-uygulamasi" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -31,7 +31,7 @@ const BSBantBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="B/S Bant Uygulaması - Batık Tırnak İçin Acısız Çözüm" />
         <meta name="twitter:description" content="Batık tırnak tedavisinde modern ve estetik çözüm: B/S Bant uygulaması." />
-        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/blog/bs-bant/bs-bant.jpg" />
       </Helmet>
 
       <div className="min-h-screen bg-white">

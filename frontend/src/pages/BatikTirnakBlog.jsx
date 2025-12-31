@@ -20,7 +20,7 @@ const BatikTirnakBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Tırnak Batması Neden Olur? En Sık Yapılan Hatalar ve Doğru Çözümler" />
         <meta property="og:description" content="Tırnak batmasının nedenleri, evde yapılan hatalar ve podolojik çözümler. Medipodo ile tırnak batması sorununu çözün." />
-        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/blog/batik-tirnak.jpg" />
         <meta property="og:url" content="https://medipodo.com/blog/tirnakbatmasi" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -29,7 +29,7 @@ const BatikTirnakBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tırnak Batması: Nedenleri ve Profesyonel Çözümler" />
         <meta name="twitter:description" content="Tırnak batmasında yapılan hatalar ve ağrısız podolojik tedavi yöntemleri." />
-        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/blog/batik-tirnak.jpg" />
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

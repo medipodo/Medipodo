@@ -66,7 +66,7 @@ const TirnakNedenUzamazBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Tırnak Neden Uzamaz? Podolog Gözüyle Detaylı İnceleme" />
         <meta property="og:description" content="Ayak tırnağı neden uzamaz? Matriks hasarı, tırnak mantarı, ayakkabı baskısı ve dolaşım bozukluklarının tırnak uzamasına etkisi. Podolojik çözümler." />
-        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/blog/tirnak-neden-uzamaz/güncel-kapak-görseli-tirnak-uzamamasi.webp" />
         <meta property="og:url" content="https://medipodo.com/blog/tirnak-neden-uzamaz" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -75,7 +75,7 @@ const TirnakNedenUzamazBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tırnak Neden Uzamaz? Podolog Gözüyle Detaylı İnceleme" />
         <meta name="twitter:description" content="Ayak tırnağı neden uzamaz? Matriks hasarı, tırnak mantarı, ayakkabı baskısı ve dolaşım bozukluklarının etkisi." />
-        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/blog/tirnak-neden-uzamaz/güncel-kapak-görseli-tirnak-uzamamasi.webp" />
         
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
