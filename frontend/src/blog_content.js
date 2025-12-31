@@ -9,7 +9,7 @@ export const enrichedBlogPosts = [
     image: '/images/blog/ayak-yanmasi.webp',
     date: '31 Aralık 2025',
     readTime: '10 dk',
-    author: 'Medipodo Podoloji Ekibi',
+    author: 'Podolog Serdar Ceylan',
     tags: ['Ayakta Yanma', 'Ayak Yanması', 'Podoloji', 'Ayak Sağlığı'],
     content: 'Özel blog sayfası: /blog/ayakta-yanma-hissi-neden-olur'
   },
@@ -21,7 +21,7 @@ export const enrichedBlogPosts = [
     image: '/images/blog/ayak-agrisi-neden-olur.webp',
     date: '31 Aralık 2025',
     readTime: '12 dk',
-    author: 'Medipodo Podoloji Ekibi',
+    author: 'Podolog Serdar Ceylan',
     tags: ['Ayak Ağrısı', 'Topuk Ağrısı', 'Plantar Fasiit', 'Podoloji', 'Ayak Sağlığı'],
     content: 'Özel blog sayfası: /blog/ayak-agrisi-neden-olur'
   },
