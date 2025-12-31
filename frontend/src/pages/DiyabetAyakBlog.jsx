@@ -82,7 +82,7 @@ const DiyabetAyakBlog = () => {
 
               <div className="my-8">
                 <img 
-                  src="/blog-images/diyabet/Dibayet-yarasi-ülser1.webp" 
+                  src="/blog-images/diyabet/diyabet-yarasi-ulser1.webp" 
                   alt="Diyabetik ayak kontrolü" 
                   className="w-full rounded-xl shadow-2xl"
                 />
