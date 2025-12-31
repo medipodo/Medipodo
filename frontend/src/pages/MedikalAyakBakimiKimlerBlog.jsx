@@ -274,7 +274,7 @@ const MedikalAyakBakimiKimlerBlog = () => {
               width="1200"
               height="675"
               className="w-full h-auto rounded-xl shadow-lg mb-12"
-              loading="lazy"
+              loading="lazy" decoding="async"
             />
 
             {/* Evde Pedikür Neden Yetersiz? */}

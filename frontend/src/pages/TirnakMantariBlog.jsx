@@ -224,7 +224,7 @@ const TirnakMantariBlog = () => {
               width="800"
               height="400"
               className="w-full h-auto rounded-xl shadow-lg mb-12"
-              loading="lazy"
+              loading="lazy" decoding="async"
             />
 
             {/* Medipodo'da Tırnak Mantarı Nasıl Değerlendirilir? */}
@@ -320,7 +320,7 @@ const TirnakMantariBlog = () => {
               width="800"
               height="400"
               className="w-full h-auto rounded-xl shadow-lg mb-12"
-              loading="lazy"
+              loading="lazy" decoding="async"
             />
 
             {/* Klinik Tipler */}
@@ -362,7 +362,7 @@ const TirnakMantariBlog = () => {
               width="800"
               height="400"
               className="w-full h-auto rounded-xl shadow-lg mb-12"
-              loading="lazy"
+              loading="lazy" decoding="async"
             />
 
             {/* Tanı */}

@@ -150,7 +150,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/zihin.jpg" 
                       alt="Refleksoloji - Zihinsel ve Duygusal Faydalar"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -185,7 +185,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/sindirim-sistemi.jpg" 
                       alt="Refleksoloji - Sindirim Sistemi Düzenlemesi"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -211,7 +211,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/bagisiklik.jpg" 
                       alt="Refleksoloji - Bağışıklık Sistemi Desteği"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -238,7 +238,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/kas-iskelet.jpg" 
                       alt="Refleksoloji - Kas-İskelet Sistemi Rahatlama"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -269,7 +269,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/hormonlar.jpg" 
                       alt="Refleksoloji - Hormonal Dengeye Destek"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -304,7 +304,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/otizim.jpg" 
                       alt="Otizm Spektrum Bozukluğu - Refleksoloji Desteği"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -356,7 +356,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/dikkat-eksikligi.jpg" 
                       alt="DEHB - Refleksoloji Desteği"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -402,7 +402,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/bel-fitiği.jpg" 
                       alt="Bel Fıtığı - Refleksoloji Desteği"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -447,7 +447,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/boyun agrısı.jpg" 
                       alt="Boyun ve Sırt Ağrıları - Refleksoloji"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -468,7 +468,7 @@ const RefleksolojiBlog = () => {
                       src="/blog-images/refleksoloji/fibromyalgia.jpg" 
                       alt="Fibromiyalji - Refleksoloji Desteği"
                       className="rounded-lg shadow-lg w-full h-auto"
-                      loading="lazy"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                   <div className="md:w-1/2">
@@ -500,7 +500,7 @@ const RefleksolojiBlog = () => {
                   src="/blog-images/refleksoloji/refleksoloji-uygulamasi.jpg" 
                   alt="Medipodo Refleksoloji Uygulama Süreci"
                   className="w-full h-auto object-cover"
-                  loading="lazy"
+                  loading="lazy" decoding="async"
                 />
               </div>
 
