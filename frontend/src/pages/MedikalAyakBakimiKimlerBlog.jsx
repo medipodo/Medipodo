@@ -152,7 +152,7 @@ const MedikalAyakBakimiKimlerBlog = () => {
               width="1200"
               height="675"
               className="w-full h-auto rounded-xl shadow-lg mb-10"
-              loading="eager"
+              loading="lazy" decoding="async"
             />
 
             {/* Giriş */}

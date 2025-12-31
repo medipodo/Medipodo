@@ -171,7 +171,7 @@ const TirnakMantariBlog = () => {
               width="800"
               height="400"
               className="w-full h-auto rounded-xl shadow-lg mb-12"
-              loading="eager"
+              loading="lazy" decoding="async"
             />
 
             {/* Onikomikoz Nedir? */}

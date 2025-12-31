@@ -67,7 +67,7 @@ const RefleksolojiBlog = () => {
                 src="/blog-images/refleksoloji/refleksoloji.jpg" 
                 alt="Ankara Bağlıca Refleksoloji - Medipodo Ayak Sağlığı"
                 className="w-full h-auto object-cover"
-                loading="eager"
+                loading="lazy" decoding="async"
               />
             </div>
 
