@@ -2,6 +2,18 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayak-agrisi-neden-olur',
+    title: 'Ayak Ağrısı Neden Olur? Podolojik Bakış Açısıyla Ağrı Nedenleri',
+    slug: 'ayak-agrisi-neden-olur',
+    excerpt: 'Ayak ağrısı neden olur? Ayak tabanı, topuk, ayak üstü ve parmak ağrılarının nedenleri. Podolojik bakış açısıyla ağrı nedenleri ve ne zaman uzmana başvurulmalı.',
+    image: '/images/blog/ayak-agrisi-neden-olur.webp',
+    date: '31 Aralık 2025',
+    readTime: '12 dk',
+    author: 'Medipodo Podoloji Ekibi',
+    tags: ['Ayak Ağrısı', 'Topuk Ağrısı', 'Plantar Fasiit', 'Podoloji', 'Ayak Sağlığı'],
+    content: 'Özel blog sayfası: /blog/ayak-agrisi-neden-olur'
+  },
+  {
     id: 'medikal-ayak-bakimi-kimler-icin-gereklidir',
     title: 'Medikal Ayak Bakımı Kimler İçin Gereklidir? Evde Pedikür Yeterli Olur mu?',
     slug: 'medikal-ayak-bakimi-kimler-icin-gereklidir',
