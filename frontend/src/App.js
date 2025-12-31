@@ -80,6 +80,7 @@ function AppContent() {
           <Route path="/blog/batik-tirnak-nedenleri" element={<BatikTirnakNedenleri />} />
           <Route path="/blog/ayak-sagligi-ipuclari" element={<AyakSagligiIpuclariBlog />} />
           <Route path="/blog/ayak-agrisi-neden-olur" element={<AyakAgrisiNedenOlurBlog />} />
+          <Route path="/blog/ayakta-yanma-hissi-neden-olur" element={<AyaktaYanmaHissiBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
