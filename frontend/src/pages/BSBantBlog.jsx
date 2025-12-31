@@ -36,7 +36,7 @@ const BSBantBlog = () => {
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white py-16">
+        <section className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white pt-32 pb-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <Link to="/blog" className="inline-flex items-center text-blue-200 hover:text-white mb-6 transition-colors">
