@@ -1,12 +1,70 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, User, ArrowLeft, Phone, AlertCircle, CheckCircle } from 'lucide-react';
+import { Clock, User, ArrowLeft, AlertCircle, CheckCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 
+// FAQ Accordion Component
+const FAQAccordion = ({ question, answer, isOpen, onClick }) => (
+  <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+    <button
+      onClick={onClick}
+      className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-blue-50 transition-colors"
+      aria-expanded={isOpen}
+    >
+      <h3 className="text-lg font-semibold text-gray-900 pr-4">
+        {question}
+      </h3>
+      <div className="flex-shrink-0">
+        {isOpen ? (
+          <ChevronUp className="text-blue-700" size={24} />
+        ) : (
+          <ChevronDown className="text-gray-400" size={24} />
+        )}
+      </div>
+    </button>
+    {isOpen && (
+      <div className="px-6 pb-5">
+        <p className="text-gray-700 leading-relaxed">
+          {answer}
+        </p>
+      </div>
+    )}
+  </div>
+);
+
 const AyakAgrisiNedenOlurBlog = () => {
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const toggleFaq = (index) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
+
+  const faqItems = [
+    {
+      question: "Ayak ağrısı kendiliğinden geçer mi?",
+      answer: "Hafif zorlanmalarda geçebilir, ancak tekrarlayan ağrılar mutlaka değerlendirilmelidir."
+    },
+    {
+      question: "Sabah ilk adımda ayak ağrısı neden olur?",
+      answer: "En sık plantar fasiit ile ilişkilidir."
+    },
+    {
+      question: "Ayak ağrısı ayakkabıdan kaynaklanır mı?",
+      answer: "Evet. Yanlış ayakkabı seçimi ayak ağrılarının en yaygın nedenlerindendir."
+    },
+    {
+      question: "Ayak ağrısı için evde ne yapılmamalı?",
+      answer: "Kesici aletlerle müdahale etmek ve bilinçsiz tabanlık kullanmak önerilmez."
+    },
+    {
+      question: "Podolog ayak ağrısında ne yapar?",
+      answer: "Basış analizi yapar, cilt ve tırnak yapısını değerlendirir ve önleyici bakım planı oluşturur."
+    }
+  ];
 
   return (
     <>
@@ -220,6 +278,19 @@ const AyakAgrisiNedenOlurBlog = () => {
               </div>
             </section>
 
+            {/* İkinci Görsel - Ortalarda */}
+            <section className="mb-12">
+              <img 
+                src="/images/blog/ayaklarim-neden-agrir.webp" 
+                alt="Ayak ağrısı bölgeleri - topuk ve taban ağrısı gösterimi"
+                width="1200"
+                height="675"
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+                decoding="async"
+              />
+            </section>
+
             {/* Ayak Parmaklarında Ağrı */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
@@ -366,47 +437,22 @@ const AyakAgrisiNedenOlurBlog = () => {
               </div>
             </section>
 
-            {/* SSS */}
+            {/* SSS - Accordion */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 border-l-4 border-blue-600 pl-4">
                 Ayak Ağrısı Hakkında Sık Sorulan Sorular
               </h2>
 
               <div className="space-y-4">
-                <div className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Ayak ağrısı kendiliğinden geçer mi?</h3>
-                  <p className="text-gray-700">
-                    Hafif zorlanmalarda geçebilir, ancak tekrarlayan ağrılar mutlaka değerlendirilmelidir.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Sabah ilk adımda ayak ağrısı neden olur?</h3>
-                  <p className="text-gray-700">
-                    En sık plantar fasiit ile ilişkilidir.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Ayak ağrısı ayakkabıdan kaynaklanır mı?</h3>
-                  <p className="text-gray-700">
-                    Evet. Yanlış ayakkabı seçimi ayak ağrılarının en yaygın nedenlerindendir.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Ayak ağrısı için evde ne yapılmamalı?</h3>
-                  <p className="text-gray-700">
-                    Kesici aletlerle müdahale etmek ve bilinçsiz tabanlık kullanmak önerilmez.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Podolog ayak ağrısında ne yapar?</h3>
-                  <p className="text-gray-700">
-                    Basış analizi yapar, cilt ve tırnak yapısını değerlendirir ve önleyici bakım planı oluşturur.
-                  </p>
-                </div>
+                {faqItems.map((item, index) => (
+                  <FAQAccordion
+                    key={index}
+                    question={item.question}
+                    answer={item.answer}
+                    isOpen={openFaqIndex === index}
+                    onClick={() => toggleFaq(index)}
+                  />
+                ))}
               </div>
             </section>
 
@@ -426,28 +472,29 @@ const AyakAgrisiNedenOlurBlog = () => {
               </div>
             </section>
 
-            {/* CTA */}
-            <section className="bg-gradient-to-r from-blue-700 to-blue-600 rounded-2xl p-8 md:p-12 text-white text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Profesyonel Ayak Değerlendirmesi İçin
-              </h2>
-              <p className="text-blue-100 mb-8 text-lg">
-                Ayak ağrınızın nedenini öğrenmek için uzman ekibimizle iletişime geçin.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <a
-                  href="tel:05456569747"
-                  className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
-                >
-                  <Phone className="mr-2" size={24} />
-                  0545 656 97 47
-                </a>
-                <Link
-                  to="/iletisim"
-                  className="inline-flex items-center bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-400 transition-all transform hover:scale-105 shadow-lg"
-                >
-                  Randevu Al
-                </Link>
+            {/* Bilgilendirici CTA - Satışsız */}
+            <section className="bg-gray-50 rounded-2xl p-8 md:p-10 border border-gray-200">
+              <div className="text-center">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  Daha Fazla Bilgi Almak İster misiniz?
+                </h2>
+                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                  Ayak sağlığı ve podoloji hakkında daha fazla bilgi edinmek, yaşadığınız şikayetleri daha iyi anlamak için blogumuzun diğer içeriklerini inceleyebilirsiniz.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Link
+                    to="/blog"
+                    className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors"
+                  >
+                    Tüm Blog Yazıları
+                  </Link>
+                  <Link
+                    to="/ayak-analizi"
+                    className="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-medium border border-blue-600 hover:bg-blue-50 transition-colors"
+                  >
+                    Ayak Analizi Hakkında
+                  </Link>
+                </div>
               </div>
             </section>
 
