@@ -190,10 +190,12 @@ const AyakMantariBulasBlog = () => {
               </h2>
               
               <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
-                <p className="text-gray-800 font-medium flex items-center">
-                  <AlertTriangle className="mr-2 text-red-600 flex-shrink-0" size={24} />
-                  Evet, ayak mantarı <strong>bulaşıcıdır</strong>. Mantar etkenleri (dermatofitler), nemli ve sıcak ortamlarda uzun süre canlı kalabilir. Bu nedenle enfekte bir yüzeyle temas eden sağlıklı ciltte kolayca yerleşebilir.
-                </p>
+                <div className="flex items-start">
+                  <AlertTriangle className="mr-3 text-red-600 flex-shrink-0 mt-1" size={24} />
+                  <p className="text-gray-800 font-medium">
+                    Evet, ayak mantarı <strong>bulaşıcıdır</strong>. Mantar etkenleri (dermatofitler), nemli ve sıcak ortamlarda uzun süre canlı kalabilir. Bu nedenle enfekte bir yüzeyle temas eden sağlıklı ciltte kolayca yerleşebilir.
+                  </p>
+                </div>
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed">
