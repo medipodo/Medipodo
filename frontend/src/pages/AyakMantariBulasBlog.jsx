@@ -344,7 +344,7 @@ const AyakMantariBulasBlog = () => {
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Ayakta kaşıntı, kızarıklık, soyulma veya <Link to="/blog/ayak-kokusu-ve-mantar-iliskisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">kötü koku ile birlikte görülebilir</Link> şeklinde belirtiler uzun süredir devam ediyorsa, evde yapılan uygulamalar yeterli olmayabilir. Bu durumda profesyonel değerlendirme ve uygun tedavi planı gereklidir. Ayak mantarının erken dönemde fark edilmesi için belirtilerin iyi bilinmesi gerekir.
+                Ayakta kaşıntı, kızarıklık, soyulma veya <Link to="/blog/ayak-kokusu-ve-mantar-iliskisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">kötü koku ile birlikte görülebilir</Link> şeklinde belirtiler uzun süredir devam ediyorsa, evde yapılan uygulamalar yeterli olmayabilir. Bu durumda profesyonel değerlendirme ve uygun tedavi planı gereklidir. Ayak mantarının erken dönemde fark edilmesi için <Link to="/blog/ayak-mantari-belirtileri" className="text-blue-600 hover:text-blue-800 font-semibold underline">ayak mantarı belirtileri</Link>nin iyi bilinmesi gerekir.
               </p>
 
               <div className="bg-blue-600 text-white rounded-xl p-6">
