@@ -276,13 +276,13 @@ const AyakMantariBulasBlog = () => {
               
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg mb-6">
                 <p className="text-gray-800 leading-relaxed">
-                  Ayak mantarı tedavi edilmediğinde zamanla <Link to="/blog/tirnak-mantari-tedavisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">tedavi edilmediğinde tırnak mantarına dönüşebilir</Link>. Aynı şekilde tırnak mantarı olan kişilerde ayak derisinde mantar gelişme riski daha yüksektir. Bu nedenle her iki durum birlikte değerlendirilmelidir.
+                  Ayak mantarı tedavi edilmediğinde zamanla <Link to="/blog/tirnak-mantari-tedavisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">tırnak mantarına dönüşebilir</Link>. Aynı şekilde tırnak mantarı olan kişilerde ayak derisinde mantar gelişme riski daha yüksektir. Bu nedenle her iki durum birlikte değerlendirilmelidir.
                 </p>
               </div>
 
               <div className="bg-blue-50 p-6 rounded-xl">
                 <p className="text-gray-700">
-                  📌 Bu konu hakkında detaylı bilgi için: <Link to="/hizmet/tirnak-mantari" className="text-blue-600 hover:text-blue-800 font-semibold underline">Tırnak Mantarı Tedavisi</Link> sayfasına göz atabilirsiniz.
+                  📌 Bu konu hakkında detaylı bilgi için: <Link to="/hizmet/tirnak-mantari" className="text-blue-600 hover:text-blue-800 font-semibold underline">ayak mantarı tedavisi</Link> sayfasına göz atabilirsiniz.
                 </p>
               </div>
             </section>
@@ -342,7 +342,7 @@ const AyakMantariBulasBlog = () => {
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Ayakta kaşıntı, kızarıklık, soyulma veya <Link to="/blog/ayak-kokusu-ve-mantar-iliskisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">kötü koku ile birlikte görülebilir</Link> uzun süredir devam ediyorsa, evde yapılan uygulamalar yeterli olmayabilir. Bu durumda profesyonel değerlendirme ve uygun tedavi planı gereklidir.
+                Ayakta kaşıntı, kızarıklık, soyulma veya <Link to="/blog/ayak-kokusu-ve-mantar-iliskisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">kötü koku ile birlikte görülebilir</Link> şeklinde belirtiler uzun süredir devam ediyorsa, evde yapılan uygulamalar yeterli olmayabilir. Bu durumda profesyonel değerlendirme ve uygun tedavi planı gereklidir. Ayak mantarının erken dönemde fark edilmesi için belirtilerin iyi bilinmesi gerekir.
               </p>
 
               <div className="bg-blue-600 text-white rounded-xl p-6">
@@ -396,8 +396,11 @@ const AyakMantariBulasBlog = () => {
             <section className="mb-12">
               <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-xl p-8">
                 <h2 className="text-2xl font-bold mb-4">Sonuç</h2>
-                <p className="text-blue-100 leading-relaxed">
+                <p className="text-blue-100 leading-relaxed mb-4">
                   Ayak mantarı küçük bir sorun gibi görülse de, bulaşma riski yüksek ve ilerleyici bir enfeksiyondur. Erken fark edilmesi ve doğru şekilde ele alınması, hem kişinin kendi sağlığı hem de çevresindekiler için önemlidir.
+                </p>
+                <p className="text-blue-200 text-sm italic">
+                  Bu içerik Medipodo podoloji ekibi tarafından, klinik deneyim ve güncel bilgiler doğrultusunda hazırlanmıştır.
                 </p>
               </div>
             </section>
