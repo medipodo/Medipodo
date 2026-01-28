@@ -32,6 +32,7 @@ import BatikTirnakNedenleri from './pages/BatikTirnakNedenleri';
 import AyakSagligiIpuclariBlog from './pages/AyakSagligiIpuclariBlog';
 import AyakAgrisiNedenOlurBlog from './pages/AyakAgrisiNedenOlurBlog';
 import AyaktaYanmaHissiBlog from './pages/AyaktaYanmaHissiBlog';
+import AyakMantariBulasBlog from './pages/AyakMantariBulasBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -81,6 +82,7 @@ function AppContent() {
           <Route path="/blog/ayak-sagligi-ipuclari" element={<AyakSagligiIpuclariBlog />} />
           <Route path="/blog/ayak-agrisi-neden-olur" element={<AyakAgrisiNedenOlurBlog />} />
           <Route path="/blog/ayakta-yanma-hissi-neden-olur" element={<AyaktaYanmaHissiBlog />} />
+          <Route path="/blog/ayak-mantari-nasil-bulasir" element={<AyakMantariBulasBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
