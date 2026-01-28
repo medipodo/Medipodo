@@ -87,8 +87,8 @@ const AyakMantariBulasBlog = () => {
   return (
     <>
       <Helmet>
-        <title>Ayak Mantarı Nasıl Bulaşır? Bulaşma Yolları ve Korunma | Medipodo</title>
-        <meta name="description" content="Ayak mantarı nasıl bulaşır? Havuz, spor salonu, ev içi bulaşma yolları ve korunma yöntemleri. Ayak mantarı bulaşıcı mıdır sorusunun cevabı." />
+        <title>Ayak Mantarı Nasıl Bulaşır? Evde, Havuzda ve Günlük Hayatta | Medipodo</title>
+        <meta name="description" content="Ayak mantarı nasıl bulaşır? Evde, havuzda ve ortak alanlarda bulaşma yolları, risk faktörleri ve korunma yöntemlerini öğrenin." />
         <meta name="keywords" content="ayak mantarı bulaşır mı, ayak mantarı nasıl bulaşır, ayak mantarı bulaşma, tinea pedis, ayak mantarı korunma, ayak hijyeni" />
         <link rel="canonical" href="https://medipodo.com/blog/ayak-mantari-nasil-bulasir" />
         
@@ -144,6 +144,31 @@ const AyakMantariBulasBlog = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-4xl mx-auto">
 
+            {/* Featured Snippet Box */}
+            <section className="mb-8">
+              <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
+                <p className="text-lg font-semibold text-gray-900 mb-3">Ayak mantarı en sık şu yollarla bulaşır:</p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Ortak duş ve havuz zeminleri
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Ev içinde terlik ve havlu paylaşımı
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Hava almayan ayakkabılar
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Nemli kalan ayak derisi
+                  </li>
+                </ul>
+              </div>
+            </section>
+
             {/* Giriş */}
             <section className="mb-12">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -189,7 +214,7 @@ const AyakMantariBulasBlog = () => {
                     <Droplets className="text-blue-600" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">1. Ortak Kullanılan Alanlar</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">1. Ayak Mantarı Ortak Alanlarda Nasıl Bulaşır?</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Havuzlar, spor salonları, hamamlar ve ortak duş alanları ayak mantarının en sık bulaştığı yerlerdir. Bu alanlarda çıplak ayakla dolaşmak, mantar sporlarının doğrudan ciltle temas etmesine neden olur.
                     </p>
@@ -204,7 +229,7 @@ const AyakMantariBulasBlog = () => {
                     <Home className="text-orange-600" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">2. Ev İçinde Bulaşma</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">2. Ayak Mantarı Ev İçinde Nasıl Bulaşır?</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Ayak mantarı sadece dış ortamdan değil, <strong>ev içinde de bulaşabilir</strong>. Aynı banyoyu kullanmak, ortak terlik giymek veya aynı havlunun paylaşılması mantarın aile bireyleri arasında yayılmasına yol açabilir.
                     </p>
@@ -219,7 +244,7 @@ const AyakMantariBulasBlog = () => {
                     <Wind className="text-purple-600" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">3. Kapalı ve Hava Almayan Ayakkabılar</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">3. Ayak Mantarı Kapalı Ayakkabılarda Neden Daha Kolay Bulaşır?</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Uzun süre kapalı kalan, hava almayan ayakkabılar ayakta nem birikmesine neden olur. Nemli cilt, mantar için ideal bir ortam oluşturur. Özellikle aynı ayakkabının her gün giyilmesi riski artırır.
                     </p>
@@ -234,7 +259,7 @@ const AyakMantariBulasBlog = () => {
                     <Shield className="text-green-600" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">4. Ayak Hijyenine Dikkat Edilmemesi</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">4. Ayak Mantarı Hijyen Eksikliğinde Nasıl Gelişir?</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Ayakların yıkanmaması, yıkandıktan sonra parmak aralarının kurulanmaması veya terli çorapların uzun süre değiştirilmemesi mantarın yerleşmesini kolaylaştırır.
                     </p>
