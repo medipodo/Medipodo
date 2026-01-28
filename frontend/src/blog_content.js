@@ -2,6 +2,18 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayak-mantari-belirtileri',
+    title: 'Ayak Mantarı Belirtileri Nelerdir? Erken ve İleri Evre İşaretler',
+    slug: 'ayak-mantari-belirtileri',
+    excerpt: 'Ayak mantarı belirtileri nelerdir? Kaşıntı, kızarıklık, soyulma gibi erken ve ileri evre belirtileri ve ne zaman uzmana gidilmesi gerektiğini öğrenin.',
+    image: '/blog-images/ayak-mantari-belirtileri/ayak-mantarinin-belirtileri.webp',
+    date: '28 Ocak 2025',
+    readTime: '7 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Ayak Mantarı', 'Belirtiler', 'Tinea Pedis', 'Mantar Enfeksiyonu'],
+    content: 'Özel blog sayfası: /blog/ayak-mantari-belirtileri'
+  },
+  {
     id: 'ayak-mantari-nasil-bulasir',
     title: 'Ayak Mantarı Nasıl Bulaşır? Bulaşma Yolları ve Korunma',
     slug: 'ayak-mantari-nasil-bulasir',
