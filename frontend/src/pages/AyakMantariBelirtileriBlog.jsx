@@ -422,6 +422,13 @@ const AyakMantariBelirtileriBlog = () => {
               </div>
             </section>
 
+            {/* Tıbbi Bilgilendirme */}
+            <section className="mb-12">
+              <p className="text-xs text-gray-400 leading-relaxed">
+                ⚠️ <span className="font-medium">Tıbbi Bilgilendirme:</span> Bu içerik bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez. Ayak sağlığınızla ilgili şikayetleriniz için mutlaka bir sağlık profesyoneline danışınız.
+              </p>
+            </section>
+
             {/* CTA */}
             <section className="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 md:p-12 text-white text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
