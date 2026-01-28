@@ -129,7 +129,7 @@ const AyakKokusuBlog = () => {
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Ayak mantarı, tıbbi adıyla <strong>Tinea Pedis</strong>, genellikle <em>Trichophyton</em> türü dermatofit mantarların neden olduğu yaygın bir enfeksiyondur. Mantar enfeksiyonları, ayak kokusunu iki temel yolla şiddetlendirir:
+                  Ayak mantarı, tıbbi adıyla <strong>Tinea Pedis</strong>, genellikle <em>Trichophyton</em> türü dermatofit mantarların neden olduğu yaygın bir enfeksiyondur. Ayak kokusunun altında yatan nedenlerden biri de bulaşıcı mantar enfeksiyonlarıdır. <Link to="/blog/ayak-mantari-nasil-bulasir" className="text-blue-600 hover:text-blue-800 font-semibold underline">Ayak mantarı bulaşıcı mıdır</Link> sorusunun cevabı evet olup, ortak alanlarda ve ev içinde kolayca yayılabilir. Mantar enfeksiyonları, ayak kokusunu iki temel yolla şiddetlendirir:
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
