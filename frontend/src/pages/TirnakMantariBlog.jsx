@@ -188,6 +188,12 @@ const TirnakMantariBlog = () => {
                 Dünya genelinde görülme sıklığı <strong>%2–14</strong> arasındadır ve yaş ilerledikçe artar. <strong>70 yaş üzerindeki bireylerde her iki kişiden birinde</strong> tırnak mantarı görülmektedir.
               </p>
 
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-6">
+                <p className="text-gray-700 leading-relaxed">
+                  Tırnak mantarının büyük kısmı, aslında ayak mantarının ilerlemesiyle ortaya çıkar. Ayak derisindeki mantar enfeksiyonu zamanla tırnaklara yayılır. Bu nedenle <Link to="/blog/ayak-mantari-nasil-bulasir" className="text-blue-600 hover:text-blue-800 font-semibold underline">ayak mantarı nasıl bulaşır</Link> sorusunun cevabını bilmek, tırnak mantarından korunmak için de önemlidir.
+                </p>
+              </div>
+
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg mb-6">
                 <p className="text-gray-800 font-medium flex items-center">
                   <AlertTriangle className="mr-2 text-yellow-600" size={20} />
