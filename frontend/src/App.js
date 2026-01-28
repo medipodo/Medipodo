@@ -34,6 +34,7 @@ import AyakAgrisiNedenOlurBlog from './pages/AyakAgrisiNedenOlurBlog';
 import AyaktaYanmaHissiBlog from './pages/AyaktaYanmaHissiBlog';
 import AyakMantariBulasBlog from './pages/AyakMantariBulasBlog';
 import AyakMantariBelirtileriBlog from './pages/AyakMantariBelirtileriBlog';
+import AyakMantariEvdeTedaviBlog from './pages/AyakMantariEvdeTedaviBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -85,6 +86,7 @@ function AppContent() {
           <Route path="/blog/ayakta-yanma-hissi-neden-olur" element={<AyaktaYanmaHissiBlog />} />
           <Route path="/blog/ayak-mantari-nasil-bulasir" element={<AyakMantariBulasBlog />} />
           <Route path="/blog/ayak-mantari-belirtileri" element={<AyakMantariBelirtileriBlog />} />
+          <Route path="/blog/ayak-mantari-evde-tedavi-edilir-mi" element={<AyakMantariEvdeTedaviBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />

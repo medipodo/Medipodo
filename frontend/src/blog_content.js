@@ -2,6 +2,18 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayak-mantari-evde-tedavi-edilir-mi',
+    title: 'Ayak Mantarı Evde Tedavi Edilir mi? Ne Zaman Uzman Gerekir?',
+    slug: 'ayak-mantari-evde-tedavi-edilir-mi',
+    excerpt: 'Ayak mantarı evde tedavi edilebilir mi? Hangi durumlarda yeterli olur, ne zaman uzmana gidilmelidir? Detaylı ve güvenilir rehber.',
+    image: '/blog-images/ayak-mantari-evde-tedavi/ayak-mantari-evde-tedavi-yontemleri.webp',
+    date: '28 Ocak 2025',
+    readTime: '6 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Ayak Mantarı', 'Evde Tedavi', 'Doğal Tedavi', 'Uzman Desteği'],
+    content: 'Özel blog sayfası: /blog/ayak-mantari-evde-tedavi-edilir-mi'
+  },
+  {
     id: 'ayak-mantari-belirtileri',
     title: 'Ayak Mantarı Belirtileri Nelerdir? Erken ve İleri Evre İşaretler',
     slug: 'ayak-mantari-belirtileri',
