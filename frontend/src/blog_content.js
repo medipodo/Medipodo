@@ -2,6 +2,18 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayak-mantari-nasil-bulasir',
+    title: 'Ayak Mantarı Nasıl Bulaşır? Bulaşma Yolları ve Korunma',
+    slug: 'ayak-mantari-nasil-bulasir',
+    excerpt: 'Ayak mantarı nasıl bulaşır? Havuz, spor salonu, ev içi bulaşma yolları ve korunma yöntemleri. Ayak mantarı bulaşıcı mıdır sorusunun cevabı.',
+    image: '/blog-images/ayak-mantari/ayak-mantari-nasil-bulasir.webp',
+    date: '28 Ocak 2025',
+    readTime: '8 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Ayak Mantarı', 'Bulaşma', 'Tinea Pedis', 'Ayak Hijyeni', 'Korunma'],
+    content: 'Özel blog sayfası: /blog/ayak-mantari-nasil-bulasir'
+  },
+  {
     id: 'ayakta-yanma-hissi-neden-olur',
     title: 'Ayakta Yanma Hissi Neden Olur? Podolojik Bakış Açısıyla Değerlendirme',
     slug: 'ayakta-yanma-hissi-neden-olur',
