@@ -16,16 +16,24 @@ const BaglicaPodologFiyatlari = () => {
 
   const faqItems = [
     {
-      question: "Podolog fiyatları neden farklılık gösterir?",
-      answer: "Her bireyin ayak yapısı ve problemi farklı olduğu için fiyatlar kişiye özel belirlenir."
+      question: "Bağlıca podolog fiyatları neden farklılık gösterir?",
+      answer: "Bağlıca podolog fiyatları; her bireyin ayak yapısı, problemin ciddiyeti ve uygulanan işlem türüne göre değişir. Ayrıca evde hizmet veya klinik hizmeti tercihi de fiyatları etkileyen önemli faktörlerdendir."
     },
     {
-      question: "Medikal ayak bakımı kaç dakika sürer?",
-      answer: "Genellikle 45–60 dakika arasında sürer."
+      question: "Ankara Bağlıca'da medikal ayak bakımı kaç dakika sürer?",
+      answer: "Medikal ayak bakımı genellikle 45–60 dakika arasında sürer. Ancak batık tırnak veya mantar gibi ek sorunlar varsa süre uzayabilir."
     },
     {
-      question: "Tek seans yeterli olur mu?",
-      answer: "Sorunun durumuna göre değişir. Bazı işlemler tek seansta çözülürken bazıları düzenli bakım gerektirir."
+      question: "Bağlıca'da podolog seansı tek seferde yeterli olur mu?",
+      answer: "Sorunun türüne ve ciddiyetine göre değişir. Basit nasır temizleme tek seansta çözülebilirken, batık tırnak veya mantar tedavisi düzenli takip gerektirebilir."
+    },
+    {
+      question: "Bağlıca, Çayyolu ve Ümitköy'e evde podolog hizmeti var mı?",
+      answer: "Evet, Ankara Bağlıca başta olmak üzere Çayyolu, Ümitköy, Yaşamkent ve çevre ilçelerde evde ayak bakımı hizmeti sunuyoruz. Evde hizmet fiyatları kliniğe göre farklılık gösterebilir."
+    },
+    {
+      question: "Bağlıca podolog fiyatları 2026'da ne kadar?",
+      answer: "2026 yılı güncel Bağlıca podolog fiyatları işlem türüne göre ₺500 ile ₺4.500 arasında değişmektedir. Kesin fiyat ilk değerlendirme sonrasında belirlenir."
     }
   ];
 
@@ -35,26 +43,42 @@ const BaglicaPodologFiyatlari = () => {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Podolog fiyatları neden farklılık gösterir?",
+        "name": "Bağlıca podolog fiyatları neden farklılık gösterir?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Her bireyin ayak yapısı ve problemi farklı olduğu için fiyatlar kişiye özel belirlenir."
+          "text": "Bağlıca podolog fiyatları; her bireyin ayak yapısı, problemin ciddiyeti ve uygulanan işlem türüne göre değişir. Ayrıca evde hizmet veya klinik hizmeti tercihi de fiyatları etkileyen önemli faktörlerdendir."
         }
       },
       {
         "@type": "Question",
-        "name": "Medikal ayak bakımı kaç dakika sürer?",
+        "name": "Ankara Bağlıca'da medikal ayak bakımı kaç dakika sürer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Genellikle 45–60 dakika arasında sürer."
+          "text": "Medikal ayak bakımı genellikle 45–60 dakika arasında sürer. Ancak batık tırnak veya mantar gibi ek sorunlar varsa süre uzayabilir."
         }
       },
       {
         "@type": "Question",
-        "name": "Tek seans yeterli olur mu?",
+        "name": "Bağlıca'da podolog seansı tek seferde yeterli olur mu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sorunun durumuna göre değişir. Bazı işlemler tek seansta çözülürken bazıları düzenli bakım gerektirir."
+          "text": "Sorunun türüne ve ciddiyetine göre değişir. Basit nasır temizleme tek seansta çözülebilirken, batık tırnak veya mantar tedavisi düzenli takip gerektirebilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bağlıca, Çayyolu ve Ümitköy'e evde podolog hizmeti var mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, Ankara Bağlıca başta olmak üzere Çayyolu, Ümitköy, Yaşamkent ve çevre ilçelerde evde ayak bakımı hizmeti sunuyoruz. Evde hizmet fiyatları kliniğe göre farklılık gösterebilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bağlıca podolog fiyatları 2026'da ne kadar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "2026 yılı güncel Bağlıca podolog fiyatları işlem türüne göre ₺500 ile ₺4.500 arasında değişmektedir. Kesin fiyat ilk değerlendirme sonrasında belirlenir."
         }
       }
     ]
