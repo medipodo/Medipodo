@@ -400,6 +400,10 @@ const BaglicaPodologFiyatlari = () => {
                 Sık Sorulan Sorular
               </h2>
 
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                <strong>Bağlıca podolog fiyatları</strong> hakkında en çok merak edilen sorular ve cevaplar aşağıda yer almaktadır. <strong>Ankara Bağlıca</strong>, <strong>Çayyolu</strong>, <strong>Ümitköy</strong> ve <strong>Yaşamkent</strong> bölgelerinde podolog hizmetleri hakkında detaylı bilgileri inceleyebilirsiniz.
+              </p>
+
               <div className="space-y-4">
                 {faqItems.map((item, index) => (
                   <div
