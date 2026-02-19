@@ -35,6 +35,7 @@ import AyaktaYanmaHissiBlog from './pages/AyaktaYanmaHissiBlog';
 import AyakMantariBulasBlog from './pages/AyakMantariBulasBlog';
 import AyakMantariBelirtileriBlog from './pages/AyakMantariBelirtileriBlog';
 import AyakMantariEvdeTedaviBlog from './pages/AyakMantariEvdeTedaviBlog';
+import BaglicaPodologFiyatlari from './pages/BaglicaPodologFiyatlari';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
