@@ -130,29 +130,29 @@ const BaglicaPodologFiyatlari = () => {
             {/* Giriş */}
             <section className="mb-12">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                <strong>Bağlıca podolog fiyatları</strong>, yapılacak işlemin türüne, uygulamanın süresine ve kişinin ayak sağlığı durumuna göre değişiklik göstermektedir. Medikal ayak bakımı; sadece sorun giderme olarak değil, aynı zamanda <strong>önleyici</strong> önemli bir uygulamadır.
+                <strong>Bağlıca podolog fiyatları</strong>, Ankara'nın gelişen bölgelerinden biri olan Bağlıca'da yapılacak işlemin türüne, uygulamanın süresine ve kişinin ayak sağlığı durumuna göre değişiklik göstermektedir. Medikal ayak bakımı; sadece sorun giderme olarak değil, aynı zamanda <strong>önleyici</strong> önemli bir uygulamadır. Çayyolu, Ümitköy ve Yaşamkent gibi yakın bölgelerden de kolayca ulaşılabilir konumdayız.
               </p>
 
               <img 
                 src="/images/lokasyon/baglica-podolog.webp" 
-                alt="Bağlıca podolog fiyatları ve medikal ayak bakımı"
+                alt="Bağlıca podolog fiyatları ve medikal ayak bakımı Ankara"
                 className="w-full h-auto rounded-xl shadow-lg mb-6"
                 loading="lazy"
               />
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Bu sayfada <strong>Bağlıca</strong> bölgesinde en sık yapılan podolojik işlemlerin fiyatlarını, hangi durumlarda fiyatların değiştiğini ve hizmet detaylarını bulabilirsiniz.
+                Bu sayfada <strong>Bağlıca podolog fiyatları</strong> hakkında en sık yapılan podolojik işlemlerin ücretlerini, hangi durumlarda fiyatların değiştiğini ve hizmet detaylarını bulabilirsiniz.
               </p>
             </section>
 
             {/* Hizmetler */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                Bağlıca'da Podolog Hizmetleri Neleri Kapsar?
+                Bağlıca Podolog Fiyatları: Hangi Hizmetleri Kapsar?
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Podologlar tarafından uygulanan işlemler şunlardır:
+                Ankara Bağlıca'da podologlar tarafından uygulanan işlemler şunlardır:
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -234,7 +234,7 @@ const BaglicaPodologFiyatlari = () => {
             {/* Fiyat Faktörleri */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                Podolog Fiyatları Neye Göre Değişir?
+                Bağlıca Podolog Fiyatları Neye Göre Değişir?
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -247,7 +247,7 @@ const BaglicaPodologFiyatlari = () => {
                     <span className="text-blue-600 mr-2">🔹</span> Sorunun Seviyesi
                   </h3>
                   <p className="text-gray-700">
-                    İleri düzey <Link to="/hizmet/batik-tirnak" className="text-blue-600 hover:text-blue-800 underline">batık tırnak</Link> veya yaygın <Link to="/hizmet/tirnak-mantari" className="text-blue-600 hover:text-blue-800 underline">mantar</Link> durumlarında işlem süresi artar.
+                    İleri düzey <Link to="/hizmet/batik-tirnak" className="text-blue-600 hover:text-blue-800 underline">batık tırnak</Link> veya yaygın <Link to="/hizmet/tirnak-mantari" className="text-blue-600 hover:text-blue-800 underline">tırnak mantarı</Link> durumlarında işlem süresi artar. Ayrıca <Link to="/hizmet/nasir-tedavisi" className="text-blue-600 hover:text-blue-800 underline">nasır</Link> problemlerinin derinliği de fiyatı etkiler.
                   </p>
                 </div>
 
@@ -283,11 +283,11 @@ const BaglicaPodologFiyatlari = () => {
             {/* Evde Ayak Bakımı */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                Bağlıca'da Evde Ayak Bakımı Hizmeti
+                Bağlıca ve Çevresinde Evde Ayak Bakımı Hizmeti
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                <strong>Bağlıca</strong>, Çayyolu, Yaşamkent, Etimesgut, Çankaya ve birçok ilçede gerçekleştirdiğimiz <strong>evde ayak bakımı</strong> hizmeti, özellikle yaşlı, diyabet hastası veya hareket kısıtlılığı olan kişiler için büyük avantaj sağlar.
+                <strong>Ankara Bağlıca</strong>, Çayyolu, Ümitköy, Yaşamkent, Etimesgut ve Çankaya gibi birçok ilçede gerçekleştirdiğimiz <strong>evde ayak bakımı</strong> hizmeti, özellikle yaşlı, diyabet hastası veya hareket kısıtlılığı olan kişiler için büyük avantaj sağlar. <strong>Bağlıca podolog fiyatları</strong> evde hizmet için farklılık gösterebilir.
               </p>
 
               <div className="bg-green-50 rounded-xl p-6 mb-6">
@@ -316,7 +316,7 @@ const BaglicaPodologFiyatlari = () => {
             {/* Podolog Seçerken */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                Podolog Seçerken Nelere Dikkat Edilmeli?
+                Bağlıca'da Podolog Seçerken Nelere Dikkat Edilmeli?
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
