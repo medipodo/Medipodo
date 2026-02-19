@@ -75,7 +75,7 @@ const BaglicaPodologFiyatlari = () => {
       <Helmet>
         <title>Bağlıca Podolog Fiyatları 2026 | Medikal Ayak Bakımı Ücretleri</title>
         <meta name="description" content="Bağlıca podolog fiyatları 2026 güncel liste. Batık tırnak, nasır, mantar tedavisi ve evde ayak bakımı ücretlerini detaylı öğrenin." />
-        <meta name="keywords" content="bağlıca podolog fiyatları, bağlıca ayak bakımı, bağlıca podolog, medikal ayak bakımı fiyatları, evde ayak bakımı bağlıca" />
+        <meta name="keywords" content="bağlıca podolog fiyatları, bağlıca ayak bakımı, bağlıca podolog, ankara podolog fiyatları, çayyolu podolog, ümitköy podolog, yaşamkent podolog, evde ayak bakımı ankara" />
         <link rel="canonical" href="https://medipodo.com/baglica-podolog-fiyatlari" />
         <meta name="robots" content="index, follow" />
         
