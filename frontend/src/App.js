@@ -88,6 +88,7 @@ function AppContent() {
           <Route path="/blog/ayak-mantari-nasil-bulasir" element={<AyakMantariBulasBlog />} />
           <Route path="/blog/ayak-mantari-belirtileri" element={<AyakMantariBelirtileriBlog />} />
           <Route path="/blog/ayak-mantari-evde-tedavi-edilir-mi" element={<AyakMantariEvdeTedaviBlog />} />
+          <Route path="/baglica-podolog-fiyatlari" element={<BaglicaPodologFiyatlari />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />
