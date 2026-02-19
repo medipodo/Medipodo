@@ -233,36 +233,39 @@ const BaglicaPodologFiyatlari = () => {
             {/* Fiyat Listesi */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                2026 Bağlıca Podolog Fiyatları (Ortalama)
+                2026 Bağlıca Podolog Fiyatları (Güncel Liste)
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Aşağıda <strong>Bağlıca</strong> için ortalama fiyat aralıkları yer almaktadır:
+                Aşağıda <strong>Ankara Bağlıca</strong> için 2026 yılı güncel <strong>podolog fiyatları</strong> yer almaktadır. Fiyatlar işlem türüne göre değişiklik göstermektedir:
               </p>
 
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6">
-                <div className="bg-blue-600 text-white px-6 py-4">
-                  <h3 className="text-xl font-bold">Güncel Fiyat Listesi</h3>
+              <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-6 border-2 border-blue-100">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-5">
+                  <h3 className="text-2xl font-bold flex items-center">
+                    💰 Bağlıca Podolog Fiyatları 2026
+                  </h3>
+                  <p className="text-blue-100 text-sm mt-1">Güncel fiyat listesi - Çayyolu, Ümitköy, Yaşamkent dahil</p>
                 </div>
-                <div className="divide-y divide-gray-200">
+                <div className="divide-y divide-gray-100">
                   {priceList.map((item, index) => (
                     <div 
                       key={index} 
-                      className={`px-6 py-4 flex justify-between items-center ${item.highlight ? 'bg-green-50' : 'hover:bg-gray-50'}`}
+                      className={`px-6 py-5 flex justify-between items-center transition-all ${item.highlight ? 'bg-green-50 border-l-4 border-green-500' : 'hover:bg-blue-50'}`}
                     >
                       <div className="flex items-center">
                         {item.link ? (
-                          <Link to={item.link} className="text-blue-600 hover:text-blue-800 font-medium underline">
+                          <Link to={item.link} className="text-blue-600 hover:text-blue-800 font-semibold underline text-lg">
                             {item.service}
                           </Link>
                         ) : (
-                          <span className="text-gray-700 font-medium">{item.service}</span>
+                          <span className="text-gray-800 font-semibold text-lg">{item.service}</span>
                         )}
                         {item.highlight && (
-                          <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">Evde Hizmet</span>
+                          <span className="ml-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold">🏠 Evde Hizmet</span>
                         )}
                       </div>
-                      <span className={`font-bold text-lg ${item.highlight ? 'text-green-600' : 'text-blue-600'}`}>
+                      <span className={`font-bold text-xl ${item.highlight ? 'text-green-600' : 'text-blue-600'}`}>
                         {item.price}
                       </span>
                     </div>
@@ -273,7 +276,7 @@ const BaglicaPodologFiyatlari = () => {
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r-lg">
                 <p className="text-gray-700 flex items-start">
                   <AlertCircle className="text-yellow-600 mr-2 flex-shrink-0 mt-1" size={20} />
-                  <span><strong>Not:</strong> Kesin fiyat, ilk değerlendirme sonrası belirlenir.</span>
+                  <span><strong>Önemli Not:</strong> Kesin <strong>Bağlıca podolog fiyatları</strong>, ilk muayene ve değerlendirme sonrasında belirlenir. Fiyatlar KDV dahildir.</span>
                 </p>
               </div>
             </section>
