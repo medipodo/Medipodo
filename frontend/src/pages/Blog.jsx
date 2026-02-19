@@ -50,7 +50,7 @@ const Blog = () => {
             {blogPosts.map((post) => (
               <Card key={post.id} className="hover:shadow-xl transition-all hover:-translate-y-1">
                 <CardContent className="p-0">
-                  <Link to={`/blog/${post.slug}`} className="block">
+                  <Link to={post.customUrl || `/blog/${post.slug}`} className="block">
                     <div className="relative aspect-video overflow-hidden cursor-pointer">
                       <img
                         src={post.image}
@@ -68,7 +68,7 @@ const Blog = () => {
                         </Badge>
                       ))}
                     </div>
-                    <Link to={`/blog/${post.slug}`} className="block group">
+                    <Link to={post.customUrl || `/blog/${post.slug}`} className="block group">
                       <h2 className="text-2xl font-semibold text-blue-950 mb-3 line-clamp-2 group-hover:text-blue-700 transition-colors cursor-pointer">
                         {post.title}
                       </h2>
@@ -81,7 +81,7 @@ const Blog = () => {
                       <span>{post.readTime}</span>
                     </div>
                     <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                    <Link to={`/blog/${post.slug}`}>
+                    <Link to={post.customUrl || `/blog/${post.slug}`}>
                       <Button variant="link" className="text-blue-700 p-0 h-auto font-semibold">
                         Devamını Oku
                         <ArrowRight className="ml-1" size={16} />
