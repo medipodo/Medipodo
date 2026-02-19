@@ -437,28 +437,28 @@ const BaglicaPodologFiyatlari = () => {
             {/* Randevu CTA */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                Bağlıca Podolog Fiyatları Hakkında Bilgi Alın
+                Bağlıca Podolog Fiyatları Hakkında Detaylı Bilgi Alın
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                <strong>Ankara Bağlıca</strong>'da profesyonel ayak bakımı hizmeti almak için bizimle iletişime geçebilirsiniz. Çayyolu, Ümitköy ve Yaşamkent'ten de kolayca ulaşabilirsiniz. Uzman ekibimiz, ihtiyacınıza uygun en doğru tedavi ve bakım planını oluşturur.
+                <strong>Ankara Bağlıca</strong>'da profesyonel ayak bakımı hizmeti almak için bizimle iletişime geçebilirsiniz. <strong>Çayyolu</strong>, <strong>Ümitköy</strong> ve <strong>Yaşamkent</strong>'ten de kolayca ulaşabilirsiniz. Uzman podoloji ekibimiz, ihtiyacınıza uygun en doğru tedavi ve bakım planını oluşturur.
               </p>
             </section>
 
             {/* CTA */}
-            <section className="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 md:p-12 text-white text-center">
+            <section className="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 md:p-12 text-white text-center shadow-2xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Bağlıca Podolog Fiyatları Hakkında Bilgi Almak İçin Hemen Randevu Oluşturun
+                Bağlıca Podolog Fiyatları Hakkında Detaylı Bilgi Almak ve Randevu Oluşturmak İçin Hemen Bizimle İletişime Geçin
               </h2>
-              <p className="text-blue-100 mb-8 text-lg">
-                Ankara Bağlıca, Çayyolu, Ümitköy ve Yaşamkent bölgelerinde profesyonel ayak bakımı hizmeti sunuyoruz.
+              <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+                <strong>Ankara Bağlıca</strong>, Çayyolu, Ümitköy ve Yaşamkent bölgelerinde <strong>profesyonel ayak bakımı</strong> hizmeti sunuyoruz. Steril ortam, uzman kadro ve uygun fiyat garantisi.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
                   to="/iletisim"
                   className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
                 >
-                  Hemen Randevu Al
+                  📅 Hemen Randevu Al
                 </Link>
                 <a
                   href="https://wa.me/905456569747"
