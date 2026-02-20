@@ -36,6 +36,7 @@ import AyakMantariBulasBlog from './pages/AyakMantariBulasBlog';
 import AyakMantariBelirtileriBlog from './pages/AyakMantariBelirtileriBlog';
 import AyakMantariEvdeTedaviBlog from './pages/AyakMantariEvdeTedaviBlog';
 import BaglicaPodologFiyatlari from './pages/BaglicaPodologFiyatlari';
+import NasirNedenTekrarlarBlog from './pages/NasirNedenTekrarlarBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -89,6 +90,7 @@ function AppContent() {
           <Route path="/blog/ayak-mantari-belirtileri" element={<AyakMantariBelirtileriBlog />} />
           <Route path="/blog/ayak-mantari-evde-tedavi-edilir-mi" element={<AyakMantariEvdeTedaviBlog />} />
           <Route path="/baglica-podolog-fiyatlari" element={<BaglicaPodologFiyatlari />} />
+          <Route path="/blog/nasir-neden-tekrar-eder" element={<NasirNedenTekrarlarBlog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/hakkimizda" element={<About />} />
           <Route path="/kadromuz" element={<Team />} />

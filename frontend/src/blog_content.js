@@ -2,6 +2,18 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'nasir-neden-tekrar-eder',
+    title: 'Nasır Neden Sürekli Tekrarlar? Kalıcı Çözüm İçin Bilmeniz Gerekenler',
+    slug: 'nasir-neden-tekrar-eder',
+    excerpt: 'Nasır temizlendiği halde tekrar mı çıkıyor? Gerçek sebebi ve kalıcı çözüm yollarını öğrenin. Basış bozukluğu ve ayakkabı etkisini keşfedin.',
+    image: '/blog-images/nasir-tekrar/ankara-nasir-tedavisi.webp',
+    date: '20 Şubat 2026',
+    readTime: '8 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Nasır', 'Nasır Tedavisi', 'Kalıcı Çözüm', 'Ayak Sağlığı'],
+    content: 'Özel blog sayfası: /blog/nasir-neden-tekrar-eder'
+  },
+  {
     id: 'baglica-podolog-fiyatlari',
     title: 'Bağlıca Podolog Fiyatları 2026 (Güncel Liste)',
     slug: 'baglica-podolog-fiyatlari',
