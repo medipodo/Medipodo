@@ -237,7 +237,7 @@ const Home = () => {
             {blogPosts.slice(0, 6).map((post) => (
               <Card key={post.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
                 <CardContent className="p-0">
-                  <Link to={`/blog/${post.slug}`} className="block">
+                  <Link to={post.customUrl || `/blog/${post.slug}`} className="block">
                     <div className="relative aspect-video">
                       <img
                         src={post.image}
@@ -253,11 +253,11 @@ const Home = () => {
                       <span className="mx-2">•</span>
                       <span>{post.readTime}</span>
                     </div>
-                    <Link to={`/blog/${post.slug}`}>
+                    <Link to={post.customUrl || `/blog/${post.slug}`}>
                       <h3 className="text-xl font-semibold text-blue-950 mb-3 line-clamp-2 hover:text-blue-700 transition-colors">{post.title}</h3>
                     </Link>
                     <p className="text-gray-600 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
-                    <Link to={`/blog/${post.slug}`}>
+                    <Link to={post.customUrl || `/blog/${post.slug}`}>
                       <Button variant="link" className="text-blue-700 p-0 h-auto font-semibold">
                         Devamını Oku
                         <ArrowRight className="ml-1" size={16} />
