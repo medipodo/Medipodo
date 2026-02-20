@@ -440,6 +440,7 @@ Ayak sağlığı, izole bir konu değil, genel sağlık ve yaşam kalitenizin ay
 **Medipodo Ayak Bakımı olarak, kanıta dayalı podoloji hizmetlerimizle ayak sağlığınızda yanınızdayız. Profesyonel değerlendirme ve kişiye özel bakım planı için hemen randevu alın.**`,
     author: 'Pdl. Serdar Ceylan',
     date: '24 Kasım 2025',
+    updatedAt: '2025-11-24',
     readTime: '12 dakika',
     image: '/images/blog/Ayak-sagligi-icin-ipucları.jpg',
     tags: ['Ayak Sağlığı', 'Podoloji', 'Önleyici Bakım', 'Bilimsel Yaklaşım']
