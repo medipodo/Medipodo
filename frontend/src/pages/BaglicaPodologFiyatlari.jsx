@@ -141,7 +141,7 @@ const BaglicaPodologFiyatlari = () => {
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-2" />
-                <span>Güncel: 2026</span>
+                <span>19 Şubat 2026</span>
               </div>
             </div>
           </div>

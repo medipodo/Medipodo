@@ -7,7 +7,7 @@ export const enrichedBlogPosts = [
     slug: 'baglica-podolog-fiyatlari',
     excerpt: 'Bağlıca podolog fiyatları 2026 güncel liste. Batık tırnak, nasır, mantar tedavisi ve evde ayak bakımı ücretlerini detaylı öğrenin.',
     image: '/images/lokasyon/baglica-podolog.webp',
-    date: '28 Ocak 2025',
+    date: '19 Şubat 2026',
     readTime: '5 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Bağlıca', 'Podolog Fiyatları', 'Medikal Ayak Bakımı', 'Ankara'],
