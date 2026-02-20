@@ -1,5 +1,9 @@
 // Zenginleştirilmiş Blog İçerikleri - SEO Dostu, Özgün, Detaylı
 
+// publishDate: İlk yayınlanma tarihi (değişmez)
+// updatedAt: İçerik metni değiştiğinde güncellenir (sitemap lastmod için kullanılır)
+// Not: Kod refactor, deploy veya stil değişikliği updatedAt'i değiştirmez
+
 export const enrichedBlogPosts = [
   {
     id: 'nasir-neden-tekrar-eder',
@@ -8,6 +12,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Nasır temizlendiği halde tekrar mı çıkıyor? Gerçek sebebi ve kalıcı çözüm yollarını öğrenin. Basış bozukluğu ve ayakkabı etkisini keşfedin.',
     image: '/blog-images/nasir-tekrar/ankara-nasir-tedavisi.webp',
     date: '20 Şubat 2026',
+    updatedAt: '2026-02-20',
     readTime: '8 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Nasır', 'Nasır Tedavisi', 'Kalıcı Çözüm', 'Ayak Sağlığı'],
@@ -20,6 +25,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Bağlıca podolog fiyatları 2026 güncel liste. Batık tırnak, nasır, mantar tedavisi ve evde ayak bakımı ücretlerini detaylı öğrenin.',
     image: '/images/lokasyon/baglica-podolog.webp',
     date: '19 Şubat 2026',
+    updatedAt: '2026-02-19',
     readTime: '5 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Bağlıca', 'Podolog Fiyatları', 'Medikal Ayak Bakımı', 'Ankara'],
@@ -33,6 +39,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak mantarı evde tedavi edilebilir mi? Hangi durumlarda yeterli olur, ne zaman uzmana gidilmelidir? Detaylı ve güvenilir rehber.',
     image: '/blog-images/ayak-mantari-evde-tedavi/ayak-mantari-evde-tedavi-yontemleri.webp',
     date: '28 Ocak 2025',
+    updatedAt: '2025-01-28',
     readTime: '6 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Ayak Mantarı', 'Evde Tedavi', 'Doğal Tedavi', 'Uzman Desteği'],
@@ -45,6 +52,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak mantarı belirtileri nelerdir? Kaşıntı, kızarıklık, soyulma gibi erken ve ileri evre belirtileri ve ne zaman uzmana gidilmesi gerektiğini öğrenin.',
     image: '/blog-images/ayak-mantari-belirtileri/ayak-mantarinin-belirtileri.webp',
     date: '28 Ocak 2025',
+    updatedAt: '2025-01-28',
     readTime: '7 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Ayak Mantarı', 'Belirtiler', 'Tinea Pedis', 'Mantar Enfeksiyonu'],
@@ -57,6 +65,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak mantarı nasıl bulaşır? Havuz, spor salonu, ev içi bulaşma yolları ve korunma yöntemleri. Ayak mantarı bulaşıcı mıdır sorusunun cevabı.',
     image: '/blog-images/ayak-mantari/ayak-mantari-nasil-bulasir.webp',
     date: '28 Ocak 2025',
+    updatedAt: '2025-01-28',
     readTime: '8 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Ayak Mantarı', 'Bulaşma', 'Tinea Pedis', 'Ayak Hijyeni', 'Korunma'],
@@ -69,6 +78,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayakta yanma hissi neden olur? Ayak tabanı, parmaklar ve ayak üstünde yanma hissinin nedenleri. Podolojik bakış açısıyla değerlendirme ve ne zaman uzmana başvurulmalı.',
     image: '/images/blog/ayak-yanmasi.webp',
     date: '31 Aralık 2025',
+    updatedAt: '2025-12-31',
     readTime: '10 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Ayakta Yanma', 'Ayak Yanması', 'Podoloji', 'Ayak Sağlığı'],
@@ -81,6 +91,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak ağrısı neden olur? Ayak tabanı, topuk, ayak üstü ve parmak ağrılarının nedenleri. Podolojik bakış açısıyla ağrı nedenleri ve ne zaman uzmana başvurulmalı.',
     image: '/images/blog/ayak-agrisi-neden-olur.webp',
     date: '31 Aralık 2025',
+    updatedAt: '2025-12-31',
     readTime: '12 dk',
     author: 'Podolog Serdar Ceylan',
     tags: ['Ayak Ağrısı', 'Topuk Ağrısı', 'Plantar Fasiit', 'Podoloji', 'Ayak Sağlığı'],
@@ -93,6 +104,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Medikal ayak bakımı kimlere gereklidir? Evde pedikür yeterli olur mu? Diyabet, nasır, çatlak topuk ve tırnak sorunları için profesyonel bakım rehberi.',
     image: '/images/blog/medikal-ayak-bakimi-ankara-kimlere-yapilir.webp',
     date: '30 Aralık 2025',
+    updatedAt: '2025-12-30',
     readTime: '8 dk',
     author: 'Podolog Serdar C.',
     tags: ['Medikal Ayak Bakımı', 'Evde Pedikür', 'Podoloji', 'Nasır Tedavisi', 'Topuk Çatlağı', 'Diyabet Ayak Bakımı'],
@@ -105,6 +117,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak tırnağı neden uzamaz? Matriks hasarı, ayakkabı baskısı, akut travmalar, tırnak mantarı, dolaşım bozuklukları ve beslenme eksikliklerinin tırnak uzamasına etkisi. Ankara Bağlıca\'da podolojik çözümler.',
     image: '/images/blog/tirnak-neden-uzamaz/güncel-kapak-görseli-tirnak-uzamamasi.webp',
     date: '21 Aralık 2025',
+    updatedAt: '2025-12-21',
     readTime: '15 dk',
     tags: ['Tırnak Sağlığı', 'Podoloji', 'Matriks Hasarı', 'Tırnak Mantarı', 'Medikal Ayak Bakımı', 'Ankara Podolog'],
     content: 'Özel blog sayfası: /blog/tirnak-neden-uzamaz'
@@ -116,6 +129,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak tırnağı neden kalınlaşır? Mantar, dar ayakkabı, travma ve dolaşım sorunları kalın tırnağa yol açabilir. Belirtiler ve çözümler burada.',
     image: '/images/blog/tirnak-kalinlasmasi/blog-kapak görseli-tirnak-kalinlasmasi.jpg',
     date: '19 Aralık 2025',
+    updatedAt: '2025-12-19',
     readTime: '12 dk',
     tags: ['Tırnak Kalınlaşması', 'Tırnak Mantarı', 'Podoloji', 'Medikal Ayak Bakımı'],
     content: 'Özel blog sayfası: /blog/tirnak-neden-kalinlasir'
@@ -127,6 +141,7 @@ export const enrichedBlogPosts = [
     excerpt: 'B/S Bant uygulaması nedir, nasıl çalışır? Batık tırnak tedavisinde tırnak teline alternatif, acısız ve estetik çözüm. Ankara Medipodo\'da uygulanıyor.',
     image: '/images/blog/bs-bant/bs-bant.jpg',
     date: '16 Aralık 2025',
+    updatedAt: '2025-12-16',
     readTime: '12 dk',
     tags: ['B/S Bant', 'Batık Tırnak', 'Podoloji', 'Tırnak Teli', 'Tedavi'],
     content: 'Özel blog sayfası: /blog/bs-bant-uygulamasi'
@@ -138,6 +153,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Çocuklarda ve ergenlerde en sık görülen ayak problemleri ve podolojik çözümler. Batık tırnak, ayak mantarı, düz tabanlık tedavisi ve ebeveynler için rehber.',
     image: '/blog-images/cocuk-ayak-sagligi/blog kapak görseli.jpg',
     date: '8 Aralık 2025',
+    updatedAt: '2025-12-08',
     readTime: '12 dk',
     tags: ['Çocuk Ayak Sağlığı', 'Ergen', 'Batık Tırnak', 'Düz Tabanlık', 'Podoloji', 'Ebeveyn Rehberi'],
     content: 'Özel blog sayfası: /blog/cocuk-ayak-sagligi'
@@ -149,6 +165,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Sabah kalktığınızda topuğunuza batan keskin acı mı hissediyorsunuz? Topuk dikeni nedir, neden oluşur ve nasıl önlenir? Podolojik değerlendirme ve modern tedavi yöntemleri.',
     image: '/blog-images/topuk-dikeni/kapak görseli topuk dikeni.jpg',
     date: '8 Aralık 2025',
+    updatedAt: '2025-12-08',
     readTime: '15 dk',
     tags: ['Topuk Dikeni', 'Calcanei Epin', 'Topuk Ağrısı', 'Ortez', 'Podoloji', 'Ayak Sağlığı'],
     content: 'Özel blog sayfası: /blog/topuk-dikeni'
@@ -160,6 +177,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak tabanındaki ağrılı lezyonlar nasır mı siğil mi? Aralarındaki farkları öğrenin. Podolojik tedavi yöntemleri, kriyoterapi ve kalıcı çözümler için rehberiniz.',
     image: '/blog-images/nasir-sigil/kapak.jpg',
     date: '6 Aralık 2025',
+    updatedAt: '2025-12-06',
     readTime: '18 dk',
     tags: ['Nasır', 'Siğil', 'Plantar Siğil', 'Kriyoterapi', 'Podoloji', 'Ayak Sağlığı'],
     content: 'Özel blog sayfası: /blog/nasir-sigil-farklari'
@@ -171,6 +189,7 @@ export const enrichedBlogPosts = [
     excerpt: "Ankara Bağlıca'da podolog ve uzman refleksolog ekibiyle profesyonel refleksoloji hizmeti. Otizm, DEHB, bel fıtığı ve migren için tamamlayıcı destek.",
     image: '/blog-images/refleksoloji/refleksoloji.jpg',
     date: '3 Aralık 2025',
+    updatedAt: '2025-12-03',
     readTime: '20 dk',
     tags: ['Refleksoloji', 'Ankara', 'Bağlıca', 'Medikal Refleksoloji', 'Otizm', 'DEHB'],
     content: 'Özel blog sayfası: /blog/ankara-baglica-refleksoloji'
@@ -182,6 +201,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Tırnak batmasının nedenleri, evde yapılan hatalar, podolojik yöntemler ve kalıcı çözümler. Medipodo ile tırnak batması sorununu çözün.',
     image: '/blog-images/batik-tirnak/kapak.jpg',
     date: '1 Aralık 2025',
+    updatedAt: '2025-12-01',
     readTime: '15 dk',
     tags: ['Tırnak Batması', 'Podoloji', 'Tedavi'],
     content: 'Özel blog sayfası: /blog/tirnakbatmasi'
@@ -193,6 +213,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Diyabetik ayak sendromundan korunma yolları, günlük bakım rutini ve podolog tavsiyeleri. Medipodo ile ayak sağlığınızı koruyun.',
     image: '/blog-images/diyabet/1.jpg',
     date: '1 Aralık 2025',
+    updatedAt: '2025-12-01',
     readTime: '18 dk',
     tags: ['Diyabet', 'Diyabetik Ayak', 'Nöropati', 'Anjiyopati', 'Podolog'],
     content: 'Özel blog sayfası: /blog/diyabet-ve-ayak-sagligi'
@@ -204,6 +225,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Ayak kokusu ve mantar arasındaki bilimsel ilişki, keratolitik etki ve antifungal koruma. PediZone Temizleme Köpüğü ile kalıcı çözüm.',
     image: '/blog-images/ayak-kokusu/2.jpg',
     date: '29 Kasım 2025',
+    updatedAt: '2025-11-29',
     readTime: '15 dk',
     tags: ['Ayak Kokusu', 'Mantar', 'PediZone', 'Keratolitik', 'Antifungal'],
     content: 'Özel blog sayfası: /blog/ayak-kokusu-ve-mantar-iliskisi'
@@ -215,6 +237,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Kış mevsiminde çatlak topuk problemi neden artar? Profesyonel tedavi yöntemleri, PediZone %15 Üre kremi ile evde bakım ve podolog önerileri.',
     image: '/blog-images/catlak-topuk/4.jpg',
     date: '29 Kasım 2025',
+    updatedAt: '2025-11-29',
     readTime: '12 dk',
     tags: ['Çatlak Topuk', 'Kış Bakımı', 'PediZone', 'Üre Kremi', 'Ayak Sağlığı'],
     content: 'Özel blog sayfası: /blog/kis-aylarinda-catlak-topuk-tedavisi'
@@ -226,6 +249,7 @@ export const enrichedBlogPosts = [
     excerpt: 'Bağlıca ve çevresinde profesyonel podolog arıyorsanız Medipodo Ayak Sağlığı Merkezi; tırnak batması, tırnak mantarı, nasır temizliği, çatlak topuk, diyabetik ayak bakımı ve evde medikal ayak bakımı hizmetleriyle Ankara\'da güvenilir ve uzman bir merkezdir.',
     image: '/blog-images/14.jpg',
     date: '28 Kasım 2025',
+    updatedAt: '2025-11-28',
     readTime: '10 dk',
     tags: ['Podoloji', 'Ayak Sağlığı', 'Bağlıca', 'Ankara'],
     content: 'Özel blog sayfası: /blog/baglica-podolog-hizmetleri'
