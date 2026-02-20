@@ -347,7 +347,7 @@ const EbookLanding = () => {
         <footer className="bg-blue-950 text-white py-8">
           <div className="container mx-auto px-4 text-center">
             <p className="text-blue-200">
-              © {new Date().getFullYear()} Medipodo Medikal Sağlık Hizmetleri. Tüm hakları saklıdır.
+              © 2025 Medipodo Medikal Sağlık Hizmetleri. Tüm hakları saklıdır.
             </p>
           </div>
         </footer>
