@@ -11,6 +11,9 @@
 /blog-images/diyabet/10.jpg /blog-images/diyabet/ebu-evrelendirilemeyen-basinc-ulseri10.webp 301
 /blog-images/diyabet/11.jpg /blog-images/diyabet/diyabet-gunu-11.webp 301
 
+# 301 Redirect - Bağlıca Podolog Fiyatları (SEO URL düzeltmesi)
+/blog/baglica-podolog-fiyatlari /baglica-podolog-fiyatlari 301
+
 /sitemap.xml /sitemap.xml 200
 /robots.txt /robots.txt 200
 /* /index.html 200
