@@ -208,7 +208,7 @@ const NasirNedenTekrarlarBlog = () => {
 
               <div className="bg-blue-50 p-6 rounded-xl">
                 <p className="text-gray-700">
-                  👉 Basış bozukluğunuzun olup olmadığını öğrenmek için <Link to="/ayak-analizi" className="text-blue-600 hover:text-blue-800 font-semibold underline">ayak analizi</Link> sayfamızı ziyaret edebilirsiniz.
+                  👉 Nasır ve siğil arasındaki farkları öğrenmek için <Link to="/blog/nasir-sigil-farklari" className="text-blue-600 hover:text-blue-800 font-semibold underline">Nasır ve Siğil Farkları</Link> yazımıza göz atabilirsiniz.
                 </p>
               </div>
             </section>
