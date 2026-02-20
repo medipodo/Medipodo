@@ -573,6 +573,7 @@ Profesyonel batık tırnak tedavisi için [batık tırnak hizmetlerimizi](/hizme
 Batık tırnak, doğru önlemlerle büyük ölçüde önlenebilen ancak ihmal edildiğinde ciddi sorunlara yol açabilen bir problemdir. Erken fark edilen batık tırnaklarda profesyonel destek almak, hem ağrıyı azaltır hem de ileride oluşabilecek komplikasyonların önüne geçer.`,
     author: 'Pdl. Serdar Ceylan',
     date: '20 Kasım 2025',
+    updatedAt: '2025-11-20',
     readTime: '10 dakika',
     image: '/images/blog/batik-tirnak-ankara-podolog.webp',
     tags: ['Batık Tırnak', 'Batık Tırnak Nedenleri', 'Unguis Incarnatus', 'Podoloji', 'Tırnak Bakımı'],
