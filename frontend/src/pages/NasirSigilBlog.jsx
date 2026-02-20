@@ -252,6 +252,12 @@ const NasirSigilBlog = () => {
                 </ul>
               </div>
 
+              <div className="bg-blue-50 p-6 rounded-xl mb-6">
+                <p className="text-gray-700">
+                  👉 <strong>Nasırın neden tekrar ettiğini</strong> merak ediyorsanız <Link to="/blog/nasir-neden-tekrar-eder" className="text-blue-600 hover:text-blue-800 font-semibold underline">detaylı yazımıza göz atın</Link>.
+                </p>
+              </div>
+
               <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 rounded-lg mb-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Nasırın Belirtileri</h3>
                 <ul className="space-y-3">
