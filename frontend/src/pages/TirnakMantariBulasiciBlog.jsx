@@ -57,7 +57,8 @@ const TirnakMantariBulasiciBlog = () => {
     "image": "https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-bulasir-mi.webp",
     "author": {
       "@type": "Person",
-      "name": "Podolog Serdar Ceylan"
+      "name": "Podolog Serdar Ceylan",
+      "url": "https://medipodo.com/kadromuz"
     },
     "publisher": {
       "@type": "Organization",
@@ -67,8 +68,8 @@ const TirnakMantariBulasiciBlog = () => {
         "url": "https://medipodo.com/images/logo.webp"
       }
     },
-    "datePublished": "2026-02-21",
-    "dateModified": "2026-02-21"
+    "datePublished": "2026-02-21T09:00:00+03:00",
+    "dateModified": "2026-02-21T09:00:00+03:00"
   };
 
   return (
