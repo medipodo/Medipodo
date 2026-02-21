@@ -26,6 +26,7 @@ import CocukAyakSagligiBlog from './pages/CocukAyakSagligiBlog';
 import BSBantBlog from './pages/BSBantBlog';
 import TirnakKalinlasmaBlog from './pages/TirnakKalinlasmaBlog';
 import TirnakMantariBlog from './pages/TirnakMantariBlog';
+import TirnakMantariBulasiciBlog from './pages/TirnakMantariBulasiciBlog';
 import TirnakNedenUzamazBlog from './pages/TirnakNedenUzamazBlog';
 import MedikalAyakBakimiKimlerBlog from './pages/MedikalAyakBakimiKimlerBlog';
 import BatikTirnakNedenleri from './pages/BatikTirnakNedenleri';
