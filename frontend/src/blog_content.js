@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'tirnak-mantari-bulasici-mi',
+    title: 'Tırnak Mantarı Bulaşıcı mı? Evde Aile Bireylerine Geçer mi?',
+    slug: 'tirnak-mantari-bulasici-mi',
+    excerpt: 'Tırnak mantarı bulaşıcı mı? Evde aile bireylerine geçer mi? Bulaşma yolları, korunma yöntemleri ve ne zaman uzman desteği alınmalı detaylı anlatım.',
+    image: '/blog-images/tirnak-mantari-bulasici/tirnak-mantari-bulasir-mi.webp',
+    date: '21 Şubat 2026',
+    updatedAt: '2026-02-21',
+    readTime: '8 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Tırnak Mantarı', 'Bulaşıcı Hastalık', 'Onikomikoz', 'Ayak Hijyeni', 'Korunma'],
+    content: 'Özel blog sayfası: /blog/tirnak-mantari-bulasici-mi'
+  },
+  {
     id: 'nasir-neden-tekrar-eder',
     title: 'Nasır Neden Sürekli Tekrarlar? Kalıcı Çözüm İçin Bilmeniz Gerekenler',
     slug: 'nasir-neden-tekrar-eder',
