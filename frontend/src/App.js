@@ -81,6 +81,7 @@ function AppContent() {
           <Route path="/blog/bs-bant-uygulamasi" element={<BSBantBlog />} />
           <Route path="/blog/tirnak-neden-kalinlasir" element={<TirnakKalinlasmaBlog />} />
           <Route path="/blog/tirnak-mantari-tedavisi" element={<TirnakMantariBlog />} />
+          <Route path="/blog/tirnak-mantari-bulasici-mi" element={<TirnakMantariBulasiciBlog />} />
           <Route path="/blog/tirnak-neden-uzamaz" element={<TirnakNedenUzamazBlog />} />
           <Route path="/blog/medikal-ayak-bakimi-kimler-icin-gereklidir" element={<MedikalAyakBakimiKimlerBlog />} />
           <Route path="/blog/batik-tirnak-nedenleri" element={<BatikTirnakNedenleri />} />
