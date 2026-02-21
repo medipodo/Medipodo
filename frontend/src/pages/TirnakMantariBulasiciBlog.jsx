@@ -5,7 +5,8 @@ import { ArrowLeft, Calendar, Clock, User, ChevronDown, ChevronUp, Phone, AlertT
 import { Button } from '../components/ui/button';
 
 const TirnakMantariBulasiciBlog = () => {
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+  // İlk FAQ default açık - CLS önleme
+  const [openFaqIndex, setOpenFaqIndex] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,22 +16,23 @@ const TirnakMantariBulasiciBlog = () => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
+  // Genişletilmiş FAQ içerikleri (100-160 kelime)
   const faqItems = [
     {
       question: "Tırnak mantarı havludan bulaşır mı?",
-      answer: "Evet. Nemli tekstil ürünleri mantar sporlarını taşıyabilir. Havlu, çorap ve terlik gibi eşyaların ortak kullanımı bulaş riskini artırır."
+      answer: "Evet, tırnak mantarı nemli havlulardan bulaşabilir. Dermatofit mantarlar nemli tekstil yüzeylerinde uzun süre canlı kalabilir ve bu yüzeylerle temas eden sağlıklı tırnaklara geçebilir. Özellikle banyo sonrası ıslak bırakılan havlular, mantar sporları için ideal üreme ortamı oluşturur. Aynı şekilde çorap, terlik ve ayakkabı gibi kişisel eşyaların paylaşılması da bulaş riskini ciddi oranda artırır. Ev içinde her bireyin kendi havlu ve terliğini kullanması, bulaşmayı önlemenin en etkili yollarından biridir. Havluların düzenli olarak 60 derece ve üzerinde yıkanması, mantar sporlarının öldürülmesine yardımcı olur."
     },
     {
       question: "Aynı evde yaşayan herkese geçer mi?",
-      answer: "Hijyen kurallarına dikkat edilmezse bulaşabilir ancak bu kesin değildir. Kişisel eşyaların ayrı kullanımı ve banyo hijyeni riski azaltır."
+      answer: "Tırnak mantarı aynı evde yaşayan herkese kesin olarak bulaşmaz, ancak hijyen kurallarına dikkat edilmezse risk önemli ölçüde artar. Bulaşma genellikle ortak banyo kullanımı, aynı tırnak makasının paylaşılması ve ortak terlik giyme gibi durumlarla gerçekleşir. Bağışıklık sistemi güçlü olan bireylerde mantar sporlarıyla temas olsa bile enfeksiyon gelişmeyebilir. Ancak diyabet hastaları, yaşlılar ve bağışıklık sistemi zayıf olan kişilerde bulaş riski çok daha yüksektir. Evde mantar enfeksiyonu olan bir birey varsa, kişisel eşyaların kesinlikle ayrı tutulması ve banyo zemininin düzenli dezenfekte edilmesi gerekir."
     },
     {
       question: "Tırnak mantarı el tırnaklarına geçer mi?",
-      answer: "Evet, enfekte tırnağa temas sonrası el tırnaklarına da bulaşabilir. Bu nedenle ayak bakımı sonrası ellerin yıkanması önemlidir."
+      answer: "Evet, ayak tırnaklarındaki mantar enfeksiyonu el tırnaklarına da bulaşabilir. Bu durum genellikle enfekte ayak tırnaklarına elle temas sonrasında gerçekleşir. Özellikle ayak bakımı sırasında eldiven kullanılmaması veya işlem sonrası ellerin yeterince yıkanmaması bulaş riskini artırır. El tırnaklarında mantar enfeksiyonu ayak tırnaklarına göre daha nadir görülür çünkü eller genellikle daha kuru kalır ve daha sık yıkanır. Ancak enfekte tırnağa düzenli temas eden kişilerde el mantarı gelişme olasılığı yükselir. Ayak bakımı sonrası ellerin sabunlu su ile en az 20 saniye yıkanması, bu riski minimize eder."
     },
     {
       question: "Tırnak mantarı tedavi edilmezse ne olur?",
-      answer: "Kalınlaşma artar, ağrı başlayabilir ve çevre dokular enfekte olabilir. İleri vakalarda tırnak kaybı yaşanabilir."
+      answer: "Tedavi edilmeyen tırnak mantarı zamanla ilerler ve ciddi komplikasyonlara yol açabilir. İlk aşamada tırnak kalınlaşır, sararır ve kırılgan hale gelir. İlerleyen dönemde tırnak yatağından ayrılmaya başlayabilir ve altında birikinti oluşur. Bu aşamada ağrı ve hassasiyet belirginleşir, ayakkabı giymek zorlaşır. Enfeksiyon diğer tırnaklara ve hatta ayak derisine yayılabilir. Diyabet hastalarında tedavisiz mantar enfeksiyonu, ciddi doku hasarına ve enfeksiyonların derinleşmesine neden olabilir. İleri vakalarda tırnağın kalıcı olarak kaybedilmesi veya cerrahi müdahale gerekebilir. Erken dönemde başlanan tedavi bu risklerin tamamını ortadan kaldırır."
     }
   ];
 
@@ -391,22 +393,26 @@ const TirnakMantariBulasiciBlog = () => {
               </p>
             </section>
 
-            {/* Sonuç */}
+            {/* Sonuç - Genişletilmiş (120+ kelime) */}
             <section className="mb-12 bg-blue-50 p-8 rounded-xl">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Sonuç
               </h2>
               
               <p className="text-gray-700 leading-relaxed mb-4">
-                Tırnak mantarı bulaşıcı bir enfeksiyondur ve ev içinde aile bireylerine geçebilir. Ancak doğru hijyen önlemleri ve erken tedavi ile bulaşma riski önemli ölçüde azaltılabilir.
+                Tırnak mantarı bulaşıcı bir enfeksiyondur ve ev içinde aile bireylerine geçebilir. Bulaşma genellikle ortak banyo kullanımı, havlu ve terlik paylaşımı gibi dolaylı yollarla gerçekleşir. Ancak doğru hijyen önlemleri ve erken tedavi ile bulaşma riski önemli ölçüde azaltılabilir.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Unutmayın: Tırnak mantarı kendi kendine geçmez ve evde uygulanan alternatif yöntemler genellikle yetersiz kalır. Ne kadar erken profesyonel müdahale yapılırsa, tedavi süreci o kadar kısa ve başarılı olur. Tedavisiz bırakılan enfeksiyon hem diğer tırnaklara yayılır hem de ev içinde bulaş riskini artırır.
               </p>
 
               <p className="text-gray-700 leading-relaxed">
-                Unutmayın: Tırnak mantarı kendi kendine geçmez. Ne kadar erken müdahale edilirse, tedavi süreci o kadar kısa ve başarılı olur. Profesyonel podolojik bakım, hem mevcut enfeksiyonu tedavi eder hem de çevrenizdeki kişilere bulaşma riskini ortadan kaldırır.
+                Profesyonel podolojik bakım, hem mevcut enfeksiyonu etkili şekilde tedavi eder hem de çevrenizdeki kişilere bulaşma riskini ortadan kaldırır. Özellikle diyabet hastaları ve bağışıklık sistemi zayıf olan bireyler için erken değerlendirme kritik öneme sahiptir. Şüpheniz varsa beklemeden uzman görüşü alın.
               </p>
             </section>
 
-            {/* FAQ Section */}
+            {/* FAQ Section - SEO uyumlu, HTML'de görünür */}
             <section className="mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
                 Sıkça Sorulan Sorular
@@ -418,6 +424,7 @@ const TirnakMantariBulasiciBlog = () => {
                     <button
                       onClick={() => toggleFaq(index)}
                       className="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
+                      aria-expanded={openFaqIndex === index}
                     >
                       <span className="font-semibold text-gray-900">{faq.question}</span>
                       {openFaqIndex === index ? (
@@ -426,11 +433,28 @@ const TirnakMantariBulasiciBlog = () => {
                         <ChevronDown className="text-gray-400 flex-shrink-0" size={20} />
                       )}
                     </button>
-                    {openFaqIndex === index && (
-                      <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                        <p className="text-gray-700">{faq.answer}</p>
+                    {/* Her zaman HTML'de mevcut, sadece görünürlük değişiyor - SEO için önemli */}
+                    <div 
+                      className={`px-6 py-4 bg-gray-50 border-t border-gray-200 ${openFaqIndex === index ? 'block' : 'hidden'}`}
+                      itemScope 
+                      itemProp="mainEntity" 
+                      itemType="https://schema.org/Question"
+                    >
+                      <meta itemProp="name" content={faq.question} />
+                      <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                        <p className="text-gray-700" itemProp="text">{faq.answer}</p>
                       </div>
-                    )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* SSR/SEO için gizli FAQ içeriği - Crawler'lar görebilir */}
+              <div className="sr-only" aria-hidden="true">
+                {faqItems.map((faq, index) => (
+                  <div key={`seo-faq-${index}`}>
+                    <h3>{faq.question}</h3>
+                    <p>{faq.answer}</p>
                   </div>
                 ))}
               </div>
