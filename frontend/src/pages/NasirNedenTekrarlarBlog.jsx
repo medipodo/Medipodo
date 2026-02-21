@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User, ChevronDown, ChevronUp, Phone, AlertTriangle, CheckCircle } from 'lucide-react';
 
 const NasirNedenTekrarlarBlog = () => {
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+  // İlk FAQ default açık - CLS önleme
+  const [openFaqIndex, setOpenFaqIndex] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,50 +15,60 @@ const NasirNedenTekrarlarBlog = () => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
+  // Genişletilmiş FAQ içerikleri (100-160 kelime)
   const faqItems = [
     {
       question: "Nasır temizlettim ama tekrar çıktı, neden?",
-      answer: "Nasır bir sonuçtur, sebep değil. Eğer baskı kaynağı (yanlış ayakkabı, basış bozukluğu veya kemik çıkıntısı) ortadan kaldırılmadıysa nasır tekrar oluşur. Kalıcı çözüm için altta yatan mekanik neden değerlendirilmelidir."
+      answer: "Nasır bir sonuçtur, sebep değildir. Cildin belirli bir noktada kalınlaşması, o bölgeye sürekli uygulanan baskının sonucudur. Eğer baskı kaynağı ortadan kaldırılmazsa nasır tekrar oluşur. Bu kaynak yanlış ayakkabı seçimi, basış bozukluğu veya kemik çıkıntısı olabilir. Sadece yüzeysel temizleme yapıldığında, altta yatan mekanik problem devam ettiği için nasır kısa sürede geri gelir. Kalıcı çözüm için öncelikle baskının kaynağı tespit edilmeli, ardından uygun müdahale planlanmalıdır. Profesyonel podolojik değerlendirme ile basış analizi yapılması, tekrarlayan nasırların önlenmesinde kritik öneme sahiptir."
     },
     {
       question: "Nasırın kökü var mı?",
-      answer: "Evet, özellikle ağrılı nasırlarda derinin derinine uzanan konik bir çekirdek bulunur. Bu çekirdek tam temizlenmezse rahatlama geçici olur ve nasır kısa sürede geri gelir."
+      answer: "Evet, özellikle ağrılı nasırlarda derinin derinine uzanan konik bir çekirdek bulunur. Bu çekirdek tıbbi olarak 'enükle' veya 'nükleus' olarak adlandırılır ve sinir uçlarına baskı yaparak yürürken şiddetli ağrıya neden olabilir. Hastalar bunu genellikle 'ayağımda taş var' hissi olarak tanımlar. Sadece yüzeysel törpüleme yapıldığında bu çekirdek yerinde kalır ve rahatlama geçici olur. Çekirdeğin tam olarak çıkarılması için profesyonel ekipman ve deneyim gereklidir. Evde yapılan müdahaleler çekirdeğe ulaşamaz ve sağlıklı dokuya zarar vererek durumu kötüleştirebilir."
     },
     {
       question: "Evde nasır kesebilir miyim?",
-      answer: "Hayır, evde kesmeye çalışmak veya asitli bantlar kullanmak sağlıklı dokuya zarar verebilir ve enfeksiyon riskini artırabilir. Özellikle diyabet hastaları için bu çok tehlikelidir. Profesyonel podolog desteği alınmalıdır."
+      answer: "Hayır, evde nasır kesmeye çalışmak kesinlikle önerilmez. Makas, bıçak veya jilet gibi aletlerle yapılan müdahaleler sağlıklı dokuya zarar verebilir ve ciddi enfeksiyon riskine yol açabilir. Aynı şekilde eczanelerde satılan asitli bantlar da kontrollü kullanılmazsa çevre dokuyu yakabilir. Özellikle diyabet hastaları için evde müdahale çok tehlikelidir çünkü his kaybı nedeniyle kesikleri fark etmeyebilir ve iyileşmeyen yaralar ciddi komplikasyonlara dönüşebilir. Nasır tedavisi steril ortamda, uygun ekipmanlarla ve profesyonel podolog tarafından yapılmalıdır."
+    },
+    {
+      question: "Nasır tedavisi ne kadar sürede iyileşir?",
+      answer: "Nasırın iyileşme süresi, nasırın derinliğine ve altta yatan sebebe göre değişir. Profesyonel temizleme işlemi tek seansta yapılabilir ve hasta aynı gün yürüyerek ayrılabilir. Ancak kalıcı iyileşme için baskı kaynağının ortadan kaldırılması gerekir. Ayakkabı değişikliği veya tabanlık kullanımı gibi önlemlerle birlikte nasır tekrarı önlenebilir. Derin çekirdekli nasırlarda birden fazla seans gerekebilir. Düzenli ayak bakımı ve uygun ayakkabı seçimi ile nasırın tekrar oluşma riski minimize edilir. Ortalama olarak tam iyileşme için 2-4 hafta yeterlidir."
     }
   ];
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Nasır temizlettim ama tekrar çıktı, neden?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nasır bir sonuçtur, sebep değil. Eğer baskı kaynağı (yanlış ayakkabı, basış bozukluğu veya kemik çıkıntısı) ortadan kaldırılmadıysa nasır tekrar oluşur. Kalıcı çözüm için altta yatan mekanik neden değerlendirilmelidir."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Nasırın kökü var mı?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Evet, özellikle ağrılı nasırlarda derinin derinine uzanan konik bir çekirdek bulunur. Bu çekirdek tam temizlenmezse rahatlama geçici olur ve nasır kısa sürede geri gelir."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Evde nasır kesebilir miyim?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hayır, evde kesmeye çalışmak veya asitli bantlar kullanmak sağlıklı dokuya zarar verebilir ve enfeksiyon riskini artırabilir. Özellikle diyabet hastaları için bu çok tehlikelidir. Profesyonel podolog desteği alınmalıdır."
-        }
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
       }
-    ]
+    }))
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Nasır Neden Sürekli Tekrarlar? Kalıcı Çözüm İçin Bilmeniz Gerekenler",
+    "description": "Nasır temizlendiği halde tekrar mı çıkıyor? Gerçek sebebi ve kalıcı çözüm yollarını öğrenin. Basış bozukluğu ve ayakkabı etkisini keşfedin.",
+    "image": "https://medipodo.com/blog-images/nasir-tekrar/ankara-nasir-tedavisi.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Podolog Serdar Ceylan",
+      "url": "https://medipodo.com/kadromuz"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Medipodo Ayak Sağlığı Merkezi",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://medipodo.com/images/logo.webp"
+      }
+    },
+    "datePublished": "2026-02-20T09:00:00+03:00",
+    "dateModified": "2026-02-20T09:00:00+03:00"
   };
 
   return (
@@ -84,6 +95,9 @@ const NasirNedenTekrarlarBlog = () => {
 
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
         </script>
       </Helmet>
 
@@ -208,7 +222,7 @@ const NasirNedenTekrarlarBlog = () => {
 
               <div className="bg-blue-50 p-6 rounded-xl">
                 <p className="text-gray-700">
-                  👉 Nasır ve siğil arasındaki farkları öğrenmek için <Link to="/blog/nasir-sigil-farklari" className="text-blue-600 hover:text-blue-800 font-semibold underline">Nasır ve Siğil Farkları</Link> yazımıza göz atabilirsiniz.
+                  Nasır ve siğil arasındaki farkları öğrenmek için <Link to="/blog/nasir-sigil-farklari" className="text-blue-600 hover:text-blue-800 font-semibold underline">Nasır ve Siğil Farkları</Link> yazımıza göz atabilirsiniz.
                 </p>
               </div>
             </section>
@@ -267,7 +281,7 @@ const NasirNedenTekrarlarBlog = () => {
 
               <div className="bg-blue-50 p-6 rounded-xl">
                 <p className="text-gray-700">
-                  👉 Diyabet ve ayak sağlığı ilişkisi hakkında detaylı bilgi için <Link to="/blog/diyabet-ve-ayak-sagligi" className="text-blue-600 hover:text-blue-800 font-semibold underline">Diyabet ve Ayak Sağlığı</Link> yazımızı okuyabilirsiniz.
+                  Diyabet ve ayak sağlığı ilişkisi hakkında detaylı bilgi için <Link to="/blog/diyabet-ve-ayak-sagligi" className="text-blue-600 hover:text-blue-800 font-semibold underline">Diyabet ve Ayak Sağlığı</Link> yazımızı okuyabilirsiniz.
                 </p>
               </div>
             </section>
@@ -303,23 +317,23 @@ const NasirNedenTekrarlarBlog = () => {
 
               <div className="bg-blue-600 text-white rounded-xl p-6">
                 <p className="text-lg">
-                  👉 Profesyonel <Link to="/hizmet/nasir-tedavisi" className="text-white hover:text-blue-200 underline font-semibold">nasır tedavisi</Link> hakkında detaylı bilgi almak için hizmet sayfamızı ziyaret edebilirsiniz.
+                  Profesyonel <Link to="/hizmet/nasir-tedavisi" className="text-white hover:text-blue-200 underline font-semibold">nasır tedavisi</Link> hakkında detaylı bilgi almak için hizmet sayfamızı ziyaret edebilirsiniz.
                 </p>
               </div>
             </section>
 
-            {/* Sonuç */}
+            {/* Sonuç - Genişletilmiş (120+ kelime) */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Sonuç: Nasır Neden Tekrarlar?
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Çünkü çoğu zaman <strong>sadece sonucu temizleriz, sebebi değil</strong>.
+                Nasır tekrar eder çünkü çoğu zaman <strong>sadece sonucu temizleriz, sebebi değil</strong>. Nasır derinin bir savunma mekanizmasıdır ve baskı devam ettiği sürece vücut bu koruyucu tabakayı yeniden oluşturacaktır.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Eğer:
+                Eğer nasırınız:
               </p>
 
               <ul className="space-y-2 mb-6">
@@ -336,20 +350,21 @@ const NasirNedenTekrarlarBlog = () => {
               </ul>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                ...altta yatan <strong>mekanik neden</strong> değerlendirilmelidir.
+                Bu durumda altta yatan <strong>mekanik neden</strong> mutlaka değerlendirilmelidir. Yanlış ayakkabı seçimi, basış bozukluğu veya kemik çıkıntıları gibi faktörler tespit edilmeden yapılan temizlemeler geçici rahatlama sağlar ancak kalıcı çözüm sunmaz.
+              </p>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Kalıcı çözüm için profesyonel podolojik değerlendirme şarttır. Basış analizi, ayakkabı önerileri ve gerektiğinde özel tabanlık uygulamaları ile nasır oluşumunun önüne geçilebilir. Unutmayın: Nasırın kalıcı olarak kontrol altına alınması, <strong>basıncın ortadan kaldırılması</strong> ile mümkündür.
               </p>
 
               <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-xl p-8">
-                <p className="text-xl font-medium text-blue-100 leading-relaxed mb-4">
-                  Nasırın kalıcı olarak kontrol altına alınması, <strong>basıncın ortadan kaldırılması</strong> ile mümkündür.
-                </p>
                 <p className="text-blue-200 text-sm italic">
                   Bu içerik Medipodo podoloji ekibi tarafından hazırlanmıştır.
                 </p>
               </div>
             </section>
 
-            {/* SSS */}
+            {/* SSS - SEO uyumlu, HTML'de görünür */}
             <section className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
                 Sık Sorulan Sorular
@@ -381,13 +396,30 @@ const NasirNedenTekrarlarBlog = () => {
                         )}
                       </div>
                     </button>
-                    {openFaqIndex === index && (
-                      <div className="px-6 pb-5">
-                        <p className="text-gray-700 leading-relaxed">
+                    {/* Her zaman HTML'de mevcut, sadece görünürlük değişiyor - SEO için önemli */}
+                    <div 
+                      className={`px-6 pb-5 ${openFaqIndex === index ? 'block' : 'hidden'}`}
+                      itemScope 
+                      itemProp="mainEntity" 
+                      itemType="https://schema.org/Question"
+                    >
+                      <meta itemProp="name" content={item.question} />
+                      <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                        <p className="text-gray-700 leading-relaxed" itemProp="text">
                           {item.answer}
                         </p>
                       </div>
-                    )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* SSR/SEO için gizli FAQ içeriği - Crawler'lar görebilir */}
+              <div className="sr-only" aria-hidden="true">
+                {faqItems.map((faq, index) => (
+                  <div key={`seo-faq-${index}`}>
+                    <h3>{faq.question}</h3>
+                    <p>{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -396,7 +428,7 @@ const NasirNedenTekrarlarBlog = () => {
             {/* Tıbbi Bilgilendirme */}
             <section className="mb-12">
               <p className="text-xs text-gray-400 leading-relaxed">
-                ⚠️ <span className="font-medium">Tıbbi Bilgilendirme:</span> Bu içerik bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez. Ayak sağlığınızla ilgili şikayetleriniz için mutlaka bir sağlık profesyoneline danışınız.
+                <span className="font-medium">Tıbbi Bilgilendirme:</span> Bu içerik bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez. Ayak sağlığınızla ilgili şikayetleriniz için mutlaka bir sağlık profesyoneline danışınız.
               </p>
             </section>
 
