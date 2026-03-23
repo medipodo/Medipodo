@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, User, ArrowLeft, Phone } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const NasirdaSiyahNoktalarBlog = () => {
   useEffect(() => {
