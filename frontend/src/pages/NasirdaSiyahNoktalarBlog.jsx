@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, User, ArrowLeft, Phone } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const NasirdaSiyahNoktalarBlog = () => {
   useEffect(() => {
@@ -15,7 +15,6 @@ const NasirdaSiyahNoktalarBlog = () => {
         <meta name="description" content="Nasırda siyah noktalar neden oluşur? Tehlikeli mi? Nasır ve siğil arasındaki fark, siyah noktaların nedenleri ve ne zaman uzman değerlendirmesi gerektiği." />
         <link rel="canonical" href="https://medipodo.com/blog/nasirda-siyah-noktalar" />
         
-        {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Nasırda Siyah Noktalar Neden Oluşur? Tehlikeli mi?" />
         <meta property="og:description" content="Nasırda siyah noktalar neden oluşur? Tehlikeli mi? Nasır ve siğil arasındaki fark, siyah noktaların nedenleri ve ne zaman uzman değerlendirmesi gerektiği." />
@@ -24,7 +23,6 @@ const NasirdaSiyahNoktalarBlog = () => {
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
         
-        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nasırda Siyah Noktalar Neden Oluşur? Tehlikeli mi?" />
         <meta name="twitter:description" content="Nasırda siyah noktalar neden oluşur? Tehlikeli mi? Nasır ve siğil arasındaki fark ve ne zaman uzman desteği alınmalı." />

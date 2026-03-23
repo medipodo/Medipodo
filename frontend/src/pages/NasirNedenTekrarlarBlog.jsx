@@ -225,6 +225,12 @@ const NasirNedenTekrarlarBlog = () => {
                   Nasır ve siğil arasındaki farkları öğrenmek için <Link to="/blog/nasir-sigil-farklari" className="text-blue-600 hover:text-blue-800 font-semibold underline">Nasır ve Siğil Farkları</Link> yazımıza göz atabilirsiniz.
                 </p>
               </div>
+
+              <div className="bg-amber-50 p-6 rounded-xl mt-4">
+                <p className="text-gray-700">
+                  Nasırınızda <strong>siyah noktalar</strong> mı görüyorsunuz? <Link to="/blog/nasirda-siyah-noktalar" className="text-amber-700 hover:text-amber-800 font-semibold underline">Nasırda siyah noktalar neden oluşur ve tehlikeli mi?</Link> yazımızda bu konuyu detaylıca açıkladık.
+                </p>
+              </div>
             </section>
 
             {/* Çekirdek Temizlenmezse */}
@@ -237,16 +243,10 @@ const NasirNedenTekrarlarBlog = () => {
                 Özellikle <strong>"taş varmış gibi" ağrı</strong> yapan nasırlarda derinin derinine uzanan konik bir çekirdek bulunur. Sadece yüzeysel törpüleme yapılırsa rahatlama geçicidir.
               </p>
 
-              <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
+              <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
                 <p className="text-gray-800 flex items-start">
                   <AlertTriangle className="mr-3 text-red-600 flex-shrink-0 mt-1" size={24} />
                   <span><strong>Uyarı:</strong> Evde kesmeye çalışmak veya asitli bantlar kullanmak durumu daha da kötüleştirebilir. Bu müdahaleler sağlıklı dokuya zarar verebilir ve enfeksiyon riskini artırabilir.</span>
-                </p>
-              </div>
-
-              <div className="bg-amber-50 p-6 rounded-xl">
-                <p className="text-gray-700">
-                  Nasırınızda <strong>siyah noktalar</strong> mı görüyorsunuz? <Link to="/blog/nasirda-siyah-noktalar" className="text-amber-700 hover:text-amber-800 font-semibold underline">Nasırda siyah noktalar neden oluşur ve tehlikeli mi?</Link> yazımızda bu konuyu detaylıca açıkladık.
                 </p>
               </div>
             </section>
