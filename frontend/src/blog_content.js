@@ -15,7 +15,7 @@ export const enrichedBlogPosts = [
     updatedAt: '2026-03-23',
     readTime: '8 dk',
     author: 'Podolog Serdar Ceylan',
-    tags: ['Nasır', 'Siyah Noktalar', 'Ayak Sağlığı', 'Siğil', 'Podoloji'],
+    tags: ['Nasır', 'Siyah Noktalar', 'Ayak Sağlığı', 'Siğil', 'Podoloji', 'Nasır Tedavisi', 'Ayak Bakımı'],
     content: 'Özel blog sayfası: /blog/nasirda-siyah-noktalar'
   },
   {

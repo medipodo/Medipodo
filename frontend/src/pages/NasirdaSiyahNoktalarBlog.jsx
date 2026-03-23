@@ -43,7 +43,7 @@ const NasirdaSiyahNoktalarBlog = () => {
             <div className="flex flex-wrap items-center gap-4 text-gray-600">
               <div className="flex items-center">
                 <User size={18} className="mr-2 text-blue-600" />
-                <span>Medipodo Podoloji Ekibi</span>
+                <span>Podolog Serdar Ceylan</span>
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-2 text-blue-600" />
@@ -358,6 +358,73 @@ const NasirdaSiyahNoktalarBlog = () => {
                 >
                   WhatsApp ile İletişim
                 </a>
+              </div>
+            </div>
+
+            {/* İlgili Yazılar - SEO İç Linkler */}
+            <div className="mt-12 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-blue-950 mb-6">İlgili Yazılar</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link 
+                  to="/blog/tirnakbatmasi" 
+                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                >
+                  <span className="text-2xl mr-3">🦶</span>
+                  <div>
+                    <span className="font-semibold text-blue-800 block">Batık Tırnak Tedavisi</span>
+                    <span className="text-sm text-gray-600">Tırnak batması neden olur ve nasıl tedavi edilir?</span>
+                  </div>
+                </Link>
+                <Link 
+                  to="/blog/batik-tirnak-nedenleri" 
+                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                >
+                  <span className="text-2xl mr-3">💡</span>
+                  <div>
+                    <span className="font-semibold text-blue-800 block">Batık Tırnak Nedenleri</span>
+                    <span className="text-sm text-gray-600">Tırnak neden batar? Altta yatan sebepler</span>
+                  </div>
+                </Link>
+                <Link 
+                  to="/blog/medikal-ayak-bakimi-kimler-icin-gereklidir" 
+                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                >
+                  <span className="text-2xl mr-3">✨</span>
+                  <div>
+                    <span className="font-semibold text-blue-800 block">Medikal Ayak Bakımı</span>
+                    <span className="text-sm text-gray-600">Kimler için gereklidir? Detaylı rehber</span>
+                  </div>
+                </Link>
+                <Link 
+                  to="/blog/ayak-sagligi-ipuclari" 
+                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                >
+                  <span className="text-2xl mr-3">📋</span>
+                  <div>
+                    <span className="font-semibold text-blue-800 block">Ayak Sağlığı İpuçları</span>
+                    <span className="text-sm text-gray-600">Günlük ayak bakımı için pratik öneriler</span>
+                  </div>
+                </Link>
+                <Link 
+                  to="/baglica-podolog-fiyatlari" 
+                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                >
+                  <span className="text-2xl mr-3">💰</span>
+                  <div>
+                    <span className="font-semibold text-blue-800 block">Podolog Fiyatları 2026</span>
+                    <span className="text-sm text-gray-600">Ankara Bağlıca podoloji hizmet fiyatları</span>
+                  </div>
+                </Link>
+                <Link 
+                  to="/blog/nasir-neden-tekrar-eder" 
+                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                >
+                  <span className="text-2xl mr-3">🔄</span>
+                  <div>
+                    <span className="font-semibold text-blue-800 block">Nasır Neden Tekrarlar?</span>
+                    <span className="text-sm text-gray-600">Kalıcı çözüm için bilmeniz gerekenler</span>
+                  </div>
+                </Link>
               </div>
             </div>
 
