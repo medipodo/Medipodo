@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayakta-kizariklik-neden-olur',
+    title: 'Ayakta Kızarıklık Neden Olur? (Yanma ve Hassasiyetle Birlikte Görülebilir mi?)',
+    slug: 'ayakta-kizariklik-neden-olur',
+    excerpt: 'Ayakta kızarıklık neden olur? Ayakta kızarıklık ve yanma nedenleri, evde yapılabilecekler ve ne zaman uzmana başvurulmalı. Podolog önerileri.',
+    image: 'https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/gfbu7u6f_ayakta-kizar%C4%B1klik-neden-olur.webp',
+    date: '31 Mart 2026',
+    updatedAt: '2026-03-31',
+    readTime: '7 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Ayakta Kızarıklık', 'Ayakta Yanma', 'Ayak Mantarı', 'Podoloji', 'Ayak Bakımı'],
+    content: 'Özel blog sayfası: /blog/ayakta-kizariklik-neden-olur'
+  },
+  {
     id: 'batik-tirnak-evde-nasil-rahatlatilir',
     title: 'Batık Tırnak Evde Nasıl Geçer? (Güvenli Bakım Yöntemleri)',
     slug: 'batik-tirnak-evde-nasil-rahatlatilir',
