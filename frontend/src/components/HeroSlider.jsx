@@ -25,12 +25,6 @@ const HeroSlider = () => {
       cta: 'Hizmetlerimiz',
       ctaLink: '/hizmetler'
     },
-      {
-  image: '/images/slider/ayaktakipuygulamasi.webp',
-  title: 'AyakTakip Uygulaması',
-  cta: 'Detaylı Bilgi',
-  ctaLink: '/ayak-analizi'
-        },
     {
       image: '/images/slider/tirnak-teli.jpg',
       title: 'Batık Tırnak Bakımı',
