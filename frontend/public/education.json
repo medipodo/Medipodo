@@ -1,0 +1,29 @@
+[
+  {
+    "id": "foot-care-001",
+    "title": "Günlük Ayak Kontrolü",
+    "summary": "Her gün ayaklarınızı kontrol etmek, erken uyarı işaretlerini yakalamanın en etkili yoludur.",
+    "category": "Günlük Bakım",
+    "coverImage": "https://medipodo.com/images/foot-check.jpg",
+    "content": "<h2>Adımlar</h2><ul><li>İyi ışıkta ayak tabanı ve parmak aralarını kontrol edin.</li><li>Kızarıklık, su toplaması, çatlak, yara var mı bakın.</li><li>Yeni bir belirti varsa 24 saat içinde tekrar kontrol edin.</li></ul><p><strong>Not:</strong> Bu içerik bilgilendirme amaçlıdır.</p>",
+    "updatedAt": "2026-02-23"
+  },
+  {
+    "id": "foot-care-002",
+    "title": "Nemlendirme ve Krem Kullanımı",
+    "summary": "Düzenli nemlendirme çatlakları azaltır; parmak aralarına krem sürmeyin.",
+    "category": "Günlük Bakım",
+    "coverImage": "https://medipodo.com/images/moisturizer.jpg",
+    "content": "<h2>Nasıl uygulanır?</h2><p>Ayak üstü ve tabanına ince tabaka halinde sürün. Parmak aralarını kuru bırakın.</p>",
+    "updatedAt": "2026-02-23"
+  },
+  {
+    "id": "foot-care-003",
+    "title": "Ne Zaman Sağlık Kuruluşuna Başvurmalıyım?",
+    "summary": "Açık yara, hızla artan kızarıklık/şişlik, renk değişimi gibi durumlarda gecikmeyin.",
+    "category": "Uyarı İşaretleri",
+    "coverImage": "https://medipodo.com/images/warning.jpg",
+    "content": "<h2>Acil değerlendirme gerektirebilir</h2><ul><li>Açık yara / ülser</li><li>Şiddetli ağrı veya yeni başlayan his kaybı</li><li>Renk değişimi, soğukluk</li></ul><p>Gecikmeden profesyonel destek alın.</p>",
+    "updatedAt": "2026-02-23"
+  }
+]
