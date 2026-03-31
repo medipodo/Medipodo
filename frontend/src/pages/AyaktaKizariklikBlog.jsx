@@ -305,7 +305,21 @@ const AyaktaKizariklikBlog = () => {
                   <p className="text-gray-700">
                     ayakta yanma hissi oluşturabilir.
                   </p>
-                  <div className="mt-4 bg-white/60 rounded-lg p-4 border-l-4 border-blue-400">
+                  
+                  {/* İnsülin Direnci Görseli */}
+                  <div className="my-6">
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/b5kaszfo_insulin-direnci.webp" 
+                      alt="İnsülin direnci ve diyabet - ayakta yanma hissi ile ilişkisi"
+                      width="600"
+                      height="400"
+                      className="w-full max-w-sm mx-auto h-auto rounded-xl shadow-md"
+                      loading="lazy"
+                    />
+                    <p className="text-sm text-gray-500 mt-2 text-center italic">Metabolik durumlar ayaklarda hassasiyet oluşturabilir</p>
+                  </div>
+
+                  <div className="bg-white/60 rounded-lg p-4 border-l-4 border-blue-400">
                     <p className="text-gray-700 text-sm">
                       <strong>Not:</strong> İnsülin direnci gibi bazı metabolik durumlar, dolaylı olarak ayaklarda hassasiyet ve yanma hissiyle ilişkilendirilebilir. Bu tür durumlarda kesin değerlendirme için ilgili uzman görüşü önemlidir.
                     </p>
