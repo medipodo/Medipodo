@@ -51,7 +51,7 @@ const AyaktaKizariklikBlog = () => {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Ayakta Kızarıklık Neden Olur? (Yanma ve Hassasiyetle Birlikte Görülebilir mi?)",
+    "headline": "Ayakta Kızarıklık Neden Olur? (Yanma ve Hassasiyet Birlikte Görülebilir mi?)",
     "description": "Ayakta kızarıklık neden olur? Ayakta kızarıklık ve yanma nedenleri, evde yapılabilecekler ve ne zaman uzmana başvurulmalı. Podolog önerileri.",
     "image": "https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/gfbu7u6f_ayakta-kizar%C4%B1klik-neden-olur.webp",
     "author": {
@@ -113,7 +113,7 @@ const AyaktaKizariklikBlog = () => {
             
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Ayakta Kızarıklık Neden Olur?<br />
-              <span className="text-blue-200">(Yanma ve Hassasiyetle Birlikte Görülebilir mi?)</span>
+              <span className="text-blue-200">(Yanma ve Hassasiyet Birlikte Görülebilir mi?)</span>
             </h1>
             
             <div className="flex flex-wrap gap-6 text-blue-100">
