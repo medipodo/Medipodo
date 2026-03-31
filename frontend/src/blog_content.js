@@ -7,15 +7,15 @@
 export const enrichedBlogPosts = [
   {
     id: 'batik-tirnak-evde-nasil-rahatlatilir',
-    title: 'Batık Tırnak Evde Nasıl Rahatlatılır? (Güvenli Yöntemler)',
+    title: 'Batık Tırnak Evde Nasıl Geçer? (Güvenli Bakım Yöntemleri)',
     slug: 'batik-tirnak-evde-nasil-rahatlatilir',
-    excerpt: 'Batık tırnak evde nasıl rahatlatılır? Güvenli yöntemler, yapılması ve yapılmaması gerekenler. Podolojik bakış açısıyla evde batık tırnak bakımı rehberi.',
+    excerpt: 'Batık tırnak nasıl geçer? Evde batık tırnak bakımı için güvenli yöntemler, yapılmaması gerekenler ve ne zaman podologa gidilmeli. Uzman podolog önerileri.',
     image: 'https://customer-assets.emergentagent.com/job_a8785b92-dafd-43b2-b2df-4e23a325beea/artifacts/ckuhsqjc_batik-tirnak-evde-ne-yapilabilir.webp',
     date: '31 Mart 2026',
     updatedAt: '2026-03-31',
     readTime: '8 dk',
     author: 'Podolog Serdar Ceylan',
-    tags: ['Batık Tırnak', 'Evde Tedavi', 'Ayak Bakımı', 'Podoloji', 'Güvenli Yöntemler'],
+    tags: ['Batık Tırnak', 'Evde Bakım', 'Batık Tırnak Nasıl Geçer', 'Podoloji', 'Ayak Bakımı'],
     content: 'Özel blog sayfası: /blog/batik-tirnak-evde-nasil-rahatlatilir'
   },
   {
