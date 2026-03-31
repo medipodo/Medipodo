@@ -37,13 +37,13 @@ const faqData = [
   }
 ];
 
-// FAQ Item Component with accessibility - SEO optimized
+// FAQ Item Component with accessibility
 const FAQItem = ({ faq, index, isOpen, onToggle }) => {
   const questionId = `faq-question-${index}`;
   const answerId = `faq-answer-${index}`;
 
   return (
-    <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+    <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
       <button
         id={questionId}
         onClick={onToggle}
@@ -51,7 +51,7 @@ const FAQItem = ({ faq, index, isOpen, onToggle }) => {
         aria-expanded={isOpen}
         aria-controls={answerId}
       >
-        <h3 className="text-lg font-semibold text-gray-900 pr-4" itemProp="name">
+        <h3 className="text-lg font-semibold text-gray-900 pr-4">
           {faq.question}
         </h3>
         {isOpen ? (
@@ -64,21 +64,15 @@ const FAQItem = ({ faq, index, isOpen, onToggle }) => {
         id={answerId}
         role="region"
         aria-labelledby={questionId}
-        itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"
         className={`transition-all duration-300 ${isOpen ? 'block' : 'hidden'}`}
         style={{ display: isOpen ? 'block' : 'none' }}
       >
         <div className="px-6 pb-4">
-          <p className="text-gray-700 leading-relaxed" itemProp="text">
+          <p className="text-gray-700 leading-relaxed">
             {faq.answer}
           </p>
         </div>
       </div>
-      {!isOpen && (
-        <div className="sr-only" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-          <span itemProp="text">{faq.answer}</span>
-        </div>
-      )}
     </div>
   );
 };
@@ -430,8 +424,8 @@ const MedikalAyakBakimiService = () => {
           </div>
         </section>
 
-        {/* FAQ Section - SEO Optimized */}
-        <section className="py-16 bg-gray-50" itemScope itemType="https://schema.org/FAQPage">
+        {/* FAQ Section */}
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-blue-950 mb-4 text-center">
