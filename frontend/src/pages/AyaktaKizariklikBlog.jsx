@@ -104,19 +104,19 @@ const AyaktaKizariklikBlog = () => {
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-rose-900 to-rose-700 text-white pt-32 pb-16">
+        <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white pt-32 pb-16">
           <div className="container mx-auto px-4">
-            <Link to="/blog" className="inline-flex items-center text-rose-100 hover:text-white mb-6 transition-colors">
+            <Link to="/blog" className="inline-flex items-center text-blue-100 hover:text-white mb-6 transition-colors">
               <ArrowLeft size={20} className="mr-2" />
               Blog'a Dön
             </Link>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Ayakta Kızarıklık Neden Olur?<br />
-              <span className="text-rose-200">(Yanma ve Hassasiyetle Birlikte Görülebilir mi?)</span>
+              <span className="text-blue-200">(Yanma ve Hassasiyetle Birlikte Görülebilir mi?)</span>
             </h1>
             
-            <div className="flex flex-wrap gap-6 text-rose-100">
+            <div className="flex flex-wrap gap-6 text-blue-100">
               <div className="flex items-center">
                 <User size={18} className="mr-2" />
                 <span>Podolog Serdar Ceylan</span>
@@ -158,7 +158,7 @@ const AyaktaKizariklikBlog = () => {
 
             {/* Ayakta Kızarıklığın En Sık Nedenleri */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 border-l-4 border-rose-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 border-l-4 border-blue-600 pl-4">
                 Ayakta Kızarıklığın En Sık Nedenleri
               </h2>
 
@@ -269,7 +269,7 @@ const AyaktaKizariklikBlog = () => {
 
             {/* Ayakta Kızarıklık ve Yanma */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-rose-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Ayakta Kızarıklık ve Yanma Neden Birlikte Olur?
               </h2>
 
@@ -279,7 +279,7 @@ const AyaktaKizariklikBlog = () => {
 
               <div className="space-y-6">
                 {/* Mantar ve Cilt Hassasiyeti */}
-                <div className="bg-gradient-to-r from-rose-50 to-orange-50 rounded-xl p-6">
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center">
                     <Flame className="text-orange-500 mr-2" size={22} />
                     Mantar ve Cilt Hassasiyeti
@@ -435,7 +435,7 @@ const AyaktaKizariklikBlog = () => {
 
             {/* Ne Zaman Uzmana Başvurulmalı? */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-rose-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Ne Zaman Uzmana Başvurulmalı?
               </h2>
 
@@ -452,22 +452,22 @@ const AyaktaKizariklikBlog = () => {
                 <p className="text-sm text-gray-500 mt-2 text-center italic">Profesyonel bakım ile sağlıklı ayaklar</p>
               </div>
 
-              <div className="bg-rose-50 rounded-xl p-6">
+              <div className="bg-blue-50 rounded-xl p-6">
                 <div className="space-y-3">
                   <div className="flex items-center bg-white p-4 rounded-lg shadow-sm">
-                    <ShieldAlert className="text-rose-500 mr-3 flex-shrink-0" size={24} />
+                    <ShieldAlert className="text-blue-500 mr-3 flex-shrink-0" size={24} />
                     <span className="text-gray-700 font-medium">Kızarıklık birkaç gün içinde geçmiyorsa</span>
                   </div>
                   <div className="flex items-center bg-white p-4 rounded-lg shadow-sm">
-                    <ShieldAlert className="text-rose-500 mr-3 flex-shrink-0" size={24} />
+                    <ShieldAlert className="text-blue-500 mr-3 flex-shrink-0" size={24} />
                     <span className="text-gray-700 font-medium">Ağrı giderek artıyorsa</span>
                   </div>
                   <div className="flex items-center bg-white p-4 rounded-lg shadow-sm">
-                    <ShieldAlert className="text-rose-500 mr-3 flex-shrink-0" size={24} />
+                    <ShieldAlert className="text-blue-500 mr-3 flex-shrink-0" size={24} />
                     <span className="text-gray-700 font-medium">Şişlik veya hassasiyet varsa</span>
                   </div>
                   <div className="flex items-center bg-white p-4 rounded-lg shadow-sm">
-                    <ShieldAlert className="text-rose-500 mr-3 flex-shrink-0" size={24} />
+                    <ShieldAlert className="text-blue-500 mr-3 flex-shrink-0" size={24} />
                     <span className="text-gray-700 font-medium">Tekrarlayan bir durum haline geldiyse</span>
                   </div>
                 </div>
@@ -492,7 +492,7 @@ const AyaktaKizariklikBlog = () => {
                   >
                     <button
                       onClick={() => toggleFaq(index)}
-                      className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-rose-50 transition-colors"
+                      className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-blue-50 transition-colors"
                       aria-expanded={openFaqIndex === index}
                     >
                       <h3 className="text-lg font-semibold text-gray-900 pr-4">
@@ -500,7 +500,7 @@ const AyaktaKizariklikBlog = () => {
                       </h3>
                       <div className="flex-shrink-0">
                         {openFaqIndex === index ? (
-                          <ChevronUp className="text-rose-700" size={24} />
+                          <ChevronUp className="text-blue-700" size={24} />
                         ) : (
                           <ChevronDown className="text-gray-400" size={24} />
                         )}
@@ -520,11 +520,11 @@ const AyaktaKizariklikBlog = () => {
 
             {/* Sonuç */}
             <section className="mb-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-rose-600 pl-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Sonuç
               </h2>
               
-              <div className="bg-gradient-to-r from-rose-50 to-orange-50 rounded-xl p-6">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Ayakta kızarıklık, basit tahrişlerden farklı nedenlere kadar değişen durumlarla ortaya çıkabilir. Erken dönemde doğru yaklaşım, sürecin daha kontrollü ilerlemesine yardımcı olur. Özellikle ayakta kızarıklık ve yanma birlikte görülüyorsa, durumun değerlendirilmesi faydalı olabilir.
                 </p>
@@ -532,11 +532,11 @@ const AyaktaKizariklikBlog = () => {
             </section>
 
             {/* Son CTA */}
-            <section className="bg-gradient-to-r from-rose-700 to-rose-600 rounded-2xl p-8 md:p-10 text-white text-center">
+            <section className="bg-gradient-to-r from-blue-700 to-blue-600 rounded-2xl p-8 md:p-10 text-white text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Profesyonel Podolojik Destek Alın
               </h2>
-              <p className="text-rose-100 mb-6 text-lg max-w-2xl mx-auto">
+              <p className="text-blue-100 mb-6 text-lg max-w-2xl mx-auto">
                 Ayakta oluşan kızarıklık ve hassasiyet ilerlemeden, profesyonel podolojik bakım desteği almak için bizimle iletişime geçebilirsiniz. İsterseniz WhatsApp üzerinden fotoğraf göndererek size özel ön değerlendirme talep edebilirsiniz.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
@@ -551,13 +551,13 @@ const AyaktaKizariklikBlog = () => {
                 </a>
                 <a
                   href="tel:05456569747"
-                  className="inline-flex items-center bg-white text-rose-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-rose-50 transition-all transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
                 >
                   <Phone className="mr-2" size={24} />
                   0545 656 97 47
                 </a>
               </div>
-              <p className="text-rose-200 mt-6 text-sm">
+              <p className="text-blue-200 mt-6 text-sm">
                 Ankara Bağlıca'da profesyonel ayak bakımı hizmeti
               </p>
             </section>
@@ -567,19 +567,19 @@ const AyaktaKizariklikBlog = () => {
               <h3 className="text-lg font-bold text-gray-900 mb-4">İlgili İçerikler</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link to="/hizmet/nasir-bakimi" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
-                  <p className="font-semibold text-rose-600 group-hover:text-rose-800">Nasır Bakımı</p>
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Nasır Bakımı</p>
                   <p className="text-sm text-gray-600">Profesyonel nasır bakımı hizmeti</p>
                 </Link>
                 <Link to="/hizmet/tirnak-mantari" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
-                  <p className="font-semibold text-rose-600 group-hover:text-rose-800">Tırnak Mantarı Bakımı</p>
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Tırnak Mantarı Bakımı</p>
                   <p className="text-sm text-gray-600">Mantar kaynaklı sorunlar için destek</p>
                 </Link>
                 <Link to="/blog/batik-tirnak-evde-nasil-rahatlatilir" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
-                  <p className="font-semibold text-rose-600 group-hover:text-rose-800">Batık Tırnak Bakımı</p>
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Batık Tırnak Bakımı</p>
                   <p className="text-sm text-gray-600">Evde güvenli bakım yöntemleri</p>
                 </Link>
                 <Link to="/blog/ayak-agrisi-neden-olur" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
-                  <p className="font-semibold text-rose-600 group-hover:text-rose-800">Ayak Ağrısı Nedenleri</p>
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Ayak Ağrısı Nedenleri</p>
                   <p className="text-sm text-gray-600">Ayak ağrısının olası sebepleri</p>
                 </Link>
               </div>
