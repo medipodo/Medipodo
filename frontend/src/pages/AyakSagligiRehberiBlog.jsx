@@ -245,28 +245,28 @@ const AyakSagligiRehberiBlog = () => {
                   <div className="grid grid-cols-2 gap-3">
                     <div>
                       <img
-                        src="https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/bav0e4v8_yanlis-kesim-tirnak-batmasi.webp"
-                        alt="Yanlış kesim sonrası batık tırnak - bakım öncesi"
+                        src="https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/wfxesgrw_Yanl%C4%B1%C5%9F%20Kesim%20Sonucu%20Olu%C5%9Fan%20Bat%C4%B1k%20T%C4%B1rnak.webp"
+                        alt="Yanlış kesim sonucu oluşan batık tırnak"
                         width="400"
                         height="400"
                         className="w-full h-auto rounded-lg shadow-md"
                         loading="lazy"
                       />
-                      <p className="text-xs text-gray-500 mt-1 text-center">Yanlış kesim sonrası</p>
+                      <p className="text-xs text-gray-500 mt-1 text-center">Yanlış kesim sonucu</p>
                     </div>
                     <div>
                       <img
-                        src="https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/leptrogg_yanlis-kesim-tirnak-batmasi.webp"
-                        alt="Podolojik bakım sonrası iyileşmiş tırnak görünümü"
+                        src="https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/gnjiy4g5_dogru-bakim-sonrasi.webp"
+                        alt="Doğru kesim sonrası sağlıklı tırnak görünümü"
                         width="400"
                         height="400"
                         className="w-full h-auto rounded-lg shadow-md"
                         loading="lazy"
                       />
-                      <p className="text-xs text-gray-500 mt-1 text-center">Düzenli bakım sonrası</p>
+                      <p className="text-xs text-gray-500 mt-1 text-center">Doğru kesim sonucu</p>
                     </div>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2 text-center italic">Kliniğimizden bir örnek: Yanlış kesim sonrası oluşan batık tırnağın düzenli podolojik bakım ile süreci</p>
+                  <p className="text-sm text-gray-500 mt-2 text-center italic">Kliniğimizden bir örnek: Yanlış ve doğru tırnak kesiminin farkı</p>
                 </div>
 
                 <p className="text-gray-700">
