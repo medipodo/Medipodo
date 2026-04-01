@@ -660,18 +660,15 @@ const AyakSagligiRehberiBlog = () => {
             </section>
 
             {/* ==================== */}
-            {/* SONUÇ */}
+            {/* KAPANIŞ */}
             {/* ==================== */}
             <section className="mb-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
-                Sonuç
-              </h2>
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  Ayak sağlığı, düzenli bakım ve doğru alışkanlıklarla büyük ölçüde korunabilir. Günlük bakım rutini oluşturmak ve gerekli durumlarda uzman desteği almak, uzun vadede oluşabilecek problemlerin önüne geçilmesine yardımcı olabilir.
+                  Kliniğimize gelen hastaların büyük çoğunluğu aslında erken fark edip önlem alabilecekleri sorunlarla geliyor. Düzenli bakım alışkanlığı edinmek, doğru ayakkabıyı seçmek ve küçük değişiklikleri göz ardı etmemek — bunlar basit gibi görünse de uzun vadede ciddi fark yaratıyor.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Unutmayın: Ayaklarınız sizi bir ömür boyunca taşır. Onlara göstereceğiniz dikkat, yaşam kalitenize doğrudan yansır.
+                  Bu rehberi hazırlarken amacımız, karşılaştığımız en yaygın soruları ve durumları tek bir yerde toplamaktı. Umarız işinize yarar. Aklınıza takılan bir şey olursa aşağıdaki iletişim kanallarından bize ulaşabilirsiniz.
                 </p>
               </div>
             </section>
