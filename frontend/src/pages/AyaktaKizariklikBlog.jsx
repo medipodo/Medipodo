@@ -580,6 +580,10 @@ const AyaktaKizariklikBlog = () => {
             <section className="mt-12">
               <h3 className="text-lg font-bold text-gray-900 mb-4">İlgili İçerikler</h3>
               <div className="grid md:grid-cols-2 gap-4">
+                <Link to="/blog/ayak-sagligi-rehberi" className="bg-blue-50 rounded-lg p-4 hover:shadow-md transition-shadow border border-blue-200 group md:col-span-2">
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Ayak Sağlığı Tam Rehberi (2026)</p>
+                  <p className="text-sm text-gray-600">Tüm ayak problemleri, bakım yöntemleri ve uzman önerileri tek rehberde</p>
+                </Link>
                 <Link to="/hizmet/nasir-tedavisi" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
                   <p className="font-semibold text-blue-600 group-hover:text-blue-800">Nasır Bakımı</p>
                   <p className="text-sm text-gray-600">Profesyonel nasır bakımı hizmeti</p>

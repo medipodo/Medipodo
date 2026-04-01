@@ -374,11 +374,18 @@ const NasirdaSiyahNoktalarBlog = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">İlgili Yazılar</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link 
+                  to="/blog/ayak-sagligi-rehberi" 
+                  className="block p-4 bg-blue-50 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-blue-200 md:col-span-2"
+                >
+                  <span className="font-semibold text-blue-600 block hover:text-blue-800">Ayak Sağlığı Tam Rehberi (2026)</span>
+                  <span className="text-sm text-gray-600">Tüm ayak problemleri, bakım yöntemleri ve uzman önerileri tek rehberde</span>
+                </Link>
+                <Link 
                   to="/blog/tirnakbatmasi" 
                   className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200"
                 >
-                  <span className="font-semibold text-blue-600 block hover:text-blue-800">Batık Tırnak Tedavisi</span>
-                  <span className="text-sm text-gray-600">Tırnak batması neden olur ve nasıl tedavi edilir?</span>
+                  <span className="font-semibold text-blue-600 block hover:text-blue-800">Batık Tırnak Hakkında</span>
+                  <span className="text-sm text-gray-600">Tırnak batması neden olur ve nasıl yaklaşılır?</span>
                 </Link>
                 <Link 
                   to="/blog/batik-tirnak-nedenleri" 
@@ -388,32 +395,18 @@ const NasirdaSiyahNoktalarBlog = () => {
                   <span className="text-sm text-gray-600">Tırnak neden batar? Altta yatan sebepler</span>
                 </Link>
                 <Link 
-                  to="/blog/medikal-ayak-bakimi-kimler-icin-gereklidir" 
-                  className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200"
-                >
-                  <span className="font-semibold text-blue-600 block hover:text-blue-800">Medikal Ayak Bakımı</span>
-                  <span className="text-sm text-gray-600">Kimler için gereklidir? Detaylı rehber</span>
-                </Link>
-                <Link 
-                  to="/blog/ayak-sagligi-ipuclari" 
-                  className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200"
-                >
-                  <span className="font-semibold text-blue-600 block hover:text-blue-800">Ayak Sağlığı İpuçları</span>
-                  <span className="text-sm text-gray-600">Günlük ayak bakımı için pratik öneriler</span>
-                </Link>
-                <Link 
-                  to="/baglica-podolog-fiyatlari" 
-                  className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200"
-                >
-                  <span className="font-semibold text-blue-600 block hover:text-blue-800">Podolog Fiyatları 2026</span>
-                  <span className="text-sm text-gray-600">Ankara Bağlıca podoloji hizmet fiyatları</span>
-                </Link>
-                <Link 
                   to="/blog/nasir-neden-tekrar-eder" 
                   className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200"
                 >
                   <span className="font-semibold text-blue-600 block hover:text-blue-800">Nasır Neden Tekrarlar?</span>
                   <span className="text-sm text-gray-600">Kalıcı çözüm için bilmeniz gerekenler</span>
+                </Link>
+                <Link 
+                  to="/blog/nasir-sigil-farklari" 
+                  className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200"
+                >
+                  <span className="font-semibold text-blue-600 block hover:text-blue-800">Nasır ve Siğil Farkları</span>
+                  <span className="text-sm text-gray-600">Nasıl ayırt edilir?</span>
                 </Link>
               </div>
             </section>

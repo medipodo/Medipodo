@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ayak-sagligi-rehberi',
+    title: 'Ayak Sağlığı Tam Rehberi (2026)',
+    slug: 'ayak-sagligi-rehberi',
+    excerpt: 'Ayak sağlığı rehberi 2026: Batık tırnak, tırnak mantarı, nasır, topuk çatlakları, evde bakım yöntemleri, doğru ayakkabı seçimi ve ne zaman uzmana başvurulmalı.',
+    image: 'https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/vbitsgjk_ayak-sagligi-tamrehbet2026.webp',
+    date: '1 Nisan 2026',
+    updatedAt: '2026-04-01',
+    readTime: '15 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Ayak Sağlığı', 'Ayak Bakımı', 'Batık Tırnak', 'Tırnak Mantarı', 'Nasır', 'Diyabet', 'Podoloji', 'Rehber'],
+    content: 'Özel blog sayfası: /blog/ayak-sagligi-rehberi'
+  },
+  {
     id: 'ayakta-kizariklik-neden-olur',
     title: 'Ayakta Kızarıklık Neden Olur? (Yanma ve Hassasiyetle Birlikte Görülebilir mi?)',
     slug: 'ayakta-kizariklik-neden-olur',

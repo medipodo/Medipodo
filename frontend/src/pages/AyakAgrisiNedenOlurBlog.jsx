@@ -483,16 +483,16 @@ const AyakAgrisiNedenOlurBlog = () => {
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Link
-                    to="/blog"
+                    to="/blog/ayak-sagligi-rehberi"
                     className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors"
                   >
-                    Tüm Blog Yazıları
+                    Ayak Sağlığı Tam Rehberi
                   </Link>
                   <Link
-                    to="/ayak-analizi"
+                    to="/blog"
                     className="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-medium border border-blue-600 hover:bg-blue-50 transition-colors"
                   >
-                    Ayak Analizi Hakkında
+                    Tüm Blog Yazıları
                   </Link>
                 </div>
               </div>

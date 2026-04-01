@@ -495,7 +495,7 @@ const DiyabetAyakBlog = () => {
 
             {/* Referanslar */}
             <div className="mt-12 p-6 bg-gray-50 rounded-xl border-t-4 border-gray-300">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">📚 Referanslar:</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-4">Referanslar:</h3>
               <ol className="text-sm text-gray-600 space-y-2 list-decimal list-inside">
                 <li>Dünya Sağlık Örgütü (WHO) - Diabetes</li>
                 <li>Türkiye Diyabet Cemiyeti - Diyabetik Ayak</li>
@@ -507,6 +507,14 @@ const DiyabetAyakBlog = () => {
                 <li>Mayo Clinic - Diabetic Neuropathy and Foot Care</li>
                 <li>International Diabetes Federation (IDF) - Foot Care</li>
               </ol>
+            </div>
+
+            {/* Kapsamlı Rehber Bağlantısı */}
+            <div className="mt-8">
+              <Link to="/blog/ayak-sagligi-rehberi" className="block p-5 bg-blue-50 rounded-xl hover:shadow-md transition-shadow border border-blue-200">
+                <p className="font-semibold text-blue-600 text-lg">Ayak Sağlığı Tam Rehberi (2026)</p>
+                <p className="text-sm text-gray-600 mt-1">Tüm ayak problemleri, evde bakım yöntemleri ve uzman önerileri tek rehberde</p>
+              </Link>
             </div>
           </div>
         </div>

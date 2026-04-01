@@ -503,6 +503,10 @@ const CocukAyakSagligiBlog = () => {
         {/* CTA Section */}
         <section className="py-16 bg-blue-50">
           <div className="container mx-auto px-4 text-center">
+            <Link to="/blog/ayak-sagligi-rehberi" className="block max-w-xl mx-auto p-5 bg-white rounded-xl hover:shadow-md transition-shadow border border-blue-200 mb-8 text-left">
+              <p className="font-semibold text-blue-600 text-lg">Ayak Sağlığı Tam Rehberi (2026)</p>
+              <p className="text-sm text-gray-600 mt-1">Tüm ayak problemleri, evde bakım yöntemleri ve uzman önerileri tek rehberde</p>
+            </Link>
             <h2 className="text-3xl font-bold text-blue-950 mb-6">Diğer Yazıları Keşfedin</h2>
             <Link to="/blog">
               <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-full font-semibold text-lg transition-colors">

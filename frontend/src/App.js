@@ -41,6 +41,7 @@ import NasirNedenTekrarlarBlog from './pages/NasirNedenTekrarlarBlog';
 import NasirdaSiyahNoktalarBlog from './pages/NasirdaSiyahNoktalarBlog';
 import BatikTirnakEvdeBlog from './pages/BatikTirnakEvdeBlog';
 import AyaktaKizariklikBlog from './pages/AyaktaKizariklikBlog';
+import AyakSagligiRehberiBlog from './pages/AyakSagligiRehberiBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -100,6 +101,7 @@ function AppContent() {
         <Route path="/blog/nasirda-siyah-noktalar" element={<NasirdaSiyahNoktalarBlog />} />
         <Route path="/blog/batik-tirnak-evde-nasil-rahatlatilir" element={<BatikTirnakEvdeBlog />} />
         <Route path="/blog/ayakta-kizariklik-neden-olur" element={<AyaktaKizariklikBlog />} />
+        <Route path="/blog/ayak-sagligi-rehberi" element={<AyakSagligiRehberiBlog />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/hakkimizda" element={<About />} />
         <Route path="/kadromuz" element={<Team />} />
