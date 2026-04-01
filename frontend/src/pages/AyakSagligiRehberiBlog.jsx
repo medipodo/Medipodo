@@ -17,23 +17,23 @@ const AyakSagligiRehberiBlog = () => {
   const faqItems = [
     {
       question: "Ayak bakımı ne sıklıkla yapılmalı?",
-      answer: "Günlük temel bakım (yıkama, kurulama, nemlendirme) her gün uygulanmalıdır. Tırnak bakımı ise ortalama 2-3 haftada bir yapılabilir. Detaylı podolojik bakım ihtiyacı kişiden kişiye değişir; diyabet gibi risk faktörleri varsa daha sık kontrol önerilir."
+      answer: "Günlük temel bakım (yıkama, kurulama, nemlendirme) her gün uygulanmalıdır. Tırnak bakımı ise ortalama 2-3 haftada bir yapılabilir. Detaylı podolojik bakım ihtiyacı kişiden kişiye değişir; diyabet gibi risk faktörleri varsa daha sık kontrol önerilir. Kliniğimize düzenli gelen hastalarımızda sorunların tekrarlama oranı belirgin şekilde düşüyor."
     },
     {
       question: "Tırnaklar nasıl kesilmeli?",
-      answer: "Tırnaklar her zaman düz (transvers) kesilmeli, köşeler derin alınmamalıdır. Tırnak ucu parmak ucunu 1-2 mm geçecek kadar bırakılmalıdır. Oval kesim veya köşeleri yuvarlatmak batık tırnak riskini artırır."
+      answer: "Tırnaklar her zaman düz (transvers) kesilmeli, köşeler kesinlikle derin alınmamalıdır. Tırnak ucu parmak ucunu 1-2 mm geçecek kadar bırakılmalıdır. Oval kesim veya köşeleri yuvarlatmak batık tırnak riskini ciddi şekilde artırır. Özellikle kalın tırnaklarda uygun bir tırnak makası yerine podolojik alet kullanılması önerilir."
     },
     {
       question: "Ayak kokusu neden oluşur?",
-      answer: "Ayak kokusu genellikle aşırı terleme ve bakteriyel çoğalmayla ilişkilidir. Kapalı ayakkabılarda nem birikmesi, sentetik çorap kullanımı ve yetersiz hijyen durumu kötüleştirebilir. Düzenli temizlik ve nefes alabilen ayakkabı tercihi büyük fark yaratır."
+      answer: "Ayak kokusu genellikle aşırı terleme ve bakteriyel çoğalmayla ilişkilidir. Kapalı ayakkabılarda nem birikmesi, sentetik çorap kullanımı ve yetersiz hijyen durumu kötüleştirebilir. Ayakkabıları dönüşümlü kullanmak, pamuklu çorap tercih etmek ve parmak aralarını düzenli kurulamak kokuyu büyük ölçüde azaltır. Koku mantarla birlikte seyrediyorsa profesyonel değerlendirme önerilir."
     },
     {
       question: "Nasır tamamen geçer mi?",
-      answer: "Nasır, basınç ve sürtünmeye karşı cildin doğal savunma tepkisidir. Oluşum nedeni ortadan kaldırılmadığı sürece tekrar edebilir. Doğru ayakkabı seçimi, ortez kullanımı ve düzenli podolojik bakım ile kontrol altına alınabilir."
+      answer: "Nasır, basınç ve sürtünmeye karşı cildin doğal savunma tepkisidir. Oluşum nedeni ortadan kaldırılmadığı sürece tekrar edebilir. Doğru ayakkabı seçimi, gerekiyorsa ortez kullanımı ve düzenli podolojik bakım ile kontrol altına alınabilir. Biz klinikte nasırı aldıktan sonra mutlaka basınç kaynağını da analiz ediyoruz, çünkü sadece almak kalıcı çözüm olmuyor."
     },
     {
       question: "Ayakta kızarıklık neden olur?",
-      answer: "Ayakta kızarıklık; sürtünme, alerjik reaksiyon, mantar enfeksiyonu, dolaşım problemleri veya basınç kaynaklı tahriş gibi farklı nedenlere bağlı olabilir. Kızarıklık yanma, şişlik veya kaşıntıyla birlikte seyrediyorsa profesyonel değerlendirme önerilir."
+      answer: "Ayakta kızarıklık; sürtünme, alerjik reaksiyon, mantar enfeksiyonu, dolaşım problemleri veya basınç kaynaklı tahriş gibi farklı nedenlere bağlı olabilir. Kızarıklık yanma, şişlik veya kaşıntıyla birlikte seyrediyorsa ve birkaç gün içinde geçmiyorsa profesyonel değerlendirme önerilir. Özellikle diyabet hastalarında küçük bir kızarıklık bile ciddiye alınmalıdır."
     }
   ];
 
@@ -190,6 +190,9 @@ const AyakSagligiRehberiBlog = () => {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Dar, ayağı sıkan veya taban desteği yetersiz ayakkabılar uzun vadede ciddi sorunlara zemin hazırlayabilir. Özellikle gün boyu ayakta kalan kişilerde bu etki daha belirgin hale gelir.
                 </p>
+                <p className="text-gray-700 leading-relaxed mb-4 bg-blue-50 p-3 rounded-lg border-l-2 border-blue-400 italic">
+                  Kliniğimize gelen hastaların önemli bir kısmında ortak bir nokta dikkat çekiyor: sivri burunlu veya topuklu ayakkabıyı uzun saatler kullanma alışkanlığı. Özellikle ofis çalışanlarında bu durum, ayak parmaklarında basınç kaynaklı deformasyonlara yol açabiliyor.
+                </p>
                 <ul className="space-y-2 text-gray-700 mb-4">
                   <li className="flex items-start"><span className="text-red-400 mr-3 mt-1 font-bold">•</span>Batık tırnak oluşumu</li>
                   <li className="flex items-start"><span className="text-red-400 mr-3 mt-1 font-bold">•</span>Nasır ve sertleşme</li>
@@ -217,6 +220,9 @@ const AyakSagligiRehberiBlog = () => {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Ayakların uzun süre nemli kalması, özellikle kapalı ayakkabılar içinde, mantar ve bakteri üremesi için uygun ortam oluşturur. Parmak araları en çok etkilenen bölgelerdir.
                 </p>
+                <p className="text-gray-700 leading-relaxed mb-4 bg-blue-50 p-3 rounded-lg border-l-2 border-blue-400 italic">
+                  Sık karşılaştığımız bir durum: spor sonrası ıslak çorapla uzun süre dolaşan kişilerde parmak aralarında beyazlaşma ve pullanma başlıyor. Çoğu kişi bunu önemsemiyor ama bu, mantar oluşumunun ilk sinyali olabiliyor.
+                </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1 font-bold">•</span>Mantar oluşumu riski</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1 font-bold">•</span>Kötü koku</li>
@@ -228,10 +234,43 @@ const AyakSagligiRehberiBlog = () => {
               <div className="mb-8 bg-white rounded-xl shadow-md p-6 border-l-4 border-amber-400">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Tırnak Kesim Alışkanlıkları</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Yanlış tırnak kesimi, en sık karşılaşılan problemlerden biridir. Özellikle tırnağı çok kısa kesmek veya köşeleri derin almak, batık tırnak oluşumuna doğrudan neden olabilir. Tırnak kesiminde doğru teknik, pek çok sorunun önüne geçer.
+                  Yanlış tırnak kesimi, kliniğimizde en sık karşılaştığımız problemlerin başında geliyor. Özellikle tırnağı çok kısa kesmek veya köşeleri derin almak, batık tırnak oluşumuna doğrudan neden olabilir.
                 </p>
+                <p className="text-gray-700 leading-relaxed mb-4 bg-blue-50 p-3 rounded-lg border-l-2 border-blue-400 italic">
+                  Bize gelen batık tırnak vakalarının yaklaşık yüzde yetmişinde altta yatan neden aynı: köşeleri V şeklinde kesmek. Bu yöntem halk arasında yaygın ama tırnağın etrafındaki dokuya zarar veriyor ve tırnak büyüdükçe tekrar batıyor.
+                </p>
+
+                {/* Before/After Görseli */}
+                <div className="mb-4">
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <img
+                        src="https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/bav0e4v8_yanlis-kesim-tirnak-batmasi.webp"
+                        alt="Yanlış kesim sonrası batık tırnak - bakım öncesi"
+                        width="400"
+                        height="400"
+                        className="w-full h-auto rounded-lg shadow-md"
+                        loading="lazy"
+                      />
+                      <p className="text-xs text-gray-500 mt-1 text-center">Yanlış kesim sonrası</p>
+                    </div>
+                    <div>
+                      <img
+                        src="https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/leptrogg_yanlis-kesim-tirnak-batmasi.webp"
+                        alt="Podolojik bakım sonrası iyileşmiş tırnak görünümü"
+                        width="400"
+                        height="400"
+                        className="w-full h-auto rounded-lg shadow-md"
+                        loading="lazy"
+                      />
+                      <p className="text-xs text-gray-500 mt-1 text-center">Düzenli bakım sonrası</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-500 mt-2 text-center italic">Kliniğimizden bir örnek: Yanlış kesim sonrası oluşan batık tırnağın düzenli podolojik bakım ile süreci</p>
+                </div>
+
                 <p className="text-gray-700">
-                  Konu hakkında detaylı bilgi için <Link to="/blog/batik-tirnak-nedenleri" className="text-blue-600 hover:text-blue-800 font-semibold underline">batık tırnak nedenleri</Link> içeriğine göz atabilirsiniz.
+                  Batık tırnak neden oluşur, hangi alışkanlıklar riski artırır? Bu konuyu detaylıca ele aldığımız <Link to="/blog/batik-tirnak-nedenleri" className="text-blue-600 hover:text-blue-800 font-semibold underline">batık tırnak nedenleri</Link> yazımıza göz atabilirsiniz.
                 </p>
               </div>
 
@@ -264,17 +303,18 @@ const AyakSagligiRehberiBlog = () => {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Batık tırnak, tırnağın kenar kısmının deri içine doğru ilerlemesiyle oluşur. Zamanla kızarıklık, hassasiyet ve ağrı ile kendini gösterir. Erken dönemde fark edildiğinde bakım süreci çok daha kolay ilerler.
                 </p>
+                <p className="text-gray-700 leading-relaxed mb-4 bg-white p-3 rounded-lg border-l-2 border-blue-400 italic">
+                  Kliniğimize en çok başvuru alan konu budur. Hastaların çoğu "birden bire oldu" diyor ama aslında süreç haftalar öncesinden başlamış oluyor — sadece ağrı eşiği aşılınca fark ediliyor.
+                </p>
                 <p className="text-gray-700 mb-3">Genellikle şu faktörlerle ilişkilidir:</p>
                 <ul className="space-y-2 text-gray-700 mb-4">
                   <li className="flex items-start"><span className="text-blue-600 mr-3 mt-1 font-bold">•</span>Yanlış tırnak kesimi</li>
                   <li className="flex items-start"><span className="text-blue-600 mr-3 mt-1 font-bold">•</span>Dar ayakkabı kullanımı</li>
                   <li className="flex items-start"><span className="text-blue-600 mr-3 mt-1 font-bold">•</span>Tekrarlayan baskı ve travma</li>
                 </ul>
-                <div className="flex flex-wrap gap-4">
-                  <Link to="/blog/batik-tirnak-nedenleri" className="text-blue-600 hover:text-blue-800 font-semibold underline">Batık tırnak nedenleri</Link>
-                  <span className="text-gray-400">|</span>
-                  <Link to="/blog/batik-tirnak-evde-nasil-rahatlatilir" className="text-blue-600 hover:text-blue-800 font-semibold underline">Evde nasıl rahatlatılır?</Link>
-                </div>
+                <p className="text-gray-700">
+                  Batık tırnağın neden oluştuğunu ve hangi alışkanlıkların riski artırdığını <Link to="/blog/batik-tirnak-nedenleri" className="text-blue-600 hover:text-blue-800 font-semibold underline">batık tırnak nedenleri</Link> yazımızda detaylıca anlattık. Eğer şu an batık tırnak şikayetiniz varsa ve evde neler yapabileceğinizi merak ediyorsanız, <Link to="/blog/batik-tirnak-evde-nasil-rahatlatilir" className="text-blue-600 hover:text-blue-800 font-semibold underline">evde rahatlatma yöntemleri</Link> içeriğimiz de işinize yarayabilir.
+                </p>
               </div>
 
               {/* Tırnak Mantarı */}
@@ -283,17 +323,18 @@ const AyakSagligiRehberiBlog = () => {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Tırnak mantarı; tırnakta kalınlaşma, renk değişimi ve kırılma ile kendini gösterebilir. Erken dönemde belirtiler hafif olabilir, ancak zamanla tırnağın yapısı bozulabilir ve diğer tırnaklara da yayılabilir.
                 </p>
+                <p className="text-gray-700 leading-relaxed mb-4 bg-white p-3 rounded-lg border-l-2 border-amber-400 italic">
+                  Mantar vakalarında en sık duyduğumuz cümle: "Ben bunu yıllardır taşıyorum, alıştım." Oysa erken dönemde bakıma alınan tırnaklarda süreç çok daha kısa sürüyor. Geciktikçe hem tırnağın yapısı bozuluyor hem de komşu tırnaklara yayılma riski artıyor.
+                </p>
                 <p className="text-gray-700 mb-3">Risk faktörleri:</p>
                 <ul className="space-y-2 text-gray-700 mb-4">
                   <li className="flex items-start"><span className="text-amber-600 mr-3 mt-1 font-bold">•</span>Nemli ortamda uzun süre kalma</li>
                   <li className="flex items-start"><span className="text-amber-600 mr-3 mt-1 font-bold">•</span>Ortak kullanım alanları (havuz, spor salonu)</li>
                   <li className="flex items-start"><span className="text-amber-600 mr-3 mt-1 font-bold">•</span>Hijyen eksikliği</li>
                 </ul>
-                <div className="flex flex-wrap gap-4">
-                  <Link to="/blog/tirnak-mantari-bulasici-mi" className="text-blue-600 hover:text-blue-800 font-semibold underline">Tırnak mantarı bulaşıcı mı?</Link>
-                  <span className="text-gray-400">|</span>
-                  <Link to="/blog/tirnak-mantari-tedavisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">Tırnak mantarı hakkında detay</Link>
-                </div>
+                <p className="text-gray-700">
+                  Tırnak mantarının nasıl bulaştığını ve korunma yollarını merak ediyorsanız <Link to="/blog/tirnak-mantari-bulasici-mi" className="text-blue-600 hover:text-blue-800 font-semibold underline">tırnak mantarı bulaşıcı mı?</Link> yazımız aydınlatıcı olacaktır. Bakım süreci hakkında daha detaylı bilgi için de <Link to="/blog/tirnak-mantari-tedavisi" className="text-blue-600 hover:text-blue-800 font-semibold underline">tırnak mantarı hakkındaki kapsamlı içeriğimize</Link> göz atabilirsiniz.
+                </p>
               </div>
 
               {/* Nasır */}
@@ -302,17 +343,18 @@ const AyakSagligiRehberiBlog = () => {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Nasır, sürekli basınç ve sürtünmeye bağlı olarak oluşan cilt kalınlaşmasıdır. Vücut, sürekli basınç gördüğü bölgeyi korumak için deriyi kalınlaştırır. Ancak bu kalınlaşma zamanla ağrıya ve rahatsızlığa yol açabilir.
                 </p>
+                <p className="text-gray-700 leading-relaxed mb-4 bg-white p-3 rounded-lg border-l-2 border-green-400 italic">
+                  Nasır konusunda en çok karşılaştığımız yanılgı: "Nasırı kestirdim, bir daha gelmez." Maalesef altta yatan basınç sorunu çözülmeden sadece üstteki sert tabakayı almak geçici bir rahatlama sağlıyor. Birkaç hafta sonra aynı noktada tekrar oluşuyor.
+                </p>
                 <p className="text-gray-700 mb-3">Klinik gözlemlerde sık nedenler:</p>
                 <ul className="space-y-2 text-gray-700 mb-4">
                   <li className="flex items-start"><span className="text-green-600 mr-3 mt-1 font-bold">•</span>Yanlış basış ve yürüyüş bozukluğu</li>
                   <li className="flex items-start"><span className="text-green-600 mr-3 mt-1 font-bold">•</span>Sert tabanlı ayakkabı</li>
                   <li className="flex items-start"><span className="text-green-600 mr-3 mt-1 font-bold">•</span>Uzun süre ayakta kalma</li>
                 </ul>
-                <div className="flex flex-wrap gap-4">
-                  <Link to="/blog/nasir-sigil-farklari" className="text-blue-600 hover:text-blue-800 font-semibold underline">Nasır ve siğil farkları</Link>
-                  <span className="text-gray-400">|</span>
-                  <Link to="/blog/nasir-neden-tekrar-eder" className="text-blue-600 hover:text-blue-800 font-semibold underline">Nasır neden tekrar eder?</Link>
-                </div>
+                <p className="text-gray-700">
+                  Nasır ile siğili karıştıran çok kişi oluyor — aradaki farkları <Link to="/blog/nasir-sigil-farklari" className="text-blue-600 hover:text-blue-800 font-semibold underline">nasır ve siğil farkları</Link> yazımızda açıkladık. Nasırınız sürekli aynı yerde tekrar ediyorsa, bunun nedenini <Link to="/blog/nasir-neden-tekrar-eder" className="text-blue-600 hover:text-blue-800 font-semibold underline">nasır neden tekrar eder?</Link> içeriğimizde bulabilirsiniz.
+                </p>
               </div>
 
               {/* Topuk Çatlakları */}
@@ -369,6 +411,56 @@ const AyakSagligiRehberiBlog = () => {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </section>
+
+            {/* ==================== */}
+            {/* EN SIK YAPILAN HATALAR */}
+            {/* ==================== */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-red-500 pl-4">
+                Ayak Bakımında En Sık Yapılan Hatalar
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Yıllardır klinikte gördüğümüz vakaların çoğunda ortak bazı hatalar dikkat çekiyor. Bu hataların farkında olmak, birçok sorunu daha başlamadan önlemeye yardımcı olabilir.
+              </p>
+
+              <div className="space-y-4">
+                <div className="bg-white rounded-xl shadow-md p-5 flex items-start gap-4 border-l-4 border-red-400">
+                  <span className="text-red-500 font-bold text-2xl leading-none mt-1">1</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Tırnakları oval veya V şeklinde kesmek</h3>
+                    <p className="text-gray-700">Halk arasında çok yaygın ama batık tırnağın bir numaralı sebebi. Tırnaklar her zaman düz kesilmeli, köşeler yuvarlatılmamalı.</p>
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl shadow-md p-5 flex items-start gap-4 border-l-4 border-red-400">
+                  <span className="text-red-500 font-bold text-2xl leading-none mt-1">2</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Mantarı "kendiliğinden geçer" diye beklemek</h3>
+                    <p className="text-gray-700">Tırnak mantarı kendiliğinden geçmez, aksine yayılır. Ne kadar erken bakım başlarsa süreç o kadar kısa ve kolay olur.</p>
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl shadow-md p-5 flex items-start gap-4 border-l-4 border-red-400">
+                  <span className="text-red-500 font-bold text-2xl leading-none mt-1">3</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Nasırı evde bıçak veya makasla almaya çalışmak</h3>
+                    <p className="text-gray-700">Enfeksiyon riski çok yüksek. Steril olmayan aletlerle yapılan müdahaleler durumu daha da kötüleştirebilir.</p>
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl shadow-md p-5 flex items-start gap-4 border-l-4 border-red-400">
+                  <span className="text-red-500 font-bold text-2xl leading-none mt-1">4</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Parmak aralarını kurulamadan çorap giymek</h3>
+                    <p className="text-gray-700">Banyo veya havuz sonrası parmak araları ıslak kalırsa mantar için ideal ortam oluşur. Kurutma 30 saniye sürer ama büyük fark yaratır.</p>
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl shadow-md p-5 flex items-start gap-4 border-l-4 border-red-400">
+                  <span className="text-red-500 font-bold text-2xl leading-none mt-1">5</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">Her gün aynı ayakkabıyı giymek</h3>
+                    <p className="text-gray-700">Ayakkabının içi bir günde tam kurumaz. İki çift ayakkabıyı dönüşümlü kullanmak hem nem hem koku sorununu büyük ölçüde azaltır.</p>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -441,6 +533,39 @@ const AyakSagligiRehberiBlog = () => {
               <p className="text-gray-700">
                 Ek rehber: <Link to="/ayak-bakim-kilavuzu" className="text-blue-600 hover:text-blue-800 font-semibold underline">Ayak bakım kılavuzu</Link>
               </p>
+            </section>
+
+            {/* ==================== */}
+            {/* GÜNLÜK CHECKLIST */}
+            {/* ==================== */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
+                Günlük Ayak Bakım Kontrol Listesi
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Bu listeyi buzdolabına veya banyo aynasına asabilirsiniz. Günlük rutine dönüştüğünde çoğu ayak probleminin önüne geçmiş olursunuz.
+              </p>
+              <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-blue-100">
+                <div className="space-y-3">
+                  {[
+                    "Ayakları ılık suyla yıkadım",
+                    "Parmak aralarını iyice kuruladım",
+                    "Topuk ve taban bölgesine nemlendirici sürdüm",
+                    "Ayakkabılarım ayağımı sıkmıyor",
+                    "Pamuklu veya nefes alan çorap giydim",
+                    "Ayak tabanımı ve tırnaklarımı kontrol ettim",
+                    "Dün giydiğimden farklı ayakkabı tercih ettim"
+                  ].map((item, i) => (
+                    <label key={i} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors cursor-pointer">
+                      <input type="checkbox" className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+                      <span className="text-gray-700">{item}</span>
+                    </label>
+                  ))}
+                </div>
+                <p className="text-sm text-gray-500 mt-4 italic">
+                  Diyabet hastalarında bu listeye "ayak tabanını ayna ile kontrol et" maddesi de eklenmelidir.
+                </p>
+              </div>
             </section>
 
             {/* ==================== */}
@@ -524,6 +649,9 @@ const AyakSagligiRehberiBlog = () => {
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Diyabet hastalarında ayak sağlığı özel dikkat gerektirir. Nöropati (sinir hasarı) nedeniyle ayaktaki küçük sorunlar ağrıya neden olmayabilir ve bu yüzden fark edilmesi gecikmiş olabilir.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6 bg-blue-50 p-4 rounded-lg border-l-2 border-blue-400 italic">
+                Diyabetli hastalarımızdan biri, ayakkabısının içinde küçük bir taş parçasıyla saatlerce yürümüştü — hissetmediği için. Bu tür durumlar nadir değil. Nöropati nedeniyle ağrı duyusu azaldığında, günlük görsel kontrol hayati önem kazanıyor.
               </p>
 
               {/* Diyabet Görseli */}
