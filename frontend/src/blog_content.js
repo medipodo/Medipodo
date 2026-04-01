@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'podolog-fiyatlari-ankara',
+    title: 'Podolog Fiyatları Ankara (2026 Güncel Rehber)',
+    slug: 'podolog-fiyatlari-ankara',
+    excerpt: 'Ankara\'da podolog fiyatları neye göre değişir? Medikal ayak bakımı, batık tırnak ve nasır bakımı ücret aralıklarını açıklayan güncel rehber.',
+    image: 'https://customer-assets.emergentagent.com/job_batik-tirnak-rahatla/artifacts/rfuoselp_podolog-fiyatlari-ankara-kapak-gorseli.webp',
+    date: '1 Nisan 2026',
+    updatedAt: '2026-04-01',
+    readTime: '10 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Podolog Fiyatları', 'Ankara', 'Medikal Ayak Bakımı', 'Batık Tırnak', 'Nasır', 'Podoloji'],
+    content: 'Özel blog sayfası: /blog/podolog-fiyatlari-ankara'
+  },
+  {
     id: 'ayak-sagligi-rehberi',
     title: 'Ayak Sağlığı Tam Rehberi (2026)',
     slug: 'ayak-sagligi-rehberi',
