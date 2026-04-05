@@ -464,7 +464,17 @@ const AyakAgrisiNedenOlurBlog = () => {
               
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  Ayak ağrısı, günlük yaşam kalitesini düşüren ve zamanla daha ciddi problemlere yol açabilen bir durumdur. Erken dönemde yapılan doğru değerlendirme, hem ağrının kaynağını ortaya koyar hem de kalıcı sorunların önüne geçer.
+                  Ayak ağrısı, günlük yaşam kalitesini düşüren ve zamanla daha ciddi problemlere yol açabilen bir durumdur. Erken dönemde yapılan doğru değerlendirme, hem ağrının kaynağını ortaya koyar hem de kalıcı sorunların önüne geçer. Ayaktaki değişimlerin takibi için fotoğraf ve not kaydı tutulması önerilir. Bu noktada{' '}
+                  <a 
+                    href="https://ayaktakip.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 font-semibold underline"
+                    data-testid="ayaktakip-link"
+                  >
+                    AyakTakip
+                  </a>{' '}
+                  gibi dijital çözümler kullanılabilir.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Ayak sağlığınızla ilgili şikayetleriniz devam ediyorsa, bir podoloji uzmanına danışmanız en doğru adım olacaktır.

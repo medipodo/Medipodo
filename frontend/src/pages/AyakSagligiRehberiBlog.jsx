@@ -682,6 +682,34 @@ const AyakSagligiRehberiBlog = () => {
                 </ul>
               </div>
 
+              <p className="text-gray-700 mb-6">
+                Ayak sağlığını izlerken düzenli kayıt tutmak önerilir.{' '}
+                <a 
+                  href="https://ayaktakip.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 font-semibold underline"
+                  data-testid="ayaktakip-link"
+                >
+                  AyakTakip
+                </a>{' '}
+                uygulaması bu süreci daha sistemli hale getirmeye yardımcı olabilir.
+              </p>
+
+              {/* AyakTakip Görseli */}
+              <div className="flex justify-center mb-6">
+                <div className="bg-gradient-to-br from-gray-50 to-purple-50 rounded-2xl p-6 text-center max-w-xs">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_79831a6c-16c9-4c26-8b15-a02d1458d096/artifacts/1jh0qnna_ayak-takip-profil.webp"
+                    alt="AyakTakip ayak sağlığı takip uygulaması ekranı"
+                    className="w-48 mx-auto rounded-2xl shadow-lg"
+                    loading="lazy"
+                    data-testid="ayaktakip-mockup"
+                  />
+                  <p className="text-sm text-gray-500 mt-3 italic">AyakTakip mobil uygulama ekranı</p>
+                </div>
+              </div>
+
               <p className="text-gray-700">
                 Detaylı bilgi: <Link to="/blog/diyabet-ve-ayak-sagligi" className="text-blue-600 hover:text-blue-800 font-semibold underline">Diyabet ve ayak sağlığı</Link>
               </p>

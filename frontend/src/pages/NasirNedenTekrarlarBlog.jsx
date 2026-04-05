@@ -335,7 +335,17 @@ const NasirNedenTekrarlarBlog = () => {
               </h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Nasır tekrar eder çünkü çoğu zaman <strong>sadece sonucu temizleriz, sebebi değil</strong>. Nasır derinin bir savunma mekanizmasıdır ve baskı devam ettiği sürece vücut bu koruyucu tabakayı yeniden oluşturacaktır.
+                Nasır tekrar eder çünkü çoğu zaman <strong>sadece sonucu temizleriz, sebebi değil</strong>. Nasır derinin bir savunma mekanizmasıdır ve baskı devam ettiği sürece vücut bu koruyucu tabakayı yeniden oluşturacaktır. Ayak sağlığında değişimlerin izlenmesi için dijital takip araçları tercih edilebilir.{' '}
+                <a 
+                  href="https://ayaktakip.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 font-semibold underline"
+                  data-testid="ayaktakip-link"
+                >
+                  AyakTakip
+                </a>{' '}
+                bu amaçla kullanılabilecek çözümlerden biridir.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-4">

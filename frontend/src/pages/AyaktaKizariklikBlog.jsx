@@ -540,7 +540,17 @@ const AyaktaKizariklikBlog = () => {
               
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Ayakta kızarıklık, basit tahrişlerden farklı nedenlere kadar değişen durumlarla ortaya çıkabilir. Erken dönemde doğru yaklaşım, sürecin daha kontrollü ilerlemesine yardımcı olur. Özellikle ayakta kızarıklık ve yanma birlikte görülüyorsa, durumun değerlendirilmesi faydalı olabilir.
+                  Ayakta kızarıklık, basit tahrişlerden farklı nedenlere kadar değişen durumlarla ortaya çıkabilir. Erken dönemde doğru yaklaşım, sürecin daha kontrollü ilerlemesine yardımcı olur. Düzenli gözlem ve kayıt, ayak sağlığı takibinde önemli bir adımdır.{' '}
+                  <a 
+                    href="https://ayaktakip.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 font-semibold underline"
+                    data-testid="ayaktakip-link"
+                  >
+                    AyakTakip
+                  </a>{' '}
+                  uygulaması bu süreci destekleyebilir. Özellikle ayakta kızarıklık ve yanma birlikte görülüyorsa, durumun değerlendirilmesi faydalı olabilir.
                 </p>
               </div>
             </section>

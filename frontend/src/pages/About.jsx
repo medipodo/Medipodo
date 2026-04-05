@@ -71,14 +71,98 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-blue-950 mb-6">Hikayemiz</h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Medipodo Bağlıca Ayak Bakımı, ayak sağlığının genel sağlık ve yaşam kalitesi üzerindeki önemini kavrayan bir ekip tarafından kurulmuştur. Misyonumuz, Ankara ve çevresindeki topluma en yüksek standartlarda podoloji hizmeti sunmaktır.
+                    Medipodo Bağlıca Ayak Bakımı, ayak sağlığının yaşam kalitesi üzerindeki etkisini
+                    gerçekten anlayan bir vizyonla kuruldu. Çünkü biz, sağlıklı adımların sadece
+                    fiziksel değil; konforlu ve özgüvenli bir yaşamın temeli olduğuna inanıyoruz.
                   </p>
+
                   <p>
-                    Yılların deneyimi ve sürekli eğitimle, batık tırnak, tırnak mantarı, nasır tedavisi ve kapsamlı ayak bakımı konularında uzmanlaştık. Modern ekipmanlarımız ve kanıtlanmış tedavi protokollerimiz ile hastalarımıza en etkili sonuçları sunuyoruz.
+                    Bu hikâye, Podolog <strong>Serdar Ceylan'ın</strong> mesleğine duyduğu tutkuyla
+                    başladı. Ankara Üniversitesi Podoloji programından mezun olduktan sonra, ayak
+                    sağlığını yalnızca bir hizmet alanı değil, insanların günlük yaşamını doğrudan
+                    etkileyen önemli bir ihtiyaç olarak gördü. Zamanla edindiği deneyimle, her
+                    danışanın hayatına dokunan çözümler üretmeyi kendine amaç edindi.
                   </p>
+
                   <p>
-                    Steril ve hijyenik ortamımız, deneyimli uzman kadromuz ve hasta odaklı yaklaşımımız ile Ankara'nın güvenilir podoloji merkezi olmaktan gurur duyuyoruz.
+                    Serdar Ceylan aynı zamanda{' '}
+                    <a
+                      href="https://ayaktakip.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 font-semibold hover:underline"
+                    >
+                      AyakTakip iOS uygulamasının
+                    </a>{' '}
+                    ve{' '}
+                    <a
+                      href="https://pedizone.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 font-semibold hover:underline"
+                    >
+                      Pedizone ayak sağlığı ürünlerinin
+                    </a>{' '}
+                    yaratıcısıdır. Ayrıca{' '}
+                    <a
+                      href="https://www.medieste.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 font-semibold hover:underline"
+                    >
+                      Medieste markasının kurucusudur
+                    </a>
+                    . Bu projeler ve markalar, ayak sağlığı ile bakım alanında teknoloji, inovasyon ve
+                    güvenilir çözümleri bir araya getiren vizyonunun güçlü bir yansımasıdır.
                   </p>
+
+                  <p>
+                    Bugün Medipodo; sadece bir podoloji merkezi değil, emek, tecrübe ve gerçekten iyi
+                    hissettirme isteğiyle kurulmuş bir merkezdir.
+                  </p>
+
+                  <p>
+                    Yılların deneyimi ve sürekli gelişim anlayışımızla; batık tırnak, tırnak mantarı,
+                    nasır ve kapsamlı ayak bakımı alanlarında uzmanlaştık. Modern ekipmanlarımız ve
+                    bilimsel yöntemlerimizle etkili sonuçlar sunarken, her danışanımıza bireysel
+                    yaklaşmayı önceliğimiz haline getirdik.
+                  </p>
+
+                  <p>
+                    Steril ve özenli bir ortamda; yalnızca bakım değil, aynı zamanda güven ve rahatlık
+                    sunuyoruz. Çünkü bizim için her danışan, bu hikâyenin en değerli parçasıdır.
+                  </p>
+                </div>
+
+                {/* AYAKTAKIP BLOCK */}
+                <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6">
+                  <div className="flex-shrink-0">
+                    <img
+                      src="/images/ayak-takip.webp"
+                      alt="AyakTakip iOS uygulaması ayak sağlığı takip uygulaması"
+                      className="h-16 w-auto object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div className="text-center md:text-left">
+                    <h3 className="text-xl font-semibold text-blue-950 mb-1">
+                      AyakTakip iOS Uygulaması
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-3">
+                      Serdar Ceylan tarafından geliştirilen AyakTakip, ayak sağlığınızı takip etmenizi
+                      ve düzenli bakım alışkanlığı kazanmanızı sağlayan yenilikçi bir mobil uygulamadır.
+                    </p>
+
+                    <a
+                      href="https://ayaktakip.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition"
+                    >
+                      App Store'da İncele
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="order-1 lg:order-2">

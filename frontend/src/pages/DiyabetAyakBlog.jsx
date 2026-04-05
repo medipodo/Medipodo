@@ -460,11 +460,35 @@ const DiyabetAyakBlog = () => {
                   5. Sonuç: Koruyucu Bakım Hayat Kurtarır
                 </h2>
                 <p className="text-lg leading-relaxed mb-4">
-                  Diyabetik ayak sağlığı, bir lüks değil, hayati bir zorunluluktur. Günlük olarak uygulayacağınız basit bakım rutinleri ve düzenli podolog kontrolleri, sizi ampütasyona kadar gidebilecek ciddi komplikasyonlardan korur.
+                  Diyabetik ayak sağlığı, bir lüks değil, hayati bir zorunluluktur. Günlük olarak uygulayacağınız basit bakım rutinleri ve düzenli podolog kontrolleri, sizi ampütasyona kadar gidebilecek ciddi komplikasyonlardan korur. Diyabetik ayak takibinde düzenli kayıt tutmak önemlidir. Bu süreçte{' '}
+                  <a 
+                    href="https://ayaktakip.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-200 hover:text-white underline font-semibold"
+                    data-testid="ayaktakip-link"
+                  >
+                    AyakTakip
+                  </a>{' '}
+                  gibi uygulamalar takip oluşturmayı kolaylaştırabilir.
                 </p>
                 <p className="text-xl font-bold">
                   Unutmayın, ayaklarınız sizi hayat boyu taşıyacak en değerli varlıklarınızdır. Onlara iyi bakın.
                 </p>
+              </div>
+
+              {/* AyakTakip Görseli */}
+              <div className="mt-8 flex justify-center">
+                <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6 text-center max-w-xs">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_79831a6c-16c9-4c26-8b15-a02d1458d096/artifacts/1jh0qnna_ayak-takip-profil.webp"
+                    alt="AyakTakip ayak sağlığı takip uygulaması ekranı"
+                    className="w-48 mx-auto rounded-2xl shadow-lg"
+                    loading="lazy"
+                    data-testid="ayaktakip-mockup"
+                  />
+                  <p className="text-sm text-gray-500 mt-3 italic">AyakTakip mobil uygulama ekranı</p>
+                </div>
               </div>
             </section>
 
