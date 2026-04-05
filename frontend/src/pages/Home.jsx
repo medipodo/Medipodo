@@ -287,7 +287,7 @@ const Home = () => {
               {/* App Image - Full width edge-to-edge on mobile, 65% on desktop */}
               <div className="w-full lg:w-2/3">
                 <a 
-                  href="https://apps.apple.com/tr/app/ayaktakip/id6759668374?l=tr" 
+                  href="https://ayaktakip.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block transform hover:scale-[1.02] transition-transform duration-300"
