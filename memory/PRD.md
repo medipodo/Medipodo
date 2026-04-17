@@ -29,6 +29,15 @@ React.js, React Router, Tailwind CSS, react-helmet (SEO), lucide-react, JSON-LD 
   - Fiyat tablosu, klinik deneyim kutuları, 3 görsel, SSS, WhatsApp CTA
   - Article + FAQPage + BreadcrumbList Schema
 
+### 17 Nisan 2026
+- [x] TirnakTeliFiyatlariBlog.jsx - /blog/tirnak-teli-fiyatlari-ankara
+  - Tırnak teli fiyatları, uygulama süreci, klinik deneyim kutuları, SSS, WhatsApp CTA
+  - Article + FAQPage + BreadcrumbList Schema, iç linkleme
+- [x] AyakTakip mobil uygulama referanslarının Home.jsx, About.jsx ve blog sayfalarına entegrasyonu
+- [x] batik-tirnak-gorsel.webp alt yazısı "Batık tırnak zamanla iltihap oluşturabilir" olarak güncellendi
+- [x] SSS'de ilk 2 soru varsayılan açık (Google bot SEO iyileştirmesi)
+
 ## Backlog
 - [ ] GitHub'a push ve production deploy
 - [ ] Google AdSense yeniden başvuru
+- [ ] Yeni blog konularının belirlenmesi ve eklenmesi

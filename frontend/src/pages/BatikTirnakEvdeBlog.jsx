@@ -575,6 +575,10 @@ const BatikTirnakEvdeBlog = () => {
                   <p className="font-semibold text-blue-600 group-hover:text-blue-800">Tırnak Batması Rehberi</p>
                   <p className="text-sm text-gray-600">Detaylı bilgi ve çözümler</p>
                 </Link>
+                <Link to="/blog/tirnak-teli-fiyatlari-ankara" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Tırnak Teli Fiyatları 2026</p>
+                  <p className="text-sm text-gray-600">Ankara güncel fiyat listesi</p>
+                </Link>
               </div>
             </section>
 

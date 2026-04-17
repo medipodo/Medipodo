@@ -812,6 +812,14 @@ const AyakSagligiRehberiBlog = () => {
                   <p className="font-semibold text-blue-600 group-hover:text-blue-800">Medikal Ayak Bakımı Kimler İçin Gerekli?</p>
                   <p className="text-sm text-gray-600">Evde pedikür yeterli olur mu?</p>
                 </Link>
+                <Link to="/blog/tirnak-teli-fiyatlari-ankara" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Tırnak Teli Fiyatları 2026</p>
+                  <p className="text-sm text-gray-600">Ankara güncel fiyat listesi ve uygulama detayları</p>
+                </Link>
+                <Link to="/blog/podolog-fiyatlari-ankara" className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow border border-gray-200 group">
+                  <p className="font-semibold text-blue-600 group-hover:text-blue-800">Podolog Fiyatları Ankara 2026</p>
+                  <p className="text-sm text-gray-600">Güncel ücret aralıkları ve rehber</p>
+                </Link>
               </div>
             </section>
 

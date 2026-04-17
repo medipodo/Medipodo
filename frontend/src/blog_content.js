@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'tirnak-teli-fiyatlari-ankara',
+    title: 'Tırnak Teli Takma Fiyatları 2026 | Ankara Güncel Liste',
+    slug: 'tirnak-teli-fiyatlari-ankara',
+    excerpt: '2026 yılında Ankara\'da tırnak teli takma fiyatları, seans süreleri ve uygulama detayları. Batık tırnak için ameliyatsız çözüm rehberi.',
+    image: '/images/batik-tirnak-teli-ameliyatsiz-blog-kapak-gorseli.webp',
+    date: '17 Nisan 2026',
+    updatedAt: '2026-04-17',
+    readTime: '12 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Tırnak Teli', 'Fiyatlar', 'Ankara', 'Batık Tırnak', 'Podoloji', 'Ameliyatsız'],
+    content: 'Özel blog sayfası: /blog/tirnak-teli-fiyatlari-ankara'
+  },
+  {
     id: 'podolog-fiyatlari-ankara',
     title: 'Podolog Fiyatları Ankara (2026 Güncel Rehber)',
     slug: 'podolog-fiyatlari-ankara',

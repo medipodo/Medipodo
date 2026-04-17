@@ -43,6 +43,7 @@ import BatikTirnakEvdeBlog from './pages/BatikTirnakEvdeBlog';
 import AyaktaKizariklikBlog from './pages/AyaktaKizariklikBlog';
 import AyakSagligiRehberiBlog from './pages/AyakSagligiRehberiBlog';
 import PodologFiyatlariAnkaraBlog from './pages/PodologFiyatlariAnkaraBlog';
+import TirnakTeliFiyatlariBlog from './pages/TirnakTeliFiyatlariBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -104,6 +105,7 @@ function AppContent() {
         <Route path="/blog/ayakta-kizariklik-neden-olur" element={<AyaktaKizariklikBlog />} />
         <Route path="/blog/ayak-sagligi-rehberi" element={<AyakSagligiRehberiBlog />} />
         <Route path="/blog/podolog-fiyatlari-ankara" element={<PodologFiyatlariAnkaraBlog />} />
+        <Route path="/blog/tirnak-teli-fiyatlari-ankara" element={<TirnakTeliFiyatlariBlog />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/hakkimizda" element={<About />} />
         <Route path="/kadromuz" element={<Team />} />

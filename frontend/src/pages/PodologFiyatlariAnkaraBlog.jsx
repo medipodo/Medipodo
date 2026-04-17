@@ -376,7 +376,7 @@ const PodologFiyatlariAnkaraBlog = () => {
               </div>
 
               <p className="text-gray-700">
-                Evde bakım hakkında detaylı bilgi almak için <Link to="/ayak-bakim-kilavuzu" className="text-blue-600 hover:text-blue-800 font-semibold underline">ayak bakım kılavuzumuza</Link> göz atabilirsiniz.
+                Evde bakım hakkında detaylı bilgi almak için <Link to="/ayak-bakim-kilavuzu" className="text-blue-600 hover:text-blue-800 font-semibold underline">ayak bakım kılavuzumuza</Link> göz atabilirsiniz. Batık tırnak için ameliyatsız çözüm arıyorsan <Link to="/blog/tirnak-teli-fiyatlari-ankara" className="text-blue-600 hover:text-blue-800 font-semibold underline">tırnak teli fiyatları Ankara</Link> yazımız da ilgini çekebilir.
               </p>
             </section>
 
