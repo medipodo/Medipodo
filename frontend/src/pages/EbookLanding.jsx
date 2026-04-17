@@ -306,7 +306,7 @@ const EbookLanding = () => {
                 <div className="flex items-center justify-center gap-8 mb-6">
                   <div>
                     <p className="text-sm text-blue-200 mb-1">Sadece</p>
-                    <p className="text-5xl font-bold text-white">$5</p>
+                    <p className="text-5xl font-bold text-white">$1</p>
                   </div>
                 </div>
                 
