@@ -36,6 +36,8 @@ React.js, React Router, Tailwind CSS, react-helmet (SEO), lucide-react, JSON-LD 
 - [x] AyakTakip mobil uygulama referanslarının Home.jsx, About.jsx ve blog sayfalarına entegrasyonu
 - [x] batik-tirnak-gorsel.webp alt yazısı "Batık tırnak zamanla iltihap oluşturabilir" olarak güncellendi
 - [x] SSS'de ilk 2 soru varsayılan açık (Google bot SEO iyileştirmesi)
+- [x] Kapak görseli batik-tirnak-teli-takma-fiyatlari-ankara.webp ile değiştirildi
+- [x] CTA spam düzeltmesi: Orta CTA "Acıtır mı" sonrasına taşındı, araya 6 bölüm mesafe bırakıldı
 
 ## Backlog
 - [ ] GitHub'a push ve production deploy

@@ -61,7 +61,7 @@ const TirnakTeliFiyatlariBlog = () => {
     "@type": "Article",
     "headline": "Tırnak Teli Takma Fiyatları 2026 | Ankara Güncel Liste",
     "description": "2026 yılında Ankara'da tırnak teli takma fiyatları, seans süreleri ve uygulama detayları. Batık tırnak için ameliyatsız çözüm rehberi.",
-    "image": "/images/batik-tirnak-teli-ameliyatsiz-blog-kapak-gorseli.webp",
+    "image": "/images/batik-tirnak-teli-takma-fiyatlari-ankara.webp",
     "author": {
       "@type": "Person",
       "name": "Podolog Serdar Ceylan"
@@ -99,7 +99,7 @@ const TirnakTeliFiyatlariBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Tırnak Teli Takma Fiyatları 2026 | Ankara Güncel Liste" />
         <meta property="og:description" content="Ankara'da tırnak teli takma fiyatları neye göre değişir? Güncel fiyat aralıkları ve uygulama detayları." />
-        <meta property="og:image" content="https://medipodo.com/images/batik-tirnak-teli-ameliyatsiz-blog-kapak-gorseli.webp" />
+        <meta property="og:image" content="https://medipodo.com/images/batik-tirnak-teli-takma-fiyatlari-ankara.webp" />
         <meta property="og:url" content="https://medipodo.com/blog/tirnak-teli-fiyatlari-ankara" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -107,7 +107,7 @@ const TirnakTeliFiyatlariBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tırnak Teli Takma Fiyatları 2026 | Ankara Güncel Liste" />
         <meta name="twitter:description" content="Ankara'da tırnak teli fiyatları, seans süreleri ve uygulama detayları." />
-        <meta name="twitter:image" content="https://medipodo.com/images/batik-tirnak-teli-ameliyatsiz-blog-kapak-gorseli.webp" />
+        <meta name="twitter:image" content="https://medipodo.com/images/batik-tirnak-teli-takma-fiyatlari-ankara.webp" />
 
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
@@ -164,7 +164,7 @@ const TirnakTeliFiyatlariBlog = () => {
             {/* Kapak Görseli */}
             <div className="mb-12">
               <img
-                src="/images/batik-tirnak-teli-ameliyatsiz-blog-kapak-gorseli.webp"
+                src="/images/batik-tirnak-teli-takma-fiyatlari-ankara.webp"
                 alt="Tırnak teli uygulaması Ankara - batık tırnak için ameliyatsız çözüm"
                 width="1200"
                 height="675"
@@ -397,6 +397,33 @@ const TirnakTeliFiyatlariBlog = () => {
               </p>
             </section>
 
+            {/* ==================== */}
+            {/* WHATSAPP CTA - ORTA */}
+            {/* ==================== */}
+            <section className="mb-12">
+              <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-6 md:p-8 text-white">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <div className="flex items-center">
+                    <MessageCircle size={32} className="mr-4 flex-shrink-0" />
+                    <div>
+                      <p className="font-bold text-lg">Tırnak teli uygulaması hakkında bilgi almak ister misiniz?</p>
+                      <p className="text-green-100">WhatsApp üzerinden fotoğraf göndererek ön değerlendirme talep edebilirsiniz.</p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://wa.me/905456569747?text=Merhaba,%20t%C4%B1rnak%20teli%20uygulamas%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-green-50 transition-colors flex items-center whitespace-nowrap"
+                    data-testid="whatsapp-mid-cta"
+                  >
+                    <MessageCircle size={20} className="mr-2" />
+                    WhatsApp'tan Yazın
+                  </a>
+                </div>
+              </div>
+            </section>
+
             {/* NiTi tel uygulama görseli */}
             <div className="mb-12">
               <img
@@ -535,33 +562,6 @@ const TirnakTeliFiyatlariBlog = () => {
               <p className="text-gray-700">
                 Detaylı bilgi ve uygunluk değerlendirmesi için <Link to="/iletisim" className="text-blue-600 hover:text-blue-800 font-semibold underline">iletişim sayfamızdan</Link> bize ulaşabilirsiniz.
               </p>
-            </section>
-
-            {/* ==================== */}
-            {/* WHATSAPP CTA - ORTA */}
-            {/* ==================== */}
-            <section className="mb-12">
-              <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-6 md:p-8 text-white">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div className="flex items-center">
-                    <MessageCircle size={32} className="mr-4 flex-shrink-0" />
-                    <div>
-                      <p className="font-bold text-lg">Tırnak teli uygulaması hakkında bilgi almak ister misiniz?</p>
-                      <p className="text-green-100">WhatsApp üzerinden fotoğraf göndererek ön değerlendirme talep edebilirsiniz.</p>
-                    </div>
-                  </div>
-                  <a
-                    href="https://wa.me/905456569747?text=Merhaba,%20t%C4%B1rnak%20teli%20uygulamas%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-green-50 transition-colors flex items-center whitespace-nowrap"
-                    data-testid="whatsapp-mid-cta"
-                  >
-                    <MessageCircle size={20} className="mr-2" />
-                    WhatsApp'tan Yazın
-                  </a>
-                </div>
-              </div>
             </section>
 
             {/* ==================== */}
