@@ -38,7 +38,7 @@ const partners = [
     logo: '/images/partners/trendyol.png',
     alt: 'Trendyol Medipodo online satış platformu',
     description: 'Online Satış Platformu',
-    url: 'https://www.trendyol.com/sr?mid=1114633&id=949004162%2C974106929%2C974407501%2C993719944&os=1',
+    url: 'https://www.trendyol.com/magaza/medipodo-m-1114633?channelId=1&sst=0&sk=1',
     title: 'Trendyol Medipodo mağazası',
   },
   {
