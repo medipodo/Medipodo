@@ -735,7 +735,7 @@ const Home = () => {
                       <p className="text-sm text-blue-200">Bölüm</p>
                     </div>
                     <div>
-                      <p className="text-3xl font-bold text-white">$5</p>
+                      <p className="text-3xl font-bold text-white">$1</p>
                       <p className="text-sm text-blue-200">Fiyat</p>
                     </div>
                   </div>
