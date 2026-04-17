@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Award, Target, Heart, Users } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
+import AboutPartnersSection from '../components/AboutPartnersSection';
 
 const About = () => {
   const values = [
@@ -292,6 +293,9 @@ const About = () => {
             </div>
           </div>
         </section>
+
+        {/* Partners Section (About) */}
+        <AboutPartnersSection />
 
         {/* Stats Section */}
         <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
