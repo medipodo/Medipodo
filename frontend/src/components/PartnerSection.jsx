@@ -49,6 +49,22 @@ const partners = [
     url: 'https://www.hepsiburada.com/magaza/medipodo?markalar=pedizone',
     title: 'Hepsiburada Medipodo mağazası',
   },
+  {
+    name: 'Ortomek',
+    logo: '/images/partners/ortomek.png',
+    alt: 'Ortomek kişiye özel tabanlık',
+    description: 'Kişiye özel tabanlık çözümleri',
+    url: 'https://share.google/k8ICwh4VVdat1itTd',
+    title: 'Ortomek tabanlık çözümleri',
+  },
+  {
+    name: 'Profresh',
+    logo: '/images/partners/profresh.png',
+    alt: 'Profresh temizlik hizmetleri',
+    description: 'Profesyonel temizlik hizmetleri',
+    url: 'https://wa.me/905435415206?text=Merhaba%2C%20temizlik%20hizmeti%20almak%20istiyorum.',
+    title: 'Temizlik hizmeti için iletişime geç',
+  },
 ];
 
 const PartnerCard = ({ partner }) => {
