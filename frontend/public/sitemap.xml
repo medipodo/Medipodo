@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://medipodo.com/</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-24</lastmod>
   </url>
   <url>
     <loc>https://medipodo.com/hakkimizda</loc>
@@ -43,7 +44,7 @@
   </url>
   <url>
     <loc>https://medipodo.com/blog</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-24</lastmod>
   </url>
   <url>
     <loc>https://medipodo.com/blog/yaz-aylarinda-ayakkabi-secimi</loc>
@@ -55,7 +56,32 @@
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-mantari-bulasici-mi</loc>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-24</lastmod>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-erken-evre.webp</image:loc>
+      <image:title>Tırnak Mantarı Erken Evre</image:title>
+      <image:caption>tırnak mantarı erken evre görünümü</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-kalinlasmis.webp</image:loc>
+      <image:title>Kalınlaşmış Tırnak Mantarı</image:title>
+      <image:caption>kalınlaşmış tırnak mantarı örneği</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-ileri-evre.webp</image:loc>
+      <image:title>İleri Seviye Onikomikoz</image:title>
+      <image:caption>ileri seviye onikomikoz görüntüsü</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-nasil-gecer.webp</image:loc>
+      <image:title>Birden Fazla Tırnakta Mantar Enfeksiyonu</image:title>
+      <image:caption>tırnak mantarı nasıl geçer - birden fazla tırnakta mantar enfeksiyonu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-oncesi-sonrasi-ankara-podolog.webp</image:loc>
+      <image:title>Tırnak Mantarı Öncesi Sonrası — Ankara Podolog</image:title>
+      <image:caption>tırnak mantarı öncesi sonrası - Ankara podolog profesyonel tedavi örneği</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-mantari-tedavisi</loc>
