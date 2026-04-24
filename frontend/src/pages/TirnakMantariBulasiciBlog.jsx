@@ -534,6 +534,21 @@ const TirnakMantariBulasiciBlog = () => {
               <p className="text-gray-700 leading-relaxed">
                 Tırnak mantarı şüphesi varsa veya ev içi bulaşmayı önlemek için profesyonel değerlendirme almak isterseniz, <Link to="/iletisim" className="text-blue-600 hover:underline font-medium">randevu alın</Link> ve durumunuzu uzman bir podolog ile değerlendirin.
               </p>
+
+              {/* Öncesi / Sonrası — Sosyal kanıt + "tırnak mantarı öncesi sonrası" SEO */}
+              <figure className="mt-8">
+                <img
+                  src="/blog-images/tirnak-mantari-bulasici/tirnak-mantari-oncesi-sonrasi-ankara-podolog.webp"
+                  alt="tırnak mantarı öncesi sonrası - Ankara podolog profesyonel tedavi örneği"
+                  className="w-full rounded-xl shadow-lg"
+                  loading="lazy"
+                  width="1200"
+                  height="1200"
+                />
+                <figcaption className="text-sm text-gray-500 text-center mt-3 italic">
+                  Tırnak mantarı öncesi ve sonrası: Medipodo kliniğinde uygulanan profesyonel podolojik bakım sonrasında tırnağın doğal rengine ve yapısına kavuşması.
+                </figcaption>
+              </figure>
             </section>
 
             {/* Sonuç - Genişletilmiş (120+ kelime) */}
