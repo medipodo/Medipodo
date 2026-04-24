@@ -73,110 +73,6 @@ const Home = () => {
         {/* Hero Slider */}
         <HeroSlider />
 
-      {/* En Çok Okunanlar - Popular Blog Posts */}
-      <section className="py-16 bg-gradient-to-b from-white to-blue-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-4">
-              <BookOpen className="text-blue-700" size={28} />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">En Çok Okunanlar</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Okuyucularımızın en beğendiği ayak sağlığı rehberleri
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.slice(6, 12).map((post) => (
-              <Card key={post.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border-0 shadow-md">
-                <CardContent className="p-0">
-                  <Link to={post.customUrl || `/blog/${post.slug}`} className="block">
-                    <div className="relative aspect-video overflow-hidden rounded-t-lg">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                      <div className="absolute top-3 left-3">
-                        <span className="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                          Popüler
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                  <div className="p-5">
-                    <div className="flex items-center text-sm text-gray-500 mb-2">
-                      <span>{post.date}</span>
-                      <span className="mx-2">•</span>
-                      <span>{post.readTime}</span>
-                    </div>
-                    <Link to={post.customUrl || `/blog/${post.slug}`}>
-                      <h3 className="text-lg font-semibold text-blue-950 mb-2 line-clamp-2 hover:text-blue-700 transition-colors">{post.title}</h3>
-                    </Link>
-                    <p className="text-gray-600 text-sm line-clamp-2">{post.excerpt}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Neden Medipodo?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Ayak sağlığınız için en iyi hizmeti sunmak için burayız
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyChooseUs.map((item, index) => {
-              const Icon = iconMap[item.icon];
-              return (
-                <Card key={index} className="border-2 hover:border-blue-300 transition-all hover:shadow-lg">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon className="text-blue-700" size={32} />
-                    </div>
-                    <h3 className="text-xl font-semibold text-blue-950 mb-2">{item.title}</h3>
-                    <p className="text-gray-600 text-sm">{item.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* İstatistikler - Güven Sinyali */}
-      <section className="py-12 bg-gradient-to-r from-blue-900 to-blue-950">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-            <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">1500+</div>
-              <div className="text-blue-200 text-sm md:text-base">Mutlu Müşteri</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">5+</div>
-              <div className="text-blue-200 text-sm md:text-base">Yıl Deneyim</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">5.0</div>
-              <div className="text-blue-200 text-sm md:text-base flex items-center justify-center gap-1">
-                <Star className="fill-yellow-400 text-yellow-400" size={16} />
-                Google Puan
-              </div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">%100</div>
-              <div className="text-blue-200 text-sm md:text-base">Hijyen Standardı</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="py-16 bg-blue-50">
         <div className="container mx-auto px-4">
@@ -233,6 +129,63 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+      {/* Why Choose Us */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">Neden Medipodo?</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Ayak sağlığınız için en iyi hizmeti sunmak için burayız
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {whyChooseUs.map((item, index) => {
+              const Icon = iconMap[item.icon];
+              return (
+                <Card key={index} className="border-2 hover:border-blue-300 transition-all hover:shadow-lg">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Icon className="text-blue-700" size={32} />
+                    </div>
+                    <h3 className="text-xl font-semibold text-blue-950 mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* İstatistikler - Güven Sinyali */}
+      <section className="py-12 bg-gradient-to-r from-blue-900 to-blue-950">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">1500+</div>
+              <div className="text-blue-200 text-sm md:text-base">Mutlu Müşteri</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">5+</div>
+              <div className="text-blue-200 text-sm md:text-base">Yıl Deneyim</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">5.0</div>
+              <div className="text-blue-200 text-sm md:text-base flex items-center justify-center gap-1">
+                <Star className="fill-yellow-400 text-yellow-400" size={16} />
+                Google Puan
+              </div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">%100</div>
+              <div className="text-blue-200 text-sm md:text-base">Hijyen Standardı</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Müşteri Yorumları - Google Reviews */}
       <section className="py-16 bg-gradient-to-b from-white to-blue-50">
@@ -810,6 +763,55 @@ const Home = () => {
                         <ArrowRight className="ml-1" size={16} />
                       </Button>
                     </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* En Çok Okunanlar - Popular Blog Posts */}
+      <section className="py-16 bg-gradient-to-b from-white to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-4">
+              <BookOpen className="text-blue-700" size={28} />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">En Çok Okunanlar</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Okuyucularımızın en beğendiği ayak sağlığı rehberleri
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {blogPosts.slice(6, 12).map((post) => (
+              <Card key={post.id} className="hover:shadow-xl transition-all hover:-translate-y-1 bg-white border-0 shadow-md">
+                <CardContent className="p-0">
+                  <Link to={post.customUrl || `/blog/${post.slug}`} className="block">
+                    <div className="relative aspect-video overflow-hidden rounded-t-lg">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-3 left-3">
+                        <span className="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                          Popüler
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                  <div className="p-5">
+                    <div className="flex items-center text-sm text-gray-500 mb-2">
+                      <span>{post.date}</span>
+                      <span className="mx-2">•</span>
+                      <span>{post.readTime}</span>
+                    </div>
+                    <Link to={post.customUrl || `/blog/${post.slug}`}>
+                      <h3 className="text-lg font-semibold text-blue-950 mb-2 line-clamp-2 hover:text-blue-700 transition-colors">{post.title}</h3>
+                    </Link>
+                    <p className="text-gray-600 text-sm line-clamp-2">{post.excerpt}</p>
                   </div>
                 </CardContent>
               </Card>
