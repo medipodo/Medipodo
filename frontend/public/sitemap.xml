@@ -5,241 +5,382 @@
   <url>
     <loc>https://medipodo.com/</loc>
     <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hakkimizda</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hizmetler</loc>
     <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hizmet/batik-tirnak</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hizmet/tirnak-mantari</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hizmet/topuk-bakimi</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hizmet/nasir-tedavisi</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hizmet/ayak-bakimi</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://medipodo.com/hizmet/evde-bakim</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://medipodo.com/galeri</loc>
     <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog</loc>
     <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/yaz-aylarinda-ayakkabi-secimi</loc>
     <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-teli-fiyatlari-ankara</loc>
     <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-mantari-bulasici-mi</loc>
     <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
     <image:image>
-      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-erken-evre.webp</image:loc>
-      <image:title>Tırnak Mantarı Erken Evre</image:title>
-      <image:caption>tırnak mantarı erken evre görünümü</image:caption>
+    <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-erken-evre.webp</image:loc>
+    <image:title>Tırnak Mantarı Erken Evre</image:title>
+    <image:caption>tırnak mantarı erken evre görünümü</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-kalinlasmis.webp</image:loc>
-      <image:title>Kalınlaşmış Tırnak Mantarı</image:title>
-      <image:caption>kalınlaşmış tırnak mantarı örneği</image:caption>
+    <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-kalinlasmis.webp</image:loc>
+    <image:title>Kalınlaşmış Tırnak Mantarı</image:title>
+    <image:caption>kalınlaşmış tırnak mantarı örneği</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-ileri-evre.webp</image:loc>
-      <image:title>İleri Seviye Onikomikoz</image:title>
-      <image:caption>ileri seviye onikomikoz görüntüsü</image:caption>
+    <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-ileri-evre.webp</image:loc>
+    <image:title>İleri Seviye Onikomikoz</image:title>
+    <image:caption>ileri seviye onikomikoz görüntüsü</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-nasil-gecer.webp</image:loc>
-      <image:title>Birden Fazla Tırnakta Mantar Enfeksiyonu</image:title>
-      <image:caption>tırnak mantarı nasıl geçer - birden fazla tırnakta mantar enfeksiyonu</image:caption>
+    <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-nasil-gecer.webp</image:loc>
+    <image:title>Birden Fazla Tırnakta Mantar Enfeksiyonu</image:title>
+    <image:caption>tırnak mantarı nasıl geçer - birden fazla tırnakta mantar enfeksiyonu</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-oncesi-sonrasi-ankara-podolog.webp</image:loc>
-      <image:title>Tırnak Mantarı Öncesi Sonrası — Ankara Podolog</image:title>
-      <image:caption>tırnak mantarı öncesi sonrası - Ankara podolog profesyonel tedavi örneği</image:caption>
+    <image:loc>https://medipodo.com/blog-images/tirnak-mantari-bulasici/tirnak-mantari-oncesi-sonrasi-ankara-podolog.webp</image:loc>
+    <image:title>Tırnak Mantarı Öncesi Sonrası — Ankara Podolog</image:title>
+    <image:caption>tırnak mantarı öncesi sonrası - Ankara podolog profesyonel tedavi örneği</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-mantari-tedavisi</loc>
     <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/batik-tirnak-nedenleri</loc>
     <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayak-sagligi-ipuclari</loc>
     <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/baglica-podolog-hizmetleri</loc>
     <lastmod>2025-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayak-kokusu-ve-mantar-iliskisi</loc>
     <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/kis-aylarinda-catlak-topuk-tedavisi</loc>
     <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnakbatmasi</loc>
     <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/diyabet-ve-ayak-sagligi</loc>
     <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ankara-baglica-refleksoloji</loc>
     <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/nasir-sigil-farklari</loc>
     <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/topuk-dikeni</loc>
     <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/cocuk-ayak-sagligi</loc>
     <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://medipodo.com/blog/nasirda-siyah-noktalar</loc>
     <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://medipodo.com/kadromuz</loc>
     <lastmod>2025-12-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/ayak-analizi</loc>
     <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/iletisim</loc>
     <lastmod>2025-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/gizlilik-politikasi</loc>
     <lastmod>2025-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/kullanim-sartlari</loc>
     <lastmod>2025-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/cerez-politikasi</loc>
     <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/urun/pedizone-ayak-temizleme-kopugu</loc>
     <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://medipodo.com/urun/pedizone-urea-intense-repair-cream</loc>
     <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://medipodo.com/urun/pedizone-foot-nail-care-serum</loc>
     <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://medipodo.com/ayak-bakim-kilavuzu</loc>
     <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/sikca-sorulan-sorular</loc>
     <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/bs-bant-uygulamasi</loc>
     <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-neden-kalinlasir</loc>
     <lastmod>2025-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-neden-uzamaz</loc>
     <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/medikal-ayak-bakimi-kimler-icin-gereklidir</loc>
     <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayak-agrisi-neden-olur</loc>
     <lastmod>2025-12-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayakta-yanma-hissi-neden-olur</loc>
     <lastmod>2025-12-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayak-mantari-nasil-bulasir</loc>
     <lastmod>2025-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayak-mantari-belirtileri</loc>
     <lastmod>2025-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/ayak-mantari-belirtileri/ayak-mantarinin-belirtileri.webp</image:loc>
+      <image:title>Ayak Mantarı Belirtileri</image:title>
+      <image:caption>ayak mantarı belirtileri - kızarıklık, kaşıntı ve soyulma</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/ayak-mantari-belirtileri/parmak-arasi-mantar.webp</image:loc>
+      <image:title>Parmak Arası Mantar</image:title>
+      <image:caption>parmak arası mantar enfeksiyonu görüntüsü</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/ayak-mantari-belirtileri/ayak-mantari-ileri-derece.webp</image:loc>
+      <image:title>İleri Derece Ayak Mantarı</image:title>
+      <image:caption>ileri derece ayak mantarı - tedavi gerektiren evre</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayak-mantari-evde-tedavi-edilir-mi</loc>
     <lastmod>2025-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/ayak-mantari-evde-tedavi/ayak-mantari-evde-tedavi-yontemleri.webp</image:loc>
+      <image:title>Ayak Mantarı Evde Tedavi Yöntemleri</image:title>
+      <image:caption>ayak mantarı evde tedavi yöntemleri - uzman önerileri</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://medipodo.com/baglica-podolog-fiyatlari</loc>
     <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/nasir-neden-tekrar-eder</loc>
     <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/nasir-tekrar/nasir-neden-gecmez.webp</image:loc>
+      <image:title>Nasır Neden Geçmez</image:title>
+      <image:caption>nasır neden geçmez - kalıcı çözüm için bilmeniz gerekenler</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/nasir-tekrar/ayakta-nasir-nasil-gecer.webp</image:loc>
+      <image:title>Ayakta Nasır Nasıl Geçer</image:title>
+      <image:caption>ayakta nasır tedavisi ve basış analizi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/blog-images/nasir-tekrar/ankara-nasir-tedavisi.webp</image:loc>
+      <image:title>Ankara Nasır Tedavisi</image:title>
+      <image:caption>Ankara nasır tedavisi - profesyonel podolog uygulaması</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://medipodo.com/blog/batik-tirnak-evde-nasil-rahatlatilir</loc>
     <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayakta-kizariklik-neden-olur</loc>
     <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/ayak-sagligi-rehberi</loc>
     <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://medipodo.com/blog/podolog-fiyatlari-ankara</loc>
     <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
