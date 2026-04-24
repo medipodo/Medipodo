@@ -546,7 +546,7 @@ const TirnakMantariBulasiciBlog = () => {
                   height="1200"
                 />
                 <figcaption className="text-sm text-gray-500 text-center mt-3 italic">
-                  Tırnak mantarı öncesi ve sonrası: Medipodo kliniğinde uygulanan profesyonel podolojik bakım sonrasında tırnağın doğal rengine ve yapısına kavuşması.
+                  Tırnak mantarı öncesi ve sonrası: profesyonel podolojik bakım sonrasında tırnağın doğal rengine ve yapısına kavuşması.
                 </figcaption>
               </figure>
             </section>
