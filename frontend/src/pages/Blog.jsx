@@ -8,10 +8,10 @@ import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
 
-// Türkçe karakterleri normalize et (arama için):
-// "İ" → "i", "Ş" → "s", "Ğ" → "g", vb. → büyük/küçük ve aksan farkını ortadan kaldırır
+// Türkçe karakterleri normalize et + alfanumerik dışı → boşluk
+// "İ/Ş/Ğ/Ü/Ö/Ç" ve aksanlar arasındaki farkı ortadan kaldırır, slug tirelerini de normalize eder
 const normalize = (str = '') =>
-  str
+  String(str)
     .toLocaleLowerCase('tr-TR')
     .replace(/ı/g, 'i')
     .replace(/ğ/g, 'g')
@@ -19,7 +19,41 @@ const normalize = (str = '') =>
     .replace(/ş/g, 's')
     .replace(/ö/g, 'o')
     .replace(/ç/g, 'c')
+    .replace(/[^a-z0-9]+/g, ' ')
     .trim();
+
+// Ağırlıklı alan tabanlı skorlama — profesyonel search relevance
+const FIELD_WEIGHTS = {
+  title: 10,
+  tags: 5,
+  excerpt: 3,
+  slug: 2,
+  content: 1,
+};
+
+const scorePost = (post, tokens) => {
+  const fields = {
+    title: normalize(post.title),
+    tags: normalize((post.tags || []).join(' ')),
+    excerpt: normalize(post.excerpt || ''),
+    slug: normalize(post.slug || ''),
+    content: normalize(typeof post.content === 'string' ? post.content.slice(0, 2000) : ''),
+  };
+
+  let totalScore = 0;
+  for (const token of tokens) {
+    let tokenFound = false;
+    for (const [field, weight] of Object.entries(FIELD_WEIGHTS)) {
+      if (fields[field].includes(token)) {
+        totalScore += weight;
+        tokenFound = true;
+      }
+    }
+    // Token hiçbir alanda bulunamadıysa → bu post hiç eşleşmiyor (AND mantığı)
+    if (!tokenFound) return 0;
+  }
+  return totalScore;
+};
 
 const Blog = () => {
   const [query, setQuery] = useState('');
@@ -27,12 +61,15 @@ const Blog = () => {
   const filteredPosts = useMemo(() => {
     const q = normalize(query);
     if (!q) return blogPosts;
-    return blogPosts.filter((post) => {
-      const haystack = normalize(
-        `${post.title} ${post.excerpt || ''} ${(post.tags || []).join(' ')}`
-      );
-      return haystack.includes(q);
-    });
+    // Kelimeleri ayır, 1 karakterden kısa token'ları ele (gürültü azaltır)
+    const tokens = q.split(' ').filter((t) => t.length >= 2);
+    if (tokens.length === 0) return blogPosts;
+
+    return blogPosts
+      .map((post) => ({ post, score: scorePost(post, tokens) }))
+      .filter((entry) => entry.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map((entry) => entry.post);
   }, [query]);
 
   const hasQuery = query.trim().length > 0;
