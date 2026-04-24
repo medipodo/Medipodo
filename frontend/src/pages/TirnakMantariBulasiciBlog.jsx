@@ -651,9 +651,9 @@ const TirnakMantariBulasiciBlog = () => {
                     Randevu Al
                   </Button>
                 </Link>
-                <a href="tel:+905336459778">
+                <a href="tel:+905456569747">
                   <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg">
-                    Hemen Ara: 0533 645 97 78
+                    Hemen Ara: 0545 656 97 47
                   </Button>
                 </a>
               </div>
