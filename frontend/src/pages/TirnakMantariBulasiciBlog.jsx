@@ -565,7 +565,7 @@ const TirnakMantariBulasiciBlog = () => {
               </div>
               <div className="text-gray-700">
                 <p className="font-semibold text-gray-900 mb-1">
-                  İçerik <Link to="/kadromuz" className="text-blue-700 hover:underline">Podolog Serdar Ceylan</Link> tarafından hazırlanmıştır.
+                  İçerik Podolog Serdar Ceylan tarafından hazırlanmıştır.
                 </p>
                 <p className="text-sm leading-relaxed">
                   Medipodo Ayak Sağlığı Merkezi'ndeki klinik deneyime dayanmaktadır. Bilgiler genel bilgilendirme amaçlıdır; kişisel tanı ve tedavi için lütfen uzman değerlendirmesi alın.
