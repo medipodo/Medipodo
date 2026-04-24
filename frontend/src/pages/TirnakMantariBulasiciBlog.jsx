@@ -201,7 +201,7 @@ const TirnakMantariBulasiciBlog = () => {
 
               <figure className="mb-6">
                 <img 
-                  src="/blog-images/tirnak-mantari-bulasici/tirnak-mantari-kalinlasmis.jpg" 
+                  src="/blog-images/tirnak-mantari-bulasici/tirnak-mantari-kalinlasmis.webp" 
                   alt="kalınlaşmış tırnak mantarı örneği" 
                   className="w-full rounded-xl shadow-lg"
                   loading="lazy"
@@ -262,7 +262,7 @@ const TirnakMantariBulasiciBlog = () => {
               </div>
 
               <p className="text-gray-700 leading-relaxed mb-4">
-                Bağışıklık sistemi zayıf olan bireylerde, diyabet hastalarında ve yaşlılarda bulaş daha kolay gerçekleşir. <Link to="/hizmetler/diyabetik-ayak-bakimi" className="text-blue-600 hover:underline font-medium">Diyabetik ayak bakımı</Link> gerektiren hastalarda mantar enfeksiyonu daha ciddi sonuçlara yol açabileceği için erken müdahale kritik öneme sahiptir.
+                Bağışıklık sistemi zayıf olan bireylerde, diyabet hastalarında ve yaşlılarda bulaş daha kolay gerçekleşir. <Link to="/blog/diyabet-ve-ayak-sagligi" className="text-blue-600 hover:underline font-medium">Diyabet ve ayak sağlığı</Link> açısından mantar enfeksiyonu daha ciddi sonuçlara yol açabileceği için erken müdahale kritik öneme sahiptir.
               </p>
 
               <figure className="mb-6">
@@ -423,7 +423,7 @@ const TirnakMantariBulasiciBlog = () => {
               </div>
 
               <p className="text-gray-700 leading-relaxed">
-                Ancak en etkili önlem, mevcut enfeksiyonu kontrol altına almaktır. <Link to="/hizmetler/medikal-ayak-bakimi" className="text-blue-600 hover:underline font-medium">Medikal ayak bakımı</Link> ile mantar enfeksiyonunun kaynağı tedavi edilmeden ev içi önlemler tam koruma sağlamaz.
+                Ancak en etkili önlem, mevcut enfeksiyonu kontrol altına almaktır. <Link to="/hizmet/ayak-bakimi" className="text-blue-600 hover:underline font-medium">Medikal ayak bakımı</Link> ile mantar enfeksiyonunun kaynağı tedavi edilmeden ev içi önlemler tam koruma sağlamaz.
               </p>
 
               {/* 5 Büyük Hata Bloğu */}
