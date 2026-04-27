@@ -1,23 +1,4 @@
-## 📋 ADIMLAR (GitHub üzerinden çok kolay)
-
-### Adım 1: GitHub'da Dosyayı Aç ve Düzenle
-
-1. Tarayıcıda şu URL'i aç:
-   **https://github.com/medipodo/Medipodo/blob/main/frontend/src/pages/AnkaraPodolojiHastanelerBlog.jsx**
-
-2. Sağ üstteki **kalem ikonuna 🖉** tıkla ("Edit this file")
-
-### Adım 2: İçeriği Tamamen Sil
-
-1. Editörün içine tıkla
-2. **Ctrl + A** (tümünü seç)
-3. **Delete** tuşuna bas → tamamen boşalsın
-
-### Adım 3: Aşağıdaki Temiz Versiyonu Yapıştır
-
-⬇️ **Aşağıdaki kodun TAMAMINI** kopyala (`import` ile başlayan ilk satırdan, `export default` ile biten son satıra kadar) ve boş editöre yapıştır:
-Action: $ cat /tmp/temiz.jsx
-Observation: import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, User, ArrowLeft, Phone, ChevronDown, ChevronUp, MessageCircle, Hospital, ShieldCheck, Footprints, AlertTriangle } from 'lucide-react';
 import { Helmet } from 'react-helmet';
@@ -70,7 +51,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
     "@type": "Article",
     "headline": "Ankara'da Podoloji Bölümü Olan Hastaneler",
     "description": "Ankara'da podoloji hizmeti veren hastaneler hangileri? Devlet hastanesinde podoloji var mı? SGK karşılıyor mu? Detaylı rehber.",
-    "image": "https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp",
+    "image": "https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp",
     "author": {
       "@type": "Organization",
       "name": "Medipodo"
@@ -107,7 +88,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Ankara'da Podoloji Bölümü Olan Hastaneler" />
         <meta property="og:description" content="Ankara'da podoloji hizmeti veren hastaneler hangileri? Devlet hastanesinde podoloji var mı? SGK karşılıyor mu? Tüm detaylar bu rehberde." />
-        <meta property="og:image" content="https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp" />
+        <meta property="og:image" content="https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp" />
         <meta property="og:url" content="https://medipodo.com/blog/ankara-podoloji-bolumu-olan-hastaneler" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -115,7 +96,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ankara'da Podoloji Bölümü Olan Hastaneler" />
         <meta name="twitter:description" content="Ankara'da podoloji hizmeti veren hastaneler hangileri? SGK karşılıyor mu? Detaylı rehber." />
-        <meta name="twitter:image" content="https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp" />
+        <meta name="twitter:image" content="https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp" />
 
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
@@ -178,7 +159,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
             {/* Kapak Görseli */}
             <div className="mb-12">
               <img
-                src="https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp"
+                src="https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp"
                 alt="Ankara'da podoloji bölümü olan hastaneler - kapsamlı rehber"
                 width="1200"
                 height="675"
@@ -199,9 +180,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </div>
             </section>
 
-            {/* ==================== */}
             {/* HASTANELER */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Ankara'da Podoloji Hizmeti Veren Hastaneler
@@ -251,9 +230,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </div>
             </section>
 
-            {/* ==================== */}
             {/* SGK */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 SGK Podoloji Hizmetini Karşılıyor mu?
@@ -299,9 +276,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </p>
             </section>
 
-            {/* ==================== */}
             {/* DEVLET HASTANELERI */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Devlet Hastanelerinde Podoloji Var mı?
@@ -333,9 +308,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </p>
             </section>
 
-            {/* ==================== */}
             {/* NEDEN SINIRLI */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Hastanelerde Podoloji Hizmeti Neden Sınırlı?
@@ -361,9 +334,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               <p className="text-gray-700 leading-relaxed">genellikle sınırlı kalır.</p>
             </section>
 
-            {/* ==================== */}
             {/* MERKEZ vs HASTANE */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Podoloji Merkezi ile Hastane Arasındaki Fark
@@ -394,9 +365,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </p>
             </section>
 
-            {/* ==================== */}
             {/* HANGİ DURUMDA HANGİSİ */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Hangi Durumda Hastane, Hangi Durumda Podolog?
@@ -433,9 +402,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </p>
             </section>
 
-            {/* ==================== */}
             {/* ÖNERİ */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Ankara'da Podoloji Hizmeti Arayanlar İçin Öneri
@@ -470,9 +437,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </p>
             </section>
 
-            {/* ==================== */}
             {/* WHATSAPP CTA - ORTA */}
-            {/* ==================== */}
             <section className="mb-12">
               <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-6 md:p-8 text-white">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -497,9 +462,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </div>
             </section>
 
-            {/* ==================== */}
             {/* SSS */}
-            {/* ==================== */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
                 Sıkça Sorulan Sorular (SSS)
@@ -545,9 +508,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </div>
             </section>
 
-            {/* ==================== */}
             {/* MEDIPODO BAĞLICA */}
-            {/* ==================== */}
             <section className="mb-10">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Medipodo Ankara Bağlıca'da Podolojik Bakım
@@ -565,9 +526,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
               </div>
             </section>
 
-            {/* ==================== */}
             {/* SON CTA */}
-            {/* ==================== */}
             <section className="bg-gradient-to-r from-blue-700 to-blue-600 rounded-2xl p-8 md:p-10 text-white text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Profesyonel Podolojik Destek Alın
@@ -607,4 +566,3 @@ const AnkaraPodolojiHastanelerBlog = () => {
 };
 
 export default AnkaraPodolojiHastanelerBlog;
-Exit code: 0
