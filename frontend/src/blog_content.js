@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'ankara-podoloji-bolumu-olan-hastaneler',
+    title: 'Ankara\'da Podoloji Bölümü Olan Hastaneler',
+    slug: 'ankara-podoloji-bolumu-olan-hastaneler',
+    excerpt: 'Ankara\'da podoloji hizmeti veren hastaneler hangileri? Devlet hastanesinde podoloji var mı? SGK karşılıyor mu? Tüm detaylar bu rehberde.',
+    image: 'https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp',
+    date: '24 Nisan 2026',
+    updatedAt: '2026-04-24',
+    readTime: '9 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Ankara Podoloji', 'Hastaneler', 'SGK', 'Podoloji', 'Devlet Hastanesi', 'Ayak Sağlığı'],
+    content: 'Özel blog sayfası: /blog/ankara-podoloji-bolumu-olan-hastaneler'
+  },
+  {
     id: 'tirnak-teli-fiyatlari-ankara',
     title: 'Tırnak Teli Takma Fiyatları 2026 | Ankara Güncel Liste',
     slug: 'tirnak-teli-fiyatlari-ankara',
