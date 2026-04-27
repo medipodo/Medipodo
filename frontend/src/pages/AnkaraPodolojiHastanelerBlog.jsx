@@ -186,7 +186,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
                 Ankara'da Podoloji Hizmeti Veren Hastaneler
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Ankara'da podoloji hizmeti sunan hastane sayısı oldukça sınırlıdır ve bu hizmet genellikle özel hastanelerde bulunur.
+                Ankara'da podoloji hizmeti sunan hastane sayısı oldukça sınırlıdır ve bu hizmet genellikle özel kliniklerde bulunur.
               </p>
 
               <div className="mb-6 bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-400">
@@ -225,7 +225,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
                   Ankara Üniversitesi (Cebeci Yerleşkesi)
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Podoloji eğitimi ve uygulamaları bulunan akademik bir yapıdır. Klinik hizmetten ziyade eğitim ağırlıklıdır.
+                  Podoloji eğitimi ve uygulamaları bulunan akademik bir yapıdır. Yeni açılan podoloji ünitesiyle klinik hizmetin yanı sıra eğitim ağırlıklıdır.
                 </p>
               </div>
             </section>
@@ -239,7 +239,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
                 SGK (Sosyal Güvenlik Kurumu) podoloji hizmetlerini genel olarak karşılamaz. Bunun temel nedeni, podoloji uygulamalarının çoğunlukla "bakım ve koruyucu hizmet" kapsamında değerlendirilmesidir.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Devlet hastanelerinde ayak sağlığıyla ilgili işlemler yapılabilse de, bu hizmetler genellikle ortopedi, dermatoloji veya diyabetik ayak birimleri üzerinden yürütülür. Tıbbi tedavi gerektiren durumlarda SGK belirli işlemleri karşılayabilir.
+                Devlet hastanelerinde ayak sağlığıyla ilgili işlemler yapılabilse de, bu hizmetler genellikle genel cerrahi, ortopedi, dermatoloji veya diyabetik ayak birimleri üzerinden yürütülür. Tıbbi tedavi gerektiren durumlarda SGK belirli işlemleri karşılayabilir.
               </p>
 
               <p className="text-gray-700 mb-4 font-semibold">
@@ -285,7 +285,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
                 <strong>Kısa cevap:</strong> Genellikle yoktur.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Devlet hastanelerinde "podoloji" adıyla ayrı bir bölüm çoğunlukla bulunmaz. Bunun yerine:
+                Devlet hastanelerinde "podoloji" adıyla genelde ayrı bir bölüm bulunmaz. Bunun yerine:
               </p>
 
               <div className="grid md:grid-cols-3 gap-4 mb-6">
@@ -298,8 +298,8 @@ const AnkaraPodolojiHastanelerBlog = () => {
                   <p className="text-sm text-gray-600">Cilt ve tırnak hastalıkları</p>
                 </div>
                 <div className="bg-white rounded-xl shadow-md p-5 border-t-4 border-amber-500">
-                  <h3 className="font-bold text-gray-900 mb-2">Diyabetik Ayak Birimleri</h3>
-                  <p className="text-sm text-gray-600">Diyabete bağlı ayak komplikasyonları</p>
+                  <h3 className="font-bold text-gray-900 mb-2">Genel Cerrahi</h3>
+                  <p className="text-sm text-gray-600">Batık tırnak yada diyabete bağlı ayak komplikasyonları</p>
                 </div>
               </div>
 
@@ -323,7 +323,7 @@ const AnkaraPodolojiHastanelerBlog = () => {
                 <li className="flex items-start"><span className="text-blue-500 mr-3 mt-1 font-bold">•</span>Cerrahi işlemler</li>
               </ul>
 
-              <p className="text-gray-700 leading-relaxed mb-6">üzerine odaklanır. Bu nedenle:</p>
+              <p className="text-gray-700 leading-relaxed mb-6">üzerine odaklanır. Ayrıca Podoloji çok yeni bir kavram olduğundan henüz yaygınlaşmamıştır. Ancak her yıl hızlı bir şekilde çoğalmaktadır. Bu nedenle:</p>
 
               <ul className="space-y-2 text-gray-700 mb-6 bg-amber-50 rounded-xl p-6 border border-amber-200">
                 <li className="flex items-start"><span className="text-amber-600 mr-3 mt-1 font-bold">•</span>Uzun süreli bakım süreçleri</li>
