@@ -74,6 +74,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+     <url>
+    <loc>https://medipodo.com/blog/ankara-podoloji-bolumu-olan-hastaneler</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+    <image:loc>https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp</image:loc>
+    <image:title>Ankara'da podoloji bölümü olan hastaneler</image:title>
+    <image:caption>Ankara'da podoloji hizmeti veren hastaneler ve SGK kapsamı rehberi</image:caption>
+    </image:image>
+  </url>
   <url>
     <loc>https://medipodo.com/blog/tirnak-teli-fiyatlari-ankara</loc>
     <lastmod>2026-04-17</lastmod>
