@@ -17,19 +17,51 @@ const AnkaraPodolojiHastanelerBlog = () => {
   const faqItems = [
     {
       question: "Devlet hastanesinde podolog var mı?",
-      answer: "Genellikle ayrı bir podoloji bölümü bulunmaz. Hizmet ortopedi veya dermatoloji altında verilir."
+      answer: "Devlet hastanelerinde genellikle 'podoloji' adı altında ayrı bir bölüm bulunmaz. Ayak sağlığıyla ilgili sorunlar çoğunlukla genel cerrahi, ortopedi, dermatoloji veya diyabetik ayak birimleri tarafından değerlendirilir. Bu nedenle batık tırnak, nasır veya tırnak mantarı gibi düzenli bakım gerektiren durumlarda hastane yerine podoloji merkezleri tercih edilmektedir."
     },
     {
       question: "Podoloji ücretli mi?",
-      answer: "Evet, podoloji hizmetleri çoğunlukla özel kapsamda sunulur."
+      answer: "Evet, podoloji hizmetleri Türkiye'de büyük ölçüde özel hizmet kapsamında sunulur ve ücretlidir. SGK genellikle bu hizmetleri 'koruyucu bakım' kategorisinde değerlendirdiği için karşılamaz. Fiyatlar; uygulanan işlemin türüne, problemin seviyesine ve seans sayısına göre değişiklik gösterir."
     },
     {
-      question: "Batık tırnak için hastane mi podolog mu?",
-      answer: "Hafif ve orta vakalarda podolog, ileri vakalarda hastane tercih edilir."
+      question: "Batık tırnak için hastane mi podolog mu tercih edilmeli?",
+      answer: "Batık tırnağın seviyesi tercihi belirler. Erken ve orta seviye batık tırnaklarda podolog, hem ameliyatsız çözüm sunar hem de tekrarı önleyici tedavi planlar (B/S bant, ortoniks, tırnak teli gibi). Ancak ileri seviye, enfeksiyonlu ya da granülasyon dokusu oluşmuş vakalarda hastanenin cerrahi müdahalesi gerekebilir. Erken aşamada podologa başvurmak, hem ameliyat ihtiyacını ortadan kaldırır hem de iyileşme süresini kısaltır."
     },
     {
       question: "Tırnak mantarı için nereye gidilmeli?",
-      answer: "İlaç tedavisi için dermatoloji, bakım süreci için podolog tercih edilmelidir."
+      answer: "Tırnak mantarında en doğru yaklaşım dermatoloji ve podolojiyi birlikte kullanmaktır. İlaç tedavisi (oral antifungaller veya tırnak lakları) gerekiyorsa dermatoloji uzmanı reçete eder; ancak mantarın yarattığı kalınlaşma, deformasyon ve tekrar enfeksiyonu önleme açısından düzenli podolojik bakım şarttır. İki yaklaşım birleştiğinde başarı oranı belirgin şekilde artar."
+    },
+    {
+      question: "Ankara'da en iyi podoloji merkezi nasıl seçilir?",
+      answer: "Ankara'da podoloji merkezi seçerken birkaç kritere dikkat edilmelidir: kullanılan ekipmanın hijyen ve sterilizasyon standardı, podologun deneyim ve eğitim altyapısı, danışan yorumları, öncesi-sonrası fotoğrafları ve klinik ortamının uygunluğu. Ayrıca merkezin sadece tek seferlik işlem değil, sürdürülebilir bakım süreci sunması da önemlidir. Tekrar eden problemlerde aynı merkeze gitmek, sürecin doğru yönetilmesi açısından avantaj sağlar."
+    },
+    {
+      question: "Podolojik bakım kaç seans sürer?",
+      answer: "Seans sayısı yapılan işleme ve ayaktaki duruma göre değişir. Medikal ayak bakımı genellikle tek seansta tamamlanır. Batık tırnakta hafif vakalar 1-2 seans, B/S bant veya tırnak teli uygulamalarında 2-4 seans gerekebilir. Tırnak mantarında ise 3 ila 6 ay süren düzenli bakım süreci önerilir. Net seans sayısı, ilk değerlendirme sonrasında size özel olarak planlanır."
+    },
+    {
+      question: "Podoloji ile pedikür arasındaki fark nedir?",
+      answer: "Pedikür, estetik amaçlı bir güzellik uygulamasıdır; tırnakların şekillendirilmesi, ölü deri temizliği ve oje gibi işlemleri kapsar. Podoloji ise tıbbi bir disiplindir; batık tırnak, nasır, tırnak mantarı, topuk çatlağı gibi sağlık sorunlarına bilimsel yöntemlerle yaklaşır. Kullanılan ekipman, hijyen standartları ve uygulayan kişinin eğitimi tamamen farklıdır. Podoloji 'estetik' değil, 'sağlık hizmeti' kapsamındadır."
+    },
+    {
+      question: "Diyabet hastaları podolojik bakım yaptırabilir mi?",
+      answer: "Evet, diyabet hastaları için podolojik bakım son derece önemlidir, hatta hayati değer taşır. Diyabette ayaktaki duyu kaybı (nöropati) ve dolaşım bozuklukları nedeniyle küçük yaralar bile fark edilmeden enfeksiyona dönüşebilir. Steril, profesyonel ortamda yapılan podolojik bakım hem mevcut sorunları çözer hem de gelecekteki komplikasyonları önler. Diyabetli bireylere düzenli takip içeren özel bakım protokolü uygulanır."
+    },
+    {
+      question: "Podoloji öncesi ve sonrası nelere dikkat edilmeli?",
+      answer: "Podolojik bakım öncesinde ayağa krem veya yağ uygulaması yapmamanız, oje varsa çıkartmanız önerilir. Bakım sonrasında ise: 24 saat ayağı sıcak suya sokmamak, dar ayakkabı giymemek, terlemeyi azaltmak için pamuklu çorap tercih etmek ve önerilen kremleri düzenli kullanmak iyileşme sürecini hızlandırır. Hijyen kurallarına uyulduğunda sonuçlar çok daha kalıcı olur."
+    },
+    {
+      question: "Podolojik bakım sırasında ağrı olur mu?",
+      answer: "Profesyonel podolojik bakım kural olarak ağrısızdır. Kullanılan freze ve özel uçlar, sadece ölü dokuyu hedef alır; canlı dokuya zarar vermez. Hatta nasır veya kalın deri gibi rahatsızlık veren bölgelerin temizlenmesi sonrasında danışanlar belirgin bir rahatlama hisseder. Sadece ileri evre batık tırnak gibi durumlarda hafif baskı hissedilebilir, bu durumda lokal anestezi seçeneği değerlendirilir."
+    },
+    {
+      question: "Çocuklara podolojik bakım yapılır mı?",
+      answer: "Evet, çocuklara da podolojik bakım uygulanabilir ve özellikle batık tırnak, siğil, ayak mantarı veya yürüyüş bozuklukları gibi durumlarda erken müdahale çok değerlidir. Çocukların ayak yapısı yetişkinlerden farklı olduğu için kullanılan teknikler ve ekipmanlar yaşlarına göre özelleştirilir. Erken yaşta yapılan doğru müdahale, ileride oluşabilecek kalıcı problemleri önler."
+    },
+    {
+      question: "Hamilelikte podolojik bakım yapılabilir mi?",
+      answer: "Evet, hamilelikte podolojik bakım güvenle yapılabilir, hatta önerilir. Hamilelikte artan kilo ve hormonal değişiklikler ödem, çatlak topuk, batık tırnak ve nasır oluşumunu artırır. Eğilerek ayak bakımı yapamayan anne adayları için profesyonel podolojik bakım hem rahatlatıcı hem de güvenli bir alternatiftir. Steril ekipman ve ilaç içermeyen yöntemlerle uygulandığı için bebeğe herhangi bir riski yoktur."
     }
   ];
 
