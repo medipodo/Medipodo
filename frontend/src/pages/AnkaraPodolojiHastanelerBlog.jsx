@@ -54,7 +54,7 @@ Observation: [Showing lines 1-200 of 591 total] /app/output/frontend/src/pages/A
 51|    "@type": "Article",
 52|    "headline": "Ankara'da Podoloji Bölümü Olan Hastaneler",
 53|    "description": "Ankara'da podoloji hizmeti veren hastaneler hangileri? Devlet hastanesinde podoloji var mı? SGK karşılıyor mu? Detaylı rehber.",
-54|    "image": "https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp",
+54|    "image": "https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp",
 55|    "author": {
 56|      "@type": "Organization",
 57|      "name": "Medipodo"
@@ -91,7 +91,7 @@ Observation: [Showing lines 1-200 of 591 total] /app/output/frontend/src/pages/A
 88|        <meta property="og:type" content="article" />
 89|        <meta property="og:title" content="Ankara'da Podoloji Bölümü Olan Hastaneler" />
 90|        <meta property="og:description" content="Ankara'da podoloji hizmeti veren hastaneler hangileri? Devlet hastanesinde podoloji var mı? SGK karşılıyor mu? Tüm detaylar bu rehberde." />
-91|        <meta property="og:image" content="https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp" />
+91|        <meta property="og:image" content="https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp" />
 92|        <meta property="og:url" content="https://medipodo.com/blog/ankara-podoloji-bolumu-olan-hastaneler" />
 93|        <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
 94|        <meta property="og:locale" content="tr_TR" />
@@ -99,7 +99,7 @@ Observation: [Showing lines 1-200 of 591 total] /app/output/frontend/src/pages/A
 96|        <meta name="twitter:card" content="summary_large_image" />
 97|        <meta name="twitter:title" content="Ankara'da Podoloji Bölümü Olan Hastaneler" />
 98|        <meta name="twitter:description" content="Ankara'da podoloji hizmeti veren hastaneler hangileri? SGK karşılıyor mu? Detaylı rehber." />
-99|        <meta name="twitter:image" content="https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp" />
+99|        <meta name="twitter:image" content="https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp" />
 100|
 101|        <script type="application/ld+json">
 102|          {JSON.stringify(articleSchema)}
@@ -162,7 +162,7 @@ Observation: [Showing lines 1-200 of 591 total] /app/output/frontend/src/pages/A
 159|            {/* Kapak Görseli */}
 160|            <div className="mb-12">
 161|              <img
-162|                src="https://customer-assets.emergentagent.com/job_ee16882e-0172-4831-99c6-2da907c9d9d5/artifacts/atv5cvxu_ankarada-podoloji-olan-hastaneler.webp"
+162|                src="https://medipodo.com/blog-images/ankara-podoloji/ankarada-podoloji-olan-hastaneler.webp"
 163|                alt="Ankara'da podoloji bölümü olan hastaneler - kapsamlı rehber"
 164|                width="1200"
 165|                height="675"
