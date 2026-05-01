@@ -11,8 +11,8 @@ const AyakKokusuBlog = () => {
   return (
     <>
       <Helmet>
-        <title>Ayak Kokusu ve Mantar İlişkisi: Neden Olur, Nasıl Önlenir? | Medipodo</title>
-        <meta name="description" content="Ayak kokusu ve mantar arasındaki bilimsel ilişkiyi keşfedin. Keratolitik etki ve antifungal koruma ile PediZone Temizleme Köpüğü ile kalıcı çözüme ulaşın." />
+        <title>Ayak Kokusu Neden Olur? Mantarla İlişkisi ve Kesin Çözüm Yöntemleri | Medipodo</title>
+       <meta name="description" content="Ayak kokusu neden olur? Mantarla ilişkisi, bakteriyel süreçler ve kalıcı çözüm yöntemlerini bilimsel olarak öğrenin." />
         <meta name="keywords" content="ayak kokusu, ayak mantarı, tinea pedis, keratolitik etki, antifungal koruma, PediZone, temizleme köpüğü, bromodoz, ayak hijyeni" />
         <link rel="canonical" href="https://medipodo.com/blog/ayak-kokusu-ve-mantar-iliskisi" />
         
@@ -48,7 +48,7 @@ const AyakKokusuBlog = () => {
             <div className="flex flex-wrap gap-6 text-blue-100">
               <div className="flex items-center">
                 <User size={18} className="mr-2" />
-                <span>Medipodo Ekibi</span>
+            <span>Podolog Serdar Ceylan</span>
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-2" />
@@ -536,10 +536,22 @@ const AyakKokusuBlog = () => {
                     q: 'PediZone Temizleme Köpüğü ne sıklıkla kullanılmalı?',
                     a: 'Maksimum hijyen ve koruma için, özellikle ayak kokusu veya mantar eğilimi olan kişilerde, günde bir veya iki kez, tercihen akşamları ve ayaklar yıkandıktan sonra kullanılması önerilir.'
                   },
-                  {
-                    q: 'Ayak mantarı bulaşıcı mıdır?',
-                    a: 'Evet, ayak mantarı (Tinea Pedis) oldukça bulaşıcıdır ve özellikle nemli ortak alanlarda (havuz, soyunma odaları, duşlar) kolayca yayılır. Korunmak için bu alanlarda kişisel terlik kullanın ve ayaklarınızı kuru tutun.'
-                  },
+                {
+  q: 'Ayak mantarı bulaşıcı mıdır?',
+  a: (
+    <>
+      Evet, ayak mantarı (Tinea Pedis) oldukça bulaşıcıdır ve özellikle nemli ortak alanlarda kolayca yayılır. 
+      Korunmak için bu alanlarda kişisel terlik kullanın ve ayaklarınızı kuru tutun.
+
+      <p className="mt-3">
+        Mantarın nasıl yayıldığını öğrenmek için{" "}
+        <Link to="/blog/ayak-mantari-nasil-bulasir" className="text-blue-600 underline font-semibold">
+          bu rehberi inceleyebilirsiniz
+        </Link>.
+      </p>
+    </>
+  )
+},
                   {
                     q: 'PediZone ürünleri bir arada kullanılabilir mi?',
                     a: <>Evet! Kompleks ayak bakımı için önerilen sistem: 1) <a href="https://pedizone.com/product/temizleme-kopugu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Temizleme Köpüğü</a> ile temizlik, 2) <a href="https://pedizone.com/product/mantar-karsiti-serum" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Bakım Serumu</a> ile nemlendirme, 3) <a href="https://pedizone.com/product/bakim-serumu" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Onarıcı Krem</a> ile koruma. Bu 3'lü sistem maksimum sonuç verir.</>
