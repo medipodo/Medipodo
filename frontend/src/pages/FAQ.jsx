@@ -52,7 +52,12 @@ const FAQ = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sık Sorulan Sorular - Medipodo Podoloji" />
         <meta name="twitter:description" content="Podoloji hakkında sık sorulan sorular ve uzman cevapları." />
-        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+          <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        
+        {/* FAQPage JSON-LD Schema - Google rich snippet için */}
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
         </Helmet>
 
       <BreadcrumbSchema items={[
