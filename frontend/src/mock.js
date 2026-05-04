@@ -548,7 +548,7 @@ export const galleryImages = [
     title: 'Yoğun Nasır ve Kalınlaşma Bakımı',
     description: 'Yoğun ve düzensiz bası dağılımı sonucu oluşan nasır ve kalınlaşma görüntüsü - Profesyonel medikal ayak bakımı sayesinde tek seansa alınan sonuç mutluluk verici oldu'
   },
-  {
+ {
     id: 14,
     before: '/images/gallery/g14.webp',
     after: '/images/gallery/g14.webp',
@@ -561,6 +561,27 @@ export const galleryImages = [
     after: '/images/gallery/g15.webp',
     title: 'Niti Tel Ortoniksi Uygulaması',
     description: 'Çift Niti tel ile gerçekleştirilen başarılı ortoniksi uygulaması sonucu'
+  },
+  {
+    id: 16,
+    before: '/images/gallery/g16.webp',
+    after: '/images/gallery/g16.webp',
+    title: 'Enfeksiyonlu Batık Tırnak - İyileşme Süreci',
+    description: 'İleri düzey enfeksiyonlu batık tırnak vakasının podolojik tedavi sonrası tamamen sağlıklı görünüme kavuşması - öncesi ve sonrası'
+  },
+  {
+    id: 17,
+    before: '/images/gallery/g17.webp',
+    after: '/images/gallery/g17.webp',
+    title: 'Yaşlı Hastada Tırnak Mantarı ve Kalınlaşma Bakımı',
+    description: 'Yaşlı bireylerde sıkça görülen onikomikoz (tırnak mantarı) ve aşırı kalınlaşmaya yönelik medikal ayak bakımı sonucu - belirgin iyileşme sağlandı'
+  },
+  {
+    id: 18,
+    before: '/images/gallery/g18.webp',
+    after: '/images/gallery/g18.webp',
+    title: 'Tırnak Mantarı Frezeleme ve Tedavi Süreci',
+    description: 'Mantar enfeksiyonlu tırnaklarda frezeleme ile temizlik sonrası uygulanan tedavi süreci ve tam iyileşme sonucu'
   }
 ];
 
