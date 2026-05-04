@@ -623,7 +623,7 @@ export const galleryImages = [
     before: '/images/gallery/g24.webp',
     after: '/images/gallery/g24.webp',
     title: 'Travmatik Tırnak ve Medikal Akrilik Tırnak Uygulaması',
-    description: 'Deforma olmuş travmatik tırnağın temizlenmesi sonrası uygulanan özel medikal akrilik tırnak ile doğal tırnak görünümünün yeniden kazandırılması'
+    description: 'Deforme olmuş travmatik tırnağın temizlenmesi sonrası uygulanan özel medikal akrilik tırnak ile doğal tırnak görünümünün yeniden kazandırılması'
   }
 ];
 
