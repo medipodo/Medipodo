@@ -581,7 +581,7 @@ export const galleryImages = [
     before: '/images/gallery/g18.webp',
     after: '/images/gallery/g18.webp',
     title: 'Batık Tırnak ve İşlem Süreci',
-    description: 'İleri derecede tırna batması ve yapılan ortoniksi teknikleriyle iyileşme sonucu'
+    description: 'İleri derecede tırnak batması ve yapılan ortoniksi teknikleriyle iyileşme sonucu'
   }
 ];
 
