@@ -522,14 +522,14 @@ export const galleryImages = [
   },
   {
     id: 10,
-    before: '/images/gallery/g10.jpg',
-    after: '/images/gallery/g10.jpg',
+    before: '/images/gallery/g10.webp',
+    after: '/images/gallery/g10.webp',
     title: 'Tırnak Mantarı Temizliği',
     description: 'Tırnak mantarı uygulamaları sonuçları'
   },
   {
     id: 11,
-    before: '/images/gallery/g11.jpg',
+    before: '/images/gallery/g11.webp',
     after: '/images/gallery/g11.jpg',
     title: 'Onychogryphosis',
     description: 'Tırnağın aşırı kalınlaşması ve koç boynuzu gibi kıvrılarak şekil bozması durumudur. Küretajı yapılarak rahatlatılmıştır.'
