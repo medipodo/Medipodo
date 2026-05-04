@@ -566,8 +566,8 @@ export const galleryImages = [
     id: 16,
     before: '/images/gallery/g16.webp',
     after: '/images/gallery/g16.webp',
-    title: 'Enfeksiyonlu Batık Tırnak - İyileşme Süreci',
-    description: 'İleri düzey enfeksiyonlu batık tırnak vakasının podolojik tedavi sonrası tamamen sağlıklı görünüme kavuşması - öncesi ve sonrası'
+    title: 'Yüzeyel tırnak mantarı ve medikal ayak bakımları sonrası',
+    description: 'Tırnak mantarı ve uygulanan işlemler sonrası tamamen sağlıklı görünüme kavuşması - öncesi ve sonrası'
   },
   {
     id: 17,
@@ -580,8 +580,8 @@ export const galleryImages = [
     id: 18,
     before: '/images/gallery/g18.webp',
     after: '/images/gallery/g18.webp',
-    title: 'Tırnak Mantarı Frezeleme ve Tedavi Süreci',
-    description: 'Mantar enfeksiyonlu tırnaklarda frezeleme ile temizlik sonrası uygulanan tedavi süreci ve tam iyileşme sonucu'
+    title: 'Batık Tırnak ve İşlem Süreci',
+    description: 'İleri derecede tırna batması ve yapılan ortoniksi teknikleriyle iyileşme sonucu'
   }
 ];
 
