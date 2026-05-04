@@ -466,57 +466,57 @@ export const galleryImages = [
   },
   {
     id: 2,
-    before: '/images/gallery/g2.jpg',
-    after: '/images/gallery/g2.jpg',
+    before: '/images/gallery/g2.webp',
+    after: '/images/gallery/g2.webp',
     title: 'Ciltte Aşırı Kalınlaşma (Hiperkeratoz) ',
     description: 'Profesyonel medikal ayak bakımı ile harika sonuçlar'
   },
   {
     id: 3,
-    before: '/images/gallery/g3.jpg',
-    after: '/images/gallery/g3.jpg',
+    before: '/images/gallery/g3.webp',
+    after: '/images/gallery/g3.webp',
     title: 'Topuk Bakımı Sonuçları',
     description: 'Derin bakım ile yenilenen ayaklar'
   },
   {
     id: 4,
-    before: '/images/gallery/g4.jpg',
-    after: '/images/gallery/g4.jpg',
+    before: '/images/gallery/g4.webp',
+    after: '/images/gallery/g4.webp',
     title: 'Onikogrifoz Tırnak Temizliği',
     description: '7 yıl hiç kesilmemiş-Ağrısız uygulama, temiz görüntü'
   },
   {
     id: 5,
-    before: '/images/gallery/g5.jpg',
-    after: '/images/gallery/g5.jpg',
+    before: '/images/gallery/g5.webp',
+    after: '/images/gallery/g5.webp',
     title: 'Tırnak Restorasyonu',
     description: 'Hasarlı tırnak onarımı ve bakımı'
   },
   {
     id: 6,
-    before: '/images/gallery/g6.jpg',
-    after: '/images/gallery/g6.jpg',
+    before: '/images/gallery/g6.webp',
+    after: '/images/gallery/g6.webp',
     title: 'Soyulabilir Ayak Maskelerini Önermiyoruz - İşte Sebebi',
     description: 'Medikal ayak bakımı ve Pedizone %15 Üreli Intense Repair Cream Kullanım Sonucu'
   },
   {
     id: 7,
-    before: '/images/gallery/g7.jpg',
-    after: '/images/gallery/g7.jpg',
+    before: '/images/gallery/g7.webp',
+    after: '/images/gallery/g7.webp',
     title: 'Batık Tırnak ve Ortoniksi',
     description: 'Ortoniksi uygulaması ile batık tırnak uygulaması'
   },
   {
     id: 8,
-    before: '/images/gallery/g8.jpg',
-    after: '/images/gallery/g8.jpg',
+    before: '/images/gallery/g8.webp',
+    after: '/images/gallery/g8.webp',
     title: 'Enfeksiyonlu Batık Tırnak Vakası',
     description: 'B/S Bant ile yakaladığımız başarı'
   },
   {
     id: 9,
-    before: '/images/gallery/g9.jpg',
-    after: '/images/gallery/g9.jpg',
+    before: '/images/gallery/g9.webp',
+    after: '/images/gallery/g9.webp',
     title: 'Batık Tırnak Uygulaması',
     description: 'Ağrısız batık tırnak uygulamaları ve iyileşme süreci'
   },
