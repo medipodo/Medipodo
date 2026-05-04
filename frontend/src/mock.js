@@ -547,6 +547,20 @@ export const galleryImages = [
     after: '/images/gallery/g13.webp',
     title: 'Yoğun Nasır ve Kalınlaşma Bakımı',
     description: 'Yoğun ve düzensiz bası dağılımı sonucu oluşan nasır ve kalınlaşma görüntüsü - Profesyonel medikal ayak bakımı sayesinde tek seansa alınan sonuç mutluluk verici oldu'
+  },
+  {
+    id: 14,
+    before: '/images/gallery/g14.webp',
+    after: '/images/gallery/g14.webp',
+    title: 'Batık Tırnak - Niti Tel Uygulaması',
+    description: 'Ağrılı batık tırnak vakasında Niti tel ile uygulanan ortoniksi tedavisi - işlem anı'
+  },
+  {
+    id: 15,
+    before: '/images/gallery/g15.webp',
+    after: '/images/gallery/g15.webp',
+    title: 'Niti Tel Ortoniksi Uygulaması',
+    description: 'Çift Niti tel ile gerçekleştirilen başarılı ortoniksi uygulaması sonucu'
   }
 ];
 
