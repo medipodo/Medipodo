@@ -569,7 +569,7 @@ export const galleryImages = [
     title: 'Yüzeyel tırnak mantarı ve medikal ayak bakımları sonrası',
     description: 'Tırnak mantarı ve uygulanan işlemler sonrası tamamen sağlıklı görünüme kavuşması - öncesi ve sonrası'
   },
-  {
+ {
     id: 17,
     before: '/images/gallery/g17.webp',
     after: '/images/gallery/g17.webp',
@@ -582,6 +582,48 @@ export const galleryImages = [
     after: '/images/gallery/g18.webp',
     title: 'Batık Tırnak ve İşlem Süreci',
     description: 'İleri derecede tırnak batması ve yapılan ortoniksi teknikleriyle iyileşme sonucu'
+  },
+  {
+    id: 19,
+    before: '/images/gallery/g19.webp',
+    after: '/images/gallery/g19.webp',
+    title: 'Yüzeyel Tırnak Mantarı (Leukonychia) Bakımı',
+    description: 'Yüzeyel beyaz tırnak mantarı vakasında uygulanan medikal frezeleme ve antifungal bakım sonrası tamamen sağlıklı tırnak görünümü'
+  },
+  {
+    id: 20,
+    before: '/images/gallery/g20.webp',
+    after: '/images/gallery/g20.webp',
+    title: 'Yaşlı Hastada Medikal Ayak ve Tırnak Bakımı',
+    description: 'Uzun süre ihmal edilmiş, eski oje kalıntıları ve kalınlaşma içeren yaşlı hastaya uygulanan kapsamlı medikal ayak bakımı sonrası belirgin iyileşme'
+  },
+  {
+    id: 21,
+    before: '/images/gallery/g21.webp',
+    after: '/images/gallery/g21.webp',
+    title: 'Yıpranmış Tırnak Yenilenmesi',
+    description: 'Soyulma ve katmanlaşma yaşayan hasarlı tırnaklarda profesyonel podolojik bakım ve serum desteğiyle elde edilen pürüzsüz, sağlıklı tırnak yapısı'
+  },
+  {
+    id: 22,
+    before: '/images/gallery/g22.webp',
+    after: '/images/gallery/g22.webp',
+    title: 'Onikoliz (Tırnak Yatağından Ayrılma) İyileşmesi',
+    description: 'Travma kaynaklı onikoliz vakasında tırnağın yataktan ayrılması sonrası uygulanan podolojik bakımla tam iyileşme ve doğal görünüme kavuşma'
+  },
+  {
+    id: 23,
+    before: '/images/gallery/g23.webp',
+    after: '/images/gallery/g23.webp',
+    title: 'Tırnak Mantarı - 3 Aylık Tedavi Süreci',
+    description: '3 aylık düzenli podolojik bakım sürecinde tırnak mantarının kontrol altına alınması ve tırnağın sağlıklı yapısına kavuşması - öncesi ve sonrası karşılaştırması'
+  },
+  {
+    id: 24,
+    before: '/images/gallery/g24.webp',
+    after: '/images/gallery/g24.webp',
+    title: 'Travmatik Tırnak ve Medikal Akrilik Tırnak Uygulaması',
+    description: 'Deforma olmuş travmatik tırnağın temizlenmesi sonrası uygulanan özel medikal akrilik tırnak ile doğal tırnak görünümünün yeniden kazandırılması'
   }
 ];
 
