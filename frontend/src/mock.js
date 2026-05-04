@@ -459,8 +459,8 @@ export const services = [
 export const galleryImages = [
   {
     id: 1,
-    before: '/images/gallery/g1.jpg',
-    after: '/images/gallery/g1.jpg',
+    before: '/images/gallery/g1.webp',
+    after: '/images/gallery/g1.webp',
     title: 'Medikal Akrilik Tırnak',
     description: 'Deformite sonucu tırnak kalmayan bölgeye doğal tırnak uygulaması yaptık'
   },
