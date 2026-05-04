@@ -530,7 +530,7 @@ export const galleryImages = [
   {
     id: 11,
     before: '/images/gallery/g11.webp',
-    after: '/images/gallery/g11.jpg',
+    after: '/images/gallery/g11.webp',
     title: 'Onychogryphosis',
     description: 'Tırnağın aşırı kalınlaşması ve koç boynuzu gibi kıvrılarak şekil bozması durumudur. Küretajı yapılarak rahatlatılmıştır.'
   },
