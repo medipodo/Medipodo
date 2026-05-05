@@ -615,8 +615,8 @@ export const galleryImages = [
     id: 23,
     before: '/images/gallery/g23.webp',
     after: '/images/gallery/g23.webp',
-    title: 'Tırnak Mantarı - 3 Aylık Tedavi Süreci',
-    description: '3 aylık düzenli podolojik bakım sürecinde tırnak mantarının kontrol altına alınması ve tırnağın sağlıklı yapısına kavuşması - öncesi ve sonrası karşılaştırması'
+    title: 'Yüzeyel Tırnak Mantarı -Bakım Süreci',
+    description: 'Medikal bakım sürecinde tırnak mantarının kontrol altına alınması ve tırnağın sağlıklı yapısına kavuşması - öncesi ve sonrası karşılaştırması'
   },
   {
     id: 24,
