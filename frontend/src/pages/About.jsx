@@ -130,7 +130,7 @@ const About = () => {
                       >
                         Pedizone ayak sağlığı ürünlerinin
                       </a>{' '}
-                      yaratıcısıdır. Ayrıca{' '}
+                      kurucusudur. Ayrıca{' '}
                       <a
                         href="https://www.medieste.com/"
                         target="_blank"
