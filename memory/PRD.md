@@ -1,30 +1,53 @@
 # Medipodo — PRD
 
 ## Project
-Medipodo is a podology (ayak sağlığı) marketing/content website for Ankara-based Medipodo clinic. Codebase cloned from https://github.com/medipodo/Medipodo into /app.
+Medipodo (medipodo.com) — podology / ayak sağlığı marketing site for the Ankara-based Medipodo clinic. Cloned from https://github.com/medipodo/Medipodo into `/app`. React 19 + CRA/craco frontend, FastAPI + MongoDB backend (legacy), Supabase (new feature backing store).
 
-## Original Problem Statement
-Add a new front-end-only "Uzman Ön Değerlendirme" page at `/on-degerlendirme` where users submit foot/nail problem photos for expert review. Add navigation link, plus a prominent CTA card on the Ayak Analizi result screen. No backend / Supabase / CRM yet — those come later.
+## Feature: Ücretsiz Ön Değerlendirme
+Public form at `/ucretsiz-on-degerlendirme` letting users submit a foot/nail problem (with up to 5 photos) for free expert review. Persists to Supabase (Postgres + private Storage bucket). No CRM yet.
 
 ## Architecture
-- Frontend: React 19 (CRA + craco), TailwindCSS, shadcn/radix UI components, lucide-react icons, react-router-dom v7, react-helmet for SEO.
-- Backend: FastAPI + MongoDB (Motor) — unused for this feature.
+- Frontend: React 19, TailwindCSS, shadcn UI, lucide-react.
+- Backend: FastAPI on port 8001 (`/api` prefix). MongoDB still wired up for the rest of the site; Supabase used **only** for the assessment form.
+- Supabase: table `public.assessment_requests` + private bucket `assessment-images` (paths stored, no signed URLs persisted).
 
-## Implemented (2026-01)
-### Iteration 1
-- New page `/app/frontend/src/pages/OnDegerlendirme.jsx` with Hero, 3 trust cards, 9-step form (kişisel bilgiler, kronik rahatsızlıklar, ilaçlar, şikayet, ağrı slider 0-10, sorunlu bölge, ayak seçimi, drag&drop foto yükleme max 5 jpg/png/webp + previews + remove, KVKK), success modal.
-- Route added in App.js: `/on-degerlendirme`
-- Nav link "Uzman Ön Değerlendirme" added to Header.jsx (desktop + mobile).
+## Implementation Log
+### 2026-01 — Iteration 1: Frontend page + nav
+- New page `/app/frontend/src/pages/OnDegerlendirme.jsx` (hero, 3 trust cards, 9-step form, drag-and-drop uploader, success modal).
+- Route registered in `App.js`. Nav link added in `Header.jsx`.
 
-### Iteration 2 (current)
-- Submit button changed to **"📸 Podoloğa Gönder"** (shorter, friendlier).
-- Page-wide copy rewritten to be conversion-focused & user-friendly (Sizi Tanıyalım / Bilinen Bir Rahatsızlığınız Var mı? / Sizi En Çok Ne Rahatsız Ediyor? / Ağrınız Ne Kadar? / Hangi Ayağınızda? / Son Bir Onay / etc.).
-- Hero badge updated: "ÜCRETSİZ · 24 SAATTE GERİ DÖNÜŞ".
-- Prominent CTA card added to `pages/AyakAnalizi.jsx` result screen (right after result-header): navy gradient card with "Daha doğru bir ön değerlendirme ister misiniz?" + "📸 Fotoğraf Gönder" → `/on-degerlendirme`.
+### 2026-01 — Iteration 2: Copy polish + CTA card
+- Friendly Turkish copy across all sections.
+- Submit button changed to "📸 Podoloğa Gönder".
+- Prominent CTA card added to `pages/AyakAnalizi.jsx` result screen → `/ucretsiz-on-degerlendirme`.
 
-## Backlog (deferred per user)
-- P0 — Supabase integration (form table + storage bucket for images, max 5 per submission).
-- P0 — Custom CRM integration (own CRM, details TBD by user).
-- P0 — Backend endpoint to accept multipart form submission.
-- P1 — Email/WhatsApp confirmation to user after submit.
-- P2 — Admin dashboard for podologists to review incoming submissions.
+### 2026-01 — Iteration 3: Rename
+- Route renamed: `/on-degerlendirme` → `/ucretsiz-on-degerlendirme`.
+- Nav + H1 renamed to "Ücretsiz Ön Değerlendirme".
+- SEO meta (title, canonical, og:url) updated.
+
+### 2026-01 — Iteration 4: Supabase backend integration (current)
+- Form: removed E-mail field, made Ad Soyad optional, kept Telefon required, kept all other fields.
+- Replaced inline success modal with a full clean success page ("Başvurunuz başarıyla alındı. Podologlarımız en kısa sürede inceleyerek sizinle iletişime geçecektir.").
+- Added loading + error states on submit.
+- New backend module `/app/backend/supabase_service.py` (service-role client, storage upload, table insert).
+- New endpoint `POST /api/assessment-requests` (multipart form: fields + up to 5 images, ≤ 8MB each).
+- Flow: upload images to private bucket `assessment-images/<id>/<uuid>.<ext>` → insert row in `public.assessment_requests` with `image_paths`, `status='pending'`, auto `created_at`.
+- Added `supabase==2.31.0` to requirements; added env placeholders `SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY` to backend `.env`.
+- Detailed setup guide written to `/app/SUPABASE_SETUP.md` (SQL migration, schema, bucket steps, API contract, file list).
+
+## Backlog
+- P0 — Custom CRM integration: forward new rows (id, full_name, phone, complaint, foot, image signed URLs) to client's CRM endpoint. Auth/payload TBD by client.
+- P1 — Admin dashboard / image viewer using short-lived signed URLs (`create_signed_url`).
+- P1 — Optional WhatsApp / Email confirmation to user after submit.
+- P2 — Form analytics / abandonment tracking.
+- P2 — Rate limiting & abuse protection on the public endpoint.
+
+## Environment Variables (current)
+Backend `.env`:
+- `MONGO_URL`, `DB_NAME`, `CORS_ORIGINS` (existing, untouched)
+- `SUPABASE_URL` (new — user must set)
+- `SUPABASE_SERVICE_ROLE_KEY` (new — user must set)
+
+Frontend `.env`:
+- `REACT_APP_BACKEND_URL`

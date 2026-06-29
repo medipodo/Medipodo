@@ -9,6 +9,8 @@ import {
   X,
   Image as ImageIcon,
   Sparkles,
+  Loader2,
+  AlertCircle,
 } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -18,14 +20,9 @@ import { Checkbox } from '../components/ui/checkbox';
 import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
 import { Slider } from '../components/ui/slider';
 import { Button } from '../components/ui/button';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-} from '../components/ui/dialog';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const TRUST_CARDS = [
   {
@@ -72,13 +69,13 @@ const MAX_IMAGES = 5;
 const OnDegerlendirme = () => {
   const fileInputRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
+  const [submitState, setSubmitState] = useState('idle'); // idle | submitting | success | error
+  const [submitError, setSubmitError] = useState('');
   const [touched, setTouched] = useState(false);
 
   const [form, setForm] = useState({
     fullName: '',
     phone: '',
-    email: '',
     age: '',
     gender: '',
     chronic: [],
@@ -146,18 +143,56 @@ const OnDegerlendirme = () => {
   };
 
   const isValid =
-    form.fullName.trim() &&
     form.phone.trim() &&
-    form.email.trim() &&
     form.complaint.trim() &&
     form.foot &&
     form.kvkk;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setTouched(true);
-    if (!isValid) return;
-    setShowSuccess(true);
+    setSubmitError('');
+    if (!isValid || submitState === 'submitting') return;
+
+    setSubmitState('submitting');
+    try {
+      const fd = new FormData();
+      fd.append('phone', form.phone.trim());
+      fd.append('complaint', form.complaint.trim());
+      fd.append('foot', form.foot);
+      fd.append('kvkk_accepted', 'true');
+      if (form.fullName.trim()) fd.append('full_name', form.fullName.trim());
+      if (form.age) fd.append('age', String(form.age));
+      if (form.gender) fd.append('gender', form.gender);
+      if (form.medications.trim()) fd.append('medications', form.medications.trim());
+      fd.append('pain_level', String(form.painLevel));
+      if (form.chronic.length) fd.append('chronic_conditions', form.chronic.join(','));
+      if (form.problemAreas.length) fd.append('problem_areas', form.problemAreas.join(','));
+      form.images.forEach((img) => fd.append('images', img.file));
+
+      const res = await fetch(`${API}/assessment-requests`, {
+        method: 'POST',
+        body: fd,
+      });
+      if (!res.ok) {
+        let msg = 'Başvurunuz gönderilemedi. Lütfen tekrar deneyin.';
+        try {
+          const data = await res.json();
+          if (data?.detail) msg = data.detail;
+        } catch (_) {
+          /* ignore */
+        }
+        throw new Error(msg);
+      }
+
+      // Cleanup preview object URLs
+      form.images.forEach((img) => URL.revokeObjectURL(img.url));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setSubmitState('success');
+    } catch (err) {
+      setSubmitError(err.message || 'Beklenmeyen bir hata oluştu.');
+      setSubmitState('error');
+    }
   };
 
   const resetForm = () => {
@@ -165,7 +200,6 @@ const OnDegerlendirme = () => {
     setForm({
       fullName: '',
       phone: '',
-      email: '',
       age: '',
       gender: '',
       chronic: [],
@@ -178,7 +212,48 @@ const OnDegerlendirme = () => {
       kvkk: false,
     });
     setTouched(false);
+    setSubmitError('');
+    setSubmitState('idle');
   };
+
+  if (submitState === 'success') {
+    return (
+      <>
+        <Helmet>
+          <title>Başvurunuz Alındı - Medipodo</title>
+        </Helmet>
+        <div
+          className="min-h-screen bg-gradient-to-b from-blue-50/40 via-white to-white flex items-center justify-center px-4 pt-32 pb-16"
+          data-testid="success-page"
+        >
+          <Card className="max-w-xl w-full shadow-xl border-blue-100">
+            <CardContent className="p-8 md:p-12 text-center">
+              <div className="mx-auto mb-6 w-20 h-20 rounded-full bg-green-100 flex items-center justify-center">
+                <CheckCircle2 className="text-green-600" size={44} />
+              </div>
+              <h1 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4 leading-tight">
+                Başvurunuz başarıyla alındı.
+              </h1>
+              <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+                Podologlarımız en kısa sürede inceleyerek sizinle iletişime geçecektir.
+              </p>
+              <div className="mt-8">
+                <Button
+                  type="button"
+                  onClick={resetForm}
+                  variant="outline"
+                  className="border-blue-200 text-blue-800 hover:bg-blue-50"
+                  data-testid="success-new"
+                >
+                  Yeni başvuru gönder
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -269,14 +344,13 @@ const OnDegerlendirme = () => {
                     description="Dönüş yapabilmemiz için kısa birkaç bilgiye ihtiyacımız var."
                   >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                      <Field label="Ad Soyad" required>
+                      <Field label="Ad Soyad">
                         <Input
                           type="text"
-                          placeholder="Adınız ve soyadınız"
+                          placeholder="Adınız ve soyadınız (isteğe bağlı)"
                           value={form.fullName}
                           onChange={(e) => updateField('fullName', e.target.value)}
                           data-testid="input-fullname"
-                          required
                           className="h-11"
                         />
                       </Field>
@@ -290,17 +364,9 @@ const OnDegerlendirme = () => {
                           required
                           className="h-11"
                         />
-                      </Field>
-                      <Field label="E-posta" required>
-                        <Input
-                          type="email"
-                          placeholder="ornek@mail.com"
-                          value={form.email}
-                          onChange={(e) => updateField('email', e.target.value)}
-                          data-testid="input-email"
-                          required
-                          className="h-11"
-                        />
+                        {touched && !form.phone.trim() && (
+                          <p className="text-xs text-red-600 mt-1">Telefon numarası zorunludur.</p>
+                        )}
                       </Field>
                       <Field label="Yaş">
                         <Input
@@ -314,7 +380,7 @@ const OnDegerlendirme = () => {
                           className="h-11"
                         />
                       </Field>
-                      <Field label="Cinsiyet" className="md:col-span-2">
+                      <Field label="Cinsiyet">
                         <RadioGroup
                           value={form.gender}
                           onValueChange={(v) => updateField('gender', v)}
@@ -635,13 +701,30 @@ const OnDegerlendirme = () => {
 
                   {/* Submit */}
                   <div className="pt-2">
+                    {submitState === 'error' && submitError && (
+                      <div
+                        className="mb-3 p-3 rounded-lg border border-red-200 bg-red-50 text-red-700 text-sm flex items-start gap-2"
+                        data-testid="submit-error"
+                      >
+                        <AlertCircle size={18} className="flex-shrink-0 mt-0.5" />
+                        <span>{submitError}</span>
+                      </div>
+                    )}
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full h-14 text-base font-semibold bg-blue-700 hover:bg-blue-800 text-white shadow-lg hover:shadow-xl transition-all rounded-xl"
+                      disabled={submitState === 'submitting'}
+                      className="w-full h-14 text-base font-semibold bg-blue-700 hover:bg-blue-800 text-white shadow-lg hover:shadow-xl transition-all rounded-xl disabled:opacity-70 disabled:cursor-not-allowed"
                       data-testid="submit-button"
                     >
-                      📸 Podoloğa Gönder
+                      {submitState === 'submitting' ? (
+                        <>
+                          <Loader2 size={18} className="mr-2 animate-spin" />
+                          Gönderiliyor…
+                        </>
+                      ) : (
+                        '📸 Podoloğa Gönder'
+                      )}
                     </Button>
                     <p className="text-center text-xs text-gray-500 mt-3">
                       Gönderdikten sonra podoloğumuz en geç 24 saat içinde size dönüş yapacak.
@@ -653,42 +736,6 @@ const OnDegerlendirme = () => {
           </div>
         </section>
       </div>
-
-      {/* Success Modal */}
-      <Dialog
-        open={showSuccess}
-        onOpenChange={(open) => {
-          setShowSuccess(open);
-          if (!open) resetForm();
-        }}
-      >
-        <DialogContent className="sm:max-w-md" data-testid="success-modal">
-          <DialogHeader>
-            <div className="mx-auto mb-2 w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
-              <CheckCircle2 className="text-green-600" size={36} />
-            </div>
-            <DialogTitle className="text-center text-2xl font-bold text-blue-950">
-              Başvurunuz alınmaya hazır
-            </DialogTitle>
-            <DialogDescription className="text-center text-gray-600 pt-2 leading-relaxed">
-              Form şu an demo olarak çalışıyor. Bir sonraki aşamada veritabanına bağlanacak ve podoloğumuz fotoğraflarınızı inceleyip 24 saat içinde size dönüş yapacak.
-            </DialogDescription>
-          </DialogHeader>
-          <DialogFooter className="sm:justify-center">
-            <Button
-              type="button"
-              onClick={() => {
-                setShowSuccess(false);
-                resetForm();
-              }}
-              className="bg-blue-700 hover:bg-blue-800 text-white px-6"
-              data-testid="success-close"
-            >
-              Tamam
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </>
   );
 };
