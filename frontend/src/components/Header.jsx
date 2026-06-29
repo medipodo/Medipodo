@@ -23,7 +23,7 @@ const Header = () => {
     { name: 'Blog', path: '/blog' },
     { name: 'S.S.S.', path: '/sikca-sorulan-sorular', mobileName: 'Sık Sorulan Sorular' },
     { name: 'Ayak Analizi', path: '/ayak-analizi' },
-    { name: 'Uzman Ön Değerlendirme', path: '/on-degerlendirme', mobileName: 'Uzman Ön Değerlendirme' },
+    { name: 'Ücretsiz Ön Değerlendirme', path: '/ucretsiz-on-degerlendirme', mobileName: 'Ücretsiz Ön Değerlendirme' },
     { name: 'Hakkımızda', path: '/hakkimizda' },
     { name: 'Kadromuz', path: '/kadromuz' },
     { name: 'İletişim', path: '/iletisim' }

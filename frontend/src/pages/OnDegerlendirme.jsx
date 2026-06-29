@@ -183,19 +183,19 @@ const OnDegerlendirme = () => {
   return (
     <>
       <Helmet>
-        <title>Uzman Ön Değerlendirme - Medipodo Podoloji Merkezi</title>
+        <title>Ücretsiz Ön Değerlendirme - Medipodo Podoloji Merkezi</title>
         <meta
           name="description"
           content="Ayak veya tırnak probleminizin fotoğraflarını gönderin. Uzman podolog ekibimiz ücretsiz ön değerlendirme yaparak 24 saat içinde sizinle iletişime geçsin."
         />
-        <link rel="canonical" href="https://medipodo.com/on-degerlendirme" />
-        <meta property="og:title" content="Uzman Ön Değerlendirme - Medipodo" />
+        <link rel="canonical" href="https://medipodo.com/ucretsiz-on-degerlendirme" />
+        <meta property="og:title" content="Ücretsiz Ön Değerlendirme - Medipodo" />
         <meta
           property="og:description"
           content="Fotoğraflarınızı gönderin, uzman podolog ekibimiz ücretsiz ön değerlendirme yapsın."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://medipodo.com/on-degerlendirme" />
+        <meta property="og:url" content="https://medipodo.com/ucretsiz-on-degerlendirme" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-blue-50/40 via-white to-white" data-testid="on-degerlendirme-page">
@@ -211,7 +211,7 @@ const OnDegerlendirme = () => {
                 className="text-4xl md:text-5xl font-bold text-blue-950 mb-5 leading-tight"
                 data-testid="page-title"
               >
-                Uzman Ön Değerlendirmesi
+                Ücretsiz Ön Değerlendirme
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Ayağınızla veya tırnağınızla ilgili bir sorununuz mu var?

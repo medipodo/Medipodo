@@ -116,7 +116,7 @@ function AppContent() {
         <Route path="/kadromuz" element={<Team />} />
         <Route path="/ekip" element={<Navigate to="/kadromuz" replace />} />
         <Route path="/ayak-analizi" element={<AyakAnalizi />} />
-        <Route path="/on-degerlendirme" element={<OnDegerlendirme />} />
+        <Route path="/ucretsiz-on-degerlendirme" element={<OnDegerlendirme />} />
         <Route path="/iletisim" element={<Contact />} />
         <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
         <Route path="/kullanim-sartlari" element={<TermsOfService />} />

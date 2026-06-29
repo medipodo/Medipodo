@@ -1188,7 +1188,7 @@ const AyakAnalizi = () => {
 
               {/* Prominent CTA: Uzman Ön Değerlendirme */}
               <Link
-                to="/on-degerlendirme"
+                to="/ucretsiz-on-degerlendirme"
                 data-testid="expert-cta-card"
                 style={{
                   display: 'block',
