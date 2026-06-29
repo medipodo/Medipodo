@@ -26,7 +26,7 @@ Public form at `/ucretsiz-on-degerlendirme` letting users submit a foot/nail pro
 - Nav + H1 renamed to "Ücretsiz Ön Değerlendirme".
 - SEO meta (title, canonical, og:url) updated.
 
-### 2026-01 — Iteration 4: Supabase backend integration (current)
+### 2026-01 — Iteration 4: Supabase backend integration
 - Form: removed E-mail field, made Ad Soyad optional, kept Telefon required, kept all other fields.
 - Replaced inline success modal with a full clean success page ("Başvurunuz başarıyla alındı. Podologlarımız en kısa sürede inceleyerek sizinle iletişime geçecektir.").
 - Added loading + error states on submit.
@@ -35,6 +35,19 @@ Public form at `/ucretsiz-on-degerlendirme` letting users submit a foot/nail pro
 - Flow: upload images to private bucket `assessment-images/<id>/<uuid>.<ext>` → insert row in `public.assessment_requests` with `image_paths`, `status='pending'`, auto `created_at`.
 - Added `supabase==2.31.0` to requirements; added env placeholders `SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY` to backend `.env`.
 - Detailed setup guide written to `/app/SUPABASE_SETUP.md` (SQL migration, schema, bucket steps, API contract, file list).
+
+### 2026-01 — Iteration 5: Production hardening (current)
+- **Schema v2**: added CRM workflow columns (`reviewed_at`, `reviewed_by`, `internal_notes`, `appointment_date`, `appointment_created`) + ops columns (`updated_at` with BEFORE-UPDATE trigger, `submission_ip`, `user_agent`). All CHECK constraints named & idempotent. Added 7 indexes covering CRM queries (status, phone, dates, partial index for open tickets). `status` enum expanded to include `appointment_scheduled`.
+- **Atomic submission**: rollback uploaded storage objects if DB insert fails (or any image upload fails mid-batch). No more orphaned files.
+- **Image security**: every upload Pillow-verified (`Image.verify()` + format whitelist). Fake `content-type` headers no longer accepted.
+- **Input limits**: `max_length` on every form field; matching DB CHECK constraints; combined upload size cap 40 MB; CSV multi-selects deduped + length-capped server-side.
+- **Phone normalization**: strip spaces/dashes/parens; keep leading `+` once. Enables CRM dedup.
+- **Rate limiting**: `slowapi` 10/minute & 30/hour per IP on the assessment endpoint. Honors `X-Forwarded-For`. Turkish 429 response.
+- **Retry**: storage upload retries once with 500 ms backoff on transient errors.
+- **Observability**: structured INFO log per successful submission (id, image count, IP). Failures log full traceback.
+- **CORS**: `allow_credentials=False` (public endpoint, no cookies).
+- **Logger ordering**: moved init above endpoints (was previously at bottom).
+- New deps: `slowapi==0.1.10`, `Pillow==12.2.0`.
 
 ## Backlog
 - P0 — Custom CRM integration: forward new rows (id, full_name, phone, complaint, foot, image signed URLs) to client's CRM endpoint. Auth/payload TBD by client.

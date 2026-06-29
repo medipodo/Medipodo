@@ -1,90 +1,150 @@
-# Supabase Integration — Setup Guide
+# Supabase Integration — Setup Guide (v2)
 
-This document is everything you need to wire the `/ucretsiz-on-degerlendirme` form to your own Supabase project. Run the SQL once, set the env vars, and the integration is live.
+Production-ready setup for the `/ucretsiz-on-degerlendirme` form. Single source of truth = Supabase. The future CRM reads & updates the same `assessment_requests` table directly — no data duplication.
 
 ---
 
-## 1. Required Environment Variables
+## 1. Environment Variables
 
-Add these to `/app/backend/.env` (placeholders are already present — fill them in):
+Add to `/app/backend/.env` (placeholders already present):
 
 ```bash
 SUPABASE_URL=https://<your-project-ref>.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=<your-service-role-key>
 ```
 
-- `SUPABASE_URL` → Dashboard → **Project Settings → API → Project URL**
-- `SUPABASE_SERVICE_ROLE_KEY` → Dashboard → **Project Settings → API → service_role** (the secret key, **not** `anon`)
-
-> ⚠️ The service role key bypasses RLS. Keep it server-side only. Never expose it to the frontend or commit it to git.
-
-After editing `.env`, restart the backend:
+Find both at: **Dashboard → Project Settings → API**.
+Then restart backend:
 ```bash
 sudo supervisorctl restart backend
 ```
 
+> ⚠️ The service-role key bypasses RLS. Server-side only. Never commit it.
+
 ---
 
-## 2. SQL Migration
+## 2. SQL Migration (idempotent — safe to re-run)
 
-Open Supabase Dashboard → **SQL Editor → New query**, paste & run:
+Open **Dashboard → SQL Editor → New query**, paste and run:
 
 ```sql
--- Required extension (enabled by default on hosted Supabase, safe to re-run)
+-- ============================================================
+-- Medipodo · assessment_requests · v2
+-- Idempotent. Includes all CRM-friendly columns.
+-- ============================================================
 create extension if not exists "pgcrypto";
 
--- Table: assessment_requests
+-- Base table
 create table if not exists public.assessment_requests (
     id                  uuid primary key default gen_random_uuid(),
     full_name           text,
     phone               text not null,
-    age                 integer check (age is null or (age >= 1 and age <= 120)),
+    age                 integer,
     gender              text,
     chronic_conditions  text[] not null default '{}'::text[],
     medications         text,
     complaint           text not null,
-    pain_level          smallint check (pain_level is null or (pain_level between 0 and 10)),
+    pain_level          smallint,
     problem_areas       text[] not null default '{}'::text[],
-    foot                text not null check (foot in ('Sol', 'Sağ', 'Her İkisi')),
+    foot                text not null,
     kvkk_accepted       boolean not null default false,
     image_paths         text[] not null default '{}'::text[],
-    status              text not null default 'pending'
-                          check (status in ('pending', 'in_review', 'contacted', 'closed', 'spam')),
+    status              text not null default 'pending',
     created_at          timestamptz not null default now()
 );
 
--- Helpful indexes for an admin/CRM dashboard later
-create index if not exists assessment_requests_created_at_idx
-    on public.assessment_requests (created_at desc);
-create index if not exists assessment_requests_status_idx
-    on public.assessment_requests (status);
-create index if not exists assessment_requests_phone_idx
-    on public.assessment_requests (phone);
+-- v2 additive columns
+alter table public.assessment_requests
+    add column if not exists reviewed_at         timestamptz,
+    add column if not exists reviewed_by         text,
+    add column if not exists internal_notes      text,
+    add column if not exists appointment_date    timestamptz,
+    add column if not exists appointment_created boolean not null default false,
+    add column if not exists updated_at          timestamptz not null default now(),
+    add column if not exists submission_ip       text,
+    add column if not exists user_agent          text;
 
--- Lock the table down: only service-role (backend) may read/write.
--- The anon/authenticated roles get no policies, so RLS denies them by default.
+-- Reset all CHECK constraints, then re-add named ones (so re-runs are clean)
+do $$
+declare r record;
+begin
+    for r in
+        select conname
+        from pg_constraint c
+        join pg_class t on t.oid = c.conrelid
+        join pg_namespace n on n.oid = t.relnamespace
+        where t.relname = 'assessment_requests'
+          and n.nspname = 'public'
+          and c.contype = 'c'
+    loop
+        execute format('alter table public.assessment_requests drop constraint %I', r.conname);
+    end loop;
+end $$;
+
+alter table public.assessment_requests
+    add constraint ar_status_check check (status in (
+        'pending', 'in_review', 'contacted', 'appointment_scheduled', 'closed', 'spam'
+    )),
+    add constraint ar_foot_check check (foot in ('Sol', 'Sağ', 'Her İkisi')),
+    add constraint ar_age_check  check (age is null or (age between 1 and 120)),
+    add constraint ar_pain_check check (pain_level is null or (pain_level between 0 and 10)),
+    add constraint ar_lengths_check check (
+        (full_name      is null or char_length(full_name)      <= 120)  and
+        char_length(phone) between 6 and 30                              and
+        (medications    is null or char_length(medications)    <= 2000) and
+        char_length(complaint) between 3 and 4000                        and
+        (internal_notes is null or char_length(internal_notes) <= 8000) and
+        (reviewed_by    is null or char_length(reviewed_by)    <= 120)  and
+        (gender         is null or char_length(gender)         <= 40)
+    );
+
+-- Auto-touch updated_at on UPDATE (great for CRM audit trail)
+create or replace function public.touch_updated_at()
+returns trigger language plpgsql as $$
+begin
+    new.updated_at = now();
+    return new;
+end;
+$$;
+
+drop trigger if exists trg_ar_touch on public.assessment_requests;
+create trigger trg_ar_touch
+    before update on public.assessment_requests
+    for each row execute function public.touch_updated_at();
+
+-- Useful indexes for CRM list / filter / search
+create index if not exists ar_created_at_idx          on public.assessment_requests (created_at desc);
+create index if not exists ar_updated_at_idx          on public.assessment_requests (updated_at desc);
+create index if not exists ar_status_idx              on public.assessment_requests (status);
+create index if not exists ar_phone_idx               on public.assessment_requests (phone);
+create index if not exists ar_reviewed_at_idx         on public.assessment_requests (reviewed_at);
+create index if not exists ar_appointment_date_idx    on public.assessment_requests (appointment_date)
+    where appointment_date is not null;
+create index if not exists ar_open_idx                on public.assessment_requests (created_at desc)
+    where status in ('pending', 'in_review');
+
+-- Lock down access — only the service role (backend / CRM with service key) reads/writes
 alter table public.assessment_requests enable row level security;
 ```
 
-That's it for the table.
+That's it for the database.
 
 ---
 
 ## 3. Storage Bucket Setup
 
-### Option A — Dashboard (recommended, 30 seconds)
+**Dashboard → Storage → New bucket**
 
-1. Dashboard → **Storage → New bucket**
-2. Name: `assessment-images`
-3. **Public bucket: OFF** (must stay private)
-4. (Optional) Allowed MIME types: `image/jpeg, image/png, image/webp`
-5. (Optional) File size limit: `8 MB`
-6. Click **Create bucket**
+| Field            | Value                                |
+|------------------|--------------------------------------|
+| Name             | `assessment-images`                  |
+| Public bucket    | **OFF** (must stay private)          |
+| Allowed MIME     | `image/jpeg, image/png, image/webp` (optional) |
+| File size limit  | `8 MB` (optional)                    |
 
-No policies are required: the backend uses the service-role key, which bypasses RLS on `storage.objects`. End users never touch the bucket directly.
+No RLS policies needed — the backend uses the service-role key, which bypasses RLS.
 
-### Option B — SQL (if you prefer)
-
+SQL alternative:
 ```sql
 insert into storage.buckets (id, name, public)
 values ('assessment-images', 'assessment-images', false)
@@ -93,38 +153,55 @@ on conflict (id) do nothing;
 
 ---
 
-## 4. Database Schema (final, what got created)
+## 4. Database Schema — Final
 
-| Column                | Type          | Notes                                                                 |
-|-----------------------|---------------|-----------------------------------------------------------------------|
-| `id`                  | `uuid`        | Primary key, auto-generated.                                          |
-| `full_name`           | `text`        | Optional.                                                             |
-| `phone`               | `text`        | **Required.**                                                         |
-| `age`                 | `integer`     | Optional, 1–120.                                                      |
-| `gender`              | `text`        | Optional, free text (`Kadın` / `Erkek` / `Belirtmek istemiyorum`).    |
-| `chronic_conditions`  | `text[]`      | Multi-select; e.g. `{Diyabet,Tiroid}`.                                |
-| `medications`         | `text`        | Optional free text.                                                   |
-| `complaint`           | `text`        | **Required.**                                                         |
-| `pain_level`          | `smallint`    | 0–10.                                                                 |
-| `problem_areas`       | `text[]`      | Multi-select; e.g. `{Batık Tırnak,Nasır}`.                            |
-| `foot`                | `text`        | **Required.** One of `Sol`, `Sağ`, `Her İkisi`.                       |
-| `kvkk_accepted`       | `boolean`     | Always `true` when row is inserted (backend enforces).                |
-| `image_paths`         | `text[]`      | Storage paths only. CRM creates signed URLs on demand.                |
-| `status`              | `text`        | Default `pending`. Constrained set.                                   |
-| `created_at`          | `timestamptz` | Auto, `now()`.                                                        |
+### User-facing fields (written on submission)
+
+| Column                | Type          | Notes                                                       |
+|-----------------------|---------------|-------------------------------------------------------------|
+| `id`                  | `uuid`        | Primary key.                                                |
+| `full_name`           | `text`        | Optional (≤ 120 chars).                                     |
+| `phone`               | `text`        | **Required**, normalized (digits / `+`). 6–30 chars.        |
+| `age`                 | `integer`     | 1–120 or NULL.                                              |
+| `gender`              | `text`        | Optional (≤ 40 chars).                                      |
+| `chronic_conditions`  | `text[]`      | Deduped multi-select.                                       |
+| `medications`         | `text`        | Optional (≤ 2 000 chars).                                   |
+| `complaint`           | `text`        | **Required** (3–4 000 chars).                               |
+| `pain_level`          | `smallint`    | 0–10 or NULL.                                               |
+| `problem_areas`       | `text[]`      | Deduped multi-select.                                       |
+| `foot`                | `text`        | **Required**. `Sol` / `Sağ` / `Her İkisi`.                  |
+| `kvkk_accepted`       | `boolean`     | Always `true` for inserted rows (backend enforces).         |
+| `image_paths`         | `text[]`      | Storage paths only.                                         |
+| `submission_ip`       | `text`        | First IP from `X-Forwarded-For`. For abuse triage.          |
+| `user_agent`          | `text`        | First 512 chars.                                            |
+
+### CRM workflow fields (written later by CRM / podologist)
+
+| Column                | Type          | Default     | Notes                                                              |
+|-----------------------|---------------|-------------|--------------------------------------------------------------------|
+| `status`              | `text`        | `pending`   | One of `pending`, `in_review`, `contacted`, `appointment_scheduled`, `closed`, `spam`. |
+| `reviewed_at`         | `timestamptz` | NULL        | When a podologist first reviewed the request.                      |
+| `reviewed_by`         | `text`        | NULL        | Podologist identifier (e.g. email / display name).                 |
+| `internal_notes`      | `text`        | NULL        | Free-form CRM notes (≤ 8 000 chars).                               |
+| `appointment_date`    | `timestamptz` | NULL        | Scheduled appointment time.                                        |
+| `appointment_created` | `boolean`     | `false`     | Convenience flag for CRM filters.                                  |
+
+### Automatic timestamps
+
+| Column        | Type          | Default | Notes                                                  |
+|---------------|---------------|---------|--------------------------------------------------------|
+| `created_at`  | `timestamptz` | `now()` | Submission time.                                       |
+| `updated_at`  | `timestamptz` | `now()` | Auto-touched by trigger on **every** UPDATE.           |
 
 ### Storage layout
-Each submission's images live under `assessment-images/<assessment_uuid>/<random>.<ext>`, so a row's `image_paths` looks like:
+Each submission's images live at:
 ```
-{
-  "1f0e3dad-99bb-4ff4-9a99-b0b3b9e7a8b4/9c0a…f3.jpg",
-  "1f0e3dad-99bb-4ff4-9a99-b0b3b9e7a8b4/4e2a…7d.png"
-}
+assessment-images/<assessment_uuid>/<random>.<ext>
 ```
+`image_paths` stores those relative paths only.
 
-### How to generate a signed URL later (CRM use)
+### Generate a signed URL when the CRM needs to view an image
 ```python
-from supabase import create_client
 sb = create_client(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
 res = sb.storage.from_("assessment-images").create_signed_url(path, 600)  # 10 min
 print(res["signedURL"])
@@ -136,53 +213,60 @@ print(res["signedURL"])
 
 `POST /api/assessment-requests` (multipart/form-data)
 
-| Field                | Required | Type                  |
-|----------------------|----------|-----------------------|
-| `phone`              | ✅       | string                |
-| `complaint`          | ✅       | string                |
-| `foot`               | ✅       | `Sol` / `Sağ` / `Her İkisi` |
-| `kvkk_accepted`      | ✅       | `true`                |
-| `full_name`          | —        | string                |
-| `age`                | —        | int                   |
-| `gender`             | —        | string                |
-| `medications`        | —        | string                |
-| `pain_level`         | —        | int 0–10              |
-| `chronic_conditions` | —        | csv string            |
-| `problem_areas`      | —        | csv string            |
-| `images`             | —        | up to 5 files (jpg/jpeg/png/webp, ≤ 8MB each) |
+Rate limit: **10 req / minute / IP** and **30 req / hour / IP**.
+
+| Field                | Required | Type                  | Limit              |
+|----------------------|----------|-----------------------|--------------------|
+| `phone`              | ✅       | string                | 6–30 chars after normalization |
+| `complaint`          | ✅       | string                | 3–4 000 chars       |
+| `foot`               | ✅       | `Sol` / `Sağ` / `Her İkisi` |              |
+| `kvkk_accepted`      | ✅       | `true`                |                     |
+| `full_name`          | —        | string                | ≤ 120 chars         |
+| `age`                | —        | int                   | 1–120               |
+| `gender`             | —        | string                | ≤ 40 chars          |
+| `medications`        | —        | string                | ≤ 2 000 chars       |
+| `pain_level`         | —        | int                   | 0–10                |
+| `chronic_conditions` | —        | csv string            | dedup’d server-side |
+| `problem_areas`      | —        | csv string            | dedup’d server-side |
+| `images`             | —        | up to 5 files         | jpg/jpeg/png/webp, ≤ 8 MB each, ≤ 40 MB combined, Pillow-verified |
 
 **Success (200):**
 ```json
 { "ok": true, "id": "<uuid>", "image_count": 3, "status": "pending" }
 ```
 
-**Errors:** `400` for validation, `502` for Supabase failures, with a Turkish `detail` message.
+**Errors:**
+| Code | Cause                                        |
+|------|----------------------------------------------|
+| `400`| Validation (any rule above)                  |
+| `429`| Rate limit exceeded                          |
+| `502`| Supabase upload or insert failed (after retry; uploaded images auto-rolled back) |
 
 ---
 
-## 6. Files Created / Modified
+## 6. Production-readiness improvements done in this iteration
 
-### Created
-- `/app/backend/supabase_service.py` — Supabase client + storage upload + insert helper.
-- `/app/SUPABASE_SETUP.md` — this document.
-
-### Modified
-- `/app/backend/server.py` — added `POST /api/assessment-requests` endpoint.
-- `/app/backend/requirements.txt` — added `supabase==2.31.0`.
-- `/app/backend/.env` — added `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` placeholders.
-- `/app/frontend/src/pages/OnDegerlendirme.jsx` — removed E-mail field, made Ad Soyad optional, made Telefon required, wired form to `POST /api/assessment-requests`, replaced success modal with full success page, added loading + error states.
-
-### Untouched
-- All other Medipodo pages, the `/ucretsiz-on-degerlendirme` route, Header navigation, the Ayak Analizi CTA, and the design system.
+| Area                  | Improvement |
+|-----------------------|-------------|
+| **Schema**            | Added `reviewed_at`, `reviewed_by`, `internal_notes`, `appointment_date`, `appointment_created` for CRM. Added `updated_at` (with `BEFORE UPDATE` trigger), `submission_ip`, `user_agent` for ops. Named CHECK constraints for length, foot, status, age, pain. Added six indexes covering the most common CRM queries (status, phone, dates, open-tickets partial index). |
+| **Atomicity**         | If the DB insert fails after images uploaded, all uploaded objects are deleted from storage (no orphans). Same on per-image upload failure mid-batch. |
+| **Image security**    | Every uploaded byte stream is now opened with Pillow (`Image.verify()`) and the detected format must be JPEG / PNG / WEBP. Fake `image/jpeg` content-type headers no longer get through. |
+| **Input limits**      | All text fields capped both API-side (`max_length`) and DB-side (CHECK). Combined upload size capped at 40 MB. CSV multi-selects deduped & item-length capped. |
+| **Phone normalization**| Strips spaces / dashes / parentheses; preserves leading `+`. Makes future CRM dedup trivial. |
+| **Rate limiting**     | `slowapi` per-IP (`10/minute`, `30/hour`) on the public endpoint. Honors `X-Forwarded-For` from the edge proxy. Returns Turkish 429 message. |
+| **Retry**             | Storage upload retries once (500 ms backoff) on transient errors. |
+| **Observability**     | Structured `INFO` log on every successful submission (id, image count, IP). Failures log with full traceback. |
+| **CORS**              | `allow_credentials=False` — public endpoint, no cookies. |
+| **Logger ordering**   | Logger initialised before any endpoint uses it (was previously bottom of file). |
 
 ---
 
-## 7. End-to-End Test (after setting env vars)
+## 7. End-to-End Smoke Test (after env vars + SQL + bucket)
 
 ```bash
 API_URL=$(grep REACT_APP_BACKEND_URL /app/frontend/.env | cut -d '=' -f2)
 curl -X POST "$API_URL/api/assessment-requests" \
-  -F "phone=05551112233" \
+  -F "phone=+90 555 111 22 33" \
   -F "complaint=Sağ ayak başparmağımda 1 haftadır batma var" \
   -F "foot=Sağ" \
   -F "kvkk_accepted=true" \
@@ -191,18 +275,34 @@ curl -X POST "$API_URL/api/assessment-requests" \
   -F "pain_level=6" \
   -F "chronic_conditions=Diyabet,Tiroid" \
   -F "problem_areas=Batık Tırnak,Nasır" \
-  -F "images=@/path/to/photo1.jpg" \
-  -F "images=@/path/to/photo2.png"
+  -F "images=@/path/to/photo.jpg"
 ```
 
-Expected: `200` with `{"ok": true, ...}` and a new row in `assessment_requests` plus image objects under `assessment-images/<id>/…`.
+Expected: `200 OK` + new row in `assessment_requests` + object(s) in `assessment-images/<id>/`.
 
 ---
 
-## 8. Not implemented (intentionally deferred)
+## 8. Files Touched
 
-- CRM integration (your custom CRM — TBD).
-- WhatsApp / SMS / Email notifications.
+### Created
+- `/app/backend/supabase_service.py` — service-role client, upload (with retry), delete (for rollback), insert.
+- `/app/SUPABASE_SETUP.md` — this document.
+
+### Modified
+- `/app/backend/server.py` — assessment endpoint + atomic flow + rate limiting + Pillow validation.
+- `/app/backend/requirements.txt` — added `supabase`, `slowapi`, `Pillow`.
+- `/app/backend/.env` — added Supabase env placeholders.
+- `/app/frontend/src/pages/OnDegerlendirme.jsx` — removed email, made full_name optional, kept phone required, wired to backend, success-page state.
+
+### Untouched
+- All other Medipodo pages, routing, header navigation, design system, the Ayak Analizi CTA card.
+
+---
+
+## 9. Intentionally NOT Implemented
+
+- CRM (next milestone — your custom CRM reads/updates this same table).
+- WhatsApp / SMS / email notifications.
 - AI analysis.
 - End-user authentication.
-- Admin dashboard / image viewer.
+- Admin dashboard.
