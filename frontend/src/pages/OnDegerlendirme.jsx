@@ -7,7 +7,6 @@ import {
   Clock,
   UploadCloud,
   X,
-  Send,
   Image as ImageIcon,
   Sparkles,
 } from 'lucide-react';
@@ -31,18 +30,18 @@ import {
 const TRUST_CARDS = [
   {
     icon: ShieldCheck,
-    title: 'Ücretsiz Ön Değerlendirme',
-    description: 'Hiçbir ücret talep edilmeden uzman incelemesi.',
+    title: 'Tamamen Ücretsiz',
+    description: 'Ön değerlendirme için hiç ücret almıyoruz.',
   },
   {
     icon: UserCheck,
-    title: 'Uzman Podolog İncelemesi',
-    description: 'Deneyimli ekibimiz fotoğraflarınızı titizlikle değerlendirir.',
+    title: 'Uzman Podolog İnceler',
+    description: 'Fotoğraflarınızı deneyimli ekibimiz tek tek inceler.',
   },
   {
     icon: Clock,
-    title: 'Ortalama 24 Saat İçinde Dönüş',
-    description: 'En kısa sürede size geri dönüş yapılır.',
+    title: '24 Saatte Geri Dönüş',
+    description: 'Çoğunlukla aynı gün, en geç 24 saat içinde yazıyoruz.',
   },
 ];
 
@@ -206,7 +205,7 @@ const OnDegerlendirme = () => {
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-5 tracking-wide">
                 <Sparkles size={14} />
-                ÜCRETSİZ UZMAN İNCELEMESİ
+                ÜCRETSİZ · 24 SAATTE GERİ DÖNÜŞ
               </div>
               <h1
                 className="text-4xl md:text-5xl font-bold text-blue-950 mb-5 leading-tight"
@@ -215,8 +214,9 @@ const OnDegerlendirme = () => {
                 Uzman Ön Değerlendirmesi
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Ayak veya tırnak probleminizin fotoğraflarını gönderin.
-                Uzman ekibimiz ön değerlendirme yaparak sizinle iletişime geçsin.
+                Ayağınızla veya tırnağınızla ilgili bir sorununuz mu var?
+                <br className="hidden md:block" />
+                Birkaç fotoğraf yükleyin, podologlarımız bakıp en kısa sürede size dönsün.
               </p>
             </div>
 
@@ -265,8 +265,8 @@ const OnDegerlendirme = () => {
                   {/* Kişisel Bilgiler */}
                   <FormSection
                     step="1"
-                    title="Kişisel Bilgiler"
-                    description="Size ulaşabilmemiz için temel bilgilerinizi giriniz."
+                    title="Sizi Tanıyalım"
+                    description="Dönüş yapabilmemiz için kısa birkaç bilgiye ihtiyacımız var."
                   >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <Field label="Ad Soyad" required>
@@ -344,8 +344,8 @@ const OnDegerlendirme = () => {
                   {/* Kronik Rahatsızlıklar */}
                   <FormSection
                     step="2"
-                    title="Kronik Rahatsızlıklar"
-                    description="Bilinen kronik rahatsızlıklarınızı seçiniz."
+                    title="Bilinen Bir Rahatsızlığınız Var mı?"
+                    description="Varsa işaretleyin, yoksa 'Hiçbiri'yi seçebilirsiniz."
                   >
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       {CHRONIC_CONDITIONS.map((cond) => {
@@ -381,11 +381,11 @@ const OnDegerlendirme = () => {
                   {/* İlaçlar */}
                   <FormSection
                     step="3"
-                    title="İlaçlar"
-                    description="Düzenli olarak kullandığınız ilaçları yazınız."
+                    title="Düzenli Kullandığınız İlaçlar"
+                    description="İsterseniz boş bırakabilirsiniz."
                   >
                     <Textarea
-                      placeholder="Kullandığınız ilaçların adlarını ve dozlarını yazınız (isteğe bağlı)"
+                      placeholder="Örn. tansiyon ilacı, kan sulandırıcı… (isteğe bağlı)"
                       value={form.medications}
                       onChange={(e) => updateField('medications', e.target.value)}
                       rows={3}
@@ -399,12 +399,12 @@ const OnDegerlendirme = () => {
                   {/* Şikayetiniz */}
                   <FormSection
                     step="4"
-                    title="Şikayetiniz"
-                    description="Probleminizi en iyi anlayabilmemiz için detaylı açıklayınız."
+                    title="Sizi En Çok Ne Rahatsız Ediyor?"
+                    description="Ne zaman başladı, nasıl bir his veriyor? Detay arttıkça değerlendirme isabetli olur."
                     required
                   >
                     <Textarea
-                      placeholder="Lütfen probleminizi detaylı şekilde açıklayın..."
+                      placeholder="Örn. 2 haftadır sağ ayak başparmağımda batma hissi var, kızarıklık oluştu…"
                       value={form.complaint}
                       onChange={(e) => updateField('complaint', e.target.value)}
                       rows={6}
@@ -413,7 +413,7 @@ const OnDegerlendirme = () => {
                       required
                     />
                     {touched && !form.complaint.trim() && (
-                      <p className="text-xs text-red-600 mt-1">Lütfen şikayetinizi yazınız.</p>
+                      <p className="text-xs text-red-600 mt-1">Lütfen şikayetinizi kısaca yazın.</p>
                     )}
                   </FormSection>
 
@@ -422,8 +422,8 @@ const OnDegerlendirme = () => {
                   {/* Ağrı Seviyesi */}
                   <FormSection
                     step="5"
-                    title="Ağrı Seviyesi"
-                    description="Şu anki ağrı seviyenizi 0 (hiç) - 10 (dayanılmaz) arasında belirtiniz."
+                    title="Ağrınız Ne Kadar?"
+                    description="0: hiç ağrı yok · 10: dayanılmaz ağrı"
                   >
                     <div className="bg-blue-50/60 border border-blue-100 rounded-xl p-5">
                       <div className="flex items-center justify-between mb-4">
@@ -456,8 +456,8 @@ const OnDegerlendirme = () => {
                   {/* Sorunlu Bölge */}
                   <FormSection
                     step="6"
-                    title="Sorunlu Bölge"
-                    description="Birden fazla seçim yapabilirsiniz."
+                    title="Sorun Nerede?"
+                    description="Birden fazla bölge seçebilirsiniz."
                   >
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       {PROBLEM_AREAS.map((area) => {
@@ -491,8 +491,8 @@ const OnDegerlendirme = () => {
                   {/* Sorun Hangi Ayakta */}
                   <FormSection
                     step="7"
-                    title="Sorun Hangi Ayakta?"
-                    description="Şikayetinizin olduğu ayağı seçiniz."
+                    title="Hangi Ayağınızda?"
+                    description="Şikayetin olduğu ayağı seçin."
                     required
                   >
                     <RadioGroup
@@ -525,8 +525,8 @@ const OnDegerlendirme = () => {
                   {/* Fotoğraf Yükleme */}
                   <FormSection
                     step="8"
-                    title="Fotoğraf Yükleme"
-                    description="Net ve aydınlık fotoğraflar daha doğru değerlendirme sağlar (maks. 5 adet)."
+                    title="Fotoğraflarınızı Ekleyin"
+                    description="Net ve aydınlık çekimler daha doğru değerlendirme sağlar. En fazla 5 fotoğraf."
                   >
                     <div
                       onDragOver={(e) => {
@@ -559,10 +559,10 @@ const OnDegerlendirme = () => {
                         <UploadCloud className="text-blue-700" size={28} />
                       </div>
                       <p className="text-blue-950 font-semibold mb-1">
-                        Fotoğraflarınızı sürükleyip bırakın
+                        Fotoğrafları buraya sürükleyin
                       </p>
                       <p className="text-sm text-gray-600">
-                        veya <span className="text-blue-700 font-medium">tıklayıp seçin</span> · JPG, PNG, WEBP · maks. 5 adet
+                        veya <span className="text-blue-700 font-medium">tıklayıp seçin</span> · JPG, PNG, WEBP · en fazla 5 adet
                       </p>
                     </div>
 
@@ -607,7 +607,7 @@ const OnDegerlendirme = () => {
                   <Divider />
 
                   {/* KVKK */}
-                  <FormSection step="9" title="KVKK Onayı" required>
+                  <FormSection step="9" title="Son Bir Onay" required>
                     <label
                       htmlFor="kvkk"
                       className={`flex items-start gap-3 p-4 rounded-lg border cursor-pointer transition-colors ${
@@ -624,12 +624,12 @@ const OnDegerlendirme = () => {
                         data-testid="checkbox-kvkk"
                       />
                       <span className="text-sm text-gray-700 leading-relaxed">
-                        Kişisel verilerimin <strong className="text-blue-950">ön değerlendirme amacıyla</strong> işlenmesini kabul ediyorum.
-                        Verilerim KVKK kapsamında korunur ve üçüncü kişilerle paylaşılmaz.
+                        Verilerimin yalnızca <strong className="text-blue-950">ön değerlendirme amacıyla</strong> kullanılmasını kabul ediyorum.
+                        Bilgileriniz KVKK kapsamında korunur, üçüncü kişilerle paylaşılmaz.
                       </span>
                     </label>
                     {touched && !form.kvkk && (
-                      <p className="text-xs text-red-600 mt-1">Devam etmek için KVKK onayı gereklidir.</p>
+                      <p className="text-xs text-red-600 mt-1">Gönderebilmemiz için onay vermeniz gerekiyor.</p>
                     )}
                   </FormSection>
 
@@ -641,11 +641,10 @@ const OnDegerlendirme = () => {
                       className="w-full h-14 text-base font-semibold bg-blue-700 hover:bg-blue-800 text-white shadow-lg hover:shadow-xl transition-all rounded-xl"
                       data-testid="submit-button"
                     >
-                      <Send size={18} className="mr-2" />
-                      Uzman Ön Değerlendirmesi Gönder
+                      📸 Podoloğa Gönder
                     </Button>
                     <p className="text-center text-xs text-gray-500 mt-3">
-                      Form gönderildikten sonra uzman ekibimiz ortalama 24 saat içinde size dönüş yapacaktır.
+                      Gönderdikten sonra podoloğumuz en geç 24 saat içinde size dönüş yapacak.
                     </p>
                   </div>
                 </CardContent>
@@ -672,9 +671,7 @@ const OnDegerlendirme = () => {
               Başvurunuz alınmaya hazır
             </DialogTitle>
             <DialogDescription className="text-center text-gray-600 pt-2 leading-relaxed">
-              Bir sonraki aşamada bu form veritabanına bağlanacaktır.
-              <br />
-              Şimdilik gönderim simülasyonu yapılmıştır.
+              Form şu an demo olarak çalışıyor. Bir sonraki aşamada veritabanına bağlanacak ve podoloğumuz fotoğraflarınızı inceleyip 24 saat içinde size dönüş yapacak.
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="sm:justify-center">

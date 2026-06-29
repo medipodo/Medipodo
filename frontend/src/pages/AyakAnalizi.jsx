@@ -1186,6 +1186,106 @@ const AyakAnalizi = () => {
                 <h2 className="result-title">{recommendation.title}</h2>
               </div>
 
+              {/* Prominent CTA: Uzman Ön Değerlendirme */}
+              <Link
+                to="/on-degerlendirme"
+                data-testid="expert-cta-card"
+                style={{
+                  display: 'block',
+                  textDecoration: 'none',
+                  margin: '20px 0 30px',
+                  borderRadius: '16px',
+                  background: 'linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%)',
+                  color: '#fff',
+                  padding: '28px',
+                  boxShadow: '0 10px 30px rgba(29, 78, 216, 0.25)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  transition: 'transform 0.25s ease, box-shadow 0.25s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 14px 36px rgba(29, 78, 216, 0.35)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(29, 78, 216, 0.25)';
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                  <div
+                    style={{
+                      width: '64px',
+                      height: '64px',
+                      borderRadius: '14px',
+                      background: 'rgba(255,255,255,0.14)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '32px',
+                      flexShrink: 0,
+                    }}
+                  >
+                    📸
+                  </div>
+                  <div style={{ flex: '1 1 260px', minWidth: '240px' }}>
+                    <div
+                      style={{
+                        display: 'inline-block',
+                        fontSize: '11px',
+                        fontWeight: 700,
+                        letterSpacing: '0.08em',
+                        background: 'rgba(255,255,255,0.18)',
+                        color: '#fff',
+                        padding: '4px 10px',
+                        borderRadius: '999px',
+                        marginBottom: '10px',
+                      }}
+                    >
+                      ÜCRETSİZ · 24 SAATTE GERİ DÖNÜŞ
+                    </div>
+                    <h3
+                      style={{
+                        margin: '0 0 8px',
+                        fontSize: '22px',
+                        lineHeight: 1.3,
+                        fontWeight: 700,
+                        color: '#fff',
+                      }}
+                    >
+                      Daha doğru bir ön değerlendirme ister misiniz?
+                    </h3>
+                    <p
+                      style={{
+                        margin: 0,
+                        color: 'rgba(255,255,255,0.88)',
+                        lineHeight: 1.6,
+                        fontSize: '15px',
+                      }}
+                    >
+                      Fotoğraflarınızı uzman ekibimize gönderin, podoloğumuz size özel bir ön
+                      değerlendirme hazırlasın.
+                    </p>
+                  </div>
+                  <div
+                    style={{
+                      background: '#fff',
+                      color: '#1e3a8a',
+                      padding: '14px 26px',
+                      borderRadius: '12px',
+                      fontWeight: 700,
+                      fontSize: '15px',
+                      whiteSpace: 'nowrap',
+                      boxShadow: '0 6px 16px rgba(0,0,0,0.12)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                    }}
+                  >
+                    📸 Fotoğraf Gönder
+                  </div>
+                </div>
+              </Link>
+
               <div className="result-section">
                 <h3>📋 Podolojik Değerlendirme</h3>
                 <p>{recommendation.podologicalAssessment}</p>
