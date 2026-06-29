@@ -1,0 +1,731 @@
+import React, { useRef, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import {
+  CheckCircle2,
+  ShieldCheck,
+  UserCheck,
+  Clock,
+  UploadCloud,
+  X,
+  Send,
+  Image as ImageIcon,
+  Sparkles,
+} from 'lucide-react';
+import { Card, CardContent } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Label } from '../components/ui/label';
+import { Textarea } from '../components/ui/textarea';
+import { Checkbox } from '../components/ui/checkbox';
+import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
+import { Slider } from '../components/ui/slider';
+import { Button } from '../components/ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from '../components/ui/dialog';
+
+const TRUST_CARDS = [
+  {
+    icon: ShieldCheck,
+    title: 'Ücretsiz Ön Değerlendirme',
+    description: 'Hiçbir ücret talep edilmeden uzman incelemesi.',
+  },
+  {
+    icon: UserCheck,
+    title: 'Uzman Podolog İncelemesi',
+    description: 'Deneyimli ekibimiz fotoğraflarınızı titizlikle değerlendirir.',
+  },
+  {
+    icon: Clock,
+    title: 'Ortalama 24 Saat İçinde Dönüş',
+    description: 'En kısa sürede size geri dönüş yapılır.',
+  },
+];
+
+const CHRONIC_CONDITIONS = [
+  'Diyabet',
+  'Dolaşım Problemi',
+  'Kalp Hastalığı',
+  'Böbrek Hastalığı',
+  'Tiroid',
+  'Kan Sulandırıcı Kullanıyorum',
+  'Hamileyim',
+  'Hiçbiri',
+];
+
+const PROBLEM_AREAS = [
+  'Batık Tırnak',
+  'Tırnak Mantarı',
+  'Nasır',
+  'Topuk Çatlağı',
+  'Siğil',
+  'Parmak Arası',
+  'Diğer',
+];
+
+const ACCEPTED_TYPES = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
+const MAX_IMAGES = 5;
+
+const OnDegerlendirme = () => {
+  const fileInputRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [touched, setTouched] = useState(false);
+
+  const [form, setForm] = useState({
+    fullName: '',
+    phone: '',
+    email: '',
+    age: '',
+    gender: '',
+    chronic: [],
+    medications: '',
+    complaint: '',
+    painLevel: 5,
+    problemAreas: [],
+    foot: '',
+    images: [],
+    kvkk: false,
+  });
+
+  const updateField = (key, value) => setForm((prev) => ({ ...prev, [key]: value }));
+
+  const toggleArrayField = (key, value, exclusive = null) => {
+    setForm((prev) => {
+      const exists = prev[key].includes(value);
+      let next;
+      if (exists) {
+        next = prev[key].filter((v) => v !== value);
+      } else {
+        // If selecting "Hiçbiri" -> clear others. If selecting another -> remove "Hiçbiri".
+        if (exclusive && value === exclusive) {
+          next = [value];
+        } else if (exclusive && prev[key].includes(exclusive)) {
+          next = [...prev[key].filter((v) => v !== exclusive), value];
+        } else {
+          next = [...prev[key], value];
+        }
+      }
+      return { ...prev, [key]: next };
+    });
+  };
+
+  const handleFiles = (fileList) => {
+    const incoming = Array.from(fileList).filter((file) =>
+      ACCEPTED_TYPES.includes(file.type) || /\.(jpe?g|png|webp)$/i.test(file.name),
+    );
+    setForm((prev) => {
+      const remainingSlots = MAX_IMAGES - prev.images.length;
+      const newOnes = incoming.slice(0, remainingSlots).map((file) => ({
+        id: `${file.name}-${file.size}-${Date.now()}-${Math.random()}`,
+        file,
+        url: URL.createObjectURL(file),
+        name: file.name,
+      }));
+      return { ...prev, images: [...prev.images, ...newOnes] };
+    });
+  };
+
+  const removeImage = (id) => {
+    setForm((prev) => {
+      const removed = prev.images.find((img) => img.id === id);
+      if (removed) URL.revokeObjectURL(removed.url);
+      return { ...prev, images: prev.images.filter((img) => img.id !== id) };
+    });
+  };
+
+  const onDrop = (e) => {
+    e.preventDefault();
+    setIsDragging(false);
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      handleFiles(e.dataTransfer.files);
+    }
+  };
+
+  const isValid =
+    form.fullName.trim() &&
+    form.phone.trim() &&
+    form.email.trim() &&
+    form.complaint.trim() &&
+    form.foot &&
+    form.kvkk;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setTouched(true);
+    if (!isValid) return;
+    setShowSuccess(true);
+  };
+
+  const resetForm = () => {
+    form.images.forEach((img) => URL.revokeObjectURL(img.url));
+    setForm({
+      fullName: '',
+      phone: '',
+      email: '',
+      age: '',
+      gender: '',
+      chronic: [],
+      medications: '',
+      complaint: '',
+      painLevel: 5,
+      problemAreas: [],
+      foot: '',
+      images: [],
+      kvkk: false,
+    });
+    setTouched(false);
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Uzman Ön Değerlendirme - Medipodo Podoloji Merkezi</title>
+        <meta
+          name="description"
+          content="Ayak veya tırnak probleminizin fotoğraflarını gönderin. Uzman podolog ekibimiz ücretsiz ön değerlendirme yaparak 24 saat içinde sizinle iletişime geçsin."
+        />
+        <link rel="canonical" href="https://medipodo.com/on-degerlendirme" />
+        <meta property="og:title" content="Uzman Ön Değerlendirme - Medipodo" />
+        <meta
+          property="og:description"
+          content="Fotoğraflarınızı gönderin, uzman podolog ekibimiz ücretsiz ön değerlendirme yapsın."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://medipodo.com/on-degerlendirme" />
+      </Helmet>
+
+      <div className="min-h-screen bg-gradient-to-b from-blue-50/40 via-white to-white" data-testid="on-degerlendirme-page">
+        {/* Hero Section */}
+        <section className="pt-32 pb-12 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-5 tracking-wide">
+                <Sparkles size={14} />
+                ÜCRETSİZ UZMAN İNCELEMESİ
+              </div>
+              <h1
+                className="text-4xl md:text-5xl font-bold text-blue-950 mb-5 leading-tight"
+                data-testid="page-title"
+              >
+                Uzman Ön Değerlendirmesi
+              </h1>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Ayak veya tırnak probleminizin fotoğraflarını gönderin.
+                Uzman ekibimiz ön değerlendirme yaparak sizinle iletişime geçsin.
+              </p>
+            </div>
+
+            {/* Trust Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto mt-12">
+              {TRUST_CARDS.map((card, idx) => {
+                const Icon = card.icon;
+                return (
+                  <Card
+                    key={card.title}
+                    className="border-blue-100/80 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                    data-testid={`trust-card-${idx}`}
+                  >
+                    <CardContent className="p-6 flex items-start gap-4">
+                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon className="text-blue-700" size={22} />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-blue-950 mb-1 flex items-center gap-2">
+                          <CheckCircle2 size={16} className="text-green-600" />
+                          {card.title}
+                        </h3>
+                        <p className="text-sm text-gray-600 leading-relaxed">
+                          {card.description}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Form Section */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <form
+              onSubmit={handleSubmit}
+              className="max-w-4xl mx-auto"
+              data-testid="on-degerlendirme-form"
+              noValidate
+            >
+              <Card className="shadow-xl border-blue-100">
+                <CardContent className="p-6 md:p-10 space-y-10">
+                  {/* Kişisel Bilgiler */}
+                  <FormSection
+                    step="1"
+                    title="Kişisel Bilgiler"
+                    description="Size ulaşabilmemiz için temel bilgilerinizi giriniz."
+                  >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                      <Field label="Ad Soyad" required>
+                        <Input
+                          type="text"
+                          placeholder="Adınız ve soyadınız"
+                          value={form.fullName}
+                          onChange={(e) => updateField('fullName', e.target.value)}
+                          data-testid="input-fullname"
+                          required
+                          className="h-11"
+                        />
+                      </Field>
+                      <Field label="Telefon" required>
+                        <Input
+                          type="tel"
+                          placeholder="0555 555 55 55"
+                          value={form.phone}
+                          onChange={(e) => updateField('phone', e.target.value)}
+                          data-testid="input-phone"
+                          required
+                          className="h-11"
+                        />
+                      </Field>
+                      <Field label="E-posta" required>
+                        <Input
+                          type="email"
+                          placeholder="ornek@mail.com"
+                          value={form.email}
+                          onChange={(e) => updateField('email', e.target.value)}
+                          data-testid="input-email"
+                          required
+                          className="h-11"
+                        />
+                      </Field>
+                      <Field label="Yaş">
+                        <Input
+                          type="number"
+                          min="1"
+                          max="120"
+                          placeholder="Örn: 42"
+                          value={form.age}
+                          onChange={(e) => updateField('age', e.target.value)}
+                          data-testid="input-age"
+                          className="h-11"
+                        />
+                      </Field>
+                      <Field label="Cinsiyet" className="md:col-span-2">
+                        <RadioGroup
+                          value={form.gender}
+                          onValueChange={(v) => updateField('gender', v)}
+                          className="flex flex-wrap gap-3"
+                          data-testid="radio-gender"
+                        >
+                          {['Kadın', 'Erkek', 'Belirtmek istemiyorum'].map((g) => (
+                            <label
+                              key={g}
+                              className={`cursor-pointer flex items-center gap-2 px-4 py-2.5 rounded-lg border transition-all ${
+                                form.gender === g
+                                  ? 'border-blue-700 bg-blue-50 text-blue-900 ring-2 ring-blue-200'
+                                  : 'border-gray-200 hover:border-blue-300 text-gray-700'
+                              }`}
+                            >
+                              <RadioGroupItem value={g} className="border-blue-300" />
+                              <span className="text-sm font-medium">{g}</span>
+                            </label>
+                          ))}
+                        </RadioGroup>
+                      </Field>
+                    </div>
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* Kronik Rahatsızlıklar */}
+                  <FormSection
+                    step="2"
+                    title="Kronik Rahatsızlıklar"
+                    description="Bilinen kronik rahatsızlıklarınızı seçiniz."
+                  >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {CHRONIC_CONDITIONS.map((cond) => {
+                        const id = `chronic-${cond}`;
+                        const checked = form.chronic.includes(cond);
+                        return (
+                          <label
+                            key={cond}
+                            htmlFor={id}
+                            className={`flex items-center gap-3 px-4 py-3 rounded-lg border cursor-pointer transition-all ${
+                              checked
+                                ? 'border-blue-700 bg-blue-50'
+                                : 'border-gray-200 hover:border-blue-300 hover:bg-blue-50/40'
+                            }`}
+                          >
+                            <Checkbox
+                              id={id}
+                              checked={checked}
+                              onCheckedChange={() =>
+                                toggleArrayField('chronic', cond, 'Hiçbiri')
+                              }
+                              data-testid={`chronic-${cond.replace(/\s+/g, '-').toLowerCase()}`}
+                            />
+                            <span className="text-sm font-medium text-gray-800">{cond}</span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* İlaçlar */}
+                  <FormSection
+                    step="3"
+                    title="İlaçlar"
+                    description="Düzenli olarak kullandığınız ilaçları yazınız."
+                  >
+                    <Textarea
+                      placeholder="Kullandığınız ilaçların adlarını ve dozlarını yazınız (isteğe bağlı)"
+                      value={form.medications}
+                      onChange={(e) => updateField('medications', e.target.value)}
+                      rows={3}
+                      className="resize-none"
+                      data-testid="textarea-medications"
+                    />
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* Şikayetiniz */}
+                  <FormSection
+                    step="4"
+                    title="Şikayetiniz"
+                    description="Probleminizi en iyi anlayabilmemiz için detaylı açıklayınız."
+                    required
+                  >
+                    <Textarea
+                      placeholder="Lütfen probleminizi detaylı şekilde açıklayın..."
+                      value={form.complaint}
+                      onChange={(e) => updateField('complaint', e.target.value)}
+                      rows={6}
+                      className="resize-none"
+                      data-testid="textarea-complaint"
+                      required
+                    />
+                    {touched && !form.complaint.trim() && (
+                      <p className="text-xs text-red-600 mt-1">Lütfen şikayetinizi yazınız.</p>
+                    )}
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* Ağrı Seviyesi */}
+                  <FormSection
+                    step="5"
+                    title="Ağrı Seviyesi"
+                    description="Şu anki ağrı seviyenizi 0 (hiç) - 10 (dayanılmaz) arasında belirtiniz."
+                  >
+                    <div className="bg-blue-50/60 border border-blue-100 rounded-xl p-5">
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-sm text-gray-600">Ağrı seviyesi</span>
+                        <span
+                          className="inline-flex items-center justify-center min-w-[3rem] h-10 px-3 rounded-lg bg-blue-700 text-white font-bold text-lg"
+                          data-testid="pain-value"
+                        >
+                          {form.painLevel}
+                        </span>
+                      </div>
+                      <Slider
+                        value={[form.painLevel]}
+                        onValueChange={(val) => updateField('painLevel', val[0])}
+                        min={0}
+                        max={10}
+                        step={1}
+                        data-testid="slider-pain"
+                      />
+                      <div className="flex justify-between text-xs text-gray-500 mt-3">
+                        <span className="text-green-600 font-medium">0 · Ağrı yok</span>
+                        <span>5 · Orta</span>
+                        <span className="text-red-600 font-medium">10 · Çok şiddetli</span>
+                      </div>
+                    </div>
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* Sorunlu Bölge */}
+                  <FormSection
+                    step="6"
+                    title="Sorunlu Bölge"
+                    description="Birden fazla seçim yapabilirsiniz."
+                  >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {PROBLEM_AREAS.map((area) => {
+                        const id = `area-${area}`;
+                        const checked = form.problemAreas.includes(area);
+                        return (
+                          <label
+                            key={area}
+                            htmlFor={id}
+                            className={`flex items-center gap-3 px-4 py-3 rounded-lg border cursor-pointer transition-all ${
+                              checked
+                                ? 'border-blue-700 bg-blue-50'
+                                : 'border-gray-200 hover:border-blue-300 hover:bg-blue-50/40'
+                            }`}
+                          >
+                            <Checkbox
+                              id={id}
+                              checked={checked}
+                              onCheckedChange={() => toggleArrayField('problemAreas', area)}
+                              data-testid={`area-${area.replace(/\s+/g, '-').toLowerCase()}`}
+                            />
+                            <span className="text-sm font-medium text-gray-800">{area}</span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* Sorun Hangi Ayakta */}
+                  <FormSection
+                    step="7"
+                    title="Sorun Hangi Ayakta?"
+                    description="Şikayetinizin olduğu ayağı seçiniz."
+                    required
+                  >
+                    <RadioGroup
+                      value={form.foot}
+                      onValueChange={(v) => updateField('foot', v)}
+                      className="grid grid-cols-1 sm:grid-cols-3 gap-3"
+                      data-testid="radio-foot"
+                    >
+                      {['Sol', 'Sağ', 'Her İkisi'].map((opt) => (
+                        <label
+                          key={opt}
+                          className={`cursor-pointer flex items-center justify-center gap-2 px-4 py-4 rounded-lg border-2 transition-all font-medium ${
+                            form.foot === opt
+                              ? 'border-blue-700 bg-blue-50 text-blue-900 shadow-sm'
+                              : 'border-gray-200 hover:border-blue-300 text-gray-700'
+                          }`}
+                        >
+                          <RadioGroupItem value={opt} className="border-blue-300" />
+                          {opt}
+                        </label>
+                      ))}
+                    </RadioGroup>
+                    {touched && !form.foot && (
+                      <p className="text-xs text-red-600 mt-1">Lütfen bir seçim yapınız.</p>
+                    )}
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* Fotoğraf Yükleme */}
+                  <FormSection
+                    step="8"
+                    title="Fotoğraf Yükleme"
+                    description="Net ve aydınlık fotoğraflar daha doğru değerlendirme sağlar (maks. 5 adet)."
+                  >
+                    <div
+                      onDragOver={(e) => {
+                        e.preventDefault();
+                        setIsDragging(true);
+                      }}
+                      onDragLeave={() => setIsDragging(false)}
+                      onDrop={onDrop}
+                      onClick={() => fileInputRef.current?.click()}
+                      className={`group cursor-pointer border-2 border-dashed rounded-xl p-8 md:p-10 text-center transition-all ${
+                        isDragging
+                          ? 'border-blue-700 bg-blue-50'
+                          : 'border-blue-200 hover:border-blue-500 hover:bg-blue-50/60 bg-blue-50/30'
+                      }`}
+                      data-testid="dropzone"
+                    >
+                      <input
+                        type="file"
+                        ref={fileInputRef}
+                        accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
+                        multiple
+                        className="hidden"
+                        onChange={(e) => {
+                          if (e.target.files) handleFiles(e.target.files);
+                          e.target.value = '';
+                        }}
+                        data-testid="file-input"
+                      />
+                      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white border border-blue-100 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                        <UploadCloud className="text-blue-700" size={28} />
+                      </div>
+                      <p className="text-blue-950 font-semibold mb-1">
+                        Fotoğraflarınızı sürükleyip bırakın
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        veya <span className="text-blue-700 font-medium">tıklayıp seçin</span> · JPG, PNG, WEBP · maks. 5 adet
+                      </p>
+                    </div>
+
+                    {form.images.length > 0 && (
+                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mt-5" data-testid="image-previews">
+                        {form.images.map((img) => (
+                          <div
+                            key={img.id}
+                            className="relative group aspect-square rounded-lg overflow-hidden border border-blue-100 bg-gray-50 shadow-sm"
+                          >
+                            <img
+                              src={img.url}
+                              alt={img.name}
+                              className="w-full h-full object-cover"
+                            />
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                removeImage(img.id);
+                              }}
+                              className="absolute top-1.5 right-1.5 w-7 h-7 rounded-full bg-white/90 hover:bg-red-500 hover:text-white text-gray-800 flex items-center justify-center shadow-md transition-colors"
+                              aria-label="Fotoğrafı kaldır"
+                              data-testid={`remove-image-${img.id}`}
+                            >
+                              <X size={14} />
+                            </button>
+                            <div className="absolute bottom-0 left-0 right-0 px-2 py-1 bg-gradient-to-t from-black/60 to-transparent text-white text-[10px] truncate flex items-center gap-1">
+                              <ImageIcon size={10} />
+                              <span className="truncate">{img.name}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    <p className="text-xs text-gray-500 mt-3">
+                      {form.images.length}/{MAX_IMAGES} fotoğraf yüklendi
+                    </p>
+                  </FormSection>
+
+                  <Divider />
+
+                  {/* KVKK */}
+                  <FormSection step="9" title="KVKK Onayı" required>
+                    <label
+                      htmlFor="kvkk"
+                      className={`flex items-start gap-3 p-4 rounded-lg border cursor-pointer transition-colors ${
+                        form.kvkk
+                          ? 'border-blue-700 bg-blue-50'
+                          : 'border-gray-200 hover:border-blue-300'
+                      }`}
+                    >
+                      <Checkbox
+                        id="kvkk"
+                        checked={form.kvkk}
+                        onCheckedChange={(v) => updateField('kvkk', Boolean(v))}
+                        className="mt-1"
+                        data-testid="checkbox-kvkk"
+                      />
+                      <span className="text-sm text-gray-700 leading-relaxed">
+                        Kişisel verilerimin <strong className="text-blue-950">ön değerlendirme amacıyla</strong> işlenmesini kabul ediyorum.
+                        Verilerim KVKK kapsamında korunur ve üçüncü kişilerle paylaşılmaz.
+                      </span>
+                    </label>
+                    {touched && !form.kvkk && (
+                      <p className="text-xs text-red-600 mt-1">Devam etmek için KVKK onayı gereklidir.</p>
+                    )}
+                  </FormSection>
+
+                  {/* Submit */}
+                  <div className="pt-2">
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full h-14 text-base font-semibold bg-blue-700 hover:bg-blue-800 text-white shadow-lg hover:shadow-xl transition-all rounded-xl"
+                      data-testid="submit-button"
+                    >
+                      <Send size={18} className="mr-2" />
+                      Uzman Ön Değerlendirmesi Gönder
+                    </Button>
+                    <p className="text-center text-xs text-gray-500 mt-3">
+                      Form gönderildikten sonra uzman ekibimiz ortalama 24 saat içinde size dönüş yapacaktır.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      {/* Success Modal */}
+      <Dialog
+        open={showSuccess}
+        onOpenChange={(open) => {
+          setShowSuccess(open);
+          if (!open) resetForm();
+        }}
+      >
+        <DialogContent className="sm:max-w-md" data-testid="success-modal">
+          <DialogHeader>
+            <div className="mx-auto mb-2 w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
+              <CheckCircle2 className="text-green-600" size={36} />
+            </div>
+            <DialogTitle className="text-center text-2xl font-bold text-blue-950">
+              Başvurunuz alınmaya hazır
+            </DialogTitle>
+            <DialogDescription className="text-center text-gray-600 pt-2 leading-relaxed">
+              Bir sonraki aşamada bu form veritabanına bağlanacaktır.
+              <br />
+              Şimdilik gönderim simülasyonu yapılmıştır.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="sm:justify-center">
+            <Button
+              type="button"
+              onClick={() => {
+                setShowSuccess(false);
+                resetForm();
+              }}
+              className="bg-blue-700 hover:bg-blue-800 text-white px-6"
+              data-testid="success-close"
+            >
+              Tamam
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </>
+  );
+};
+
+const FormSection = ({ step, title, description, required, children }) => (
+  <div className="space-y-4">
+    <div className="flex items-start gap-3">
+      <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-blue-700 text-white text-sm font-bold flex items-center justify-center mt-0.5">
+        {step}
+      </div>
+      <div className="flex-1">
+        <h2 className="text-lg md:text-xl font-bold text-blue-950">
+          {title}
+          {required && <span className="text-red-500 ml-1">*</span>}
+        </h2>
+        {description && (
+          <p className="text-sm text-gray-600 mt-0.5">{description}</p>
+        )}
+      </div>
+    </div>
+    <div className="pl-0 md:pl-11">{children}</div>
+  </div>
+);
+
+const Field = ({ label, required, className = '', children }) => (
+  <div className={`space-y-1.5 ${className}`}>
+    <Label className="text-sm font-medium text-gray-700">
+      {label}
+      {required && <span className="text-red-500 ml-0.5">*</span>}
+    </Label>
+    {children}
+  </div>
+);
+
+const Divider = () => <div className="border-t border-gray-100" />;
+
+export default OnDegerlendirme;
