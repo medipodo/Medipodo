@@ -36,7 +36,7 @@ Public form at `/ucretsiz-on-degerlendirme` letting users submit a foot/nail pro
 - Added `supabase==2.31.0` to requirements; added env placeholders `SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY` to backend `.env`.
 - Detailed setup guide written to `/app/SUPABASE_SETUP.md` (SQL migration, schema, bucket steps, API contract, file list).
 
-### 2026-01 — Iteration 5: Production hardening (current)
+### 2026-01 — Iteration 5: Production hardening
 - **Schema v2**: added CRM workflow columns (`reviewed_at`, `reviewed_by`, `internal_notes`, `appointment_date`, `appointment_created`) + ops columns (`updated_at` with BEFORE-UPDATE trigger, `submission_ip`, `user_agent`). All CHECK constraints named & idempotent. Added 7 indexes covering CRM queries (status, phone, dates, partial index for open tickets). `status` enum expanded to include `appointment_scheduled`.
 - **Atomic submission**: rollback uploaded storage objects if DB insert fails (or any image upload fails mid-batch). No more orphaned files.
 - **Image security**: every upload Pillow-verified (`Image.verify()` + format whitelist). Fake `content-type` headers no longer accepted.
@@ -48,6 +48,15 @@ Public form at `/ucretsiz-on-degerlendirme` letting users submit a foot/nail pro
 - **CORS**: `allow_credentials=False` (public endpoint, no cookies).
 - **Logger ordering**: moved init above endpoints (was previously at bottom).
 - New deps: `slowapi==0.1.10`, `Pillow==12.2.0`.
+
+### 2026-01 — Iteration 6: CRM dashboard UI (frontend-only, current)
+- New route `/crm` → `pages/CRM.jsx`. Header/Footer/WhatsApp public chrome hidden for admin pages (added `isAdminPage` exclusion alongside existing `isLandingPage`).
+- **Layout**: left sidebar (Yeni Başvurular / İncelenenler / Randevular / Tamamlananlar / Arşiv) with active highlight + per-tab count badges + Medipodo branding + system-health footer card; sticky topbar with search, Filtrele button, notification bell, settings, and "Dr. Rana" user chip.
+- **KPI strip**: 4 cards (Bugün Gelen, Bekleyen, Bu Hafta Randevu, Ort. Yanıt Süresi) with colored accents.
+- **Card grid**: each application card shows initials avatar / İsimsiz, name + status badge, phone + age, problem-area tags, foot tag, chronic-condition warning tags, color-graded pain meter (green ≤3, amber 4-6, red ≥7), 📷 photo count, time, hover lift + chevron animation. Search filters across name / phone / complaint / problem areas.
+- **Right-side drawer** (shadcn Sheet) opens on card click: sticky header with status badge + id + name + meta, 2 quick action buttons (WhatsApp Gönder green / Randevu Oluştur outline — UI only), Durum select (Pending / Reviewed / Appointment / Completed), photo preview grid with inline SVG placeholders, Şikayet block, large pain meter, Sorun Bölgesi, Sağlık Geçmişi (kronik + ilaçlar), İç Notlar textarea, Başvuru Bilgisi meta, sticky save bar.
+- **Empty state**, mobile sidebar collapse → Select dropdown, responsive grid (1/2/3 cols).
+- All UI-only with mock data + inline SVG image placeholders. No backend calls, no Supabase wiring, no real images. Backend files untouched.
 
 ## Backlog
 - P0 — Custom CRM integration: forward new rows (id, full_name, phone, complaint, foot, image signed URLs) to client's CRM endpoint. Auth/payload TBD by client.

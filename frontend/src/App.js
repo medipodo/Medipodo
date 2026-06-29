@@ -57,18 +57,24 @@ import EvdeBakimService from './pages/EvdeBakimService';
 import MedikalAyakBakimiService from './pages/MedikalAyakBakimiService';
 import NasirTedavisiService from './pages/NasirTedavisiService';
 import OnDegerlendirme from './pages/OnDegerlendirme';
+import CRM from './pages/CRM';
 
 function AppContent() {
   const location = useLocation();
   const isLandingPage = location.pathname === '/ayak-bakim-kilavuzu';
+  const isAdminPage = location.pathname === '/crm';
+  const isChromeless = isLandingPage || isAdminPage;
 
   return (
     <>
       <ScrollToTop />
-      {!isLandingPage && <Header />}
+      {!isChromeless && <Header />}
       <Routes>
         {/* Landing Page - No Header/Footer */}
         <Route path="/ayak-bakim-kilavuzu" element={<EbookLanding />} />
+
+        {/* Admin / CRM - No Header/Footer */}
+        <Route path="/crm" element={<CRM />} />
 
         {/* Regular Pages with Header/Footer */}
         <Route path="/" element={<Home />} />
@@ -124,8 +130,8 @@ function AppContent() {
         <Route path="/urun/:slug" element={<ProductDetail />} />
         <Route path="/sikca-sorulan-sorular" element={<FAQ />} />
       </Routes>
-      {!isLandingPage && <Footer />}
-      {!isLandingPage && <WhatsAppButton />}
+      {!isChromeless && <Footer />}
+      {!isChromeless && <WhatsAppButton />}
     </>
   );
 }
