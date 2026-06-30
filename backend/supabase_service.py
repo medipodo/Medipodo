@@ -130,3 +130,79 @@ def insert_assessment(row: dict[str, Any]) -> dict[str, Any]:
     if not result.data:
         raise RuntimeError("Supabase insert returned no data.")
     return result.data[0]
+
+
+# ---------------------------------------------------------------------------
+# CRM helpers — read & update on the same assessment_requests table
+# ---------------------------------------------------------------------------
+
+def _escape_for_like(value: str) -> str:
+    """Escape PostgREST `or=` filter special chars in a user query."""
+    return value.replace(",", " ").replace("(", " ").replace(")", " ")
+
+
+def list_assessments(
+    *,
+    statuses: list[str] | None = None,
+    q: str | None = None,
+    limit: int = 100,
+    offset: int = 0,
+) -> list[dict[str, Any]]:
+    """List assessment rows. Most recent first."""
+    client = get_client()
+    query = client.table(TABLE_NAME).select("*").order("created_at", desc=True)
+
+    if statuses:
+        query = query.in_("status", statuses)
+
+    if q and q.strip():
+        term = f"%{_escape_for_like(q.strip())}%"
+        # OR over name / phone / complaint
+        query = query.or_(
+            f"full_name.ilike.{term},phone.ilike.{term},complaint.ilike.{term}"
+        )
+
+    query = query.range(offset, max(offset, offset + limit - 1))
+    result = query.execute()
+    return result.data or []
+
+
+def get_assessment(record_id: str) -> dict[str, Any] | None:
+    client = get_client()
+    result = client.table(TABLE_NAME).select("*").eq("id", record_id).limit(1).execute()
+    rows = result.data or []
+    return rows[0] if rows else None
+
+
+def update_assessment(record_id: str, fields: dict[str, Any]) -> dict[str, Any] | None:
+    client = get_client()
+    result = client.table(TABLE_NAME).update(fields).eq("id", record_id).execute()
+    rows = result.data or []
+    return rows[0] if rows else None
+
+
+def create_signed_urls(paths: list[str], expires_in: int = 3600) -> list[dict[str, str]]:
+    """Generate short-lived signed URLs for a list of storage paths.
+
+    Returns [{"path": ..., "signed_url": ...}, ...] in the same order. If a
+    single path fails, its signed_url is None so the UI can show a placeholder.
+    """
+    if not paths:
+        return []
+    out: list[dict[str, str]] = []
+    bucket = get_client().storage.from_(BUCKET_NAME)
+    for path in paths:
+        signed_url: str | None = None
+        try:
+            res = bucket.create_signed_url(path, expires_in)
+            signed_url = (
+                res.get("signedURL")
+                or res.get("signed_url")
+                or res.get("signedUrl")
+                or None
+            )
+        except Exception:  # noqa: BLE001
+            logger.exception("Failed to sign storage path: %s", path)
+        out.append({"path": path, "signed_url": signed_url})
+    return out
+

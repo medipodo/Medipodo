@@ -242,6 +242,16 @@ Rate limit: **10 req / minute / IP** and **30 req / hour / IP**.
 | `429`| Rate limit exceeded                          |
 | `502`| Supabase upload or insert failed (after retry; uploaded images auto-rolled back) |
 
+### CRM endpoints (used by `/crm`)
+
+> No auth in this iteration (per product decision). Anyone reaching the backend can call these. Add an admin/reverse-proxy auth layer before exposing publicly.
+
+| Method  | Path                                                   | Purpose                                                                  |
+|---------|--------------------------------------------------------|--------------------------------------------------------------------------|
+| `GET`   | `/api/crm/assessment-requests?status=...&q=...`        | List rows, newest first. `status` repeatable. `q` searches name/phone/complaint. `limit` ≤ 200. |
+| `GET`   | `/api/crm/assessment-requests/{id}`                    | Single row **plus** `images: [{path, signed_url}]` with 1 h expiry signed URLs. |
+| `PATCH` | `/api/crm/assessment-requests/{id}`                    | Partial update. Whitelisted fields: `status`, `internal_notes`, `reviewed_by`, `reviewed_at`, `appointment_date`, `appointment_created`. Extra fields are rejected (422). Setting status to `in_review`/`contacted` auto-stamps `reviewed_at`; setting `appointment_date` auto-sets `appointment_created=true`. |
+
 ---
 
 ## 6. Production-readiness improvements done in this iteration
@@ -301,8 +311,8 @@ Expected: `200 OK` + new row in `assessment_requests` + object(s) in `assessment
 
 ## 9. Intentionally NOT Implemented
 
-- CRM (next milestone — your custom CRM reads/updates this same table).
+- CRM auth (`/crm` and `/api/crm/*` are open in this iteration — guard them at your reverse proxy / VPN / IP allowlist before exposing publicly).
 - WhatsApp / SMS / email notifications.
 - AI analysis.
 - End-user authentication.
-- Admin dashboard.
+- Admin dashboard for storage browsing outside the assessments table.

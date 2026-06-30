@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import {
   Inbox,
@@ -22,6 +22,8 @@ import {
   AlertCircle,
   Stethoscope,
   TrendingUp,
+  Loader2,
+  RefreshCcw,
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -42,144 +44,70 @@ import {
 } from '../components/ui/select';
 
 // ---------------------------------------------------------------------------
-// MOCK DATA — UI-only. Will be replaced when CRM is wired to Supabase.
+// API helpers
 // ---------------------------------------------------------------------------
-const MOCK = [
-  {
-    id: 'a1',
-    full_name: 'Ayşe Demir',
-    phone: '+90 555 123 45 67',
-    age: 34,
-    gender: 'Kadın',
-    chronic_conditions: ['Diyabet'],
-    medications: 'Metformin 1000 mg',
-    complaint:
-      'Sağ ayak başparmağımda 2 haftadır batma ve ağrı var. Sabahları daha şiddetli oluyor, sportif aktivitelerden sonra da artıyor.',
-    pain_level: 7,
-    problem_areas: ['Batık Tırnak', 'Parmak Arası'],
-    foot: 'Sağ',
-    images: 3,
-    status: 'pending',
-    created_at: '2 saat önce',
-  },
-  {
-    id: 'a2',
-    full_name: 'Mehmet Yılmaz',
-    phone: '+90 532 987 65 43',
-    age: 52,
-    gender: 'Erkek',
-    chronic_conditions: ['Diyabet', 'Kalp Hastalığı'],
-    medications: 'Coraspin 100 mg, Glucophage',
-    complaint:
-      'Topuğumda derin çatlaklar oluştu. Bazen kanıyor. Sürekli ayakta çalışıyorum.',
-    pain_level: 5,
-    problem_areas: ['Topuk Çatlağı'],
-    foot: 'Her İkisi',
-    images: 4,
-    status: 'pending',
-    created_at: '5 saat önce',
-  },
-  {
-    id: 'a3',
-    full_name: '',
-    phone: '+90 505 444 11 22',
-    age: 28,
-    gender: 'Erkek',
-    chronic_conditions: [],
-    medications: null,
-    complaint:
-      'Tırnaklarımda sarımsı bir renk değişikliği fark ettim. Spor yapıyorum, terlemeden olabilir.',
-    pain_level: 2,
-    problem_areas: ['Tırnak Mantarı'],
-    foot: 'Sağ',
-    images: 2,
-    status: 'pending',
-    created_at: 'Dün',
-  },
-  {
-    id: 'b1',
-    full_name: 'Fatma Kaya',
-    phone: '+90 542 222 33 44',
-    age: 46,
-    gender: 'Kadın',
-    chronic_conditions: ['Tiroid'],
-    medications: 'Levotiron 100',
-    complaint:
-      'Ayak tabanımda büyük bir nasır oluştu. Yürürken çok rahatsız ediyor.',
-    pain_level: 6,
-    problem_areas: ['Nasır'],
-    foot: 'Sol',
-    images: 2,
-    status: 'in_review',
-    created_at: '1 gün önce',
-  },
-  {
-    id: 'b2',
-    full_name: 'Hakan Şahin',
-    phone: '+90 533 111 22 33',
-    age: 60,
-    gender: 'Erkek',
-    chronic_conditions: ['Dolaşım Problemi', 'Kan Sulandırıcı Kullanıyorum'],
-    medications: 'Eliquis 5 mg',
-    complaint: 'Ayak parmaklarımda renk değişikliği ve karıncalanma var.',
-    pain_level: 4,
-    problem_areas: ['Diğer'],
-    foot: 'Her İkisi',
-    images: 5,
-    status: 'in_review',
-    created_at: '2 gün önce',
-  },
-  {
-    id: 'c1',
-    full_name: 'Selin Aydın',
-    phone: '+90 551 777 88 99',
-    age: 31,
-    gender: 'Kadın',
-    chronic_conditions: ['Hamileyim'],
-    medications: null,
-    complaint: 'Hamilelik nedeniyle ödem ve siğil oluştu.',
-    pain_level: 3,
-    problem_areas: ['Siğil'],
-    foot: 'Sağ',
-    images: 1,
-    status: 'appointment_scheduled',
-    created_at: '3 gün önce',
-    appointment_date: 'Çar, 14:30',
-  },
-  {
-    id: 'd1',
-    full_name: 'Burak Polat',
-    phone: '+90 506 555 11 22',
-    age: 39,
-    gender: 'Erkek',
-    chronic_conditions: [],
-    medications: null,
-    complaint: 'Batık tırnak tedavisi sonrası kontrol.',
-    pain_level: 0,
-    problem_areas: ['Batık Tırnak'],
-    foot: 'Sol',
-    images: 0,
-    status: 'closed',
-    created_at: '1 hafta önce',
-  },
-  {
-    id: 'e1',
-    full_name: 'Anonim Başvuru',
-    phone: '+90 555 000 00 00',
-    age: null,
-    gender: null,
-    chronic_conditions: [],
-    medications: null,
-    complaint: 'Reklam içerikli mesaj.',
-    pain_level: 0,
-    problem_areas: [],
-    foot: 'Sağ',
-    images: 0,
-    status: 'spam',
-    created_at: '2 hafta önce',
-  },
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api/crm`;
+
+async function apiFetch(path, options = {}) {
+  const res = await fetch(`${API}${path}`, {
+    headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
+    ...options,
+  });
+  if (!res.ok) {
+    let msg = `İstek başarısız (${res.status})`;
+    try {
+      const data = await res.json();
+      if (data?.detail) msg = data.detail;
+    } catch (_) {
+      /* ignore */
+    }
+    throw new Error(msg);
+  }
+  return res.json();
+}
+
+function formatRelative(iso) {
+  if (!iso) return '';
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return iso;
+  const diffSec = Math.round((Date.now() - date.getTime()) / 1000);
+  if (diffSec < 60) return 'az önce';
+  if (diffSec < 3600) return `${Math.floor(diffSec / 60)} dk önce`;
+  if (diffSec < 86400) return `${Math.floor(diffSec / 3600)} saat önce`;
+  if (diffSec < 86400 * 7) return `${Math.floor(diffSec / 86400)} gün önce`;
+  if (diffSec < 86400 * 30) return `${Math.floor(diffSec / 86400 / 7)} hafta önce`;
+  return date.toLocaleDateString('tr-TR');
+}
+
+function formatDateTimeLocal(iso) {
+  // Convert ISO -> 'YYYY-MM-DDTHH:MM' for <input type=datetime-local>
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+function localToIso(local) {
+  if (!local) return null;
+  const d = new Date(local);
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toISOString();
+}
+
+
+// All status values relevant to the CRM (matches the backend whitelist).
+const ALL_STATUSES = [
+  'pending',
+  'in_review',
+  'contacted',
+  'appointment_scheduled',
+  'closed',
+  'spam',
 ];
 
+// Tab key -> backend status filter (sent as repeated ?status=)
 const SIDEBAR_ITEMS = [
   { key: 'new', label: 'Yeni Başvurular', icon: Inbox, statuses: ['pending'] },
   { key: 'reviewed', label: 'İncelenenler', icon: ClipboardCheck, statuses: ['in_review', 'contacted'] },
@@ -204,49 +132,116 @@ const STATUS_BADGE = {
   spam: { label: 'Arşiv', className: 'bg-gray-100 text-gray-600 border-gray-200' },
 };
 
-// Reusable placeholder image (medical-ish gradient, no external load)
-const MOCK_IMAGE =
-  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23dbeafe'/><stop offset='1' stop-color='%23bfdbfe'/></linearGradient></defs><rect width='200' height='200' fill='url(%23g)'/><text x='50%25' y='52%25' font-family='sans-serif' font-size='44' fill='%231e3a8a' text-anchor='middle' dominant-baseline='middle' opacity='0.55'>📷</text></svg>";
-
 // ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
 const CRM = () => {
   const [activeTab, setActiveTab] = useState('new');
   const [query, setQuery] = useState('');
-  const [openItem, setOpenItem] = useState(null);
+  const [openItemId, setOpenItemId] = useState(null);
 
-  const counts = useMemo(() => {
-    const map = {};
-    for (const item of SIDEBAR_ITEMS) {
-      map[item.key] = MOCK.filter((r) => item.statuses.includes(r.status)).length;
-    }
-    return map;
-  }, []);
+  // Data
+  const [rows, setRows] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [listError, setListError] = useState('');
+  const [counts, setCounts] = useState({});
+  const [refreshKey, setRefreshKey] = useState(0);
 
   const tab = SIDEBAR_ITEMS.find((s) => s.key === activeTab) || SIDEBAR_ITEMS[0];
 
-  const filtered = useMemo(() => {
-    const list = MOCK.filter((r) => tab.statuses.includes(r.status));
-    if (!query.trim()) return list;
-    const q = query.trim().toLowerCase();
-    return list.filter((r) =>
-      [r.full_name, r.phone, r.complaint, ...(r.problem_areas || [])]
-        .filter(Boolean)
-        .some((field) => field.toLowerCase().includes(q)),
-    );
-  }, [tab, query]);
+  // Debounce search
+  const [debouncedQuery, setDebouncedQuery] = useState('');
+  useEffect(() => {
+    const id = setTimeout(() => setDebouncedQuery(query.trim()), 300);
+    return () => clearTimeout(id);
+  }, [query]);
 
-  // KPI mock numbers (for a useful top row)
-  const kpis = useMemo(
-    () => [
-      { label: 'Bugün Gelen', value: 4, delta: '+33%', icon: TrendingUp, accent: 'text-emerald-600' },
-      { label: 'Bekleyen', value: counts.new || 0, delta: 'aksiyon gerek', icon: AlertCircle, accent: 'text-amber-600' },
-      { label: 'Bu Hafta Randevu', value: 6, delta: '2 yarın', icon: CalendarClock, accent: 'text-violet-600' },
-      { label: 'Ort. Yanıt Süresi', value: '4s 12dk', delta: 'son 7 gün', icon: Activity, accent: 'text-blue-600' },
-    ],
-    [counts.new],
+  // Fetch list whenever tab / search / refresh changes
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setListError('');
+    const params = new URLSearchParams();
+    tab.statuses.forEach((s) => params.append('status', s));
+    if (debouncedQuery) params.append('q', debouncedQuery);
+    params.append('limit', '200');
+    apiFetch(`/assessment-requests?${params.toString()}`)
+      .then((data) => {
+        if (!cancelled) setRows(data.items || []);
+      })
+      .catch((err) => {
+        if (!cancelled) {
+          setRows([]);
+          setListError(err.message);
+        }
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [tab.key, tab.statuses, debouncedQuery, refreshKey]);
+
+  // Fetch counts for sidebar (one call covering all statuses)
+  useEffect(() => {
+    let cancelled = false;
+    const params = new URLSearchParams();
+    ALL_STATUSES.forEach((s) => params.append('status', s));
+    params.append('limit', '200');
+    apiFetch(`/assessment-requests?${params.toString()}`)
+      .then((data) => {
+        if (cancelled) return;
+        const map = {};
+        for (const item of SIDEBAR_ITEMS) {
+          map[item.key] = (data.items || []).filter((r) => item.statuses.includes(r.status)).length;
+        }
+        setCounts(map);
+      })
+      .catch(() => {
+        /* sidebar counts are best-effort; ignore errors */
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [refreshKey]);
+
+  const refresh = useCallback(() => setRefreshKey((k) => k + 1), []);
+
+  const handleSaved = useCallback(
+    (updated) => {
+      // Update list in place
+      setRows((prev) => {
+        const matchesTab = tab.statuses.includes(updated.status);
+        const without = prev.filter((r) => r.id !== updated.id);
+        return matchesTab ? [updated, ...without] : without;
+      });
+      // Refresh sidebar counts
+      setRefreshKey((k) => k + 1);
+    },
+    [tab.statuses],
   );
+
+  // KPIs from real data
+  const kpis = useMemo(() => {
+    const totalPending = counts.new || 0;
+    const totalAppointments = counts.appointments || 0;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const todayCount = rows.filter((r) => {
+      if (!r.created_at) return false;
+      const d = new Date(r.created_at);
+      return d.getTime() >= today.getTime();
+    }).length;
+    return [
+      { label: 'Bu Sekmede Bugün', value: todayCount, delta: 'son 24 saat', icon: TrendingUp, accent: 'text-emerald-600' },
+      { label: 'Bekleyen', value: totalPending, delta: 'aksiyon gerek', icon: AlertCircle, accent: 'text-amber-600' },
+      { label: 'Randevular', value: totalAppointments, delta: 'planlandı', icon: CalendarClock, accent: 'text-violet-600' },
+      { label: 'Bu Sekmede', value: rows.length, delta: 'görüntülenen', icon: Activity, accent: 'text-blue-600' },
+    ];
+  }, [rows, counts]);
+
+  const filtered = rows; // filtering done server-side
 
   return (
     <>
@@ -349,6 +344,16 @@ const CRM = () => {
                 </div>
 
                 <div className="hidden lg:flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={refresh}
+                    className="border-slate-200 text-slate-700"
+                    data-testid="refresh-button"
+                  >
+                    <RefreshCcw size={14} className="mr-1.5" />
+                    Yenile
+                  </Button>
                   <Button variant="outline" size="sm" className="border-slate-200 text-slate-700">
                     <Filter size={14} className="mr-1.5" />
                     Filtrele
@@ -428,12 +433,27 @@ const CRM = () => {
               </div>
 
               {/* Cards grid */}
-              {filtered.length === 0 ? (
+              {loading ? (
+                <div className="border border-slate-200 rounded-xl bg-white p-12 text-center" data-testid="list-loading">
+                  <Loader2 className="mx-auto mb-3 animate-spin text-blue-600" size={28} />
+                  <p className="text-sm text-slate-500">Başvurular yükleniyor…</p>
+                </div>
+              ) : listError ? (
+                <div className="border border-red-200 rounded-xl bg-red-50 p-8 text-center" data-testid="list-error">
+                  <AlertCircle className="mx-auto mb-2 text-red-500" size={28} />
+                  <p className="text-sm text-red-800 font-medium mb-1">Veriler alınamadı</p>
+                  <p className="text-xs text-red-600 mb-4">{listError}</p>
+                  <Button variant="outline" size="sm" onClick={refresh} className="border-red-200 text-red-700">
+                    <RefreshCcw size={14} className="mr-1.5" />
+                    Tekrar dene
+                  </Button>
+                </div>
+              ) : filtered.length === 0 ? (
                 <EmptyState />
               ) : (
                 <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4" data-testid="application-grid">
                   {filtered.map((row) => (
-                    <ApplicationCard key={row.id} row={row} onOpen={() => setOpenItem(row)} />
+                    <ApplicationCard key={row.id} row={row} onOpen={() => setOpenItemId(row.id)} />
                   ))}
                 </div>
               )}
@@ -442,13 +462,19 @@ const CRM = () => {
         </div>
 
         {/* -------------------- Detail Drawer -------------------- */}
-        <Sheet open={!!openItem} onOpenChange={(open) => !open && setOpenItem(null)}>
+        <Sheet open={!!openItemId} onOpenChange={(open) => !open && setOpenItemId(null)}>
           <SheetContent
             side="right"
             className="w-full sm:max-w-xl overflow-y-auto p-0"
             data-testid="detail-drawer"
           >
-            {openItem && <ApplicationDetail row={openItem} onClose={() => setOpenItem(null)} />}
+            {openItemId && (
+              <ApplicationDetail
+                recordId={openItemId}
+                onClose={() => setOpenItemId(null)}
+                onSaved={handleSaved}
+              />
+            )}
           </SheetContent>
         </Sheet>
       </div>
@@ -462,6 +488,8 @@ const CRM = () => {
 const ApplicationCard = ({ row, onOpen }) => {
   const status = STATUS_BADGE[row.status] || STATUS_BADGE.pending;
   const displayName = row.full_name && row.full_name.trim() ? row.full_name : 'İsimsiz';
+  const problemAreas = row.problem_areas || [];
+  const chronics = row.chronic_conditions || [];
 
   return (
     <button
@@ -492,7 +520,7 @@ const ApplicationCard = ({ row, onOpen }) => {
 
       {/* Problem areas + foot */}
       <div className="flex flex-wrap gap-1.5 mb-3">
-        {row.problem_areas.slice(0, 3).map((p) => (
+        {problemAreas.slice(0, 3).map((p) => (
           <span
             key={p}
             className="px-2 py-0.5 rounded-md bg-blue-50 text-blue-800 text-xs font-medium border border-blue-100"
@@ -500,9 +528,9 @@ const ApplicationCard = ({ row, onOpen }) => {
             {p}
           </span>
         ))}
-        {row.problem_areas.length > 3 && (
+        {problemAreas.length > 3 && (
           <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">
-            +{row.problem_areas.length - 3}
+            +{problemAreas.length - 3}
           </span>
         )}
         <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">
@@ -511,9 +539,9 @@ const ApplicationCard = ({ row, onOpen }) => {
       </div>
 
       {/* Chronic */}
-      {row.chronic_conditions.length > 0 && (
+      {chronics.length > 0 && (
         <div className="flex flex-wrap gap-1.5 mb-3">
-          {row.chronic_conditions.map((c) => (
+          {chronics.map((c) => (
             <span
               key={c}
               className="px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 text-xs font-medium border border-amber-100"
@@ -525,18 +553,18 @@ const ApplicationCard = ({ row, onOpen }) => {
       )}
 
       {/* Pain meter */}
-      <PainMeter level={row.pain_level} />
+      <PainMeter level={row.pain_level ?? 0} />
 
       {/* Footer */}
       <div className="flex items-center justify-between mt-4 pt-3 border-t border-slate-100">
         <div className="flex items-center gap-3 text-xs text-slate-500">
           <span className="inline-flex items-center gap-1">
             <ImageIcon size={12} />
-            <span className="font-medium text-slate-700">{row.images}</span> foto
+            <span className="font-medium text-slate-700">{(row.image_paths || []).length}</span> foto
           </span>
           <span className="inline-flex items-center gap-1">
             <Clock size={12} />
-            {row.created_at}
+            {formatRelative(row.created_at)}
           </span>
         </div>
         <ChevronRight
@@ -551,13 +579,121 @@ const ApplicationCard = ({ row, onOpen }) => {
 // ---------------------------------------------------------------------------
 // Detail Drawer Content
 // ---------------------------------------------------------------------------
-const ApplicationDetail = ({ row, onClose }) => {
-  const [status, setStatus] = useState(
-    STATUS_OPTIONS.some((o) => o.value === row.status) ? row.status : 'pending',
-  );
+const ApplicationDetail = ({ recordId, onClose, onSaved }) => {
+  const [record, setRecord] = useState(null);
+  const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
+
+  // Editable fields
+  const [status, setStatus] = useState('pending');
   const [notes, setNotes] = useState('');
-  const displayName = row.full_name && row.full_name.trim() ? row.full_name : 'İsimsiz';
-  const statusMeta = STATUS_BADGE[row.status] || STATUS_BADGE.pending;
+  const [reviewedBy, setReviewedBy] = useState('');
+  const [appointmentDateLocal, setAppointmentDateLocal] = useState('');
+  const [appointmentCreated, setAppointmentCreated] = useState(false);
+
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState('');
+
+  // Fetch full record + signed URLs
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setLoadError('');
+    apiFetch(`/assessment-requests/${recordId}`)
+      .then((data) => {
+        if (cancelled) return;
+        setRecord(data);
+        setImages(data.images || []);
+        setStatus(data.status || 'pending');
+        setNotes(data.internal_notes || '');
+        setReviewedBy(data.reviewed_by || '');
+        setAppointmentDateLocal(formatDateTimeLocal(data.appointment_date));
+        setAppointmentCreated(Boolean(data.appointment_created));
+      })
+      .catch((err) => {
+        if (!cancelled) setLoadError(err.message);
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [recordId]);
+
+  const handleSave = useCallback(async () => {
+    if (!record) return;
+    setSaving(true);
+    setSaveError('');
+    const payload = {};
+    if (status !== record.status) payload.status = status;
+    if ((notes || '') !== (record.internal_notes || '')) {
+      payload.internal_notes = notes || null;
+    }
+    if ((reviewedBy || '') !== (record.reviewed_by || '')) {
+      payload.reviewed_by = reviewedBy || null;
+    }
+    const newApt = localToIso(appointmentDateLocal);
+    if (newApt !== (record.appointment_date || null)) {
+      payload.appointment_date = newApt;
+    }
+    if (Boolean(appointmentCreated) !== Boolean(record.appointment_created)) {
+      payload.appointment_created = appointmentCreated;
+    }
+    if (Object.keys(payload).length === 0) {
+      setSaving(false);
+      onClose();
+      return;
+    }
+    try {
+      const updated = await apiFetch(`/assessment-requests/${recordId}`, {
+        method: 'PATCH',
+        body: JSON.stringify(payload),
+      });
+      setRecord(updated);
+      onSaved?.(updated);
+      onClose();
+    } catch (err) {
+      setSaveError(err.message);
+    } finally {
+      setSaving(false);
+    }
+  }, [
+    record,
+    status,
+    notes,
+    reviewedBy,
+    appointmentDateLocal,
+    appointmentCreated,
+    recordId,
+    onClose,
+    onSaved,
+  ]);
+
+  if (loading) {
+    return (
+      <div className="p-10 text-center text-slate-500" data-testid="drawer-loading">
+        <Loader2 className="mx-auto mb-2 animate-spin text-blue-600" size={28} />
+        Kayıt yükleniyor…
+      </div>
+    );
+  }
+
+  if (loadError || !record) {
+    return (
+      <div className="p-10 text-center" data-testid="drawer-error">
+        <AlertCircle className="mx-auto mb-2 text-red-500" size={28} />
+        <p className="text-sm text-slate-700 mb-4">{loadError || 'Kayıt yüklenemedi.'}</p>
+        <Button variant="outline" onClick={onClose}>Kapat</Button>
+      </div>
+    );
+  }
+
+  const displayName = record.full_name && record.full_name.trim() ? record.full_name : 'İsimsiz';
+  const statusMeta = STATUS_BADGE[record.status] || STATUS_BADGE.pending;
+  const problemAreas = record.problem_areas || [];
+  const chronics = record.chronic_conditions || [];
 
   return (
     <>
@@ -569,18 +705,18 @@ const ApplicationDetail = ({ row, onClose }) => {
               <Badge variant="outline" className={statusMeta.className}>
                 {statusMeta.label}
               </Badge>
-              <span className="text-xs text-slate-500">#{row.id.toUpperCase()}</span>
+              <span className="text-xs text-slate-500">#{record.id.slice(0, 8).toUpperCase()}</span>
             </div>
             <SheetTitle className="text-xl font-bold text-slate-900 truncate">
               {displayName}
             </SheetTitle>
             <div className="flex items-center gap-1.5 text-sm text-slate-500 mt-0.5">
               <Phone size={12} />
-              {row.phone}
-              {row.age != null && <span className="text-slate-300">•</span>}
-              {row.age != null && <span>{row.age} yaş</span>}
-              {row.gender && <span className="text-slate-300">•</span>}
-              {row.gender && <span>{row.gender}</span>}
+              {record.phone}
+              {record.age != null && <span className="text-slate-300">•</span>}
+              {record.age != null && <span>{record.age} yaş</span>}
+              {record.gender && <span className="text-slate-300">•</span>}
+              {record.gender && <span>{record.gender}</span>}
             </div>
           </div>
           <button
@@ -608,6 +744,15 @@ const ApplicationDetail = ({ row, onClose }) => {
             variant="outline"
             className="border-blue-200 text-blue-800 hover:bg-blue-50 h-11"
             data-testid="appointment-button"
+            onClick={() => {
+              setAppointmentCreated(true);
+              if (!appointmentDateLocal) {
+                const tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                tomorrow.setHours(10, 0, 0, 0);
+                setAppointmentDateLocal(formatDateTimeLocal(tomorrow.toISOString()));
+              }
+            }}
           >
             <CalendarPlus size={16} className="mr-2" />
             Randevu Oluştur
@@ -631,24 +776,37 @@ const ApplicationDetail = ({ row, onClose }) => {
         </Section>
 
         {/* Photos */}
-        <Section title={`Fotoğraflar (${row.images})`}>
-          {row.images === 0 ? (
+        <Section title={`Fotoğraflar (${images.length})`}>
+          {images.length === 0 ? (
             <div className="text-sm text-slate-500 bg-slate-50 border border-dashed border-slate-200 rounded-lg py-6 text-center">
               Fotoğraf yüklenmemiş.
             </div>
           ) : (
             <div className="grid grid-cols-3 gap-2">
-              {Array.from({ length: row.images }).map((_, i) => (
-                <div
-                  key={i}
-                  className="aspect-square rounded-lg overflow-hidden border border-slate-200 bg-slate-50 group cursor-pointer"
+              {images.map((img, i) => (
+                <a
+                  key={img.path}
+                  href={img.signed_url || '#'}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="aspect-square rounded-lg overflow-hidden border border-slate-200 bg-slate-50 group cursor-pointer block"
+                  onClick={(e) => {
+                    if (!img.signed_url) e.preventDefault();
+                  }}
                 >
-                  <img
-                    src={MOCK_IMAGE}
-                    alt={`Foto ${i + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                  />
-                </div>
+                  {img.signed_url ? (
+                    <img
+                      src={img.signed_url}
+                      alt={`Foto ${i + 1}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-slate-400 text-xs">
+                      Yüklenemedi
+                    </div>
+                  )}
+                </a>
               ))}
             </div>
           )}
@@ -656,23 +814,23 @@ const ApplicationDetail = ({ row, onClose }) => {
 
         {/* Complaint */}
         <Section title="Şikayet">
-          <p className="text-sm text-slate-700 leading-relaxed bg-slate-50 border border-slate-100 rounded-lg p-4">
-            {row.complaint}
+          <p className="text-sm text-slate-700 leading-relaxed bg-slate-50 border border-slate-100 rounded-lg p-4 whitespace-pre-wrap">
+            {record.complaint}
           </p>
         </Section>
 
         {/* Pain meter */}
         <Section title="Ağrı Seviyesi">
-          <PainMeter level={row.pain_level} large />
+          <PainMeter level={record.pain_level ?? 0} large />
         </Section>
 
         {/* Problem areas + foot */}
         <Section title="Sorun Bölgesi">
           <div className="flex flex-wrap gap-1.5">
-            {row.problem_areas.length === 0 && (
+            {problemAreas.length === 0 && (
               <span className="text-sm text-slate-500">Seçim yapılmamış</span>
             )}
-            {row.problem_areas.map((p) => (
+            {problemAreas.map((p) => (
               <span
                 key={p}
                 className="px-2.5 py-1 rounded-md bg-blue-50 text-blue-800 text-sm font-medium border border-blue-100"
@@ -681,7 +839,7 @@ const ApplicationDetail = ({ row, onClose }) => {
               </span>
             ))}
             <span className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-sm font-medium">
-              {row.foot} ayak
+              {record.foot} ayak
             </span>
           </div>
         </Section>
@@ -693,11 +851,11 @@ const ApplicationDetail = ({ row, onClose }) => {
               <div className="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1.5">
                 Kronik Rahatsızlıklar
               </div>
-              {row.chronic_conditions.length === 0 ? (
+              {chronics.length === 0 ? (
                 <span className="text-sm text-slate-500">Belirtilmemiş</span>
               ) : (
                 <div className="flex flex-wrap gap-1.5">
-                  {row.chronic_conditions.map((c) => (
+                  {chronics.map((c) => (
                     <span
                       key={c}
                       className="px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 text-sm font-medium border border-amber-100"
@@ -712,10 +870,43 @@ const ApplicationDetail = ({ row, onClose }) => {
               <div className="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1.5">
                 Kullandığı İlaçlar
               </div>
-              <p className="text-sm text-slate-700">
-                {row.medications || <span className="text-slate-500">Belirtilmemiş</span>}
+              <p className="text-sm text-slate-700 whitespace-pre-wrap">
+                {record.medications || <span className="text-slate-500">Belirtilmemiş</span>}
               </p>
             </div>
+          </div>
+        </Section>
+
+        {/* Reviewed by */}
+        <Section title="İnceleyen">
+          <Input
+            value={reviewedBy}
+            onChange={(e) => setReviewedBy(e.target.value)}
+            placeholder="ör. Dr. Rana"
+            maxLength={120}
+            data-testid="reviewed-by"
+          />
+        </Section>
+
+        {/* Appointment */}
+        <Section title="Randevu">
+          <div className="space-y-3">
+            <Input
+              type="datetime-local"
+              value={appointmentDateLocal}
+              onChange={(e) => setAppointmentDateLocal(e.target.value)}
+              data-testid="appointment-date"
+            />
+            <label className="flex items-center gap-2 text-sm text-slate-700 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={appointmentCreated}
+                onChange={(e) => setAppointmentCreated(e.target.checked)}
+                className="rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                data-testid="appointment-created"
+              />
+              Randevu oluşturuldu
+            </label>
           </div>
         </Section>
 
@@ -725,6 +916,7 @@ const ApplicationDetail = ({ row, onClose }) => {
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             rows={5}
+            maxLength={8000}
             placeholder="Bu başvuruyla ilgili iç değerlendirme, telefon görüşme notları, takip planı…"
             className="resize-none"
             data-testid="internal-notes"
@@ -738,26 +930,56 @@ const ApplicationDetail = ({ row, onClose }) => {
               <dt className="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-0.5">
                 Geliş zamanı
               </dt>
-              <dd className="text-slate-800">{row.created_at}</dd>
+              <dd className="text-slate-800">{formatRelative(record.created_at)}</dd>
             </div>
-            {row.appointment_date && (
+            {record.reviewed_at && (
               <div>
                 <dt className="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-0.5">
-                  Randevu
+                  İncelendi
                 </dt>
-                <dd className="text-slate-800">{row.appointment_date}</dd>
+                <dd className="text-slate-800">{formatRelative(record.reviewed_at)}</dd>
+              </div>
+            )}
+            {record.updated_at && (
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-0.5">
+                  Son güncelleme
+                </dt>
+                <dd className="text-slate-800">{formatRelative(record.updated_at)}</dd>
               </div>
             )}
           </dl>
         </Section>
 
+        {saveError && (
+          <div
+            className="rounded-lg border border-red-200 bg-red-50 text-red-700 text-sm p-3 flex items-start gap-2"
+            data-testid="save-error"
+          >
+            <AlertCircle size={16} className="flex-shrink-0 mt-0.5" />
+            <span>{saveError}</span>
+          </div>
+        )}
+
         {/* Sticky-ish save bar */}
         <div className="pt-2 flex items-center justify-end gap-2 border-t border-slate-100 pt-4">
-          <Button variant="ghost" onClick={onClose} data-testid="drawer-cancel">
+          <Button variant="ghost" onClick={onClose} data-testid="drawer-cancel" disabled={saving}>
             Kapat
           </Button>
-          <Button className="bg-blue-700 hover:bg-blue-800 text-white" data-testid="drawer-save">
-            Değişiklikleri Kaydet
+          <Button
+            className="bg-blue-700 hover:bg-blue-800 text-white"
+            data-testid="drawer-save"
+            onClick={handleSave}
+            disabled={saving}
+          >
+            {saving ? (
+              <>
+                <Loader2 size={16} className="mr-2 animate-spin" />
+                Kaydediliyor…
+              </>
+            ) : (
+              'Değişiklikleri Kaydet'
+            )}
           </Button>
         </div>
       </div>

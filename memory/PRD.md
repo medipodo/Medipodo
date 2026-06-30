@@ -49,7 +49,22 @@ Public form at `/ucretsiz-on-degerlendirme` letting users submit a foot/nail pro
 - **Logger ordering**: moved init above endpoints (was previously at bottom).
 - New deps: `slowapi==0.1.10`, `Pillow==12.2.0`.
 
-### 2026-01 — Iteration 6: CRM dashboard UI (frontend-only, current)
+### 2026-01 — Iteration 6: CRM dashboard UI (frontend-only)
+- New route `/crm` → `pages/CRM.jsx`. Header/Footer/WhatsApp public chrome hidden for admin pages (added `isAdminPage` exclusion alongside existing `isLandingPage`).
+- **Layout**: left sidebar (Yeni Başvurular / İncelenenler / Randevular / Tamamlananlar / Arşiv) with active highlight + per-tab count badges + Medipodo branding + system-health footer card; sticky topbar with search, Filtrele button, notification bell, settings, and "Dr. Rana" user chip.
+- **KPI strip**: 4 cards with colored accents.
+- **Card grid**: each application card shows initials avatar / İsimsiz, name + status badge, phone + age, problem-area tags, foot tag, chronic-condition warning tags, color-graded pain meter, 📷 photo count, time, hover lift + chevron animation.
+- **Right-side drawer** (shadcn Sheet) with status header, WhatsApp Gönder / Randevu Oluştur buttons (UI only at this point), Durum select, photo grid, Şikayet, ağrı meter, Sorun Bölgesi, Sağlık Geçmişi, İç Notlar, meta, save bar.
+- All UI-only with mock data + inline SVG image placeholders.
+
+### 2026-01 — Iteration 7: CRM ↔ Supabase live wiring (current)
+- New backend endpoints (no auth, per product decision — guard at proxy):
+  - `GET /api/crm/assessment-requests?status=&q=&limit=&offset=` — newest-first list, multi-status filter, ilike search over name/phone/complaint.
+  - `GET /api/crm/assessment-requests/{id}` — single record + `images: [{path, signed_url}]` (1 h signed URLs).
+  - `PATCH /api/crm/assessment-requests/{id}` — partial update of whitelisted fields only (`status`, `internal_notes`, `reviewed_by`, `reviewed_at`, `appointment_date`, `appointment_created`); extra fields rejected (Pydantic `extra=forbid`). Status → in_review/contacted auto-stamps `reviewed_at`; setting `appointment_date` auto-flags `appointment_created`.
+- `supabase_service.py` extended with `list_assessments`, `get_assessment`, `update_assessment`, `create_signed_urls`.
+- Frontend `pages/CRM.jsx` refactored to use real API (mock array removed). Same UI exactly: tabs, search (debounced 300 ms), KPIs, cards, drawer. Added: list loading & error states with "Tekrar dene", "Yenile" button in topbar, drawer loading state, drawer save error toast, real signed-URL image previews (click to open in new tab), editable `reviewed_by` input, editable `appointment_date` (`datetime-local`), `appointment_created` checkbox; `İncelendi` / `Son güncelleme` meta from `reviewed_at` / `updated_at`. After save the row is optimistically moved in/out of the current tab and sidebar counts refresh.
+- No new dependencies. Backend unchanged for the public form.
 - New route `/crm` → `pages/CRM.jsx`. Header/Footer/WhatsApp public chrome hidden for admin pages (added `isAdminPage` exclusion alongside existing `isLandingPage`).
 - **Layout**: left sidebar (Yeni Başvurular / İncelenenler / Randevular / Tamamlananlar / Arşiv) with active highlight + per-tab count badges + Medipodo branding + system-health footer card; sticky topbar with search, Filtrele button, notification bell, settings, and "Dr. Rana" user chip.
 - **KPI strip**: 4 cards (Bugün Gelen, Bekleyen, Bu Hafta Randevu, Ort. Yanıt Süresi) with colored accents.

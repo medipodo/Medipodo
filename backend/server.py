@@ -310,6 +310,125 @@ async def create_assessment_request(
 
 
 # ---------------------------------------------------------------------------
+# CRM endpoints — list / get / update (no auth in this iteration)
+# ---------------------------------------------------------------------------
+from supabase_service import (  # noqa: E402  (deferred — module already imported above)
+    create_signed_urls,
+    get_assessment,
+    list_assessments,
+    update_assessment,
+)
+
+CRM_ALLOWED_STATUS = ALLOWED_STATUS
+CRM_UPDATABLE_FIELDS = {
+    "status",
+    "internal_notes",
+    "reviewed_by",
+    "reviewed_at",
+    "appointment_date",
+    "appointment_created",
+}
+
+
+class CRMUpdate(BaseModel):
+    """Partial-update payload for an assessment record."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    status: Optional[str] = None
+    internal_notes: Optional[str] = None
+    reviewed_by: Optional[str] = None
+    reviewed_at: Optional[datetime] = None
+    appointment_date: Optional[datetime] = None
+    appointment_created: Optional[bool] = None
+
+
+def _public_row(row: dict) -> dict:
+    """Strip nothing — CRM sees the full record. Kept as a hook for the future."""
+    return row
+
+
+@api_router.get("/crm/assessment-requests")
+async def crm_list_requests(
+    status: List[str] = [],  # noqa: B006 — FastAPI uses query repetition
+    q: Optional[str] = None,
+    limit: int = 100,
+    offset: int = 0,
+):
+    statuses = [s for s in status if s in CRM_ALLOWED_STATUS]
+    if status and not statuses:
+        raise HTTPException(status_code=400, detail="Geçersiz status filtresi.")
+    limit = max(1, min(limit, 200))
+    offset = max(0, offset)
+    try:
+        rows = list_assessments(statuses=statuses or None, q=q, limit=limit, offset=offset)
+    except Exception as exc:  # noqa: BLE001
+        logger.exception("CRM list failed")
+        raise HTTPException(status_code=502, detail="Veriler alınamadı.") from exc
+    return {"items": [_public_row(r) for r in rows], "count": len(rows)}
+
+
+@api_router.get("/crm/assessment-requests/{record_id}")
+async def crm_get_request(record_id: str):
+    try:
+        row = get_assessment(record_id)
+    except Exception as exc:  # noqa: BLE001
+        logger.exception("CRM get failed")
+        raise HTTPException(status_code=502, detail="Kayıt alınamadı.") from exc
+    if not row:
+        raise HTTPException(status_code=404, detail="Kayıt bulunamadı.")
+
+    image_paths = row.get("image_paths") or []
+    images = create_signed_urls(image_paths, expires_in=3600) if image_paths else []
+
+    return {**_public_row(row), "images": images}
+
+
+@api_router.patch("/crm/assessment-requests/{record_id}")
+async def crm_update_request(record_id: str, payload: CRMUpdate):
+    data = payload.model_dump(exclude_unset=True)
+    if not data:
+        raise HTTPException(status_code=400, detail="Güncellenecek alan yok.")
+
+    # Whitelist (model already enforces but be explicit)
+    data = {k: v for k, v in data.items() if k in CRM_UPDATABLE_FIELDS}
+    if not data:
+        raise HTTPException(status_code=400, detail="Güncellenebilir alan yok.")
+
+    if "status" in data and data["status"] not in CRM_ALLOWED_STATUS:
+        raise HTTPException(status_code=400, detail="Geçersiz status değeri.")
+
+    if "internal_notes" in data and data["internal_notes"] is not None:
+        if len(data["internal_notes"]) > 8000:
+            raise HTTPException(status_code=400, detail="İç notlar çok uzun (>8000).")
+
+    if "reviewed_by" in data and data["reviewed_by"]:
+        if len(data["reviewed_by"]) > 120:
+            raise HTTPException(status_code=400, detail="reviewed_by çok uzun (>120).")
+
+    # Auto-fill reviewed_at when status moves to in_review / contacted and not set
+    if data.get("status") in {"in_review", "contacted"} and "reviewed_at" not in data:
+        data["reviewed_at"] = datetime.now(timezone.utc).isoformat()
+    # Auto-fill appointment_created when appointment_date provided
+    if data.get("appointment_date") and "appointment_created" not in data:
+        data["appointment_created"] = True
+
+    # Convert datetimes to ISO strings for PostgREST
+    for k in ("reviewed_at", "appointment_date"):
+        if k in data and isinstance(data[k], datetime):
+            data[k] = data[k].isoformat()
+
+    try:
+        updated = update_assessment(record_id, data)
+    except Exception as exc:  # noqa: BLE001
+        logger.exception("CRM update failed")
+        raise HTTPException(status_code=502, detail="Güncelleme başarısız.") from exc
+    if not updated:
+        raise HTTPException(status_code=404, detail="Kayıt bulunamadı.")
+    return _public_row(updated)
+
+
+# ---------------------------------------------------------------------------
 # App wiring
 # ---------------------------------------------------------------------------
 app.include_router(api_router)
