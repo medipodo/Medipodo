@@ -57,7 +57,21 @@ Public form at `/ucretsiz-on-degerlendirme` letting users submit a foot/nail pro
 - **Right-side drawer** (shadcn Sheet) with status header, WhatsApp Gönder / Randevu Oluştur buttons (UI only at this point), Durum select, photo grid, Şikayet, ağrı meter, Sorun Bölgesi, Sağlık Geçmişi, İç Notlar, meta, save bar.
 - All UI-only with mock data + inline SVG image placeholders.
 
-### 2026-01 — Iteration 7: CRM ↔ Supabase live wiring (current)
+### 2026-01 — Iteration 7: CRM ↔ Supabase live wiring
+- New backend endpoints (no auth, per product decision — guard at proxy):
+  - `GET /api/crm/assessment-requests?status=&q=&limit=&offset=` — newest-first list, multi-status filter, ilike search.
+  - `GET /api/crm/assessment-requests/{id}` — single record + 1-hour signed URLs for every image.
+  - `PATCH /api/crm/assessment-requests/{id}` — partial update of `status` / `internal_notes` / `reviewed_by` / `reviewed_at` / `appointment_date` / `appointment_created`. Pydantic `extra=forbid`. Auto-stamps `reviewed_at` on status → in_review/contacted; auto-flags `appointment_created` when `appointment_date` is set.
+- `supabase_service.py` extended with `list_assessments`, `get_assessment`, `update_assessment`, `create_signed_urls`.
+- Frontend `pages/CRM.jsx` refactored to use real API (mock array removed). Same UI exactly. Added loading/error states, "Tekrar dene" + "Yenile" buttons, drawer save-error toast, real signed-URL image previews, editable `reviewed_by` / `appointment_date` / `appointment_created`, `İncelendi` + `Son güncelleme` meta.
+
+### 2026-01 — Iteration 8: CRM isolation + auth seam (current)
+- New file `backend/crm_router.py` — every CRM route moved out of `server.py` into its own dedicated `APIRouter`. Public form endpoint stays in `server.py`.
+- All CRM endpoints now declare `dependencies=[Depends(require_admin)]`. `require_admin` is presently a no-op so behaviour is unchanged, but swapping in real auth later is a single-function edit — no route signatures or frontend code need to change.
+- All CRM endpoints tagged `crm` in OpenAPI for future tooling.
+- Public form (`/api/assessment-requests`) and CRM API (`/api/crm/*`) are now in physically separate files with separate routers — clean blast radius for any future change.
+- New file `CRM_PROTECTION.md` — ready-to-paste configs for Nginx Basic Auth, Cloudflare Zero Trust, Caddy, and Tailscale. Also documents the one-function edit needed for in-app auth.
+- No UI, frontend, or functional change. Verified: public form alive, CRM list/get/patch behave identically, OpenAPI cleanly lists the two CRM paths under tag `crm`.
 - New backend endpoints (no auth, per product decision — guard at proxy):
   - `GET /api/crm/assessment-requests?status=&q=&limit=&offset=` — newest-first list, multi-status filter, ilike search over name/phone/complaint.
   - `GET /api/crm/assessment-requests/{id}` — single record + `images: [{path, signed_url}]` (1 h signed URLs).

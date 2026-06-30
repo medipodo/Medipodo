@@ -311,7 +311,7 @@ Expected: `200 OK` + new row in `assessment_requests` + object(s) in `assessment
 
 ## 9. Intentionally NOT Implemented
 
-- CRM auth (`/crm` and `/api/crm/*` are open in this iteration — guard them at your reverse proxy / VPN / IP allowlist before exposing publicly).
+- CRM auth (`/crm` and `/api/crm/*` are open in this iteration — guard them at your reverse proxy / VPN / IP allowlist before exposing publicly. **See `CRM_PROTECTION.md` for ready-to-paste Nginx, Caddy, Cloudflare Zero Trust, and Tailscale configs.** The router is already isolated and the auth seam (`require_admin`) is ready to fill in if you later prefer in-app auth.)
 - WhatsApp / SMS / email notifications.
 - AI analysis.
 - End-user authentication.
