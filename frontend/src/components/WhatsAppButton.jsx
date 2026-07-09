@@ -5,7 +5,9 @@ import { siteInfo } from '../mock';
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     window.open(
-      `https://wa.me/${siteInfo.whatsapp}?text=Merhaba, Medipodo web sitenizden yazıyorum. Bilgi alabilir miyim?`,
+      `https://wa.me/${siteInfo.whatsapp}?text=${encodeURIComponent(
+        'Merhaba medipodo web sitesinden ulaşıyorum.'
+      )}`,
       '_blank'
     );
   };
@@ -15,7 +17,7 @@ const WhatsAppButton = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-40">
+    <div className="hidden lg:flex fixed bottom-6 right-6 flex-col gap-3 z-40">
       {/* Telefon Ara Butonu - Mavi */}
       <button
         onClick={handlePhoneClick}
@@ -39,7 +41,7 @@ const WhatsAppButton = () => {
           WhatsApp'tan Yazın
         </span>
         {/* Pulse animasyonu */}
-        <span className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-75"></span>
+        <span className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-75 pointer-events-none"></span>
       </button>
     </div>
   );

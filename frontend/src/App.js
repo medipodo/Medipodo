@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -130,6 +131,7 @@ function AppContent() {
         <Route path="/sikca-sorulan-sorular" element={<FAQ />} />
       </Routes>
       {!isChromeless && <Footer />}
+      {!isChromeless && <WhatsAppButton />}
     </>
   );
 }
