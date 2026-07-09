@@ -598,6 +598,16 @@ const PodologHangiHastaliklaraBakarBlog = () => {
                 Cevap, problemin nedenine göre değişir.
               </p>
 
+              <img
+                src="/images/blog/podolog-mu-dermatolog-mu.webp"
+                alt="Podolog mu Dermatolog mu? Görev farkları karşılaştırma tablosu"
+                width="1200"
+                height="900"
+                className="w-full h-auto rounded-xl shadow-lg mb-6"
+                loading="lazy"
+                decoding="async"
+              />
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-white rounded-xl shadow-md p-6 border-t-4 border-pink-500">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Dermatolog tercih edilebilecek durumlar:</h3>
