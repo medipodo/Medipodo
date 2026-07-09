@@ -392,6 +392,16 @@ const PodologHangiHastaliklaraBakarBlog = () => {
                 Diyabet Hastaları Neden Podoloğa Gitmeli?
               </h2>
 
+              <img
+                src="/images/blog/diyabet-hastalarinda-ayak-bakimi-podolog.webp"
+                alt="Diyabet hastalarında düzenli ayak kontrolünün önemi ve podolojik bakım"
+                width="1200"
+                height="900"
+                className="w-full h-auto rounded-xl shadow-lg mb-6"
+                loading="lazy"
+                decoding="async"
+              />
+
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Diyabet, ayak sağlığı açısından daha fazla dikkat gerektiren hastalıklardan biridir. Çünkü diyabete bağlı olarak sinir hasarı (nöropati), dolaşım problemleri ve yara iyileşmesinde gecikme gibi durumlar ortaya çıkabilir.
               </p>
@@ -625,6 +635,16 @@ const PodologHangiHastaliklaraBakarBlog = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
                 Podolog İlk Muayenede Ne Yapar?
               </h2>
+
+              <img
+                src="/images/blog/serdar-ceylan-podolog-muayene.webp"
+                alt="Podolog Serdar Ceylan hastasına podolojik muayene uygularken"
+                width="1200"
+                height="1200"
+                className="w-full h-auto rounded-xl shadow-lg mb-6"
+                loading="lazy"
+                decoding="async"
+              />
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Podolog değerlendirmesi yalnızca mevcut şikâyete bakılarak yapılmaz.
