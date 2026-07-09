@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'podolog-hangi-hastaliklara-bakar',
+    title: 'Podolog Hangi Hastalıklara Bakar? Hangi Durumlarda Podoloğa Gitmelisiniz? (2026 Rehberi)',
+    slug: 'podolog-hangi-hastaliklara-bakar',
+    excerpt: 'Ayakta oluşan batık tırnak, nasır, mantar, çatlak topuk ve benzeri sorunlarda podolog hangi tedavileri uygular? Podoloğa hangi durumlarda gidilmesi gerektiğini öğrenin.',
+    image: '/images/blog/podolog-hangi-hastaliklara-bakar-kapak.webp',
+    date: '9 Ocak 2026',
+    updatedAt: '2026-01-09',
+    readTime: '12 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Podolog', 'Ayak Sağlığı', 'Batık Tırnak', 'Nasır', 'Tırnak Mantarı', 'Diyabetik Ayak', 'Medikal Ayak Bakımı', '2026 Rehberi'],
+    content: 'Özel blog sayfası: /blog/podolog-hangi-hastaliklara-bakar'
+  },
+  {
     id: 'ankara-podoloji-bolumu-olan-hastaneler',
     title: 'Ankara\'da Podoloji Bölümü Olan Hastaneler',
     slug: 'ankara-podoloji-bolumu-olan-hastaneler',

@@ -46,6 +46,7 @@ import PodologFiyatlariAnkaraBlog from './pages/PodologFiyatlariAnkaraBlog';
 import YazlikAyakkabiSecimiBlog from './pages/YazlikAyakkabiSecimiBlog';
 import TirnakTeliFiyatlariBlog from './pages/TirnakTeliFiyatlariBlog';
 import AnkaraPodolojiHastanelerBlog from './pages/AnkaraPodolojiHastanelerBlog';
+import PodologHangiHastaliklaraBakarBlog from './pages/PodologHangiHastaliklaraBakarBlog';
 import AyakAnalizi from './pages/AyakAnalizi';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -117,6 +118,7 @@ function AppContent() {
         <Route path="/blog/yaz-aylarinda-ayakkabi-secimi" element={<YazlikAyakkabiSecimiBlog />} />
         <Route path="/blog/tirnak-teli-fiyatlari-ankara" element={<TirnakTeliFiyatlariBlog />} />
         <Route path="/blog/ankara-podoloji-bolumu-olan-hastaneler" element={<AnkaraPodolojiHastanelerBlog />} />
+        <Route path="/blog/podolog-hangi-hastaliklara-bakar" element={<PodologHangiHastaliklaraBakarBlog />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/hakkimizda" element={<About />} />
         <Route path="/kadromuz" element={<Team />} />
