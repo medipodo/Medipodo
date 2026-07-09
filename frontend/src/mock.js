@@ -473,10 +473,10 @@ export const galleryImages = [
   },
   {
     id: 3,
-    before: '/images/gallery/g3.webp',
-    after: '/images/gallery/g3.webp',
-    title: 'Topuk Bakımı Sonuçları',
-    description: 'Derin bakım ile yenilenen ayaklar'
+    before: '/images/gallery/tirnak-mantari-pedizone.webp',
+    after: '/images/gallery/tirnak-mantari-pedizone.webp',
+    title: 'Tırnak mantarı sonucu',
+    description: 'Pedizone mantar serumuyla desteklenen sonuç harika!'
   },
   {
     id: 4,
