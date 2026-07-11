@@ -759,7 +759,7 @@ export const teamMembers = [
     name: 'Sevda Karataş',
     title: 'Usta Öğretici',
     bio: 'Yılların ustalık deneyimini öğrencilerine aktararak onların profesyonel bir başlangıç yapmasını sağlıyor.',
-    image: '/images/team/sevda-karatas.jpg',
+    image: '/images/team/sevda-karatas.webp',
     specialties: ['Evde Bakım', 'Mantar Tedavisi', 'Önleyici Bakım']
   },
   {
@@ -780,6 +780,14 @@ export const teamMembers = [
   },
   {
     id: 5,
+    name: 'Semih Ceylan',
+    title: 'Satış Müdürü',
+    bio: 'Ayak sağlığı ürünleri İç Anadolu - Ankara satış sorumlusu, Pedizone bayi temsilcisi.',
+    image: '/images/team/semih-ceylan.webp',
+    specialties: ['Satış Yönetimi', 'Bayi Temsilciliği', 'Ayak Sağlığı Ürünleri']
+  },
+  {
+    id: 6,
     name: 'İrem Boztepe',
     title: 'Stajyer Öğrenci',
     bio: "Medipodo'da mesleki stajını sürdürmektedir. Deneyimli ekibimizin gözetiminde karşılama, hazırlık ve uygulama öncesi destek çalışmalarına katkı sağlamaktadır.",
