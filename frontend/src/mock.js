@@ -751,16 +751,16 @@ export const teamMembers = [
     name: 'Serdar Ceylan',
     title: 'Podolog',
     bio: 'Uzun yıllar podoloji alanında deneyimli; ortoniksi uygulamaları, batık tırnak, tırnak ve ayak mantarı alanında başarısını ispatlamış uzman.',
-    image: '/images/team/serdar-ceylan.jpg',
+    image: '/images/slider/mobile/batik-tirnak-podolog.webp',
     specialties: ['Ortoniksi Uygulamaları', 'Batık Tırnak', 'Tırnak Mantarı']
   },
   {
     id: 2,
-    name: 'Şaziye Kunt',
-    title: 'Uzm. Refleksolog',
-    bio: 'Medikal el ve ayak bakımı konusunda deneyimli, refleksoloji uygulayıcısı.',
-    image: '/images/team/saziye-kunt.jpg',
-    specialties: ['Medikal Pediküir', 'Nasır Tedavisi', 'Topuk Bakımı']
+    name: 'Selin Salur',
+    title: 'Master Nail Technician | Protez Tırnak Uzmanı & Medikal Pedikür Uygulayıcısı',
+    bio: 'Modern protez tırnak teknikleri, tırnak koruma uygulamaları ve medikal pedikür alanında profesyonel hizmet vermektedir.',
+    image: '/images/team/selin-salur.webp',
+    specialties: ['Protez Tırnak', 'Tırnak Koruma', 'Medikal Pedikür']
   },
   {
     id: 3,
@@ -777,6 +777,14 @@ export const teamMembers = [
     bio: 'Güler yüzlü ve deneyimli maniküristimiz, sağlıklı, hijyenik ve estetik el bakımı hizmeti sağlar.',
     image: '/images/team/Yaren-Akkaya.webp',
     specialties: ['Manikür', 'Çocuk El-Ayak Bakımı', 'Pedikür', 'El Bakımı']
+  },
+  {
+    id: 5,
+    name: 'İrem Boztepe',
+    title: 'Stajyer Öğrenci',
+    bio: "Medipodo'da mesleki stajını sürdürmektedir. Deneyimli ekibimizin gözetiminde karşılama, hazırlık ve uygulama öncesi destek çalışmalarına katkı sağlamaktadır.",
+    image: '/images/team/irem-boztepe.webp',
+    specialties: ['Karşılama', 'Hazırlık', 'Uygulama Öncesi Destek']
   }
 ];
 
