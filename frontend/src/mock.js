@@ -756,19 +756,19 @@ export const teamMembers = [
   },
   {
     id: 2,
-    name: 'Selin Salur',
-    title: 'Master Nail Technician | Protez Tırnak Uzmanı & Medikal Pedikür Uygulayıcısı',
-    bio: 'Modern protez tırnak teknikleri, tırnak koruma uygulamaları ve medikal pedikür alanında profesyonel hizmet vermektedir.',
-    image: '/images/team/selin-salur.webp',
-    specialties: ['Protez Tırnak', 'Tırnak Koruma', 'Medikal Pedikür']
-  },
-  {
-    id: 3,
     name: 'Sevda Karataş',
     title: 'Usta Öğretici',
     bio: 'Yılların ustalık deneyimini öğrencilerine aktararak onların profesyonel bir başlangıç yapmasını sağlıyor.',
     image: '/images/team/sevda-karatas.jpg',
     specialties: ['Evde Bakım', 'Mantar Tedavisi', 'Önleyici Bakım']
+  },
+  {
+    id: 3,
+    name: 'Selin Salur',
+    title: 'Master Nail Technician',
+    bio: 'Modern protez tırnak teknikleri, tırnak koruma uygulamaları ve medikal pedikür alanında profesyonel hizmet vermektedir.',
+    image: '/images/team/selin-salur.webp',
+    specialties: ['Protez Tırnak', 'Tırnak Koruma', 'Medikal Pedikür']
   },
   {
     id: 4,
