@@ -20,12 +20,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://medipodo.com/hizmet/batik-tirnak</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<url>
+  <loc>https://medipodo.com/hizmet/batik-tirnak</loc>
+  <lastmod>2026-07-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+
+  <image:image>
+    <image:loc>https://medipodo.com/images/services/batik-tirnak/batik1.jpg</image:loc>
+    <image:title>Batık Tırnak Tedavisi Öncesi</image:title>
+    <image:caption>Batık tırnak görünümü.</image:caption>
+  </image:image>
+
+  <image:image>
+    <image:loc>https://medipodo.com/images/services/batik-tirnak/batik2.jpg</image:loc>
+    <image:title>Batık Tırnak Tedavisi</image:title>
+    <image:caption>Medipodo'da uygulanan batık tırnak tedavisi.</image:caption>
+  </image:image>
+
+  <image:image>
+    <image:loc>https://medipodo.com/images/services/batik-tirnak/batik3.jpg</image:loc>
+    <image:title>Batık Tırnak Tedavisi Sonrası</image:title>
+    <image:caption>Batık tırnak tedavisi sonrası görünüm.</image:caption>
+  </image:image>
+
+</url>
   <url>
     <loc>https://medipodo.com/hizmet/tirnak-mantari</loc>
     <lastmod>2026-03-12</lastmod>
@@ -57,11 +76,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://medipodo.com/galeri</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+  <loc>https://medipodo.com/galeri</loc>
+  <lastmod>2026-07-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+
+  <image:image>
+    <image:loc>https://medipodo.com/images/gallery/tirnak-mantari-pedizone.webp</image:loc>
+    <image:title>Tırnak Mantarı Tedavisi Öncesi ve Sonrası</image:title>
+    <image:caption>Medipodo Ankara Podolog tarafından uygulanan tırnak mantarı bakım süreci.</image:caption>
+  </image:image>
+</url>
   <url>
     <loc>https://medipodo.com/blog</loc>
     <lastmod>2026-05-01</lastmod>
@@ -142,7 +167,7 @@
   </url>
   <url>
     <loc>https://medipodo.com/blog/baglica-podolog-hizmetleri</loc>
-    <lastmod>2025-11-28</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -344,7 +369,7 @@
   </url>
   <url>
     <loc>https://medipodo.com/baglica-podolog-fiyatlari</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
