@@ -57,7 +57,7 @@ const ServiceDetail = () => {
       'nasir-tedavisi': [2], // Hiperkeratoz
       'refleksoloji': [], // Refleksoloji görseli yok
       'diyabetik-ayak': [2, 3], // Ayak bakımı
-      'evde-bakim': [3, 1, 10, 5] // Evde Bakım
+      'evde-bakim': [3, 1, 10, 5], // Evde Bakım
       'ayak-bakimi': [3, 11, 4, 5, 7, 8] // Medikal Ayak Bakımı kanks :))
     };
 
