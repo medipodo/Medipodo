@@ -85,11 +85,11 @@ const BaglicaPodologFiyatlari = () => {
   };
 
   const priceList = [
-    { service: "Medikal ayak bakımı", price: "₺2.000 – ₺3.000" },
+    { service: "Medikal ayak bakımı (Komlpe Detaylı Bakım)", price: "₺2.500 – ₺3.000" },
     { service: "Batık tırnak tedavisi", price: "₺1.000 – ₺2.000", link: "/hizmet/batik-tirnak" },
-    { service: "B/S Bant Uygulaması", price: "₺2.000 – ₺3.000" },
+    { service: "B/S Bant Uygulaması", price: "₺2.500 – ₺3.000" },
     { service: "Tırnak mantarı bakımı", price: "₺1.000 – ₺2.000", link: "/hizmet/tirnak-mantari" },
-    { service: "Nasır temizleme", price: "₺500 – ₺1.000", link: "/hizmet/nasir-tedavisi" },
+    { service: "Nasır temizleme", price: "₺500 – ₺1.500", link: "/hizmet/nasir-tedavisi" },
     { service: "Topuk çatlak bakımı", price: "₺1.000 – ₺1.500" },
     { service: "Evde ayak bakımı", price: "₺3.500 – ₺4.500", highlight: true }
   ];
