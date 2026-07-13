@@ -72,7 +72,33 @@ const TirnakMantariBlog = () => {
       }
     ]
   };
-
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Onikomikoz (Tırnak Mantarı) Tedavisi: Podolojik Bakışla Neden, Süreç ve Kalıcı Çözümler",
+  "description": "Tırnak mantarı (onikomikoz) neden oluşur, neden geçmez ve podolojik tedavi süreci nasıl ilerler? Bilimsel bilgiler ve Medipodo yaklaşımı.",
+  "image": [
+    "https://medipodo.com/images/blog/tirnak-mantari/onikomikoz.webp"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Podolog Serdar Ceylan"
+  },
+  "publisher": {
+    "@type": "MedicalBusiness",
+    "name": "Medipodo Ayak Sağlığı Merkezi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://medipodo.com/images/logo.webp"
+    }
+  },
+  "datePublished": "2025-11-16",
+  "dateModified": "2026-07-14",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://medipodo.com/blog/tirnak-mantari-tedavisi"
+  }
+};
   return (
     <>
       <Helmet>
@@ -94,9 +120,13 @@ const TirnakMantariBlog = () => {
         <meta name="twitter:description" content="Tırnak mantarı neden geçmez? Bilimsel açıklama ve tedavi süreci." />
         <meta name="twitter:image" content="https://medipodo.com/images/blog/tirnak-mantari/onikomikoz.webp" />
 
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
+<script type="application/ld+json">
+  {JSON.stringify(faqSchema)}
+</script>
+
+<script type="application/ld+json">
+  {JSON.stringify(articleSchema)}
+</script>
       </Helmet>
 
       <article className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
