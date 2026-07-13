@@ -195,11 +195,11 @@ const TirnakTeliFiyatlariBlog = () => {
                   <tbody className="divide-y divide-gray-200">
                     <tr className="hover:bg-blue-50 transition-colors">
                       <td className="px-5 py-4 font-medium text-gray-900">Tek tırnak uygulaması</td>
-                      <td className="px-5 py-4 text-gray-700">2.500 – 3.500 TL</td>
+                      <td className="px-5 py-4 text-gray-700">3.000 – 4.000 TL</td>
                     </tr>
                     <tr className="hover:bg-blue-50 transition-colors bg-gray-50">
                       <td className="px-5 py-4 font-medium text-gray-900">İki tırnak uygulama</td>
-                      <td className="px-5 py-4 text-gray-700">5.000 – 7.000 TL</td>
+                      <td className="px-5 py-4 text-gray-700">6.000 – 7.000 TL</td>
                     </tr>
                     <tr className="hover:bg-blue-50 transition-colors">
                       <td className="px-5 py-4 font-medium text-gray-900">Kontrol / bakım seansları</td>
