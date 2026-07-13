@@ -56,8 +56,9 @@ const ServiceDetail = () => {
       'topuk-bakimi': [3, 6, 2], // Topuk bakımı
       'nasir-tedavisi': [2], // Hiperkeratoz
       'refleksoloji': [], // Refleksoloji görseli yok
-      'diyabetik-ayak': [2, 3] // Ayak bakımı
+      'diyabetik-ayak': [2, 3], // Ayak bakımı
       'evde-bakim': [3, 1, 10, 5] // Evde Bakım
+      'ayak-bakimi': [3, 11, 4, 5, 7, 8] // Medikal Ayak Bakımı kanks :))
     };
 
     const relatedIds = serviceGalleryMap[serviceId] || [];
