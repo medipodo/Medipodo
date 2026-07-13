@@ -52,11 +52,12 @@ const ServiceDetail = () => {
   const getRelatedGallery = () => {
     const serviceGalleryMap = {
       'batik-tirnak': [7, 8, 1], // Batık tırnak görselleri
-      'tirnak-mantari': [10, 11, 4, 5], // Tırnak mantarı + onychogryphosis + restorasyon
+      'tirnak-mantari': [10, 11, 4, 5, 3], // Tırnak mantarı + onychogryphosis + restorasyon
       'topuk-bakimi': [3, 6, 2], // Topuk bakımı
       'nasir-tedavisi': [2], // Hiperkeratoz
       'refleksoloji': [], // Refleksoloji görseli yok
       'diyabetik-ayak': [2, 3] // Ayak bakımı
+      'evde-bakim': [3, 1, 10, 5] // Evde Bakım
     };
 
     const relatedIds = serviceGalleryMap[serviceId] || [];
