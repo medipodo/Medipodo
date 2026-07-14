@@ -102,7 +102,7 @@ const About = () => {
                 </div>
                 <div className="md:col-span-3 text-center md:text-left">
                   <span className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full mb-3 tracking-wide">
-                    KURUCU · UZMAN PODOLOG
+                    KURUCU PODOLOG
                   </span>
                   <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-3">
                     Uzman Ellerde Ayak Sağlığı

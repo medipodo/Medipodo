@@ -284,16 +284,16 @@ const OnDegerlendirme = () => {
                   <img
                     src="/images/team/podolog-serdar-ceylan.webp"
                     alt="Podolog Serdar Ceylan - Medipodo Ankara"
-                    className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover object-top border-4 border-white shadow-xl ring-2 ring-blue-100"
+                    className="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover object-top border-4 border-white shadow-2xl ring-2 ring-blue-100"
                     loading="eager"
                     fetchPriority="high"
-                    width="192"
-                    height="192"
+                    width="256"
+                    height="256"
                   />
                   {/* Çevrimiçi göstergesi - yanıp söner (ping) */}
-                  <span className="absolute bottom-2 right-2 flex h-6 w-6 md:h-7 md:w-7" aria-label="Çevrimiçi">
+                  <span className="absolute bottom-3 right-3 flex h-7 w-7 md:h-8 md:w-8" aria-label="Çevrimiçi">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-6 w-6 md:h-7 md:w-7 bg-green-500 border-[3px] border-white shadow"></span>
+                    <span className="relative inline-flex rounded-full h-7 w-7 md:h-8 md:w-8 bg-green-500 border-[3px] border-white shadow"></span>
                   </span>
                 </div>
                 <div className="mt-3 flex items-center gap-2">

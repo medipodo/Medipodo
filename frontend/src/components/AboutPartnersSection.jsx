@@ -1,4 +1,12 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
+
+const ECOSYSTEM_BRANDS = [
+  { key: 'pedizone',  name: 'PediZone',  tagline: 'Ayak Sağlığı Ürünleri',              href: 'https://pedizone.com/',  hotspot: { left: 22, top: 28, width: 12, height: 60 }, color: '#DC2626' },
+  { key: 'medipodo',  name: 'MediPodo',  tagline: 'Podoloji Hizmetleri',                href: '/',                       hotspot: { left: 39, top: 28, width: 14, height: 60 }, color: '#2563EB', self: true },
+  { key: 'medieste',  name: 'MediEste',  tagline: 'Sağlıklı Güzellik',                  href: 'https://medieste.com/',  hotspot: { left: 56, top: 28, width: 12, height: 60 }, color: '#10B981' },
+  { key: 'ayaktakip', name: 'AyakTakip', tagline: 'Akıllı Takip · Sağlıklı Adımlar',    href: 'https://ayaktakip.com/', hotspot: { left: 73, top: 20, width: 14, height: 68 }, color: '#0EA5E9' },
+];
 
 const aboutPartners = [
   {
@@ -117,6 +125,67 @@ const AboutPartnersSection = () => {
             Kullandığımız sistemler, ürünler ve destek hizmetleri; danışanlarımıza
             daha kapsamlı ve güvenilir bir deneyim sunmamıza yardımcı olur.
           </p>
+        </div>
+
+        {/* Ekosistem — Biz Birlikte Daha Güçlüyüz */}
+        <div className="max-w-6xl mx-auto mb-14">
+          <div className="text-center mb-6 max-w-3xl mx-auto">
+            <h3 className="font-serif text-2xl md:text-3xl text-slate-900 mb-3">
+              Biz Birlikte Daha Güçlüyüz
+            </h3>
+            <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+              Podolog Serdar Ceylan öncülüğünde kurulan 4 marka; ayak sağlığından güzelliğe,
+              ürün geliştirmeden dijital takibe kadar bütüncül bir sağlık ekosistemi oluşturuyor.
+            </p>
+          </div>
+
+          {/* Tıklanabilir hotspot'lu görsel */}
+          <div className="relative rounded-3xl overflow-hidden shadow-xl bg-gray-50">
+            <img
+              src="/upload/ekosistem/ekosistem-serdar-ceylan.webp"
+              alt="Medipodo Ekosistem - PediZone, MediPodo, MediEste, AyakTakip markaları"
+              className="w-full h-auto block"
+              loading="lazy"
+            />
+            {ECOSYSTEM_BRANDS.map((b) => (
+              <a
+                key={b.key}
+                href={b.href}
+                target={b.self ? undefined : '_blank'}
+                rel={b.self ? undefined : 'noreferrer'}
+                className="absolute rounded-2xl hover:bg-white/10 transition-all"
+                style={{
+                  left: `${b.hotspot.left}%`,
+                  top: `${b.hotspot.top}%`,
+                  width: `${b.hotspot.width}%`,
+                  height: `${b.hotspot.height}%`,
+                }}
+                aria-label={b.name}
+              >
+                <span className="sr-only">{b.name}</span>
+              </a>
+            ))}
+          </div>
+
+          {/* Alttaki renkli marka kartları */}
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            {ECOSYSTEM_BRANDS.map((b) => (
+              <a
+                key={b.key}
+                href={b.href}
+                target={b.self ? undefined : '_blank'}
+                rel={b.self ? undefined : 'noreferrer'}
+                className="group bg-white border border-gray-200 rounded-2xl p-4 md:p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+                style={{ borderTop: `3px solid ${b.color}` }}
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-semibold text-slate-900">{b.name}</span>
+                  {!b.self && <ExternalLink size={14} className="text-slate-400" />}
+                </div>
+                <p className="text-xs md:text-sm text-slate-600">{b.tagline}</p>
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
