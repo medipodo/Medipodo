@@ -46,7 +46,7 @@ const HeroSlider = () => {
       ctaLink: '/iletisim'
     },
     {
-      mobileImage: '/images/slider/mobile/6.webp',
+      mobileImage: '/images/slider/mobile/serdar-ceylan-portre.webp',
       title: 'Medikal Ayak Bakımı',
       subtitle: 'Sağlıklı Ayaklar İçin',
       description: 'Hijyenik koşullarda profesyonel ayak bakımı ve destekleyici podolojik uygulamalar',

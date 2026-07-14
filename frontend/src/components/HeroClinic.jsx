@@ -58,7 +58,7 @@ const ROTATING = [
         <strong className="text-slate-800">Serdar Ceylan</strong>&apos;ın yıllar içinde geliştirdiği ayak sağlığı sistemi — sorunun kaynağına odaklanan bütüncül yaklaşım.
       </>
     ),
-    image: '/images/slider/mobile/6.webp',
+    image: '/images/slider/mobile/serdar-ceylan-portre.webp',
   },
   {
     highlight: 'dijital podoloji',
