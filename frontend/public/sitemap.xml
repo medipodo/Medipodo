@@ -4,15 +4,35 @@
 
   <url>
     <loc>https://medipodo.com/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://medipodo.com/images/team/podolog-serdar-ceylan.webp</image:loc>
+      <image:title>Podolog Serdar Ceylan - Medipodo Ankara</image:title>
+      <image:caption>Medipodo kurucusu Podolog Serdar Ceylan - Ankara Etimesgut Bağlıca ayak sağlığı merkezi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/images/medipodo-whatsapp-preview.jpg</image:loc>
+      <image:title>Medipodo Özel Sağlık Hizmet Birimi - Podolog Serdar Ceylan</image:title>
+      <image:caption>Medipodo Ankara podoloji merkezi - Özel Sağlık Hizmet Birimi</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://medipodo.com/hakkimizda</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://medipodo.com/images/team/podolog-serdar-ceylan.webp</image:loc>
+      <image:title>Podolog Serdar Ceylan - Medipodo Kurucusu</image:title>
+      <image:caption>Ankara Üniversitesi Podoloji mezunu, Medipodo kurucusu Podolog Serdar Ceylan</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://medipodo.com/upload/ekosistem/ekosistem-serdar-ceylan.webp</image:loc>
+      <image:title>Medipodo Ekosistem - PediZone, MediPodo, MediEste, AyakTakip</image:title>
+      <image:caption>Podolog Serdar Ceylan öncülüğünde kurulan sağlık markaları ekosistemi</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://medipodo.com/hizmetler</loc>
@@ -420,8 +440,13 @@
   </url>
   <url>
     <loc>https://medipodo.com/ucretsiz-on-degerlendirme</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://medipodo.com/images/team/podolog-serdar-ceylan.webp</image:loc>
+      <image:title>Ücretsiz Ön Değerlendirme - Podolog Serdar Ceylan</image:title>
+      <image:caption>Fotoğraf gönder, Podolog Serdar Ceylan ile ücretsiz ön değerlendirme al</image:caption>
+    </image:image>
   </url>
 </urlset>
