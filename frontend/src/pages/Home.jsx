@@ -56,7 +56,12 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Ankara Podolog | Medipodo Ayak Sağlığı ve Medikal Ayak Bakımı" />
         <meta property="og:description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır bakımı ve medikal ayak bakımı." />
-        <meta property="og:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta property="og:image" content="https://medipodo.com/images/medipodo-whatsapp-preview.jpg" />
+        <meta property="og:image:secure_url" content="https://medipodo.com/images/medipodo-whatsapp-preview.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Özel Sağlık Hizmet Birimi - Podolog Serdar Ceylan" />
         <meta property="og:url" content="https://medipodo.com/" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />
@@ -65,7 +70,7 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ankara Podolog | Medipodo Ayak Sağlığı ve Medikal Ayak Bakımı" />
         <meta name="twitter:description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır bakımı." />
-        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-og-home-v2.jpg" />
+        <meta name="twitter:image" content="https://medipodo.com/images/medipodo-whatsapp-preview.jpg" />
       </Helmet>
       <div className="min-h-screen">
         {/* SEO H1 - Görsel olarak gizli ama erişilebilir */}
