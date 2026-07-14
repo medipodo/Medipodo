@@ -54,8 +54,8 @@ const Home = () => {
         
         {/* Open Graph Meta Tags - WhatsApp, Facebook, LinkedIn önizlemesi için */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Ankara Podolog | Medipodo Ayak Sağlığı ve Medikal Ayak Bakımı" />
-        <meta property="og:description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır bakımı ve medikal ayak bakımı." />
+        <meta property="og:title" content="Ankara Podolog | Batık Tırnak, Nasır ve Medikal Ayak Bakımı - Medipodo" />
+        <meta property="og:description" content="Ankara Etimesgut Bağlıca'da profesyonel podoloji hizmeti. Batık tırnak, tırnak mantarı, nasır ve medikal ayak bakımı için uzman podolog Serdar Ceylan ile Medipodo'da." />
         <meta property="og:image" content="https://medipodo.com/images/medipodo-whatsapp-preview.jpg" />
         <meta property="og:image:secure_url" content="https://medipodo.com/images/medipodo-whatsapp-preview.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
@@ -68,8 +68,8 @@ const Home = () => {
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ankara Podolog | Medipodo Ayak Sağlığı ve Medikal Ayak Bakımı" />
-        <meta name="twitter:description" content="Ankara'da profesyonel podoloji hizmetleri. Batık tırnak, tırnak mantarı, nasır bakımı." />
+        <meta name="twitter:title" content="Ankara Podolog | Batık Tırnak, Nasır ve Medikal Ayak Bakımı - Medipodo" />
+        <meta name="twitter:description" content="Ankara Etimesgut Bağlıca'da profesyonel podoloji hizmeti. Batık tırnak, tırnak mantarı, nasır ve medikal ayak bakımı." />
         <meta name="twitter:image" content="https://medipodo.com/images/medipodo-whatsapp-preview.jpg" />
       </Helmet>
       <div className="min-h-screen">
