@@ -90,7 +90,7 @@ const About = () => {
                     <img
                       src="/images/team/podolog-serdar-ceylan.webp"
                       alt="Podolog Serdar Ceylan - Medipodo kurucusu Ankara podolog"
-                      className="w-64 h-64 md:w-72 md:h-72 rounded-2xl object-cover shadow-2xl border-4 border-white ring-1 ring-blue-100"
+                      className="w-64 h-64 md:w-72 md:h-72 rounded-2xl object-cover object-top shadow-2xl border-4 border-white ring-1 ring-blue-100"
                       loading="lazy"
                       width="288"
                       height="288"

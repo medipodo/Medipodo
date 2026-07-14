@@ -61,7 +61,7 @@ const Home = () => {
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1620" />
         <meta property="og:image:height" content="525" />
-        <meta property="og:image:alt" content="Özel Sağlık Hizmet Birimi - Podolog Serdar Ceylan" />
+        <meta property="og:image:alt" content="Medipodo Ankara Podolog Serdar Ceylan - Özel Sağlık Hizmet Birimi" />
         <meta property="og:url" content="https://medipodo.com/" />
         <meta property="og:site_name" content="Medipodo Ayak Sağlığı Merkezi" />
         <meta property="og:locale" content="tr_TR" />

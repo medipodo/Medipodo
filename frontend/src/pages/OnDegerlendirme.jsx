@@ -284,17 +284,30 @@ const OnDegerlendirme = () => {
                   <img
                     src="/images/team/podolog-serdar-ceylan.webp"
                     alt="Podolog Serdar Ceylan - Medipodo Ankara"
-                    className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 border-white shadow-xl ring-2 ring-blue-100"
+                    className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover object-top border-4 border-white shadow-xl ring-2 ring-blue-100"
                     loading="eager"
                     fetchPriority="high"
-                    width="128"
-                    height="128"
+                    width="192"
+                    height="192"
                   />
-                  <span className="absolute bottom-1 right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></span>
+                  {/* Çevrimiçi göstergesi - yanıp söner (ping) */}
+                  <span className="absolute bottom-2 right-2 flex h-6 w-6 md:h-7 md:w-7" aria-label="Çevrimiçi">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-6 w-6 md:h-7 md:w-7 bg-green-500 border-[3px] border-white shadow"></span>
+                  </span>
                 </div>
-                <p className="mt-3 text-sm md:text-base font-semibold text-blue-950">
-                  Podolog Serdar Ceylan
-                </p>
+                <div className="mt-3 flex items-center gap-2">
+                  <p className="text-sm md:text-base font-semibold text-blue-950">
+                    Podolog Serdar Ceylan
+                  </p>
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-50 text-green-700 text-[11px] font-semibold border border-green-200">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    Çevrimiçi
+                  </span>
+                </div>
                 <p className="text-xs text-gray-500">Medipodo Ayak Sağlığı Merkezi</p>
               </div>
               <h1
