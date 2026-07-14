@@ -278,9 +278,24 @@ const OnDegerlendirme = () => {
         <section className="pt-32 pb-12 bg-gradient-to-br from-blue-50 via-white to-blue-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-5 tracking-wide">
-                <Sparkles size={14} />
-                ÜCRETSİZ · 24 SAATTE GERİ DÖNÜŞ
+              {/* Podolog Serdar Ceylan */}
+              <div className="flex flex-col items-center mb-6">
+                <div className="relative">
+                  <img
+                    src="/images/team/podolog-serdar-ceylan.webp"
+                    alt="Podolog Serdar Ceylan - Medipodo Ankara"
+                    className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 border-white shadow-xl ring-2 ring-blue-100"
+                    loading="eager"
+                    fetchPriority="high"
+                    width="128"
+                    height="128"
+                  />
+                  <span className="absolute bottom-1 right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full"></span>
+                </div>
+                <p className="mt-3 text-sm md:text-base font-semibold text-blue-950">
+                  Podolog Serdar Ceylan
+                </p>
+                <p className="text-xs text-gray-500">Medipodo Ayak Sağlığı Merkezi</p>
               </div>
               <h1
                 className="text-4xl md:text-5xl font-bold text-blue-950 mb-5 leading-tight"
