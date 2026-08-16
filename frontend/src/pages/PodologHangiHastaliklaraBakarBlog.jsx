@@ -104,7 +104,7 @@ const PodologHangiHastaliklaraBakarBlog = () => {
               </div>
               <div className="flex items-center">
                 <Clock size={18} className="mr-2" />
-                <span>2026 Rehberi · 12 dakika okuma</span>
+                <span>9 Ağustos 2026 · 12 dakika okuma</span>
               </div>
             </div>
           </div>
