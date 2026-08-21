@@ -198,7 +198,7 @@ const BatikTirnakIltihapBlog = () => {
                 <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık bulunan bölgenin hijyenine dikkat edilmeli, ayağın uzun süre nemli kalmasına izin verilmemelidir. Ayak yıkandıktan sonra özellikle parmak çevresi dikkatlice kurulanmalıdır.</p>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">4. Tırnağı kurcalamayın</h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Tırnağın altına sivri cisim sokmak, tırnak kenarını kaldırmaya çalışmak veya şişmiş dokuyu sıkmak uygun değildir.</p>
-                <img src={`${imageBase}/batik-tirnak-iltihap-1.webp`} alt="Tırnak çevresine kontrolsüz ev müdahalesinden kaçınma" className="w-full h-auto rounded-lg shadow-md" />
+                <img src={`${imageBase}/batik-tirnak-iltihap-4.webp`} alt="İltihap bulguları görülen ayak başparmağı" className="w-full h-auto rounded-lg shadow-md" />
 
                 <hr />
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">İltihaplı Batık Tırnak Kesilir mi?</h2>
@@ -209,7 +209,7 @@ const BatikTirnakIltihapBlog = () => {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">İltihaplı Batık Tırnağa Antibiyotik Gerekir mi?</h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnakta kızarıklık görülmesi tek başına antibiyotik kullanılması gerektiği anlamına gelmez. Batığın oluşturduğu mekanik baskı çevre dokuda enfeksiyon olmadan da inflamasyona yol açabilir.</p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Özellikle enfeksiyonun çevre dokuya yayıldığını düşündüren durumlarda hekim değerlendirmesi gerekir. <strong className="font-semibold text-blue-950">Antibiyotik hekimin değerlendirmesi ve önerisi doğrultusunda kullanılmalıdır.</strong></p>
-                <img src={`${imageBase}/batik-tirnak-iltihap-4.webp`} alt="İltihap bulguları görülen ayak başparmağı" className="w-full h-auto rounded-lg shadow-md" />
+                <img src={`${imageBase}/batik-tirnak-iltihap-1.webp`} alt="Tırnak çevresine kontrolsüz ev müdahalesinden kaçınma" className="w-full h-auto rounded-lg shadow-md" />
 
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnakta Hangi Durumlarda Beklenmemeli?</h2>
                 <div className="overflow-x-auto not-prose"><table className="w-full border-collapse text-base"><thead><tr className="bg-blue-50"><th className="border border-gray-200 px-4 py-3 text-left">Durum</th><th className="border border-gray-200 px-4 py-3 text-left">Yaklaşım</th></tr></thead><tbody>{[
