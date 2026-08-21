@@ -6,6 +6,19 @@
 
 export const enrichedBlogPosts = [
   {
+    id: 'batik-tirnak-iltihaplanirsa-ne-yapilmali',
+    title: 'Batık Tırnak İltihaplanırsa Ne Yapılmalı?',
+    slug: 'batik-tirnak-iltihaplanirsa-ne-yapilmali',
+    excerpt: 'Batık tırnak iltihaplandığında şişlik, kızarıklık ve akıntı durumunda yapılması gerekenleri, kaçınılması gereken müdahaleleri ve ne zaman uzmana başvurulacağını öğrenin.',
+    image: '/images/blog/batik-tirnak-iltihap/batik-tirnak-iltihap-2.webp',
+    date: '21 Ağustos 2026',
+    updatedAt: '2026-08-21',
+    readTime: '15 dk',
+    author: 'Podolog Serdar Ceylan',
+    tags: ['Batık Tırnak', 'İltihap', 'Tırnak Sağlığı', 'Ayak Sağlığı', 'Podoloji', 'Ankara'],
+    content: 'Özel blog sayfası: /blog/batik-tirnak-iltihaplanirsa-ne-yapilmali'
+  },
+  {
     id: 'podolog-hangi-hastaliklara-bakar',
     title: 'Podolog Hangi Hastalıklara Bakar? Hangi Durumlarda Podoloğa Gitmelisiniz? (2026 Rehberi)',
     slug: 'podolog-hangi-hastaliklara-bakar',

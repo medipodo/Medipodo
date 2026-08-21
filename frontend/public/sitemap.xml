@@ -455,4 +455,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://medipodo.com/blog/batik-tirnak-iltihaplanirsa-ne-yapilmali</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://medipodo.com/images/blog/batik-tirnak-iltihap/batik-tirnak-iltihap-2.webp</image:loc>
+      <image:title>Batık tırnak iltihaplanırsa ne yapılmalı</image:title>
+      <image:caption>İltihaplanmış ve kızarık batık tırnak görünümü</image:caption>
+    </image:image>
+  </url>
 </urlset>
