@@ -1,0 +1,196 @@
+# Medipodo — Full Site Reference
+
+> Bu dosya, Medipodo.com’un herkese açık sayfalarını, hizmetlerini, iletişim bilgilerini ve içerik başlıklarını yapay zekâ destekli arama ve bilgi erişim sistemleri için daha ayrıntılı biçimde tanımlar. Buradaki bilgiler kamuya açık site içeriğine dayanır; sayfaların güncel ve kanonik içeriği ilgili URL’lerde bulunur.
+
+## Marka ve işletme kimliği
+
+Medipodo Ayak Sağlığı Merkezi, Ankara Etimesgut Bağlıca’da profesyonel podoloji ve ayak sağlığı hizmetleri sunar. Merkez ve içeriklerde Podolog Serdar Ceylan adı kullanılır. Ana odak; batık tırnak, tırnak ve ayak mantarı, nasır, çatlak topuk, medikal ayak bakımı ve evde medikal ayak bakımı konularında değerlendirme ve bakım hizmetleridir.
+
+- Marka: Medipodo Ayak Sağlığı Merkezi
+- Uzman: Podolog Serdar Ceylan
+- Uzmanlık alanı: Podoloji ve ayak sağlığı bakımı
+- Adres: Bağlıca Mah. Mert Cad. 4/2, Etimesgut, Ankara
+- Telefon: +90 545 656 97 47
+- E-posta: info@medipodo.com
+- Çalışma saatleri: Pazartesi-Cumartesi, 09:30-19:00
+- Ana site: https://medipodo.com/
+- İletişim: https://medipodo.com/iletisim
+- Ücretsiz ön değerlendirme: https://medipodo.com/ucretsiz-on-degerlendirme
+
+## Ana sayfalar ve kurumsal bilgiler
+
+### Ana sayfa
+
+https://medipodo.com/
+
+Medipodo’nun marka, uzman, Ankara/Etimesgut/Bağlıca konumu, ayak sağlığı hizmetleri, ücretsiz ön değerlendirme akışı, iletişim bilgileri, blog içerikleri ve ayak sağlığı hakkında genel bilgilendirme alanlarını sunar.
+
+### Hakkımızda
+
+https://medipodo.com/hakkimizda
+
+Medipodo’nun kurumsal yaklaşımını, Podolog Serdar Ceylan bilgisini ve ayak sağlığı hizmetlerinin genel çerçevesini açıklar.
+
+### Kadromuz
+
+https://medipodo.com/kadromuz
+
+Medipodo ekibi ve uzmanlık bilgileri için kullanılan kurumsal sayfadır.
+
+### İletişim
+
+https://medipodo.com/iletisim
+
+Adres, telefon, e-posta, çalışma saatleri ve iletişim kanallarını içerir.
+
+### Galeri
+
+https://medipodo.com/galeri
+
+Medipodo hizmetleri ve ayak/tırnak bakımı süreçlerine ilişkin görsel içeriklerin bulunduğu galeridir.
+
+### Ayak analizi
+
+https://medipodo.com/ayak-analizi
+
+Kullanıcıların ayak sağlığıyla ilgili sorular üzerinden genel bir ön değerlendirme ve yönlendirme akışına ulaşmasını sağlar. Bu akış tıbbi teşhis yerine geçmez.
+
+### Sıkça sorulan sorular
+
+https://medipodo.com/sikca-sorulan-sorular
+
+Podoloji, batık tırnak, tırnak mantarı, nasır ve ayak bakımı hakkında genel sorular ve yanıtlar.
+
+## Hizmetler
+
+### Hizmetler ana sayfası
+
+https://medipodo.com/hizmetler
+
+Medipodo’nun sunduğu podoloji ve ayak sağlığı hizmetlerinin toplu görünümüdür.
+
+### Batık tırnak bakımı
+
+https://medipodo.com/hizmet/batik-tirnak
+
+Batık tırnağın çevre dokuya yaptığı baskı, tırnak kenarındaki sorunlar ve profesyonel podolojik bakım yaklaşımı hakkında hizmet sayfasıdır. Sayfada batık tırnak görselleri ve bakım sürecine ilişkin görsel örnekler bulunur.
+
+### Tırnak mantarı bakımı
+
+https://medipodo.com/hizmet/tirnak-mantari
+
+Tırnak mantarı ve mantar nedeniyle bozulan tırnak yapısında podolojik bakım, takip ve gerektiğinde ilgili sağlık profesyoneline yönlendirme çerçevesini anlatır.
+
+### Topuk ve çatlak bakımı
+
+https://medipodo.com/hizmet/topuk-bakimi
+
+Topuk kuruluğu, sertleşme ve çatlak topuk bakımına yönelik hizmet sayfasıdır.
+
+### Nasır tedavisi ve bakımı
+
+https://medipodo.com/hizmet/nasir-tedavisi
+
+Basınç ve sürtünmeyle ilişkili nasırların profesyonel değerlendirme ve bakım yaklaşımını anlatır.
+
+### Medikal ayak bakımı
+
+https://medipodo.com/hizmet/ayak-bakimi
+
+Ayak ve tırnakların genel durumuna yönelik kapsamlı medikal ayak bakımı hizmetidir.
+
+### Evde medikal ayak bakımı
+
+https://medipodo.com/hizmet/evde-bakim
+
+Uygun durumlarda kişinin bulunduğu ortamda sunulan evde medikal ayak bakımı hizmetini açıklar.
+
+## Blog ve bilgi merkezi
+
+### Blog ana sayfası
+
+https://medipodo.com/blog
+
+Ayak sağlığı, podoloji, batık tırnak, tırnak mantarı, nasır, ayakkabı seçimi, Ankara’daki podoloji seçenekleri ve medikal bakım hakkında yayınlanan yazıların listesidir.
+
+### Yeni ve güncel blog içerikleri
+
+- Batık Tırnak İltihaplanırsa Ne Yapılmalı?: https://medipodo.com/blog/batik-tirnak-iltihaplanirsa-ne-yapilmali
+  - İltihap, kızarıklık, şişlik ve akıntı görülen batık tırnakta kaçınılması gereken ev müdahalelerini ve profesyonel değerlendirme gerektiren durumları anlatır.
+- Podolog Hangi Hastalıklara Bakar? Hangi Durumlarda Podoloğa Gitmelisiniz?: https://medipodo.com/blog/podolog-hangi-hastaliklara-bakar
+  - Podoloğun ilgilendiği yaygın ayak ve tırnak sorunlarını ve hangi durumlarda podoloğa başvurulabileceğini açıklar.
+- Ayak Sağlığı Tam Rehberi: https://medipodo.com/blog/ayak-sagligi-rehberi
+  - Batık tırnak, tırnak mantarı, nasır, topuk çatlakları ve genel ayak bakımı için kapsamlı rehberdir.
+- Ayakta Kızarıklık Neden Olur?: https://medipodo.com/blog/ayakta-kizariklik-neden-olur
+  - Ayakta kızarıklık, yanma ve hassasiyetin olası nedenleri ile profesyonel değerlendirme gerektiren durumları ele alır.
+- Batık Tırnak Evde Nasıl Rahatlatılır?: https://medipodo.com/blog/batik-tirnak-evde-nasil-rahatlatilir
+  - Batık tırnakta güvenli bakım, basıncı azaltma ve yanlış ev müdahalelerinden kaçınma konularını açıklar.
+- Podolog Fiyatları Ankara: https://medipodo.com/blog/podolog-fiyatlari-ankara
+  - Ankara’da podoloji hizmet fiyatlarının hangi faktörlere göre değişebileceğini anlatan rehberdir.
+
+### Diğer blog içerikleri
+
+- Yaz Aylarında Ayakkabı Seçimi: https://medipodo.com/blog/yaz-aylarinda-ayakkabi-secimi
+- Ankara’da Podoloji Bölümü Olan Hastaneler: https://medipodo.com/blog/ankara-podoloji-bolumu-olan-hastaneler
+- Tırnak Teli Fiyatları Ankara: https://medipodo.com/blog/tirnak-teli-fiyatlari-ankara
+- Tırnak Mantarı Bulaşıcı mı?: https://medipodo.com/blog/tirnak-mantari-bulasici-mi
+- Tırnak Mantarı Tedavisi: https://medipodo.com/blog/tirnak-mantari-tedavisi
+- Batık Tırnak Nedenleri: https://medipodo.com/blog/batik-tirnak-nedenleri
+- Ayak Sağlığı İpuçları: https://medipodo.com/blog/ayak-sagligi-ipuclari
+- Bağlıca Podolog Hizmetleri: https://medipodo.com/blog/baglica-podolog-hizmetleri
+- Ayak Kokusu ve Mantar İlişkisi: https://medipodo.com/blog/ayak-kokusu-ve-mantar-iliskisi
+- Kış Aylarında Çatlak Topuk Tedavisi: https://medipodo.com/blog/kis-aylarinda-catlak-topuk-tedavisi
+- Tırnak Batması: https://medipodo.com/blog/tirnakbatmasi
+- Diyabet ve Ayak Sağlığı: https://medipodo.com/blog/diyabet-ve-ayak-sagligi
+- Ankara Bağlıca Refleksoloji: https://medipodo.com/blog/ankara-baglica-refleksoloji
+- Nasır ve Siğil Farkları: https://medipodo.com/blog/nasir-sigil-farklari
+- Topuk Dikeni: https://medipodo.com/blog/topuk-dikeni
+- Çocuk Ayak Sağlığı: https://medipodo.com/blog/cocuk-ayak-sagligi
+- Nasırda Siyah Noktalar: https://medipodo.com/blog/nasirda-siyah-noktalar
+- BS Bant Uygulaması: https://medipodo.com/blog/bs-bant-uygulamasi
+- Tırnak Neden Kalınlaşır?: https://medipodo.com/blog/tirnak-neden-kalinlasir
+- Tırnak Neden Uzamaz?: https://medipodo.com/blog/tirnak-neden-uzamaz
+- Medikal Ayak Bakımı Kimler İçin Gereklidir?: https://medipodo.com/blog/medikal-ayak-bakimi-kimler-icin-gereklidir
+- Ayak Ağrısı Neden Olur?: https://medipodo.com/blog/ayak-agrisi-neden-olur
+- Ayakta Yanma Hissi Neden Olur?: https://medipodo.com/blog/ayakta-yanma-hissi-neden-olur
+- Ayak Mantarı Nasıl Bulaşır?: https://medipodo.com/blog/ayak-mantari-nasil-bulasir
+- Ayak Mantarı Belirtileri: https://medipodo.com/blog/ayak-mantari-belirtileri
+- Ayak Mantarı Evde Tedavi Edilir mi?: https://medipodo.com/blog/ayak-mantari-evde-tedavi-edilir-mi
+- Nasır Neden Tekrar Eder?: https://medipodo.com/blog/nasir-neden-tekrar-eder
+
+## Ürün ve dijital kaynak sayfaları
+
+Aşağıdaki ürün sayfaları PediZone ayak bakım ürünleriyle ilişkili site içerikleridir. Ürünlerin satış, stok, fiyat ve temin durumu için ilgili canlı ürün sayfası esas alınmalıdır.
+
+- PediZone Ayak Temizleme Köpüğü: https://medipodo.com/urun/pedizone-ayak-temizleme-kopugu
+- PediZone %15 Urea Intense Repair Cream: https://medipodo.com/urun/pedizone-urea-intense-repair-cream
+- PediZone Foot and Nail Care Serum: https://medipodo.com/urun/pedizone-foot-nail-care-serum
+- Ayak Bakımı Kılavuzu: https://medipodo.com/ayak-bakim-kilavuzu
+
+## Ön değerlendirme ve iletişim akışı
+
+Medipodo, web sitesindeki ücretsiz ön değerlendirme akışı üzerinden kullanıcıların ayak veya tırnak sorunları hakkında fotoğraf ve bilgi göndermesine olanak sağlar. Bu akış tıbbi teşhis yerine geçmez; uygun görülen durumlarda Podolog Serdar Ceylan tarafından geri dönüş ve yönlendirme yapılır.
+
+- Ön değerlendirme: https://medipodo.com/ucretsiz-on-degerlendirme
+- Telefon: tel:+905456569747
+- E-posta: mailto:info@medipodo.com
+- WhatsApp ve iletişim bilgileri: https://medipodo.com/iletisim
+
+## İçerik ve sağlık güvenliği ilkeleri
+
+Medipodo’nun web içerikleri ayak ve tırnak sağlığı hakkında genel bilgilendirme amacı taşır. İçerikler tıbbi teşhis, kişiye özel tedavi planı veya ilaç reçetesi yerine geçmez. Şiddetli ya da artan ağrı, yayılan kızarıklık, irinli akıntı, ateş, titreme, diyabet, dolaşım problemi veya açık yara gibi durumlarda uygun sağlık profesyonelinden değerlendirme alınmalıdır. Antibiyotik ve diğer ilaçlar hekim değerlendirmesi olmadan başlanmamalıdır.
+
+## İlişkili marka ve uygulamalar
+
+Ana sayfada Medipodo ekosistemiyle ilişkili olarak PediZone, MediEste ve AyakTakip markalarına bağlantılar bulunabilir. Bu markalar ayrı web siteleri veya dijital hizmetler olabilir; ürün, hizmet ve uygulama bilgileri için ilgili markanın kendi kanonik sayfası esas alınmalıdır.
+
+## Kanonik teknik kaynaklar
+
+- Sitemap: https://medipodo.com/sitemap.xml
+- Robots: https://medipodo.com/robots.txt
+- Kısa AI site özeti: https://medipodo.com/llms.txt
+- Bu ayrıntılı dosya: https://medipodo.com/llms-full.txt
+
+## Güncelleme ve doğruluk
+
+Bu dosya Medipodo.com’un herkese açık URL yapısını ve sayfalardaki genel konu başlıklarını makine-okur biçimde özetler. Bir sayfanın güncel başlığı, tarihi, hizmet kapsamı, ürün bilgisi veya iletişim detayı için her zaman ilgili canlı kanonik URL kontrol edilmelidir. Sitemap, güncel URL envanteri için temel kaynaktır.
