@@ -1,0 +1,51 @@
+# Medipodo
+
+> Medipodo, Ankara Etimesgut Bağlıca'da Podolog Serdar Ceylan tarafından sunulan profesyonel podoloji ve ayak sağlığı hizmetleri merkezidir.
+
+## Hakkında
+
+- Marka: Medipodo Ayak Sağlığı Merkezi
+- Uzman: Podolog Serdar Ceylan
+- Konum: Bağlıca Mah. Mert Cad. 4/2, Etimesgut, Ankara
+- Telefon: +90 545 656 97 47
+- E-posta: info@medipodo.com
+- Çalışma saatleri: Pazartesi-Cumartesi, 09:30-19:00
+- Ana sayfa: https://medipodo.com/
+- İletişim: https://medipodo.com/iletisim
+- Ücretsiz ön değerlendirme: https://medipodo.com/ucretsiz-on-degerlendirme
+
+## Hizmetler
+
+- Batık tırnak bakımı ve değerlendirmesi: https://medipodo.com/hizmet/batik-tirnak
+- Tırnak mantarı bakımı ve takibi: https://medipodo.com/hizmet/tirnak-mantari
+- Topuk ve çatlak bakımı: https://medipodo.com/hizmet/topuk-bakimi
+- Nasır tedavisi ve bakımı: https://medipodo.com/hizmet/nasir-tedavisi
+- Medikal ayak bakımı: https://medipodo.com/hizmet/ayak-bakimi
+- Evde medikal ayak bakımı: https://medipodo.com/hizmet/evde-bakim
+- Tüm hizmetler: https://medipodo.com/hizmetler
+
+## Blog ve rehberler
+
+- Blog ana sayfası: https://medipodo.com/blog
+- Batık Tırnak İltihaplanırsa Ne Yapılmalı?: https://medipodo.com/blog/batik-tirnak-iltihaplanirsa-ne-yapilmali
+- Podolog Hangi Hastalıklara Bakar?: https://medipodo.com/blog/podolog-hangi-hastaliklara-bakar
+- Batık Tırnak Evde Nasıl Rahatlatılır?: https://medipodo.com/blog/batik-tirnak-evde-nasil-rahatlatilir
+- Ayak Sağlığı Rehberi: https://medipodo.com/blog/ayak-sagligi-rehberi
+- Tırnak Mantarı Tedavisi: https://medipodo.com/blog/tirnak-mantari-tedavisi
+- Ayak mantarı belirtileri: https://medipodo.com/blog/ayak-mantari-belirtileri
+- Sık sorulan sorular: https://medipodo.com/sikca-sorulan-sorular
+
+## Kurumsal ve kaynaklar
+
+- Hakkımızda: https://medipodo.com/hakkimizda
+- Kadromuz: https://medipodo.com/kadromuz
+- Galeri: https://medipodo.com/galeri
+- Sitemap: https://medipodo.com/sitemap.xml
+
+## İçerik ilkesi
+
+Medipodo içerikleri ayak ve tırnak sağlığı hakkında bilgilendirme amacı taşır. İnternet üzerindeki içerikler tıbbi teşhis veya kişiye özel tedavi önerisi yerine geçmez. Şiddetli ağrı, yayılan kızarıklık, akıntı, ateş, diyabet veya dolaşım problemi gibi durumlarda uygun sağlık profesyonelinden değerlendirme alınmalıdır.
+
+## Güncelleme
+
+Bu dosya, Medipodo'nun herkese açık sayfalarına ve iletişim bilgilerine dayalı kısa bir içerik kataloğudur. Güncel sayfa listesi için sitemap.xml kullanılmalıdır.
