@@ -158,23 +158,23 @@ const BatikTirnakIltihapBlog = () => {
 
         <section className="py-8 bg-white">
           <div className="container mx-auto px-4">
-            <article className="max-w-4xl mx-auto prose prose-lg max-w-none">
-              <div className="text-gray-700 leading-relaxed space-y-6">
-                <p>Batık tırnağın çevresinde kızarıklık, şişlik, hassasiyet veya akıntı oluşması, tırnak kenarındaki dokunun belirgin şekilde tahriş olduğunu ve bazı durumlarda enfeksiyon gelişmiş olabileceğini düşündürür. Özellikle <strong className="font-semibold text-blue-950">irinli akıntı, giderek artan ağrı, yayılan kızarıklık veya belirgin ısı artışı</strong> varsa bölgeyi evde kesmeye, oymaya ya da tırnak kenarını çıkarmaya çalışmak yerine sağlık profesyoneli tarafından değerlendirilmesi daha doğru olur.</p>
-                <p>Batık tırnak yalnızca tırnağın yanlış uzamasından ibaret değildir. Tırnak kenarı çevredeki dokuya sürekli baskı yaptığında bölgede inflamasyon gelişebilir. Bu baskı devam ettikçe doku daha hassas hale gelebilir, şişebilir ve enfeksiyona açık bir alan oluşabilir.</p>
+            <article className="max-w-4xl mx-auto text-left">
+              <div className="text-left">
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnağın çevresinde kızarıklık, şişlik, hassasiyet veya akıntı oluşması, tırnak kenarındaki dokunun belirgin şekilde tahriş olduğunu ve bazı durumlarda enfeksiyon gelişmiş olabileceğini düşündürür. Özellikle <strong className="font-semibold text-blue-950">irinli akıntı, giderek artan ağrı, yayılan kızarıklık veya belirgin ısı artışı</strong> varsa bölgeyi evde kesmeye, oymaya ya da tırnak kenarını çıkarmaya çalışmak yerine sağlık profesyoneli tarafından değerlendirilmesi daha doğru olur.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnak yalnızca tırnağın yanlış uzamasından ibaret değildir. Tırnak kenarı çevredeki dokuya sürekli baskı yaptığında bölgede inflamasyon gelişebilir. Bu baskı devam ettikçe doku daha hassas hale gelebilir, şişebilir ve enfeksiyona açık bir alan oluşabilir.</p>
                 <blockquote className="border-l-4 border-blue-600 bg-blue-50 px-5 py-4 text-blue-950 not-italic"><strong>Kısa cevap:</strong> Batık tırnak iltihaplandığında öncelikle tırnağa uygulanan basınç azaltılmalı, bölge temiz ve kuru tutulmalı ve tırnak kenarı kesilip çıkarılmaya çalışılmamalıdır. İrin, yayılan kızarıklık, şiddetli ağrı veya ateş gibi bulgular varsa profesyonel değerlendirme geciktirilmemelidir.</blockquote>
 
                 <hr />
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnak Neden İltihaplanır?</h2>
-                <p>Batık tırnakta temel sorun, tırnak plağının kenarının tırnağı çevreleyen deriyle sürekli temas etmesi veya doku içerisine doğru baskı yapmasıdır.</p>
-                <p>Bu durum başlangıçta yalnızca yürürken veya ayakkabı giyerken hissedilen hafif bir hassasiyet şeklinde başlayabilir. Ancak baskının devam etmesiyle tırnak kenarındaki deri kızarabilir ve şişebilir. Deri bütünlüğünün bozulduğu durumlarda bakterilerin bölgeye ulaşması da kolaylaşabilir.</p>
-                <p>Batık tırnağın ilerlemesine katkıda bulunabilen durumlar arasında şunlar bulunur:</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnak Neden İltihaplanır?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnakta temel sorun, tırnak plağının kenarının tırnağı çevreleyen deriyle sürekli temas etmesi veya doku içerisine doğru baskı yapmasıdır.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Bu durum başlangıçta yalnızca yürürken veya ayakkabı giyerken hissedilen hafif bir hassasiyet şeklinde başlayabilir. Ancak baskının devam etmesiyle tırnak kenarındaki deri kızarabilir ve şişebilir. Deri bütünlüğünün bozulduğu durumlarda bakterilerin bölgeye ulaşması da kolaylaşabilir.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnağın ilerlemesine katkıda bulunabilen durumlar arasında şunlar bulunur:</p>
                 <ul><li>Tırnakların çok kısa kesilmesi</li><li>Tırnak köşelerinin derinden alınması</li><li>Dar veya sivri burunlu ayakkabı kullanılması</li><li>Tırnak yapısının fazla kavisli olması</li><li>Ayağın uzun süre nemli kalması ve yoğun terleme</li><li>Tırnağın darbe alması</li><li>Tırnak kenarının sürekli kurcalanması</li><li>Daha önce batık gelişmiş tırnağın yanlış kesilmeye devam edilmesi</li></ul>
                 <img src={`${imageBase}/batik-tirnak-iltihap-3.webp`} alt="Kızarık ve şişmiş batık tırnak çevresi" className="w-full h-auto rounded-lg shadow-md" />
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnakta İltihap Olduğu Nasıl Anlaşılır?</h2>
-                <p>Her kızarık batık tırnak enfekte olmuş anlamına gelmez. Tırnağın deriye uyguladığı mekanik baskı da kızarıklık, hassasiyet ve şişliğe neden olabilir. Bu nedenle yalnızca tırnağın görünümüne bakılarak kesin bir ayrım yapmak her zaman mümkün değildir.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">Batık tırnakta görülebilecek bulgular</h3>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnakta İltihap Olduğu Nasıl Anlaşılır?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Her kızarık batık tırnak enfekte olmuş anlamına gelmez. Tırnağın deriye uyguladığı mekanik baskı da kızarıklık, hassasiyet ve şişliğe neden olabilir. Bu nedenle yalnızca tırnağın görünümüne bakılarak kesin bir ayrım yapmak her zaman mümkün değildir.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Batık tırnakta görülebilecek bulgular</h3>
                 <div className="overflow-x-auto not-prose"><table className="w-full border-collapse text-base"><thead><tr className="bg-blue-50"><th className="border border-gray-200 px-4 py-3 text-left">Bulgu</th><th className="border border-gray-200 px-4 py-3 text-left">Ne düşündürebilir?</th></tr></thead><tbody>{[
                   ['Hafif kızarıklık', 'Tırnak baskısına bağlı tahriş/inflamasyon'],
                   ['Dokununca hassasiyet', 'Tırnak kenarındaki basınç'],
@@ -186,32 +186,32 @@ const BatikTirnakIltihapBlog = () => {
                   ['Kızarıklığın yayılması', 'Daha ileri değerlendirme gerektirebilir'],
                   ['Ateş veya titreme', 'Gecikmeden tıbbi değerlendirme gerektirir']
                 ].map(([finding, meaning]) => <tr key={finding}><td className="border border-gray-200 px-4 py-3 font-medium">{finding}</td><td className="border border-gray-200 px-4 py-3">{meaning}</td></tr>)}</tbody></table></div>
-                <p>Burada önemli nokta, <strong className="font-semibold text-blue-950">iltihabi reaksiyon ile enfeksiyonun aynı şey olmadığıdır.</strong> Batık tırnağın oluşturduğu yabancı cisim benzeri mekanik etki, enfeksiyon bulunmasa bile belirgin kızarıklık ve şişliğe yol açabilir.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Burada önemli nokta, <strong className="font-semibold text-blue-950">iltihabi reaksiyon ile enfeksiyonun aynı şey olmadığıdır.</strong> Batık tırnağın oluşturduğu yabancı cisim benzeri mekanik etki, enfeksiyon bulunmasa bile belirgin kızarıklık ve şişliğe yol açabilir.</p>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnak İltihaplanırsa Evde İlk Olarak Ne Yapılabilir?</h2>
-                <p>Hafif vakalarda amaç tırnağın çevresindeki dokuyu daha fazla travmatize etmemek ve bölgedeki basıncı azaltmaktır.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">1. Tırnak kenarını kesmeye çalışmayın</h3>
-                <p>En sık karşılaşılan hatalardan biri, ağrıyan tırnak köşesinin makas veya tırnak pensiyle mümkün olduğunca derinden kesilmeye çalışılmasıdır. Şişmiş dokunun içine girerek tırnak parçası aramak; dokunun yaralanmasına, kanamaya, mevcut inflamasyonun artmasına ve geride sivri bir tırnak parçası kalmasına neden olabilir.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">2. Ayağa baskı yapan ayakkabılardan uzak durun</h3>
-                <p>Tırnağın çevresindeki doku hassassa dar ayakkabı içerisindeki her adım aynı bölgeye tekrar baskı uygulayabilir. Mümkün olduğunca parmaklara yeterli alan bırakan, geniş burunlu ayakkabılar tercih edilmelidir.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">3. Bölgeyi temiz tutun</h3>
-                <p>Batık bulunan bölgenin hijyenine dikkat edilmeli, ayağın uzun süre nemli kalmasına izin verilmemelidir. Ayak yıkandıktan sonra özellikle parmak çevresi dikkatlice kurulanmalıdır.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">4. Tırnağı kurcalamayın</h3>
-                <p>Tırnağın altına sivri cisim sokmak, tırnak kenarını kaldırmaya çalışmak veya şişmiş dokuyu sıkmak uygun değildir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnak İltihaplanırsa Evde İlk Olarak Ne Yapılabilir?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Hafif vakalarda amaç tırnağın çevresindeki dokuyu daha fazla travmatize etmemek ve bölgedeki basıncı azaltmaktır.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">1. Tırnak kenarını kesmeye çalışmayın</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">En sık karşılaşılan hatalardan biri, ağrıyan tırnak köşesinin makas veya tırnak pensiyle mümkün olduğunca derinden kesilmeye çalışılmasıdır. Şişmiş dokunun içine girerek tırnak parçası aramak; dokunun yaralanmasına, kanamaya, mevcut inflamasyonun artmasına ve geride sivri bir tırnak parçası kalmasına neden olabilir.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">2. Ayağa baskı yapan ayakkabılardan uzak durun</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Tırnağın çevresindeki doku hassassa dar ayakkabı içerisindeki her adım aynı bölgeye tekrar baskı uygulayabilir. Mümkün olduğunca parmaklara yeterli alan bırakan, geniş burunlu ayakkabılar tercih edilmelidir.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">3. Bölgeyi temiz tutun</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık bulunan bölgenin hijyenine dikkat edilmeli, ayağın uzun süre nemli kalmasına izin verilmemelidir. Ayak yıkandıktan sonra özellikle parmak çevresi dikkatlice kurulanmalıdır.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">4. Tırnağı kurcalamayın</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Tırnağın altına sivri cisim sokmak, tırnak kenarını kaldırmaya çalışmak veya şişmiş dokuyu sıkmak uygun değildir.</p>
                 <img src={`${imageBase}/batik-tirnak-iltihap-1.webp`} alt="Tırnak çevresine kontrolsüz ev müdahalesinden kaçınma" className="w-full h-auto rounded-lg shadow-md" />
 
                 <hr />
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">İltihaplı Batık Tırnak Kesilir mi?</h2>
-                <p>İltihaplı ve şişmiş bir tırnağın kenarını kişinin kendi başına derinden kesmesi önerilmez.</p>
-                <p><strong className="font-semibold text-blue-950">Profesyonel olarak tırnağın sorun oluşturan bölümüne müdahale edilmesi ile kişinin evde tırnak köşesini oyması aynı işlem değildir.</strong></p>
-                <p>Batığın seviyesine göre profesyonel değerlendirmede tırnak kenarındaki basıncın azaltılması, uygun konservatif yöntemler veya daha ileri vakalarda farklı tıbbi girişimler değerlendirilebilir. Hangi yöntemin uygun olduğu tırnağın görünümüne, çevre dokunun durumuna, akıntı bulunup bulunmamasına ve batığın tekrarlayıp tekrarlamadığına göre değişir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">İltihaplı Batık Tırnak Kesilir mi?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">İltihaplı ve şişmiş bir tırnağın kenarını kişinin kendi başına derinden kesmesi önerilmez.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left"><strong className="font-semibold text-blue-950">Profesyonel olarak tırnağın sorun oluşturan bölümüne müdahale edilmesi ile kişinin evde tırnak köşesini oyması aynı işlem değildir.</strong></p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batığın seviyesine göre profesyonel değerlendirmede tırnak kenarındaki basıncın azaltılması, uygun konservatif yöntemler veya daha ileri vakalarda farklı tıbbi girişimler değerlendirilebilir. Hangi yöntemin uygun olduğu tırnağın görünümüne, çevre dokunun durumuna, akıntı bulunup bulunmamasına ve batığın tekrarlayıp tekrarlamadığına göre değişir.</p>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">İltihaplı Batık Tırnağa Antibiyotik Gerekir mi?</h2>
-                <p>Batık tırnakta kızarıklık görülmesi tek başına antibiyotik kullanılması gerektiği anlamına gelmez. Batığın oluşturduğu mekanik baskı çevre dokuda enfeksiyon olmadan da inflamasyona yol açabilir.</p>
-                <p>Özellikle enfeksiyonun çevre dokuya yayıldığını düşündüren durumlarda hekim değerlendirmesi gerekir. <strong className="font-semibold text-blue-950">Antibiyotik hekimin değerlendirmesi ve önerisi doğrultusunda kullanılmalıdır.</strong></p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">İltihaplı Batık Tırnağa Antibiyotik Gerekir mi?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnakta kızarıklık görülmesi tek başına antibiyotik kullanılması gerektiği anlamına gelmez. Batığın oluşturduğu mekanik baskı çevre dokuda enfeksiyon olmadan da inflamasyona yol açabilir.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Özellikle enfeksiyonun çevre dokuya yayıldığını düşündüren durumlarda hekim değerlendirmesi gerekir. <strong className="font-semibold text-blue-950">Antibiyotik hekimin değerlendirmesi ve önerisi doğrultusunda kullanılmalıdır.</strong></p>
                 <img src={`${imageBase}/batik-tirnak-iltihap-4.webp`} alt="İltihap bulguları görülen ayak başparmağı" className="w-full h-auto rounded-lg shadow-md" />
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnakta Hangi Durumlarda Beklenmemeli?</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnakta Hangi Durumlarda Beklenmemeli?</h2>
                 <div className="overflow-x-auto not-prose"><table className="w-full border-collapse text-base"><thead><tr className="bg-blue-50"><th className="border border-gray-200 px-4 py-3 text-left">Durum</th><th className="border border-gray-200 px-4 py-3 text-left">Yaklaşım</th></tr></thead><tbody>{[
                   ['Hafif hassasiyet, belirgin akıntı yok', 'Basıncı azaltma ve takip düşünülebilir'],
                   ['Ağrı giderek artıyor', 'Değerlendirme önerilir'],
@@ -223,35 +223,35 @@ const BatikTirnakIltihapBlog = () => {
                   ['Diyabet veya dolaşım problemi bulunuyor', 'Evde müdahale yerine erken profesyonel değerlendirme tercih edilmelidir']
                 ].map(([condition, action]) => <tr key={condition}><td className="border border-gray-200 px-4 py-3 font-medium">{condition}</td><td className="border border-gray-200 px-4 py-3">{action}</td></tr>)}</tbody></table></div>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Diyabeti Olanlarda İltihaplı Batık Tırnak Neden Daha Önemlidir?</h2>
-                <p>Diyabeti olan kişilerde ayaktaki küçük yaralanmaların dahi daha dikkatli değerlendirilmesi gerekir. Özellikle dolaşım bozukluğu veya ayakta duyu kaybı bulunan kişiler, tırnağın oluşturduğu travmayı başlangıçta yeterince fark etmeyebilir.</p>
-                <p>Bu nedenle diyabeti bulunan bir kişinin batık tırnağı kendi başına kesmeye, şişmiş bölgeyi boşaltmaya veya tırnak kenarını sivri bir cisimle kaldırmaya çalışması uygun değildir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Diyabeti Olanlarda İltihaplı Batık Tırnak Neden Daha Önemlidir?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Diyabeti olan kişilerde ayaktaki küçük yaralanmaların dahi daha dikkatli değerlendirilmesi gerekir. Özellikle dolaşım bozukluğu veya ayakta duyu kaybı bulunan kişiler, tırnağın oluşturduğu travmayı başlangıçta yeterince fark etmeyebilir.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Bu nedenle diyabeti bulunan bir kişinin batık tırnağı kendi başına kesmeye, şişmiş bölgeyi boşaltmaya veya tırnak kenarını sivri bir cisimle kaldırmaya çalışması uygun değildir.</p>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnakta Et Parçası Neden Oluşur?</h2>
-                <p>İlerlemiş veya uzun süredir devam eden batık tırnaklarda tırnağın yanında kırmızı, hassas ve kolay kanayabilen bir doku görülebilir. Halk arasında bazen “tırnağın yanında et çıktı” şeklinde tarif edilen bu görünüm, bölgenin uzun süreli tahrişine bağlı gelişen granülasyon dokusu ile ilişkili olabilir.</p>
-                <p>Bu dokunun yalnızca kesilmesi veya koparılması, tırnağın oluşturduğu baskı devam ettiği sürece temel problemi ortadan kaldırmaz. Asıl değerlendirilmesi gereken nokta, tırnağın neden hâlâ o bölgeye baskı uyguladığıdır.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnakta Et Parçası Neden Oluşur?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">İlerlemiş veya uzun süredir devam eden batık tırnaklarda tırnağın yanında kırmızı, hassas ve kolay kanayabilen bir doku görülebilir. Halk arasında bazen “tırnağın yanında et çıktı” şeklinde tarif edilen bu görünüm, bölgenin uzun süreli tahrişine bağlı gelişen granülasyon dokusu ile ilişkili olabilir.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Bu dokunun yalnızca kesilmesi veya koparılması, tırnağın oluşturduğu baskı devam ettiği sürece temel problemi ortadan kaldırmaz. Asıl değerlendirilmesi gereken nokta, tırnağın neden hâlâ o bölgeye baskı uyguladığıdır.</p>
                 <img src={`${imageBase}/batik-tirnak-iltihap-5.webp`} alt="Uzun süren batık tırnakta kızarıklık ve şişlik" className="w-full h-auto rounded-lg shadow-md" />
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnak İltihabı Kendiliğinden Geçer mi?</h2>
-                <p>Hafif ve erken dönemdeki tahriş, tırnağa uygulanan baskının azaltılmasıyla gerileyebilir. Ancak tırnak kenarı sürekli olarak dokuya baskı yapmaya devam ediyorsa belirtiler tekrarlayabilir veya ilerleyebilir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnak İltihabı Kendiliğinden Geçer mi?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Hafif ve erken dönemdeki tahriş, tırnağa uygulanan baskının azaltılmasıyla gerileyebilir. Ancak tırnak kenarı sürekli olarak dokuya baskı yapmaya devam ediyorsa belirtiler tekrarlayabilir veya ilerleyebilir.</p>
                 <ul><li>İrinli akıntı</li><li>Artan şişlik</li><li>Giderek şiddetlenen ağrı</li><li>Yayılan kızarıklık</li></ul>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnakta Profesyonel Değerlendirmede Nelere Bakılır?</h2>
-                <p>Batık tırnak değerlendirilirken yalnızca ağrıyan köşeye bakmak yeterli değildir. Tırnağın genel yapısı ve batığın oluşmasına katkıda bulunabilecek faktörlerin birlikte değerlendirilmesi gerekir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnakta Profesyonel Değerlendirmede Nelere Bakılır?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnak değerlendirilirken yalnızca ağrıyan köşeye bakmak yeterli değildir. Tırnağın genel yapısı ve batığın oluşmasına katkıda bulunabilecek faktörlerin birlikte değerlendirilmesi gerekir.</p>
                 <ul><li>Tırnağın hangi kenarında batık olduğu</li><li>Tırnak kenarının dokuya ne kadar baskı yaptığı</li><li>Kızarıklık ve şişliğin derecesi</li><li>Akıntı bulunup bulunmadığı</li><li>Granülasyon dokusu gelişip gelişmediği</li><li>Tırnak plağının şekli ve kavisi</li><li>Daha önce aynı bölgede batık yaşanıp yaşanmadığı</li><li>Tırnağın nasıl kesildiği</li><li>Kullanılan ayakkabıların parmaklara yaptığı baskı</li></ul>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnak Tekrarlar mı?</h2>
-                <p>Evet. Özellikle batığa neden olan faktör devam ediyorsa sorun aynı tırnakta tekrar görülebilir. Tırnağın her ağrıdığında köşesini derinden kesmek bir süre rahatlama sağlayabilir; ancak tırnak yeniden uzarken sivri kalan kenar tekrar çevredeki dokuya baskı yapabilir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnak Tekrarlar mı?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Evet. Özellikle batığa neden olan faktör devam ediyorsa sorun aynı tırnakta tekrar görülebilir. Tırnağın her ağrıdığında köşesini derinden kesmek bir süre rahatlama sağlayabilir; ancak tırnak yeniden uzarken sivri kalan kenar tekrar çevredeki dokuya baskı yapabilir.</p>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Batık Tırnak Tekrarını Azaltmak İçin Nelere Dikkat Edilebilir?</h2>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">Tırnakları aşırı kısa kesmeyin</h3><p>Tırnağı parmak ucunun çok gerisine kadar kesmek yerine yeterli uzunluk bırakılması tercih edilir.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">Köşeleri sürekli oymayın</h3><p>Tırnak kenarlarının derinden alınması, tırnak uzadıkça yeniden sorun oluşturabilecek sivri bir kenar bırakabilir.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">Ayakkabı seçimine dikkat edin</h3><p>Parmakları birbirine sıkıştıran veya başparmak üzerine sürekli baskı yapan ayakkabılar batık şikâyetlerini artırabilir.</p>
-                <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mt-8 mb-3 leading-snug">Ayağı kuru tutun</h3><p>Yoğun terleme nedeniyle tırnak çevresindeki derinin uzun süre nemli ve yumuşak kalması bazı kişilerde tahrişi kolaylaştırabilir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Batık Tırnak Tekrarını Azaltmak İçin Nelere Dikkat Edilebilir?</h2>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Tırnakları aşırı kısa kesmeyin</h3><p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Tırnağı parmak ucunun çok gerisine kadar kesmek yerine yeterli uzunluk bırakılması tercih edilir.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Köşeleri sürekli oymayın</h3><p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Tırnak kenarlarının derinden alınması, tırnak uzadıkça yeniden sorun oluşturabilecek sivri bir kenar bırakabilir.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Ayakkabı seçimine dikkat edin</h3><p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Parmakları birbirine sıkıştıran veya başparmak üzerine sürekli baskı yapan ayakkabılar batık şikâyetlerini artırabilir.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Ayağı kuru tutun</h3><p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Yoğun terleme nedeniyle tırnak çevresindeki derinin uzun süre nemli ve yumuşak kalması bazı kişilerde tahrişi kolaylaştırabilir.</p>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-10 mb-4 leading-tight">Ankara'da İltihaplı Batık Tırnak İçin Nereye Başvurulabilir?</h2>
-                <p>Batık tırnakta uygulanacak yaklaşım, problemin hangi aşamada olduğuna göre değişebilir. Ankara'da batık tırnak nedeniyle başvuran kişilerde öncelikle tırnak ve çevre dokunun mevcut durumu değerlendirilmelidir.</p>
-                <p><strong className="font-semibold text-blue-950">MediPodo Ankara Bağlıca'da</strong> batık tırnak ve ayak sağlığı konusunda değerlendirme hizmeti sunmaktadır. Podolojik değerlendirmede amaç yalnızca ağrıyan bölgeye müdahale etmek değil, batığın oluşmasına veya tekrarlamasına katkıda bulunabilecek faktörleri de değerlendirmektir.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Ankara'da İltihaplı Batık Tırnak İçin Nereye Başvurulabilir?</h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left">Batık tırnakta uygulanacak yaklaşım, problemin hangi aşamada olduğuna göre değişebilir. Ankara'da batık tırnak nedeniyle başvuran kişilerde öncelikle tırnak ve çevre dokunun mevcut durumu değerlendirilmelidir.</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6 text-left"><strong className="font-semibold text-blue-950">MediPodo Ankara Bağlıca'da</strong> batık tırnak ve ayak sağlığı konusunda değerlendirme hizmeti sunmaktadır. Podolojik değerlendirmede amaç yalnızca ağrıyan bölgeye müdahale etmek değil, batığın oluşmasına veya tekrarlamasına katkıda bulunabilecek faktörleri de değerlendirmektir.</p>
                 <blockquote className="border-l-4 border-blue-600 bg-blue-50 px-5 py-4 text-blue-950 not-italic"><strong>Önemli:</strong> Bu içerik genel bilgilendirme amacıyla hazırlanmıştır. Muayene, tanı veya kişiye özel tedavi önerisinin yerine geçmez. Özellikle enfeksiyon şüphesi, diyabet, dolaşım problemi veya hızla ilerleyen belirtilerde sağlık profesyoneline başvurulmalıdır.</blockquote>
               </div>
 
