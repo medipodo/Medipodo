@@ -80,40 +80,54 @@ const About = () => {
           </div>
         </section>
 
-        {/* Founder / Podolog Serdar Ceylan */}
+        {/* Founder & Diploma Section */}
         <section className="py-14 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center">
-                <div className="md:col-span-2 flex justify-center">
-                  <div className="relative">
-                    <img
-                      src="/images/team/podolog-serdar-ceylan.webp"
-                      alt="Podolog Serdar Ceylan - Medipodo kurucusu Ankara podolog"
-                      className="w-64 h-64 md:w-72 md:h-72 rounded-2xl object-cover object-top shadow-2xl border-4 border-white ring-1 ring-blue-100"
-                      loading="lazy"
-                      width="288"
-                      height="288"
-                    />
-                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white px-5 py-2 rounded-full shadow-lg border border-blue-100 whitespace-nowrap">
-                      <p className="text-sm font-semibold text-blue-950">Podolog Serdar Ceylan</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="md:col-span-3 text-center md:text-left">
-                  <span className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full mb-3 tracking-wide">
-                    KURUCU PODOLOG
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-3">
-                    Uzman Ellerde Ayak Sağlığı
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    Ankara Üniversitesi Podoloji programı mezunu Serdar Ceylan; batık tırnak,
-                    tırnak mantarı, nasır ve medikal ayak bakımı alanlarında yılların deneyimiyle
-                    Medipodo çatısı altında hizmet veriyor. Bilimsel yöntemler, steril ortam ve
-                    kişiye özel yaklaşım — her adımda güven.
-                  </p>
-                </div>
+            <div className="max-w-5xl mx-auto rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:grid md:grid-cols-2 md:items-center md:gap-10 md:p-10">
+              <div className="text-center md:pr-6">
+                <span className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full mb-3 tracking-wide">
+                  KURUCU PODOLOG
+                </span>
+                <h2 className="text-2xl md:text-3xl font-bold text-blue-950 mb-4">
+                  Podolog Serdar Ceylan
+                </h2>
+                <img
+                  src="/images/team/podolog-serdar-ceylan.webp"
+                  alt="Podolog Serdar Ceylan - Medipodo kurucusu Ankara podolog"
+                  className="mx-auto h-52 w-52 rounded-2xl object-cover object-top shadow-xl ring-1 ring-blue-100 md:h-56 md:w-56"
+                  loading="lazy"
+                  width="224"
+                  height="224"
+                />
+                <p className="mx-auto mt-6 max-w-2xl text-gray-600 leading-relaxed">
+                  Serdar Ceylan; batık tırnak, tırnak mantarı, nasır ve medikal ayak bakımı alanlarında
+                  Medipodo çatısı altında hizmet veriyor. Bilimsel yöntemler, steril ortam ve kişiye özel
+                  yaklaşım — her adımda güven.
+                </p>
+              </div>
+
+              <div className="my-8 border-t border-blue-100 md:hidden" aria-hidden="true" />
+
+              <div className="text-center md:border-l md:border-blue-100 md:pl-10">
+                <span className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full mb-3 tracking-wide">
+                  EĞİTİM BELGESİ
+                </span>
+                <h3 className="text-xl md:text-2xl font-bold text-blue-950 mb-4">
+                  Ankara Üniversitesi – Podoloji
+                </h3>
+                <figure className="mx-auto w-full max-w-[360px] overflow-hidden rounded-xl border border-gray-200 bg-gray-50 p-3 shadow-sm">
+                  <img
+                    src="/images/credentials/podoloji-diploma-serdar-ceylan.webp"
+                    alt="Podolog Serdar Ceylan Podoloji diploması"
+                    className="h-auto w-full object-contain"
+                    loading="lazy"
+                    width="360"
+                    height="248"
+                  />
+                </figure>
+                <p className="mt-4 text-sm text-gray-500">
+                  Podoloji eğitimini belgeleyen diploma.
+                </p>
               </div>
             </div>
           </div>
