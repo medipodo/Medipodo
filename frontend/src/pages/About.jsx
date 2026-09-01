@@ -119,8 +119,10 @@ const About = () => {
                   <img
                     src="/images/credentials/podoloji-diploma-serdar-ceylan.webp"
                     alt="Podolog Serdar Ceylan Podoloji diploması"
-                    className="h-auto w-full object-contain"
+                    className="h-auto w-full select-none object-contain"
                     loading="lazy"
+                    onContextMenu={(event) => event.preventDefault()}
+                    onDragStart={(event) => event.preventDefault()}
                     width="360"
                     height="248"
                   />
