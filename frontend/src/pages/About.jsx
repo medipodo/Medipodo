@@ -100,9 +100,9 @@ const About = () => {
                   height="224"
                 />
                 <p className="mx-auto mt-6 max-w-2xl text-gray-600 leading-relaxed">
-                  Serdar Ceylan; batık tırnak, tırnak mantarı, nasır ve medikal ayak bakımı alanlarında
-                  Medipodo çatısı altında hizmet veriyor. Bilimsel yöntemler, steril ortam ve kişiye özel
-                  yaklaşım — her adımda güven.
+                  Serdar Ceylan; batık tırnak, tırnak mantarı, nasır, plantar siğil ve medikal ayak bakımı
+                  alanlarında Medipodo Ayak Sağlığı Merkezinde hizmet veriyor. Bilimsel yöntemler, steril
+                  ortam ve kişiye özel yaklaşım — her adımda güven.
                 </p>
               </div>
 
