@@ -128,7 +128,7 @@ const About = () => {
                   />
                 </figure>
                 <p className="mt-4 text-sm text-gray-500">
-                  Podoloji eğitimini belgeleyen diploma.
+                  Ankara Üniversitesi Podoloji Bölümü mezuniyet belgesi.
                 </p>
               </div>
             </div>
