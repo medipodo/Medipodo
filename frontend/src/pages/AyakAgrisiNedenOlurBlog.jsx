@@ -46,7 +46,7 @@ const AyakAgrisiNedenOlurBlog = () => {
   const faqItems = [
     {
       question: "Ayak ağrısı kendiliğinden geçer mi?",
-      answer: "Hafif zorlanmalarda geçebilir, ancak tekrarlayan ağrılar mutlaka değerlendirilmelidir."
+      answer: "Hafif zorlanmalarda geçebilir, ancak tekrarlayan ağrılar mutlaka profesyonellerce değerlendirilmelidir."
     },
     {
       question: "Sabah ilk adımda ayak ağrısı neden olur?",
