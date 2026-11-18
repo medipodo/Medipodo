@@ -18,4 +18,6 @@
 /robots.txt /robots.txt 200
 /llms.txt /llms.txt 200
 /llms-full.txt /llms-full.txt 200
+# 301 Redirect - /b ana sayfaya yönlendirme
+/b / 301
 /* /index.html 200
